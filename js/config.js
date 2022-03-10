@@ -4,7 +4,7 @@ var respecConfig =
   specStatus: "GN-DEF",
   specType: "ST",
   license: "cc-by-nd",
-  publishDate: "2022-01-07",
+  publishDate: "2022-03-10",
   previousPublishDate: "2020-01-07",
   previousMaturity: "GN-DEF",
   authors: [
@@ -35,6 +35,6 @@ var respecConfig =
   github: "https://github.com/Geonovum/ow-IMOW/",
   issueBase: "https://github.com/Geonovum/ow-IMOW/issues/",
   edDraftURI: "https://Geonovum.github.io/ow-IMOW/",
-  publishISODate: "2022-01-07T00:00:00.000Z",
-  generatedSubtitle: "Vastgestelde versie 7 januari 2022"
+  publishISODate: "2022-03-10T00:00:00.000Z",
+  generatedSubtitle: "Vastgestelde versie 10 maart 2022"
 }
