@@ -1,12 +1,12 @@
 var respecConfig =
 {
   pubDomain: "ow",
-  specStatus: "GN-CV",
+  specStatus: "GN-VV",
   specType: "ST",
   license: "cc-by-nd",
   publishDate: "2022-03-14",
   previousPublishDate: "2020-01-07",
-  previousMaturity: "geen",
+  previousMaturity: "GN-CV",
   authors: [
     {
       name: "Richard de Graaf",
@@ -36,5 +36,5 @@ var respecConfig =
   issueBase: "https://github.com/Geonovum/ow-IMOW/issues/",
   edDraftURI: "https://Geonovum.github.io/ow-IMOW/",
   publishISODate: "2022-03-14T00:00:00.000Z",
-  generatedSubtitle: "Consultatieversie 14 maart 2022"
+  generatedSubtitle: "Versie ter vaststelling 14 maart 2022"
 }
