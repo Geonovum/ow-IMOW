@@ -1,40 +1,33 @@
 var respecConfig =
 {
   pubDomain: "ow",
-  specStatus: "GN-DEF",
+  specStatus: "GN-WV",
   specType: "ST",
   license: "cc-by-nd",
-  publishDate: "2022-05-16",
-  previousPublishDate: "2020-01-07",
-  previousMaturity: "GN-DEF",
+  publishDate: "2022-06-22",
   authors: [
     {
       name: "Richard de Graaf",
+      company: "Geonovum",
+      companyURL: "https://www.geonovum.nl/"
+    },
+    {
+      name: "Nienke Jansen",
       company: "Geonovum",
       companyURL: "https://www.geonovum.nl/"
     }
   ],
   editors: [
     {
-      name: "Gerard Wolbers",
+      name: "Wilko Quak",
       company: "Geonovum",
       companyURL: "https://www.geonovum.nl/"
     }
   ],
-  localBiblio: {
-    GerardWolbers: {
-      title: "Gerard Wolbers",
-      href: "Geonovum",
-      authors: [
-        "https://www.geonovum.nl"
-      ],
-    }
-  },
   shortName: "IMOW",
   format: "markdown",
   github: "https://github.com/Geonovum/ow-IMOW/",
   issueBase: "https://github.com/Geonovum/ow-IMOW/issues/",
   edDraftURI: "https://Geonovum.github.io/ow-IMOW/",
-  publishISODate: "2022-05-16T00:00:00.000Z",
-  generatedSubtitle: "Vastgestelde versie 16 mei 2022"
+  generatedSubtitle: "Werkversie 22 juni 2022"
 }
