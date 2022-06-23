@@ -4,7 +4,7 @@ var respecConfig =
   specStatus: "GN-WV",
   specType: "ST",
   license: "cc-by-nd",
-  publishDate: "2022-06-22",
+  publishDate: "2022-06-23",
   authors: [
     {
       name: "Richard de Graaf",
@@ -15,6 +15,10 @@ var respecConfig =
       name: "Nienke Jansen",
       company: "Geonovum",
       companyURL: "https://www.geonovum.nl/"
+    },
+    {
+      name: "Wilko Quak",
+      company: "Geonovum",
     }
   ],
   editors: [
@@ -29,5 +33,5 @@ var respecConfig =
   github: "https://github.com/Geonovum/ow-IMOW/",
   issueBase: "https://github.com/Geonovum/ow-IMOW/issues/",
   edDraftURI: "https://Geonovum.github.io/ow-IMOW/",
-  generatedSubtitle: "Werkversie 22 juni 2022"
+  generatedSubtitle: "Werkversie 23 juni 2022"
 }
