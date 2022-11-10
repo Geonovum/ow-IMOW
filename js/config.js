@@ -4,7 +4,7 @@ var respecConfig =
   specStatus: "GN-WV",
   specType: "ST",
   license: "cc-by-nd",
-  publishDate: "2022-10-31",
+  publishDate: "2022-11-10",
   authors: [
     {
       name: "Richard de Graaf",
@@ -33,5 +33,5 @@ var respecConfig =
   github: "https://github.com/Geonovum/ow-IMOW/",
   issueBase: "https://github.com/Geonovum/ow-IMOW/issues/",
   edDraftURI: "https://Geonovum.github.io/ow-IMOW/",
-  generatedSubtitle: "Werkversie 31 oktober 2022"
+  generatedSubtitle: "Werkversie 10 november 2022"
 }
