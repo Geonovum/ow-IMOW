@@ -14,13 +14,9 @@ body {
   line-height: 16pt;
   word-wrap: break-word;
 }
-p:not(.space-after) {
-  margin-top: 0pt;
+p {
+  margin-top: 16pt;
   margin-bottom: 0pt;
-}
-p.space-after {
-  margin-top: 0pt;
-  margin-bottom: 16pt;
 }
 div.head h1, h1 {
   font-family: 'Calibri', sans-serif;
@@ -209,25 +205,38 @@ table p {
   margin-top: 0pt;
   margin-bottom: 0pt;
 }
-table p.space-after {
-  margin-top: 0pt;
-  margin-bottom: 14pt;
+
+/* image */
+
+section img {
+  display: block;
+  margin: 0pt 0mm 0pt 0mm;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 /* figuur */
 
-section img {
+figure {
   display: block;
   margin: 16pt 0mm 16pt 0mm;
+}
+figure img {
+  display: block;
+  margin: 0pt 0mm 0pt 0mm;
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
 }
 figcaption {
+  display: block;
   font-family: 'Calibri', sans-serif;
   font-size: 12pt;
   line-height: 16pt;
+  margin: 8pt 0mm 0pt 0mm;
   text-align: left;
 }
 
