@@ -3,31 +3,18 @@ var documentConfig =
   title: "Informatiemodel Omgevingswet (IMOW)",
   shortName: "IMOW",
   pubDomain: "ow",
-  specStatus: "wv",
-  specType: "st",
+  specStatus: "GN-WV",
+  specType: "ST",
   license: "cc-by-nd",
   latestVersion: [
     "docs.geostandaarden.nl/ow/IMOW/"
   ],
-  publishDate: "2023-09-01",
-  publishVersion: "2.0.3",
+  publishDate: "2022-06-03",
   thisVersion: [
-    "https://geonovum.github.io/ow-IMOW/"
+    "docs.geostandaarden.nl/ow/gn-wv-st-IMOW-20220603/"
   ],
   github: "https://github.com/geonovum/ow-IMOW/",
   issueBase: "https://github.com/geonovum/ow-IMOW/issues/",
-  authors: [
-    {
-      name: "TPOD-team",
-      company: "Geonovum",
-      companyURL: "www.geonovum.nl"
-    }
-  ],
-  editors: [
-    {
-      name: "TPOD-team",
-      company: "Geonovum",
-      companyURL: "www.geonovum.nl"
-    }
-  ]
+  authors: "",
+  editors: ""
 }
