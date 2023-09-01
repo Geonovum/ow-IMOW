@@ -3,8 +3,8 @@ var documentConfig =
   title: "Informatiemodel Omgevingswet (IMOW)",
   shortName: "IMOW",
   pubDomain: "ow",
-  specStatus: "geen",
-  specType: "st",
+  specStatus: "wv",
+  specType: "im",
   license: "cc-by-nd",
   latestVersion: [
     "docs.geostandaarden.nl/ow/IMOW/"
@@ -12,7 +12,7 @@ var documentConfig =
   publishDate: "2023-09-01",
   publishVersion: "2.0.3",
   thisVersion: [
-    "docs.geostandaarden.nl/ow/geen-st-IMOW-20230901/"
+    "https://geonovum.github.io/ow-IMOW/"
   ],
   github: "https://github.com/geonovum/ow-IMOW/",
   issueBase: "https://github.com/geonovum/ow-IMOW/issues/",
