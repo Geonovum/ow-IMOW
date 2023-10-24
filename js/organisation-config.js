@@ -1,7 +1,7 @@
 var organisationConfig =
 {
   nl_organisationName: "Geonovum",
-  nl_organisationPublishURL: "https://docs.geostandaarden.nl/",
+  nl_organisationPublishURL: "https://www.geonovum.nl/geo-standaarden/",
   postProcess: [
     window.respecMermaid.createFigures
   ],
