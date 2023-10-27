@@ -9,7 +9,7 @@ var documentConfig =
   latestVersion: [
     "docs.geostandaarden.nl/ow/IMOW/"
   ],
-  publishDate: "2023-10-24",
+  publishDate: "2023-10-27",
   publishVersion: "2.0.3",
   thisVersion: [
     "https://geonovum.github.io/ow-IMOW/"
