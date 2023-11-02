@@ -7,15 +7,16 @@ var documentConfig =
   specType: "im",
   license: "cc-by-nd",
   latestVersion: [
-    "docs.geostandaarden.nl/ow/IMOW/"
+    "https://docs.geostandaarden.nl/ow/IMOW/"
   ],
-  publishDate: "2023-10-27",
+  publishDate: "2023-11-02",
   publishVersion: "2.0.3",
   thisVersion: [
     "https://geonovum.github.io/ow-IMOW/"
   ],
   github: "https://github.com/geonovum/ow-IMOW/",
   issueBase: "https://github.com/geonovum/ow-IMOW/issues/",
+  edDraftURI: "https://geonovum.github.io/ow-IMOW/",
   authors: [
     {
       name: "TPOD-team",
