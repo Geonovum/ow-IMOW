@@ -86,8 +86,8 @@ var organisationConfig =
       src: "https://tools.geostandaarden.nl/publication/domain/ow/ow.svg",
       alt: "Omgevingswet",
       id: "ow",
-      height: "67",
-      width: "132",
+      height: "44",
+      width: "240",
       url: "https://www.geonovum.nl/geo-standaarden",
       ico: "https://tools.geostandaarden.nl/publication/domain/ow/Geonovum.ico"
     }
