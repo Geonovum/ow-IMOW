@@ -21,14 +21,14 @@ var documentConfig =
     {
       name: "TPOD-team",
       company: "Geonovum",
-      companyURL: "www.geonovum.nl"
+      companyURL: "https://www.geonovum.nl/"
     }
   ],
   editors: [
     {
       name: "TPOD-team",
       company: "Geonovum",
-      companyURL: "www.geonovum.nl"
+      companyURL: "https://www.geonovum.nl/"
     }
   ]
 }
