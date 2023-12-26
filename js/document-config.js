@@ -9,11 +9,17 @@ var documentConfig =
   latestVersion: [
     "https://docs.geostandaarden.nl/ow/IMOW/"
   ],
-  publishDate: "2023-12-15",
-  publishVersion: "3.0.0",
+  publishDate: "2023-12-27",
+  publishVersion: "3.0.1",
   thisVersion: [
-    "https://docs.geostandaarden.nl/ow/def-im-IMOW-20231215/"
+    "https://docs.geostandaarden.nl/ow/def-im-IMOW-20231227/"
   ],
+  previousPublishDate: "2023-12-15",
+  previousPublishVersion: "3.0.0",
+  prevVersion: [
+    "https://docs.geostandaarden.nl/ow/vv-im-IMOW-20231215/"
+  ],
+  previousMaturity: "vv",
   github: "https://github.com/geonovum/ow-IMOW/",
   issueBase: "https://github.com/geonovum/ow-IMOW/issues/",
   edDraftURI: "https://geonovum.github.io/ow-IMOW/",
