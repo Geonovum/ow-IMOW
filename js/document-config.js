@@ -17,9 +17,9 @@ var documentConfig =
   previousPublishDate: "2023-12-15",
   previousPublishVersion: "3.0.0",
   prevVersion: [
-    "https://docs.geostandaarden.nl/ow/vv-im-IMOW-20231215/"
+    "https://docs.geostandaarden.nl/ow/def-im-IMOW-20231215/"
   ],
-  previousMaturity: "vv",
+  previousMaturity: "def",
   github: "https://github.com/geonovum/ow-IMOW/",
   issueBase: "https://github.com/geonovum/ow-IMOW/issues/",
   edDraftURI: "https://geonovum.github.io/ow-IMOW/",
