@@ -12,3 +12,4 @@ In het IMOW gebruik ik de volgende begrippen:
 | Regelingversie | zie CIM-OP                                                                                                                                        |
 | CIM-OW         | Conceptueel Informatie Model Omgevingwet                                                                                                          |
 | Aanlevering    | Aanlevering die het bevoegd gezag doet aan de LVBB. Deze aanlevering bevat 1 of meer OW-aanleveringen                                             |
+| kenmerk        | Een eigenschap of attribuut van een klasse of object. |
