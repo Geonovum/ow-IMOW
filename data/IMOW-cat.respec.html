@@ -5403,7 +5403,20 @@
                      <td>
                         <a class="link" href="#detail_attribute_OPobject_OPobject_procedurestatus">procedurestatus</a>
                         </td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Het veld procedurestatus in een OW-object kan de volgende waarden hebben:</p>
+                        
+                        <ul>
+                           
+                           <li>Als het veld procedurestatus geen waarde heeft dan wordt het OW-object beschouwd als
+                              behorend bij vastgestelde regelgeving.</li>
+                           
+                           <li>Als het veld procedurestatus de waarde ‘ontwerp’ hoor het een OW-object bij een ontwerpbesluit
+                              en moet het als ontwerp getoond moet worden. Het object hoort niet bij vastgestelde
+                              regelgeving.</li>
+                           </ul>
+                        </td>
                      <td>
                         CHARACTERSTRING
                         </td>
@@ -5526,6 +5539,10 @@
                            <td>CHARACTERSTRING</td>
                         </tr>
                         <tr>
+                           <th>Lengte</th>
+                           <td>..80</td>
+                        </tr>
+                        <tr>
                            <th>Patroon</th>
                            <td>
                               De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
@@ -5570,8 +5587,31 @@
                            <td>procedurestatus</td>
                         </tr>
                         <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Het veld procedurestatus in een OW-object kan de volgende waarden hebben:</p>
+                              
+                              <ul>
+                                 
+                                 <li>Als het veld procedurestatus geen waarde heeft dan wordt het OW-object beschouwd als
+                                    behorend bij vastgestelde regelgeving.</li>
+                                 
+                                 <li>Als het veld procedurestatus de waarde ‘ontwerp’ hoor het een OW-object bij een ontwerpbesluit
+                                    en moet het als ontwerp getoond moet worden. Het object hoort niet bij vastgestelde
+                                    regelgeving.</li>
+                                 </ul>
+                              
+                              </td>
+                        </tr>
+                        <tr>
                            <th>Formaat</th>
                            <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>0..80</td>
                         </tr>
                         <tr>
                            <th>Patroon</th>
@@ -12733,6 +12773,10 @@
                            <td>
                               <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
                               </td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>..80</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
