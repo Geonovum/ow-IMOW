@@ -8,7 +8,7 @@
          <h4>   Activiteit - detail</h4>
          <div class="imageinfo ">
             <figure><img src="data/Images/EAID_C034926C_5030_4da8_A99D_28AAB4D54443.png" usemap="#imagemap-EAID_C034926C_5030_4da8_A99D_28AAB4D54443" alt="Diagram &#xA;                        &#xA;                     "><figcaption>Activiteit</figcaption>
-            </figure><map name="imagemap-EAID_C034926C_5030_4da8_A99D_28AAB4D54443"><area shape="rect" alt="Activiteit" coords="72,14,406,194" href="#global_class_RegelsOpLocatie_Activiteit"></map></div>
+            </figure><map name="imagemap-EAID_C034926C_5030_4da8_A99D_28AAB4D54443"><area shape="rect" alt="Activiteit" coords="14,14,347,194" href="#global_class_Regel_Activiteit"></map></div>
       </section>
    </section>
    <section id="global_package_DatatypenAlgemeen">
@@ -1400,7 +1400,7 @@
                         <a class="link" href="#detail_association_Kaart_Kaartlaag_normweergave">normweergave: normweergave</a>
                         
                         
-                        <a class="link" href="#global_class_RegelsOpLocatie_Norm">Norm</a>
+                        <a class="link" href="#global_class_Regel_Norm">Norm</a>
                         
                         [ 0 .. * ]
                         </td>
@@ -2024,7 +2024,7 @@
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_RegelsOpLocatie_Norm">Norm</a>
+                              <a class="link" href="#global_class_Regel_Norm">Norm</a>
                               </td>
                         </tr>
                         <tr>
@@ -2540,6 +2540,23 @@
                   <tr>
                      <td>
                         
+                        <a class="link" href="#global_class_Regel_Normwaarde">Normwaarde</a>
+                        
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Regel_Normwaarde_locatieaanduiding">geldt voor: locatieaanduiding</a>
+                        
+                        Locatie
+                        [ 1 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>De verwijzing naar (de identificatie van) de bijbehorende Locatie.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
                         <a class="link" href="#global_class_Regel_ActiviteitLocatieaanduiding">Activiteit­Locatieaanduiding</a>
                         
                         [ 0 .. * ]
@@ -2566,23 +2583,6 @@
                      <td>
                         
                         <p>Duiding van een geografische locatie. (In dit geval van het ambtsgebied.)</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_RegelsOpLocatie_Normwaarde">Normwaarde</a>
-                        
-                        [ 0 .. * ]
-                        
-                        <a class="link" href="#detail_association_RegelsOpLocatie_Normwaarde_locatieaanduiding">geldt voor: locatieaanduiding</a>
-                        
-                        Locatie
-                        [ 1 .. * ]
-                        </td>
-                     <td>
-                        
-                        <p>De verwijzing naar (de identificatie van) de bijbehorende Locatie.</p>
                         </td>
                   </tr>
                   <tr>
@@ -4811,6 +4811,687 @@
             
             </section>
          
+         <section id="global_class_Regel_Norm">
+            <h5>   Norm</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Norm</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Een omgevingswaarde of een omgevingsnorm, met een normatief karakter, die beschreven
+                           worden middels normwaarden. Een normwaarde kan kwalitatief of kwantitatief zijn.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Ja</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Regel_Norm_naam">naam</a>
+                        </td>
+                     <td>de mensleesbare beschrijving waarmee een Locatie wordt aangeduid. </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Regel_Norm_type">type</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#detail_class_Regel_Typenorm">Typenorm</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Regel_Norm_eenheid">eenheid</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#detail_class_DatatypenAlgemeen_Eenheid">Eenheid</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Regel_Norm_normwaarde">normwaarde</a>
+                        :</td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#detail_class_Regel_Normwaarde">Normwaarde</a>
+                        </td>
+                     <td>1 .. *</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_Regel_Normwaarde_identificatie">identificatie</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_DatatypenAlgemeen_NEN3610ID">NEN3610ID</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_Regel_Normwaarde_kwalitatieveWaarde">kwalitatieve­Waarde</a>
+                        </td>
+                     <td>
+                        
+                        <p>De toewijzing van een normerende waarde aan een locatie in de vorm van een beschrijving
+                           in woorden. De beschrijving geeft tekstueel de betekenis weer van de normwaarde.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_Regel_Normwaarde_kwantitatieveWaarde">kwantitatieve­Waarde</a>
+                        </td>
+                     <td>
+                        
+                        <p>De numerieke waarde van een norm. </p>
+                        </td>
+                     <td>
+                        REAL
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_Regel_Normwaarde_waardeInRegeltekst">waarde­In­Regeltekst</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_association_Regel_Normwaarde_locatieaanduiding">geldt voor</a>
+                        </td>
+                     <td>
+                        
+                        <p>De specifieke locatie(s) waarvoor een specifieke normwaarde geldt.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
+                        </td>
+                     <td>1 .. *</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Kaart_Kaartlaag">Kaartlaag</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Kaart_Kaartlaag_normweergave">normweergave: normweergave</a>
+                        
+                        Norm
+                        [ 0 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>De verbeelding van een norm</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Norm
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Basisklasse van het IMOW-model.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_Regel_Omgevingsnorm">
+            <h5>   Omgevingsnorm</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Omgevingsnorm</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>
+                        IMOW
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>De in een meetbare waarde uit te drukken norm (anders dan een omgevingswaarde) die
+                           het bevoegd gezag op verschillende locaties verschillende waarden wil geven die het
+                           inzichtelijk wil weergeven.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>
+                        Omgevingswet
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Datum opname</th>
+                     <td>
+                        2-10-2018
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Regel_Omgevingsnorm_groep">groep</a>
+                        </td>
+                     <td>
+                        
+                        <p>Een categorie, of groep, waaronder een omgevingsnorm valt.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#detail_class_Regel_Omgevingsnormgroep">Omgevingsnormgroep</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Regel_RegelVoorIedereen">Regel­Voor­Iedereen</a>
+                        
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Regel_RegelVoorIedereen_omgevingsnormaanduiding">omgevingsnormaanduiding: omgevingsnormaanduiding</a>
+                        
+                        Omgevingsnorm
+                        [ 0 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Regel_Instructieregel">Instructieregel</a>
+                        
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Regel_Instructieregel_omgevingsnormaanduiding">omgevingsnormaanduiding: omgevingsnormaanduiding</a>
+                        
+                        Omgevingsnorm
+                        [ 0 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Omgevingsnorm
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_Regel_Norm">Norm</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Een omgevingswaarde of een omgevingsnorm, met een normatief karakter, die beschreven
+                           worden middels normwaarden. Een normwaarde kan kwalitatief of kwantitatief zijn.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_Regel_Omgevingswaarde">
+            <h5>   Omgevingswaarde</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Omgevingswaarde</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Norm die de gewenste staat of kwaliteit van (een onderdeel van) de fysieke leefomgeving,
+                           de toelaatbare belasting door activiteiten en/of de toelaatbare concentratie of depositie
+                           van stoffen als beleidsdoel vastlegt. </p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        
+                        <p>Omgevingswaarden is één van de instrumenten waarmee overheden het beleid van een omgevingsvisie
+                           kunnen uitvoeren. Omgevingswaarden zijn bedoeld om een veilige en gezonde fysieke
+                           leefomgeving en een goede omgevingskwaliteit te bereiken en in stand te houden. Bestaande
+                           begrippen als grenswaarde, streefwaarde en richtwaarde voor milieukwaliteit en andere
+                           waarden over de staat of kwaliteit van onder de fysieke leefomgeving vallende onderdelen,
+                           structuren of aspecten worden samengebracht in het begrip
+                           omgevingswaarde. </p>
+                        
+                        <p>Het Rijk stelt omgevingswaarden vast in het Besluit kwaliteit leefomgeving, de provincie
+                           in een omgevingsverordening en de gemeente in een omgevingsplan. De mogelijkheid –
+                           en in een aantal gevallen de verplichting – voor de overheid om omgevingswaarden vast
+                           te stellen staat in artikel 2.9 en verder van de Omgevingswet.
+                           Het Rijk stelt in het Besluit kwaliteit leefomgeving omgevingswaarden voor:
+                           luchtkwaliteit
+                           waterkwaliteit
+                           zwemwaterkwaliteit
+                           waterveiligheid</p>
+                        
+                        <p>Naast deze verplichte rijksomgevingswaarden is alleen de provincie verplicht om omgevingswaarden
+                           te stellen voor twee onderwerpen op het terrein van waterveiligheid.
+                           Los van deze verplichtingen mogen gemeenten, Rijk en provincies ook voor andere onderwerpen
+                           omgevingswaarden te stellen. Voor bijvoorbeeld de geur van veehouderijen of voor lichthinder
+                           zijn ook omgevingswaarden denkbaar. Gemeenten mogen alleen omgevingswaarden vaststellen
+                           op terreinen waar rijk of provincie geen omgevingswaarden hebben vastgesteld. </p>
+                        
+                        <p>Een andere mogelijkheid die de regelgeving biedt is dat een gemeente of provincie
+                           voor luchtkwaliteit aanvullende of strengere omgevingswaarden vastlegt dan die het
+                           Rijk heeft vastgesteld. Voor omgevingswaarden voor waterkwaliteit die het Rijk heeft
+                           vastgesteld mag alleen de provincie aanvullende waarden vastleggen.</p>
+                        
+                        <p>Bron van deze toelichting: https://aandeslagmetdeomgevingswet.nl/wetsinstrumenten/instrumenten/omgevingswaarde/artikel/<br clear="none">
+                           </p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Regel_Omgevingswaarde_groep">groep</a>
+                        </td>
+                     <td>
+                        
+                        <p>Een categorie, of groep, waaronder een omgevingswaarde valt.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#detail_class_Regel_Omgevingswaardegroep">Omgevingswaardegroep</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Regel_Omgevingswaarderegel">Omgevingswaarderegel</a>
+                        
+                        [ 1 .. * ]
+                        
+                        <a class="link" href="#detail_association_Regel_Omgevingswaarderegel_omgevingswaardeaanduiding">beschrijft een norm: omgevingswaardeaanduiding</a>
+                        
+                        Omgevingswaarde
+                        [ 0 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>Bij een regel die een omgevingsnorm of omgevingswaarde vastlegt geeft deze relatie
+                           aan om welke norm het gaat. De bijbehorende locatie(s) waar het om gaat is/zijn bij
+                           de normwaardes van de norm zelf te vinden.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Omgevingswaarde
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_Regel_Norm">Norm</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Een omgevingswaarde of een omgevingsnorm, met een normatief karakter, die beschreven
+                           worden middels normwaarden. Een normwaarde kan kwalitatief of kwantitatief zijn.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_Regel_Activiteit">
+            <h5>   Activiteit</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Activiteit</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>
+                        IMOW
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Een activiteit is ieder menselijk handelen waarbij, of ieder menselijk nalaten waardoor
+                           een verandering of effect in de fysieke leefomgeving wordt of kan worden bewerkstelligd.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>
+                        Omgevingswet
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Datum opname</th>
+                     <td>
+                        2-10-2018
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        
+                        <p>Er wordt niet een activiteit bedoeld die een initiatiefnemer voorgenomen is om uit
+                           te voeren, maar het type activiteit waarover regels opgesteld zijn. De regel geeft
+                           aan dat activiteiten van een bepaald type activiteit wel of niet zijn toegestaan zijn
+                           op deze locatie en onder welke voorwaarden. </p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Regel_Activiteit_naam">naam</a>
+                        </td>
+                     <td>
+                        
+                        <p>Een (korte) omschrijving van de activiteit.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Regel_Activiteit_groep">groep</a>
+                        </td>
+                     <td>
+                        
+                        <p>Een categorie, of groep, waaronder een juridische regel valt. Een activiteit kan gecategoriseerd
+                           worden tot een beperkte lijst van activiteitengroepen.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#detail_class_Regel_Activiteitengroep">Activiteitengroep</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Activiteit
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Regel_Activiteit_gerelateerdeActiviteit">gerelateerd: gerelateerde­Activiteit</a>
+                        
+                        
+                        <a class="link" href="#global_class_Regel_Activiteit">Activiteit</a>
+                        
+                        [ 0 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>De regels die gelden voor de gerelateerde activiteit(en) zijn contextueel relevant
+                           voor deze activiteit.</p>
+                        
+                        <p>Toelichting: 
+                           Met contextueel relevant wordt bedoeld dat de regels die gelden voor de gerelateerde
+                           activiteit, binnen die gegeven context ook gelden voor deze activiteit.&nbsp;Bijvoorbeeld
+                           omdat de ene activiteit altijd samen met de andere activiteit(en) worden uitgevoerd
+                           en de regels van beide daarmee allebei tegelijk aan de orde zijn. Als de beschreven
+                           context waarin de regels behorende bij de gerelateerde activiteit gelden niet aan
+                           de orde is, dan gelden de regels van de gerelateerde activiteit niet. </p>
+                        
+                        <p>Of de context aan de orde is, is niet opgenomen als informatie. Deze relatie geeft
+                           daarom, informatiekundig gezien, aan dat elke regel die geldt voor de gerelateerde
+                           activiteit relevant kan zijn voor het uitvoeren van deze activiteit.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Activiteit
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Regel_Activiteit_bovenliggendeActiviteit">is: bovenliggende­Activiteit</a>
+                        
+                        
+                        <a class="link" href="#global_class_Regel_Activiteit">Activiteit</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Met “is (een)” wordt een bepaalde activiteit rechtstreeks verbonden met een andere
+                           activiteit van hetzelfde type (van specifiek naar generiek). </p>
+                        
+                        <p>Toelichting: 
+                           Met een activiteit van hetzelfde type wordt bedoeld dat andere regels (generieker)
+                           contextueel wel of niet relevant kunnen zijn.
+                           Met contextueel relevant wordt bedoeld dat als in de regel staat dat een (generieke)
+                           activiteit van dit type een vergunningplicht geldt, onder bepaalde condities, dat
+                           deze condities worden vergeleken met de specifieke situatie van de (specifieke) activiteit
+                           die de initiatiefnemer voornemens is om te ontplooien. Als deze hieronder vallen,
+                           dan geldt voor de voorgenomen (specifieke) activiteit een vergunningplicht. In andere
+                           gevallen niet, althans niet vanuit deze regels, mogelijk wel vanuit andere regels.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Regel_RegelVoorIedereen">Regel­Voor­Iedereen</a>
+                        
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Regel_RegelVoorIedereen_activiteitaanduiding">instantieert: activiteitaanduiding</a>
+                        
+                        Activiteit
+                        [ 0 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Activiteit
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Basisklasse van het IMOW-model.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
          <section id="global_class_Regel_Omgevingswaarderegel">
             <h5>   Omgevingswaarderegel</h5>
             
@@ -4859,7 +5540,7 @@
                         <a class="link" href="#detail_association_Regel_Omgevingswaarderegel_omgevingswaardeaanduiding">beschrijft een norm: omgevingswaardeaanduiding</a>
                         
                         
-                        <a class="link" href="#global_class_RegelsOpLocatie_Omgevingswaarde">Omgevingswaarde</a>
+                        <a class="link" href="#global_class_Regel_Omgevingswaarde">Omgevingswaarde</a>
                         
                         [ 0 .. * ]
                         </td>
@@ -4936,7 +5617,7 @@
                         <a class="link" href="#detail_association_Regel_RegelVoorIedereen_activiteitaanduiding">instantieert: activiteitaanduiding</a>
                         
                         
-                        <a class="link" href="#global_class_RegelsOpLocatie_Activiteit">Activiteit</a>
+                        <a class="link" href="#global_class_Regel_Activiteit">Activiteit</a>
                         
                         [ 0 .. * ]
                         </td>
@@ -4950,7 +5631,7 @@
                         <a class="link" href="#detail_association_Regel_RegelVoorIedereen_omgevingsnormaanduiding">omgevingsnormaanduiding: omgevingsnormaanduiding</a>
                         
                         
-                        <a class="link" href="#global_class_RegelsOpLocatie_Omgevingsnorm">Omgevingsnorm</a>
+                        <a class="link" href="#global_class_Regel_Omgevingsnorm">Omgevingsnorm</a>
                         
                         [ 0 .. * ]
                         </td>
@@ -5138,7 +5819,7 @@
                         <a class="link" href="#detail_association_Regel_Instructieregel_omgevingsnormaanduiding">omgevingsnormaanduiding: omgevingsnormaanduiding</a>
                         
                         
-                        <a class="link" href="#global_class_RegelsOpLocatie_Omgevingsnorm">Omgevingsnorm</a>
+                        <a class="link" href="#global_class_Regel_Omgevingsnorm">Omgevingsnorm</a>
                         
                         [ 0 .. * ]
                         </td>
@@ -5282,6 +5963,152 @@
             </section>
          </section>
       <section>
+         <h4>Gegevensgroeptypen   </h4>
+         
+         <section id="global_class_Regel_Normwaarde">
+            <h5>Gegevensgroep   Normwaarde</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Normwaarde</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Één van de kwantitatieve of kwalitatieve waarden van een norm. De normwaarde geeft
+                           aan wat de specifieke kwantitatieve of kwalitatieve eisen zijn, inclusief de toewijzing
+                           ervan aan de specifieke locatie(s) waar de normwaarde voor geldt. </p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_Regel_Normwaarde_identificatie">identificatie</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_DatatypenAlgemeen_NEN3610ID">NEN3610ID</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_Regel_Normwaarde_kwalitatieveWaarde">kwalitatieve­Waarde</a>
+                        </td>
+                     <td>
+                        
+                        <p>De toewijzing van een normerende waarde aan een locatie in de vorm van een beschrijving
+                           in woorden. De beschrijving geeft tekstueel de betekenis weer van de normwaarde.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_Regel_Normwaarde_kwantitatieveWaarde">kwantitatieve­Waarde</a>
+                        </td>
+                     <td>
+                        
+                        <p>De numerieke waarde van een norm. </p>
+                        </td>
+                     <td>
+                        REAL
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_Regel_Normwaarde_waardeInRegeltekst">waarde­In­Regeltekst</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Normwaarde
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Regel_Normwaarde_locatieaanduiding">geldt voor: locatieaanduiding</a>
+                        
+                        
+                        <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
+                        
+                        [ 1 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>De verwijzing naar (de identificatie van) de bijbehorende Locatie.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Symbolisatie_SymbolisatieItem">Symbolisatie­Item</a>
+                        
+                        [ 0 .. 1 ]
+                        
+                        <a class="link" href="#detail_association_Symbolisatie_SymbolisatieItem_normwaardeSymbolisatie">symboliseert: normwaarde­Symbolisatie</a>
+                        
+                        Normwaarde
+                        [ 0 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         </section>
+      <section>
          <h4>Codelijsten   </h4>
          
          <table style="width: 100%;">
@@ -5289,8 +6116,40 @@
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
                <tr>
+                  <th><a class="link" href="#detail_class_Regel_Activiteitengroep">Activiteitengroep</a></th>
+                  <td>
+                     
+                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
+                        die buiten het model in een externe waardenlijst worden beheerd. </p>
+                     </td>
+               </tr>
+               <tr>
                   <th><a class="link" href="#detail_class_Regel_Thema">Thema</a></th>
                   <td></td>
+               </tr>
+               <tr>
+                  <th><a class="link" href="#detail_class_Regel_Typenorm">Typenorm</a></th>
+                  <td>
+                     
+                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
+                        die buiten het model in een externe waardenlijst worden beheerd. </p>
+                     </td>
+               </tr>
+               <tr>
+                  <th><a class="link" href="#detail_class_Regel_Omgevingsnormgroep">Omgevingsnormgroep</a></th>
+                  <td>
+                     
+                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
+                        die buiten het model in een externe waardenlijst worden beheerd. </p>
+                     </td>
+               </tr>
+               <tr>
+                  <th><a class="link" href="#detail_class_Regel_Omgevingswaardegroep">Omgevingswaardegroep</a></th>
+                  <td>
+                     
+                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
+                        die buiten het model in een externe waardenlijst worden beheerd. </p>
+                     </td>
                </tr>
                <tr>
                   <th><a class="link" href="#detail_class_Regel_Instrument">Instrument</a></th>
@@ -5608,6 +6467,803 @@
                   </div>
                </section>
             
+            <section id="detail_class_Regel_Norm">
+               <h6>   Norm</h6>
+               
+               <div class="deepheader" id="detail_attribute_Regel_Norm_naam">
+                  <h7>Attribuutsoort details  <a href="#global_class_Regel_Norm">Norm</a> naam</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>naam</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              OW
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              de mensleesbare beschrijving waarmee een Locatie wordt aangeduid. 
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              OW
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Regel_Norm_type">
+                  <h7>Attribuutsoort details  <a href="#global_class_Regel_Norm">Norm</a> type</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>type</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_Regel_Typenorm">Typenorm</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Regel_Norm_eenheid">
+                  <h7>Attribuutsoort details  <a href="#global_class_Regel_Norm">Norm</a> eenheid</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>eenheid</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_DatatypenAlgemeen_Eenheid">Eenheid</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="notoc" id="detail_attribute_Regel_Norm_normwaarde">
+                  <h7>Gegevensgroep  <a href="#global_class_Regel_Norm">Norm</a> normwaarde</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr></tr>
+                        <tr>
+                           <th>Naam</th>
+                           <td>normwaarde</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_Regel_Normwaarde">Normwaarde</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1 .. *</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_class_Regel_Normwaarde">
+                  <h7>Gegevensgroeptype   Normwaarde</h7>
+                  
+                  <div class="deepheader" id="detail_attribute_Regel_Normwaarde_identificatie">
+                     <h8>Attribuutsoort details  <a href="#global_class_Regel_Normwaarde">Normwaarde</a> identificatie</h8>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>identificatie</td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="link" href="#detail_class_DatatypenAlgemeen_NEN3610ID">NEN3610ID</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie classificerend</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie identificerend</th>
+                              <td>Ja</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div class="deepheader" id="detail_attribute_Regel_Normwaarde_kwalitatieveWaarde">
+                     <h8>Attribuutsoort details  <a href="#global_class_Regel_Normwaarde">Normwaarde</a> kwalitatieve­Waarde</h8>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>kwalitatieve­Waarde</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 
+                                 <p>De toewijzing van een normerende waarde aan een locatie in de vorm van een beschrijving
+                                    in woorden. De beschrijving geeft tekstueel de betekenis weer van de normwaarde.</p>
+                                 
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>CHARACTERSTRING</td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td>..255</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>0 .. 1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie classificerend</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie identificerend</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div class="deepheader" id="detail_attribute_Regel_Normwaarde_kwantitatieveWaarde">
+                     <h8>Attribuutsoort details  <a href="#global_class_Regel_Normwaarde">Normwaarde</a> kwantitatieve­Waarde</h8>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>kwantitatieve­Waarde</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 
+                                 <p>De numerieke waarde van een norm. </p>
+                                 
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>REAL</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>0 .. 1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie classificerend</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie identificerend</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div class="deepheader" id="detail_attribute_Regel_Normwaarde_waardeInRegeltekst">
+                     <h8>Attribuutsoort details  <a href="#global_class_Regel_Normwaarde">Normwaarde</a> waarde­In­Regeltekst</h8>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>waarde­In­Regeltekst</td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>CHARACTERSTRING</td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td>..80</td>
+                           </tr>
+                           <tr>
+                              <th>Formeel patroon</th>
+                              <td>^waarde staat in regeltekst$</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>0 .. 1</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie classificerend</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie identificerend</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div class="notoc" id="detail_association_Regel_Normwaarde_locatieaanduiding">
+                     <h8>Relatiesoort    geldt voor van gegevensgroeptype </h8>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>geldt voor</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td>
+                                 IMOW
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 
+                                 <p>De specifieke locatie(s) waarvoor een specifieke normwaarde geldt.</p>
+                                 
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td>
+                                 Omgevingswet
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td>
+                                 10-9-2019
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1 .. *</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  </div>
+               </section>
+            
+            <section id="detail_class_Regel_Omgevingsnorm">
+               <h6>   Omgevingsnorm</h6>
+               
+               <div class="deepheader" id="detail_attribute_Regel_Omgevingsnorm_groep">
+                  <h7>Attribuutsoort details  <a href="#global_class_Regel_Omgevingsnorm">Omgevingsnorm</a> groep</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>groep</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              IMOW
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Een categorie, of groep, waaronder een omgevingsnorm valt.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              Omgevingswet
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              18-7-2019
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_Regel_Omgevingsnormgroep">Omgevingsnormgroep</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_Regel_Omgevingswaarde">
+               <h6>   Omgevingswaarde</h6>
+               
+               <div class="deepheader" id="detail_attribute_Regel_Omgevingswaarde_groep">
+                  <h7>Attribuutsoort details  <a href="#global_class_Regel_Omgevingswaarde">Omgevingswaarde</a> groep</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>groep</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Een categorie, of groep, waaronder een omgevingswaarde valt.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_Regel_Omgevingswaardegroep">Omgevingswaardegroep</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_Regel_Activiteit">
+               <h6>   Activiteit</h6>
+               
+               <div class="deepheader" id="detail_attribute_Regel_Activiteit_naam">
+                  <h7>Attribuutsoort details  <a href="#global_class_Regel_Activiteit">Activiteit</a> naam</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>naam</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              IMOW
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Een (korte) omschrijving van de activiteit.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              Omgevingswet
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              18-7-2019
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>..255</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Regel_Activiteit_groep">
+                  <h7>Attribuutsoort details  <a href="#global_class_Regel_Activiteit">Activiteit</a> groep</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>groep</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              IMOW
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Een categorie, of groep, waaronder een juridische regel valt. Een activiteit kan gecategoriseerd
+                                 worden tot een beperkte lijst van activiteitengroepen.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              Omgevingswet
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              18-7-2019
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_Regel_Activiteitengroep">Activiteitengroep</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Regel_Activiteit_gerelateerdeActiviteit">
+                  <h7>Relatiesoort details  <a href="#global_class_Regel_Activiteit">Activiteit</a> gerelateerd</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>gerelateerd</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>De regels die gelden voor de gerelateerde activiteit(en) zijn contextueel relevant
+                                 voor deze activiteit.</p>
+                              
+                              <p>Toelichting: 
+                                 Met contextueel relevant wordt bedoeld dat de regels die gelden voor de gerelateerde
+                                 activiteit, binnen die gegeven context ook gelden voor deze activiteit.&nbsp;Bijvoorbeeld
+                                 omdat de ene activiteit altijd samen met de andere activiteit(en) worden uitgevoerd
+                                 en de regels van beide daarmee allebei tegelijk aan de orde zijn. Als de beschreven
+                                 context waarin de regels behorende bij de gerelateerde activiteit gelden niet aan
+                                 de orde is, dan gelden de regels van de gerelateerde activiteit niet. </p>
+                              
+                              <p>Of de context aan de orde is, is niet opgenomen als informatie. Deze relatie geeft
+                                 daarom, informatiekundig gezien, aan dat elke regel die geldt voor de gerelateerde
+                                 activiteit relevant kan zijn voor het uitvoeren van deze activiteit.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Regel_Activiteit">Activiteit</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. *</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Regel_Activiteit_bovenliggendeActiviteit">
+                  <h7>Relatiesoort details  <a href="#global_class_Regel_Activiteit">Activiteit</a> is</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>is</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Met “is (een)” wordt een bepaalde activiteit rechtstreeks verbonden met een andere
+                                 activiteit van hetzelfde type (van specifiek naar generiek). </p>
+                              
+                              <p>Toelichting: 
+                                 Met een activiteit van hetzelfde type wordt bedoeld dat andere regels (generieker)
+                                 contextueel wel of niet relevant kunnen zijn.
+                                 Met contextueel relevant wordt bedoeld dat als in de regel staat dat een (generieke)
+                                 activiteit van dit type een vergunningplicht geldt, onder bepaalde condities, dat
+                                 deze condities worden vergeleken met de specifieke situatie van de (specifieke) activiteit
+                                 die de initiatiefnemer voornemens is om te ontplooien. Als deze hieronder vallen,
+                                 dan geldt voor de voorgenomen (specifieke) activiteit een vergunningplicht. In andere
+                                 gevallen niet, althans niet vanuit deze regels, mogelijk wel vanuit andere regels.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Regel_Activiteit">Activiteit</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
             <section id="detail_class_Regel_Omgevingswaarderegel">
                <h6>   Omgevingswaarderegel</h6>
                
@@ -5649,7 +7305,7 @@
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_RegelsOpLocatie_Omgevingswaarde">Omgevingswaarde</a>
+                              <a class="link" href="#global_class_Regel_Omgevingswaarde">Omgevingswaarde</a>
                               </td>
                         </tr>
                         <tr>
@@ -5683,7 +7339,7 @@
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_RegelsOpLocatie_Activiteit">Activiteit</a>
+                              <a class="link" href="#global_class_Regel_Activiteit">Activiteit</a>
                               </td>
                         </tr>
                         <tr>
@@ -5709,7 +7365,7 @@
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_RegelsOpLocatie_Omgevingsnorm">Omgevingsnorm</a>
+                              <a class="link" href="#global_class_Regel_Omgevingsnorm">Omgevingsnorm</a>
                               </td>
                         </tr>
                         <tr>
@@ -5886,7 +7542,7 @@
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_RegelsOpLocatie_Omgevingsnorm">Omgevingsnorm</a>
+                              <a class="link" href="#global_class_Regel_Omgevingsnorm">Omgevingsnorm</a>
                               </td>
                         </tr>
                         <tr>
@@ -6029,6 +7685,248 @@
                </section>
             </section>
          
+         <section>
+            <h5>Gegevensgroeptype details  </h5>
+            
+            <section id="detail_class_Regel_Normwaarde">
+               <h6>Gegevensgroeptype   Normwaarde</h6>
+               
+               <div class="deepheader" id="detail_attribute_Regel_Normwaarde_identificatie">
+                  <h7>Attribuutsoort details  <a href="#global_class_Regel_Normwaarde">Normwaarde</a> identificatie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>identificatie</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="link" href="#detail_class_DatatypenAlgemeen_NEN3610ID">NEN3610ID</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Ja</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Regel_Normwaarde_kwalitatieveWaarde">
+                  <h7>Attribuutsoort details  <a href="#global_class_Regel_Normwaarde">Normwaarde</a> kwalitatieve­Waarde</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>kwalitatieve­Waarde</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>De toewijzing van een normerende waarde aan een locatie in de vorm van een beschrijving
+                                 in woorden. De beschrijving geeft tekstueel de betekenis weer van de normwaarde.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>..255</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Regel_Normwaarde_kwantitatieveWaarde">
+                  <h7>Attribuutsoort details  <a href="#global_class_Regel_Normwaarde">Normwaarde</a> kwantitatieve­Waarde</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>kwantitatieve­Waarde</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>De numerieke waarde van een norm. </p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>REAL</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Regel_Normwaarde_waardeInRegeltekst">
+                  <h7>Attribuutsoort details  <a href="#global_class_Regel_Normwaarde">Normwaarde</a> waarde­In­Regeltekst</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>waarde­In­Regeltekst</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>..80</td>
+                        </tr>
+                        <tr>
+                           <th>Formeel patroon</th>
+                           <td>^waarde staat in regeltekst$</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="notoc" id="detail_association_Regel_Normwaarde_locatieaanduiding">
+                  <h7>Relatiesoort    geldt voor van gegevensgroeptype </h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>geldt voor</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>
+                              IMOW
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>De specifieke locatie(s) waarvoor een specifieke normwaarde geldt.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>
+                              Omgevingswet
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Datum opname</th>
+                           <td>
+                              10-9-2019
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            </section>
          
          
          
@@ -6156,1962 +8054,6 @@
          
          </section>
    </section>
-   <section id="global_package_RegelsOpLocatie">
-      <h3>Domein   Regels­Op­Locatie</h3>
-      <section id="EAID_B1EED65E_0C8D_4b31_9507_220973FD2394">
-         <h4>   Regels voor een locatie - overzicht</h4>
-         <div class="imageinfo overview">
-            <figure><img src="data/Images/EAID_B1EED65E_0C8D_4b31_9507_220973FD2394.png" usemap="#imagemap-EAID_B1EED65E_0C8D_4b31_9507_220973FD2394" alt="Diagram &#xA;                        &#xA;                     "><figcaption>Regels voor een locatie</figcaption>
-            </figure><map name="imagemap-EAID_B1EED65E_0C8D_4b31_9507_220973FD2394"><area shape="rect" alt="" coords="197,1312,347,1380" href="#global_class_GebiedsAanwijzing_Gebiedsaanwijzinggroep"><area shape="rect" alt="NEN3610ID" coords="577,1558,789,1751" href="#global_class_DatatypenAlgemeen_NEN3610ID"><area shape="rect" alt="Lijnengroep" coords="1026,1298,1192,1395" href="#global_class_Locatie_Lijnengroep"><area shape="rect" alt="Puntengroep" coords="1026,1462,1192,1559" href="#global_class_Locatie_Puntengroep"><area shape="rect" alt="Lijn" coords="1328,1244,1717,1417" href="#global_class_Locatie_Lijn"><area shape="rect" alt="Punt" coords="1328,1421,1714,1595" href="#global_class_Locatie_Punt"><area shape="rect" alt="WaardeEenheid" coords="823,1626,1029,1748" href="#global_class_DatatypenAlgemeen_WaardeEenheid"><area shape="rect" alt="Gebiedengroep" coords="1026,1121,1192,1218" href="#global_class_Locatie_Gebiedengroep"><area shape="rect" alt="Gebiedsaanwijzing" coords="29,1066,349,1267" href="#global_class_GebiedsAanwijzing_Gebiedsaanwijzing"><area shape="rect" alt="Normwaarde" coords="805,558,1271,793" href="#global_class_RegelsOpLocatie_Normwaarde"><area shape="rect" alt="Norm" coords="1498,332,1871,638" href="#global_class_RegelsOpLocatie_Norm"><area shape="rect" alt="Gebied" coords="1328,1066,2173,1240" href="#global_class_Locatie_Gebied"><area shape="rect" alt="Locatie" coords="659,1074,947,1234" href="#global_class_Locatie_Locatie"><area shape="rect" alt="JuridischeRegel" coords="618,14,1110,355" href="#global_class_Regel_JuridischeRegel"><area shape="rect" alt="Omgevingswaarde" coords="1320,715,1618,851" href="#global_class_RegelsOpLocatie_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="1689,715,1987,851" href="#global_class_RegelsOpLocatie_Omgevingsnorm"><area shape="rect" alt="Activiteit" coords="145,697,614,873" href="#global_class_RegelsOpLocatie_Activiteit"></map></div>
-      </section>
-      <section>
-         <h4>Objecttypen   </h4>
-         
-         <section id="global_class_RegelsOpLocatie_Norm">
-            <h5>   Norm</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Norm</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Een omgevingswaarde of een omgevingsnorm, met een normatief karakter, die beschreven
-                           worden middels normwaarden. Een normwaarde kan kwalitatief of kwantitatief zijn.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Ja</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Norm_naam">naam</a>
-                        </td>
-                     <td>de mensleesbare beschrijving waarmee een Locatie wordt aangeduid. </td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Norm_type">type</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        <a class="link" href="#global_class_RegelsOpLocatie_Typenorm">Typenorm</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Norm_eenheid">eenheid</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        <a class="link" href="#detail_class_DatatypenAlgemeen_Eenheid">Eenheid</a>
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Norm_normwaarde">normwaarde</a>
-                        :</td>
-                     <td></td>
-                     <td>
-                        <a class="link" href="#detail_class_RegelsOpLocatie_Normwaarde">Normwaarde</a>
-                        </td>
-                     <td>1 .. *</td>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Normwaarde_identificatie">identificatie</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        <a class="link" href="#global_class_DatatypenAlgemeen_NEN3610ID">NEN3610ID</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Normwaarde_kwalitatieveWaarde">kwalitatieve­Waarde</a>
-                        </td>
-                     <td>
-                        
-                        <p>De toewijzing van een normerende waarde aan een locatie in de vorm van een beschrijving
-                           in woorden. De beschrijving geeft tekstueel de betekenis weer van de normwaarde.</p>
-                        </td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Normwaarde_kwantitatieveWaarde">kwantitatieve­Waarde</a>
-                        </td>
-                     <td>
-                        
-                        <p>De numerieke waarde van een norm. </p>
-                        </td>
-                     <td>
-                        REAL
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Normwaarde_waardeInRegeltekst">waarde­In­Regeltekst</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_association_RegelsOpLocatie_Normwaarde_locatieaanduiding">geldt voor</a>
-                        </td>
-                     <td>
-                        
-                        <p>De specifieke locatie(s) waarvoor een specifieke normwaarde geldt.</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
-                        </td>
-                     <td>1 .. *</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Kaart_Kaartlaag">Kaartlaag</a>
-                        
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_Kaart_Kaartlaag_normweergave">normweergave: normweergave</a>
-                        
-                        Norm
-                        [ 0 .. * ]
-                        </td>
-                     <td>
-                        
-                        <p>De verbeelding van een norm</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Norm
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Basisklasse van het IMOW-model.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_RegelsOpLocatie_Omgevingsnorm">
-            <h5>   Omgevingsnorm</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Omgevingsnorm</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>
-                        IMOW
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>De in een meetbare waarde uit te drukken norm (anders dan een omgevingswaarde) die
-                           het bevoegd gezag op verschillende locaties verschillende waarden wil geven die het
-                           inzichtelijk wil weergeven.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>
-                        Omgevingswet
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Datum opname</th>
-                     <td>
-                        2-10-2018
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Omgevingsnorm_groep">groep</a>
-                        </td>
-                     <td>
-                        
-                        <p>Een categorie, of groep, waaronder een omgevingsnorm valt.</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#detail_class_RegelsOpLocatie_Omgevingsnormgroep">Omgevingsnormgroep</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Regel_RegelVoorIedereen">Regel­Voor­Iedereen</a>
-                        
-                        [ 0 .. * ]
-                        
-                        <a class="link" href="#detail_association_Regel_RegelVoorIedereen_omgevingsnormaanduiding">omgevingsnormaanduiding: omgevingsnormaanduiding</a>
-                        
-                        Omgevingsnorm
-                        [ 0 .. * ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Regel_Instructieregel">Instructieregel</a>
-                        
-                        [ 0 .. * ]
-                        
-                        <a class="link" href="#detail_association_Regel_Instructieregel_omgevingsnormaanduiding">omgevingsnormaanduiding: omgevingsnormaanduiding</a>
-                        
-                        Omgevingsnorm
-                        [ 0 .. * ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Omgevingsnorm
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_RegelsOpLocatie_Norm">Norm</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Een omgevingswaarde of een omgevingsnorm, met een normatief karakter, die beschreven
-                           worden middels normwaarden. Een normwaarde kan kwalitatief of kwantitatief zijn.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_RegelsOpLocatie_Omgevingswaarde">
-            <h5>   Omgevingswaarde</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Omgevingswaarde</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Norm die de gewenste staat of kwaliteit van (een onderdeel van) de fysieke leefomgeving,
-                           de toelaatbare belasting door activiteiten en/of de toelaatbare concentratie of depositie
-                           van stoffen als beleidsdoel vastlegt. </p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        
-                        <p>Omgevingswaarden is één van de instrumenten waarmee overheden het beleid van een omgevingsvisie
-                           kunnen uitvoeren. Omgevingswaarden zijn bedoeld om een veilige en gezonde fysieke
-                           leefomgeving en een goede omgevingskwaliteit te bereiken en in stand te houden. Bestaande
-                           begrippen als grenswaarde, streefwaarde en richtwaarde voor milieukwaliteit en andere
-                           waarden over de staat of kwaliteit van onder de fysieke leefomgeving vallende onderdelen,
-                           structuren of aspecten worden samengebracht in het begrip
-                           omgevingswaarde. </p>
-                        
-                        <p>Het Rijk stelt omgevingswaarden vast in het Besluit kwaliteit leefomgeving, de provincie
-                           in een omgevingsverordening en de gemeente in een omgevingsplan. De mogelijkheid –
-                           en in een aantal gevallen de verplichting – voor de overheid om omgevingswaarden vast
-                           te stellen staat in artikel 2.9 en verder van de Omgevingswet.
-                           Het Rijk stelt in het Besluit kwaliteit leefomgeving omgevingswaarden voor:
-                           luchtkwaliteit
-                           waterkwaliteit
-                           zwemwaterkwaliteit
-                           waterveiligheid</p>
-                        
-                        <p>Naast deze verplichte rijksomgevingswaarden is alleen de provincie verplicht om omgevingswaarden
-                           te stellen voor twee onderwerpen op het terrein van waterveiligheid.
-                           Los van deze verplichtingen mogen gemeenten, Rijk en provincies ook voor andere onderwerpen
-                           omgevingswaarden te stellen. Voor bijvoorbeeld de geur van veehouderijen of voor lichthinder
-                           zijn ook omgevingswaarden denkbaar. Gemeenten mogen alleen omgevingswaarden vaststellen
-                           op terreinen waar rijk of provincie geen omgevingswaarden hebben vastgesteld. </p>
-                        
-                        <p>Een andere mogelijkheid die de regelgeving biedt is dat een gemeente of provincie
-                           voor luchtkwaliteit aanvullende of strengere omgevingswaarden vastlegt dan die het
-                           Rijk heeft vastgesteld. Voor omgevingswaarden voor waterkwaliteit die het Rijk heeft
-                           vastgesteld mag alleen de provincie aanvullende waarden vastleggen.</p>
-                        
-                        <p>Bron van deze toelichting: https://aandeslagmetdeomgevingswet.nl/wetsinstrumenten/instrumenten/omgevingswaarde/artikel/<br clear="none">
-                           </p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Omgevingswaarde_groep">groep</a>
-                        </td>
-                     <td>
-                        
-                        <p>Een categorie, of groep, waaronder een omgevingswaarde valt.</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#detail_class_RegelsOpLocatie_Omgevingswaardegroep">Omgevingswaardegroep</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Regel_Omgevingswaarderegel">Omgevingswaarderegel</a>
-                        
-                        [ 1 .. * ]
-                        
-                        <a class="link" href="#detail_association_Regel_Omgevingswaarderegel_omgevingswaardeaanduiding">beschrijft een norm: omgevingswaardeaanduiding</a>
-                        
-                        Omgevingswaarde
-                        [ 0 .. * ]
-                        </td>
-                     <td>
-                        
-                        <p>Bij een regel die een omgevingsnorm of omgevingswaarde vastlegt geeft deze relatie
-                           aan om welke norm het gaat. De bijbehorende locatie(s) waar het om gaat is/zijn bij
-                           de normwaardes van de norm zelf te vinden.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Omgevingswaarde
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_RegelsOpLocatie_Norm">Norm</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Een omgevingswaarde of een omgevingsnorm, met een normatief karakter, die beschreven
-                           worden middels normwaarden. Een normwaarde kan kwalitatief of kwantitatief zijn.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_RegelsOpLocatie_Activiteit">
-            <h5>   Activiteit</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Activiteit</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>
-                        IMOW
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Een activiteit is ieder menselijk handelen waarbij, of ieder menselijk nalaten waardoor
-                           een verandering of effect in de fysieke leefomgeving wordt of kan worden bewerkstelligd.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>
-                        Omgevingswet
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Datum opname</th>
-                     <td>
-                        2-10-2018
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Activiteit_naam">naam</a>
-                        </td>
-                     <td>
-                        
-                        <p>Een (korte) omschrijving van de activiteit.</p>
-                        </td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Activiteit_groep">groep</a>
-                        </td>
-                     <td>
-                        
-                        <p>Een categorie, of groep, waaronder een juridische regel valt. Een activiteit kan gecategoriseerd
-                           worden tot een beperkte lijst van activiteitengroepen.</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#detail_class_RegelsOpLocatie_Activiteitengroep">Activiteitengroep</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Activiteit
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_RegelsOpLocatie_Activiteit_gerelateerdeActiviteit">gerelateerd: gerelateerde­Activiteit</a>
-                        
-                        
-                        <a class="link" href="#global_class_RegelsOpLocatie_Activiteit">Activiteit</a>
-                        
-                        [ 0 .. * ]
-                        </td>
-                     <td>
-                        
-                        <p>De regels die gelden voor de gerelateerde activiteit(en) zijn contextueel relevant
-                           voor deze activiteit.</p>
-                        
-                        <p>Toelichting: 
-                           Met contextueel relevant wordt bedoeld dat de regels die gelden voor de gerelateerde
-                           activiteit, binnen die gegeven context ook gelden voor deze activiteit.&nbsp;Bijvoorbeeld
-                           omdat de ene activiteit altijd samen met de andere activiteit(en) worden uitgevoerd
-                           en de regels van beide daarmee allebei tegelijk aan de orde zijn. Als de beschreven
-                           context waarin de regels behorende bij de gerelateerde activiteit gelden niet aan
-                           de orde is, dan gelden de regels van de gerelateerde activiteit niet. </p>
-                        
-                        <p>Of de context aan de orde is, is niet opgenomen als informatie. Deze relatie geeft
-                           daarom, informatiekundig gezien, aan dat elke regel die geldt voor de gerelateerde
-                           activiteit relevant kan zijn voor het uitvoeren van deze activiteit.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Activiteit
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_RegelsOpLocatie_Activiteit_bovenliggendeActiviteit">is: bovenliggende­Activiteit</a>
-                        
-                        
-                        <a class="link" href="#global_class_RegelsOpLocatie_Activiteit">Activiteit</a>
-                        
-                        [ 1 ]
-                        </td>
-                     <td>
-                        
-                        <p>Met “is (een)” wordt een bepaalde activiteit rechtstreeks verbonden met een andere
-                           activiteit van hetzelfde type (van specifiek naar generiek). </p>
-                        
-                        <p>Toelichting: 
-                           Met een activiteit van hetzelfde type wordt bedoeld dat andere regels (generieker)
-                           contextueel wel of niet relevant kunnen zijn.
-                           Met contextueel relevant wordt bedoeld dat als in de regel staat dat een (generieke)
-                           activiteit van dit type een vergunningplicht geldt, onder bepaalde condities, dat
-                           deze condities worden vergeleken met de specifieke situatie van de (specifieke) activiteit
-                           die de initiatiefnemer voornemens is om te ontplooien. Als deze hieronder vallen,
-                           dan geldt voor de voorgenomen (specifieke) activiteit een vergunningplicht. In andere
-                           gevallen niet, althans niet vanuit deze regels, mogelijk wel vanuit andere regels.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Regel_RegelVoorIedereen">Regel­Voor­Iedereen</a>
-                        
-                        [ 0 .. * ]
-                        
-                        <a class="link" href="#detail_association_Regel_RegelVoorIedereen_activiteitaanduiding">instantieert: activiteitaanduiding</a>
-                        
-                        Activiteit
-                        [ 0 .. * ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Activiteit
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Basisklasse van het IMOW-model.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         </section>
-      <section>
-         <h4>Gegevensgroeptypen   </h4>
-         
-         <section id="global_class_RegelsOpLocatie_Normwaarde">
-            <h5>Gegevensgroep   Normwaarde</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Normwaarde</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Één van de kwantitatieve of kwalitatieve waarden van een norm. De normwaarde geeft
-                           aan wat de specifieke kwantitatieve of kwalitatieve eisen zijn, inclusief de toewijzing
-                           ervan aan de specifieke locatie(s) waar de normwaarde voor geldt. </p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Normwaarde_identificatie">identificatie</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        <a class="link" href="#global_class_DatatypenAlgemeen_NEN3610ID">NEN3610ID</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Normwaarde_kwalitatieveWaarde">kwalitatieve­Waarde</a>
-                        </td>
-                     <td>
-                        
-                        <p>De toewijzing van een normerende waarde aan een locatie in de vorm van een beschrijving
-                           in woorden. De beschrijving geeft tekstueel de betekenis weer van de normwaarde.</p>
-                        </td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Normwaarde_kwantitatieveWaarde">kwantitatieve­Waarde</a>
-                        </td>
-                     <td>
-                        
-                        <p>De numerieke waarde van een norm. </p>
-                        </td>
-                     <td>
-                        REAL
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_attribute_RegelsOpLocatie_Normwaarde_waardeInRegeltekst">waarde­In­Regeltekst</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Normwaarde
-                        [ 0 .. * ]
-                        
-                        <a class="link" href="#detail_association_RegelsOpLocatie_Normwaarde_locatieaanduiding">geldt voor: locatieaanduiding</a>
-                        
-                        
-                        <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
-                        
-                        [ 1 .. * ]
-                        </td>
-                     <td>
-                        
-                        <p>De verwijzing naar (de identificatie van) de bijbehorende Locatie.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Symbolisatie_SymbolisatieItem">Symbolisatie­Item</a>
-                        
-                        [ 0 .. 1 ]
-                        
-                        <a class="link" href="#detail_association_Symbolisatie_SymbolisatieItem_normwaardeSymbolisatie">symboliseert: normwaarde­Symbolisatie</a>
-                        
-                        Normwaarde
-                        [ 0 .. * ]
-                        </td>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         </section>
-      <section>
-         <h4>Primitieve datatypen   </h4>
-         
-         <section id="global_class_RegelsOpLocatie_Typenorm">
-            <h5>Primitief datatype   Typenorm</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Typenorm</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>
-                        IMOW
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
-                           die buiten het model in een externe waardenlijst worden beheerd. </p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Datum opname</th>
-                     <td>
-                        18-7-2019
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section>
-         </section>
-      <section>
-         <h4>Codelijsten   </h4>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th><a class="link" href="#detail_class_RegelsOpLocatie_Activiteitengroep">Activiteitengroep</a></th>
-                  <td>
-                     
-                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
-                        die buiten het model in een externe waardenlijst worden beheerd. </p>
-                     </td>
-               </tr>
-               <tr>
-                  <th><a class="link" href="#detail_class_RegelsOpLocatie_Omgevingsnormgroep">Omgevingsnormgroep</a></th>
-                  <td>
-                     
-                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
-                        die buiten het model in een externe waardenlijst worden beheerd. </p>
-                     </td>
-               </tr>
-               <tr>
-                  <th><a class="link" href="#detail_class_RegelsOpLocatie_Omgevingswaardegroep">Omgevingswaardegroep</a></th>
-                  <td>
-                     
-                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
-                        die buiten het model in een externe waardenlijst worden beheerd. </p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         </section>
-      <section>
-         <h4>Attribuut- en relatiesoort details  </h4>
-         
-         <section>
-            <h5>Objecttype details  </h5>
-            
-            <section id="detail_class_RegelsOpLocatie_Norm">
-               <h6>   Norm</h6>
-               
-               <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Norm_naam">
-                  <h7>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Norm">Norm</a> naam</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>naam</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              OW
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              de mensleesbare beschrijving waarmee een Locatie wordt aangeduid. 
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              OW
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>
-                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Norm_type">
-                  <h7>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Norm">Norm</a> type</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>type</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#global_class_RegelsOpLocatie_Typenorm">Typenorm</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>
-                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Norm_eenheid">
-                  <h7>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Norm">Norm</a> eenheid</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>eenheid</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_DatatypenAlgemeen_Eenheid">Eenheid</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>
-                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="notoc" id="detail_attribute_RegelsOpLocatie_Norm_normwaarde">
-                  <h7>Gegevensgroep  <a href="#global_class_RegelsOpLocatie_Norm">Norm</a> normwaarde</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr></tr>
-                        <tr>
-                           <th>Naam</th>
-                           <td>normwaarde</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_RegelsOpLocatie_Normwaarde">Normwaarde</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1 .. *</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_class_RegelsOpLocatie_Normwaarde">
-                  <h7>Gegevensgroeptype   Normwaarde</h7>
-                  
-                  <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Normwaarde_identificatie">
-                     <h8>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Normwaarde">Normwaarde</a> identificatie</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>identificatie</td>
-                           </tr>
-                           <tr>
-                              <th>Formaat</th>
-                              <td>
-                                 <a class="link" href="#detail_class_DatatypenAlgemeen_NEN3610ID">NEN3610ID</a>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie classificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie identificerend</th>
-                              <td>Ja</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Normwaarde_kwalitatieveWaarde">
-                     <h8>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Normwaarde">Normwaarde</a> kwalitatieve­Waarde</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>kwalitatieve­Waarde</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 
-                                 <p>De toewijzing van een normerende waarde aan een locatie in de vorm van een beschrijving
-                                    in woorden. De beschrijving geeft tekstueel de betekenis weer van de normwaarde.</p>
-                                 
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Formaat</th>
-                              <td>CHARACTERSTRING</td>
-                           </tr>
-                           <tr>
-                              <th>Lengte</th>
-                              <td>..255</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie kardinaliteit</th>
-                              <td>0 .. 1</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie classificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie identificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Normwaarde_kwantitatieveWaarde">
-                     <h8>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Normwaarde">Normwaarde</a> kwantitatieve­Waarde</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>kwantitatieve­Waarde</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 
-                                 <p>De numerieke waarde van een norm. </p>
-                                 
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Formaat</th>
-                              <td>REAL</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie kardinaliteit</th>
-                              <td>0 .. 1</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie classificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie identificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Normwaarde_waardeInRegeltekst">
-                     <h8>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Normwaarde">Normwaarde</a> waarde­In­Regeltekst</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>waarde­In­Regeltekst</td>
-                           </tr>
-                           <tr>
-                              <th>Formaat</th>
-                              <td>CHARACTERSTRING</td>
-                           </tr>
-                           <tr>
-                              <th>Lengte</th>
-                              <td>..80</td>
-                           </tr>
-                           <tr>
-                              <th>Formeel patroon</th>
-                              <td>^waarde staat in regeltekst$</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie kardinaliteit</th>
-                              <td>0 .. 1</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie classificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie identificerend</th>
-                              <td>Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div class="notoc" id="detail_association_RegelsOpLocatie_Normwaarde_locatieaanduiding">
-                     <h8>Relatiesoort    geldt voor van gegevensgroeptype </h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>geldt voor</td>
-                           </tr>
-                           <tr>
-                              <th>Herkomst</th>
-                              <td>
-                                 IMOW
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 
-                                 <p>De specifieke locatie(s) waarvoor een specifieke normwaarde geldt.</p>
-                                 
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Herkomst definitie</th>
-                              <td>
-                                 Omgevingswet
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Datum opname</th>
-                              <td>
-                                 10-9-2019
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie kardinaliteit</th>
-                              <td>1 .. *</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  </div>
-               </section>
-            
-            <section id="detail_class_RegelsOpLocatie_Omgevingsnorm">
-               <h6>   Omgevingsnorm</h6>
-               
-               <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Omgevingsnorm_groep">
-                  <h7>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Omgevingsnorm">Omgevingsnorm</a> groep</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>groep</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              IMOW
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Een categorie, of groep, waaronder een omgevingsnorm valt.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              Omgevingswet
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              18-7-2019
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_RegelsOpLocatie_Omgevingsnormgroep">Omgevingsnormgroep</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_RegelsOpLocatie_Omgevingswaarde">
-               <h6>   Omgevingswaarde</h6>
-               
-               <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Omgevingswaarde_groep">
-                  <h7>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Omgevingswaarde">Omgevingswaarde</a> groep</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>groep</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Een categorie, of groep, waaronder een omgevingswaarde valt.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_RegelsOpLocatie_Omgevingswaardegroep">Omgevingswaardegroep</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_RegelsOpLocatie_Activiteit">
-               <h6>   Activiteit</h6>
-               
-               <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Activiteit_naam">
-                  <h7>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Activiteit">Activiteit</a> naam</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>naam</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              IMOW
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Een (korte) omschrijving van de activiteit.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              Omgevingswet
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              18-7-2019
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>..255</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Activiteit_groep">
-                  <h7>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Activiteit">Activiteit</a> groep</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>groep</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              IMOW
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Een categorie, of groep, waaronder een juridische regel valt. Een activiteit kan gecategoriseerd
-                                 worden tot een beperkte lijst van activiteitengroepen.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              Omgevingswet
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              18-7-2019
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_RegelsOpLocatie_Activiteitengroep">Activiteitengroep</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>
-                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_association_RegelsOpLocatie_Activiteit_gerelateerdeActiviteit">
-                  <h7>Relatiesoort details  <a href="#global_class_RegelsOpLocatie_Activiteit">Activiteit</a> gerelateerd</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>gerelateerd</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>De regels die gelden voor de gerelateerde activiteit(en) zijn contextueel relevant
-                                 voor deze activiteit.</p>
-                              
-                              <p>Toelichting: 
-                                 Met contextueel relevant wordt bedoeld dat de regels die gelden voor de gerelateerde
-                                 activiteit, binnen die gegeven context ook gelden voor deze activiteit.&nbsp;Bijvoorbeeld
-                                 omdat de ene activiteit altijd samen met de andere activiteit(en) worden uitgevoerd
-                                 en de regels van beide daarmee allebei tegelijk aan de orde zijn. Als de beschreven
-                                 context waarin de regels behorende bij de gerelateerde activiteit gelden niet aan
-                                 de orde is, dan gelden de regels van de gerelateerde activiteit niet. </p>
-                              
-                              <p>Of de context aan de orde is, is niet opgenomen als informatie. Deze relatie geeft
-                                 daarom, informatiekundig gezien, aan dat elke regel die geldt voor de gerelateerde
-                                 activiteit relevant kan zijn voor het uitvoeren van deze activiteit.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_RegelsOpLocatie_Activiteit">Activiteit</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. *</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_association_RegelsOpLocatie_Activiteit_bovenliggendeActiviteit">
-                  <h7>Relatiesoort details  <a href="#global_class_RegelsOpLocatie_Activiteit">Activiteit</a> is</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>is</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Met “is (een)” wordt een bepaalde activiteit rechtstreeks verbonden met een andere
-                                 activiteit van hetzelfde type (van specifiek naar generiek). </p>
-                              
-                              <p>Toelichting: 
-                                 Met een activiteit van hetzelfde type wordt bedoeld dat andere regels (generieker)
-                                 contextueel wel of niet relevant kunnen zijn.
-                                 Met contextueel relevant wordt bedoeld dat als in de regel staat dat een (generieke)
-                                 activiteit van dit type een vergunningplicht geldt, onder bepaalde condities, dat
-                                 deze condities worden vergeleken met de specifieke situatie van de (specifieke) activiteit
-                                 die de initiatiefnemer voornemens is om te ontplooien. Als deze hieronder vallen,
-                                 dan geldt voor de voorgenomen (specifieke) activiteit een vergunningplicht. In andere
-                                 gevallen niet, althans niet vanuit deze regels, mogelijk wel vanuit andere regels.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_RegelsOpLocatie_Activiteit">Activiteit</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            </section>
-         
-         <section>
-            <h5>Gegevensgroeptype details  </h5>
-            
-            <section id="detail_class_RegelsOpLocatie_Normwaarde">
-               <h6>Gegevensgroeptype   Normwaarde</h6>
-               
-               <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Normwaarde_identificatie">
-                  <h7>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Normwaarde">Normwaarde</a> identificatie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>identificatie</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>
-                              <a class="link" href="#detail_class_DatatypenAlgemeen_NEN3610ID">NEN3610ID</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Ja</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Normwaarde_kwalitatieveWaarde">
-                  <h7>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Normwaarde">Normwaarde</a> kwalitatieve­Waarde</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>kwalitatieve­Waarde</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>De toewijzing van een normerende waarde aan een locatie in de vorm van een beschrijving
-                                 in woorden. De beschrijving geeft tekstueel de betekenis weer van de normwaarde.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>..255</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Normwaarde_kwantitatieveWaarde">
-                  <h7>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Normwaarde">Normwaarde</a> kwantitatieve­Waarde</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>kwantitatieve­Waarde</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>De numerieke waarde van een norm. </p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>REAL</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_RegelsOpLocatie_Normwaarde_waardeInRegeltekst">
-                  <h7>Attribuutsoort details  <a href="#global_class_RegelsOpLocatie_Normwaarde">Normwaarde</a> waarde­In­Regeltekst</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>waarde­In­Regeltekst</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>..80</td>
-                        </tr>
-                        <tr>
-                           <th>Formeel patroon</th>
-                           <td>^waarde staat in regeltekst$</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="notoc" id="detail_association_RegelsOpLocatie_Normwaarde_locatieaanduiding">
-                  <h7>Relatiesoort    geldt voor van gegevensgroeptype </h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>geldt voor</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>
-                              IMOW
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>De specifieke locatie(s) waarvoor een specifieke normwaarde geldt.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>
-                              Omgevingswet
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Datum opname</th>
-                           <td>
-                              10-9-2019
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1 .. *</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            </section>
-         
-         
-         
-         
-         </section>
-   </section>
    <section id="global_package_Symbolisatie">
       <h3>Domein   Symbolisatie</h3>
       <section>
@@ -8224,7 +8166,7 @@
                         <a class="link" href="#detail_association_Symbolisatie_SymbolisatieItem_normwaardeSymbolisatie">symboliseert: normwaarde­Symbolisatie</a>
                         
                         
-                        <a class="link" href="#global_class_RegelsOpLocatie_Normwaarde">Normwaarde</a>
+                        <a class="link" href="#global_class_Regel_Normwaarde">Normwaarde</a>
                         
                         [ 0 .. * ]
                         </td>
@@ -8363,7 +8305,7 @@
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_RegelsOpLocatie_Normwaarde">Normwaarde</a>
+                              <a class="link" href="#global_class_Regel_Normwaarde">Normwaarde</a>
                               </td>
                         </tr>
                         <tr>
@@ -9319,7 +9261,7 @@
                         </td>
                      <td></td>
                      <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        CHARACTERSTRING
                         </td>
                      <td>1</td>
                   </tr>
@@ -9329,7 +9271,7 @@
                         </td>
                      <td></td>
                      <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        CHARACTERSTRING
                         </td>
                      <td>1 .. *</td>
                   </tr>
@@ -9376,7 +9318,7 @@
                         </td>
                      <td></td>
                      <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        CHARACTERSTRING
                         </td>
                      <td>1</td>
                   </tr>
@@ -9386,7 +9328,7 @@
                         </td>
                      <td></td>
                      <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        CHARACTERSTRING
                         </td>
                      <td>1</td>
                   </tr>
@@ -9443,7 +9385,7 @@
                         </td>
                      <td></td>
                      <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        CHARACTERSTRING
                         </td>
                      <td>1</td>
                   </tr>
@@ -9453,7 +9395,7 @@
                         </td>
                      <td></td>
                      <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        CHARACTERSTRING
                         </td>
                      <td>1</td>
                   </tr>
@@ -9494,9 +9436,7 @@
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                              </td>
+                           <td>CHARACTERSTRING</td>
                         </tr>
                         <tr>
                            <th>Lengte</th>
@@ -9527,9 +9467,7 @@
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                              </td>
+                           <td>CHARACTERSTRING</td>
                         </tr>
                         <tr>
                            <th>Lengte</th>
@@ -9564,9 +9502,7 @@
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                              </td>
+                           <td>CHARACTERSTRING</td>
                         </tr>
                         <tr>
                            <th>Lengte</th>
@@ -9597,9 +9533,7 @@
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                              </td>
+                           <td>CHARACTERSTRING</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -9659,9 +9593,7 @@
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                              </td>
+                           <td>CHARACTERSTRING</td>
                         </tr>
                         <tr>
                            <th>Lengte</th>
@@ -9692,9 +9624,7 @@
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                              </td>
+                           <td>CHARACTERSTRING</td>
                         </tr>
                         <tr>
                            <th>Lengte</th>
@@ -9822,6 +9752,31 @@
             </tbody>
          </table>
          </section>
+      <section id="detail_class_Regel_Activiteitengroep">
+         <h4>Codelijst details  Activiteitengroep</h4>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup></colgroup>
+            <tbody>
+               <tr>
+                  <td>
+                     
+                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
+                        die buiten het model in een externe waardenlijst worden beheerd. </p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table style="width: 100%;">
+            <tbody>
+               <tr>
+                  <th>Waarde</th>
+                  <th>Omschrijving</th>
+               </tr>
+            </tbody>
+         </table>
+         </section>
       <section id="detail_class_Regel_Thema">
          <h4>Codelijst details  Thema</h4>
          
@@ -9830,6 +9785,81 @@
             <tbody>
                <tr>
                   <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table style="width: 100%;">
+            <tbody>
+               <tr>
+                  <th>Waarde</th>
+                  <th>Omschrijving</th>
+               </tr>
+            </tbody>
+         </table>
+         </section>
+      <section id="detail_class_Regel_Typenorm">
+         <h4>Codelijst details  Typenorm</h4>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup></colgroup>
+            <tbody>
+               <tr>
+                  <td>
+                     
+                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
+                        die buiten het model in een externe waardenlijst worden beheerd. </p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table style="width: 100%;">
+            <tbody>
+               <tr>
+                  <th>Waarde</th>
+                  <th>Omschrijving</th>
+               </tr>
+            </tbody>
+         </table>
+         </section>
+      <section id="detail_class_Regel_Omgevingsnormgroep">
+         <h4>Codelijst details  Omgevingsnormgroep</h4>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup></colgroup>
+            <tbody>
+               <tr>
+                  <td>
+                     
+                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
+                        die buiten het model in een externe waardenlijst worden beheerd. </p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table style="width: 100%;">
+            <tbody>
+               <tr>
+                  <th>Waarde</th>
+                  <th>Omschrijving</th>
+               </tr>
+            </tbody>
+         </table>
+         </section>
+      <section id="detail_class_Regel_Omgevingswaardegroep">
+         <h4>Codelijst details  Omgevingswaardegroep</h4>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup></colgroup>
+            <tbody>
+               <tr>
+                  <td>
+                     
+                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
+                        die buiten het model in een externe waardenlijst worden beheerd. </p>
+                     </td>
                </tr>
             </tbody>
          </table>
@@ -9924,81 +9954,6 @@
                   <td>
                      
                      <p>Een lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
-                        die buiten het model in een externe waardenlijst worden beheerd. </p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <table style="width: 100%;">
-            <tbody>
-               <tr>
-                  <th>Waarde</th>
-                  <th>Omschrijving</th>
-               </tr>
-            </tbody>
-         </table>
-         </section>
-      <section id="detail_class_RegelsOpLocatie_Activiteitengroep">
-         <h4>Codelijst details  Activiteitengroep</h4>
-         
-         <table style="width: 100%;" class="list">
-            <colgroup></colgroup>
-            <tbody>
-               <tr>
-                  <td>
-                     
-                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
-                        die buiten het model in een externe waardenlijst worden beheerd. </p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <table style="width: 100%;">
-            <tbody>
-               <tr>
-                  <th>Waarde</th>
-                  <th>Omschrijving</th>
-               </tr>
-            </tbody>
-         </table>
-         </section>
-      <section id="detail_class_RegelsOpLocatie_Omgevingsnormgroep">
-         <h4>Codelijst details  Omgevingsnormgroep</h4>
-         
-         <table style="width: 100%;" class="list">
-            <colgroup></colgroup>
-            <tbody>
-               <tr>
-                  <td>
-                     
-                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
-                        die buiten het model in een externe waardenlijst worden beheerd. </p>
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <table style="width: 100%;">
-            <tbody>
-               <tr>
-                  <th>Waarde</th>
-                  <th>Omschrijving</th>
-               </tr>
-            </tbody>
-         </table>
-         </section>
-      <section id="detail_class_RegelsOpLocatie_Omgevingswaardegroep">
-         <h4>Codelijst details  Omgevingswaardegroep</h4>
-         
-         <table style="width: 100%;" class="list">
-            <colgroup></colgroup>
-            <tbody>
-               <tr>
-                  <td>
-                     
-                     <p>Een uitbreidbare lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort,
                         die buiten het model in een externe waardenlijst worden beheerd. </p>
                      </td>
                </tr>
