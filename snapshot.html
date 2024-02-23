@@ -113,7 +113,13 @@ ul.index code{color:inherit}
 #index-defined-here .print-only{display:initial}
 }
 </style>
-<meta name="description" content="Dit document beschrijft het Informatiemodel Omgevingswet (IMOW) dat gebruikt wordt in de keten van plan tot publicatie voor het toekennen van machine-leesbare informatie aan regelingen. Het IMOW is gebaseerd op het conceptuele model CIM-OW. Het CIM-OW hoort bij de reeks conceptuele modellen waarop het Digitaal Stelsel Omgevingswet (DSO) is gebaseerd.  Het IMOW specificeert hoe de concepten van het CIM-OW geïmplementeerd moeten worden en legt vast welke objecten aan het DSO moeten worden aangeleverd.">
+<meta name="description" content="Dit document beschrijft het Informatiemodel Omgevingswet (IMOW) dat gebruikt
+wordt in de keten van plan tot publicatie voor het toekennen van
+machine-leesbare informatie aan regelingen. Het IMOW is gebaseerd op het
+conceptuele model CIM-OW. Het CIM-OW hoort bij de reeks conceptuele modellen
+waarop het Digitaal Stelsel Omgevingswet (DSO) is gebaseerd. Het IMOW
+specificeert hoe de concepten van het CIM-OW geïmplementeerd moeten worden en
+legt vast welke objecten aan het DSO moeten worden aangeleverd.">
 <style>
 
   .sidelabel {
@@ -300,13 +306,12 @@ ul.index code{color:inherit}
       "publisher": "Geonovum",
       "date": "2022-01-07"
     },
-    "LVBB": {
-      "id": "LVBB",
-      "title": "Landelijke voorziening bekendmaken en beschikbaar stellen (LVBB)",
-      "href": "https://standaarden.overheid.nl/stop/lvbb",
+    "LVBBBHKV": {
+      "id": "LVBBBHKV",
+      "title": "Documentatie LVBB Bronhouderkoppelvlak",
+      "href": "https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html",
       "status": "Definitief",
-      "publisher": "Geonovum",
-      "date": "2023-01-09"
+      "publisher": "KOOP"
     },
     "IMOW": {
       "id": "IMOW",
@@ -405,45 +410,126 @@ ul.index code{color:inherit}
         </p>
     <hr title="Separator for header">
   </div>
-  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft het Informatiemodel Omgevingswet (IMOW) dat gebruikt wordt in de keten van plan tot publicatie voor het toekennen van machine-leesbare informatie aan regelingen. Het IMOW is gebaseerd op het conceptuele model CIM-OW. Het CIM-OW hoort bij de reeks conceptuele modellen waarop het Digitaal Stelsel Omgevingswet (DSO) is gebaseerd.  Het IMOW specificeert hoe de concepten van het CIM-OW geïmplementeerd moeten worden en legt vast welke objecten aan het DSO moeten worden aangeleverd.</p>
+  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft het Informatiemodel Omgevingswet (IMOW) dat gebruikt
+wordt in de keten van plan tot publicatie voor het toekennen van
+machine-leesbare informatie aan regelingen. Het IMOW is gebaseerd op het
+conceptuele model CIM-OW. Het CIM-OW hoort bij de reeks conceptuele modellen
+waarop het Digitaal Stelsel Omgevingswet (DSO) is gebaseerd. Het IMOW
+specificeert hoe de concepten van het CIM-OW geïmplementeerd moeten worden en
+legt vast welke objecten aan het DSO moeten worden aangeleverd.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#3FE27A0C"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#7148BD3C"><bdi class="secno">1.1 </bdi>Context standaard</a></li><li class="tocline"><a class="tocxref" href="#imow-overzicht"><bdi class="secno">1.2 </bdi>IMOW overzicht</a></li><li class="tocline"><a class="tocxref" href="#28F55C8C"><bdi class="secno">1.3 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#cat"><bdi class="secno">2. </bdi>Gegevensdefinitie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_packages"><bdi class="secno">2.1 </bdi>Model   IMOW</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_F30DA025_05E0_4f4b_AAF8_D029BA870995"><bdi class="secno">2.1.1 </bdi>   IMOW Regelstructuur - overzicht</a></li><li class="tocline"><a class="tocxref" href="#EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><bdi class="secno">2.1.2 </bdi>   Vrije­Tekst - overzicht</a></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_VrijeTekst"><bdi class="secno">2.2 </bdi>Domein   Vrije­Tekst</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">2.2.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_VrijeTekst_Divisietekst"><bdi class="secno">2.2.1.1 </bdi>   Divisietekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_VrijeTekst_Hoofdlijn"><bdi class="secno">2.2.1.2 </bdi>   Hoofdlijn</a></li><li class="tocline"><a class="tocxref" href="#global_class_VrijeTekst_Tekstdeel"><bdi class="secno">2.2.1.3 </bdi>   Tekstdeel</a></li><li class="tocline"><a class="tocxref" href="#global_class_VrijeTekst_Divisie"><bdi class="secno">2.2.1.4 </bdi>   Divisie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#keuzen"><bdi class="secno">2.2.2 </bdi>Keuzen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_VrijeTekst_DivisieOfDivisietekst"><bdi class="secno">2.2.2.1 </bdi>   Divisie­Of­Divisietekst</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details"><bdi class="secno">2.2.3 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details"><bdi class="secno">2.2.3.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_VrijeTekst_Hoofdlijn"><bdi class="secno">2.2.3.1.1 </bdi>   Hoofdlijn</a></li><li class="tocline"><a class="tocxref" href="#detail_class_VrijeTekst_Tekstdeel"><bdi class="secno">2.2.3.1.2 </bdi>   Tekstdeel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#keuze"><bdi class="secno">2.2.3.2 </bdi>Keuze  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_VrijeTekst_DivisieOfDivisietekst"><bdi class="secno">2.2.3.2.1 </bdi>Keuze   Divisie­Of­Divisietekst</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Regel"><bdi class="secno">2.3 </bdi>Domein   Regel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-0"><bdi class="secno">2.3.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Regel_JuridischeRegel"><bdi class="secno">2.3.1.1 </bdi>   Juridische­Regel</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Norm"><bdi class="secno">2.3.1.2 </bdi>   Norm</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Omgevingsnorm"><bdi class="secno">2.3.1.3 </bdi>   Omgevingsnorm</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Omgevingswaarde"><bdi class="secno">2.3.1.4 </bdi>   Omgevingswaarde</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Activiteit"><bdi class="secno">2.3.1.5 </bdi>   Activiteit</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Omgevingswaarderegel"><bdi class="secno">2.3.1.6 </bdi>   Omgevingswaarderegel</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_RegelVoorIedereen"><bdi class="secno">2.3.1.7 </bdi>   Regel­Voor­Iedereen</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Regeltekst"><bdi class="secno">2.3.1.8 </bdi>   Regeltekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Instructieregel"><bdi class="secno">2.3.1.9 </bdi>   Instructieregel</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_ActiviteitLocatieaanduiding"><bdi class="secno">2.3.1.10 </bdi>   Activiteit­Locatieaanduiding</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptypen"><bdi class="secno">2.3.2 </bdi>Gegevensgroeptypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Regel_Normwaarde"><bdi class="secno">2.3.2.1 </bdi>Gegevensgroep   Normwaarde</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-0"><bdi class="secno">2.3.3 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-0"><bdi class="secno">2.3.3.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Regel_JuridischeRegel"><bdi class="secno">2.3.3.1.1 </bdi>   Juridische­Regel</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Norm"><bdi class="secno">2.3.3.1.2 </bdi>   Norm</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Omgevingsnorm"><bdi class="secno">2.3.3.1.3 </bdi>   Omgevingsnorm</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Omgevingswaarde"><bdi class="secno">2.3.3.1.4 </bdi>   Omgevingswaarde</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Activiteit"><bdi class="secno">2.3.3.1.5 </bdi>   Activiteit</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Omgevingswaarderegel"><bdi class="secno">2.3.3.1.6 </bdi>   Omgevingswaarderegel</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_RegelVoorIedereen"><bdi class="secno">2.3.3.1.7 </bdi>   Regel­Voor­Iedereen</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Instructieregel"><bdi class="secno">2.3.3.1.8 </bdi>   Instructieregel</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_ActiviteitLocatieaanduiding"><bdi class="secno">2.3.3.1.9 </bdi>   Activiteit­Locatieaanduiding</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptype-details"><bdi class="secno">2.3.3.2 </bdi>Gegevensgroeptype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Normwaarde"><bdi class="secno">2.3.3.2.1 </bdi>Gegevensgroeptype   Normwaarde</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_OWobject"><bdi class="secno">2.4 </bdi>Domein   OW-object</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_97D11E5C_222E_4885_AD87_2F92616ED77A"><bdi class="secno">2.4.1 </bdi>   OWobject - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen-1"><bdi class="secno">2.4.2 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_OWobject_OWobject"><bdi class="secno">2.4.2.1 </bdi>   OW-object</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-1"><bdi class="secno">2.4.3 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-1"><bdi class="secno">2.4.3.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_OWobject_OWobject"><bdi class="secno">2.4.3.1.1 </bdi>   OW-object</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_OPobject"><bdi class="secno">2.5 </bdi>Domein   OP-object</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5"><bdi class="secno">2.5.1 </bdi>   OP-object - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen-2"><bdi class="secno">2.5.2 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_OPobject_OPobjectAnnotatie"><bdi class="secno">2.5.2.1 </bdi>   OP-object­Annotatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-2"><bdi class="secno">2.5.3 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-2"><bdi class="secno">2.5.3.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_OPobject_OPobjectAnnotatie"><bdi class="secno">2.5.3.1.1 </bdi>   OP-object­Annotatie</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_GebiedsAanwijzing"><bdi class="secno">2.6 </bdi>Domein   Gebieds­Aanwijzing</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-3"><bdi class="secno">2.6.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_GebiedsAanwijzing_Gebiedsaanwijzing"><bdi class="secno">2.6.1.1 </bdi>   Gebiedsaanwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-3"><bdi class="secno">2.6.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-3"><bdi class="secno">2.6.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_GebiedsAanwijzing_Gebiedsaanwijzing"><bdi class="secno">2.6.2.1.1 </bdi>   Gebiedsaanwijzing</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Locatie"><bdi class="secno">2.7 </bdi>Domein   Locatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_31E6C7D5_E55E_4916_92E7_D35A8E1C6E03"><bdi class="secno">2.7.1 </bdi>   Locatie - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen-4"><bdi class="secno">2.7.2 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Gebied"><bdi class="secno">2.7.2.1 </bdi>   Gebied</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Locatie"><bdi class="secno">2.7.2.2 </bdi>   Locatie</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Gebiedengroep"><bdi class="secno">2.7.2.3 </bdi>   Gebiedengroep</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Punt"><bdi class="secno">2.7.2.4 </bdi>   Punt</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Ambtsgebied"><bdi class="secno">2.7.2.5 </bdi>   Ambtsgebied</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Puntengroep"><bdi class="secno">2.7.2.6 </bdi>   Puntengroep</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Lijnengroep"><bdi class="secno">2.7.2.7 </bdi>   Lijnengroep</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Lijn"><bdi class="secno">2.7.2.8 </bdi>   Lijn</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptypen-0"><bdi class="secno">2.7.3 </bdi>Gegevensgroeptypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Locatie_BestuurlijkeGrenzenVerwijzing"><bdi class="secno">2.7.3.1 </bdi>Gegevensgroep   Bestuurlijke­Grenzen­Verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-4"><bdi class="secno">2.7.4 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-4"><bdi class="secno">2.7.4.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Gebied"><bdi class="secno">2.7.4.1.1 </bdi>   Gebied</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Locatie"><bdi class="secno">2.7.4.1.2 </bdi>   Locatie</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Gebiedengroep"><bdi class="secno">2.7.4.1.3 </bdi>   Gebiedengroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Punt"><bdi class="secno">2.7.4.1.4 </bdi>   Punt</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Ambtsgebied"><bdi class="secno">2.7.4.1.5 </bdi>   Ambtsgebied</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Puntengroep"><bdi class="secno">2.7.4.1.6 </bdi>   Puntengroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Lijnengroep"><bdi class="secno">2.7.4.1.7 </bdi>   Lijnengroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Lijn"><bdi class="secno">2.7.4.1.8 </bdi>   Lijn</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptype-details-0"><bdi class="secno">2.7.4.2 </bdi>Gegevensgroeptype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_BestuurlijkeGrenzenVerwijzing"><bdi class="secno">2.7.4.2.1 </bdi>Gegevensgroeptype   Bestuurlijke­Grenzen­Verwijzing</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Geometrie"><bdi class="secno">2.8 </bdi>Domein   Geometrie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-5"><bdi class="secno">2.8.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Geometrie_Geometrie"><bdi class="secno">2.8.1.1 </bdi>   Geometrie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-5"><bdi class="secno">2.8.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-5"><bdi class="secno">2.8.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Geometrie_Geometrie"><bdi class="secno">2.8.2.1.1 </bdi>   Geometrie</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Kaart"><bdi class="secno">2.9 </bdi>Domein   Kaart</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_619D1C05_75E9_4a29_BBFB_F6454B1E4EC7"><bdi class="secno">2.9.1 </bdi>   Kaart - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen-6"><bdi class="secno">2.9.2 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Kaart_Kaart"><bdi class="secno">2.9.2.1 </bdi>   Kaart</a></li><li class="tocline"><a class="tocxref" href="#global_class_Kaart_Kaartlaag"><bdi class="secno">2.9.2.2 </bdi>   Kaartlaag</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptypen-1"><bdi class="secno">2.9.3 </bdi>Gegevensgroeptypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Kaart_Kaartextent"><bdi class="secno">2.9.3.1 </bdi>Gegevensgroep   Kaartextent</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-6"><bdi class="secno">2.9.4 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-6"><bdi class="secno">2.9.4.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Kaart_Kaart"><bdi class="secno">2.9.4.1.1 </bdi>   Kaart</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Kaart_Kaartlaag"><bdi class="secno">2.9.4.1.2 </bdi>   Kaartlaag</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptype-details-1"><bdi class="secno">2.9.4.2 </bdi>Gegevensgroeptype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Kaart_Kaartextent"><bdi class="secno">2.9.4.2.1 </bdi>Gegevensgroeptype   Kaartextent</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Pons"><bdi class="secno">2.10 </bdi>Domein   Pons</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-7"><bdi class="secno">2.10.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Pons_Pons"><bdi class="secno">2.10.1.1 </bdi>   Pons</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-7"><bdi class="secno">2.10.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-7"><bdi class="secno">2.10.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Pons_Pons"><bdi class="secno">2.10.2.1.1 </bdi>   Pons</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_RegelingsGebied"><bdi class="secno">2.11 </bdi>Domein   Regelings­Gebied</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-8"><bdi class="secno">2.11.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_RegelingsGebied_Regelingsgebied"><bdi class="secno">2.11.1.1 </bdi>   Regelingsgebied</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-8"><bdi class="secno">2.11.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-8"><bdi class="secno">2.11.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_RegelingsGebied_Regelingsgebied"><bdi class="secno">2.11.2.1.1 </bdi>   Regelingsgebied</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Waardelijsten"><bdi class="secno">2.12 </bdi>Domein   Waardelijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#codelijsten"><bdi class="secno">2.12.1 </bdi>Codelijsten   </a></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_DatatypenAlgemeen"><bdi class="secno">2.13 </bdi>Domein   Datatypen­Algemeen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_12E2945E_3D6D_45eb_B754_751BBC615B64"><bdi class="secno">2.13.1 </bdi>   Datatypen Algemeen - overzicht</a></li><li class="tocline"><a class="tocxref" href="#gestructureerde-datatypen"><bdi class="secno">2.13.2 </bdi>Gestructureerde datatypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_DatatypenAlgemeen_WaardeEenheid"><bdi class="secno">2.13.2.1 </bdi>Gestructureerd datatype   Waarde­Eenheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht-data-elementen"><bdi class="secno">2.13.2.1.1 </bdi>Overzicht data elementen   </a></li></ol></li><li class="tocline"><a class="tocxref" href="#global_class_DatatypenAlgemeen_NEN3610ID"><bdi class="secno">2.13.2.2 </bdi>Gestructureerd datatype   NEN3610ID</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht-data-elementen-0"><bdi class="secno">2.13.2.2.1 </bdi>Overzicht data elementen   </a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-9"><bdi class="secno">2.13.3 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gestructureerde-datatypen-0"><bdi class="secno">2.13.3.1 </bdi>Gestructureerde datatypen  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_DatatypenAlgemeen_WaardeEenheid"><bdi class="secno">2.13.3.1.1 </bdi>Gestructureerd datatype   Waarde­Eenheid</a></li><li class="tocline"><a class="tocxref" href="#detail_class_DatatypenAlgemeen_NEN3610ID"><bdi class="secno">2.13.3.1.2 </bdi>Gestructureerd datatype   NEN3610ID</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Aanlevering"><bdi class="secno">2.14 </bdi>Domein   Aanlevering</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-9"><bdi class="secno">2.14.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Aanlevering_Bestand"><bdi class="secno">2.14.1.1 </bdi>   Bestand</a></li><li class="tocline"><a class="tocxref" href="#global_class_Aanlevering_Manifest"><bdi class="secno">2.14.1.2 </bdi>   Manifest</a></li><li class="tocline"><a class="tocxref" href="#global_class_Aanlevering_Aanlevering"><bdi class="secno">2.14.1.3 </bdi>   Aanlevering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-10"><bdi class="secno">2.14.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-9"><bdi class="secno">2.14.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Aanlevering_Bestand"><bdi class="secno">2.14.2.1.1 </bdi>   Bestand</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Aanlevering_Manifest"><bdi class="secno">2.14.2.1.2 </bdi>   Manifest</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Aanlevering_Aanlevering"><bdi class="secno">2.14.2.1.3 </bdi>   Aanlevering</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Symbolisatie"><bdi class="secno">2.15 </bdi>Domein   Symbolisatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-10"><bdi class="secno">2.15.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Symbolisatie_SymbolisatieItem"><bdi class="secno">2.15.1.1 </bdi>   Symbolisatie­Item</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-11"><bdi class="secno">2.15.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-10"><bdi class="secno">2.15.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Symbolisatie_SymbolisatieItem"><bdi class="secno">2.15.2.1.1 </bdi>   Symbolisatie­Item</a></li></ol></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#lis"><bdi class="secno">3. </bdi>Inhoud van waardenlijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#codelijst-inhoud"><bdi class="secno">3.1 </bdi>Codelijst inhoud   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Activiteitengroep"><bdi class="secno">3.1.1 </bdi>Codelijst details  Activiteitengroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Thema"><bdi class="secno">3.1.2 </bdi>Codelijst details  Thema</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Typenorm"><bdi class="secno">3.1.3 </bdi>Codelijst details  Typenorm</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Omgevingsnormgroep"><bdi class="secno">3.1.4 </bdi>Codelijst details  Omgevingsnormgroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Omgevingswaardegroep"><bdi class="secno">3.1.5 </bdi>Codelijst details  Omgevingswaardegroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Gebiedsaanwijzinggroep"><bdi class="secno">3.1.6 </bdi>Codelijst details  Gebiedsaanwijzinggroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Instrument"><bdi class="secno">3.1.7 </bdi>Codelijst details  Instrument</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Adressaat"><bdi class="secno">3.1.8 </bdi>Codelijst details  Adressaat</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Idealisatie"><bdi class="secno">3.1.9 </bdi>Codelijst details  Idealisatie</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Activiteitregelkwalificatie"><bdi class="secno">3.1.10 </bdi>Codelijst details  Activiteitregelkwalificatie</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_TypeGebiedsaanwijzing"><bdi class="secno">3.1.11 </bdi>Codelijst details  Type­Gebiedsaanwijzing</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Eenheid"><bdi class="secno">3.1.12 </bdi>Codelijst details  Eenheid</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#3F5FA62D"><bdi class="secno">4. </bdi>Technische implementatie IMOW</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#55D70865"><bdi class="secno">4.1 </bdi>OW-aanlevering en OW-manifest</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#4BFC4412"><bdi class="secno">4.1.1 </bdi>Het aanleveren van OW-objecten in OW-bestanden</a></li><li class="tocline"><a class="tocxref" href="#128024A0"><bdi class="secno">4.1.2 </bdi>GML-bestanden (informatief)</a></li></ol></li><li class="tocline"><a class="tocxref" href="#53A6EBF9"><bdi class="secno">4.2 </bdi>Eisen bij aanleveren</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#5E94A976"><bdi class="secno">4.2.1 </bdi>Identificatie van OW-objecten</a></li><li class="tocline"><a class="tocxref" href="#10D4544F"><bdi class="secno">4.2.2 </bdi>Waardelijsten</a></li><li class="tocline"><a class="tocxref" href="#6F5FDC8F"><bdi class="secno">4.2.3 </bdi>Toekennen van OW-objecten aan regelingen</a></li><li class="tocline"><a class="tocxref" href="#60ED5DE4"><bdi class="secno">4.2.4 </bdi>Verwijzingen tussen OW-objecten</a></li><li class="tocline"><a class="tocxref" href="#08BD28A2"><bdi class="secno">4.2.5 </bdi>De functionele structuur</a></li><li class="tocline"><a class="tocxref" href="#7F3046AE"><bdi class="secno">4.2.6 </bdi>Tijdelijk regelingdelen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#126CC8D0"><bdi class="secno">5. </bdi>Verschillen tussen IMOW en CIM-OW</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#19F408D9"><bdi class="secno">5.1 </bdi>CIM-OW-aspecten niet in IMOW</a></li><li class="tocline"><a class="tocxref" href="#6C42F8AD"><bdi class="secno">5.2 </bdi>IMOW-aspecten niet in CIM-OW</a></li></ol></li><li class="tocline"><a class="tocxref" href="#2577D13E"><bdi class="secno">6. </bdi>OP-aspecten relevant voor IMOW</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#5D2F8BCD"><bdi class="secno">6.1 </bdi>De Regeling en diens Artikelen/Leden/Divisies</a></li><li class="tocline"><a class="tocxref" href="#0B404AC6"><bdi class="secno">6.2 </bdi>ConsolidatieInformatie</a></li><li class="tocline"><a class="tocxref" href="#4541BABA"><bdi class="secno">6.3 </bdi>GIO’s en Norm GIO’s</a></li><li class="tocline"><a class="tocxref" href="#639AF62F"><bdi class="secno">6.4 </bdi>Richtlijn voor het maken van GIO’s o.b.v. OW-objecten</a></li></ol></li><li class="tocline"><a class="tocxref" href="#210F8E1C"><bdi class="secno">7. </bdi>Het wijzigen van OW-objecten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#6BC0303B"><bdi class="secno">7.1 </bdi>Uitgangspunten relevant voor wijzigen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#2F9C69B2"><bdi class="secno">7.1.1 </bdi>Een nieuw OW-object</a></li><li class="tocline"><a class="tocxref" href="#3993B196"><bdi class="secno">7.1.2 </bdi>Een OW-object wijzigen</a></li><li class="tocline"><a class="tocxref" href="#2C21DC35"><bdi class="secno">7.1.3 </bdi>Een OW-object beëindigen</a></li><li class="tocline"><a class="tocxref" href="#189CCC1E"><bdi class="secno">7.1.4 </bdi>Resultaat van een wijziging</a></li></ol></li><li class="tocline"><a class="tocxref" href="#616A8350"><bdi class="secno">7.2 </bdi>Het gebruik van OW-aanleveringen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#2AE56890"><bdi class="secno">7.2.1 </bdi>OW-aanlevering bij besluit</a></li><li class="tocline"><a class="tocxref" href="#5952605C"><bdi class="secno">7.2.2 </bdi>OW-aanlevering bij intrekking</a></li><li class="tocline"><a class="tocxref" href="#57FC25F3"><bdi class="secno">7.2.3 </bdi>OW-aanlevering bij directe mutatie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#11A0CF11"><bdi class="secno">8. </bdi>A Bijlage: versiehistorie</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">9. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">10. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#3FE27A0C"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#7148BD3C"><bdi class="secno">1.1 </bdi>Context standaard</a></li><li class="tocline"><a class="tocxref" href="#imow-overzicht"><bdi class="secno">1.2 </bdi>IMOW overzicht</a></li><li class="tocline"><a class="tocxref" href="#28F55C8C"><bdi class="secno">1.3 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#cat"><bdi class="secno">2. </bdi>Gegevensdefinitie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_packages"><bdi class="secno">2.1 </bdi>Model   IMOW</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_F30DA025_05E0_4f4b_AAF8_D029BA870995"><bdi class="secno">2.1.1 </bdi>   IMOW Regelstructuur - overzicht</a></li><li class="tocline"><a class="tocxref" href="#EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><bdi class="secno">2.1.2 </bdi>   Vrije­Tekst - overzicht</a></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_VrijeTekst"><bdi class="secno">2.2 </bdi>Domein   Vrije­Tekst</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">2.2.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_VrijeTekst_Divisietekst"><bdi class="secno">2.2.1.1 </bdi>   Divisietekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_VrijeTekst_Hoofdlijn"><bdi class="secno">2.2.1.2 </bdi>   Hoofdlijn</a></li><li class="tocline"><a class="tocxref" href="#global_class_VrijeTekst_Tekstdeel"><bdi class="secno">2.2.1.3 </bdi>   Tekstdeel</a></li><li class="tocline"><a class="tocxref" href="#global_class_VrijeTekst_Divisie"><bdi class="secno">2.2.1.4 </bdi>   Divisie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#keuzen"><bdi class="secno">2.2.2 </bdi>Keuzen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_VrijeTekst_DivisieOfDivisietekst"><bdi class="secno">2.2.2.1 </bdi>   Divisie­Of­Divisietekst</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details"><bdi class="secno">2.2.3 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details"><bdi class="secno">2.2.3.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_VrijeTekst_Hoofdlijn"><bdi class="secno">2.2.3.1.1 </bdi>   Hoofdlijn</a></li><li class="tocline"><a class="tocxref" href="#detail_class_VrijeTekst_Tekstdeel"><bdi class="secno">2.2.3.1.2 </bdi>   Tekstdeel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#keuze"><bdi class="secno">2.2.3.2 </bdi>Keuze  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_VrijeTekst_DivisieOfDivisietekst"><bdi class="secno">2.2.3.2.1 </bdi>Keuze   Divisie­Of­Divisietekst</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Regel"><bdi class="secno">2.3 </bdi>Domein   Regel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-0"><bdi class="secno">2.3.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Regel_JuridischeRegel"><bdi class="secno">2.3.1.1 </bdi>   Juridische­Regel</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Norm"><bdi class="secno">2.3.1.2 </bdi>   Norm</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Omgevingsnorm"><bdi class="secno">2.3.1.3 </bdi>   Omgevingsnorm</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Omgevingswaarde"><bdi class="secno">2.3.1.4 </bdi>   Omgevingswaarde</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Activiteit"><bdi class="secno">2.3.1.5 </bdi>   Activiteit</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Omgevingswaarderegel"><bdi class="secno">2.3.1.6 </bdi>   Omgevingswaarderegel</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_RegelVoorIedereen"><bdi class="secno">2.3.1.7 </bdi>   Regel­Voor­Iedereen</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Regeltekst"><bdi class="secno">2.3.1.8 </bdi>   Regeltekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_Instructieregel"><bdi class="secno">2.3.1.9 </bdi>   Instructieregel</a></li><li class="tocline"><a class="tocxref" href="#global_class_Regel_ActiviteitLocatieaanduiding"><bdi class="secno">2.3.1.10 </bdi>   Activiteit­Locatieaanduiding</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptypen"><bdi class="secno">2.3.2 </bdi>Gegevensgroeptypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Regel_Normwaarde"><bdi class="secno">2.3.2.1 </bdi>Gegevensgroep   Normwaarde</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-0"><bdi class="secno">2.3.3 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-0"><bdi class="secno">2.3.3.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Regel_JuridischeRegel"><bdi class="secno">2.3.3.1.1 </bdi>   Juridische­Regel</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Norm"><bdi class="secno">2.3.3.1.2 </bdi>   Norm</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Omgevingsnorm"><bdi class="secno">2.3.3.1.3 </bdi>   Omgevingsnorm</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Omgevingswaarde"><bdi class="secno">2.3.3.1.4 </bdi>   Omgevingswaarde</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Activiteit"><bdi class="secno">2.3.3.1.5 </bdi>   Activiteit</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Omgevingswaarderegel"><bdi class="secno">2.3.3.1.6 </bdi>   Omgevingswaarderegel</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_RegelVoorIedereen"><bdi class="secno">2.3.3.1.7 </bdi>   Regel­Voor­Iedereen</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Instructieregel"><bdi class="secno">2.3.3.1.8 </bdi>   Instructieregel</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Regel_ActiviteitLocatieaanduiding"><bdi class="secno">2.3.3.1.9 </bdi>   Activiteit­Locatieaanduiding</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptype-details"><bdi class="secno">2.3.3.2 </bdi>Gegevensgroeptype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Regel_Normwaarde"><bdi class="secno">2.3.3.2.1 </bdi>Gegevensgroeptype   Normwaarde</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_OWobject"><bdi class="secno">2.4 </bdi>Domein   OW-object</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_97D11E5C_222E_4885_AD87_2F92616ED77A"><bdi class="secno">2.4.1 </bdi>   OWobject - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen-1"><bdi class="secno">2.4.2 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_OWobject_OWobject"><bdi class="secno">2.4.2.1 </bdi>   OW-object</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-1"><bdi class="secno">2.4.3 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-1"><bdi class="secno">2.4.3.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_OWobject_OWobject"><bdi class="secno">2.4.3.1.1 </bdi>   OW-object</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_OPobject"><bdi class="secno">2.5 </bdi>Domein   OP-object</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5"><bdi class="secno">2.5.1 </bdi>   OP-object - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen-2"><bdi class="secno">2.5.2 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_OPobject_OPobjectAnnotatie"><bdi class="secno">2.5.2.1 </bdi>   OP-object­Annotatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-2"><bdi class="secno">2.5.3 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-2"><bdi class="secno">2.5.3.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_OPobject_OPobjectAnnotatie"><bdi class="secno">2.5.3.1.1 </bdi>   OP-object­Annotatie</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_GebiedsAanwijzing"><bdi class="secno">2.6 </bdi>Domein   Gebieds­Aanwijzing</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-3"><bdi class="secno">2.6.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_GebiedsAanwijzing_Gebiedsaanwijzing"><bdi class="secno">2.6.1.1 </bdi>   Gebiedsaanwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-3"><bdi class="secno">2.6.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-3"><bdi class="secno">2.6.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_GebiedsAanwijzing_Gebiedsaanwijzing"><bdi class="secno">2.6.2.1.1 </bdi>   Gebiedsaanwijzing</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Locatie"><bdi class="secno">2.7 </bdi>Domein   Locatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_31E6C7D5_E55E_4916_92E7_D35A8E1C6E03"><bdi class="secno">2.7.1 </bdi>   Locatie - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen-4"><bdi class="secno">2.7.2 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Gebied"><bdi class="secno">2.7.2.1 </bdi>   Gebied</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Locatie"><bdi class="secno">2.7.2.2 </bdi>   Locatie</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Gebiedengroep"><bdi class="secno">2.7.2.3 </bdi>   Gebiedengroep</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Punt"><bdi class="secno">2.7.2.4 </bdi>   Punt</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Ambtsgebied"><bdi class="secno">2.7.2.5 </bdi>   Ambtsgebied</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Puntengroep"><bdi class="secno">2.7.2.6 </bdi>   Puntengroep</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Lijnengroep"><bdi class="secno">2.7.2.7 </bdi>   Lijnengroep</a></li><li class="tocline"><a class="tocxref" href="#global_class_Locatie_Lijn"><bdi class="secno">2.7.2.8 </bdi>   Lijn</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptypen-0"><bdi class="secno">2.7.3 </bdi>Gegevensgroeptypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Locatie_BestuurlijkeGrenzenVerwijzing"><bdi class="secno">2.7.3.1 </bdi>Gegevensgroep   Bestuurlijke­Grenzen­Verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-4"><bdi class="secno">2.7.4 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-4"><bdi class="secno">2.7.4.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Gebied"><bdi class="secno">2.7.4.1.1 </bdi>   Gebied</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Locatie"><bdi class="secno">2.7.4.1.2 </bdi>   Locatie</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Gebiedengroep"><bdi class="secno">2.7.4.1.3 </bdi>   Gebiedengroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Punt"><bdi class="secno">2.7.4.1.4 </bdi>   Punt</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Ambtsgebied"><bdi class="secno">2.7.4.1.5 </bdi>   Ambtsgebied</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Puntengroep"><bdi class="secno">2.7.4.1.6 </bdi>   Puntengroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Lijnengroep"><bdi class="secno">2.7.4.1.7 </bdi>   Lijnengroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_Lijn"><bdi class="secno">2.7.4.1.8 </bdi>   Lijn</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptype-details-0"><bdi class="secno">2.7.4.2 </bdi>Gegevensgroeptype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Locatie_BestuurlijkeGrenzenVerwijzing"><bdi class="secno">2.7.4.2.1 </bdi>Gegevensgroeptype   Bestuurlijke­Grenzen­Verwijzing</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Geometrie"><bdi class="secno">2.8 </bdi>Domein   Geometrie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-5"><bdi class="secno">2.8.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Geometrie_Geometrie"><bdi class="secno">2.8.1.1 </bdi>   Geometrie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-5"><bdi class="secno">2.8.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-5"><bdi class="secno">2.8.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Geometrie_Geometrie"><bdi class="secno">2.8.2.1.1 </bdi>   Geometrie</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Kaart"><bdi class="secno">2.9 </bdi>Domein   Kaart</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_619D1C05_75E9_4a29_BBFB_F6454B1E4EC7"><bdi class="secno">2.9.1 </bdi>   Kaart - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen-6"><bdi class="secno">2.9.2 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Kaart_Kaart"><bdi class="secno">2.9.2.1 </bdi>   Kaart</a></li><li class="tocline"><a class="tocxref" href="#global_class_Kaart_Kaartlaag"><bdi class="secno">2.9.2.2 </bdi>   Kaartlaag</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptypen-1"><bdi class="secno">2.9.3 </bdi>Gegevensgroeptypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Kaart_Kaartextent"><bdi class="secno">2.9.3.1 </bdi>Gegevensgroep   Kaartextent</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-6"><bdi class="secno">2.9.4 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-6"><bdi class="secno">2.9.4.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Kaart_Kaart"><bdi class="secno">2.9.4.1.1 </bdi>   Kaart</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Kaart_Kaartlaag"><bdi class="secno">2.9.4.1.2 </bdi>   Kaartlaag</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptype-details-1"><bdi class="secno">2.9.4.2 </bdi>Gegevensgroeptype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Kaart_Kaartextent"><bdi class="secno">2.9.4.2.1 </bdi>Gegevensgroeptype   Kaartextent</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Pons"><bdi class="secno">2.10 </bdi>Domein   Pons</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-7"><bdi class="secno">2.10.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Pons_Pons"><bdi class="secno">2.10.1.1 </bdi>   Pons</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-7"><bdi class="secno">2.10.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-7"><bdi class="secno">2.10.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Pons_Pons"><bdi class="secno">2.10.2.1.1 </bdi>   Pons</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_RegelingsGebied"><bdi class="secno">2.11 </bdi>Domein   Regelings­Gebied</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-8"><bdi class="secno">2.11.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_RegelingsGebied_Regelingsgebied"><bdi class="secno">2.11.1.1 </bdi>   Regelingsgebied</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-8"><bdi class="secno">2.11.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-8"><bdi class="secno">2.11.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_RegelingsGebied_Regelingsgebied"><bdi class="secno">2.11.2.1.1 </bdi>   Regelingsgebied</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Waardelijsten"><bdi class="secno">2.12 </bdi>Domein   Waardelijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#codelijsten"><bdi class="secno">2.12.1 </bdi>Codelijsten   </a></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_DatatypenAlgemeen"><bdi class="secno">2.13 </bdi>Domein   Datatypen­Algemeen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_12E2945E_3D6D_45eb_B754_751BBC615B64"><bdi class="secno">2.13.1 </bdi>   Datatypen Algemeen - overzicht</a></li><li class="tocline"><a class="tocxref" href="#gestructureerde-datatypen"><bdi class="secno">2.13.2 </bdi>Gestructureerde datatypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_DatatypenAlgemeen_WaardeEenheid"><bdi class="secno">2.13.2.1 </bdi>Gestructureerd datatype   Waarde­Eenheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht-data-elementen"><bdi class="secno">2.13.2.1.1 </bdi>Overzicht data elementen   </a></li></ol></li><li class="tocline"><a class="tocxref" href="#global_class_DatatypenAlgemeen_NEN3610ID"><bdi class="secno">2.13.2.2 </bdi>Gestructureerd datatype   NEN3610ID</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#overzicht-data-elementen-0"><bdi class="secno">2.13.2.2.1 </bdi>Overzicht data elementen   </a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-9"><bdi class="secno">2.13.3 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gestructureerde-datatypen-0"><bdi class="secno">2.13.3.1 </bdi>Gestructureerde datatypen  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_DatatypenAlgemeen_WaardeEenheid"><bdi class="secno">2.13.3.1.1 </bdi>Gestructureerd datatype   Waarde­Eenheid</a></li><li class="tocline"><a class="tocxref" href="#detail_class_DatatypenAlgemeen_NEN3610ID"><bdi class="secno">2.13.3.1.2 </bdi>Gestructureerd datatype   NEN3610ID</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Aanlevering"><bdi class="secno">2.14 </bdi>Domein   Aanlevering</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-9"><bdi class="secno">2.14.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Aanlevering_Bestand"><bdi class="secno">2.14.1.1 </bdi>   Bestand</a></li><li class="tocline"><a class="tocxref" href="#global_class_Aanlevering_Manifest"><bdi class="secno">2.14.1.2 </bdi>   Manifest</a></li><li class="tocline"><a class="tocxref" href="#global_class_Aanlevering_Aanlevering"><bdi class="secno">2.14.1.3 </bdi>   Aanlevering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-10"><bdi class="secno">2.14.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-9"><bdi class="secno">2.14.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Aanlevering_Bestand"><bdi class="secno">2.14.2.1.1 </bdi>   Bestand</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Aanlevering_Manifest"><bdi class="secno">2.14.2.1.2 </bdi>   Manifest</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Aanlevering_Aanlevering"><bdi class="secno">2.14.2.1.3 </bdi>   Aanlevering</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#global_package_Symbolisatie"><bdi class="secno">2.15 </bdi>Domein   Symbolisatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-10"><bdi class="secno">2.15.1 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_Symbolisatie_SymbolisatieItem"><bdi class="secno">2.15.1.1 </bdi>   Symbolisatie­Item</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details-11"><bdi class="secno">2.15.2 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details-10"><bdi class="secno">2.15.2.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Symbolisatie_SymbolisatieItem"><bdi class="secno">2.15.2.1.1 </bdi>   Symbolisatie­Item</a></li></ol></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#lis"><bdi class="secno">3. </bdi>Inhoud van waardenlijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#codelijst-inhoud"><bdi class="secno">3.1 </bdi>Codelijst inhoud   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Activiteitengroep"><bdi class="secno">3.1.1 </bdi>Codelijst details  Activiteitengroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Thema"><bdi class="secno">3.1.2 </bdi>Codelijst details  Thema</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Typenorm"><bdi class="secno">3.1.3 </bdi>Codelijst details  Typenorm</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Omgevingsnormgroep"><bdi class="secno">3.1.4 </bdi>Codelijst details  Omgevingsnormgroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Omgevingswaardegroep"><bdi class="secno">3.1.5 </bdi>Codelijst details  Omgevingswaardegroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Gebiedsaanwijzinggroep"><bdi class="secno">3.1.6 </bdi>Codelijst details  Gebiedsaanwijzinggroep</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Instrument"><bdi class="secno">3.1.7 </bdi>Codelijst details  Instrument</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Adressaat"><bdi class="secno">3.1.8 </bdi>Codelijst details  Adressaat</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Idealisatie"><bdi class="secno">3.1.9 </bdi>Codelijst details  Idealisatie</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Activiteitregelkwalificatie"><bdi class="secno">3.1.10 </bdi>Codelijst details  Activiteitregelkwalificatie</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_TypeGebiedsaanwijzing"><bdi class="secno">3.1.11 </bdi>Codelijst details  Type­Gebiedsaanwijzing</a></li><li class="tocline"><a class="tocxref" href="#detail_class_Waardelijsten_Eenheid"><bdi class="secno">3.1.12 </bdi>Codelijst details  Eenheid</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#3F5FA62D"><bdi class="secno">4. </bdi>Technische implementatie IMOW</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#55D70865"><bdi class="secno">4.1 </bdi>OW-aanlevering en OW-manifest</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#4BFC4412"><bdi class="secno">4.1.1 </bdi>Het aanleveren van OW-objecten in OW-bestanden</a></li><li class="tocline"><a class="tocxref" href="#128024A0"><bdi class="secno">4.1.2 </bdi>GML-bestanden (informatief)</a></li></ol></li><li class="tocline"><a class="tocxref" href="#53A6EBF9"><bdi class="secno">4.2 </bdi>Eisen bij aanleveren</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#5E94A976"><bdi class="secno">4.2.1 </bdi>Identificatie van OW-objecten</a></li><li class="tocline"><a class="tocxref" href="#10D4544F"><bdi class="secno">4.2.2 </bdi>Waardelijsten</a></li><li class="tocline"><a class="tocxref" href="#6F5FDC8F"><bdi class="secno">4.2.3 </bdi>Toekennen van OW-objecten aan regelingen</a></li><li class="tocline"><a class="tocxref" href="#60ED5DE4"><bdi class="secno">4.2.4 </bdi>Verwijzingen tussen OW-objecten</a></li><li class="tocline"><a class="tocxref" href="#08BD28A2"><bdi class="secno">4.2.5 </bdi>De functionele structuur</a></li><li class="tocline"><a class="tocxref" href="#7F3046AE"><bdi class="secno">4.2.6 </bdi>Tijdelijk regelingdelen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#126CC8D0"><bdi class="secno">5. </bdi>Verschillen tussen IMOW en CIM-OW</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#19F408D9"><bdi class="secno">5.1 </bdi>CIM-OW-aspecten niet in IMOW</a></li><li class="tocline"><a class="tocxref" href="#6C42F8AD"><bdi class="secno">5.2 </bdi>IMOW-aspecten niet in CIM-OW</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gebiedsaanwijzing"><bdi class="secno">5.2.1 </bdi>Gebiedsaanwijzing</a></li><li class="tocline"><a class="tocxref" href="#relaties"><bdi class="secno">5.2.2 </bdi>Relaties</a></li><li class="tocline"><a class="tocxref" href="#regelingsgebied"><bdi class="secno">5.2.3 </bdi>Regelingsgebied</a></li><li class="tocline"><a class="tocxref" href="#activiteitlocatieaanduiding"><bdi class="secno">5.2.4 </bdi>ActiviteitLocatieaanduiding</a></li><li class="tocline"><a class="tocxref" href="#geometrie-en-gio"><bdi class="secno">5.2.5 </bdi>Geometrie en GIO</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#2577D13E"><bdi class="secno">6. </bdi>OP-aspecten relevant voor IMOW</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#5D2F8BCD"><bdi class="secno">6.1 </bdi>De Regeling en zijn Artikelen/Leden/Divisies</a></li><li class="tocline"><a class="tocxref" href="#0B404AC6"><bdi class="secno">6.2 </bdi>ConsolidatieInformatie</a></li><li class="tocline"><a class="tocxref" href="#4541BABA"><bdi class="secno">6.3 </bdi>GIO’s en Norm GIO’s</a></li><li class="tocline"><a class="tocxref" href="#639AF62F"><bdi class="secno">6.4 </bdi>Richtlijn voor het maken van GIO’s o.b.v. OW-objecten</a></li></ol></li><li class="tocline"><a class="tocxref" href="#210F8E1C"><bdi class="secno">7. </bdi>Het wijzigen van OW-objecten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#6BC0303B"><bdi class="secno">7.1 </bdi>Uitgangspunten relevant voor wijzigen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#2F9C69B2"><bdi class="secno">7.1.1 </bdi>Een nieuw OW-object</a></li><li class="tocline"><a class="tocxref" href="#3993B196"><bdi class="secno">7.1.2 </bdi>Een OW-object wijzigen</a></li><li class="tocline"><a class="tocxref" href="#2C21DC35"><bdi class="secno">7.1.3 </bdi>Een OW-object beëindigen</a></li><li class="tocline"><a class="tocxref" href="#189CCC1E"><bdi class="secno">7.1.4 </bdi>Resultaat van een wijziging</a></li></ol></li><li class="tocline"><a class="tocxref" href="#616A8350"><bdi class="secno">7.2 </bdi>Het gebruik van OW-aanleveringen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#2AE56890"><bdi class="secno">7.2.1 </bdi>OW-aanlevering bij besluit</a></li><li class="tocline"><a class="tocxref" href="#5952605C"><bdi class="secno">7.2.2 </bdi>OW-aanlevering bij intrekking</a></li><li class="tocline"><a class="tocxref" href="#57FC25F3"><bdi class="secno">7.2.3 </bdi>OW-aanlevering bij directe mutatie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#11A0CF11"><bdi class="secno">A. </bdi>A Bijlage: versiehistorie</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">B. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">C. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">D. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">D.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">D.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">E. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">E.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
 
   
-  <section id="inleiding"><div class="header-wrapper"><h2 id="3FE27A0C"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#3FE27A0C" aria-label="Permalink for Section 1."></a></div><p>Dit document beschrijft het Informatiemodel Omgevingswet (IMOW) voor het in de keten van plan tot publicatie toekennen van machine-leesbare informatie aan Regelingen. Het IMOW implementeert het conceptuele model CIM-OW. CIM-OW hoort bij de reeks conceptuele modellen waarop de ketens van het Digitaal Stelsel Omgevingswet (DSO) gebaseerd zijn. Het IMOW legt vast welke objecten aan het DSO kunnen worden aangeleverd. </p>
-<p>In paragraaf <a href="#7148BD3C">1.1</a> wordt een context geboden van de standaard. Paragraaf <a href="#6AB1D937">1.2</a> verwijst naar de versies van standaarden die gebruikt zijn voor deze standaar. Paragraaf <a href="#28F55C8C">1.3</a> bevat de leeswijzer.<br></p>
-<section id="context-standaard"><div class="header-wrapper"><h3 id="7148BD3C"><bdi class="secno">1.1 </bdi>Context standaard</h3><a class="self-link" href="#7148BD3C" aria-label="Permalink for Section 1.1"></a></div><p>Wanneer je in de context van de Omgevingswet als bevoegd gezag een Regeling (bijvoorbeeld een Omgevingsplan) wilt wijzigen doe je dit via een aanlevering aan de LVBB, de landelijke voorziening bekendmaken en beschikbaar stellen. Vrijwel altijd bevat die aanlevering een Besluit. De structuur van de aanlevering is vastgelegd in verschillende standaarden:</p>
+  <section id="inleiding"><div class="header-wrapper"><h2 id="3FE27A0C"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#3FE27A0C" aria-label="Permalink for Section 1."></a></div><p>In de keten van plan tot publicatie van het DSO kan machine-leesbare informatie
+aan Regelingen worden toegevoegd in de vorm van OW-objecten. De objecten die
+kunnen worden toegevoegd zijn vastgelegd in het Informatiemodel Omgevingswet
+(IMOW) en staan in dit document beschreven. Het IMOW is gebaseerd opet
+conceptuele model CIM-OW [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimow" title="Conceptueel Informatiemodel Omgevingswet (CIMOW)">CIMOW</a></cite>]. CIM-OW beschrijft het DSO op een conceptueel
+niveau.</p>
+<p>In paragraaf <a href="#7148BD3C">1.1</a> wordt een context geboden van de
+standaard. Paragraaf <a href="#28F55C8C">1.2</a> bevat de leeswijzer.</p>
+<section id="context-standaard"><div class="header-wrapper"><h3 id="7148BD3C"><bdi class="secno">1.1 </bdi>Context standaard</h3><a class="self-link" href="#7148BD3C" aria-label="Permalink for Section 1.1"></a></div><p>Wanneer je als bevoegd gezag een Omgevingset Regeling
+(bijvoorbeeld een Omgevingsplan) wilt wijzigen doe je dit via een aanlevering
+aan de LVBB, de landelijke voorziening bekendmaken en beschikbaar stellen.
+Vrijwel altijd bevat die aanlevering een Besluit. De structuur van de
+aanlevering is vastgelegd in verschillende standaarden:</p>
 <ul>
-<li>Het <a href="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/" target="_blank">LVBB bronhouderkoppelvlak</a> schrijft voor welke bestanden er in de aanlevering moeten zitten wat voor eisen er zijn aan de namen van de bestanden etc.</li>
-<li>De STOP Standaard IC [<cite><a class="bibref" data-link-type="biblio" href="#bib-stopic" title="Standaard Officiële Publicaties">STOPIC</a></cite>]  legt de documentstructuur van de tekst van het besluitdeel van de aanlevering vast. Ook beschrijft deze standaard veel metadata voor de verwerking van het besluit. Verder beschrijft de STOP standaard hoe geografische informatieobjecten (GIO’s) moeten worden aangeleverd.&lt;/l</li>
-<li>Het IMOW (dit document) beschrijft hoe de tekstonderdelen van een regeling te annoteren zijn, zodat ze beter verwerkt (en op een kaart getoond) kunnen worden in het DSO. Een annotatie bestaat uit een OW-object  dat gekoppeld is aan identificeerbare onderdelen van de tekst. Het IMOW is bedoeld voor het realiseren van functionaliteit ten behoeve van het bevragen van een regeling in DSO-verband. Data zijn hiervoor bezien van uit geografisch perspectief. Bij een IMOW-aanlevering kun je denken aan het duiden van specifieke activiteiten op de kaart of het meeleveren van functies of beperkingengebieden. De gegevens die aangeleverd worden vanuit het IMOW helpen de buitenwereld in met het op een kaart terugvinden van Omgevingswet-. Dit document beschrijft hoe annotaties bij een besluit aangeleverd dienen te worden en hoe je aanlevert conform de set van IMOW.xsd’s. Deze XSD’s (XML-schema’s) worden gebruikt voor de beschrijving van XML-gebaseerde gegevensuitwisseling in het DSO. Het IMOW implementeert de objecten beschreven in het CIM-OW.</li>
-<li>In het [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimow" title="Conceptueel Informatiemodel Omgevingswet (CIMOW)">CIMOW</a></cite>] en [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimop" title="Conceptueel Informatiemodel Omgevingswet (CIMOW)">CIMOP</a></cite>] staan beschreven welke objecttypen het IMOW kent en hoe deze zich tot elkaar verhouden. Het CIM-OW is het leidende informatiemodel voor informatie-uitwisseling binnen het DSO.</li>
-<li>Het [<cite><a class="bibref" data-link-type="biblio" href="#bib-lvbb" title="Landelijke voorziening bekendmaken en beschikbaar stellen (LVBB)">LVBB</a></cite>] legt vast hoe het bevoegd gezag omgevingswetbesluiten kan indienen.
- -Toepassingsprofielen omgevingsdocumenten (TPOD’s). Per type omgevingsdocument is er ook een set aanvullende regels specifiek voor dat type omgevingsdocument. In de TPOD’s is opgenomen hoe die toegepast moeten worden. Toepassingsprofielen voor omgevingsdocumenten (TPOD's) beschrijven de juridische en informatiekundige context voor de specifieke omgevingsdocumenten. Voor onder meer de volgende typen omgevingsdocumenten zijn toepassingsprofielen gepubliceerd:<ul>
-<li>Omgevingsplan (het omgevingsdocument dat gemeenten aanleveren, het voormalige bestemmingsplan)</li>
-<li>Omgevingsverordening (het omgevingsdocument dat provincies aanleveren, de voormalige provinciale verordening)</li>
+<li>Het LVBB bronhouderkoppelvlak [<cite><a class="bibref" data-link-type="biblio" href="#bib-lvbbbhkv" title="Documentatie LVBB Bronhouderkoppelvlak">LVBBBHKV</a></cite>] schrijft voor welke bestanden er in
+de aanlevering moeten zitten wat voor eisen er zijn aan de namen van de
+bestanden etc.</li>
+<li>De STOP Standaard IC [<cite><a class="bibref" data-link-type="biblio" href="#bib-stopic" title="Standaard Officiële Publicaties">STOPIC</a></cite>] legt de documentstructuur van de tekst van het
+besluitdeel van de aanlevering vast. Ook beschrijft deze standaard veel
+metadata voor de verwerking van het besluit. Verder beschrijft de STOP
+standaard hoe geografische informatieobjecten (GIO’s) moeten worden
+aangeleverd.</li>
+<li>Het IMOW (dit document) beschrijft hoe de tekstonderdelen van een regeling te
+annoteren zijn, zodat ze beter verwerkt (en op een kaart getoond) kunnen
+worden in het DSO. Een annotatie bestaat uit een OW-object dat gekoppeld is
+aan identificeerbare onderdelen van de tekst. Het IMOW is bedoeld voor het
+realiseren van functionaliteit ten behoeve van het bevragen van een regeling
+in DSO-verband. Bij
+een IMOW-aanlevering kun je denken aan het duiden van specifieke activiteiten
+op de kaart of het meeleveren van functies of beperkingengebieden. De gegevens
+die aangeleverd worden vanuit het IMOW helpen de buitenwereld met het op
+een kaart terugvinden van Omgevingswet-informatie.</li>
+<li>De IMOW.xsd's leggen het XML formaat vast waarmee de OW-objecten moeten worden uitgewisseld.</li>
+<li>In het [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimow" title="Conceptueel Informatiemodel Omgevingswet (CIMOW)">CIMOW</a></cite>] en [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimop" title="Conceptueel Informatiemodel Omgevingswet (CIMOW)">CIMOP</a></cite>] staan beschreven welke objecttypen het IMOW kent
+en hoe deze zich tot elkaar verhouden. Het CIM-OW is het leidende
+informatiemodel voor informatie-uitwisseling binnen het DSO.</li>
+<li>Toepassingsprofielen omgevingsdocumenten (TPOD’s). Per type omgevingsdocument
+is er ook een set aanvullende regels specifiek voor dat type
+omgevingsdocument. In de TPOD’s is opgenomen hoe die toegepast moeten worden.
+Toepassingsprofielen voor omgevingsdocumenten (TPOD's) beschrijven de
+juridische en informatiekundige context voor de specifieke
+omgevingsdocumenten. Voor onder meer de volgende typen omgevingsdocumenten
+zijn toepassingsprofielen gepubliceerd:<ul>
+<li>Omgevingsplan (het omgevingsdocument dat gemeenten aanleveren, het
+voormalige bestemmingsplan)</li>
+<li>Omgevingsverordening (het omgevingsdocument dat provincies aanleveren, de
+voormalige provinciale verordening)</li>
 <li>Waterschapsverordening (het omgevingsdocument dat waterschappen aanleveren)</li>
-<li>Algemene maatregelen van bestuur/ ministeriële regeling (AMvB/MR, de omgevingsdocumenten die worden aangeleverd vanuit het rijk)</li>
-<li>Projectbesluit (het omgevingsdocument waarmee een specifiek project mogelijk wordt gemaakt)</li>
-<li>Omgevingsvisie (het omgevingsdocument waarmee het bevoegd gezag een visie kan maken)</li>
-<li>De validatiematrix beschrijft regels waaraan aanleveringen dienen te voldoen. Dit document is zelf geen standaard maar is een opsomming van regels die in de standaarden beschreven staan en waar tegen gevalideerd kan worden</li>
+<li>Algemene maatregelen van bestuur/ ministeriële regeling (AMvB/MR, de
+omgevingsdocumenten die worden aangeleverd vanuit het rijk)</li>
+<li>Projectbesluit (het omgevingsdocument waarmee een specifiek project mogelijk
+wordt gemaakt) - Omgevingsvisie (het omgevingsdocument waarmee het bevoegd
+gezag een visie kan maken)</li>
+<li>De validatiematrix beschrijft regels waaraan aanleveringen dienen te
+voldoen. Dit document is zelf geen standaard maar is een opsomming van
+regels die in de standaarden beschreven staan en waar tegen gevalideerd kan
+worden</li>
 </ul>
 </li>
-<li>Voorbeeldbestanden van correcte aanleveringen. Deze geven inzicht hoe IMOP en IMOW technisch toegepast moeten worden om een nieuw omgevingsdocument aan te leveren.
- -Waardelijsten geeft aan wat de toegestane waardes zijn bij attributen van IMOW die aan een waardelijst gekoppeld zijn. Waardelijsten worden in de Stelselcatalogus (<a href="https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten">https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten</a>) gepubliceerd.</li>
+<li>Voorbeeldbestanden van correcte aanleveringen. Deze geven inzicht hoe IMOP en
+IMOW technisch toegepast moeten worden om een nieuw omgevingsdocument aan te
+leveren.</li>
+<li>Waardelijsten geeft aan wat de toegestane waardes zijn bij
+attributen van IMOW die aan een waardelijst gekoppeld zijn. Waardelijsten
+worden in de
+<a href="https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten">Stelselcatalogus</a>
+gepubliceerd.</li>
 </ul>
 <figure id="fig-schematisch-overzicht-van-aanlevering-conform-de-standaard">
-    <img src="media/image1.png" alt="" style="width: 100%;">
+    <img src="media/image1.png" style="width: 100%;">
     <figcaption><a class="self-link" href="#fig-schematisch-overzicht-van-aanlevering-conform-de-standaard">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Schematisch overzicht van aanlevering conform de standaard</span></figcaption>
 </figure>
 
 </section><section id="imow-overzicht"><div class="header-wrapper"><h3 id="x1-2-imow-overzicht"><bdi class="secno">1.2 </bdi>IMOW overzicht</h3><a class="self-link" href="#imow-overzicht" aria-label="Permalink for Section 1.2"></a></div>
-<p>De IMOW standaard schrijft voor hoe je de tekst van een regeling (zoals beschreven in de STOP standaard) annoteert met OW-objecten. Dit gebeurt door OW-objecten mee te sturen in een Aanlevering en deze aan tekstonderdelen van OP te koppelen via de identificatie van die tekstonderdelen, het wId. OW-objecten zelf kunnen weer gekoppeld zijn aan andere OW-objecten waardoor er naast de tekst ook een gestructureerde collectie objecten bij een regeling ontstaat. Deze structuur kan bijvoorbeeld gebruikt worden om de inhoud van de regeling via een kaart te ontsluiten. </p>
-<p>De STOP standaard beschrijft twee soorten tekststructuren voor omgevingsdocument: de artikelsgewijze structuur en de vrijetekststructuur. Afhankelijk van de documentstructuur (welke je kunt gebruiken is vastgelegd in de TPOD documenten) worden verschillende objecten meegeleverd. Voor beide typen tekststructuren is een diagram toegevoegd met hierin de aanwezige objecttypen, attributen en relaties.</p>
-<p>OP-koppelingsverwijzingen zijn OW-objecten die een één-op-één tegenhanger hebben in STOP. <br>
-Een Regelobject verwijst naar een regel. Regellocatie objecten koppelen Locaties aan regels. Datatypes groeperen bij elkaar horende gegevens. Locatie objecten zijn concrete locaties. Geometrie geeft een geometrie in coördinaten. Context objecten maken geen deel uit van het IMOW  maar plaatsen de objecten van het IMOW in een bredere context.</p>
-<p>Binnen STOP zijn er twee types van Regeling te onderscheiden met  een verschillende structuur: de vrijetekststructuur en de artikelstructuur.  Deze structuurverschillen zorgen ook voor verschil in de manier waarop ze geannoteerd zijn. De volgende twee paragrafen beschrijven de tekststructuren en hun mogelijke annotatie:</p>
-</section><section id="leeswijzer"><div class="header-wrapper"><h3 id="28F55C8C"><bdi class="secno">1.3 </bdi>Leeswijzer</h3><a class="self-link" href="#28F55C8C" aria-label="Permalink for Section 1.3"></a></div><p>De rest van dit document is als volgt opgebouwd: hoofdstuk <a href="#320F8A13">2</a> beschrijft het informatiemodel en zijn onderdelen. Verder wordt het informatiemodel in de context geplaatst van de standaard voor officiële publicaties. Hoofdstuk <a href="#5C716AFD">3</a> bespreekt de technische implementatie en geeft hierbij aan welke bestanden er verwacht worden en beschrijft de randvoorwaarden voor het aanleveren. Hoofdstuk <a href="#3F5FA62D">4</a> gaat gedetailleerd in op hoe de OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder bestand dat aangeleverd kan worden. Hoofdstuk <a href="#126CC8D0">5</a> geeft weer waar het CIM-OW en IMOW afwijken. Hoofdstuk <a href="#2577D13E">6</a> beschrijft enkele aspecten uit STOP die relevant zijn voor de werking van OW en geeft richtlijnen over de wijze waarop OW zich verhoudt tot STOP. Hoofdstuk <a href="#210F8E1C">7</a> beschrijft het wijzigen van OW-objecten.<br></p>
+<p>De IMOW standaard schrijft voor hoe je de tekst van een regeling (zoals
+beschreven in de STOP standaard) annoteert met OW-objecten. Dit gebeurt door het
+aanleveren van een besluit aan de LVBB met aOW-objecten mee te sturen in een
+Aanlevering en deze aan tekstonderdelen van OP te koppelen via de identificatie
+van die tekstonderdelen, het wId. OW-objecten zelf kunnen weer gekoppeld zijn
+aan andere OW-objecten waardoor er naast de tekst ook een gestructureerde
+collectie objecten bij een regeling ontstaat. Deze structuur kan bijvoorbeeld
+gebruikt worden om de inhoud van de regeling via een kaart te ontsluiten.</p>
+<p>De STOP standaard beschrijft twee soorten tekststructuren voor
+omgevingsdocument: de artikelsgewijze structuur en de vrijetekststructuur.
+Afhankelijk van de documentstructuur (welke je kunt gebruiken is vastgelegd in
+de TPOD documenten) worden verschillende objecten meegeleverd. Voor beide typen
+tekststructuren is een diagram toegevoegd met hierin de aanwezige objecttypen,
+attributen en relaties.</p>
+<p>OP-koppelingsverwijzingen zijn OW-objecten die een één-op-één tegenhanger hebben
+in STOP. Een Regelobject verwijst naar een regel. Regellocatie objecten koppelen
+Locaties aan regels. Datatypes groeperen bij elkaar horende gegevens. Locatie
+objecten zijn concrete locaties. Geometrie geeft een geometrie in coördinaten.
+Context objecten maken geen deel uit van het IMOW maar plaatsen de objecten van
+het IMOW in een bredere context.</p>
+<p>Binnen STOP zijn er twee types van Regeling te onderscheiden met een
+verschillende structuur: de vrijetekststructuur en de artikelstructuur. Deze
+structuurverschillen zorgen ook voor verschil in de manier waarop ze geannoteerd
+zijn. De volgende twee paragrafen beschrijven de tekststructuren en hun
+mogelijke annotatie:</p>
+</section><section id="leeswijzer"><div class="header-wrapper"><h3 id="28F55C8C"><bdi class="secno">1.3 </bdi>Leeswijzer</h3><a class="self-link" href="#28F55C8C" aria-label="Permalink for Section 1.3"></a></div><p>De rest van dit document is als volgt opgebouwd: . Hoofdstuk
+<a href="#5C716AFD">2</a> bespreekt de technische implementatie en geeft hierbij
+aan welke bestanden er verwacht worden en beschrijft de randvoorwaarden voor het
+aanleveren. Hoofdstuk <a href="#3F5FA62D">3</a> gaat gedetailleerd in op hoe de
+OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
+bestand dat aangeleverd kan worden. Hoofdstuk <a href="#126CC8D0">4</a> geeft
+weer waar het CIM-OW en IMOW afwijken. Hoofdstuk <a href="#2577D13E">5</a>
+beschrijft enkele aspecten uit STOP die relevant zijn voor de werking van OW en
+geeft richtlijnen over de wijze waarop OW zich verhoudt tot STOP. Hoofdstuk
+<a href="#210F8E1C">6</a> beschrijft het wijzigen van OW-objecten.</p>
 </section></section>
   
 <section id="cat" class="normative">
@@ -9015,7 +9101,8 @@ Een Regelobject verwijst naar een regel. Regellocatie objecten koppelen Locaties
                   <th><a class="link" href="#detail_class_Waardelijsten_Idealisatie">Idealisatie</a></th>
                   <td>
                      
-                     <p>Vastlegging van de manier waarop de begrenzing van Locatie geïnterpreteerd moet worden.</p>
+                     <p>Vastlegging van de manier waarop de begrenzing van Locatie geïnterpreteerd moet worden.
+                        Togestane waardes zijn te vinden op: http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Idealisatie</p>
                      </td>
                </tr>
                <tr>
@@ -10284,7 +10371,8 @@ Een Regelobject verwijst naar een regel. Regellocatie objecten koppelen Locaties
                <tr>
                   <td>
                      
-                     <p>Vastlegging van de manier waarop de begrenzing van Locatie geïnterpreteerd moet worden.</p>
+                     <p>Vastlegging van de manier waarop de begrenzing van Locatie geïnterpreteerd moet worden.
+                        Togestane waardes zijn te vinden op: http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Idealisatie</p>
                      </td>
                </tr>
             </tbody>
@@ -10365,8 +10453,14 @@ Een Regelobject verwijst naar een regel. Regellocatie objecten koppelen Locaties
    </section>
 </section>
 
-  <section id="technische-implementatie-imow"><div class="header-wrapper"><h2 id="3F5FA62D"><bdi class="secno">4. </bdi>Technische implementatie IMOW</h2><a class="self-link" href="#3F5FA62D" aria-label="Permalink for Section 4."></a></div><p>Dit hoofdstuk schrijft de technische invulling van het IMOW voor. Paragraaf <a href="#55D70865">4.1</a> schrijft voor welke OW-bestanden moeten worden aangeleverd. Paragraaf <a href="#53A6EBF9">4.2</a> stelt eisen aan de aanlevering.<br></p>
-<section id="ow-aanlevering-en-ow-manifest"><div class="header-wrapper"><h3 id="55D70865"><bdi class="secno">4.1 </bdi>OW-aanlevering en OW-manifest</h3><a class="self-link" href="#55D70865" aria-label="Permalink for Section 4.1"></a></div><p>Een aanlevering aan de LVBB waarin een bestand met de naam ‘manifest-ow.xml’ voorkomt is een OW-aanlevering.  Naast het OW-manifest bevat de OW-aanlevering een aantal bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het OW-manifest bevat niet de GML-bestanden; deze staan in het (OP-)manifest</p>
+  <section id="technische-implementatie-imow"><div class="header-wrapper"><h2 id="3F5FA62D"><bdi class="secno">4. </bdi>Technische implementatie IMOW</h2><a class="self-link" href="#3F5FA62D" aria-label="Permalink for Section 4."></a></div><p>Dit hoofdstuk schrijft de technische invulling van het IMOW voor. Paragraaf
+<a href="#55D70865">4.1</a> schrijft voor welke OW-bestanden moeten worden
+aangeleverd. Paragraaf <a href="#53A6EBF9">4.2</a> stelt eisen aan de
+aanlevering.<br></p>
+<section id="ow-aanlevering-en-ow-manifest"><div class="header-wrapper"><h3 id="55D70865"><bdi class="secno">4.1 </bdi>OW-aanlevering en OW-manifest</h3><a class="self-link" href="#55D70865" aria-label="Permalink for Section 4.1"></a></div><p>Een aanlevering aan de LVBB waarin een bestand met de naam ‘manifest-ow.xml’
+voorkomt is een OW-aanlevering. Naast het OW-manifest bevat de OW-aanlevering
+een aantal bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het
+OW-manifest bevat niet de GML-bestanden; deze staan in het (OP-)manifest</p>
 <ol><li>Voor een OW-aanlevering gelden de volgende regels:</li>
 </ol>
 
@@ -10382,7 +10476,6 @@ Een Regelobject verwijst naar een regel. Regellocatie objecten koppelen Locaties
 <ol><li>De GML bestanden behorend bij een regeling staan in het OP-manifest:<b>Regel:</b>     In het manifest-OW mag een bestandsnaam niet eindigen op '.gml'. (LVBB1026)</li>
 </ol>
 
-<p>.</p>
 <p>Het manifest bevat de volgende XML elementen:<br></p>
 <table style="width: 100%;" class="simple"><caption></caption>
 <colgroup><col id="col1" style="width: 35.260535603072455%;">
@@ -10479,10 +10572,17 @@ Een Regelobject verwijst naar een regel. Regellocatie objecten koppelen Locaties
 </tbody>
 </table>
 
-<section id="het-aanleveren-van-ow-objecten-in-ow-bestanden"><div class="header-wrapper"><h4 id="4BFC4412"><bdi class="secno">4.1.1 </bdi>Het aanleveren van OW-objecten in OW-bestanden</h4><a class="self-link" href="#4BFC4412" aria-label="Permalink for Section 4.1.1"></a></div><p>OW-objecten worden aangeleverd inw OW-bstandenvolgens de XML-schema bestanden in: <a href="https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/" target="_blank">https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/</a> . Voor ieder type OW-object is een passend XML element. </p>
-<p>Naast deze technische validatie moeten de OW-objecten ook voldoen aan de functionele eisen zoals gespecificeerd in dit document.<br>
-Bij het aanleveren van relaties in het IMOW is in het XSD’s kennen hiervoor een Ref element gedefinieeerd, zoals ActiviteitenRef. Vul hierin de identificatie in van het gerelateerde object.</p>
-<p>Het OW-bestand  is hetgeen dat alle inhoud van een specifiek bestand bevat, alle OW-aanleveringen maken hier gebruik van.<br></p>
+<section id="het-aanleveren-van-ow-objecten-in-ow-bestanden"><div class="header-wrapper"><h4 id="4BFC4412"><bdi class="secno">4.1.1 </bdi>Het aanleveren van OW-objecten in OW-bestanden</h4><a class="self-link" href="#4BFC4412" aria-label="Permalink for Section 4.1.1"></a></div><p>OW-objecten worden aangeleverd inw OW-bstandenvolgens de XML-schema bestanden
+in:
+<a href="https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/" target="_blank">https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/</a>
+. Voor ieder type OW-object is een passend XML element.</p>
+<p>Naast deze technische validatie moeten de OW-objecten ook voldoen aan de
+functionele eisen zoals gespecificeerd in dit document.<br> Bij het aanleveren
+van relaties in het IMOW is in het XSD’s kennen hiervoor een Ref element
+gedefinieeerd, zoals ActiviteitenRef. Vul hierin de identificatie in van het
+gerelateerde object.</p>
+<p>Het OW-bestand is hetgeen dat alle inhoud van een specifiek bestand bevat, alle
+OW-aanleveringen maken hier gebruik van.<br></p>
 <table style="width: 100%;" class="simple"><caption></caption>
 <colgroup><col id="col1" style="width: 35.260535603072455%;">
 <col id="col2" style="width: 13.244758148225037%;">
@@ -10584,25 +10684,50 @@ Zie verdere paragrafen voor invulling per OW-object.<br>
 </tbody>
 </table>
 
-<p>Afhankelijk van of de OW-aanlevering bij een Omgevingsdocument met artikelstructuur of vrijetekststructuur hoort kunnen de volgende OW-objecten worden aangeleverd:</p>
-<p>Bij Artikelstructuur: Regeltekst, Juridische regel, Activiteit, Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart, Regelingsgebied<br>
-Bij Vrijetekststructuur: Divisie, Divisietekst, Tekstdeel, Hoofdlijn, Gebiedsaanwijzing, Kaart, Regelingsgebied, Locatie</p>
-</section><section id="gml-bestanden-informatief"><div class="header-wrapper"><h4 id="128024A0"><bdi class="secno">4.1.2 </bdi>GML-bestanden (informatief)</h4><a class="self-link" href="#128024A0" aria-label="Permalink for Section 4.1.2"></a></div><p>De GML-specificaties volgen de regels van de standaard Basisgeometrie (de versie die is vastgesteld op 30 september 2020): <a href="https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20200930/" target="_blank">https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20200930/</a></p>
-<p>Het bijbehorende GML applicatieschema Basisgeometrie.xsd is gepubliceerd op:  <a href="https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/" target="_blank">https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/</a> </p>
-<p>Voor de zelfstandig leesbaarheid van IMOW-standaard is de inhoud van de genoemde standaard Basisgeometrie en het schema ook opgenomen in IMOW.</p>
-<p><b>GML-versie en profiel:</b> GML 3.2.2 – SF-0.
-Simple features profile 0 is gekozen omdat de inhoud van dit model geen constructies heeft die complexer zijn dan SF-0. Voor geometrietypen is er tussen SF-0, SF-1 en SF-2 geen verschil. </p>
-<p><b>Coördinaatreferentiestelsel:</b> Het is verplicht om de srsName in te vullen op het hoogste niveau van een geometrie. Dat betekent dat van een samengestelde geometrie, een multi-geometrie, alleen op het niveau van de samenstelling de srsName verplicht is ingevuld.</p>
+<p>Afhankelijk van of de OW-aanlevering bij een Omgevingsdocument met
+artikelstructuur of vrijetekststructuur hoort kunnen de volgende OW-objecten
+worden aangeleverd:</p>
+<p>Bij Artikelstructuur: Regeltekst, Juridische regel, Activiteit,
+Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart,
+Regelingsgebied<br> Bij Vrijetekststructuur: Divisie, Divisietekst, Tekstdeel,
+Hoofdlijn, Gebiedsaanwijzing, Kaart, Regelingsgebied, Locatie</p>
+</section><section id="gml-bestanden-informatief"><div class="header-wrapper"><h4 id="128024A0"><bdi class="secno">4.1.2 </bdi>GML-bestanden (informatief)</h4><a class="self-link" href="#128024A0" aria-label="Permalink for Section 4.1.2"></a></div><p>De GML-specificaties volgen de regels van de standaard Basisgeometrie (de versie
+die is vastgesteld op 30 september 2020):
+<a href="https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20200930/" target="_blank">https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20200930/</a></p>
+<p>Het bijbehorende GML applicatieschema Basisgeometrie.xsd is gepubliceerd op:
+<a href="https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/" target="_blank">https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/</a></p>
+<p>Voor de zelfstandig leesbaarheid van IMOW-standaard is de inhoud van de genoemde
+standaard Basisgeometrie en het schema ook opgenomen in IMOW.</p>
+<p><b>GML-versie en profiel:</b> GML 3.2.2 – SF-0. Simple features profile 0 is
+gekozen omdat de inhoud van dit model geen constructies heeft die complexer zijn
+dan SF-0. Voor geometrietypen is er tussen SF-0, SF-1 en SF-2 geen verschil.</p>
+<p><b>Coördinaatreferentiestelsel:</b> Het is verplicht om de srsName in te vullen
+op het hoogste niveau van een geometrie. Dat betekent dat van een samengestelde
+geometrie, een multi-geometrie, alleen op het niveau van de samenstelling de
+srsName verplicht is ingevuld.</p>
 <p>Invul-instructie:<br></p>
 <ul><li>RD stelsel (2D): srsName="urn:ogc:def:crs:EPSG::28992"</li>
 <li>ETRS89 (2D): srsName="urn:ogc:def:crs:EPSG::4258"</li>
 </ul>
 
-<p>De beschrijving van de respectievelijke EPSG codes zijn te vinden onder de url's met het format: "<a href="http://www.opengis.net/def/crs/EPSG/0/%22%22epsgcode">http://www.opengis.net/def/crs/EPSG/0/""epsgcode</a>". Bijvoorbeeld voor EPSG 28992 is dat: <a href="https://www.opengis.net/def/crs/EPSG/0/28992" target="_blank">https://www.opengis.net/def/crs/EPSG/0/28992</a><br>
-Momenteel worden in het DSO de 3D-coördinatenreferentiestelsels nog niet ondersteund (EPSG:4937, EPSG:7415, EPSG:7423).</p>
-<p><b>gml:id:</b>&nbsp;Voor implementatie in GML zijn er aanvullende specificaties als het gaat om het invullen van een gml:id attribuut. Dit gml:id attribuut heeft geen informatiewaarde maar is nodig om interne en externe referenties te realiseren voor gebruik binnen het gml formaat. Voor de GML 3.2.1 was dit een verplicht element maar voor GML 3.2.2 is dit optioneel.</p>
-<p>Indien de optionele gml:id wordt toegepast dient deze globaal uniek te zijn en mag de waarde conform de gml specificaties alleen met een letter of een underscore beginnen.</p>
-<p><b>Nauwkeurigheid van coördinaten:</b> Coördinaten opgenomen bij een geometrie worden standaard uitgewisseld met een getalsnauwkeurigheid van 1 mm of het equivalent daarvan in graden. Voor RD, NAP en ETRS89 komt dat overeen met de volgende nauwkeurigheden:<br></p>
+<p>De beschrijving van de respectievelijke EPSG codes zijn te vinden onder de url's
+met het format: "<a href="http://www.opengis.net/def/crs/EPSG/0/%22%22epsgcode">http://www.opengis.net/def/crs/EPSG/0/""epsgcode</a>". Bijvoorbeeld
+voor EPSG 28992 is dat:
+<a href="https://www.opengis.net/def/crs/EPSG/0/28992" target="_blank">https://www.opengis.net/def/crs/EPSG/0/28992</a><br>
+Momenteel worden in het DSO de 3D-coördinatenreferentiestelsels nog niet
+ondersteund (EPSG:4937, EPSG:7415, EPSG:7423).</p>
+<p><b>gml:id:</b>&nbsp;Voor implementatie in GML zijn er aanvullende specificaties als
+het gaat om het invullen van een gml:id attribuut. Dit gml:id attribuut heeft
+geen informatiewaarde maar is nodig om interne en externe referenties te
+realiseren voor gebruik binnen het gml formaat. Voor de GML 3.2.1 was dit een
+verplicht element maar voor GML 3.2.2 is dit optioneel.</p>
+<p>Indien de optionele gml:id wordt toegepast dient deze globaal uniek te zijn en
+mag de waarde conform de gml specificaties alleen met een letter of een
+underscore beginnen.</p>
+<p><b>Nauwkeurigheid van coördinaten:</b> Coördinaten opgenomen bij een geometrie
+worden standaard uitgewisseld met een getalsnauwkeurigheid van 1 mm of het
+equivalent daarvan in graden. Voor RD, NAP en ETRS89 komt dat overeen met de
+volgende nauwkeurigheden:<br></p>
 <ul><li>RD in meters 3 decimalen (1 mm);</li>
 <li>NAP-hoogte in meters 3 decimalen (1 mm);</li>
 <li>ETRS89-breedte in graden 8 decimalen (1,1 mm);</li>
@@ -10610,12 +10735,23 @@ Momenteel worden in het DSO de 3D-coördinatenreferentiestelsels nog niet onders
 <li>ETRS89-hoogte in meters 3 decimalen (1 mm).</li>
 </ul>
 
-<p>Alles wat nauwkeuriger is wordt afgerond op deze nauwkeurigheid van 3 of 8 decimalen. Afronding is volgens de volgende regel:<br>
-0.0015 -&gt; 0.002;<br>
+<p>Alles wat nauwkeuriger is wordt afgerond op deze nauwkeurigheid van 3 of 8
+decimalen. Afronding is volgens de volgende regel:<br> 0.0015 -&gt; 0.002;<br>
 0.0014 -&gt; 0.001.<br></p>
-</section></section><section id="eisen-bij-aanleveren"><div class="header-wrapper"><h3 id="53A6EBF9"><bdi class="secno">4.2 </bdi>Eisen bij aanleveren</h3><a class="self-link" href="#53A6EBF9" aria-label="Permalink for Section 4.2"></a></div><p>Bij het aanleveren dient er rekening gehouden te worden met verschillende aspecten. In <a href="#5E94A976">4.2.1</a> wordt beschreven hoe de identificatie van de objecten er uit dient te zien. In <a href="#10D4544F">4.2.2</a> worden waardelijsten beschreven. In <a href="#6F5FDC8F">4.2.3</a> wordt het toekennen van OW-objecten aan regeling vastgelegd. Paragraaf <a href="#60ED5DE4">4.2.4</a> stelt eisen aan het verwijzen tussen verschillende OW-objecten. Paragraaf <a href="#08BD28A2">4.2.5</a> legt vast hoe de functionele structuur wordt behouden. Paragraaf <a href="#7F3046AE">4.2.6</a> stelt extra regels voor documenten van het type tijdelijk regelingdeel.<br></p>
-<section id="identificatie-van-ow-objecten"><div class="header-wrapper"><h4 id="5E94A976"><bdi class="secno">4.2.1 </bdi>Identificatie van OW-objecten</h4><a class="self-link" href="#5E94A976" aria-label="Permalink for Section 4.2.1"></a></div><p>OW-objecten hebben het in DSO een unieke identificatie. Deze uniciteit wordt gewaarborgd door een unieke code die de bronhouder identificeert te combineren met een identificatie van het object binnen het domein van de bronhouder. </p>
-<p>De wijze van het identificeren van objecten in het IMOW volgt de NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:<br></p>
+</section></section><section id="eisen-bij-aanleveren"><div class="header-wrapper"><h3 id="53A6EBF9"><bdi class="secno">4.2 </bdi>Eisen bij aanleveren</h3><a class="self-link" href="#53A6EBF9" aria-label="Permalink for Section 4.2"></a></div><p>Bij het aanleveren dient er rekening gehouden te worden met verschillende
+aspecten. In <a href="#5E94A976">4.2.1</a> wordt beschreven hoe de identificatie
+van de objecten er uit dient te zien. In <a href="#10D4544F">4.2.2</a> worden
+waardelijsten beschreven. In <a href="#6F5FDC8F">4.2.3</a> wordt het toekennen
+van OW-objecten aan regeling vastgelegd. Paragraaf <a href="#60ED5DE4">4.2.4</a>
+stelt eisen aan het verwijzen tussen verschillende OW-objecten. Paragraaf
+<a href="#08BD28A2">4.2.5</a> legt vast hoe de functionele structuur wordt
+behouden. Paragraaf <a href="#7F3046AE">4.2.6</a> stelt extra regels voor
+documenten van het type tijdelijk regelingdeel.<br></p>
+<section id="identificatie-van-ow-objecten"><div class="header-wrapper"><h4 id="5E94A976"><bdi class="secno">4.2.1 </bdi>Identificatie van OW-objecten</h4><a class="self-link" href="#5E94A976" aria-label="Permalink for Section 4.2.1"></a></div><p>OW-objecten hebben het in DSO een unieke identificatie. Deze uniciteit wordt
+gewaarborgd door een unieke code die de bronhouder identificeert te combineren
+met een identificatie van het object binnen het domein van de bronhouder.</p>
+<p>De wijze van het identificeren van objecten in het IMOW volgt de
+NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:<br></p>
 <table style="width: 100%;" class="simple"><caption></caption>
 <colgroup><col id="col1" style="width: 100%;">
 </colgroup>
@@ -10673,10 +10809,14 @@ Momenteel worden in het DSO de 3D-coördinatenreferentiestelsels nog niet onders
 </tbody>
 </table>
 
-<p>De lokale identificatie als geheel wordt dan bijvoorbeeld: nl.imow-gm0200.gebied.2019000001</p>
-<p>Het bestuurlijkeGrenzenID<br>
-Voor Ambtsgebieden is een extra identificatie nodig die verwijst naar de bestuurlijkeGrenzen-voorziening<span class="noot">[1]<span class="noottekst"> <a href="https://brk.basisregistraties.overheid.nl/bestuurlijke-grenzen-api">https://brk.basisregistraties.overheid.nl/bestuurlijke-grenzen-api</a><br>
-</span></span>. Deze identificatie is de bestuurlijkeGrenzenID en ziet als volgt uit:</p>
+<p>De lokale identificatie als geheel wordt dan bijvoorbeeld:
+nl.imow-gm0200.gebied.2019000001</p>
+<p>Het bestuurlijkeGrenzenID<br> Voor Ambtsgebieden is een extra identificatie
+nodig die verwijst naar de
+bestuurlijkeGrenzen-voorziening<span class="noot">[1]<span class="noottekst">
+<a href="https://brk.basisregistraties.overheid.nl/bestuurlijke-grenzen-api">https://brk.basisregistraties.overheid.nl/bestuurlijke-grenzen-api</a><br>
+</span></span>. Deze identificatie is de bestuurlijkeGrenzenID en ziet als volgt
+uit:</p>
 <table style="width: 100%;" class="simple"><caption></caption>
 <colgroup><col id="col1" style="width: 40.620172147428825%;">
 <col id="col2" style="width: 59.379827852571175%;">
@@ -10701,8 +10841,14 @@ Voor Ambtsgebieden is een extra identificatie nodig die verwijst naar de bestuur
 </table>
 
 <p>De lokale identificatie als geheel is dan bijvoorbeeld: GM0297 of LND6030.A</p>
-</section><section id="waardelijsten"><div class="header-wrapper"><h4 id="10D4544F"><bdi class="secno">4.2.2 </bdi>Waardelijsten</h4><a class="self-link" href="#10D4544F" aria-label="Permalink for Section 4.2.2"></a></div><p>In CIM-OW is te vinden welke attributen als datatype een waardelijst hebben. Bijvoorbeeld, een activiteit heeft een kenmerk groep, waarvan de waarde uit de waardelijst ActiviteitenGroep moet komen. In hoofdstuk <b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b> is te zien dat een waarde correspondeert met een waardelijst als dit is aangegeven in de toelichting of bij het datatype URI.</p>
-<p>Bij het valideren van de waarden wordt binnen het OW de volgende reguliere expressie gehanteerd:</p>
+</section><section id="waardelijsten"><div class="header-wrapper"><h4 id="10D4544F"><bdi class="secno">4.2.2 </bdi>Waardelijsten</h4><a class="self-link" href="#10D4544F" aria-label="Permalink for Section 4.2.2"></a></div><p>In CIM-OW is te vinden welke attributen als datatype een waardelijst hebben.
+Bijvoorbeeld, een activiteit heeft een kenmerk groep, waarvan de waarde uit de
+waardelijst ActiviteitenGroep moet komen. In hoofdstuk <b><a href="#">Fout!
+Verwijzingsbron niet gevonden.</a></b> is te zien dat een waarde correspondeert
+met een waardelijst als dit is aangegeven in de toelichting of bij het datatype
+URI.</p>
+<p>Bij het valideren van de waarden wordt binnen het OW de volgende reguliere
+expressie gehanteerd:</p>
 <table style="width: 100%;" class="simple"><caption></caption>
 <colgroup><col id="col1" style="width: 100%;">
 </colgroup>
@@ -10712,46 +10858,87 @@ Voor Ambtsgebieden is een extra identificatie nodig die verwijst naar de bestuur
 </tbody>
 </table>
 
-<p>Vervolgens controleert het DSO of de waarde voorkomt in de stelselcatalogus. De stelselcatalogus is publiekelijk beschikbaar.<br></p>
-</section><section id="toekennen-van-ow-objecten-aan-regelingen"><div class="header-wrapper"><h4 id="6F5FDC8F"><bdi class="secno">4.2.3 </bdi>Toekennen van OW-objecten aan regelingen</h4><a class="self-link" href="#6F5FDC8F" aria-label="Permalink for Section 4.2.3"></a></div><p>Een OW-object hoort bij een regeling. Als een besluit een regeling wijzigt horen de OW-objecten die in dat besluit ontstaan bij die regeling. Je kunt OW-objecten alleen wijzigen in wijzigbesluiten die die betreffende regeling wijzigen. Dit is vastgelegd in de volgende regels:</p>
-<p><b>Regel: </b>Het WorkIDRegeling van de OW-Aanlevering waarin een OW-object ontstaat bepaalt bij welke regeling een OW-object hoort.</p>
-<p><b>Regel </b>(TPOD1200): Een OW-object mag alleen gewijzigd worden in een OW-aanlevering die hoort bij een besluit dat de regeling wijzigt waar het OW-object bij hoort.<br></p>
-</section><section id="verwijzingen-tussen-ow-objecten"><div class="header-wrapper"><h4 id="60ED5DE4"><bdi class="secno">4.2.4 </bdi>Verwijzingen tussen OW-objecten</h4><a class="self-link" href="#60ED5DE4" aria-label="Permalink for Section 4.2.4"></a></div><p>In OZON mag een actief OW-object niet verwijzen naar een beëindigd OW-object. Daarom moet een besluit dat een OW-object beëindigt ook alle verwijzingen naar dat OW-object beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen <b>kan</b> wijzigen, hiertoe introduceren we een regel die verwijzingen naar OW-objecten van andere bevoegd gezagen inperkt:</p>
+<p>Vervolgens controleert het DSO of de waarde voorkomt in de stelselcatalogus. De
+stelselcatalogus is publiekelijk beschikbaar.<br></p>
+</section><section id="toekennen-van-ow-objecten-aan-regelingen"><div class="header-wrapper"><h4 id="6F5FDC8F"><bdi class="secno">4.2.3 </bdi>Toekennen van OW-objecten aan regelingen</h4><a class="self-link" href="#6F5FDC8F" aria-label="Permalink for Section 4.2.3"></a></div><p>Een OW-object hoort bij een regeling. Als een besluit een regeling wijzigt horen
+de OW-objecten die in dat besluit ontstaan bij die regeling. Je kunt OW-objecten
+alleen wijzigen in wijzigbesluiten die die betreffende regeling wijzigen. Dit is
+vastgelegd in de volgende regels:</p>
+<p><b>Regel: </b>Het WorkIDRegeling van de OW-Aanlevering waarin een OW-object
+ontstaat bepaalt bij welke regeling een OW-object hoort.</p>
+<p><b>Regel </b>(TPOD1200): Een OW-object mag alleen gewijzigd worden in een
+OW-aanlevering die hoort bij een besluit dat de regeling wijzigt waar het
+OW-object bij hoort.<br></p>
+</section><section id="verwijzingen-tussen-ow-objecten"><div class="header-wrapper"><h4 id="60ED5DE4"><bdi class="secno">4.2.4 </bdi>Verwijzingen tussen OW-objecten</h4><a class="self-link" href="#60ED5DE4" aria-label="Permalink for Section 4.2.4"></a></div><p>In OZON mag een actief OW-object niet verwijzen naar een beëindigd OW-object.
+Daarom moet een besluit dat een OW-object beëindigt ook alle verwijzingen naar
+dat OW-object beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen
+<b>kan</b> wijzigen, hiertoe introduceren we een regel die verwijzingen naar
+OW-objecten van andere bevoegd gezagen inperkt:</p>
 <p><b>Regel </b>(TPOD1950):<br></p>
 <ul><li>Een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel mag alleen verwijzen naar een OW-object behorend bij een regeling van hetzelfde bevoegd gezag, met uitzondering van de relatie bovenliggendeActiviteit van het OW-object Activiteit, waarvoor de specifieke regels van paragraaf <a href="#08BD28A2">4.2.5</a> gelden;</li>
 <li>een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel mag niet verwijzen naar een OW-object behorend bij een tijdelijk regelingdeel;</li>
 <li>een OW-object behorend bij een tijdelijk regelingdeel mag alleen verwijzen naar een OW-object behorend bij hetzelfde tijdelijk regelingdeel, met uitzondering van de relatie bovenliggendeActiviteit van de tophaak-Activiteit van het tijdelijk regelingdeel, waarvoor de specifieke regels van paragraaf <a href="#7F3046AE">4.2.6</a> gelden.</li>
 </ul>
 
-</section><section id="de-functionele-structuur"><div class="header-wrapper"><h4 id="08BD28A2"><bdi class="secno">4.2.5 </bdi>De functionele structuur</h4><a class="self-link" href="#08BD28A2" aria-label="Permalink for Section 4.2.5"></a></div><p>De activiteiten in het stelsel vormen samen de ‘functionele structuur’.  Deze boomstructuur bevat alle Activiteit objecten in de regelingen en de hiërarchie wordt bepaald door de bovenliggendeActiviteit relatie van de OW-Objecten van het type Activiteit. In <a href="#d3e3754">Figuur 10</a> is de het bovenste deel van functionele structuur getekend. Met Placeholder-Regeling wordt bedoeld de regeling die, met het opschrift Omgevingswet, in het stelsel is ingebracht met uitsluitend het doel om beschikbaar te stellen de bovenste Activiteiten van de functionele structuur zoals ‘Activiteit met gevolgen voor de fysieke leefomgeving’ en ‘Activiteit gereguleerd in het omgevingsplan’, de Activiteiten die zijn genoemd in artikel 5.1 Ow en enkele Activiteiten van de AMvB’s en de Omgevingsregeling. De regels in deze paragaaf zorgen ervoor dat de hiërarchie van de functionele structuur behouden blijft bij wijzigingen.</p>
+</section><section id="de-functionele-structuur"><div class="header-wrapper"><h4 id="08BD28A2"><bdi class="secno">4.2.5 </bdi>De functionele structuur</h4><a class="self-link" href="#08BD28A2" aria-label="Permalink for Section 4.2.5"></a></div><p>De activiteiten in het stelsel vormen samen de ‘functionele structuur’. Deze
+boomstructuur bevat alle Activiteit objecten in de regelingen en de hiërarchie
+wordt bepaald door de bovenliggendeActiviteit relatie van de OW-Objecten van het
+type Activiteit. In <a href="#d3e3754">Figuur 10</a> is de het bovenste deel van
+functionele structuur getekend. Met Placeholder-Regeling wordt bedoeld de
+regeling die, met het opschrift Omgevingswet, in het stelsel is ingebracht met
+uitsluitend het doel om beschikbaar te stellen de bovenste Activiteiten van de
+functionele structuur zoals ‘Activiteit met gevolgen voor de fysieke
+leefomgeving’ en ‘Activiteit gereguleerd in het omgevingsplan’, de Activiteiten
+die zijn genoemd in artikel 5.1 Ow en enkele Activiteiten van de AMvB’s en de
+Omgevingsregeling. De regels in deze paragaaf zorgen ervoor dat de hiërarchie
+van de functionele structuur behouden blijft bij wijzigingen.</p>
 <figure id="fig-de-top-van-de-hierarchie-van-de-functionele-structuur"><img src="media/image18.png" alt="Afbeelding met tekst, schermopname, Lettertype, nummer" style="width: 70.32967032967034%;">
 <figcaption><a class="self-link" href="#fig-de-top-van-de-hierarchie-van-de-functionele-structuur">Figuur <bdi class="figno">9</bdi></a> <span class="fig-title">: de top van de hiërarchie van de functionele structuur</span></figcaption></figure>
 
-<p>De volgende regel schrijft de naam en aanwezigheid van een tophaak Activiteit in regelingen voor:</p>
-<p><b>Regel </b>(TPOD1951):<b> </b>Met uitzondering van AMvB en ministeriële regeling moet in iedere Regeling waarin één of meer Activiteiten zijn geannoteerd één zogenaamde tophaak voorkomen:<br></p>
+<p>De volgende regel schrijft de naam en aanwezigheid van een tophaak Activiteit in
+regelingen voor:</p>
+<p><b>Regel </b>(TPOD1951):<b> </b>Met uitzondering van AMvB en ministeriële
+regeling moet in iedere Regeling waarin één of meer Activiteiten zijn
+geannoteerd één zogenaamde tophaak voorkomen:<br></p>
 <ul><li>voor de omgevingsverordening is dat de meest bovenliggende Activiteit van die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in de omgevingsverordening &lt;naam provincie&gt;’;</li>
 <li>voor de waterschapsverordening is dat de meest bovenliggende Activiteit van die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in de waterschapsverordening &lt;naam waterschap&gt;’;</li>
 <li>voor het omgevingsplan is dat de meest bovenliggende Activiteit van die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in het omgevingsplan gemeente &lt;naam gemeente&gt;’.</li>
 </ul>
 
-<p>De volgende regels schrjven voor hoe de relatie bovenliggendeActiviteit moet worden ingevuld:</p>
-<p><b>Regel </b>(TPOD1952):<b> </b> Voor omgevingsverordening, waterschapsverordening en omgevingsplan geldt, in afwijking van het bepaalde in paragraaf <a href="#60ED5DE4">4.2.4</a>, dat de relatie bovenliggendeActiviteit van een Activiteit niet zijnde de tophaak uitsluitend mag verwijzen naar een andere Activiteit die hoort bij dezelfde Regeling.</p>
-<p><b>Regel </b>(TPOD1953): Voor de relatie bovenliggendeActiviteit van de tophaken geldt, in afwijking van het bepaalde in paragraaf <a href="#60ED5DE4">4.2.4</a>, het volgende:<br></p>
+<p>De volgende regels schrjven voor hoe de relatie bovenliggendeActiviteit moet
+worden ingevuld:</p>
+<p><b>Regel </b>(TPOD1952):<b> </b> Voor omgevingsverordening,
+waterschapsverordening en omgevingsplan geldt, in afwijking van het bepaalde in
+paragraaf <a href="#60ED5DE4">4.2.4</a>, dat de relatie bovenliggendeActiviteit
+van een Activiteit niet zijnde de tophaak uitsluitend mag verwijzen naar een
+andere Activiteit die hoort bij dezelfde Regeling.</p>
+<p><b>Regel </b>(TPOD1953): Voor de relatie bovenliggendeActiviteit van de tophaken
+geldt, in afwijking van het bepaalde in paragraaf <a href="#60ED5DE4">4.2.4</a>,
+het volgende:<br></p>
 <ul><li>in de omgevingsverordening moet de relatie bovenliggendeActiviteit van de tophaak verwijzen naar de ‘Activiteit gereguleerd in de omgevingsverordening’ in de Placeholder-Regeling;</li>
 <li>in de waterschapsverordening moet de relatie bovenliggendeActiviteit van de tophaak moet verwijzen naar de ‘Activiteit gereguleerd in de waterschapsverordening’ in de Placeholder-Regeling;</li>
 <li>in het omgevingsplan moet de relatie bovenliggendeActiviteit van de tophaak moet verwijzen naar de ‘Activiteit gereguleerd in het omgevingsplan’ in de Placeholder-Regeling;</li>
 <li>in AMvB en ministeriële regeling mag de relatie bovenliggendeActiviteit van een Activiteit uitsluitend verwijzen naar de ‘Activiteit gereguleerd bij AMvB’ of naar een andere Activiteit die hoort bij de Placeholder-Regeling, bij een AMvB of bij een ministeriële regeling.</li>
 </ul>
 
-</section><section id="tijdelijk-regelingdelen"><div class="header-wrapper"><h4 id="7F3046AE"><bdi class="secno">4.2.6 </bdi>Tijdelijk regelingdelen</h4><a class="self-link" href="#7F3046AE" aria-label="Permalink for Section 4.2.6"></a></div><p>Tijdelijk regelingdelen, zoals beschreven in de STOP standaard kunnen door een ander bevoegd gezag worden ingetrokken dan het bevoegd gezag waardoor het is aangemaakt. Voor een tijdelijk regelingdeel geldt de volgende regel:</p>
+</section><section id="tijdelijk-regelingdelen"><div class="header-wrapper"><h4 id="7F3046AE"><bdi class="secno">4.2.6 </bdi>Tijdelijk regelingdelen</h4><a class="self-link" href="#7F3046AE" aria-label="Permalink for Section 4.2.6"></a></div><p>Tijdelijk regelingdelen, zoals beschreven in de STOP standaard kunnen door een
+ander bevoegd gezag worden ingetrokken dan het bevoegd gezag waardoor het is
+aangemaakt. Voor een tijdelijk regelingdeel geldt de volgende regel:</p>
 <p><b>Regel </b>(TPOD1954):<br></p>
 <ul><li>in een tijdelijk regelingdeel waarin één of meer Activiteiten zijn geannoteerd moet één zogenaamde tophaak voorkomen;</li>
 <li>de tophaak is de meest bovenliggende Activiteit van het tijdelijk regelingdeel;</li>
 <li>de naam van de tophaak annex de meest bovenliggende Activiteit moet zijn ‘Activiteit gereguleerd in &lt;citeertitel tijdelijk regelingdeel&gt;’;</li>
 <li>voor een tijdelijk regelingdeel geldt dat de relatie bovenliggendeActiviteit van de tophaak moet verwijzen naar de tophaak van de regeling waaraan het tijdelijk regelingdeel door middel van het element isTijdelijkdeelVan gekoppeld is.</li>
 </ul></section></section></section>
-  <section id="verschillen-tussen-imow-en-cim-ow"><div class="header-wrapper"><h2 id="126CC8D0"><bdi class="secno">5. </bdi>Verschillen tussen IMOW en CIM-OW</h2><a class="self-link" href="#126CC8D0" aria-label="Permalink for Section 5."></a></div><p>Het IMOW is een implementatie van het conceptuele model CIM-OW. Niet alles uit het CIM-OW is één op één overgenomen in het IMOW. Dit hoofdstuk beschrijft de verschillen: CIM-OW aspecten die niet in het IMOW zitten worden geduid in paragraaf 5.1. en paragraaf 5.2 bescrijft  de delen van het IMOW die niet in het CIM-OW zitten.<br></p>
-<section id="cim-ow-aspecten-niet-in-imow"><div class="header-wrapper"><h3 id="19F408D9"><bdi class="secno">5.1 </bdi>CIM-OW-aspecten niet in IMOW</h3><a class="self-link" href="#19F408D9" aria-label="Permalink for Section 5.1"></a></div><p>Niet alle concepten beschreven in het CIM-OW worden vastgelegd in het IMOW.  Sommige van de van deze gegevens zijn af te leiden uit het OP-deel van een Aanlevering.  Deze gegevens hoeven niet nogmaals beschreven in het IMOW. Het gaat hier bijvoorbeeld om de volgende concepten uit het CIM-OW:<br></p>
+  <section id="verschillen-tussen-imow-en-cim-ow"><div class="header-wrapper"><h2 id="126CC8D0"><bdi class="secno">5. </bdi>Verschillen tussen IMOW en CIM-OW</h2><a class="self-link" href="#126CC8D0" aria-label="Permalink for Section 5."></a></div><p>Het IMOW is een implementatie van het conceptuele model CIM-OW. Niet alles uit
+het CIM-OW is één op één overgenomen in het IMOW. Dit hoofdstuk beschrijft de
+verschillen: CIM-OW aspecten die niet in het IMOW zitten worden geduid in
+paragraaf 5.1. en paragraaf 5.2 bescrijft de delen van het IMOW die niet in het
+CIM-OW zitten.<br></p>
+<section id="cim-ow-aspecten-niet-in-imow"><div class="header-wrapper"><h3 id="19F408D9"><bdi class="secno">5.1 </bdi>CIM-OW-aspecten niet in IMOW</h3><a class="self-link" href="#19F408D9" aria-label="Permalink for Section 5.1"></a></div><p>Niet alle concepten beschreven in het CIM-OW worden vastgelegd in het IMOW.
+Sommige van de van deze gegevens zijn af te leiden uit het OP-deel van een
+Aanlevering. Deze gegevens hoeven niet nogmaals beschreven in het IMOW. Het gaat
+hier bijvoorbeeld om de volgende concepten uit het CIM-OW:<br></p>
 <ul><li>Regeltekst.Werkingsgebied – het werkingsgebied wordt afgeleid op basis van de locatieaanduidingen van Juridische regels.</li>
 <li>Activiteit.locatie – hierin zit de locaties waar de Activiteit gereguleerd wordt, deze wordt in het IMOW via de activiteitlocatieaanduidingen vastgelegd.</li>
 <li>Regeltekst.Omschrijving – hierin zit de inhoud van de Regeltekst, deze wordt niet aangeleverd via IMOW, maar wordt via de OP-bestanden afgeleid.</li>
@@ -10759,35 +10946,74 @@ Voor Ambtsgebieden is een extra identificatie nodig die verwijst naar de bestuur
 <li>De tijdslijnen voor de objectvorming in DSO-LV worden gebaseerd op het omgevingsdocument dat de LVBB maakt en uitlevert.</li>
 </ul>
 
-</section><section id="imow-aspecten-niet-in-cim-ow"><div class="header-wrapper"><h3 id="6C42F8AD"><bdi class="secno">5.2 </bdi>IMOW-aspecten niet in CIM-OW</h3><a class="self-link" href="#6C42F8AD" aria-label="Permalink for Section 5.2"></a></div><ol><li>Het IMOW kent de volgende verschillen ten opzichte van het CIM-OW:</li>
-</ol>
-
-<p><b>Gebiedsaanwijzing</b><br>
-Gebiedsaanwijzing is meer generiek opgezet in IMOW dan in CIM-OW. De Functie en het Beperkingengebied zijn zo opgezet dat er andere typen Gebiedsaanwijzingen toegevoegd kunnen worden, zonder impact op de XSD’s. De type gebiedsaanwijzingen kunnen worden meegegeven door het kenmerk ‘TypeGebiedsaanwijzing’. De groepen die je kunt selecteren volgen vervolgens uit de verschillende waardelijsten van de specifieke ‘gebiedsaanwijzingstypen’.</p>
-<p><b>Relaties</b><br>
-In IMOW staan de rolnamen centraal in plaats van de naam van de relatiesoort. Deze rolnamen worden ook gebruikt in de XML-schemas.</p>
-<p><b>Regelingsgebied</b><br>
-In het IMOW wordt er een specifiek object benoemd dat Regelingsgebied heet. In het CIM-OW is dit op een andere manier vormgegeven. Een regelingsgebied in IMOW koppelt een Locatie aan een Omgevingsdocument, zodat deze Locatie het regelingsgebied van een Omgevingsdocument wordt. Het regelingsgebied uit IMOW wordt in DSO-LV niet tot een OW-object gevormd. In DSO-LV is een regelingsgebied een relatie tussen een Omgevingsdocument en een Locatie, conform CIM-OW.</p>
-<p><b>ActiviteitLocatieaanduiding</b><br>
-In CIM-OW is dit gemodelleerd als gegevensgroep, terwijl dit in IMOW een relatieklasse is</p>
-<p><b>Geometrie en GIO</b><br>
-In het IMOW wordt het kenmerk Geometrie als apart objecttype getoond. Conceptueel (CIM-OW) is een geometrie een kenmerk van een locatie, maar in de implementatie (IMOW) wordt het gezien als een gerefereerd objecttype. Dit objecttype Geometrie is geen zelfstandig objecttype, het hoort altijd als gerefereerde eigenschap bij een Locatie. Een Geometrie kan niet zelfstandig gemuteerd worden en historie opbouwen, maar een Locatie kan dat wel.</p>
-<p>Geometrie wordt door zowel STOP als IMOP gebruikt. Het BG hoeft daardoor Geometrie maar één keer aan te leveren. Vanwege dat gezamenlijk gebruik is Geometrie in een zelfstandig bestand geplaatst van waaruit zowel een GIO als de informatieobjecten uit IMOW apart naar wordt verwezen. Verschil in 1.0 is wel dat het GML-bestand normwaarden dient te bevatten indien deze bij de geometrie horen. Deze worden middels het GIO-schema geduid, en vallen niet onder het IMOW.</p>
-<p>Zie paragraaf <a href="#110333AD">2.2.5</a> voor het IMOW model voor geometrie en locatie.</p>
+</section><section id="imow-aspecten-niet-in-cim-ow"><div class="header-wrapper"><h3 id="6C42F8AD"><bdi class="secno">5.2 </bdi>IMOW-aspecten niet in CIM-OW</h3><a class="self-link" href="#6C42F8AD" aria-label="Permalink for Section 5.2"></a></div><p>Het IMOW kent de volgende verschillen ten opzichte van het CIM-OW:</p>
+<section id="gebiedsaanwijzing"><div class="header-wrapper"><h4 id="x5-2-1-gebiedsaanwijzing"><bdi class="secno">5.2.1 </bdi>Gebiedsaanwijzing</h4><a class="self-link" href="#gebiedsaanwijzing" aria-label="Permalink for Section 5.2.1"></a></div>
+<p>Gebiedsaanwijzing is meer generiek opgezet in IMOW dan in CIM-OW. De Functie en
+het Beperkingengebied zijn zo opgezet dat er andere typen Gebiedsaanwijzingen
+toegevoegd kunnen worden, zonder impact op de XSD’s. De type gebiedsaanwijzingen
+kunnen worden meegegeven door het kenmerk ‘TypeGebiedsaanwijzing’. De groepen
+die je kunt selecteren volgen vervolgens uit de verschillende waardelijsten van
+de specifieke ‘gebiedsaanwijzingstypen’.</p>
+</section><section id="relaties"><div class="header-wrapper"><h4 id="x5-2-2-relaties"><bdi class="secno">5.2.2 </bdi>Relaties</h4><a class="self-link" href="#relaties" aria-label="Permalink for Section 5.2.2"></a></div>
+<p>In IMOW staan de rolnamen centraal in plaats van de naam van de relatiesoort.
+Deze rolnamen worden ook gebruikt in de XML-schemas.</p>
+</section><section id="regelingsgebied"><div class="header-wrapper"><h4 id="x5-2-3-regelingsgebied"><bdi class="secno">5.2.3 </bdi>Regelingsgebied</h4><a class="self-link" href="#regelingsgebied" aria-label="Permalink for Section 5.2.3"></a></div>
+<p>In het IMOW wordt er een specifiek object benoemd dat Regelingsgebied heet. In
+het CIM-OW is dit op een andere manier vormgegeven. Een regelingsgebied in IMOW
+koppelt een Locatie aan een Omgevingsdocument, zodat deze Locatie het
+regelingsgebied van een Omgevingsdocument wordt. Het regelingsgebied uit IMOW
+wordt in DSO-LV niet tot een OW-object gevormd. In DSO-LV is een regelingsgebied
+een relatie tussen een Omgevingsdocument en een Locatie, conform CIM-OW.</p>
+</section><section id="activiteitlocatieaanduiding"><div class="header-wrapper"><h4 id="x5-2-4-activiteitlocatieaanduiding"><bdi class="secno">5.2.4 </bdi>ActiviteitLocatieaanduiding</h4><a class="self-link" href="#activiteitlocatieaanduiding" aria-label="Permalink for Section 5.2.4"></a></div>
+<p>In CIM-OW is dit gemodelleerd als gegevensgroep, terwijl dit in IMOW een
+relatieklasse is</p>
+</section><section id="geometrie-en-gio"><div class="header-wrapper"><h4 id="x5-2-5-geometrie-en-gio"><bdi class="secno">5.2.5 </bdi>Geometrie en GIO</h4><a class="self-link" href="#geometrie-en-gio" aria-label="Permalink for Section 5.2.5"></a></div>
+<p>In het IMOW wordt het kenmerk Geometrie als apart objecttype getoond.
+Conceptueel (CIM-OW) is een geometrie een kenmerk van een locatie, maar in de
+implementatie (IMOW) wordt het gezien als een gerefereerd objecttype. Dit
+objecttype Geometrie is geen zelfstandig objecttype, het hoort altijd als
+gerefereerde eigenschap bij een Locatie. Een Geometrie kan niet zelfstandig
+gemuteerd worden en historie opbouwen, maar een Locatie kan dat wel.</p>
+<p>Geometrie wordt door zowel STOP als IMOP gebruikt. Het BG hoeft daardoor
+Geometrie maar één keer aan te leveren. Vanwege dat gezamenlijk gebruik is
+Geometrie in een zelfstandig bestand geplaatst van waaruit zowel een GIO als de
+informatieobjecten uit IMOW apart naar wordt verwezen. Verschil in 1.0 is wel
+dat het GML-bestand normwaarden dient te bevatten indien deze bij de geometrie
+horen. Deze worden middels het GIO-schema geduid, en vallen niet onder het IMOW.</p>
+<p>Zie paragraaf <a href="#110333AD">2.2.5</a> voor het IMOW model voor geometrie
+en locatie.</p>
 <p>Deze geometrie constructie leidt tot de volgende IMOW-attributen:<br></p>
 <ul><li>(Gebied, Lijn, Punt).geometrie: Een verwijzing vanuit Locatie (Gebied, Lijn of Punt) naar een bijbehorende Geometrie.</li>
 <li>Geometrie.id: UUID identificatie van de Geometrie</li>
 <li>Geometrie.geometrie: Vastleggen van een geometrie middels coördinaten.</li>
 </ul>
 
-<p>Het objecttype Geometrie heeft hierin het algemene ISO-19107 geometrietype GM_Object. In de Locatie-objecten wordt middels een constraint aangegeven wat de beperking op dit algemene type is.<br></p>
-</section></section>
-  <section id="op-aspecten-relevant-voor-imow"><div class="header-wrapper"><h2 id="2577D13E"><bdi class="secno">6. </bdi>OP-aspecten relevant voor IMOW</h2><a class="self-link" href="#2577D13E" aria-label="Permalink for Section 6."></a></div><p>Dit hoofdstuk beschrijft IMOP onderdelen die relevant zijn voor het IMOW. Enkele dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de OP-standaard relevant is. Paragraaf <a href="#5D2F8BCD">6.1</a> beschrijft een Regeling en zijn Artikelen/Leden/Divisies vanuit OP perspectief. Paragraaf <a href="#0B404AC6">6.2</a> beschrijft de consolidatieinformatie uit een Regeling. Paragraaf <a href="#4541BABA">6.3</a> worden GIO’s beschreven.</p>
-<p>Dit hoofdstuk is geen vervanging van de OP-documentatie, maar licht de OP-aspecten die voor IMOW van belang zijn toe.<br></p>
-<section id="de-regeling-en-diens-artikelen-leden-divisies"><div class="header-wrapper"><h3 id="5D2F8BCD"><bdi class="secno">6.1 </bdi>De Regeling en diens Artikelen/Leden/Divisies</h3><a class="self-link" href="#5D2F8BCD" aria-label="Permalink for Section 6.1"></a></div><p>Alle OW-objecten horen bij een Artikel/Lid/Divisie uit een Regeling (die opgesteld is conform de STOP-standaard). Vanuit het manifest-ow (<b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b>) wordt middels het attribuut WorkIDRegeling bij iedere aanlevering aangegeven bij welke Regeling de OW-objecten horen.<br>
-In iedere Regeltekst (<a href="#">3.2</a>) of Divisie (<a href="#">3.11</a>) zit het wId-attribuut, hierin staat de identificatie van het artikel/lid of de divisie aan de OP-kant. Zodoende zijn alle OW-objecten die gekoppeld zijn aan een bepaalde Regeltekst of Divisie terug te vinden in een bepaald deel van een Regeling.<br></p>
-</section><section id="consolidatieinformatie"><div class="header-wrapper"><h3 id="0B404AC6"><bdi class="secno">6.2 </bdi>ConsolidatieInformatie</h3><a class="self-link" href="#0B404AC6" aria-label="Permalink for Section 6.2"></a></div><p>De ConsolidatieInformatie wordt meegegeven aan de OP-kant, maar bepaalt hoe de OW-objecten geversioneerd worden in het DSO. De daadwerkelijke documentatie van ConsolidatieInformatie is te vinden in de bijbehorende OP-documentatie, dit is een extract.<br>
-Hieronder een korte opbouw van de structuur van de ConsolidatieInformatie:</p>
+<p>Het objecttype Geometrie heeft hierin het algemene ISO-19107 geometrietype
+GM_Object. In de Locatie-objecten wordt middels een constraint aangegeven wat de
+beperking op dit algemene type is.<br></p>
+</section></section></section>
+  <section id="op-aspecten-relevant-voor-imow"><div class="header-wrapper"><h2 id="2577D13E"><bdi class="secno">6. </bdi>OP-aspecten relevant voor IMOW</h2><a class="self-link" href="#2577D13E" aria-label="Permalink for Section 6."></a></div><p>Dit hoofdstuk beschrijft STOP onderdelen die relevant zijn voor het IMOW. Enkele
+dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de
+OP-standaard relevant is. Paragraaf <a href="#5D2F8BCD">6.1</a> beschrijft een
+Regeling en zijn Artikelen/Leden/Divisies vanuit OP perspectief. Paragraaf
+<a href="#0B404AC6">6.2</a> beschrijft de consolidatieinformatie uit een
+Regeling. Paragraaf <a href="#4541BABA">6.3</a> worden GIO’s beschreven.</p>
+<p>Dit hoofdstuk is geen vervanging van de STOP standaard, maar licht de
+OP-aspecten die voor IMOW van belang zijn toe.</p>
+<section id="de-regeling-en-zijn-artikelen-leden-divisies"><div class="header-wrapper"><h3 id="5D2F8BCD"><bdi class="secno">6.1 </bdi>De Regeling en zijn Artikelen/Leden/Divisies</h3><a class="self-link" href="#5D2F8BCD" aria-label="Permalink for Section 6.1"></a></div><p>Alle OW-objecten horen bij een Artikel/Lid/Divisie uit een Regeling (die
+opgesteld is conform de STOP-standaard). Vanuit het manifest-ow
+(<b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b>) wordt middels het
+attribuut WorkIDRegeling bij iedere aanlevering aangegeven bij welke Regeling de
+OW-objecten horen.<br> In iedere Regeltekst (<a href="#">3.2</a>) of Divisie
+(<a href="#">3.11</a>) zit het wId-attribuut, hierin staat de identificatie van
+het artikel/lid of de divisie aan de OP-kant. Zodoende zijn alle OW-objecten die
+gekoppeld zijn aan een bepaalde Regeltekst of Divisie terug te vinden in een
+bepaald deel van een Regeling.&lt;</p>
+</section><section id="consolidatieinformatie"><div class="header-wrapper"><h3 id="0B404AC6"><bdi class="secno">6.2 </bdi>ConsolidatieInformatie</h3><a class="self-link" href="#0B404AC6" aria-label="Permalink for Section 6.2"></a></div><p>De ConsolidatieInformatie wordt meegegeven aan de OP-kant, maar bepaalt hoe de
+OW-objecten geversioneerd worden in het DSO. De daadwerkelijke documentatie van
+ConsolidatieInformatie is te vinden in de bijbehorende OP-documentatie, dit is
+een extract.<br> Hieronder een korte opbouw van de structuur van de
+ConsolidatieInformatie:</p>
 <table style="width: 100%;" class="simple"><caption></caption>
 <colgroup><col id="col1" style="width: 35.260535603072455%;">
 <col id="col2" style="width: 13.244758148225037%;">
@@ -10961,13 +11187,30 @@ Hieronder een korte opbouw van de structuur van de ConsolidatieInformatie:</p>
 </tbody>
 </table>
 
-<p>Het Doel is een gegeven dat ook aanwezig is bij de aanlevering van de OW-informatie, zie manifest-ow (<b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b>). OW-objecten krijgen de tijdsinformatie van de tijdstempels die horen bij de aanlevering.<br>
-Kortom, als er OW-objecten worden aangeleverd bij een besluit dat juridisch werkend is vanaf 1 januari 2022, dan zullen deze OW-objecten ook juridisch werkend zijn vanaf 1 januari 2022. 
-(Het DSO legt drie type tijdstempels vast, namelijk juridischWerkendVanaf, geldigVanaf, en beschikbaarOp, met name beschikbaarOp wordt geregistreerd in het DSO op het moment dat informatie aangeleverd is.)<br></p>
-</section><section id="gio-s-en-norm-gio-s"><div class="header-wrapper"><h3 id="4541BABA"><bdi class="secno">6.3 </bdi>GIO’s en Norm GIO’s</h3><a class="self-link" href="#4541BABA" aria-label="Permalink for Section 6.3"></a></div><p>Bij het aanleveren van een besluit volgens de STOP standaarden worden geografische objecten aangeleverd als GIO’s (geografische informatieobjecten). Dit is één van de twee soorten informatieobjecten die in STOP kunnen worden meegeleverd (de andere zijn PDF-documenten).  In die GIO aanlevering heeft iedere Geometrie een id attribuut in de vorm van een UUID. Wanneer in IMOW middels GeometrieRef naar een Geometrie wordt verwezen wordt deze UUID gebruikt.</p>
-<p>Een GIO wordt aangeleverd in twee bestanden: een geografisch vaststellingsdeel (GML) en een service-deel (XML). In dit document wordt alleen het geografisch vaststellingsdeel behandeld, omdat het service-deel niet van belang is voor de OW-objecten. De identificatie van de Geometrie is te vinden in het geografisch deel van de GIO, dit is van belang voor de OW-Locatie (<a href="#">3.8.2</a>).<br>
-Er zijn twee type GIO’s,: GIO’s die informatie over normen bevatten(Norm-GIO’s) en GIO’s zonder informatie over normen (GIO’s).<br>
-Hieronder informatie over de opbouw (van het geografisch deel) van een GIO:<br></p>
+<p>Het Doel is een gegeven dat ook aanwezig is bij de aanlevering van de
+OW-informatie, zie manifest-ow (<b><a href="#">Fout! Verwijzingsbron niet
+gevonden.</a></b>). OW-objecten krijgen de tijdsinformatie van de tijdstempels
+die horen bij de aanlevering.<br> Kortom, als er OW-objecten worden aangeleverd
+bij een besluit dat juridisch werkend is vanaf 1 januari 2022, dan zullen deze
+OW-objecten ook juridisch werkend zijn vanaf 1 januari 2022. (Het DSO legt drie
+type tijdstempels vast, namelijk juridischWerkendVanaf, geldigVanaf, en
+beschikbaarOp, met name beschikbaarOp wordt geregistreerd in het DSO op het
+moment dat informatie aangeleverd is.)<br></p>
+</section><section id="gio-s-en-norm-gio-s"><div class="header-wrapper"><h3 id="4541BABA"><bdi class="secno">6.3 </bdi>GIO’s en Norm GIO’s</h3><a class="self-link" href="#4541BABA" aria-label="Permalink for Section 6.3"></a></div><p>Bij het aanleveren van een besluit volgens de STOP standaarden worden
+geografische objecten aangeleverd als GIO’s (geografische informatieobjecten).
+Dit is één van de twee soorten informatieobjecten die in STOP kunnen worden
+meegeleverd (de andere zijn PDF-documenten). In die GIO aanlevering heeft iedere
+Geometrie een id attribuut in de vorm van een UUID. Wanneer in IMOW middels
+GeometrieRef naar een Geometrie wordt verwezen wordt deze UUID gebruikt.</p>
+<p>Een GIO wordt aangeleverd in twee bestanden: een geografisch vaststellingsdeel
+(GML) en een service-deel (XML). In dit document wordt alleen het geografisch
+vaststellingsdeel behandeld, omdat het service-deel niet van belang is voor de
+OW-objecten. De identificatie van de Geometrie is te vinden in het geografisch
+deel van de GIO, dit is van belang voor de OW-Locatie
+(<a href="#">3.8.2</a>).<br> Er zijn twee type GIO’s,: GIO’s die informatie
+over normen bevatten(Norm-GIO’s) en GIO’s zonder informatie over normen
+(GIO’s).<br> Hieronder informatie over de opbouw (van het geografisch deel) van
+een GIO:<br></p>
 <table style="width: 100%;" class="simple"><caption></caption>
 <colgroup><col id="col1" style="width: 35.260535603072455%;">
 <col id="col2" style="width: 13.244758148225037%;">
@@ -11161,7 +11404,9 @@ Hieronder informatie over de opbouw (van het geografisch deel) van een GIO:<br><
 <li>Meer informatie hierover is te vinden bij <a href="https://koop.gitlab.io/STOP/standaard/1.0.4/GIOConceptueel.html" target="_blank">de OP-documentatie over het concept GIO</a>.</li>
 </ul>
 
-<p>Indien er normen vastgelegd worden aan de OW-kant, dan ziet de GIO er anders uit dan bij OW-Locaties waar geen norm over is vastgelegd. Hieronder staan de elementen uit de Norm-GIO die overeenkomen met de gewone GIO grijs gemarkeerd: </p>
+<p>Indien er normen vastgelegd worden aan de OW-kant, dan ziet de GIO er anders uit
+dan bij OW-Locaties waar geen norm over is vastgelegd. Hieronder staan de
+elementen uit de Norm-GIO die overeenkomen met de gewone GIO grijs gemarkeerd:</p>
 <table style="width: 100%;" class="simple"><caption></caption>
 <colgroup><col id="col1" style="width: 35.260535603072455%;">
 <col id="col2" style="width: 14.718704587917792%;">
@@ -11385,7 +11630,10 @@ Hieronder informatie over de opbouw (van het geografisch deel) van een GIO:<br><
 <li>Meer informatie over de Norm-GIO is te vinden bij <a href="https://koop.gitlab.io/STOP/standaard/1.0.3/imop-geo.html" target="_blank">de OP-documentatie over het geografische deel van de GIO</a></li>
 </ul>
 
-</section><section id="richtlijn-voor-het-maken-van-gio-s-o-b-v-ow-objecten"><div class="header-wrapper"><h3 id="639AF62F"><bdi class="secno">6.4 </bdi>Richtlijn voor het maken van GIO’s o.b.v. OW-objecten</h3><a class="self-link" href="#639AF62F" aria-label="Permalink for Section 6.4"></a></div><p>In deze paragraaf wordt toegelicht welke richtlijnen er zijn voor het maken van GIO’s vanuit OW-objecten. Dit zijn richtlijnen en deze worden niet gevalideerd door het DSO. Deze richtlijnen zijn gemaakt n.a.v. de expliciete vraag naar hoe je vanuit OW naar GIO’s toe kunt werken.</p>
+</section><section id="richtlijn-voor-het-maken-van-gio-s-o-b-v-ow-objecten"><div class="header-wrapper"><h3 id="639AF62F"><bdi class="secno">6.4 </bdi>Richtlijn voor het maken van GIO’s o.b.v. OW-objecten</h3><a class="self-link" href="#639AF62F" aria-label="Permalink for Section 6.4"></a></div><p>In deze paragraaf wordt toegelicht welke richtlijnen er zijn voor het maken van
+GIO’s vanuit OW-objecten. Dit zijn richtlijnen en deze worden niet gevalideerd
+door het DSO. Deze richtlijnen zijn gemaakt n.a.v. de expliciete vraag naar hoe
+je vanuit OW naar GIO’s toe kunt werken.</p>
 <p>De richtlijn is als volgt:<br></p>
 <ul><li>Gebruik Locatiegroepen (c.q. de groep-subtypen van Locatie in IMOW (Gebiedengroep, Lijnengroep, Puntengroep) als OW-pendant van de GIO (zie Figuur 5).</li>
 <li>Bij gebruik van het OW-object Omgevingsnorm/Omgevingswaarde zou er een Norm-GIO moeten zijn die dezelfde Locaties en kwalitatieve/kwantitatieve Normwaarden bevat als de OW-Norm (zie Figuur 6).</li>
@@ -11404,53 +11652,116 @@ Hieronder informatie over de opbouw (van het geografisch deel) van een GIO:<br><
 <li>In het geval dat één IMOW-Gebied in meerdere Gebiedengroepen zit, zou de Locatie ook in meerdere GIO’s voor moeten komen.</li>
 <li>Er was met de huidige versie van het IMOW geen eenduidige richtlijn te bedenken voor het indelen van groepen in de GIO.</li>
 </ul></section></section>
-  <section id="het-wijzigen-van-ow-objecten"><div class="header-wrapper"><h2 id="210F8E1C"><bdi class="secno">7. </bdi>Het wijzigen van OW-objecten</h2><a class="self-link" href="#210F8E1C" aria-label="Permalink for Section 7."></a></div><p>Dit hoofdstuk beschrijf hoe je OW-objecten wijzigt. Paragraaf <a href="#6BC0303B">7.1</a> beschrijft de uitgangspunten. Vervolgens beschrijft paragraaf <b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b> hoe OW-wijzigingen in verschillende scenario’s gebruikt kan worden. Paragraaf <b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b> beschrijft regels met betrekking tot ontwerpregelingen.<br></p>
-<section id="uitgangspunten-relevant-voor-wijzigen"><div class="header-wrapper"><h3 id="6BC0303B"><bdi class="secno">7.1 </bdi>Uitgangspunten relevant voor wijzigen</h3><a class="self-link" href="#6BC0303B" aria-label="Permalink for Section 7.1"></a></div><p>Het wijzigen van de collectie OW-objecten behorend bij een Regeling gebeurt via een OW-aanlevering. Deze OW-aanlevering bevat wijziginstructies beschrijft hoe de oorspronkelijke collectie OW-objecten getransformeerd moet worden tot de resultaat collectie.  Doorgaans is zo’n OW-aanlevering gekoppeld aan een STOP wijziging waarbij het STOP deel de tekst van de regeling wijzigt en de OW-aanlevering de bij de regeling behorende OW-objecten wijzigt.</p>
-<p>Een OW-aanlevering heeft zelf de vorm van een collectie OW-objecten. De aanlevering van een OW-object resulteert in een nieuw OW-object (zie <b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b>), een gewijzigd OW-object (zie <b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b>) of het beëindigen van een OW-object (zie <a href="#2C21DC35">7.1.3</a>).</p>
-<p>In de volgende paragrafen staat regels voor de drie situaties.<br></p>
-<section id="een-nieuw-ow-object"><div class="header-wrapper"><h4 id="2F9C69B2"><bdi class="secno">7.1.1 </bdi>Een nieuw OW-object</h4><a class="self-link" href="#2F9C69B2" aria-label="Permalink for Section 7.1.1"></a></div><p>Wanneer een OW-object wordt aangeleverd met een identificatie die nog niet bestond in de oorspronkelijke collectie ontstaat een nieuw OW-object. Voor een nieuw object geldt de volgende regel:</p>
-<p><b>Regel:</b> Een nieuw OW-object mag niet de status beëindigd hebben. (OZON0104).<br></p>
-</section><section id="een-ow-object-wijzigen"><div class="header-wrapper"><h4 id="3993B196"><bdi class="secno">7.1.2 </bdi>Een OW-object wijzigen</h4><a class="self-link" href="#3993B196" aria-label="Permalink for Section 7.1.2"></a></div><p>Wanneer een OW-object wordt aangeleverd met een identificatie die al bestond in de oorspronkelijke collectie vervangt het aangeleverde OW-object het bestaande OW-object.</p>
-<p><b>Regel</b>: Een wijziging van een OW-object moet daadwerkelijk een kenmerk van het OW-object wijzgen. (OZON0108). Hierbij wordt een relatie bij een OW-object ook gezien als een kenmerk.<br>
-.<br></p>
-<ol><li><b>Regel</b>: Het type van een OW-object niet wijzigen. RegelVoorIedereen, Instructieregel en Omgevingswaarderegel zijn verschillende types.</li>
-</ol>
-
-<ol><li>De volgende IMOW-elementen zijn geen objecten en kunnen derhalve niet direct gewijzigd worden:<ul><li>ActiviteitLocatieaanduiding – deze moet altijd gewijzigd worden vanuit een RegelVoorIedereen.</li>
-<li>Normwaarde – deze moet altijd gewijzigd worden vanuit een Omgevingsnorm of Omgevingswaarde.</li>
+  <section id="het-wijzigen-van-ow-objecten"><div class="header-wrapper"><h2 id="210F8E1C"><bdi class="secno">7. </bdi>Het wijzigen van OW-objecten</h2><a class="self-link" href="#210F8E1C" aria-label="Permalink for Section 7."></a></div><p>Dit hoofdstuk beschrijf hoe je OW-objecten wijzigt. Paragraaf
+<a href="#6BC0303B">7.1</a> beschrijft de uitgangspunten. Vervolgens beschrijft
+paragraaf <a href="#">Fout! Verwijzingsbron niet gevonden.</a> hoe
+OW-wijzigingen in verschillende scenario’s gebruikt kan worden. Paragraaf
+<b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b> beschrijft regels
+met betrekking tot ontwerpregelingen.</p>
+<section id="uitgangspunten-relevant-voor-wijzigen"><div class="header-wrapper"><h3 id="6BC0303B"><bdi class="secno">7.1 </bdi>Uitgangspunten relevant voor wijzigen</h3><a class="self-link" href="#6BC0303B" aria-label="Permalink for Section 7.1"></a></div><p>Het wijzigen van de collectie OW-objecten behorend bij een Regeling gebeurt via
+een OW-aanlevering. Deze OW-aanlevering bevat wijziginstructies beschrijft hoe
+de oorspronkelijke collectie OW-objecten getransformeerd moet worden tot de
+resultaat collectie. Doorgaans is zo’n OW-aanlevering gekoppeld aan een STOP
+wijziging waarbij het STOP deel de tekst van de regeling wijzigt en de
+OW-aanlevering de bij de regeling behorende OW-objecten wijzigt.</p>
+<p>Een OW-aanlevering heeft zelf de vorm van een collectie OW-objecten. De
+aanlevering van een OW-object resulteert in een nieuw OW-object (zie
+<b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b>), een gewijzigd
+OW-object (zie <b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b>) of
+het beëindigen van een OW-object (zie <a href="#2C21DC35">7.1.3</a>).</p>
+<p>In de volgende paragrafen staat regels voor de drie situaties:</p>
+<section id="een-nieuw-ow-object"><div class="header-wrapper"><h4 id="2F9C69B2"><bdi class="secno">7.1.1 </bdi>Een nieuw OW-object</h4><a class="self-link" href="#2F9C69B2" aria-label="Permalink for Section 7.1.1"></a></div><p>Wanneer een OW-object wordt aangeleverd met een identificatie die nog niet
+bestond in de oorspronkelijke collectie ontstaat een nieuw OW-object. Voor een
+nieuw object geldt de volgende regel:</p>
+<p><strong>Regel:</strong> Een nieuw OW-object mag niet de status beëindigd hebben. (OZON0104).</p>
+</section><section id="een-ow-object-wijzigen"><div class="header-wrapper"><h4 id="3993B196"><bdi class="secno">7.1.2 </bdi>Een OW-object wijzigen</h4><a class="self-link" href="#3993B196" aria-label="Permalink for Section 7.1.2"></a></div><p>Wanneer een OW-object wordt aangeleverd met een identificatie die al bestond in
+de oorspronkelijke collectie vervangt het aangeleverde OW-object het bestaande
+OW-object.</p>
+<p><strong>Regel:</strong> Een wijziging van een OW-object moet daadwerkelijk een kenmerk van
+het OW-object wijzgen. (OZON0108).</p>
+<p>Hierbij wordt een relatie bij een OW-object ook gezien als een kenmerk.</p>
+<p><strong>Regel:</strong> Het type van een OW-object niet wijzigen. RegelVoorIedereen,
+Instructieregel en Omgevingswaarderegel zijn verschillende types.</p>
+<p>De volgende IMOW-elementen zijn geen objecten en kunnen niet direct gewijzigd
+worden:</p>
+<ul>
+<li>ActiviteitLocatieaanduiding – deze moet altijd gewijzigd worden vanuit een
+RegelVoorIedereen.</li>
+<li>Normwaarde – deze moet altijd gewijzigd worden vanuit een Omgevingsnorm of
+Omgevingswaarde.</li>
 <li>Kaartlaag – deze moet altijd gewijzigd worden vanuit een Kaart.</li>
 </ul>
-
-</li>
-</ol>
-
-</section><section id="een-ow-object-beeindigen"><div class="header-wrapper"><h4 id="2C21DC35"><bdi class="secno">7.1.3 </bdi>Een OW-object beëindigen</h4><a class="self-link" href="#2C21DC35" aria-label="Permalink for Section 7.1.3"></a></div><p>Wanneer een OW-object wordt aangeleverd waarbij het veld status de waarde ‘B’ heeft dan krijgt het oorspronkelijke OW-object de status beëindigd.</p>
-<p><b>Regel</b>: Het beëindigen van een OW-object mag alleen als de inhoud van het object, afgezien van het status veld, exact overeenkomt met de laatst aangeleverde OW-informatie (OZON0107).<br></p>
-</section><section id="resultaat-van-een-wijziging"><div class="header-wrapper"><h4 id="189CCC1E"><bdi class="secno">7.1.4 </bdi>Resultaat van een wijziging</h4><a class="self-link" href="#189CCC1E" aria-label="Permalink for Section 7.1.4"></a></div><p>Een OW-aanlevering bestaat uit een set wijzigingen van OW-objecten, die de OW-objecten behorend bij een Regeling wijzing. Er zijn verschillende eisen die gelden voor de volledige set aan OW-objecten behorend bij een Regeling. </p>
-<p><b>Regel</b>: Een OW-aanlevering mag niet resulteren in wees-objecten, dat zijn objecten  die niet direct of indirect gekoppeld zijn aan een OW-object dat een bestaand documentfragment annoteert (OZON0350 t/m OZON0367).</p>
-<p><b>Rege</b>l: Een OW-aanlevering mag niet resulteren in verwijzingen naar OW-objecten die niet bestaan (OZON0109)</p>
-<p><b>Regel: </b>Een OW-aanlevering moet altijd resulteren in een Regeling met daarin precies één Regelingsgebied object.</p>
-<p><b>Regel</b>: Voor ieder Lid en Artikel zonder leden in de Regeling die niet gereserveerd of vervallen zijn moet er een Regeltekst object zijn.<br></p>
-</section></section><section id="het-gebruik-van-ow-aanleveringen"><div class="header-wrapper"><h3 id="616A8350"><bdi class="secno">7.2 </bdi>Het gebruik van OW-aanleveringen</h3><a class="self-link" href="#616A8350" aria-label="Permalink for Section 7.2"></a></div><p>Er zijn diverse wijzig-scenarios waarin een OW-aanlevering gebruikt kan worden om de OW-objecten bij een regeling te wijzigen. Deze worden in de volgende paragrafen behandeld:<br></p>
-<section id="ow-aanlevering-bij-besluit"><div class="header-wrapper"><h4 id="2AE56890"><bdi class="secno">7.2.1 </bdi>OW-aanlevering bij besluit</h4><a class="self-link" href="#2AE56890" aria-label="Permalink for Section 7.2.1"></a></div><p>Het aanleveren van een OW-object mag alleen gerelateerd zijn aan een Doel met tijdstempels die niet in het verleden ligt t.o.v. de meest recente wijziging (OZON0105 en OZON0106). Dit speelt vooral bij directeMutaties (7.4).<br>
-Dit betekent dat ik als ik in 2021 een aantal wijzigingsbesluiten heb gemaakt, ik niet nog eens een wijziging van OW-objecten kan doen n.a.v. een wijzigingsbesluit uit 2019.</p>
-</section><section id="ow-aanlevering-bij-intrekking"><div class="header-wrapper"><h4 id="5952605C"><bdi class="secno">7.2.2 </bdi>OW-aanlevering bij intrekking</h4><a class="self-link" href="#5952605C" aria-label="Permalink for Section 7.2.2"></a></div><p>TODO: dit zou de plek zijn om te beschrijven dat bij een intrekking alleen objecten verwijderd mogen worden.<br></p>
-</section><section id="ow-aanlevering-bij-directe-mutatie"><div class="header-wrapper"><h4 id="57FC25F3"><bdi class="secno">7.2.3 </bdi>OW-aanlevering bij directe mutatie</h4><a class="self-link" href="#57FC25F3" aria-label="Permalink for Section 7.2.3"></a></div><p><b>Noot: </b>directe mutaties zijn alleen bedoeld voor het oplossen van problemen in de keten, bijvoorbeeld een vastzittende regeling. Op verzoek van het bevoegd gezag kan deze functionaliteit uitgevoerd worden door beheerders van het stelsel. </p>
-<p>Het is mogelijk OW-objecten te wijzigen zonder dat hier expliciet een besluit over genomen is. Dit kan middels een directe mutatie (directeMutatieOpdracht).<br>
+</section><section id="een-ow-object-beeindigen"><div class="header-wrapper"><h4 id="2C21DC35"><bdi class="secno">7.1.3 </bdi>Een OW-object beëindigen</h4><a class="self-link" href="#2C21DC35" aria-label="Permalink for Section 7.1.3"></a></div><p>Wanneer een OW-object wordt aangeleverd waarbij het veld status de waarde 'B'
+heeft dan krijgt het oorspronkelijke OW-object de status beëindigd.</p>
+<p><strong>Regel:</strong> Het beëindigen van een OW-object mag alleen als de inhoud van het
+object, afgezien van het status veld, exact overeenkomt met de laatst
+aangeleverde OW-informatie (OZON0107).</p>
+</section><section id="resultaat-van-een-wijziging"><div class="header-wrapper"><h4 id="189CCC1E"><bdi class="secno">7.1.4 </bdi>Resultaat van een wijziging</h4><a class="self-link" href="#189CCC1E" aria-label="Permalink for Section 7.1.4"></a></div><p>Een OW-aanlevering bestaat uit een set wijzigingen van OW-objecten, die de
+OW-objecten behorend bij een Regeling wijzing. Er zijn verschillende eisen die
+gelden voor de volledige set aan OW-objecten behorend bij een Regeling.</p>
+<p><strong>Regel:</strong> Een OW-aanlevering mag niet resulteren in wees-objecten, dat zijn
+objecten die niet direct of indirect gekoppeld zijn aan een OW-object dat een
+bestaand documentfragment annoteert (OZON0350 t/m OZON0367).</p>
+<p><strong>Regel:</strong> Een OW-aanlevering mag niet resulteren in verwijzingen naar
+OW-objecten die niet bestaan (OZON0109)</p>
+<p><strong>Regel:</strong> Een OW-aanlevering moet altijd resulteren in een Regeling met daarin
+precies één Regelingsgebied object.</p>
+<p><strong>Regel:</strong> Voor ieder Lid en Artikel zonder leden in de Regeling die niet
+gereserveerd of vervallen zijn moet er een Regeltekst object zijn.</p>
+</section></section><section id="het-gebruik-van-ow-aanleveringen"><div class="header-wrapper"><h3 id="616A8350"><bdi class="secno">7.2 </bdi>Het gebruik van OW-aanleveringen</h3><a class="self-link" href="#616A8350" aria-label="Permalink for Section 7.2"></a></div><p>Er zijn diverse wijzig-scenarios waarin een OW-aanlevering gebruikt kan worden
+om de OW-objecten bij een regeling te wijzigen. Deze worden in de volgende
+paragrafen behandeld:</p>
+<section id="ow-aanlevering-bij-besluit"><div class="header-wrapper"><h4 id="2AE56890"><bdi class="secno">7.2.1 </bdi>OW-aanlevering bij besluit</h4><a class="self-link" href="#2AE56890" aria-label="Permalink for Section 7.2.1"></a></div><p>Het aanleveren van een OW-object mag alleen gerelateerd zijn aan een Doel met
+tijdstempels die niet in het verleden ligt t.o.v. de meest recente wijziging
+(OZON0105 en OZON0106). Dit speelt vooral bij directeMutaties (7.4). Dit
+betekent dat ik als ik in 2021 een aantal wijzigingsbesluiten heb gemaakt, ik
+niet nog eens een wijziging van OW-objecten kan doen n.a.v. een
+wijzigingsbesluit uit 2019.</p>
+</section><section id="ow-aanlevering-bij-intrekking"><div class="header-wrapper"><h4 id="5952605C"><bdi class="secno">7.2.2 </bdi>OW-aanlevering bij intrekking</h4><a class="self-link" href="#5952605C" aria-label="Permalink for Section 7.2.2"></a></div><p>TODO: dit zou de plek zijn om te beschrijven dat bij een intrekking alleen
+objecten verwijderd mogen worden.</p>
+</section><section id="ow-aanlevering-bij-directe-mutatie"><div class="header-wrapper"><h4 id="57FC25F3"><bdi class="secno">7.2.3 </bdi>OW-aanlevering bij directe mutatie</h4><a class="self-link" href="#57FC25F3" aria-label="Permalink for Section 7.2.3"></a></div><p><b>Noot: </b>directe mutaties zijn alleen bedoeld voor het oplossen van
+problemen in de keten, bijvoorbeeld een vastzittende regeling. Op verzoek van
+het bevoegd gezag kan deze functionaliteit uitgevoerd worden door beheerders van
+het stelsel.</p>
+<p>Het is mogelijk OW-objecten te wijzigen zonder dat hier expliciet een besluit
+over genomen is. Dit kan middels een directe mutatie (directeMutatieOpdracht).
 Bij een directeMutatieOpdracht hoort geen publicatie of bekendmakingsdatum.</p>
-<p>Vanuit het manifest-OW wordt verwezen naar het Doel van een vorige aanlevering.<br>
-De tijdslijnen van de nieuwe versie van de OW-objecten horen bij de tijdstempels van dat vorige doel. Dit maakt dat het wijzigen middels een directeMutatieOpdracht OW-objecten met terugwerkende kracht wijzigen.</p>
-<p>Het aanleveren van een OW-object mag alleen gerelateerd zijn aan een Doel met tijdstempels die niet in het verleden ligt t.o.v. de meest recente wijziging (OZON0105 en OZON0106). Dit speelt vooral bij directeMutaties (7.4).<br>
-Dit betekent dat ik als ik in 2021 een aantal wijzigingsbesluiten heb gemaakt, ik niet nog eens een wijziging van OW-objecten kan doen n.a.v. een wijzigingsbesluit uit 2019.</p>
-<p>De tijdstempels van de ConsolidatieInformatie van het Besluit bepalen wanneer de OW-informatie geldig is.</p>
-<p>Er zijn OW-objecten waarvan het onlogisch is dat deze gewijzigd worden met een directe mutatie, dit zijn:<br></p>
-<ul><li>OW-Locaties. Als de noemer van een locatie zou wijzigen dan wordt verwacht dat de verwijzing vanuit de Regeling ook gewijzigd wordt. Als de geometrie van de locatie wijzigt dan wordt verwacht dat er een aanpassing van de bijbehorende GIO wordt aangeleverd. 
-Het zou wel mogelijk zijn om een OW-Locatie te wijzigen in het geval dat er gebruik gemaakt dient te worden van een recentere versie van een ambtsgebied, of als het hoogte-attribuut van de locatie wordt aangevuld/aangepast.</li>
-<li>OW-Regelteksten. Als de verwijzing naar het artikel/lid wordt aangepast, dan heeft dit waarschijnlijk ook invloed op de Regeling zelf.</li>
-<li>OW-Divisies/OW-DivisieTeksten. Als de verwijzing naar de divisie/de divisietekst wordt aangepast, dan heeft dit waarschijnlijk ook invloed op de Regeling zelf.</li>
-</ul></section></section></section>
-  <section id="a-bijlage-versiehistorie"><div class="header-wrapper"><h2 id="11A0CF11"><bdi class="secno">8. </bdi>A Bijlage: versiehistorie</h2><a class="self-link" href="#11A0CF11" aria-label="Permalink for Section 8."></a></div><p>In de versiehistorie wordt met WELT-xx verwezen naar de Wensen en Eisen Lijst voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die door gebruikers van de standaard zijn ingediend. De ingediende meldingen zijn te vinden via <a href="https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen">https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen</a>.<br>
-Voor de STOP-standaard bestaat een vergelijkbaar meldingssysteem, waarnaar wordt verwezen met STOP-issue #xx. De STOP-issuetracker is te vinden via <a href="https://gitlab.com/koop/STOP/standaard/-/issues">https://gitlab.com/koop/STOP/standaard/-/issues</a>.</p>
+<p>Vanuit het manifest-OW wordt verwezen naar het Doel van een vorige aanlevering.
+De tijdslijnen van de nieuwe versie van de OW-objecten horen bij de tijdstempels
+van dat vorige doel. Dit maakt dat het wijzigen middels een
+directeMutatieOpdracht OW-objecten met terugwerkende kracht wijzigen.</p>
+<p>Het aanleveren van een OW-object mag alleen gerelateerd zijn aan een Doel met
+tijdstempels die niet in het verleden ligt t.o.v. de meest recente wijziging
+(OZON0105 en OZON0106). Dit speelt vooral bij directeMutaties (7.4). Dit
+betekent dat ik als ik in 2021 een aantal wijzigingsbesluiten heb gemaakt, ik
+niet nog eens een wijziging van OW-objecten kan doen n.a.v. een
+wijzigingsbesluit uit 2019.</p>
+<p>De tijdstempels van de ConsolidatieInformatie van het Besluit bepalen wanneer de
+OW-informatie geldig is.</p>
+<p>Er zijn OW-objecten waarvan het onlogisch is dat deze gewijzigd worden met een
+directe mutatie, dit zijn:</p>
+<ul>
+<li>OW-Locaties. Als de noemer van een locatie zou wijzigen dan wordt verwacht
+dat de verwijzing vanuit de Regeling ook gewijzigd wordt. Als de geometrie
+van de locatie wijzigt dan wordt verwacht dat er een aanpassing van de
+bijbehorende GIO wordt aangeleverd. Het zou wel mogelijk zijn om een
+OW-Locatie te wijzigen in het geval dat er gebruik gemaakt dient te worden
+van een recentere versie van een ambtsgebied, of als het hoogte-attribuut
+van de locatie wordt aangevuld/aangepast.</li>
+<li>OW-Regelteksten. Als de verwijzing naar het artikel/lid wordt aangepast, dan
+heeft dit waarschijnlijk ook invloed op de Regeling zelf.</li>
+<li>OW-Divisies/OW-DivisieTeksten. Als de verwijzing naar de divisie/de
+divisietekst wordt aangepast, dan heeft dit waarschijnlijk ook invloed op de
+Regeling zelf.</li>
+</ul>
+</section></section></section>
+  <section class="appendix" id="a-bijlage-versiehistorie"><div class="header-wrapper"><h2 id="11A0CF11"><bdi class="secno">A. </bdi>A Bijlage: versiehistorie</h2><a class="self-link" href="#11A0CF11" aria-label="Permalink for Appendix A."></a></div><p>In de versiehistorie wordt met WELT-xx verwezen naar de Wensen en Eisen Lijst
+voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die
+door gebruikers van de standaard zijn ingediend. De ingediende meldingen zijn te
+vinden via <a href="https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen">https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen</a>.<br>
+Voor de STOP-standaard bestaat een vergelijkbaar meldingssysteem, waarnaar wordt
+verwezen met STOP-issue #xx. De STOP-issuetracker is te vinden via
+<a href="https://gitlab.com/koop/STOP/standaard/-/issues">https://gitlab.com/koop/STOP/standaard/-/issues</a>.</p>
 <table style="width: 100%;" class="simple"><caption></caption>
 <colgroup><col id="col1" style="width: 11.987669825322525%;">
 <col id="col2" style="width: 14.556456216463069%;">
@@ -11609,8 +11920,8 @@ In <b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b> aanvulling van in
 </tbody>
 </table></section>
 
-  <section id="conformance"><div class="header-wrapper"><h2 id="x9-conformiteit"><bdi class="secno">9. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 9."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
-  <section id="tof"><div class="header-wrapper"><h2 id="x10-lijst-met-figuren"><bdi class="secno">10. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 10."></a></div><ul class="tof">
+  <section id="conformance"><div class="header-wrapper"><h2 id="b-conformiteit"><bdi class="secno">B. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section B."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
+  <section id="tof"><div class="header-wrapper"><h2 id="c-lijst-met-figuren"><bdi class="secno">C. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section C."></a></div><ul class="tof">
         <li class="tofline">
     <a class="tocxref" href="#fig-schematisch-overzicht-van-aanlevering-conform-de-standaard"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Schematisch overzicht van aanlevering conform de standaard</span></a>
   </li><li class="tofline">
@@ -11635,13 +11946,13 @@ In <b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b> aanvulling van in
     <a class="tocxref" href="#fig-richtlijn-voor-normen-i-r-t-norm-gio-s"><span class="self-link">Figuur <bdi class="figno">11</bdi></span> <span class="fig-title">Richtlijn voor Normen i.r.t. Norm-GIO’s</span></a>
   </li>
       </ul></section>
-  <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
-    <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
+  <section id="index" class="appendix"><div class="header-wrapper"><h2 id="d-index"><bdi class="secno">D. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix D."></a></div><section id="index-defined-here">
+    <div class="header-wrapper"><h3 id="d-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">D.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix D.1"></a></div>
     <ul class="index">
     
   </ul>
   </section><section id="index-defined-elsewhere">
-    <div class="header-wrapper"><h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
+    <div class="header-wrapper"><h3 id="d-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">D.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix D.2"></a></div>
     <ul class="index">
     
   </ul>
@@ -11649,14 +11960,14 @@ In <b><a href="#">Fout! Verwijzingsbron niet gevonden.</a></b> aanvulling van in
 
 
 
-<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
-    <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="e-referenties"><bdi class="secno">E. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix E."></a></div><section id="normatieve-referenties">
+    <div class="header-wrapper"><h3 id="e-1-normatieve-referenties"><bdi class="secno">E.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix E.1"></a></div>
     <dl class="bibliography"><dt id="bib-cimop">[CIMOP]</dt><dd>
       <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf"><cite>Conceptueel Informatiemodel Omgevingswet (CIMOW)</cite></a>.  Geonovum. 2022-01-07. Definitief. URL: <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf">https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf</a>
     </dd><dt id="bib-cimow">[CIMOW]</dt><dd>
       <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf"><cite>Conceptueel Informatiemodel Omgevingswet (CIMOW)</cite></a>.  Geonovum. 2022-01-07. Definitief. URL: <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf">https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf</a>
-    </dd><dt id="bib-lvbb">[LVBB]</dt><dd>
-      <a href="https://standaarden.overheid.nl/stop/lvbb"><cite>Landelijke voorziening bekendmaken en beschikbaar stellen (LVBB)</cite></a>.  Geonovum. 2023-01-09. Definitief. URL: <a href="https://standaarden.overheid.nl/stop/lvbb">https://standaarden.overheid.nl/stop/lvbb</a>
+    </dd><dt id="bib-lvbbbhkv">[LVBBBHKV]</dt><dd>
+      <a href="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html"><cite>Documentatie LVBB Bronhouderkoppelvlak</cite></a>.  KOOP. Definitief. URL: <a href="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html">https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html</a>
     </dd><dt id="bib-stopic">[STOPIC]</dt><dd>
       <a href="https://koop.gitlab.io/STOP/standaard/2.0.0-rc/index.html"><cite>Standaard Officiële Publicaties</cite></a>.  KOOP. 2023-02-17. Release Candidate. URL: <a href="https://koop.gitlab.io/STOP/standaard/2.0.0-rc/index.html">https://koop.gitlab.io/STOP/standaard/2.0.0-rc/index.html</a>
     </dd></dl>
