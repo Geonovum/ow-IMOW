@@ -4076,6 +4076,27 @@
                         </td>
                   </tr>
                   <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <ul>
+                           
+                           <li>Alleen OW-objecten die de procedurestatus 'ontwerp' hebben mogen verwijzen naar OW-objecten
+                              met de procedurestatus 'ontwerp'.</li>
+                           
+                           <li>Een ontwerpregeling is altijd gebaseerd op een bestaande versie van een regeling.
+                              Verwijzingen vanuit OW-objecten met de procedurestap 'ontwerp' verwijzen altijd naar
+                              de versie van het OW-object zoals bekend in de regelingversie waarop de ontwerpregeling
+                              gebaseerd is.</li>
+                           
+                           <li>OW-objecten met de procedurestatus 'ontwerp' kunnen niet gemuteerd worden.</li>
+                           
+                           <li>Een OW-object behorend OW-aanlevering bij een ontwerpbesluit moet de procedurestatus
+                              ontwerp hebben.</li>
+                           </ul>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Unieke aanduiding</th>
                      <td>identificatie</td>
                   </tr>
@@ -4086,6 +4107,65 @@
                         
                         <p>Dit is de basisklasse van het IMOW. Dit is de superklasse van alle objecten die in
                            OW-aanlevering kunnen worden aangeleverd.</p>
+                        
+                        <p>In de STOP standaard kunnen ontwerpregelingen gemaakt worden met een ontwerpbesluit.
+                           Zo'n besluit wijzigt de tekst en de OW-object behorend bij een bestaande regelingversie.
+                           Alle OW-objecten die gewijzigd worden in het in ontwerpbesluit krijgen als procedurestatus
+                           de waarde 'ontwerp' waaruit je kan concluderen dat het object niet bij vastgestelde
+                           regelgeving hoort.  Als het veld procedurestatus geen waarde heeft dan wordt het OW-object
+                           beschouwd als behorend bij vastgestelde regelgeving.</p>
+                        
+                        <p>Voor een STOP ontwerpbesluit gelden de volgende regels:</p>
+                        
+                        <ul>
+                           
+                           <li>Het soortprocedure (c.q. proceduretype) is ontwerp (i.p.v. definitief).</li>
+                           
+                           <li>Er mogen minder procedurestappen gebruikt worden in vergelijking met definitieve regelgeving.</li>
+                           
+                           <li>De Consolidatie­Informatie mag geen tijdstempels bevatten.
+                              Deze ontwerp-OW-objecten worden gezien als een nieuwe versie van een OW-object die
+                              niet hoort bij vastgestelde regelgeving. Dit is ook omdat ontwerpbesluiten niet gemuteerd
+                              kunnen worden, maar een losstaande status hebben t.o.v. vastgestelde regelgeving.
+                              Ontwerp-OW-objecten komen voor bij een initieel ontwerpbesluit en bij een wijzigingsontwerpbesluit.</li>
+                           </ul>
+                        
+                        <p>Bij een initieel ontwerpbesluit zijn alle OW-objecten on ontwerp. Een ontwerpwijzigingsbesluit
+                           beschrijft een ontwerp ten opzicht van een actuele regeling. Alleen de OW-objecten
+                           die wijzigen ten opzicht van de actuele levering worden aangeleverd. </p>
+                        
+                        <p>Ontwerp-activiteiten zullen niet verschijnen in de registratie van toepasbare regels,
+                           dus er kunnen geen vragenbomen op ontwerp-activiteiten gemaakt worden.</p>
+                        
+                        <p>Net zoals bij een 'regulier' wijzigingsbesluit worden bij een ontwerpwijzigingsbesluit
+                           alleen annotaties die wijzigen ten opzichte van de vastgestelde regelgeving aangeleverd.
+                           Het is bij een ontwerpwijzigingsbesluit wel mogelijk om te verwijzen naar annotaties
+                           uit de vastgestelde regelgeving. </p>
+                        
+                        <p>Voorbeeld: Artikel 1: Het is verboden om te zwemmen in het centrumgebied.
+                           Gaat gewijzigd worden op de volgende manier: 
+                           Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het stiltegebied.</p>
+                        
+                        <p>In dit geval hoeft het Regeltekst-object niet te worden aangeleverd, deze bestaat
+                           immers al.
+                           Er is wel noodzaak voor een ontwerpversie van de juridische regel, aangezien de locatie
+                           waar deze regel over gaat wordt uitgebreid. Er is ook noodzaak voor een nieuwe OW-locatie
+                           in ontwerp, aangezien er een stiltegebied-GIO wordt toegevoegd in dit ontwerpwijzigingsbesluit.</p>
+                        
+                        <p>Voorbeeld: Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het
+                           stiltegebied.
+                           Gaat gewijzigd worden op de volgende manier:
+                           Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het stiltegebied.
+                           Artikel 2: Er geldt een meldingsplicht omtrent het zwemmen in het stiltegebied.</p>
+                        
+                        <p>Voor Artikel 1 wordt de juridische regel die verwijst naar het stiltegebied in ontwerp
+                           gewijzigd t.o.v. de vastgestelde versie van de juridische regel. Voor Artikel 2 wordt
+                           wel een ontwerp-Regeltekst-object aangeleverd inclusief bijbehorende ontwerp-OW-annotaties.
+                           De OW-Locatie stiltegebied en de OW-activiteit zwemmen hoeven niet te worden aangeleverd
+                           aangezien deze al bestonden in vastgestelde regelgeving.</p>
+                        
+                        <p>Bij het aanleveren van Ontwerp-OW-objecten is het aan te bevelen dat de identificaties
+                           identiek blijven aan de OW-objecten die horen bij vastgestelde regelingen. </p>
                         
                         </td>
                   </tr>
@@ -4124,85 +4204,7 @@
                      <td>
                         <a class="link" href="#detail_attribute_OWobject_OWobject_procedurestatus">procedurestatus</a>
                         </td>
-                     <td>
-                        
-                        <p>In de STOP standaard kunnen ontwerpregelingen gemaakt worden met een ontwerpbesluit.
-                           Zo'n besluit wijzigt de tekst en de OW-object behorend bij een bestaande regelingversie.
-                           Alle OW-objecten die gewijzigd worden in het in ontwerpbesluit krijgen als procedurestatus
-                           de waarde 'ontwerp' waaruit je kan concluderen dat het object niet bij vastgestelde
-                           regelgeving hoort.  Als het veld procedurestatus geen waarde heeft dan wordt het OW-object
-                           beschouwd als behorend bij vastgestelde regelgeving.</p>
-                        
-                        <p>Voor een STOP ontwerpbesluit gelden de volgende regels:</p>
-                        
-                        <ul>
-                           
-                           <li>Het soortprocedure (c.q. proceduretype) is ontwerp (i.p.v. definitief).</li>
-                           
-                           <li>Er mogen minder procedurestappen gebruikt worden in vergelijking met definitieve regelgeving.</li>
-                           
-                           <li>De Consolidatie­Informatie mag geen tijdstempels bevatten.</li>
-                           </ul>
-                        
-                        <p>Voor ontwerp-OW-objecten gelden ook andere regels:</p>
-                        
-                        <p>
-                           <strong>Regel:</strong> OW-objecten met de procedurestatus 'ontwerp' kunnen niet gemuteerd worden. </p>
-                        
-                        <p>Deze ontwerp-OW-objecten worden gezien als een nieuwe versie van een OW-object die
-                           niet hoort bij vastgestelde regelgeving. Dit is ook omdat ontwerpbesluiten niet gemuteerd
-                           kunnen worden, maar een losstaande status hebben t.o.v. vastgestelde regelgeving.
-                           Ontwerp-OW-objecten komen voor bij een initieel ontwerpbesluit en bij een wijzigingsontwerpbesluit.</p>
-                        
-                        <p>Bij een initieel ontwerpbesluit zijn alle OW-objecten on ontwerp. Een ontwerpwijzigingsbesluit
-                           beschrijft een ontwerp ten opzicht van een actuele regeling. Alleen de OW-objecten
-                           die wijzigen ten opzicht van de actuele levering worden aangeleverd. </p>
-                        
-                        <p>
-                           <strong>Regel:</strong> Iedere OW-object behorend OW-aanlevering bij een ontwerpbesluit moet de procedurestatus
-                           ontwerp hebben.</p>
-                        
-                        <p>Ontwerp-activiteiten zullen niet verschijnen in de registratie van toepasbare regels,
-                           dus er kunnen geen vragenbomen op ontwerp-activiteiten gemaakt worden.</p>
-                        
-                        <p>Net zoals bij een 'regulier' wijzigingsbesluit worden bij een ontwerpwijzigingsbesluit
-                           alleen annotaties die wijzigen ten opzichte van de vastgestelde regelgeving aangeleverd.
-                           Het is bij een ontwerpwijzigingsbesluit wel mogelijk om te verwijzen naar annotaties
-                           uit de vastgestelde regelgeving. </p>
-                        
-                        <p>Voorbeeld: Artikel 1: Het is verboden om te zwemmen in het centrumgebied.
-                           Gaat gewijzigd worden op de volgende manier: 
-                           Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het stiltegebied.</p>
-                        
-                        <p>In dit geval hoeft het Regeltekst-object niet te worden aangeleverd, deze bestaat
-                           immers al.
-                           Er is wel noodzaak voor een ontwerpversie van de juridische regel, aangezien de locatie
-                           waar deze regel over gaat wordt uitgebreid. Er is ook noodzaak voor een nieuwe OW-locatie
-                           in ontwerp, aangezien er een stiltegebied-GIO wordt toegevoegd in dit ontwerpwijzigingsbesluit.</p>
-                        
-                        <p>Voorbeeld: Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het
-                           stiltegebied.
-                           Gaat gewijzigd worden op de volgende manier:
-                           Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het stiltegebied.
-                           Artikel 2: Er geldt een meldingsplicht omtrent het zwemmen in het stiltegebied.</p>
-                        
-                        <p>Voor Artikel 1 wordt de juridische regel die verwijst naar het stiltegebied in ontwerp
-                           gewijzigd t.o.v. de vastgestelde versie van de juridische regel. Voor Artikel 2 wordt
-                           wel een ontwerp-Regeltekst-object aangeleverd inclusief bijbehorende ontwerp-OW-annotaties.
-                           De OW-Locatie stiltegebied en de OW-activiteit zwemmen hoeven niet te worden aangeleverd
-                           aangezien deze al bestonden in vastgestelde regelgeving.</p>
-                        
-                        <p>
-                           <strong>Regel:</strong> Een ontwerpregeling is altijd gebaseerd op een bestaande versie van een regeling.
-                           Verwijzingen vanuit OW-objecten met de procedurestap 'ontwerp' verwijzen altijd naar
-                           de versie van het OW-object zoals bekend in de regelingversie waarop de ontwerpregeling
-                           gebaseerd is.</p>
-                        
-                        <p>Bij het aanleveren van Ontwerp-OW-objecten is het aan te bevelen dat de identificaties
-                           identiek blijven aan de OW-objecten die horen bij vastgestelde regelingen. De voorziening
-                           zorgt ervoor dat er geen validatieconflicten zijn, omdat ontwerp-objecten in aparte
-                           tabellen opgeslagen worden.</p>
-                        </td>
+                     <td></td>
                      <td>
                         CHARACTERSTRING
                         </td>
@@ -4311,106 +4313,12 @@
                            <td>procedurestatus</td>
                         </tr>
                         <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>In de STOP standaard kunnen ontwerpregelingen gemaakt worden met een ontwerpbesluit.
-                                 Zo'n besluit wijzigt de tekst en de OW-object behorend bij een bestaande regelingversie.
-                                 Alle OW-objecten die gewijzigd worden in het in ontwerpbesluit krijgen als procedurestatus
-                                 de waarde 'ontwerp' waaruit je kan concluderen dat het object niet bij vastgestelde
-                                 regelgeving hoort.  Als het veld procedurestatus geen waarde heeft dan wordt het OW-object
-                                 beschouwd als behorend bij vastgestelde regelgeving.</p>
-                              
-                              <p>Voor een STOP ontwerpbesluit gelden de volgende regels:</p>
-                              
-                              <ul>
-                                 
-                                 <li>Het soortprocedure (c.q. proceduretype) is ontwerp (i.p.v. definitief).</li>
-                                 
-                                 <li>Er mogen minder procedurestappen gebruikt worden in vergelijking met definitieve regelgeving.</li>
-                                 
-                                 <li>De Consolidatie­Informatie mag geen tijdstempels bevatten.</li>
-                                 </ul>
-                              
-                              <p>Voor ontwerp-OW-objecten gelden ook andere regels:</p>
-                              
-                              <p>
-                                 <strong>Regel:</strong> OW-objecten met de procedurestatus 'ontwerp' kunnen niet gemuteerd worden. </p>
-                              
-                              <p>Deze ontwerp-OW-objecten worden gezien als een nieuwe versie van een OW-object die
-                                 niet hoort bij vastgestelde regelgeving. Dit is ook omdat ontwerpbesluiten niet gemuteerd
-                                 kunnen worden, maar een losstaande status hebben t.o.v. vastgestelde regelgeving.
-                                 Ontwerp-OW-objecten komen voor bij een initieel ontwerpbesluit en bij een wijzigingsontwerpbesluit.</p>
-                              
-                              <p>Bij een initieel ontwerpbesluit zijn alle OW-objecten on ontwerp. Een ontwerpwijzigingsbesluit
-                                 beschrijft een ontwerp ten opzicht van een actuele regeling. Alleen de OW-objecten
-                                 die wijzigen ten opzicht van de actuele levering worden aangeleverd. </p>
-                              
-                              <p>
-                                 <strong>Regel:</strong> Iedere OW-object behorend OW-aanlevering bij een ontwerpbesluit moet de procedurestatus
-                                 ontwerp hebben.</p>
-                              
-                              <p>Ontwerp-activiteiten zullen niet verschijnen in de registratie van toepasbare regels,
-                                 dus er kunnen geen vragenbomen op ontwerp-activiteiten gemaakt worden.</p>
-                              
-                              <p>Net zoals bij een 'regulier' wijzigingsbesluit worden bij een ontwerpwijzigingsbesluit
-                                 alleen annotaties die wijzigen ten opzichte van de vastgestelde regelgeving aangeleverd.
-                                 Het is bij een ontwerpwijzigingsbesluit wel mogelijk om te verwijzen naar annotaties
-                                 uit de vastgestelde regelgeving. </p>
-                              
-                              <p>Voorbeeld: Artikel 1: Het is verboden om te zwemmen in het centrumgebied.
-                                 Gaat gewijzigd worden op de volgende manier: 
-                                 Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het stiltegebied.</p>
-                              
-                              <p>In dit geval hoeft het Regeltekst-object niet te worden aangeleverd, deze bestaat
-                                 immers al.
-                                 Er is wel noodzaak voor een ontwerpversie van de juridische regel, aangezien de locatie
-                                 waar deze regel over gaat wordt uitgebreid. Er is ook noodzaak voor een nieuwe OW-locatie
-                                 in ontwerp, aangezien er een stiltegebied-GIO wordt toegevoegd in dit ontwerpwijzigingsbesluit.</p>
-                              
-                              <p>Voorbeeld: Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het
-                                 stiltegebied.
-                                 Gaat gewijzigd worden op de volgende manier:
-                                 Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het stiltegebied.
-                                 Artikel 2: Er geldt een meldingsplicht omtrent het zwemmen in het stiltegebied.</p>
-                              
-                              <p>Voor Artikel 1 wordt de juridische regel die verwijst naar het stiltegebied in ontwerp
-                                 gewijzigd t.o.v. de vastgestelde versie van de juridische regel. Voor Artikel 2 wordt
-                                 wel een ontwerp-Regeltekst-object aangeleverd inclusief bijbehorende ontwerp-OW-annotaties.
-                                 De OW-Locatie stiltegebied en de OW-activiteit zwemmen hoeven niet te worden aangeleverd
-                                 aangezien deze al bestonden in vastgestelde regelgeving.</p>
-                              
-                              <p>
-                                 <strong>Regel:</strong> Een ontwerpregeling is altijd gebaseerd op een bestaande versie van een regeling.
-                                 Verwijzingen vanuit OW-objecten met de procedurestap 'ontwerp' verwijzen altijd naar
-                                 de versie van het OW-object zoals bekend in de regelingversie waarop de ontwerpregeling
-                                 gebaseerd is.</p>
-                              
-                              <p>Bij het aanleveren van Ontwerp-OW-objecten is het aan te bevelen dat de identificaties
-                                 identiek blijven aan de OW-objecten die horen bij vastgestelde regelingen. De voorziening
-                                 zorgt ervoor dat er geen validatieconflicten zijn, omdat ontwerp-objecten in aparte
-                                 tabellen opgeslagen worden.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
                            <th>Formaat</th>
                            <td>CHARACTERSTRING</td>
                         </tr>
                         <tr>
                            <th>Lengte</th>
                            <td>..80</td>
-                        </tr>
-                        <tr>
-                           <th>Regels</th>
-                           <td>
-                              
-                              
-                              <p>Alleen OW-objecten die de procedurestatus 'ontwerp' hebben mogen verwijzen naar OW-objecten
-                                 met de procedurestatus 'ontwerp'.</p>
-                              
-                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
