@@ -13,22 +13,24 @@ Niet alle concepten beschreven in het CIM-OW worden vastgelegd in het IMOW.  Som
 
 ## IMOW-aspecten niet in CIM-OW {#6C42F8AD}
 
-<ol><li>Het IMOW kent de volgende verschillen ten opzichte van het CIM-OW:</li>
-</ol>
+Het IMOW kent de volgende verschillen ten opzichte van het CIM-OW:
 
-<b>Gebiedsaanwijzing</b><br/>
+### Gebiedsaanwijzing
+
 Gebiedsaanwijzing is meer generiek opgezet in IMOW dan in CIM-OW. De Functie en het Beperkingengebied zijn zo opgezet dat er andere typen Gebiedsaanwijzingen toegevoegd kunnen worden, zonder impact op de XSD’s. De type gebiedsaanwijzingen kunnen worden meegegeven door het kenmerk ‘TypeGebiedsaanwijzing’. De groepen die je kunt selecteren volgen vervolgens uit de verschillende waardelijsten van de specifieke ‘gebiedsaanwijzingstypen’.
 
-<b>Relaties</b><br/>
+### Relaties
+
 In IMOW staan de rolnamen centraal in plaats van de naam van de relatiesoort. Deze rolnamen worden ook gebruikt in de XML-schemas.
 
-<b>Regelingsgebied</b><br/>
+### Regelingsgebied
+
 In het IMOW wordt er een specifiek object benoemd dat Regelingsgebied heet. In het CIM-OW is dit op een andere manier vormgegeven. Een regelingsgebied in IMOW koppelt een Locatie aan een Omgevingsdocument, zodat deze Locatie het regelingsgebied van een Omgevingsdocument wordt. Het regelingsgebied uit IMOW wordt in DSO-LV niet tot een OW-object gevormd. In DSO-LV is een regelingsgebied een relatie tussen een Omgevingsdocument en een Locatie, conform CIM-OW.
 
-<b>ActiviteitLocatieaanduiding</b><br/>
+### ActiviteitLocatieaanduiding
 In CIM-OW is dit gemodelleerd als gegevensgroep, terwijl dit in IMOW een relatieklasse is
 
-<b>Geometrie en GIO</b><br/>
+### Geometrie en GIO
 In het IMOW wordt het kenmerk Geometrie als apart objecttype getoond. Conceptueel (CIM-OW) is een geometrie een kenmerk van een locatie, maar in de implementatie (IMOW) wordt het gezien als een gerefereerd objecttype. Dit objecttype Geometrie is geen zelfstandig objecttype, het hoort altijd als gerefereerde eigenschap bij een Locatie. Een Geometrie kan niet zelfstandig gemuteerd worden en historie opbouwen, maar een Locatie kan dat wel.
 
 Geometrie wordt door zowel STOP als IMOP gebruikt. Het BG hoeft daardoor Geometrie maar één keer aan te leveren. Vanwege dat gezamenlijk gebruik is Geometrie in een zelfstandig bestand geplaatst van waaruit zowel een GIO als de informatieobjecten uit IMOW apart naar wordt verwezen. Verschil in 1.0 is wel dat het GML-bestand normwaarden dient te bevatten indien deze bij de geometrie horen. Deze worden middels het GIO-schema geduid, en vallen niet onder het IMOW.

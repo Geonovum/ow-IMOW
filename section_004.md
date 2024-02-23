@@ -20,8 +20,6 @@ Een aanlevering aan de LVBB waarin een bestand met de naam ‘manifest-ow.xml’
 <ol><li>De GML bestanden behorend bij een regeling staan in het OP-manifest:<b>Regel:</b>     In het manifest-OW mag een bestandsnaam niet eindigen op '.gml'. (LVBB1026)</li>
 </ol>
 
-.
-
 Het manifest bevat de volgende XML elementen:<br/>
 <table style='width: 100%;'><caption></caption>
 <colgroup><col id='col1' style='width: 35.260535603072455%;'>

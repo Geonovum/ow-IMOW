@@ -7,7 +7,8 @@ Het wijzigen van de collectie OW-objecten behorend bij een Regeling gebeurt via 
 
 Een OW-aanlevering heeft zelf de vorm van een collectie OW-objecten. De aanlevering van een OW-object resulteert in een nieuw OW-object (zie <b><a href='#'>Fout! Verwijzingsbron niet gevonden.</a></b>), een gewijzigd OW-object (zie <b><a href='#'>Fout! Verwijzingsbron niet gevonden.</a></b>) of het beëindigen van een OW-object (zie <a href='#2C21DC35'>7.1.3</a>).
 
-In de volgende paragrafen staat regels voor de drie situaties.<br/>
+In de volgende paragrafen staat regels voor de drie situaties.
+
 ### Een nieuw OW-object {#2F9C69B2}
 
 Wanneer een OW-object wordt aangeleverd met een identificatie die nog niet bestond in de oorspronkelijke collectie ontstaat een nieuw OW-object. Voor een nieuw object geldt de volgende regel:
@@ -32,7 +33,7 @@ Wanneer een OW-object wordt aangeleverd met een identificatie die al bestond in 
 
 ### Een OW-object beëindigen {#2C21DC35}
 
-Wanneer een OW-object wordt aangeleverd waarbij het veld status de waarde ‘B’ heeft dan krijgt het oorspronkelijke OW-object de status beëindigd.
+Wanneer een OW-object wordt aangeleverd waarbij het veld status de waarde ''‘B''’'''' heeft dan krijgt het oorspronkelijke OW-object de status beëindigd.
 
 <b>Regel</b>: Het beëindigen van een OW-object mag alleen als de inhoud van het object, afgezien van het status veld, exact overeenkomt met de laatst aangeleverde OW-informatie (OZON0107).<br/>
 ### Resultaat van een wijziging {#189CCC1E}
@@ -56,7 +57,8 @@ Dit betekent dat ik als ik in 2021 een aantal wijzigingsbesluiten heb gemaakt, i
 
 ### OW-aanlevering bij intrekking {#5952605C}
 
-TODO: dit zou de plek zijn om te beschrijven dat bij een intrekking alleen objecten verwijderd mogen worden.<br/>
+TODO: dit zou de plek zijn om te beschrijven dat bij een intrekking alleen objecten verwijderd mogen worden.
+
 ### OW-aanlevering bij directe mutatie {#57FC25F3}
 
 <b>Noot: </b>directe mutaties zijn alleen bedoeld voor het oplossen van problemen in de keten, bijvoorbeeld een vastzittende regeling. Op verzoek van het bevoegd gezag kan deze functionaliteit uitgevoerd worden door beheerders van het stelsel. 
@@ -72,10 +74,9 @@ Dit betekent dat ik als ik in 2021 een aantal wijzigingsbesluiten heb gemaakt, i
 
 De tijdstempels van de ConsolidatieInformatie van het Besluit bepalen wanneer de OW-informatie geldig is.
 
-Er zijn OW-objecten waarvan het onlogisch is dat deze gewijzigd worden met een directe mutatie, dit zijn:<br/>
-<ul><li>OW-Locaties. Als de noemer van een locatie zou wijzigen dan wordt verwacht dat de verwijzing vanuit de Regeling ook gewijzigd wordt. Als de geometrie van de locatie wijzigt dan wordt verwacht dat er een aanpassing van de bijbehorende GIO wordt aangeleverd. 
-Het zou wel mogelijk zijn om een OW-Locatie te wijzigen in het geval dat er gebruik gemaakt dient te worden van een recentere versie van een ambtsgebied, of als het hoogte-attribuut van de locatie wordt aangevuld/aangepast.</li>
-<li>OW-Regelteksten. Als de verwijzing naar het artikel/lid wordt aangepast, dan heeft dit waarschijnlijk ook invloed op de Regeling zelf.</li>
-<li>OW-Divisies/OW-DivisieTeksten. Als de verwijzing naar de divisie/de divisietekst wordt aangepast, dan heeft dit waarschijnlijk ook invloed op de Regeling zelf.</li>
-</ul>
+Er zijn OW-objecten waarvan het onlogisch is dat deze gewijzigd worden met een directe mutatie, dit zijn:
+ - OW-Locaties. Als de noemer van een locatie zou wijzigen dan wordt verwacht dat de verwijzing vanuit de Regeling ook gewijzigd wordt. Als de geometrie van de locatie wijzigt dan wordt verwacht dat er een aanpassing van de bijbehorende GIO wordt aangeleverd. Het zou wel mogelijk zijn om een OW-Locatie te wijzigen in het geval dat er gebruik gemaakt dient te worden van een recentere versie van een ambtsgebied, of als het hoogte-attribuut van de locatie wordt aangevuld/aangepast.
+- OW-Regelteksten. Als de verwijzing naar het artikel/lid wordt aangepast, dan heeft dit waarschijnlijk ook invloed op de Regeling 
+zelf.
+- OW-Divisies/OW-DivisieTeksten. Als de verwijzing naar de divisie/de divisietekst wordt aangepast, dan heeft dit waarschijnlijk ook invloed op de Regeling zelf.
 

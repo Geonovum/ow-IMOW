@@ -2,11 +2,13 @@
 
 Dit hoofdstuk beschrijft IMOP onderdelen die relevant zijn voor het IMOW. Enkele dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de OP-standaard relevant is. Paragraaf <a href='#5D2F8BCD'>6.1</a> beschrijft een Regeling en zijn Artikelen/Leden/Divisies vanuit OP perspectief. Paragraaf <a href='#0B404AC6'>6.2</a> beschrijft de consolidatieinformatie uit een Regeling. Paragraaf <a href='#4541BABA'>6.3</a> worden GIO’s beschreven.
 
-Dit hoofdstuk is geen vervanging van de OP-documentatie, maar licht de OP-aspecten die voor IMOW van belang zijn toe.<br/>
+Dit hoofdstuk is geen vervanging van de OP-documentatie, maar licht de OP-aspecten die voor IMOW van belang zijn toe.
+
 ## De Regeling en diens Artikelen/Leden/Divisies {#5D2F8BCD}
 
 Alle OW-objecten horen bij een Artikel/Lid/Divisie uit een Regeling (die opgesteld is conform de STOP-standaard). Vanuit het manifest-ow (<b><a href='#'>Fout! Verwijzingsbron niet gevonden.</a></b>) wordt middels het attribuut WorkIDRegeling bij iedere aanlevering aangegeven bij welke Regeling de OW-objecten horen.<br/>
-In iedere Regeltekst (<a href='#'>3.2</a>) of Divisie (<a href='#'>3.11</a>) zit het wId-attribuut, hierin staat de identificatie van het artikel/lid of de divisie aan de OP-kant. Zodoende zijn alle OW-objecten die gekoppeld zijn aan een bepaalde Regeltekst of Divisie terug te vinden in een bepaald deel van een Regeling.<br/>
+In iedere Regeltekst (<a href='#'>3.2</a>) of Divisie (<a href='#'>3.11</a>) zit het wId-attribuut, hierin staat de identificatie van het artikel/lid of de divisie aan de OP-kant. Zodoende zijn alle OW-objecten die gekoppeld zijn aan een bepaalde Regeltekst of Divisie terug te vinden in een bepaald deel van een Regeling.<
+
 ## ConsolidatieInformatie {#0B404AC6}
 
 De ConsolidatieInformatie wordt meegegeven aan de OP-kant, maar bepaalt hoe de OW-objecten geversioneerd worden in het DSO. De daadwerkelijke documentatie van ConsolidatieInformatie is te vinden in de bijbehorende OP-documentatie, dit is een extract.<br/>
