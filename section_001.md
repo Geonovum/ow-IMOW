@@ -29,12 +29,11 @@ Wanneer je in de context van de Omgevingswet als bevoegd gezag een Regeling (bij
 
 ## Normatieve referenties {#6AB1D937}
 
-Dit document is gebaseerd op de versies van de volgende standaarden:<br/>
-<ul><li>STOP Standaard (Versie STOP-IC)</li>
-<li>LVBB Bronhouderkoppelvlak</li>
-<li>CIM-OP</li>
-<li>CIM-OW</li>
-</ul>
+Dit document is gebaseerd op de versies van de volgende standaarden:
+ - STOP Standaard (Versie STOP-IC)
+ - LVBB Bronhouderkoppelvlak
+ - CIM-OP
+ - CIM-OW>
 
 ## Leeswijzer {#28F55C8C}
 

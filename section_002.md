@@ -43,17 +43,17 @@ Binnen OW is Regeltekst een subtype van OP-object, dit betekent dat er vanuit Re
 ### OW-object {#6A0BF36E}
 
 In de lopende tekst wordt gesproken over OW-object. Instanties van de in dit diagram genoemde klasses (en subklasses) kunnen voorkomen in het IMOW deel van een aanlevering.<br/>
+
 <figure><img src='media/image9.svg' alt='' style='width: 100%;'></img>
 <figcaption>UML-diagram OW-objecten</figcaption></figure>
 
-        <b><span style='color: #003359;'>Status</span></b>
+#### status
 
-De status van een OW-object kan actief of beëindigd zijn. In de uitwisseling wordt deze status als volgt meegegeven:<br/>
-<ul><li>Als het veld ‘status’  geen waarde heeft is het OW-object actief.</li>
-<li>Als het veld status de waarde ‘B’ is het OW-object beëindigd. Het zal het OW-object alleen nog tonen worden als iemand een tijdreis-vraag stelt.</li>
-</ul>
+De status van een OW-object kan actief of beëindigd zijn. In de uitwisseling wordt deze status als volgt meegegeven:
+- Als het veld 'status'  geen waarde heeft is het OW-object actief.
+- Als het veld status de waarde B is het OW-object beëindigd. Het zal het OW-object alleen nog tonen worden als iemand een tijdreis-vraag stelt.
 
-        <b><span style='color: #003359;'>Procedurestatus</span></b><b><span style='color: #003359;'> en ontwerpbesluiten</span></b>
+#### Procedurestatus
 
 In de STOP standaard kunnen ontwerpregelingen gemaakt worden met een ontwerpbesluit. Zo’n besluit wijzigt de tekst en de OW-object behorend bij een bestaande regelingversie. Alle OW-objecten die gewijzigd worden in het in ontwerpbesluit krijgen als procedurestatus de waarde ‘ontwerp’ waaruit je kan concluderen dat het object niet bij vastgestelde regelgeving hoort.  Als het veld procedurestatus geen waarde heeft dan wordt het OW-object beschouwd als behorend bij vastgestelde regelgeving.
 
