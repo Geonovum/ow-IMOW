@@ -63,4 +63,64 @@ let respecConfig = {
           uri: "ow-imow.pdf",
       },
   ],
+  //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
+  localBiblio: 
+  {
+    Basisgeometrie: {
+      id: "Basisgeometrie",
+      title: "Basisgeometrie",
+      href: "https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20200930/",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "30 september 2020"
+    },
+    MIM: {
+      id: "MIM",
+      title: "MIM - Metamodel Informatie Modellering",
+      href: "https://docs.geostandaarden.nl/mim/def-st-mim-20220217/",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2022-02-17"
+    },
+    CIMOP: {
+      id: "CIMOP",
+      title: "Conceptueel Informatiemodel Omgevingswet (CIMOW)",
+      href: "https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2022-01-07"
+    },
+    CIMOW: {
+      id: "CIMOW",
+      title: "Conceptueel Informatiemodel Omgevingswet (CIMOW)",
+      href: "https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2022-01-07"
+    },
+    LVBB: {
+      id: "LVBB",
+      title: "Landelijke voorziening bekendmaken en beschikbaar stellen (LVBB)",
+      href: "https://standaarden.overheid.nl/stop/lvbb",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2023-01-09"
+    },
+    IMOW: {
+      id: "IMOW",
+      title: "Informatiemodel Omgevingswet (IMOW)",
+      href: "https://geonovum.github.io/TPOD/CIMOW/IMOW_v2.0.2.pdf",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2023-01-09"
+    },
+    STOPIC: {
+      id: "STOP20",
+      title: "Standaard Officiële Publicaties",
+      href: "https://koop.gitlab.io/STOP/standaard/2.0.0-rc/index.html",
+      status: "Release Candidate",
+      publisher: "KOOP",
+      date: "2023-02-17"
+    },
+  },
 };
