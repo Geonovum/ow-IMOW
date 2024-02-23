@@ -98,13 +98,12 @@ let respecConfig = {
       publisher: "Geonovum",
       date: "2022-01-07"
     },
-    LVBB: {
-      id: "LVBB",
-      title: "Landelijke voorziening bekendmaken en beschikbaar stellen (LVBB)",
-      href: "https://standaarden.overheid.nl/stop/lvbb",
+    LVBBBHKV: {
+      id: "LVBBBHKV",
+      title: "Documentatie LVBB Bronhouderkoppelvlak",
+      href: "https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html",
       status: "Definitief",
-      publisher: "Geonovum",
-      date: "2023-01-09"
+      publisher: "KOOP"
     },
     IMOW: {
       id: "IMOW",

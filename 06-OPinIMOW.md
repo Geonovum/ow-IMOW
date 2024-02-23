@@ -1,18 +1,34 @@
 # OP-aspecten relevant voor IMOW {#2577D13E}
 
-Dit hoofdstuk beschrijft IMOP onderdelen die relevant zijn voor het IMOW. Enkele dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de OP-standaard relevant is. Paragraaf <a href='#5D2F8BCD'>6.1</a> beschrijft een Regeling en zijn Artikelen/Leden/Divisies vanuit OP perspectief. Paragraaf <a href='#0B404AC6'>6.2</a> beschrijft de consolidatieinformatie uit een Regeling. Paragraaf <a href='#4541BABA'>6.3</a> worden GIO’s beschreven.
+Dit hoofdstuk beschrijft STOP onderdelen die relevant zijn voor het IMOW. Enkele
+dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de
+OP-standaard relevant is. Paragraaf <a href='#5D2F8BCD'>6.1</a> beschrijft een
+Regeling en zijn Artikelen/Leden/Divisies vanuit OP perspectief. Paragraaf
+<a href='#0B404AC6'>6.2</a> beschrijft de consolidatieinformatie uit een
+Regeling. Paragraaf <a href='#4541BABA'>6.3</a> worden GIO’s beschreven.
 
-Dit hoofdstuk is geen vervanging van de OP-documentatie, maar licht de OP-aspecten die voor IMOW van belang zijn toe.
+Dit hoofdstuk is geen vervanging van de STOP standaard, maar licht de
+OP-aspecten die voor IMOW van belang zijn toe.
 
-## De Regeling en diens Artikelen/Leden/Divisies {#5D2F8BCD}
+## De Regeling en zijn Artikelen/Leden/Divisies {#5D2F8BCD}
 
-Alle OW-objecten horen bij een Artikel/Lid/Divisie uit een Regeling (die opgesteld is conform de STOP-standaard). Vanuit het manifest-ow (<b><a href='#'>Fout! Verwijzingsbron niet gevonden.</a></b>) wordt middels het attribuut WorkIDRegeling bij iedere aanlevering aangegeven bij welke Regeling de OW-objecten horen.<br/>
-In iedere Regeltekst (<a href='#'>3.2</a>) of Divisie (<a href='#'>3.11</a>) zit het wId-attribuut, hierin staat de identificatie van het artikel/lid of de divisie aan de OP-kant. Zodoende zijn alle OW-objecten die gekoppeld zijn aan een bepaalde Regeltekst of Divisie terug te vinden in een bepaald deel van een Regeling.<
+Alle OW-objecten horen bij een Artikel/Lid/Divisie uit een Regeling (die
+opgesteld is conform de STOP-standaard). Vanuit het manifest-ow
+(<b><a href='#'>Fout! Verwijzingsbron niet gevonden.</a></b>) wordt middels het
+attribuut WorkIDRegeling bij iedere aanlevering aangegeven bij welke Regeling de
+OW-objecten horen.<br/> In iedere Regeltekst (<a href='#'>3.2</a>) of Divisie
+(<a href='#'>3.11</a>) zit het wId-attribuut, hierin staat de identificatie van
+het artikel/lid of de divisie aan de OP-kant. Zodoende zijn alle OW-objecten die
+gekoppeld zijn aan een bepaalde Regeltekst of Divisie terug te vinden in een
+bepaald deel van een Regeling.<
 
 ## ConsolidatieInformatie {#0B404AC6}
 
-De ConsolidatieInformatie wordt meegegeven aan de OP-kant, maar bepaalt hoe de OW-objecten geversioneerd worden in het DSO. De daadwerkelijke documentatie van ConsolidatieInformatie is te vinden in de bijbehorende OP-documentatie, dit is een extract.<br/>
-Hieronder een korte opbouw van de structuur van de ConsolidatieInformatie:
+De ConsolidatieInformatie wordt meegegeven aan de OP-kant, maar bepaalt hoe de
+OW-objecten geversioneerd worden in het DSO. De daadwerkelijke documentatie van
+ConsolidatieInformatie is te vinden in de bijbehorende OP-documentatie, dit is
+een extract.<br/> Hieronder een korte opbouw van de structuur van de
+ConsolidatieInformatie:
 
 <table style='width: 100%;'><caption></caption>
 <colgroup><col id='col1' style='width: 35.260535603072455%;'>
@@ -187,16 +203,35 @@ Hieronder een korte opbouw van de structuur van de ConsolidatieInformatie:
 </tbody>
 </table>
 
-Het Doel is een gegeven dat ook aanwezig is bij de aanlevering van de OW-informatie, zie manifest-ow (<b><a href='#'>Fout! Verwijzingsbron niet gevonden.</a></b>). OW-objecten krijgen de tijdsinformatie van de tijdstempels die horen bij de aanlevering.<br/>
-Kortom, als er OW-objecten worden aangeleverd bij een besluit dat juridisch werkend is vanaf 1 januari 2022, dan zullen deze OW-objecten ook juridisch werkend zijn vanaf 1 januari 2022. 
-(Het DSO legt drie type tijdstempels vast, namelijk juridischWerkendVanaf, geldigVanaf, en beschikbaarOp, met name beschikbaarOp wordt geregistreerd in het DSO op het moment dat informatie aangeleverd is.)<br/>
+Het Doel is een gegeven dat ook aanwezig is bij de aanlevering van de
+OW-informatie, zie manifest-ow (<b><a href='#'>Fout! Verwijzingsbron niet
+gevonden.</a></b>). OW-objecten krijgen de tijdsinformatie van de tijdstempels
+die horen bij de aanlevering.<br/> Kortom, als er OW-objecten worden aangeleverd
+bij een besluit dat juridisch werkend is vanaf 1 januari 2022, dan zullen deze
+OW-objecten ook juridisch werkend zijn vanaf 1 januari 2022. (Het DSO legt drie
+type tijdstempels vast, namelijk juridischWerkendVanaf, geldigVanaf, en
+beschikbaarOp, met name beschikbaarOp wordt geregistreerd in het DSO op het
+moment dat informatie aangeleverd is.)<br/>
+
 ## GIO’s en Norm GIO’s {#4541BABA}
 
-Bij het aanleveren van een besluit volgens de STOP standaarden worden geografische objecten aangeleverd als GIO’s (geografische informatieobjecten). Dit is één van de twee soorten informatieobjecten die in STOP kunnen worden meegeleverd (de andere zijn PDF-documenten).  In die GIO aanlevering heeft iedere Geometrie een id attribuut in de vorm van een UUID. Wanneer in IMOW middels GeometrieRef naar een Geometrie wordt verwezen wordt deze UUID gebruikt.
+Bij het aanleveren van een besluit volgens de STOP standaarden worden
+geografische objecten aangeleverd als GIO’s (geografische informatieobjecten).
+Dit is één van de twee soorten informatieobjecten die in STOP kunnen worden
+meegeleverd (de andere zijn PDF-documenten). In die GIO aanlevering heeft iedere
+Geometrie een id attribuut in de vorm van een UUID. Wanneer in IMOW middels
+GeometrieRef naar een Geometrie wordt verwezen wordt deze UUID gebruikt.
 
-Een GIO wordt aangeleverd in twee bestanden: een geografisch vaststellingsdeel (GML) en een service-deel (XML). In dit document wordt alleen het geografisch vaststellingsdeel behandeld, omdat het service-deel niet van belang is voor de OW-objecten. De identificatie van de Geometrie is te vinden in het geografisch deel van de GIO, dit is van belang voor de OW-Locatie (<a href='#'>3.8.2</a>).<br/>
-Er zijn twee type GIO’s,: GIO’s die informatie over normen bevatten(Norm-GIO’s) en GIO’s zonder informatie over normen (GIO’s).<br/>
-Hieronder informatie over de opbouw (van het geografisch deel) van een GIO:<br/>
+Een GIO wordt aangeleverd in twee bestanden: een geografisch vaststellingsdeel
+(GML) en een service-deel (XML). In dit document wordt alleen het geografisch
+vaststellingsdeel behandeld, omdat het service-deel niet van belang is voor de
+OW-objecten. De identificatie van de Geometrie is te vinden in het geografisch
+deel van de GIO, dit is van belang voor de OW-Locatie
+(<a href='#'>3.8.2</a>).<br/> Er zijn twee type GIO’s,: GIO’s die informatie
+over normen bevatten(Norm-GIO’s) en GIO’s zonder informatie over normen
+(GIO’s).<br/> Hieronder informatie over de opbouw (van het geografisch deel) van
+een GIO:<br/>
+
 <table style='width: 100%;'><caption></caption>
 <colgroup><col id='col1' style='width: 35.260535603072455%;'>
 <col id='col2' style='width: 13.244758148225037%;'>
@@ -384,13 +419,16 @@ Hieronder informatie over de opbouw (van het geografisch deel) van een GIO:<br/>
 </table>
 
 Hierbij zijn enkele punten van belang om te weten:<br/>
+
 <ul><li>De UUID van de Geometrie wordt ontdubbeld door het DSO, kortom: de OW-Locatie met de noemer ‘Centrumgebied’ met geometrieReferentie ‘d0993715-c485-4e63-b35d-8f68c3cbee3b’ mag in meerdere GIO’s als Locatie staan. Altijd moet de geometrie behorende bij ‘d0993715-c485-4e63-b35d-8f68c3cbee3b’ inhoudelijk dezelfde zijn.</li>
 <li>Indien er gebruik gemaakt wordt van groepen, dan dient iedere groep een symbolisatie te hebben (dit wordt vastgelegd in het vaststellingsdeel).</li>
 <li>Bij Norm-GIO’s dienen aanvullende gegevens vastgelegd te worden.</li>
 <li>Meer informatie hierover is te vinden bij <a href='https://koop.gitlab.io/STOP/standaard/1.0.4/GIOConceptueel.html' target='_blank'>de OP-documentatie over het concept GIO</a>.</li>
 </ul>
 
-Indien er normen vastgelegd worden aan de OW-kant, dan ziet de GIO er anders uit dan bij OW-Locaties waar geen norm over is vastgelegd. Hieronder staan de elementen uit de Norm-GIO die overeenkomen met de gewone GIO grijs gemarkeerd: 
+Indien er normen vastgelegd worden aan de OW-kant, dan ziet de GIO er anders uit
+dan bij OW-Locaties waar geen norm over is vastgelegd. Hieronder staan de
+elementen uit de Norm-GIO die overeenkomen met de gewone GIO grijs gemarkeerd:
 
 <table style='width: 100%;'><caption></caption>
 <colgroup><col id='col1' style='width: 35.260535603072455%;'>
@@ -608,6 +646,7 @@ Indien er normen vastgelegd worden aan de OW-kant, dan ziet de GIO er anders uit
 </table>
 
 Hierbij zijn nog enkele punten relevant:<br/>
+
 <ul><li>De norm-gegevens uit de GIO worden niet doorgestuurd naar het DSO, maar verschijnen in de LVBB-kaartviewer. Dit is omdat de OW-informatie zelf al de normgegevens bevat.</li>
 <li>Het is toegestaan om een geometrie die gebruikt wordt voor een Norm ook te gebruiken bij andere OW-objecten.</li>
 <li>De normwaarden op een bepaalde locatie uit de GIO dienen overeen te komen met de normwaarden die via OW worden aangeleverd.</li>
@@ -617,9 +656,13 @@ Hierbij zijn nog enkele punten relevant:<br/>
 
 ## Richtlijn voor het maken van GIO’s o.b.v. OW-objecten {#639AF62F}
 
-In deze paragraaf wordt toegelicht welke richtlijnen er zijn voor het maken van GIO’s vanuit OW-objecten. Dit zijn richtlijnen en deze worden niet gevalideerd door het DSO. Deze richtlijnen zijn gemaakt n.a.v. de expliciete vraag naar hoe je vanuit OW naar GIO’s toe kunt werken.
+In deze paragraaf wordt toegelicht welke richtlijnen er zijn voor het maken van
+GIO’s vanuit OW-objecten. Dit zijn richtlijnen en deze worden niet gevalideerd
+door het DSO. Deze richtlijnen zijn gemaakt n.a.v. de expliciete vraag naar hoe
+je vanuit OW naar GIO’s toe kunt werken.
 
 De richtlijn is als volgt:<br/>
+
 <ul><li>Gebruik Locatiegroepen (c.q. de groep-subtypen van Locatie in IMOW (Gebiedengroep, Lijnengroep, Puntengroep) als OW-pendant van de GIO (zie Figuur 5).</li>
 <li>Bij gebruik van het OW-object Omgevingsnorm/Omgevingswaarde zou er een Norm-GIO moeten zijn die dezelfde Locaties en kwalitatieve/kwantitatieve Normwaarden bevat als de OW-Norm (zie Figuur 6).</li>
 <li>De overige subtypen van Locatie in IMOW (Gebied, Lijn, Punt) zouden moeten corresponderen met de Locatie uit de GIO.</li>
@@ -633,8 +676,8 @@ De richtlijn is als volgt:<br/>
 <figcaption>Richtlijn voor Normen i.r.t. Norm-GIO’s</figcaption></figure>
 
 Dit heeft de volgende consequenties:<br/>
+
 <ul><li>In de GIO kun je geen verschillende IMOW-Locatiesubtypen vermengen (bijv. gebieden en punten in dezelfde GIO).</li>
 <li>In het geval dat één IMOW-Gebied in meerdere Gebiedengroepen zit, zou de Locatie ook in meerdere GIO’s voor moeten komen.</li>
 <li>Er was met de huidige versie van het IMOW geen eenduidige richtlijn te bedenken voor het indelen van groepen in de GIO.</li>
 </ul>
-

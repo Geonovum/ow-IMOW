@@ -1,7 +1,12 @@
 # A Bijlage: versiehistorie {#11A0CF11}
 
-In de versiehistorie wordt met WELT-xx verwezen naar de Wensen en Eisen Lijst voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die door gebruikers van de standaard zijn ingediend. De ingediende meldingen zijn te vinden via https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen.<br/>
-Voor de STOP-standaard bestaat een vergelijkbaar meldingssysteem, waarnaar wordt verwezen met STOP-issue #xx. De STOP-issuetracker is te vinden via https://gitlab.com/koop/STOP/standaard/-/issues.
+In de versiehistorie wordt met WELT-xx verwezen naar de Wensen en Eisen Lijst
+voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die
+door gebruikers van de standaard zijn ingediend. De ingediende meldingen zijn te
+vinden via https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen.<br/>
+Voor de STOP-standaard bestaat een vergelijkbaar meldingssysteem, waarnaar wordt
+verwezen met STOP-issue #xx. De STOP-issuetracker is te vinden via
+https://gitlab.com/koop/STOP/standaard/-/issues.
 
 <table style='width: 100%;'><caption></caption>
 <colgroup><col id='col1' style='width: 11.987669825322525%;'>
@@ -160,4 +165,3 @@ In <b><a href='#'>Fout! Verwijzingsbron niet gevonden.</a></b> aanvulling van in
 </tr>
 </tbody>
 </table>
-
