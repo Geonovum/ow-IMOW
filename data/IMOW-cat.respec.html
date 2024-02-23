@@ -49,7 +49,7 @@
          <h4>   Vrije­Tekst - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313.png" usemap="#imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313" alt="Diagram &#xA;                        Vrijetekststructuur in OP bouwt gebruikt twee elementtypen, namelijk: Divisie en Divisietekst. Het hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar uiteindelijk ook een Divisietekst met Inhoud in moet zitten. De Inhoud bevat alleen inhoudelijke tekst. De Divisie wordt gebruikt om de tekst te structureren in bijvoorbeeld verschillende hoofdstukken of paragrafen.&#xA;                        &#xA;                        Binnen OW is Divisie een subklasse van OP-object. Dit betekent dat er vanuit Divisie een verwijzing is naar de wId (identificatie) in OP ofwel de wId van de Divisie in OP en naar de identificatie van de regeling in OP, de wId van de regeling. Zo zorgt het OW dat er op het diepste inhoudelijke niveau een verwijzing is naar het OP-deel.&#xA;                        &#xA;                        In de vrijetekststructuur, zie Figuur 3 voor een UML diagram, zijn documenten gestructureerd in Divisie en Divisietekst element. Dit zijn dan ook de elementen waar de annotaties aan hangen. Dit betekent dat de inhoudelijke tekstgegevens worden aangeleverd in het IMOP-gedeelte en dat je vanuit OW verwijst naar deze Divisie. Vanuit OW kun je een of meerdere tekstdelen aangeven bij de Divisie. Een tekstdeel kan optioneel nog één of meerdere hoofdlijnen, gebiedsaanwijzingen, en/of locaties bevatten. Tevens kan er een Locatie direct gekoppeld zijn aan het tekstdeel of kan de locatie via de gebiedsaanwijzing gekoppeld zijn aan het tekstdeel. De locatie is een supertype van ofwel een lijn, punt, gebied of een groep van lijnen, punten of gebieden. Uiteindelijk heeft ieder subtype van locatie een geometrie die als los GML-bestand wordt meegeleverd.&#xA;                     "><figcaption>Vrije­Tekst</figcaption>
-            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="DivisieOfDivisietekst" coords="302,215,468,276" href="#global_class_VrijeTekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="406,21,664,155" href="#global_class_VrijeTekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="182,350,441,505" href="#global_class_VrijeTekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="1032,714,1257,837" href="#global_class_RegelingsGebied_Regelingsgebied"><area shape="rect" alt="Divisie" coords="126,14,383,153" href="#global_class_VrijeTekst_Divisie"><area shape="rect" alt="Hoofdlijn" coords="592,350,850,505" href="#global_class_VrijeTekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="157,700,441,893" href="#global_class_GebiedsAanwijzing_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="605,688,876,848" href="#global_class_Locatie_Locatie"></map><p>
+            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="DivisieOfDivisietekst" coords="200,215,365,276" href="#global_class_VrijeTekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="304,21,561,155" href="#global_class_VrijeTekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="79,350,338,505" href="#global_class_VrijeTekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="929,714,1155,837" href="#global_class_RegelingsGebied_Regelingsgebied"><area shape="rect" alt="Divisie" coords="23,14,280,153" href="#global_class_VrijeTekst_Divisie"><area shape="rect" alt="Hoofdlijn" coords="490,350,747,505" href="#global_class_VrijeTekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="55,700,338,893" href="#global_class_GebiedsAanwijzing_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="502,688,773,848" href="#global_class_Locatie_Locatie"></map><p>
                
                <p>Vrijetekststructuur in OP bouwt gebruikt twee elementtypen, namelijk: Divisie en Divisietekst.
                   Het hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten
@@ -143,7 +143,7 @@
                         Divisietekst
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OPObject_OPObjectAnnotatie">OP-object­Annotatie</a>
+                        <a class="link" href="#global_class_OPobject_OPobjectAnnotatie">OP-object­Annotatie</a>
                         
                         </td>
                      <td>
@@ -266,7 +266,7 @@
                         Hoofdlijn
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -438,7 +438,7 @@
                         Tekstdeel
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -508,7 +508,7 @@
                         Divisie
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OPObject_OPObjectAnnotatie">OP-object­Annotatie</a>
+                        <a class="link" href="#global_class_OPobject_OPobjectAnnotatie">OP-object­Annotatie</a>
                         
                         </td>
                      <td>
@@ -1139,7 +1139,7 @@
                         Juridische­Regel
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -1344,7 +1344,7 @@
                         Norm
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -1821,7 +1821,7 @@
                         Activiteit
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -2067,7 +2067,7 @@
                         Regeltekst
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OPObject_OPObjectAnnotatie">OP-object­Annotatie</a>
+                        <a class="link" href="#global_class_OPobject_OPobjectAnnotatie">OP-object­Annotatie</a>
                         
                         </td>
                      <td>
@@ -4039,13 +4039,13 @@
          
          </section>
    </section>
-   <section id="global_package_OWObject">
+   <section id="global_package_OWobject">
       <h3>Domein   OW-object</h3>
       <section id="EAID_97D11E5C_222E_4885_AD87_2F92616ED77A">
          <h4>   OWobject - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_97D11E5C_222E_4885_AD87_2F92616ED77A.png" usemap="#imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A" alt="Diagram &#xA;                        Een Aanlevering bestaat uit Instanties van de in dit diagram genoemde klasses.&#xA;                     "><figcaption>OWobject</figcaption>
-            </figure><map name="imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A"><area shape="rect" alt="Ambtsgebied" coords="783,621,933,687" href="#global_class_Locatie_Ambtsgebied"><area shape="rect" alt="Gebiedengroep" coords="617,780,762,841" href="#global_class_Locatie_Gebiedengroep"><area shape="rect" alt="Gebied" coords="436,778,584,841" href="#global_class_Locatie_Gebied"><area shape="rect" alt="Puntengroep" coords="643,625,758,688" href="#global_class_Locatie_Puntengroep"><area shape="rect" alt="Punt" coords="494,627,617,687" href="#global_class_Locatie_Punt"><area shape="rect" alt="Lijnengroep" coords="635,703,758,761" href="#global_class_Locatie_Lijnengroep"><area shape="rect" alt="Lijn" coords="464,703,601,761" href="#global_class_Locatie_Lijn"><area shape="rect" alt="Instructieregel" coords="78,590,201,662" href="#global_class_Regel_Instructieregel"><area shape="rect" alt="Omgevingswaarde" coords="235,691,384,755" href="#global_class_Regel_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="276,594,413,658" href="#global_class_Regel_Omgevingsnorm"><area shape="rect" alt="Omgevingswaarderegel" coords="14,777,201,836" href="#global_class_Regel_Omgevingswaarderegel"><area shape="rect" alt="RegelVoorIedereen" coords="44,688,201,757" href="#global_class_Regel_RegelVoorIedereen"><area shape="rect" alt="Regelingsgebied" coords="696,275,852,338" href="#global_class_RegelingsGebied_Regelingsgebied"><area shape="rect" alt="Kaartlaag" coords="275,265,416,328" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Pons" coords="508,275,643,338" href="#global_class_Pons_Pons"><area shape="rect" alt="Gebiedsaanwijzing" coords="436,445,617,508" href="#global_class_GebiedsAanwijzing_Gebiedsaanwijzing"><area shape="rect" alt="Norm" coords="235,445,399,508" href="#global_class_Regel_Norm"><area shape="rect" alt="Locatie" coords="666,445,826,508" href="#global_class_Locatie_Locatie"><area shape="rect" alt="Tekstdeel" coords="257,358,399,421" href="#global_class_VrijeTekst_Tekstdeel"><area shape="rect" alt="Hoofdlijn" coords="53,358,194,421" href="#global_class_VrijeTekst_Hoofdlijn"><area shape="rect" alt="Kaart" coords="88,265,223,328" href="#global_class_Kaart_Kaart"><area shape="rect" alt="Activiteit" coords="487,358,617,421" href="#global_class_Regel_Activiteit"><area shape="rect" alt="JuridischeRegel" coords="37,445,194,508" href="#global_class_Regel_JuridischeRegel"><area shape="rect" alt="OW-object" coords="337,14,670,170" href="#global_class_OWObject_OWObject"></map><p>
+            </figure><map name="imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A"><area shape="rect" alt="Ambtsgebied" coords="783,621,933,687" href="#global_class_Locatie_Ambtsgebied"><area shape="rect" alt="Gebiedengroep" coords="617,780,762,841" href="#global_class_Locatie_Gebiedengroep"><area shape="rect" alt="Gebied" coords="436,778,584,841" href="#global_class_Locatie_Gebied"><area shape="rect" alt="Puntengroep" coords="643,625,758,688" href="#global_class_Locatie_Puntengroep"><area shape="rect" alt="Punt" coords="494,627,617,687" href="#global_class_Locatie_Punt"><area shape="rect" alt="Lijnengroep" coords="635,703,758,761" href="#global_class_Locatie_Lijnengroep"><area shape="rect" alt="Lijn" coords="464,703,601,761" href="#global_class_Locatie_Lijn"><area shape="rect" alt="Instructieregel" coords="78,590,201,662" href="#global_class_Regel_Instructieregel"><area shape="rect" alt="Omgevingswaarde" coords="235,691,384,755" href="#global_class_Regel_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="276,594,413,658" href="#global_class_Regel_Omgevingsnorm"><area shape="rect" alt="Omgevingswaarderegel" coords="14,777,201,836" href="#global_class_Regel_Omgevingswaarderegel"><area shape="rect" alt="RegelVoorIedereen" coords="44,688,201,757" href="#global_class_Regel_RegelVoorIedereen"><area shape="rect" alt="Regelingsgebied" coords="696,275,852,338" href="#global_class_RegelingsGebied_Regelingsgebied"><area shape="rect" alt="Kaartlaag" coords="275,265,416,328" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Pons" coords="508,275,643,338" href="#global_class_Pons_Pons"><area shape="rect" alt="Gebiedsaanwijzing" coords="436,445,617,508" href="#global_class_GebiedsAanwijzing_Gebiedsaanwijzing"><area shape="rect" alt="Norm" coords="235,445,399,508" href="#global_class_Regel_Norm"><area shape="rect" alt="Locatie" coords="666,445,826,508" href="#global_class_Locatie_Locatie"><area shape="rect" alt="Tekstdeel" coords="257,358,399,421" href="#global_class_VrijeTekst_Tekstdeel"><area shape="rect" alt="Hoofdlijn" coords="53,358,194,421" href="#global_class_VrijeTekst_Hoofdlijn"><area shape="rect" alt="Kaart" coords="88,265,223,328" href="#global_class_Kaart_Kaart"><area shape="rect" alt="Activiteit" coords="487,358,617,421" href="#global_class_Regel_Activiteit"><area shape="rect" alt="JuridischeRegel" coords="37,445,194,508" href="#global_class_Regel_JuridischeRegel"><area shape="rect" alt="OW-object" coords="337,14,670,170" href="#global_class_OWobject_OWobject"></map><p>
                
                <p>Een Aanlevering bestaat uit Instanties van de in dit diagram genoemde klasses.</p>
                </p>
@@ -4054,7 +4054,7 @@
       <section>
          <h4>Objecttypen   </h4>
          
-         <section id="global_class_OWObject_OWObject">
+         <section id="global_class_OWobject_OWobject">
             <h5>   OW-object</h5>
             
             <table style="width: 100%;">
@@ -4111,7 +4111,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_OWObject_OWObject_identificatie">identificatie</a>
+                        <a class="link" href="#detail_attribute_OWobject_OWobject_identificatie">identificatie</a>
                         </td>
                      <td></td>
                      <td>
@@ -4121,7 +4121,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_OWObject_OWObject_procedurestatus">procedurestatus</a>
+                        <a class="link" href="#detail_attribute_OWobject_OWobject_procedurestatus">procedurestatus</a>
                         </td>
                      <td></td>
                      <td>
@@ -4131,7 +4131,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_OWObject_OWObject_status">status</a>
+                        <a class="link" href="#detail_attribute_OWobject_OWobject_status">status</a>
                         </td>
                      <td></td>
                      <td>
@@ -4150,11 +4150,11 @@
          <section>
             <h5>Objecttype details  </h5>
             
-            <section id="detail_class_OWObject_OWObject">
+            <section id="detail_class_OWobject_OWobject">
                <h6>   OW-object</h6>
                
-               <div class="deepheader" id="detail_attribute_OWObject_OWObject_identificatie">
-                  <h7>Attribuutsoort details  <a href="#global_class_OWObject_OWObject">OW-object</a> identificatie</h7>
+               <div class="deepheader" id="detail_attribute_OWobject_OWobject_identificatie">
+                  <h7>Attribuutsoort details  <a href="#global_class_OWobject_OWobject">OW-object</a> identificatie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -4208,8 +4208,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_OWObject_OWObject_procedurestatus">
-                  <h7>Attribuutsoort details  <a href="#global_class_OWObject_OWObject">OW-object</a> procedurestatus</h7>
+               <div class="deepheader" id="detail_attribute_OWobject_OWobject_procedurestatus">
+                  <h7>Attribuutsoort details  <a href="#global_class_OWobject_OWobject">OW-object</a> procedurestatus</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -4247,8 +4247,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_OWObject_OWObject_status">
-                  <h7>Attribuutsoort details  <a href="#global_class_OWObject_OWObject">OW-object</a> status</h7>
+               <div class="deepheader" id="detail_attribute_OWobject_OWobject_status">
+                  <h7>Attribuutsoort details  <a href="#global_class_OWobject_OWobject">OW-object</a> status</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -4294,13 +4294,13 @@
          
          </section>
    </section>
-   <section id="global_package_OPObject">
+   <section id="global_package_OPobject">
       <h3>Domein   OP-object</h3>
       <section id="EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5">
          <h4>   OP-object - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5.png" usemap="#imagemap-EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5" alt="Diagram &#xA;                        OP-objectannotatie objecten zijn de koppeling tussen het IMOW en de tekstelementen in de STOP standaard. Voor documenten met de regelstructuur gebeurt dit via het object Regeltekst. Voor vrijetekst via Divisie en Divisietekst. De OP-objecten bevatten attribuut wId dat verwijst naar het ID van het artikel of lid uit IMOP. Daarnaast hebben deze objecten NEN3610 identificatie zoals gebruikt in het IMOW.&#xA;                        &#xA;                        Regel: Voor ieder Artikel (zonder leden) of Lid moet er een gekoppeld OW-object zijn.&#xA;                        &#xA;                        Een Regeltekst verwijst altijd naar minstens één Juridische Regel. Juridische Regel is een abstract objecttype dat drie subtypen heeft, namelijk: RegelVoorIedereen, Instructieregel en Omgevingswaarderegel.&#xA;                        &#xA;                        De Juridische regels hebben een identificatie. Tevens hebben ze een relatie genaamd: 'artikelOfLid', welke verwijst naar de OW-Regeltekst object.&#xA;                        &#xA;                        OW-objecten hebben ook onderlinge relaties. Zo heeft een Juridische regel een relatie naar o.a. een Activiteit, Omgevingsnorm, Gebiedsaanwijzing en andere objecten.&#xA;                     "><figcaption>OP-object</figcaption>
-            </figure><map name="imagemap-EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5"><area shape="rect" alt="OW-object" coords="159,14,493,170" href="#global_class_OWObject_OWObject"><area shape="rect" alt="Divisietekst" coords="417,476,570,540" href="#global_class_VrijeTekst_Divisietekst"><area shape="rect" alt="Divisie" coords="208,476,375,540" href="#global_class_VrijeTekst_Divisie"><area shape="rect" alt="Regeltekst" coords="14,476,183,540" href="#global_class_Regel_Regeltekst"><area shape="rect" alt="OP-objectAnnotatie" coords="208,253,425,368" href="#global_class_OPObject_OPObjectAnnotatie"></map><p>
+            </figure><map name="imagemap-EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5"><area shape="rect" alt="OW-object" coords="159,14,493,170" href="#global_class_OWobject_OWobject"><area shape="rect" alt="Divisietekst" coords="417,476,570,540" href="#global_class_VrijeTekst_Divisietekst"><area shape="rect" alt="Divisie" coords="208,476,375,540" href="#global_class_VrijeTekst_Divisie"><area shape="rect" alt="Regeltekst" coords="14,476,183,540" href="#global_class_Regel_Regeltekst"><area shape="rect" alt="OP-objectAnnotatie" coords="208,253,425,368" href="#global_class_OPobject_OPobjectAnnotatie"></map><p>
                
                <p>OP-objectannotatie objecten zijn de koppeling tussen het IMOW en de tekstelementen
                   in de STOP standaard. Voor documenten met de regelstructuur gebeurt dit via het object
@@ -4333,7 +4333,7 @@
       <section>
          <h4>Objecttypen   </h4>
          
-         <section id="global_class_OPObject_OPObjectAnnotatie">
+         <section id="global_class_OPobject_OPobjectAnnotatie">
             <h5>   OP-object­Annotatie</h5>
             
             <table style="width: 100%;">
@@ -4351,6 +4351,13 @@
                         
                         <p>Object  in IMOW dat verwijst naar een Tekstonderdeel in STOP.</p>
                         
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Voor ieder Artikel (zonder leden) of Lid moet er een gekoppeld OW-object zijn. </p>
                         </td>
                   </tr>
                   <tr>
@@ -4386,7 +4393,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_OPObject_OPObjectAnnotatie_wId">w­Id</a>
+                        <a class="link" href="#detail_attribute_OPobject_OPobjectAnnotatie_wId">w­Id</a>
                         </td>
                      <td>
                         
@@ -4417,7 +4424,7 @@
                         OP-object­Annotatie
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -4436,11 +4443,11 @@
          <section>
             <h5>Objecttype details  </h5>
             
-            <section id="detail_class_OPObject_OPObjectAnnotatie">
+            <section id="detail_class_OPobject_OPobjectAnnotatie">
                <h6>   OP-object­Annotatie</h6>
                
-               <div class="deepheader" id="detail_attribute_OPObject_OPObjectAnnotatie_wId">
-                  <h7>Attribuutsoort details  <a href="#global_class_OPObject_OPObjectAnnotatie">OP-object­Annotatie</a> w­Id</h7>
+               <div class="deepheader" id="detail_attribute_OPobject_OPobjectAnnotatie_wId">
+                  <h7>Attribuutsoort details  <a href="#global_class_OPobject_OPobjectAnnotatie">OP-object­Annotatie</a> w­Id</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -4679,7 +4686,7 @@
                         Gebiedsaanwijzing
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -5247,7 +5254,7 @@
                         Locatie
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -7114,7 +7121,7 @@
                         Kaart
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -7293,7 +7300,7 @@
                         Kaartlaag
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -8127,7 +8134,7 @@
                         Pons
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -8259,7 +8266,7 @@
                         Regelingsgebied
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWObject_OWObject">OW-object</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
@@ -8865,7 +8872,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_Manifest_iMOWversie">IMOWversie</a>
+                        <a class="link" href="#detail_attribute_Aanlevering_Manifest_IMOWversie">IMOWversie</a>
                         </td>
                      <td></td>
                      <td>
@@ -8922,7 +8929,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_Aanlevering_doelID">Doel­ID</a>
+                        <a class="link" href="#detail_attribute_Aanlevering_Aanlevering_DoelID">Doel­ID</a>
                         </td>
                      <td></td>
                      <td>
@@ -8932,7 +8939,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_Aanlevering_workIDRegeling">Work­IDRegeling</a>
+                        <a class="link" href="#detail_attribute_Aanlevering_Aanlevering_WorkIDRegeling">Work­IDRegeling</a>
                         </td>
                      <td></td>
                      <td>
@@ -9080,7 +9087,7 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_Aanlevering_Manifest_iMOWversie">
+               <div class="deepheader" id="detail_attribute_Aanlevering_Manifest_IMOWversie">
                   <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_Manifest">Manifest</a> IMOWversie</h7>
                   
                   <table style="width: 100%;">
@@ -9140,7 +9147,7 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_Aanlevering_Aanlevering_doelID">
+               <div class="deepheader" id="detail_attribute_Aanlevering_Aanlevering_DoelID">
                   <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_Aanlevering">Aanlevering</a> Doel­ID</h7>
                   
                   <table style="width: 100%;">
@@ -9171,7 +9178,7 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_Aanlevering_Aanlevering_workIDRegeling">
+               <div class="deepheader" id="detail_attribute_Aanlevering_Aanlevering_WorkIDRegeling">
                   <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_Aanlevering">Aanlevering</a> Work­IDRegeling</h7>
                   
                   <table style="width: 100%;">
