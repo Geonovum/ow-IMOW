@@ -7,9 +7,9 @@ var documentConfig =
   specType: "im",
   license: "cc-by-nd",
   latestVersion: [
-    "https://docs.geostandaarden.nl/ow/IMOW/"
+    "docs.geostandaarden.nl/ow/IMOW/"
   ],
-  publishDate: "2024-02-20",
+  publishDate: "2024-02-23",
   publishVersion: "werkversie",
   thisVersion: [
     "https://geonovum.github.io/ow-IMOW/"
@@ -17,12 +17,11 @@ var documentConfig =
   previousPublishDate: "2023-12-27",
   previousPublishVersion: "3.0.1",
   prevVersion: [
-    "https://docs.geostandaarden.nl/ow/def-im-IMOW-20231227/"
+    "docs.geostandaarden.nl/ow/def-im-IMOW-20231227/"
   ],
   previousMaturity: "def",
   github: "https://github.com/geonovum/ow-IMOW/",
   issueBase: "https://github.com/geonovum/ow-IMOW/issues/",
-  edDraftURI: "https://geonovum.github.io/ow-IMOW/",
   authors: [
     {
       name: "TPOD-team",
