@@ -4,21 +4,20 @@ Het IMOW is een implementatie van het conceptuele model CIM-OW. Niet alles uit
 het CIM-OW is één op één overgenomen in het IMOW. Dit hoofdstuk beschrijft de
 verschillen: CIM-OW aspecten die niet in het IMOW zitten worden geduid in
 paragraaf 5.1. en paragraaf 5.2 bescrijft de delen van het IMOW die niet in het
-CIM-OW zitten.<br/>
+CIM-OW zitten.
 
 ## CIM-OW-aspecten niet in IMOW {#19F408D9}
 
 Niet alle concepten beschreven in het CIM-OW worden vastgelegd in het IMOW.
 Sommige van de van deze gegevens zijn af te leiden uit het OP-deel van een
 Aanlevering. Deze gegevens hoeven niet nogmaals beschreven in het IMOW. Het gaat
-hier bijvoorbeeld om de volgende concepten uit het CIM-OW:<br/>
+hier bijvoorbeeld om de volgende concepten uit het CIM-OW:
 
-<ul><li>Regeltekst.Werkingsgebied – het werkingsgebied wordt afgeleid op basis van de locatieaanduidingen van Juridische regels.</li>
-<li>Activiteit.locatie – hierin zit de locaties waar de Activiteit gereguleerd wordt, deze wordt in het IMOW via de activiteitlocatieaanduidingen vastgelegd.</li>
-<li>Regeltekst.Omschrijving – hierin zit de inhoud van de Regeltekst, deze wordt niet aangeleverd via IMOW, maar wordt via de OP-bestanden afgeleid.</li>
-<li>Omgevingsdocumenten (Regelingen en Omgevingsvergunningen), Bevoegd Gezag, DocumentComponenten. Deze gegevens zijn in het CIM-OW toegevoegd, omdat ze van belang zijn voor het DSO-LV.</li>
-<li>De tijdslijnen voor de objectvorming in DSO-LV worden gebaseerd op het omgevingsdocument dat de LVBB maakt en uitlevert.</li>
-</ul>
+- Regeltekst.Werkingsgebied – het werkingsgebied wordt afgeleid op basis van de locatieaanduidingen van Juridische regels.
+- Activiteit.locatie – hierin zit de locaties waar de Activiteit gereguleerd wordt, deze wordt in het IMOW via de activiteitlocatieaanduidingen vastgelegd.
+- Regeltekst.Omschrijving – hierin zit de inhoud van de Regeltekst, deze wordt niet aangeleverd via IMOW, maar wordt via de OP-bestanden afgeleid.\
+- Omgevingsdocumenten (Regelingen en Omgevingsvergunningen), Bevoegd Gezag, DocumentComponenten. Deze gegevens zijn in het CIM-OW toegevoegd, omdat ze van belang zijn voor het DSO-LV.
+- De tijdslijnen voor de objectvorming in DSO-LV worden gebaseerd op het omgevingsdocument dat de LVBB maakt en uitlevert.
 
 ## IMOW-aspecten niet in CIM-OW {#6C42F8AD}
 
@@ -71,13 +70,12 @@ horen. Deze worden middels het GIO-schema geduid, en vallen niet onder het IMOW.
 Zie paragraaf <a href='#110333AD'>2.2.5</a> voor het IMOW model voor geometrie
 en locatie.
 
-Deze geometrie constructie leidt tot de volgende IMOW-attributen:<br/>
+Deze geometrie constructie leidt tot de volgende IMOW-attributen:
 
-<ul><li>(Gebied, Lijn, Punt).geometrie: Een verwijzing vanuit Locatie (Gebied, Lijn of Punt) naar een bijbehorende Geometrie.</li>
-<li>Geometrie.id: UUID identificatie van de Geometrie</li>
-<li>Geometrie.geometrie: Vastleggen van een geometrie middels coördinaten.</li>
-</ul>
+- (Gebied, Lijn, Punt).geometrie: Een verwijzing vanuit Locatie (Gebied, Lijn of Punt) naar een bijbehorende Geometrie.
+- Geometrie.id: UUID identificatie van de Geometrie
+- Geometrie.geometrie: Vastleggen van een geometrie middels coördinaten.
 
 Het objecttype Geometrie heeft hierin het algemene ISO-19107 geometrietype
 GM_Object. In de Locatie-objecten wordt middels een constraint aangegeven wat de
-beperking op dit algemene type is.<br/>
+beperking op dit algemene type is.

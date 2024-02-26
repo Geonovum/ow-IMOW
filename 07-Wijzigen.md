@@ -17,10 +17,8 @@ wijziging waarbij het STOP deel de tekst van de regeling wijzigt en de
 OW-aanlevering de bij de regeling behorende OW-objecten wijzigt.
 
 Een OW-aanlevering heeft zelf de vorm van een collectie OW-objecten. De
-aanlevering van een OW-object resulteert in een nieuw OW-object (zie
-<b><a href='#'>Fout! Verwijzingsbron niet gevonden.</a></b>), een gewijzigd
-OW-object (zie <b><a href='#'>Fout! Verwijzingsbron niet gevonden.</a></b>) of
-het beëindigen van een OW-object (zie <a href='#2C21DC35'>7.1.3</a>).
+aanlevering van een OW-object resulteert in een nieuw OW-object, een gewijzigd
+OW-object of het beëindigen van een OW-object.
 
 In de volgende paragrafen staat regels voor de drie situaties:
 
@@ -49,11 +47,11 @@ Instructieregel en Omgevingswaarderegel zijn verschillende types.
 De volgende IMOW-elementen zijn geen objecten en kunnen niet direct gewijzigd
 worden:
 
--   ActiviteitLocatieaanduiding – deze moet altijd gewijzigd worden vanuit een
-    RegelVoorIedereen.
--   Normwaarde – deze moet altijd gewijzigd worden vanuit een Omgevingsnorm of
-    Omgevingswaarde.
--   Kaartlaag – deze moet altijd gewijzigd worden vanuit een Kaart.
+- ActiviteitLocatieaanduiding – deze moet altijd gewijzigd worden vanuit een
+  RegelVoorIedereen.
+- Normwaarde – deze moet altijd gewijzigd worden vanuit een Omgevingsnorm of
+  Omgevingswaarde.
+- Kaartlaag – deze moet altijd gewijzigd worden vanuit een Kaart.
 
 ### Een OW-object beëindigen {#2C21DC35}
 
@@ -105,10 +103,10 @@ objecten verwijderd mogen worden.
 
 ### OW-aanlevering bij directe mutatie {#57FC25F3}
 
-<b>Noot: </b>directe mutaties zijn alleen bedoeld voor het oplossen van
-problemen in de keten, bijvoorbeeld een vastzittende regeling. Op verzoek van
-het bevoegd gezag kan deze functionaliteit uitgevoerd worden door beheerders van
-het stelsel.
+**noot:** directe mutaties zijn alleen bedoeld voor het oplossen van problemen
+in de keten, bijvoorbeeld een vastzittende regeling. Op verzoek van het bevoegd
+gezag kan deze functionaliteit uitgevoerd worden door beheerders van het
+stelsel.
 
 Het is mogelijk OW-objecten te wijzigen zonder dat hier expliciet een besluit
 over genomen is. Dit kan middels een directe mutatie (directeMutatieOpdracht).
@@ -132,15 +130,15 @@ OW-informatie geldig is.
 Er zijn OW-objecten waarvan het onlogisch is dat deze gewijzigd worden met een
 directe mutatie, dit zijn:
 
--   OW-Locaties. Als de noemer van een locatie zou wijzigen dan wordt verwacht
-    dat de verwijzing vanuit de Regeling ook gewijzigd wordt. Als de geometrie
-    van de locatie wijzigt dan wordt verwacht dat er een aanpassing van de
-    bijbehorende GIO wordt aangeleverd. Het zou wel mogelijk zijn om een
-    OW-Locatie te wijzigen in het geval dat er gebruik gemaakt dient te worden
-    van een recentere versie van een ambtsgebied, of als het hoogte-attribuut
-    van de locatie wordt aangevuld/aangepast.
--   OW-Regelteksten. Als de verwijzing naar het artikel/lid wordt aangepast, dan
-    heeft dit waarschijnlijk ook invloed op de Regeling zelf.
--   OW-Divisies/OW-DivisieTeksten. Als de verwijzing naar de divisie/de
-    divisietekst wordt aangepast, dan heeft dit waarschijnlijk ook invloed op de
-    Regeling zelf.
+- OW-Locaties. Als de noemer van een locatie zou wijzigen dan wordt verwacht dat
+  de verwijzing vanuit de Regeling ook gewijzigd wordt. Als de geometrie van de
+  locatie wijzigt dan wordt verwacht dat er een aanpassing van de bijbehorende
+  GIO wordt aangeleverd. Het zou wel mogelijk zijn om een OW-Locatie te wijzigen
+  in het geval dat er gebruik gemaakt dient te worden van een recentere versie
+  van een ambtsgebied, of als het hoogte-attribuut van de locatie wordt
+  aangevuld/aangepast.
+- OW-Regelteksten. Als de verwijzing naar het artikel/lid wordt aangepast, dan
+  heeft dit waarschijnlijk ook invloed op de Regeling zelf.
+- OW-Divisies/OW-DivisieTeksten. Als de verwijzing naar de divisie/de
+  divisietekst wordt aangepast, dan heeft dit waarschijnlijk ook invloed op de
+  Regeling zelf.

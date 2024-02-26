@@ -28,13 +28,13 @@ In het OW-manifest is beschreven welke OW-bestanden er zijn. Deze OW-bestanden d
 Voor ieder type OW-object is een passend XML element.
 
 Naast deze technische validatie moeten de OW-objecten ook voldoen aan de
-functionele eisen zoals gespecificeerd in dit document.<br/> Bij het aanleveren
+functionele eisen zoals gespecificeerd in dit document. Bij het aanleveren
 van relaties in het IMOW is in het XSD’s kennen hiervoor een Ref element
 gedefinieeerd, zoals ActiviteitenRef. Vul hierin de identificatie in van het
 gerelateerde object.
 
 Het OW-bestand is hetgeen dat alle inhoud van een specifiek bestand bevat, alle
-OW-aanleveringen maken hier gebruik van.<br/>
+OW-aanleveringen maken hier gebruik van.
 
 Afhankelijk van of de OW-aanlevering bij een Omgevingsdocument met
 artikelstructuur of vrijetekststructuur hoort kunnen de volgende OW-objecten
@@ -42,7 +42,7 @@ worden aangeleverd:
 
 Bij Artikelstructuur: Regeltekst, Juridische regel, Activiteit,
 Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart,
-Regelingsgebied<br/> Bij Vrijetekststructuur: Divisie, Divisietekst, Tekstdeel,
+Regelingsgebied Bij Vrijetekststructuur: Divisie, Divisietekst, Tekstdeel,
 Hoofdlijn, Gebiedsaanwijzing, Kaart, Regelingsgebied, Locatie
 
 ### GML-bestanden (informatief) {#128024A0}
@@ -66,7 +66,7 @@ op het hoogste niveau van een geometrie. Dat betekent dat van een samengestelde
 geometrie, een multi-geometrie, alleen op het niveau van de samenstelling de
 srsName verplicht is ingevuld.
 
-Invul-instructie:<br/>
+Invul-instructie:
 
 <ul><li>RD stelsel (2D): srsName="urn:ogc:def:crs:EPSG::28992"</li>
 <li>ETRS89 (2D): srsName="urn:ogc:def:crs:EPSG::4258"</li>
@@ -75,7 +75,7 @@ Invul-instructie:<br/>
 De beschrijving van de respectievelijke EPSG codes zijn te vinden onder de url's
 met het format: "http://www.opengis.net/def/crs/EPSG/0/""epsgcode". Bijvoorbeeld
 voor EPSG 28992 is dat:
-<a href='https://www.opengis.net/def/crs/EPSG/0/28992' target='_blank'>https://www.opengis.net/def/crs/EPSG/0/28992</a><br/>
+<a href='https://www.opengis.net/def/crs/EPSG/0/28992' target='_blank'>https://www.opengis.net/def/crs/EPSG/0/28992</a>
 Momenteel worden in het DSO de 3D-coördinatenreferentiestelsels nog niet
 ondersteund (EPSG:4937, EPSG:7415, EPSG:7423).
 
@@ -92,7 +92,7 @@ underscore beginnen.
 <b>Nauwkeurigheid van coördinaten:</b> Coördinaten opgenomen bij een geometrie
 worden standaard uitgewisseld met een getalsnauwkeurigheid van 1 mm of het
 equivalent daarvan in graden. Voor RD, NAP en ETRS89 komt dat overeen met de
-volgende nauwkeurigheden:<br/>
+volgende nauwkeurigheden:
 
 <ul><li>RD in meters 3 decimalen (1 mm);</li>
 <li>NAP-hoogte in meters 3 decimalen (1 mm);</li>
@@ -102,8 +102,10 @@ volgende nauwkeurigheden:<br/>
 </ul>
 
 Alles wat nauwkeuriger is wordt afgerond op deze nauwkeurigheid van 3 of 8
-decimalen. Afronding is volgens de volgende regel:<br/> 0.0015 -&gt; 0.002;<br/>
-0.0014 -&gt; 0.001.<br/>
+decimalen. Afronding is volgens de volgende regel:
+
+- 0.0015 -> 0.002;
+- 0.0014 --> 0.001.
 
 ## Eisen bij aanleveren {#53A6EBF9}
 
@@ -115,7 +117,7 @@ van OW-objecten aan regeling vastgelegd. Paragraaf <a href='#60ED5DE4'>4.2.4</a>
 stelt eisen aan het verwijzen tussen verschillende OW-objecten. Paragraaf
 <a href='#08BD28A2'>4.2.5</a> legt vast hoe de functionele structuur wordt
 behouden. Paragraaf <a href='#7F3046AE'>4.2.6</a> stelt extra regels voor
-documenten van het type tijdelijk regelingdeel.<br/>
+documenten van het type tijdelijk regelingdeel.
 
 ### Identificatie van OW-objecten {#5E94A976}
 
@@ -124,12 +126,12 @@ gewaarborgd door een unieke code die de bronhouder identificeert te combineren
 met een identificatie van het object binnen het domein van de bronhouder.
 
 De wijze van het identificeren van objecten in het IMOW volgt de
-NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:<br/>
+NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:
 
 <table style='width: 100%;'><caption></caption>
 <colgroup><col id='col1' style='width: 100%;'>
 </colgroup>
-<tbody valign='top'><tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'><b>nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\. (regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|divisie|kaartlaag|juridischeregel|activiteitlocatieaanduiding|normwaarde|regelingsgebied|ambtsgebied|divisietekst)\.[A-Za-z0-9]{1,32}</b><br/>
+<tbody valign='top'><tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'><b>nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\. (regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|divisie|kaartlaag|juridischeregel|activiteitlocatieaanduiding|normwaarde|regelingsgebied|ambtsgebied|divisietekst)\.[A-Za-z0-9]{1,32}</b>
 </td>
 </tr>
 </tbody>
@@ -240,7 +242,7 @@ expressie gehanteerd:
 </table>
 
 Vervolgens controleert het DSO of de waarde voorkomt in de stelselcatalogus. De
-stelselcatalogus is publiekelijk beschikbaar.<br/>
+stelselcatalogus is publiekelijk beschikbaar.
 
 ### Toekennen van OW-objecten aan regelingen {#6F5FDC8F}
 
@@ -249,27 +251,27 @@ de OW-objecten die in dat besluit ontstaan bij die regeling. Je kunt OW-objecten
 alleen wijzigen in wijzigbesluiten die die betreffende regeling wijzigen. Dit is
 vastgelegd in de volgende regels:
 
-<b>Regel: </b>Het WorkIDRegeling van de OW-Aanlevering waarin een OW-object
+**Regel:** Het WorkIDRegeling van de OW-Aanlevering waarin een OW-object
 ontstaat bepaalt bij welke regeling een OW-object hoort.
 
-<b>Regel </b>(TPOD1200): Een OW-object mag alleen gewijzigd worden in een
+**Regel:** (TPOD1200): Een OW-object mag alleen gewijzigd worden in een
 OW-aanlevering die hoort bij een besluit dat de regeling wijzigt waar het
-OW-object bij hoort.<br/>
+OW-object bij hoort.
 
 ### Verwijzingen tussen OW-objecten {#60ED5DE4}
 
 In OZON mag een actief OW-object niet verwijzen naar een beëindigd OW-object.
 Daarom moet een besluit dat een OW-object beëindigt ook alle verwijzingen naar
 dat OW-object beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen
-<b>kan</b> wijzigen, hiertoe introduceren we een regel die verwijzingen naar
+**KAN** wijzigen, hiertoe introduceren we een regel die verwijzingen naar
 OW-objecten van andere bevoegd gezagen inperkt:
 
-<b>Regel </b>(TPOD1950):<br/>
+**Regel:** (TPOD1950):
 
-<ul><li>Een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel mag alleen verwijzen naar een OW-object behorend bij een regeling van hetzelfde bevoegd gezag, met uitzondering van de relatie bovenliggendeActiviteit van het OW-object Activiteit, waarvoor de specifieke regels van paragraaf <a href='#08BD28A2'>4.2.5</a> gelden;</li>
-<li>een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel mag niet verwijzen naar een OW-object behorend bij een tijdelijk regelingdeel;</li>
-<li>een OW-object behorend bij een tijdelijk regelingdeel mag alleen verwijzen naar een OW-object behorend bij hetzelfde tijdelijk regelingdeel, met uitzondering van de relatie bovenliggendeActiviteit van de tophaak-Activiteit van het tijdelijk regelingdeel, waarvoor de specifieke regels van paragraaf <a href='#7F3046AE'>4.2.6</a> gelden.</li>
-</ul>
+- Een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel mag alleen verwijzen naar een OW-object behorend bij een regeling van hetzelfde bevoegd gezag, met uitzondering van de relatie bovenliggendeActiviteit van het OW-object Activiteit, waarvoor de specifieke regels van paragraaf <a href='#08BD28A2'>4.2.5</a> gelden;
+- een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel mag niet verwijzen naar een OW-object behorend bij een tijdelijk regelingdeel;
+- een OW-object behorend bij een tijdelijk regelingdeel mag alleen verwijzen naar een OW-object behorend bij hetzelfde tijdelijk regelingdeel, met uitzondering van de relatie bovenliggendeActiviteit van de tophaak-Activiteit van het tijdelijk regelingdeel, waarvoor de specifieke regels van paragraaf <a href='#7F3046AE'>4.2.6</a> gelden.
+
 
 ### De functionele structuur {#08BD28A2}
 
@@ -292,33 +294,31 @@ van de functionele structuur behouden blijft bij wijzigingen.
 De volgende regel schrijft de naam en aanwezigheid van een tophaak Activiteit in
 regelingen voor:
 
-<b>Regel </b>(TPOD1951):<b> </b>Met uitzondering van AMvB en ministeriële
+**Regel:** (TPOD1951):Met uitzondering van AMvB en ministeriële
 regeling moet in iedere Regeling waarin één of meer Activiteiten zijn
-geannoteerd één zogenaamde tophaak voorkomen:<br/>
+geannoteerd één zogenaamde tophaak voorkomen:
 
-<ul><li>voor de omgevingsverordening is dat de meest bovenliggende Activiteit van die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in de omgevingsverordening &lt;naam provincie&gt;’;</li>
-<li>voor de waterschapsverordening is dat de meest bovenliggende Activiteit van die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in de waterschapsverordening &lt;naam waterschap&gt;’;</li>
-<li>voor het omgevingsplan is dat de meest bovenliggende Activiteit van die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in het omgevingsplan gemeente &lt;naam gemeente&gt;’.</li>
-</ul>
+- voor de omgevingsverordening is dat de meest bovenliggende Activiteit van die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in de omgevingsverordening &lt;naam provincie&gt;’;
+- voor de waterschapsverordening is dat de meest bovenliggende Activiteit van die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in de waterschapsverordening &lt;naam waterschap&gt;’;
+- voor het omgevingsplan is dat de meest bovenliggende Activiteit van die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in het omgevingsplan gemeente &lt;naam gemeente&gt;’.
 
 De volgende regels schrjven voor hoe de relatie bovenliggendeActiviteit moet
 worden ingevuld:
 
-<b>Regel </b>(TPOD1952):<b> </b> Voor omgevingsverordening,
+**Regel:** (TPOD1952):  Voor omgevingsverordening,
 waterschapsverordening en omgevingsplan geldt, in afwijking van het bepaalde in
 paragraaf <a href='#60ED5DE4'>4.2.4</a>, dat de relatie bovenliggendeActiviteit
 van een Activiteit niet zijnde de tophaak uitsluitend mag verwijzen naar een
 andere Activiteit die hoort bij dezelfde Regeling.
 
-<b>Regel </b>(TPOD1953): Voor de relatie bovenliggendeActiviteit van de tophaken
+**Regel:** (TPOD1953) Voor de relatie bovenliggendeActiviteit van de tophaken
 geldt, in afwijking van het bepaalde in paragraaf <a href='#60ED5DE4'>4.2.4</a>,
-het volgende:<br/>
+het volgende:
 
-<ul><li>in de omgevingsverordening moet de relatie bovenliggendeActiviteit van de tophaak verwijzen naar de ‘Activiteit gereguleerd in de omgevingsverordening’ in de Placeholder-Regeling;</li>
-<li>in de waterschapsverordening moet de relatie bovenliggendeActiviteit van de tophaak moet verwijzen naar de ‘Activiteit gereguleerd in de waterschapsverordening’ in de Placeholder-Regeling;</li>
-<li>in het omgevingsplan moet de relatie bovenliggendeActiviteit van de tophaak moet verwijzen naar de ‘Activiteit gereguleerd in het omgevingsplan’ in de Placeholder-Regeling;</li>
-<li>in AMvB en ministeriële regeling mag de relatie bovenliggendeActiviteit van een Activiteit uitsluitend verwijzen naar de ‘Activiteit gereguleerd bij AMvB’ of naar een andere Activiteit die hoort bij de Placeholder-Regeling, bij een AMvB of bij een ministeriële regeling.</li>
-</ul>
+- in de omgevingsverordening moet de relatie bovenliggendeActiviteit van de tophaak verwijzen naar de 'Activiteit gereguleerd in de omgevingsverordening' in de Placeholder-Regeling;
+- in de waterschapsverordening moet de relatie bovenliggendeActiviteit van de tophaak moet verwijzen naar de 'Activiteit gereguleerd in de waterschapsverordening' in de Placeholder-Regeling;
+- in het omgevingsplan moet de relatie bovenliggendeActiviteit van de tophaak moet verwijzen naar de 'Activiteit gereguleerd in het omgevingsplan' in de Placeholder-Regeling;
+- in AMvB en ministeriële regeling mag de relatie bovenliggendeActiviteit van een Activiteit uitsluitend verwijzen naar de ‘Activiteit gereguleerd bij AMvB’ of naar een andere Activiteit die hoort bij de Placeholder-Regeling, bij een AMvB of bij een ministeriële regeling.
 
 ### Tijdelijk regelingdelen {#7F3046AE}
 
@@ -326,10 +326,9 @@ Tijdelijk regelingdelen, zoals beschreven in de STOP standaard kunnen door een
 ander bevoegd gezag worden ingetrokken dan het bevoegd gezag waardoor het is
 aangemaakt. Voor een tijdelijk regelingdeel geldt de volgende regel:
 
-<b>Regel </b>(TPOD1954):<br/>
+**Regel:** (TPOD1954):
 
-<ul><li>in een tijdelijk regelingdeel waarin één of meer Activiteiten zijn geannoteerd moet één zogenaamde tophaak voorkomen;</li>
-<li>de tophaak is de meest bovenliggende Activiteit van het tijdelijk regelingdeel;</li>
-<li>de naam van de tophaak annex de meest bovenliggende Activiteit moet zijn ‘Activiteit gereguleerd in &lt;citeertitel tijdelijk regelingdeel&gt;’;</li>
-<li>voor een tijdelijk regelingdeel geldt dat de relatie bovenliggendeActiviteit van de tophaak moet verwijzen naar de tophaak van de regeling waaraan het tijdelijk regelingdeel door middel van het element isTijdelijkdeelVan gekoppeld is.</li>
-</ul>
+- in een tijdelijk regelingdeel waarin één of meer Activiteiten zijn geannoteerd moet één zogenaamde tophaak voorkomen;
+- de tophaak is de meest bovenliggende Activiteit van het tijdelijk regelingdeel;
+- de naam van de tophaak annex de meest bovenliggende Activiteit moet zijn ‘Activiteit gereguleerd in &lt;citeertitel tijdelijk regelingdeel&gt;’;
+- voor een tijdelijk regelingdeel geldt dat de relatie bovenliggendeActiviteit van de tophaak moet verwijzen naar de tophaak van de regeling waaraan het tijdelijk regelingdeel door middel van het element isTijdelijkdeelVan gekoppeld is.
