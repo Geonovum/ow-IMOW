@@ -92,7 +92,7 @@ attributen en relaties.
 
 Er zijn verschillende scenario's waarmee met de STOP standaard een Regeling via
 een Aanlevering kan wijziging. Deze scenario's staan beschreven in
-Hoofdstuk (7)[#5C716AFD].
+Hoofdstuk [7](#210F8E1C).
 
 ## Leeswijzer {#28F55C8C}
 
