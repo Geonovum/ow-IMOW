@@ -2,25 +2,10 @@
 
 Dit hoofdstuk beschrijft STOP onderdelen die relevant zijn voor het IMOW. Enkele
 dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de
-OP-standaard relevant is. Paragraaf <a href='#5D2F8BCD'>6.1</a> beschrijft een
-Regeling en zijn Artikelen/Leden/Divisies vanuit OP perspectief. Paragraaf
+OP-standaard relevant is. Paragraaf
 <a href='#0B404AC6'>6.2</a> beschrijft de consolidatieinformatie uit een
 Regeling. Paragraaf <a href='#4541BABA'>6.3</a> worden GIO’s beschreven.
 
-Dit hoofdstuk is geen vervanging van de STOP standaard, maar licht de
-OP-aspecten die voor IMOW van belang zijn toe.
-
-## De Regeling en zijn Artikelen/Leden/Divisies {#5D2F8BCD}
-
-Alle OW-objecten horen bij een Artikel/Lid/Divisie uit een Regeling (die
-opgesteld is conform de STOP-standaard). Vanuit het manifest-ow
-(<b><a href='#'>Fout! Verwijzingsbron niet gevonden.</a></b>) wordt middels het
-attribuut WorkIDRegeling bij iedere aanlevering aangegeven bij welke Regeling de
-OW-objecten horen. In iedere Regeltekst (<a href='#'>3.2</a>) of Divisie
-(<a href='#'>3.11</a>) zit het wId-attribuut, hierin staat de identificatie van
-het artikel/lid of de divisie aan de OP-kant. Zodoende zijn alle OW-objecten die
-gekoppeld zijn aan een bepaalde Regeltekst of Divisie terug te vinden in een
-bepaald deel van een Regeling.<
 
 ## ConsolidatieInformatie {#0B404AC6}
 
@@ -215,7 +200,7 @@ moment dat informatie aangeleverd is.)<br/>
 
 ## GIO’s en Norm GIO’s {#4541BABA}
 
-Bij het aanleveren van een besluit volgens de STOP standaarden worden
+Bij het aanleveren van een besluit volgens de STOP standaard worden
 geografische objecten aangeleverd als GIO’s (geografische informatieobjecten).
 Dit is één van de twee soorten informatieobjecten die in STOP kunnen worden
 meegeleverd (de andere zijn PDF-documenten). In die GIO aanlevering heeft iedere

@@ -1,31 +1,27 @@
-# Het wijzigen van OW-objecten {#210F8E1C}
+# Gebruik van OW-aanlevering bij LVBB {#210F8E1C}
 
-Dit hoofdstuk beschrijf hoe je OW-objecten wijzigt. Paragraaf
-<a href='#6BC0303B'>7.1</a> beschrijft de uitgangspunten. Vervolgens beschrijft
-paragraaf <a href='#'>Fout! Verwijzingsbron niet gevonden.</a> hoe
-OW-wijzigingen in verschillende scenario’s gebruikt kan worden. Paragraaf
-<b><a href='#'>Fout! Verwijzingsbron niet gevonden.</a></b> beschrijft regels
-met betrekking tot ontwerpregelingen.
+Een OW-aanlevering definieert een wijziging van de OW-objecten behorend bij
+een regeling en is op verschillende manier in te zitten. Dit hoofdstuk beschrijft eerst op welke manier een OW-aanlevering de collectie OW-objecten bij een Regeling wijzigt. Daarna staat beschreven hoe de OW-aanlevering in verschillende mutatiescenario's gebruikt kan worden.
 
-## Uitgangspunten relevant voor wijzigen {#6BC0303B}
+Merk op dat bij één aanlevering aan de LVBB, een LVBB-aanlevering, één OW-manifest hoort die weer verschillende OW-aanleveringen kan bevatten. Dit komt bijvoorbeeld voor bij een Besluit dat meerdere Regelingen wijzigt.
+
+
+## OW-aanlevering voor het wijzgen van de OW-objecten behorend bij een Regeling{#6BC0303B}
 
 Het wijzigen van de collectie OW-objecten behorend bij een Regeling gebeurt via
-een OW-aanlevering. Deze OW-aanlevering bevat wijziginstructies beschrijft hoe
-de oorspronkelijke collectie OW-objecten getransformeerd moet worden tot de
-resultaat collectie. Doorgaans is zo’n OW-aanlevering gekoppeld aan een STOP
+een OW-aanlevering. De OW-aanlevering bevat wijziginstructies die beschrijven hoe de oorspronkelijke collectie OW-objecten getransformeerd moet worden tot de
+resultaat collectie. Een OW-aanlevering gekoppeld aan een STOP
 wijziging waarbij het STOP deel de tekst van de regeling wijzigt en de
 OW-aanlevering de bij de regeling behorende OW-objecten wijzigt.
 
 Een OW-aanlevering heeft zelf de vorm van een collectie OW-objecten. De
-aanlevering van een OW-object resulteert in een nieuw OW-object, een gewijzigd
-OW-object of het beëindigen van een OW-object.
-
-In de volgende paragrafen staat regels voor de drie situaties:
+aanlevering van een OW-object resulteert in een (1) nieuw OW-object, (2) een gewijzigd OW-object of (3) het beëindigen van een OW-object. Deze drie
+situaties staan in de volgende paragrafen beschreven:
 
 ### Een nieuw OW-object {#2F9C69B2}
 
 Wanneer een OW-object wordt aangeleverd met een identificatie die nog niet
-bestond in de oorspronkelijke collectie ontstaat een nieuw OW-object. Voor een
+bestond in de tijdlijn van de Regeling ontstaat een nieuw OW-object. Voor een
 nieuw object geldt de volgende regel:
 
 **Regel:** Een nieuw OW-object mag niet de status beëindigd hebben. (OZON0104).
@@ -33,7 +29,7 @@ nieuw object geldt de volgende regel:
 ### Een OW-object wijzigen {#3993B196}
 
 Wanneer een OW-object wordt aangeleverd met een identificatie die al bestond in
-de oorspronkelijke collectie vervangt het aangeleverde OW-object het bestaande
+de tijdlijn van de Regeling vervangt het aangeleverde OW-object het bestaande
 OW-object.
 
 **Regel:** Een wijziging van een OW-object moet daadwerkelijk een kenmerk van
@@ -41,7 +37,7 @@ het OW-object wijzgen. (OZON0108).
 
 Hierbij wordt een relatie bij een OW-object ook gezien als een kenmerk.
 
-**Regel:** Het type van een OW-object niet wijzigen. RegelVoorIedereen,
+**Regel:** Het type van het gewijzigde OW-object moet door de wijziging onveranderd blijven. RegelVoorIedereen,
 Instructieregel en Omgevingswaarderegel zijn verschillende types.
 
 De volgende IMOW-elementen zijn geen objecten en kunnen niet direct gewijzigd
@@ -73,9 +69,9 @@ objecten die niet direct of indirect gekoppeld zijn aan een OW-object dat een
 bestaand documentfragment annoteert (OZON0350 t/m OZON0367).
 
 **Regel:** Een OW-aanlevering mag niet resulteren in verwijzingen naar
-OW-objecten die niet bestaan (OZON0109)
+OW-objecten die beëindigd zijn (OZON0109)
 
-**Regel:** Een OW-aanlevering moet altijd resulteren in een Regeling met daarin
+**Regel:** Een OW-aanlevering moet resulteren in een Regeling met daarin
 precies één Regelingsgebied object.
 
 **Regel:** Voor ieder Lid en Artikel zonder leden in de Regeling die niet
@@ -87,19 +83,20 @@ Er zijn diverse wijzig-scenarios waarin een OW-aanlevering gebruikt kan worden
 om de OW-objecten bij een regeling te wijzigen. Deze worden in de volgende
 paragrafen behandeld:
 
-### OW-aanlevering bij besluit {#2AE56890}
+### OW-aanlevering bij Besluit dat Regeling wijzigt {#2AE56890}
 
-Het aanleveren van een OW-object mag alleen gerelateerd zijn aan een Doel met
-tijdstempels die niet in het verleden ligt t.o.v. de meest recente wijziging
-(OZON0105 en OZON0106). Dit speelt vooral bij directeMutaties (7.4). Dit
-betekent dat ik als ik in 2021 een aantal wijzigingsbesluiten heb gemaakt, ik
-niet nog eens een wijziging van OW-objecten kan doen n.a.v. een
-wijzigingsbesluit uit 2019.
+Een besluit dat een Regeling 
 
-### OW-aanlevering bij intrekking {#5952605C}
+### Aanlevering bij Besluit dat Regeling intrekt {#5952605C}
 
-TODO: dit zou de plek zijn om te beschrijven dat bij een intrekking alleen
-objecten verwijderd mogen worden.
+Bij het ontwikkelen van STOP-IC is het de intentie om bij het intrekken van een
+Regeling automatisch alle OW-objecten behorend bij die Regeling te beëindigen.
+In dat geval hoeven de OW-objecten behorend bij die Regeling niet meer
+expliciet beëindigd te worden.
+
+**Regel:** De intrekking van een Regeling is niet gekoppeld aan een OW-aanlevering.
+
+Immers, alle OW-objecten behorend bij de regeling worden automatisch ingetrokken.
 
 ### OW-aanlevering bij directe mutatie {#57FC25F3}
 
@@ -127,7 +124,7 @@ wijzigingsbesluit uit 2019.
 De tijdstempels van de ConsolidatieInformatie van het Besluit bepalen wanneer de
 OW-informatie geldig is.
 
-Er zijn OW-objecten waarvan het onlogisch is dat deze gewijzigd worden met een
+Er zijn OW-objecten waarvan het onlogisch om ze te wijzigen met een
 directe mutatie, dit zijn:
 
 - OW-Locaties. Als de noemer van een locatie zou wijzigen dan wordt verwacht dat

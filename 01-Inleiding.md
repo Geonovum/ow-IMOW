@@ -101,8 +101,7 @@ Dit document is als volgt opgebouwd: . Hoofdstuk
 aan welke bestanden er verwacht worden en beschrijft de randvoorwaarden voor het
 aanleveren. Hoofdstuk <a href='#3F5FA62D'>3</a> gaat gedetailleerd in op hoe de
 OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
-bestand dat aangeleverd kan worden. Hoofdstuk <a href='#126CC8D0'>4</a> geeft
-weer waar het CIM-OW en IMOW afwijken. Hoofdstuk <a href='#2577D13E'>5</a>
+bestand dat aangeleverd kan worden. Hoofdstuk <a href='#126CC8D0'>4</a> bescrijft implementatiekeuzes die in het IMOW gemaakt zijn. Hoofdstuk <a href='#2577D13E'>5</a>
 beschrijft enkele aspecten uit STOP die relevant zijn voor de werking van OW en
 geeft richtlijnen over de wijze waarop OW zich verhoudt tot STOP. Hoofdstuk
 <a href='#210F8E1C'>7</a> beschrijft het wijzigen van OW-objecten.

@@ -1,4 +1,4 @@
-# Verschillen tussen IMOW en CIM-OW {#126CC8D0}
+# Implementatiekeuzes in het IMOW
 
 Het IMOW is een implementatie van het conceptuele model CIM-OW. Niet alles uit
 het CIM-OW is één op één overgenomen in het IMOW. Dit hoofdstuk beschrijft de
@@ -10,32 +10,22 @@ CIM-OW zitten.
 
 Niet alle concepten beschreven in het CIM-OW worden vastgelegd in het IMOW.
 Sommige van de van deze gegevens zijn af te leiden uit het OP-deel van een
-Aanlevering. Deze gegevens hoeven niet nogmaals beschreven in het IMOW. Het gaat
-hier bijvoorbeeld om de volgende concepten uit het CIM-OW:
+Aanlevering. Deze gegevens worden niet nogmaals vastgelegd in het IMOW. Het gaat
+hier om de volgende concepten uit het CIM-OW:
 
-- Regeltekst.Werkingsgebied – het werkingsgebied wordt afgeleid op basis van de locatieaanduidingen van Juridische regels.
-- Activiteit.locatie – hierin zit de locaties waar de Activiteit gereguleerd wordt, deze wordt in het IMOW via de activiteitlocatieaanduidingen vastgelegd.
-- Regeltekst.Omschrijving – hierin zit de inhoud van de Regeltekst, deze wordt niet aangeleverd via IMOW, maar wordt via de OP-bestanden afgeleid.\
-- Omgevingsdocumenten (Regelingen en Omgevingsvergunningen), Bevoegd Gezag, DocumentComponenten. Deze gegevens zijn in het CIM-OW toegevoegd, omdat ze van belang zijn voor het DSO-LV.
-- De tijdslijnen voor de objectvorming in DSO-LV worden gebaseerd op het omgevingsdocument dat de LVBB maakt en uitlevert.
+- **RegeltekstAnnotatie.werkingsgebied** – het werkingsgebied van een Regeltekst
+  wordt afgeleid op basis van de locatieaanduidingen van Juridische regels. De
+  locatieaanduidingen van de Juridische regels worden vastgelegd in het IMOW,
+  maar niet het afgeleide werkingsgebied.
+- **Activiteit.locatieaanduiding** – hierin zit de locaties waar de Activiteit
+  gereguleerd wordt, deze wordt in het IMOW via de activiteitlocatieaanduidingen
+  vastgelegd.
+- De tijdslijnen voor de objectvorming in DSO-LV worden gebaseerd op het
+  omgevingsdocument dat de LVBB maakt en uitlevert.
 
 ## IMOW-aspecten niet in CIM-OW {#6C42F8AD}
 
 Het IMOW kent de volgende verschillen ten opzichte van het CIM-OW:
-
-### Gebiedsaanwijzing
-
-Gebiedsaanwijzing is meer generiek opgezet in IMOW dan in CIM-OW. De Functie en
-het Beperkingengebied zijn zo opgezet dat er andere typen Gebiedsaanwijzingen
-toegevoegd kunnen worden, zonder impact op de XSD’s. De type gebiedsaanwijzingen
-kunnen worden meegegeven door het kenmerk ‘TypeGebiedsaanwijzing’. De groepen
-die je kunt selecteren volgen vervolgens uit de verschillende waardelijsten van
-de specifieke ‘gebiedsaanwijzingstypen’.
-
-### Relaties
-
-In IMOW staan de rolnamen centraal in plaats van de naam van de relatiesoort.
-Deze rolnamen worden ook gebruikt in de XML-schemas.
 
 ### Regelingsgebied
 
@@ -60,19 +50,14 @@ objecttype Geometrie is geen zelfstandig objecttype, het hoort altijd als
 gerefereerde eigenschap bij een Locatie. Een Geometrie kan niet zelfstandig
 gemuteerd worden en historie opbouwen, maar een Locatie kan dat wel.
 
-Geometrie wordt door zowel STOP als IMOP gebruikt. Het BG hoeft daardoor
-Geometrie maar één keer aan te leveren. Vanwege dat gezamenlijk gebruik is
-Geometrie in een zelfstandig bestand geplaatst van waaruit zowel een GIO als de
-informatieobjecten uit IMOW apart naar wordt verwezen. Verschil in 1.0 is wel
-dat het GML-bestand normwaarden dient te bevatten indien deze bij de geometrie
-horen. Deze worden middels het GIO-schema geduid, en vallen niet onder het IMOW.
-
-Zie paragraaf <a href='#110333AD'>2.2.5</a> voor het IMOW model voor geometrie
-en locatie.
+Geometrie wordt door zowel STOP als IMOW gebruikt. Ze hoeven door het bevoegd
+gezag echter alleen in de GIO te worden aangeleverd. In het IMOW wordt er naar
+de geometrie in de GIO verwezen middels de UUID in de GIO.
 
 Deze geometrie constructie leidt tot de volgende IMOW-attributen:
 
-- (Gebied, Lijn, Punt).geometrie: Een verwijzing vanuit Locatie (Gebied, Lijn of Punt) naar een bijbehorende Geometrie.
+- (Gebied, Lijn, Punt).geometrie: Een verwijzing vanuit Locatie (Gebied, Lijn of
+  Punt) naar een bijbehorende Geometrie.
 - Geometrie.id: UUID identificatie van de Geometrie
 - Geometrie.geometrie: Vastleggen van een geometrie middels coördinaten.
 
