@@ -72,8 +72,7 @@ Invul-instructie:
 
 De beschrijving van de respectievelijke EPSG codes zijn te vinden onder de url's
 met het format: "http://www.opengis.net/def/crs/EPSG/0/""epsgcode". Bijvoorbeeld
-voor EPSG 28992 is dat:
-<a href='https://www.opengis.net/def/crs/EPSG/0/28992' target='_blank'>https://www.opengis.net/def/crs/EPSG/0/28992</a>
+voor EPSG 28992 is dat: <https://www.opengis.net/def/crs/EPSG/0/28992>
 Momenteel worden in het DSO de 3D-coördinatenreferentiestelsels nog niet
 ondersteund (EPSG:4937, EPSG:7415, EPSG:7423).
 
@@ -126,62 +125,22 @@ met een identificatie van het object binnen het domein van de bronhouder.
 De wijze van het identificeren van objecten in het IMOW volgt de
 NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:
 
-<table style='width: 100%;'><caption></caption>
-<colgroup><col id='col1' style='width: 100%;'>
-</colgroup>
-<tbody valign='top'><tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'><b>nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\. (regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|divisie|kaartlaag|juridischeregel|activiteitlocatieaanduiding|normwaarde|regelingsgebied|ambtsgebied|divisietekst)\.[A-Za-z0-9]{1,32}</b>
-</td>
-</tr>
-</tbody>
-</table>
+```re
+nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\.(regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|divisie|kaartlaag|juridischeregel|activiteitlocatieaanduiding|normwaarde|regelingsgebied|ambtsgebied|divisietekst)\.[A-Za-z0-9]{1,32}
+```
 
-<table style='width: 100%;'><caption>Toelichting:</caption>
-<colgroup><col id='col1' style='width: 40.620172147428825%;'>
-<col id='col2' style='width: 59.379827852571175%;'>
-</colgroup>
-<thead valign='top'><tr><th align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Onderdeel van reg. exp.<br/>
-</th>
-<th align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Betekenis<br/>
-</th>
-</tr>
-</thead>
-<tbody valign='top'><tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>nl.imow-<br/>
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Alle gegevens die worden aangeleverd vanuit het IMOW dienen te starten met nl.imow-<br/>
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>(gm|pv|ws|mn|mnre)<br/>
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>keuze voor een code voor de bestuurslaag van de bronhouder: gm voor gemeente, pv voor provincie, ws voor waterschap of mnre voor ministerie. De bronhouder is het bevoegd gezag dat het besluit neemt waarmee de Regeling wordt ingesteld of gewijzigd.<br/>
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>[0-9]{1,6}<br/>
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>de overheidscode van de bronhouder, maximaal 6 cijfers<br/>
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>\.<br/>
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>een punt<br/>
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>(regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|divisie|kaartlaag|juridischeregel|activiteitlocatieaanduiding|normwaarde|regelingsgebied|ambtsgebied|divisietekst)<br/>
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>keuze voor de naam van het IMOW objecttype van het object waar de identificatie betrekking op heeft<br/>
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>\.<br/>
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>een punt<br/>
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>[A-Za-z0-9]{1,32}<br/>
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Een codereeks van minimaal 1 en maximaal 32 alfanumerieke tekens, te bepalen door de bronhouder<br/>
-</td>
-</tr>
-</tbody>
-</table>
+| Onderdeel van de reguliere expressie                                                                                                                                                                                                                                                  | Betekenis                                                                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ```nl.imow-```                                                                                                                                                                                                                                                                        | Alle gegevens die worden aangeleverd vanuit het IMOW dienen te starten met nl.imow-                                                                                                                                                                     |
+| ```(gm\|pv\|ws\|mn\|mnre)```                                                                                                                                                                                                                                                          | keuze voor een code voor de bestuurslaag van de bronhouder: gm voor gemeente, pv voor provincie, ws voor waterschap of mnre voor ministerie. De bronhouder is het bevoegd gezag dat het besluit neemt waarmee de Regeling wordt ingesteld of gewijzigd. |
+| ```[0-9]{1,6}  ```                                                                                                                                                                                                                                                                    | de overheidscode van de bronhouder, maximaal 6 cijfers                                                                                                                                                                                                  |
+| ```\.```                                                                                                                                                                                                                                                                              | een punt                                                                                                                                                                                                                                                |
+| ```(regeltekst\|gebied\|gebiedengroep\|lijn\|lijnengroep\|punt\|puntengroep\|activiteit\|gebiedsaanwijzing\|omgevingswaarde\|omgevingsnorm\|pons\|kaart\|tekstdeel\|hoofdlijn\|divisie\|kaartlaag\|juridischeregel\|activiteitlocatieaanduiding\|normwaarde\|regelingsgebied\|ambtsgebied\|divisietekst)``` | keuze voor de naam van het IMOW objecttype van het object waar de identificatie betrekking op heeft                                                                                                                                                     |
+| ```[A-Za-z0-9]{1,32}```                                                                                                                                                                                                                                                               | Een codereeks van minimaal 1 en maximaal 32 alfanumerieke tekens, te bepalen door de bronhouder                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                         |
+
+
 
 De lokale identificatie als geheel wordt dan bijvoorbeeld:
 nl.imow-gm0200.gebied.2019000001
@@ -193,30 +152,12 @@ https://brk.basisregistraties.overheid.nl/bestuurlijke-grenzen-api<br/>
 </span></span>. Deze identificatie is de bestuurlijkeGrenzenID en ziet als volgt
 uit:
 
-<table style='width: 100%;'><caption></caption>
-<colgroup><col id='col1' style='width: 40.620172147428825%;'>
-<col id='col2' style='width: 59.379827852571175%;'>
-</colgroup>
-<thead valign='top'><tr><th align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Onderdeel van reg. exp.<br/>
-</th>
-<th align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>Betekenis<br/>
-</th>
-</tr>
-</thead>
-<tbody valign='top'><tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>(GM|PV|WS|LND)<br/>
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>keuze voor een code voor de bestuurslaag* van de bronhouder: GM voor gemeente, PV voor provincie, WS voor waterschap of LND voor het Rijk**<br/>
-</td>
-</tr>
-<tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>[A-Z0-9.]{1,7}<br/>
-</td>
-<td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'>de overheidscode van het bevoegd gezag i.r.t. het bestuurlijk gebied zoals bekend in de bestuurlijkeGrenzen-voorziening. Dit bestaat uit hoofdletters, punten en cijfers, met een maximum van 7 tekens. <br/>
-</td>
-</tr>
-</tbody>
-</table>
+| Onderdeel van reg. exp. | Betekenis                                                                                                                                                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ```(GM\|PV\|WS\|LND)``` | keuze voor een code voor de bestuurslaag van de bronhouder: GM voor gemeente, PV voor provincie, WS voor waterschap of LND voor het Rijk                                                                |
+| ```[A-Z0-9.]{1,7}```    | de overheidscode van het bevoegd gezag i.r.t. het bestuurlijk gebied zoals bekend in de bestuurlijkeGrenzen-voorziening. Dit bestaat uit hoofdletters, punten en cijfers, met een maximum van 7 tekens. |
 
-De lokale identificatie als geheel is dan bijvoorbeeld: GM0297 of LND6030.A
+De lokale identificatie als geheel is dan bijvoorbeeld: 'GM0297' of 'LND6030.A'
 
 ### Waardelijsten {#10D4544F}
 
@@ -230,14 +171,9 @@ URI.
 Bij het valideren van de waarden wordt binnen het OW de volgende reguliere
 expressie gehanteerd:
 
-<table style='width: 100%;'><caption></caption>
-<colgroup><col id='col1' style='width: 100%;'>
-</colgroup>
-<tbody valign='top'><tr><td align='left' style='border-top: 0.5pt solid #000000; border-left: 0.5pt solid #000000; border-bottom: 0.5pt solid #000000; border-right: 0.5pt solid #000000; background-color: none;'><b>(http|https)://(wetgeving|standaarden|regelgeving)\.omgevingswet\.overheid\.nl/.*</b><br/>
-</td>
-</tr>
-</tbody>
-</table>
+```text
+(http|https)://(wetgeving|standaarden|regelgeving)\.omgevingswet\.overheid\.nl/.*
+```
 
 Vervolgens controleert het DSO of de waarde voorkomt in de stelselcatalogus. De
 stelselcatalogus is publiekelijk beschikbaar.
