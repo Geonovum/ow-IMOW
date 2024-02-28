@@ -64,6 +64,7 @@ standaarden die het digitale formaat van een aanlevering vastlegt:
   die aan een waardelijst gekoppeld zijn. Waardelijsten worden in de
   [Stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten)
   gepubliceerd.
+- Het IMOW maakt gebruik van andere standaarden waaronder de [[NEN3610_2022]] standaard.
 
 <figure>
     <img src='media/image1.png'  style='width: 100%;'></img>

@@ -12,7 +12,7 @@ voorkomt is een OW-aanlevering. Naast het OW-manifest bevat de OW-aanlevering
 een aantal bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het
 OW-manifest bevat niet de GML-bestanden; deze staan in het (OP-)manifest.
 
-Voor een OW-aanlevering, bestaande uit het 'manifest-o.xml' bestand en een aantal bestanden met OW-object objecten gelden de volgende regels:
+Voor een OW-aanlevering, bestaande uit het 'manifest-ow.xml' bestand en een aantal bestanden met OW-object objecten gelden de volgende regels:
 
 **Regel:** Het manifest-ow.xml bestand moet voldoen aan het xsd: (https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/generiek/manifest-ow.xsd)[https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/generiek/manifest-ow.xsd](LVBB1032)
 
@@ -45,14 +45,12 @@ Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart,
 Regelingsgebied Bij Vrijetekststructuur: Divisie, Divisietekst, Tekstdeel,
 Hoofdlijn, Gebiedsaanwijzing, Kaart, Regelingsgebied, Locatie
 
-### GML-bestanden (informatief) {#128024A0}
+### GML-bestanden {#128024A0}
 
-De GML-specificaties volgen de regels van de standaard Basisgeometrie (de versie
-die is vastgesteld op 30 september 2020):
-<a href='https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20200930/' target='_blank'>https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20200930/</a>
+De GML-specificaties volgen de regels van de standaard Basisgeometrie [[BASISGEO]].
 
 Het bijbehorende GML applicatieschema Basisgeometrie.xsd is gepubliceerd op:
-<a href='https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/' target='_blank'>https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/</a>
+<https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/1.0.0/>
 
 Voor de zelfstandig leesbaarheid van IMOW-standaard is de inhoud van de genoemde
 standaard Basisgeometrie en het schema ook opgenomen in IMOW.

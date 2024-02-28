@@ -5,8 +5,7 @@ een regeling en is op verschillende manier in te zitten. Dit hoofdstuk beschrijf
 
 Merk op dat bij één aanlevering aan de LVBB, een LVBB-aanlevering, één OW-manifest hoort die weer verschillende OW-aanleveringen kan bevatten. Dit komt bijvoorbeeld voor bij een Besluit dat meerdere Regelingen wijzigt.
 
-
-## OW-aanlevering voor het wijzgen van de OW-objecten behorend bij een Regeling{#6BC0303B}
+## OW-aanlevering voor het wijzigen van de OW-objecten behorend bij een Regeling {#6BC0303B}
 
 Het wijzigen van de collectie OW-objecten behorend bij een Regeling gebeurt via
 een OW-aanlevering. De OW-aanlevering bevat wijziginstructies die beschrijven hoe de oorspronkelijke collectie OW-objecten getransformeerd moet worden tot de
