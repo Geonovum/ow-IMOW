@@ -67,7 +67,7 @@ standaarden die het digitale formaat van een aanlevering vastlegt:
 - Het IMOW maakt gebruik van andere standaarden waaronder de [[NEN3610_2022]] standaard.
 
 <figure>
-    <img src='media/image1.png'  style='width: 100%;'></img>
+    <img src='media/OverzichtAanlevering.png'  style='width: 100%;'></img>
     <figcaption>Schematisch overzicht van aanlevering conform de standaard</figcaption>
 </figure>
 

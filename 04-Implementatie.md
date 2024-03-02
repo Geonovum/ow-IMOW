@@ -222,7 +222,7 @@ die zijn genoemd in artikel 5.1 Ow en enkele Activiteiten van de AMvB’s en de
 Omgevingsregeling. De regels in deze paragaaf zorgen ervoor dat de hiërarchie
 van de functionele structuur behouden blijft bij wijzigingen.
 
-<figure><img src='media/image18.png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 70.32967032967034%;'></img>
+<figure><img src='media/FunctioneleStructuur.png' alt='Afbeelding met tekst, schermopname, Lettertype, nummer' style='width: 70.32967032967034%;'></img>
 <figcaption>: de top van de hiërarchie van de functionele structuur</figcaption></figure>
 
 De volgende regel schrijft de naam en aanwezigheid van een tophaak Activiteit in

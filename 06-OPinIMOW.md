@@ -654,10 +654,10 @@ De richtlijn is als volgt:<br/>
 <li>Verwijs vanuit annotaties altijd naar een Locatiegroep, zodat het gelijk loopt met de verwijzing vanuit de tekst (naar de GIO).</li>
 </ul>
 
-<figure><img src='media/image19.png' alt='' style='width: 100%;'></img>
+<figure><img src='media/RichtlijnVoorOW-objecten.png' alt='' style='width: 100%;'></img>
 <figcaption>Richtlijn voor OW-objecten i.r.t. GIO’s</figcaption></figure>
 
-<figure><img src='media/image20.png' alt='' style='width: 100%;'></img>
+<figure><img src='media/RichtlijnVoorNormen.png' alt='' style='width: 100%;'></img>
 <figcaption>Richtlijn voor Normen i.r.t. Norm-GIO’s</figcaption></figure>
 
 Dit heeft de volgende consequenties:<br/>
