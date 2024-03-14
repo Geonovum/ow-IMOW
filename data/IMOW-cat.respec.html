@@ -2,6 +2,1155 @@
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
    <!--20200601_Oplevering imvertor 3.0.0-->
+   <section id="global_package_Aanlevering">
+      <h3>Domein   Aanlevering</h3>
+      <section id="EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79">
+         <h4>   Aanlevering - overzicht</h4>
+         <div class="imageinfo overview">
+            <figure><img src="data/Images/EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79.png" usemap="#imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79" alt="Diagram &#xA;                        Als bij een LVBB-Aanlevering aan de LVBB een besand zit met de naam ‘manifest-ow.xml’ zijn er één of meer OW-aanleveringen gekoppeld aan de LVBB-Aanlevering.&#xA;                        &#xA;                        Een OW-aanlevering hoort bij een te wijzigen Regeling die geïdentificeerd is met de wordIDRegeling en doedID. De te wijzigen OW-objecten zitten in een aantal OW-bestanden.&#xA;                     "><figcaption>Aanlevering</figcaption>
+            </figure><map name="imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79"><area shape="rect" alt="OW-object" coords="476,242,733,382" href="#global_class_OWobject_OWobject"><area shape="rect" alt="OW-Bestand" coords="19,234,294,391" href="#global_class_Aanlevering_OWBestand"><area shape="rect" alt="OW-manifest" coords="14,26,253,152" href="#global_class_Aanlevering_OWmanifest"><area shape="rect" alt="OW-bestandverwijzing" coords="789,36,1010,157" href="#global_class_Aanlevering_OWbestandverwijzing"><area shape="rect" alt="OW-aanlevering" coords="404,14,680,157" href="#global_class_Aanlevering_OWaanlevering"></map><p>
+               
+               <p>Als bij een LVBB-Aanlevering aan de LVBB een besand zit met de naam ‘manifest-ow.xml’
+                  zijn er één of meer OW-aanleveringen gekoppeld aan de LVBB-Aanlevering.</p>
+               
+               <p></p>
+               
+               <p>Een OW-aanlevering hoort bij een te wijzigen Regeling die geïdentificeerd is met de
+                  word­IDRegeling en doed­ID. De te wijzigen OW-objecten zitten in een aantal OW-bestanden.</p>
+               </p>
+         </div>
+      </section>
+      <section>
+         <h4>Objecttypen   </h4>
+         
+         <section id="global_class_Aanlevering_OWbestandverwijzing">
+            <h5>   OW-bestandverwijzing</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>OW-bestandverwijzing</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Verwijzing naar een OW-bestand in deze OW-Aanlevering.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <ul>
+                           
+                           <li>Als een bestand genoemd wordt dan moet het aanwezig zijn in de aanlevering. (LVBB1016)</li>
+                           </ul>
+                        
+                        <ul>
+                           
+                           <li>bij object­Type zijn de volgende waardes toegestaan: Activiteit, Divisie, Gebiedsaanwijzing,
+                              Gebied, Gebiedengroep, Hoofdlijn, Punt, Puntengroep, Lijn, Lijnengroep, Regeltekst,
+                              Regel­Voor­Iedereen, Instructieregel, Omgevingswaarderegel, Omgevingsnorm, Omgevingswaarde,
+                              Pons, Tekstdeel, Kaart, Kaartlaag, Ambtsgebied of Divisietekst. (LVBB1025)</li>
+                           </ul>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Aanlevering_OWbestandverwijzing_naam">naam</a>
+                        </td>
+                     <td>
+                        
+                        <p>De naam van het bestand.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Aanlevering_OWbestandverwijzing_objectType">object­Type</a>
+                        </td>
+                     <td>
+                        
+                        <p>Lijst van specifieke object­Types die voorkomt in het OW-bestand.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1 .. *</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        OW-bestandverwijzing
+                        [ 1 .. * ]
+                        
+                        <a class="link" href="#detail_association_Aanlevering_OWbestandverwijzing_bestandinaanlevering">bestandinaanlevering</a>
+                        
+                        
+                        <a class="link" href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_Aanlevering_OWBestand">
+            <h5>   OW-Bestand</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>OW-Bestand</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Specifiek bestand in Aanlevering.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Dit bestand voldoet aan het XML-Applicatieschema zoals te vinden in: TODO.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        
+                        <p>Dit XML bestand bevat een lijst met OW-objecten.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Aanlevering_OWBestand_dataset">dataset</a>
+                        </td>
+                     <td>
+                        
+                        <p>Omschrijving van de dataset.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Aanlevering_OWBestand_gebied">gebied</a>
+                        </td>
+                     <td>
+                        
+                        <p>Naam van het gebied.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Aanlevering_OWBestand_leveringsID">leverings­ID</a>
+                        </td>
+                     <td>
+                        
+                        <p>Een identificatie van de levering.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Aanlevering_OWBestand_objectTypen">object­Typen</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1 .. *</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
+                        
+                        [ 1 .. * ]
+                        
+                        <a class="link" href="#detail_association_OWobject_OWobject_owbestandsinhoud">owbestandsinhoud</a>
+                        
+                        OW-Bestand
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_Aanlevering_OWmanifest">
+            <h5>   OW-manifest</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>OW-manifest</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Bij een Aanlevering aan de LVBB meld je in het OW-Manifest welke OW-aanleveringen
+                           er zijn. Als een Besluit meerdere Regelingen wijzigt vermeldt het OW-manifest meerdere
+                           OW-aanleveringen.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Aanlevering_OWmanifest_domein">domein</a>
+                        </td>
+                     <td>
+                        
+                        <p>Omschrijving van de dataset.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Aanlevering_OWmanifest_IMOWversie">IMOWversie</a>
+                        </td>
+                     <td>
+                        
+                        <p>De IMOW-versie waarmee is aangeleverd in het formaat x.y</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a>
+                        
+                        [ 1 .. * ]
+                        
+                        <a class="link" href="#detail_association_Aanlevering_OWaanlevering_aanleveringeninaanlevering">aanleveringeninaanlevering</a>
+                        
+                        OW-manifest
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_Aanlevering_OWaanlevering">
+            <h5>   OW-aanlevering</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>OW-aanlevering</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Aanlevering_OWaanlevering_workIDRegeling">work­IDRegeling</a>
+                        </td>
+                     <td>
+                        
+                        <p>Wor­ID van de regeling waar deze aanlevering bij hoort.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Aanlevering_OWaanlevering_doelID">doel­ID</a>
+                        </td>
+                     <td>
+                        
+                        <p>Het ID van het Doel (aan de OP-kant).</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Aanlevering_OWaanlevering_expressionIDRegeling">expression­IDRegeling</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        OW-aanlevering
+                        [ 1 .. * ]
+                        
+                        <a class="link" href="#detail_association_Aanlevering_OWaanlevering_aanleveringeninaanlevering">aanleveringeninaanlevering</a>
+                        
+                        
+                        <a class="link" href="#global_class_Aanlevering_OWmanifest">OW-manifest</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Aanlevering_OWbestandverwijzing">OW-bestandverwijzing</a>
+                        
+                        [ 1 .. * ]
+                        
+                        <a class="link" href="#detail_association_Aanlevering_OWbestandverwijzing_bestandinaanlevering">bestandinaanlevering</a>
+                        
+                        OW-aanlevering
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         </section>
+      <section>
+         <h4>Attribuut- en relatiesoort details  </h4>
+         
+         <section>
+            <h5>Objecttype details  </h5>
+            
+            <section id="detail_class_Aanlevering_OWbestandverwijzing">
+               <h6>   OW-bestandverwijzing</h6>
+               
+               <div class="deepheader" id="detail_attribute_Aanlevering_OWbestandverwijzing_naam">
+                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWbestandverwijzing">OW-bestandverwijzing</a> naam</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>naam</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>De naam van het bestand.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>255</td>
+                        </tr>
+                        <tr>
+                           <th>Regels</th>
+                           <td>
+                              
+                              
+                              <p>de naam mag niet niet eindigen op '.gml'. (LVBB1026)</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Aanlevering_OWbestandverwijzing_objectType">
+                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWbestandverwijzing">OW-bestandverwijzing</a> object­Type</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>object­Type</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Lijst van specifieke object­Types die voorkomt in het OW-bestand.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>80</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Aanlevering_OWbestandverwijzing_bestandinaanlevering">
+                  <h7>Relatiesoort details  <a href="#global_class_Aanlevering_OWbestandverwijzing">OW-bestandverwijzing</a> bestandinaanlevering</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>bestandinaanlevering</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_Aanlevering_OWBestand">
+               <h6>   OW-Bestand</h6>
+               
+               <div class="deepheader" id="detail_attribute_Aanlevering_OWBestand_dataset">
+                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWBestand">OW-Bestand</a> dataset</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>dataset</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Omschrijving van de dataset.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Aanlevering_OWBestand_gebied">
+                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWBestand">OW-Bestand</a> gebied</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>gebied</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Naam van het gebied.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>80</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Aanlevering_OWBestand_leveringsID">
+                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWBestand">OW-Bestand</a> leverings­ID</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>leverings­ID</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Een identificatie van de levering.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>.. 255</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Aanlevering_OWBestand_objectTypen">
+                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWBestand">OW-Bestand</a> object­Typen</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>object­Typen</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>80</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_Aanlevering_OWmanifest">
+               <h6>   OW-manifest</h6>
+               
+               <div class="deepheader" id="detail_attribute_Aanlevering_OWmanifest_domein">
+                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWmanifest">OW-manifest</a> domein</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>domein</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Omschrijving van de dataset.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>80</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Aanlevering_OWmanifest_IMOWversie">
+                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWmanifest">OW-manifest</a> IMOWversie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>IMOWversie</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>De IMOW-versie waarmee is aangeleverd in het formaat x.y</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_Aanlevering_OWaanlevering">
+               <h6>   OW-aanlevering</h6>
+               
+               <div class="deepheader" id="detail_attribute_Aanlevering_OWaanlevering_workIDRegeling">
+                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a> work­IDRegeling</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>work­IDRegeling</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Wor­ID van de regeling waar deze aanlevering bij hoort.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>..255</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Aanlevering_OWaanlevering_doelID">
+                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a> doel­ID</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>doel­ID</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Het ID van het Doel (aan de OP-kant).</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>..255</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Aanlevering_OWaanlevering_expressionIDRegeling">
+                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a> expression­IDRegeling</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>expression­IDRegeling</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Aanlevering_OWaanlevering_aanleveringeninaanlevering">
+                  <h7>Relatiesoort details  <a href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a> aanleveringeninaanlevering</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>aanleveringeninaanlevering</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Aanlevering_OWmanifest">OW-manifest</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            </section>
+         
+         
+         
+         
+         
+         </section>
+   </section>
    <section id="global_package_Regeltekst">
       <h3>Domein   Regeltekst</h3>
       <section id="EAID_F30DA025_05E0_4f4b_AAF8_D029BA870995">
@@ -68,16 +1217,6 @@
                         </td>
                   </tr>
                   <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        
-                        <p> Een regel betreft binnen de Omgevingswet veelal activiteiten, en/of normen en/of
-                           functies en/of beperkingengebieden.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
                      <th>Indicatie abstract object</th>
                      <td>Ja</td>
                   </tr>
@@ -104,8 +1243,8 @@
                         </td>
                      <td>
                         
-                        <p>Vastlegging van de manier de begrenzing van Locatie voor deze Juridische regel geïnterpreteerd
-                           moet worden en door het bevoegd gezag bedoeld is.</p>
+                        <p>Vastlegging van de manier waarop de begrenzing van Locatie voor deze Juridische regel
+                           geïnterpreteerd moet worden en door het bevoegd gezag bedoeld is.</p>
                         </td>
                      <td>
                         <a class="link" href="#global_class_Waardelijsten_Idealisatie">Idealisatie</a>
@@ -118,7 +1257,7 @@
                         </td>
                      <td>
                         
-                        <p>Kernachtige weergave van de grondgedachte achter een regel. Een thema kent geen locatie.</p>
+                        <p>Kernachtige weergave van de grondgedachte achter een regel. </p>
                         </td>
                      <td>
                         <a class="link" href="#global_class_Waardelijsten_Thema">Thema</a>
@@ -154,7 +1293,7 @@
                         </td>
                      <td>
                         
-                        <p>Gebiedsaanwijzing bevat in deze Juridische Regel.</p>
+                        <p>Gebiedsaanwijzingen behorend bij deze Regel.</p>
                         </td>
                   </tr>
                   <tr>
@@ -171,8 +1310,8 @@
                         </td>
                      <td>
                         
-                        <p>De locatieaanduiding begrenst de juridische werking van de regel in juridische zin,
-                           te weten dat de regel alleen binnen dit werkingsgebied werkingskracht heeft. </p>
+                        <p>De locatie behorende bij de juridische regel en daarmee de begrenzing van het gebied
+                           waarbinnen de regel werkingskracht heeft. </p>
                         </td>
                   </tr>
                   <tr>
@@ -206,7 +1345,8 @@
                         </td>
                      <td>
                         
-                        <p>Artikel of lid is waar de Juridische regel onderdeel van is.</p>
+                        <p>Een Juridische­Regel wordt in Artikelen en Leden van een Regeling vastgelegd. De relatie
+                           artikel­Of­Lid verwijst naar deze Artikelen en Leden.</p>
                         </td>
                   </tr>
                   <tr>
@@ -219,7 +1359,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -430,7 +1570,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -448,12 +1588,6 @@
                   <tr>
                      <th>Naam</th>
                      <td>Omgevingsnorm</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>
-                        IMOW
-                        </td>
                   </tr>
                   <tr>
                      <th>Definitie</th>
@@ -723,12 +1857,6 @@
                      <td>Activiteit</td>
                   </tr>
                   <tr>
-                     <th>Herkomst</th>
-                     <td>
-                        IMOW
-                        </td>
-                  </tr>
-                  <tr>
                      <th>Definitie</th>
                      <td>
                         
@@ -885,7 +2013,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -1118,7 +2246,8 @@
                         </td>
                      <td>
                         
-                        <p>Artikel of lid is waar de Juridische regel onderdeel van is.</p>
+                        <p>Een Juridische­Regel wordt in Artikelen en Leden van een Regeling vastgelegd. De relatie
+                           artikel­Of­Lid verwijst naar deze Artikelen en Leden.</p>
                         </td>
                   </tr>
                   <tr>
@@ -1537,8 +2666,8 @@
                            <td>
                               
                               
-                              <p>Vastlegging van de manier de begrenzing van Locatie voor deze Juridische regel geïnterpreteerd
-                                 moet worden en door het bevoegd gezag bedoeld is.</p>
+                              <p>Vastlegging van de manier waarop de begrenzing van Locatie voor deze Juridische regel
+                                 geïnterpreteerd moet worden en door het bevoegd gezag bedoeld is.</p>
                               
                               </td>
                         </tr>
@@ -1590,7 +2719,7 @@
                            <td>
                               
                               
-                              <p>Kernachtige weergave van de grondgedachte achter een regel. Een thema kent geen locatie.</p>
+                              <p>Kernachtige weergave van de grondgedachte achter een regel. </p>
                               
                               </td>
                         </tr>
@@ -1615,6 +2744,15 @@
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>Een thema kent geen locatie.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie classificerend</th>
@@ -1649,7 +2787,7 @@
                            <td>
                               
                               
-                              <p>Gebiedsaanwijzing bevat in deze Juridische Regel.</p>
+                              <p>Gebiedsaanwijzingen behorend bij deze Regel.</p>
                               
                               </td>
                         </tr>
@@ -1660,8 +2798,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -1684,8 +2830,8 @@
                            <td>
                               
                               
-                              <p>De locatieaanduiding begrenst de juridische werking van de regel in juridische zin,
-                                 te weten dat de regel alleen binnen dit werkingsgebied werkingskracht heeft. </p>
+                              <p>De locatie behorende bij de juridische regel en daarmee de begrenzing van het gebied
+                                 waarbinnen de regel werkingskracht heeft. </p>
                               
                               </td>
                         </tr>
@@ -1747,8 +2893,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -1771,7 +2925,8 @@
                            <td>
                               
                               
-                              <p>Artikel of lid is waar de Juridische regel onderdeel van is.</p>
+                              <p>Een Juridische­Regel wordt in Artikelen en Leden van een Regeling vastgelegd. De relatie
+                                 artikel­Of­Lid verwijst naar deze Artikelen en Leden.</p>
                               
                               </td>
                         </tr>
@@ -1782,8 +2937,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -2459,8 +3622,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -2495,6 +3666,10 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
                         </tr>
@@ -2513,6 +3688,10 @@
                                  gevallen niet, althans niet vanuit deze regels, mogelijk wel vanuit andere regels.</p>
                               
                               </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -2598,8 +3777,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -2624,8 +3811,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -2768,8 +3963,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -2872,8 +4075,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -3096,7 +4307,7 @@
          <h4>   IMOW Vrije­Tekst - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313.png" usemap="#imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313" alt="Diagram &#xA;                        Vrijetekststructuur in OP bouwt gebruikt twee elementtypen, namelijk: Divisie en Divisietekst. Het hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar uiteindelijk ook een Divisietekst met Inhoud in moet zitten. De Inhoud bevat alleen inhoudelijke tekst. De Divisie wordt gebruikt om de tekst te structureren in bijvoorbeeld verschillende hoofdstukken of paragrafen.&#xA;                        &#xA;                        Binnen OW is Divisie een subklasse van OP-object. Dit betekent dat er vanuit Divisie een verwijzing is naar de wId (identificatie) in OP ofwel de wId van de Divisie in OP en naar de identificatie van de regeling in OP, de wId van de regeling. Zo zorgt het OW dat er op het diepste inhoudelijke niveau een verwijzing is naar het OP-deel.&#xA;                        &#xA;                        In de vrijetekststructuur, zie Figuur 3 voor een UML diagram, zijn documenten gestructureerd in Divisie en Divisietekst element. Dit zijn dan ook de elementen waar de annotaties aan hangen. Dit betekent dat de inhoudelijke tekstgegevens worden aangeleverd in het IMOP-gedeelte en dat je vanuit OW verwijst naar deze Divisie. Vanuit OW kun je een of meerdere tekstdelen aangeven bij de Divisie. Een tekstdeel kan optioneel nog één of meerdere hoofdlijnen, gebiedsaanwijzingen, en/of locaties bevatten. Tevens kan er een Locatie direct gekoppeld zijn aan het tekstdeel of kan de locatie via de gebiedsaanwijzing gekoppeld zijn aan het tekstdeel. De locatie is een supertype van ofwel een lijn, punt, gebied of een groep van lijnen, punten of gebieden. Uiteindelijk heeft ieder subtype van locatie een geometrie die als los GML-bestand wordt meegeleverd.&#xA;                     "><figcaption>IMOW Vrije­Tekst</figcaption>
-            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="DivisieOfDivisietekst" coords="302,215,468,276" href="#global_class_Vrijetekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="406,21,664,155" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="182,350,441,505" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="1032,714,1257,837" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="Divisie" coords="126,14,383,153" href="#global_class_Vrijetekst_Divisie"><area shape="rect" alt="Hoofdlijn" coords="592,350,850,505" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="157,700,441,893" href="#global_class_OWobject_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="605,688,876,848" href="#global_class_Locatie_Locatie"></map><p>
+            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="DivisieOfDivisietekst" coords="200,215,365,276" href="#global_class_Vrijetekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="304,21,561,155" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="79,350,338,505" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="929,714,1155,837" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="Divisie" coords="23,14,280,153" href="#global_class_Vrijetekst_Divisie"><area shape="rect" alt="Hoofdlijn" coords="490,350,747,505" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="55,700,338,893" href="#global_class_OWobject_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="502,688,773,848" href="#global_class_Locatie_Locatie"></map><p>
                
                <p>Vrijetekststructuur in OP bouwt gebruikt twee elementtypen, namelijk: Divisie en Divisietekst.
                   Het hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten
@@ -3315,7 +4526,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -3487,7 +4698,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -3609,7 +4820,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>..80</td>
+                           <td>80</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -3648,7 +4859,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>..255</td>
+                           <td>255</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -3689,8 +4900,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -3821,8 +5040,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -3850,8 +5077,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -3885,8 +5120,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -3911,8 +5154,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -3937,8 +5188,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -4044,7 +5303,7 @@
                      <td>
                         
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         
                         </td>
                   </tr>
@@ -4315,7 +5574,7 @@
                         </td>
                      <td>
                         
-                        <p>Gebiedsaanwijzing bevat in deze Juridische Regel.</p>
+                        <p>Gebiedsaanwijzingen behorend bij deze Regel.</p>
                         </td>
                   </tr>
                   <tr>
@@ -4359,7 +5618,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -4496,7 +5755,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>..80</td>
+                           <td>80</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -4535,7 +5794,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>..80</td>
+                           <td>80</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -5129,7 +6388,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -5372,8 +6631,8 @@
                      <td>
                         
                         
-                        <p>Het object dat een gebied duidt waar bestemmingsplannen niet meer getoond hoeven te
-                           worden.</p>
+                        <p>Het object behorend bij een Omgevingsplan dat een gebied duidt waar bestemmingsplannen
+                           niet meer getoond hoeven te worden.</p>
                         
                         </td>
                   </tr>
@@ -5383,7 +6642,7 @@
                         
                         <ul>
                            
-                           <li>Bij een regeling hoort maximaal één Pons. </li>
+                           <li>Bij een regeling hoort maximaal één Pons.</li>
                            
                            <li>Bij een tijdelijk regelingdeel hoort nooit een Pons.</li>
                            </ul>
@@ -5435,7 +6694,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -5526,8 +6785,8 @@
                         </td>
                      <td>
                         
-                        <p>De locatieaanduiding begrenst de juridische werking van de regel in juridische zin,
-                           te weten dat de regel alleen binnen dit werkingsgebied werkingskracht heeft. </p>
+                        <p>De locatie behorende bij de juridische regel en daarmee de begrenzing van het gebied
+                           waarbinnen de regel werkingskracht heeft. </p>
                         </td>
                   </tr>
                   <tr>
@@ -5637,7 +6896,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -5786,7 +7045,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -6475,8 +7734,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -6515,8 +7782,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -6552,7 +7827,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>..255</td>
+                           <td>255</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -6649,8 +7924,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -6725,8 +8008,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -6933,8 +8224,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -6972,8 +8271,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -7048,8 +8355,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -7457,7 +8772,7 @@
          <h4>   Kaart - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_619D1C05_75E9_4a29_BBFB_F6454B1E4EC7.png" usemap="#imagemap-EAID_619D1C05_75E9_4a29_BBFB_F6454B1E4EC7" alt="Diagram &#xA;                        De klasse Kaart modelleert de onderdelen die nodig zijn om een kaart te benoemen en kaartlagen samen te stellen uit locatie en inhoudelijke informatie van andere OW-objecten.&#xA;                     "><figcaption>Kaart</figcaption>
-            </figure><map name="imagemap-EAID_619D1C05_75E9_4a29_BBFB_F6454B1E4EC7"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="807,674,1123,796" href="#global_class_Regeltekst_ActiviteitLocatieaanduiding"><area shape="rect" alt="JuridischeRegel" coords="89,201,279,363" href="#global_class_Regeltekst_JuridischeRegel"><area shape="rect" alt="Kaartextent" coords="784,67,940,234" href="#global_class_Kaart_Kaartextent"><area shape="rect" alt="Tekstdeel" coords="89,14,279,175" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Norm" coords="477,674,695,895" href="#global_class_Regeltekst_Norm"><area shape="rect" alt="Gebiedsaanwijzing" coords="129,685,413,882" href="#global_class_OWobject_Gebiedsaanwijzing"><area shape="rect" alt="Kaartlaag" coords="488,363,784,538" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Kaart" coords="457,33,737,249" href="#global_class_Kaart_Kaart"></map><p>
+            </figure><map name="imagemap-EAID_619D1C05_75E9_4a29_BBFB_F6454B1E4EC7"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="732,674,1048,796" href="#global_class_Regeltekst_ActiviteitLocatieaanduiding"><area shape="rect" alt="JuridischeRegel" coords="14,201,204,363" href="#global_class_Regeltekst_JuridischeRegel"><area shape="rect" alt="Kaartextent" coords="709,67,865,234" href="#global_class_Kaart_Kaartextent"><area shape="rect" alt="Tekstdeel" coords="14,14,204,175" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Norm" coords="402,674,620,895" href="#global_class_Regeltekst_Norm"><area shape="rect" alt="Gebiedsaanwijzing" coords="53,685,338,882" href="#global_class_OWobject_Gebiedsaanwijzing"><area shape="rect" alt="Kaartlaag" coords="413,363,709,538" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Kaart" coords="382,33,662,249" href="#global_class_Kaart_Kaart"></map><p>
                
                <p>De klasse Kaart modelleert de onderdelen die nodig zijn om een kaart te benoemen en
                   kaartlagen samen te stellen uit locatie en inhoudelijke informatie van andere OW-objecten.</p>
@@ -7668,7 +8983,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -7847,7 +9162,7 @@
                         </td>
                      <td>
                         
-                        <p>Identificieerbaar object in een OW-aanlevering</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
                   </tr>
                </tbody>
@@ -8239,8 +9554,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -8276,7 +9599,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>..255</td>
+                           <td>255</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -8375,8 +9698,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -8410,8 +9741,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -8446,8 +9785,16 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
                         </tr>
                      </tbody>
                   </table>
@@ -8841,940 +10188,6 @@
                   </div>
                </section>
             </section>
-         
-         </section>
-   </section>
-   <section id="global_package_Aanlevering">
-      <h3>Domein   Aanlevering</h3>
-      <section id="EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79">
-         <h4>   Aanlevering - overzicht</h4>
-         <div class="imageinfo overview">
-            <figure><img src="data/Images/EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79.png" usemap="#imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79" alt="Diagram &#xA;                        -- Definitie --&#xA;                        Het ID van de Regeling (aan de OP-kant).&#xA;                     "><figcaption>Aanlevering</figcaption>
-            </figure><map name="imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79"><area shape="rect" alt="OW-object" coords="476,243,747,383" href="#global_class_OWobject_OWobject"><area shape="rect" alt="OW-Bestand" coords="19,235,294,393" href="#global_class_Aanlevering_OWBestand"><area shape="rect" alt="OW-manifest" coords="14,14,253,153" href="#global_class_Aanlevering_OWmanifest"><area shape="rect" alt="OW-bestandverwijzing" coords="789,25,1010,146" href="#global_class_Aanlevering_OWbestandverwijzing"><area shape="rect" alt="OW-aanlevering" coords="404,15,640,152" href="#global_class_Aanlevering_OWaanlevering"></map><p>
-               
-               <p>-- Definitie --</p>
-               
-               <p>Het ID van de Regeling (aan de OP-kant).</p>
-               </p>
-         </div>
-      </section>
-      <section>
-         <h4>Objecttypen   </h4>
-         
-         <section id="global_class_Aanlevering_OWbestandverwijzing">
-            <h5>   OW-bestandverwijzing</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>OW-bestandverwijzing</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Verwijzing naar een OW-bestand in deze OW-Aanlevering.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <ul>
-                           
-                           <li>Als een bestand genoemd wordt dan moet het aanwezig zijn in de aanlevering. (LVBB1016)</li>
-                           </ul>
-                        
-                        <ul>
-                           
-                           <li>bij object­Type zijn de volgende waardes toegestaan: Activiteit, Divisie, Gebiedsaanwijzing,
-                              Gebied, Gebiedengroep, Hoofdlijn, Punt, Puntengroep, Lijn, Lijnengroep, Regeltekst,
-                              Regel­Voor­Iedereen, Instructieregel, Omgevingswaarderegel, Omgevingsnorm, Omgevingswaarde,
-                              Pons, Tekstdeel, Kaart, Kaartlaag, Ambtsgebied of Divisietekst. (LVBB1025)</li>
-                           </ul>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_OWbestandverwijzing_naam">naam</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_OWbestandverwijzing_objectType">object­Type</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1 .. *</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        OW-bestandverwijzing
-                        [ 1 .. * ]
-                        
-                        <a class="link" href="#detail_association_Aanlevering_OWbestandverwijzing_bestandinaanlevering">bestandinaanlevering</a>
-                        
-                        
-                        <a class="link" href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a>
-                        
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_Aanlevering_OWBestand">
-            <h5>   OW-Bestand</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>OW-Bestand</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Specifiek bestand in Aanlevering.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        
-                        <p>Dit XML bestand bevat een lijst met OW-objecten.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_OWBestand_dataset">dataset</a>
-                        </td>
-                     <td>
-                        
-                        <p>Omschrijving van de dataset.</p>
-                        </td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_OWBestand_gebied">gebied</a>
-                        </td>
-                     <td>
-                        
-                        <p>Naam van het gebied.</p>
-                        </td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_OWBestand_leveringsID">leverings­ID</a>
-                        </td>
-                     <td>
-                        
-                        <p>Een identificatie van de levering.</p>
-                        </td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_OWBestand_objectTypen">object­Typen</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1 .. *</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
-                        
-                        [ 1 .. * ]
-                        
-                        <a class="link" href="#detail_association_OWobject_OWobject_owbestandsinhoud">owbestandsinhoud</a>
-                        
-                        OW-Bestand
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_Aanlevering_OWmanifest">
-            <h5>   OW-manifest</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>OW-manifest</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Bij een Aanlevering aan de LVBB meld je in het OW-Manifest welke OW-aanleveringen
-                           er zijn. Als een Besluit meerdere Regelingen wijzigt vermeldt het OW-manifest meerdere
-                           OW-aanleveringen.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_OWmanifest_domein">domein</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_OWmanifest_IMOWversie">IMOWversie</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a>
-                        
-                        [ 1 .. * ]
-                        
-                        <a class="link" href="#detail_association_Aanlevering_OWaanlevering_aanleveringeninaanlevering">aanleveringeninaanlevering</a>
-                        
-                        OW-manifest
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_Aanlevering_OWaanlevering">
-            <h5>   OW-aanlevering</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>OW-aanlevering</td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_OWaanlevering_WorkIDRegeling">Work­IDRegeling</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Aanlevering_OWaanlevering_DoelID">Doel­ID</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        OW-aanlevering
-                        [ 1 .. * ]
-                        
-                        <a class="link" href="#detail_association_Aanlevering_OWaanlevering_aanleveringeninaanlevering">aanleveringeninaanlevering</a>
-                        
-                        
-                        <a class="link" href="#global_class_Aanlevering_OWmanifest">OW-manifest</a>
-                        
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Aanlevering_OWbestandverwijzing">OW-bestandverwijzing</a>
-                        
-                        [ 1 .. * ]
-                        
-                        <a class="link" href="#detail_association_Aanlevering_OWbestandverwijzing_bestandinaanlevering">bestandinaanlevering</a>
-                        
-                        OW-aanlevering
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         </section>
-      <section>
-         <h4>Attribuut- en relatiesoort details  </h4>
-         
-         <section>
-            <h5>Objecttype details  </h5>
-            
-            <section id="detail_class_Aanlevering_OWbestandverwijzing">
-               <h6>   OW-bestandverwijzing</h6>
-               
-               <div class="deepheader" id="detail_attribute_Aanlevering_OWbestandverwijzing_naam">
-                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWbestandverwijzing">OW-bestandverwijzing</a> naam</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>naam</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>..255</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_Aanlevering_OWbestandverwijzing_objectType">
-                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWbestandverwijzing">OW-bestandverwijzing</a> object­Type</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>object­Type</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>..80</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1 .. *</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_association_Aanlevering_OWbestandverwijzing_bestandinaanlevering">
-                  <h7>Relatiesoort details  <a href="#global_class_Aanlevering_OWbestandverwijzing">OW-bestandverwijzing</a> bestandinaanlevering</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>bestandinaanlevering</td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_Aanlevering_OWBestand">
-               <h6>   OW-Bestand</h6>
-               
-               <div class="deepheader" id="detail_attribute_Aanlevering_OWBestand_dataset">
-                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWBestand">OW-Bestand</a> dataset</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>dataset</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Omschrijving van de dataset.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_Aanlevering_OWBestand_gebied">
-                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWBestand">OW-Bestand</a> gebied</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>gebied</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Naam van het gebied.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>..80</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_Aanlevering_OWBestand_leveringsID">
-                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWBestand">OW-Bestand</a> leverings­ID</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>leverings­ID</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Een identificatie van de levering.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>.. 255</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_Aanlevering_OWBestand_objectTypen">
-                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWBestand">OW-Bestand</a> object­Typen</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>object­Typen</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>.. 80</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1 .. *</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_Aanlevering_OWmanifest">
-               <h6>   OW-manifest</h6>
-               
-               <div class="deepheader" id="detail_attribute_Aanlevering_OWmanifest_domein">
-                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWmanifest">OW-manifest</a> domein</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>domein</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>..80</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_Aanlevering_OWmanifest_IMOWversie">
-                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWmanifest">OW-manifest</a> IMOWversie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>IMOWversie</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_Aanlevering_OWaanlevering">
-               <h6>   OW-aanlevering</h6>
-               
-               <div class="deepheader" id="detail_attribute_Aanlevering_OWaanlevering_WorkIDRegeling">
-                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a> Work­IDRegeling</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>Work­IDRegeling</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>..255</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_Aanlevering_OWaanlevering_DoelID">
-                  <h7>Attribuutsoort details  <a href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a> Doel­ID</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>Doel­ID</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>..255</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_association_Aanlevering_OWaanlevering_aanleveringeninaanlevering">
-                  <h7>Relatiesoort details  <a href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a> aanleveringeninaanlevering</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>aanleveringeninaanlevering</td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_Aanlevering_OWmanifest">OW-manifest</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            </section>
-         
-         
-         
-         
          
          </section>
    </section>
