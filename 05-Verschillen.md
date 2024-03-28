@@ -3,7 +3,7 @@
 Het IMOW is een implementatie van het conceptuele model CIM-OW. Niet alles uit
 het CIM-OW is één op één overgenomen in het IMOW. Dit hoofdstuk beschrijft de
 verschillen: CIM-OW aspecten die niet in het IMOW zitten worden geduid in
-paragraaf 5.1. en paragraaf 5.2 bescrijft de delen van het IMOW die niet in het
+paragraaf 5.1. en paragraaf 5.2 beschrijft de delen van het IMOW die niet in het
 CIM-OW zitten.
 
 ## CIM-OW-aspecten niet in IMOW {#19F408D9}
