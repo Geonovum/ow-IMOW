@@ -84,15 +84,13 @@ Hoofdstuk [7](#210F8E1C).
 
 ## Leeswijzer {#28F55C8C}
 
-Dit document is als volgt opgebouwd: . Hoofdstuk 2 bevat de gegevensdefinites van OW-objecten. Hoofdstuk <a href='#3F5FA62D'>3</a> gaat gedetailleerd in op hoe de
+Dit document is als volgt opgebouwd: . Hoofdstuk 2 bevat de gegevensdefinites van 
+OW-objecten. Hoofdstuk <a href='#3F5FA62D'>3</a> gaat gedetailleerd in op hoe de
 OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
-bestand dat aangeleverd kan worden. Hoofdstuk <a href='#126CC8D0'>4</a> beschrijft
-implementatiekeuzes die in het IMOW gemaakt zijn. Hoofdstuk <a href='#2577D13E'>5</a>
-beschrijft enkele aspecten uit STOP die relevant zijn voor de werking van OW en
-geeft richtlijnen over de wijze waarop OW zich verhoudt tot STOP. Hoofdstuk
-<a href='#210F8E1C'>7</a> beschrijft het wijzigen van OW-objecten.
+bestand dat aangeleverd kan worden. Hoofdstuk
+<a href='#210F8E1C'>7</a> beschrijft het wijzigen van OW-objecten. Hoofdstuk <a href='#2577D13E'>5</a>
+beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. 
 
-#
 
 **TODO:** Hoofdstuk toevoegen met uitgangspunten modellering. zie <https://docs.geostandaarden.nl/dso/dso-cim-op/#uitgangspunten-voor-modellering>
 
@@ -100,4 +98,6 @@ geeft richtlijnen over de wijze waarop OW zich verhoudt tot STOP. Hoofdstuk
 
 **TODO:** begrippenlijst uitbreiden.
 
+- <dfn>Besluit</dfn>: Een tekst die de vaststelling of wijziging van (de geldigheid van) een regeling of informatieobject beschrijft. Met andere woorden: Een besluit beschrijft precies hoe een BG een nieuwe regeling vaststelt, wijzigingen op een regeling doorvoert of de inwerkingtreding van een regeling of regelingversie bepaalt. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_besluit.html) )
 - <dfn>Regeling</dfn>: Een regeling beschrijft algemeen geldende voorschriften die vastgesteld worden via een besluit van algemene strekking. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_regeling.html) )
+- <dfn>Bronhouderkoppelvlak</dfn>:  Het bronhouderkoppelvlak is een technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en Beschikbaar stellen) en (software van) een bevoegd gezag. In dat koppelvlak worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke, proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html) )
