@@ -96,8 +96,9 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.
 
 ## Begrippen
 
-**TODO:** begrippenlijst uitbreiden.
+<dfn>Besluit</dfn>: Een tekst die de vaststelling of wijziging van (de geldigheid van) een regeling of informatieobject beschrijft. Met andere woorden: Een besluit beschrijft precies hoe een BG een nieuwe regeling vaststelt, wijzigingen op een regeling doorvoert of de inwerkingtreding van een regeling of regelingversie bepaalt. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_besluit.html))
 
-- <dfn>Besluit</dfn>: Een tekst die de vaststelling of wijziging van (de geldigheid van) een regeling of informatieobject beschrijft. Met andere woorden: Een besluit beschrijft precies hoe een BG een nieuwe regeling vaststelt, wijzigingen op een regeling doorvoert of de inwerkingtreding van een regeling of regelingversie bepaalt. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_besluit.html) )
-- <dfn>Regeling</dfn>: Een regeling beschrijft algemeen geldende voorschriften die vastgesteld worden via een besluit van algemene strekking. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_regeling.html) )
-- <dfn>Bronhouderkoppelvlak</dfn>:  Het bronhouderkoppelvlak is een technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en Beschikbaar stellen) en (software van) een bevoegd gezag. In dat koppelvlak worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke, proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html) )
+
+<dfn>Bronhouderkoppelvlak</dfn>:  Het bronhouderkoppelvlak is een technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en Beschikbaar stellen) en (software van) een bevoegd gezag. In dat koppelvlak worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke, proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html))
+
+<dfn>Regeling</dfn>: Een regeling beschrijft algemeen geldende voorschriften die vastgesteld worden via een besluit van algemene strekking. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_regeling.html))

@@ -34,12 +34,16 @@ Regels:
 
 - Bij een OW-aanlevering met artikelstructuur mogen de volgende OW-objecten worden aangeleverd: Regeltekst, Juridische regel, Activiteit,
 Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart en Regelingsgebied.
-- Bij een OW-aanlevering met vrijetekststructuur mogen de volgende OW-objecten worden aangeleverd: Divisie, Divisietekst, Tekstdeel,
+- Bij een OW-aanlevering met vrijetekststructuur mogen de volgende OW-objecten worden aangeleverd: Divisietekst, Tekstdeel,
 Hoofdlijn, Gebiedsaanwijzing, Kaart, Regelingsgebied, Locatie.
 
 ### Het aanleveren van Geometrie objecten
 
-Geometrie objecten in het IMOW zijn gedeeld door STOP en IMOW en worden conform STOP als onderdeel van de GIO aangeleverd. Ze zitten niet in een OW-aanleverling. Vanuit de OW-objecten Gebied, Lijn en Punt wordt middels de relatie 'geometrie' verwezen naar de geometrie in de GIO. Deze verwijzing gebeurt via het 'id' attribuut in de GIO.
+Geometrie objecten in het IMOW zijn gedeeld door STOP en IMOW en worden conform
+STOP als onderdeel van de GIO aangeleverd. Ze zitten niet in een OW-aanleverling.
+Vanuit de OW-objecten Gebied, Lijn en Punt wordt middels de relatie 'geometrie'
+verwezen naar de geometrie in de GIO. Deze verwijzing gebeurt via het 'id'
+attribuut in de GIO.
 
 ## Regels voor OW-Aanlevering
 
