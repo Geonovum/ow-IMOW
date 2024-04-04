@@ -1,5 +1,3 @@
-**TODO:** Deze hoog over abstract nog een keer herschrijven naar iets nuttigs.
-
 Dit document beschrijft het Informatiemodel Omgevingswet (IMOW) dat gebruikt
 wordt in de keten van plan tot publicatie voor het toekennen van
 machine-leesbare informatie aan regelingen. Het IMOW is gebaseerd op het

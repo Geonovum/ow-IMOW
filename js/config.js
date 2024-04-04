@@ -4,12 +4,11 @@ let respecConfig = {
   // title is verplicht! Neem hier de titel van het document op ----------------------
   title: "Informatiemodel Omgevingswet (IMOW)",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "wv",                   // Werkversie
-  //specStatus: "cv",               // Consultatieversie
+  //specStatus: "wv",                   // Werkversie
+  specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
   //specStatus: "def",              // Vastgestelde versie
-  //specStatus: "basis",            // Basis Document
-  //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
+
   specType: "IM",                 // Informatie Model
 
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
@@ -30,7 +29,7 @@ let respecConfig = {
   //publishDate: "2023-03-28",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   //publishVersion: "0.0.2",
-  //previousVersion: "0.0.1",
+  previousVersion: "3.0.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
   previousPublishDate: "2023-12-27",
   previousMaturity: "def",

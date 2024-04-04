@@ -15,7 +15,7 @@ De ConsolidatieInformatie bepaalt de tijdlijn versies van de regelingen en
 informatieobjecten die ontstaan uit een Besluit. Diezelfde tijdlijn geldt voor
 de OW-objecten.
 
-Figuur TODO bevat toon de klasse 'Consolidatie Informatie' van het CIM-OP. Deze
+Figuur 10 bevat toon de klasse 'Consolidatie Informatie' van het CIM-OP. Deze
 bevat de informatie die noodzakelijk is om de aanlevering te consolideren tot
 een Regeling. Voor IMOW zijn de volgende aspecten van belang:
 
@@ -29,16 +29,12 @@ een Regeling. Voor IMOW zijn de volgende aspecten van belang:
     <figcaption>Consolidatieinformatie in STOP</figcaption>
 </figure>
 
-**TODO**: Voeg hier figuur toe uit CIM-OP voor consolidatieInformatie.
-
-**TODO**: In de vorige versie van het IMOW stond dat er een tijdstempel beschikbaarOp zou bestaan in STOP en dat die gebruikt wordt in het DSO. Die zie ik helemaal niet in CIM-OP.
-
 ## GIO’s en Norm GIO’s {#4541BABA}
 
 Bij het aanleveren van een besluit volgens STOP worden
 geografische objecten aangeleverd als GIO’s (geografische informatieobjecten).
 Dit is één van de twee soorten informatieobjecten die in STOP kunnen worden
-meegeleverd (de andere zijn PDF-documenten). Figuur TODO bevat het UML diagram 
+meegeleverd (de andere zijn PDF-documenten). Figuur 11 bevat het UML diagram 
 van de 'GIO versie' uit het CIM-OP. Voor IMOW zijn de volgende aspecten van belang:
 
 - Een 'Gio vaststelling' stelt een versie van een GIO vast. Hierin heeft iedere
@@ -47,14 +43,12 @@ GeometrieRef naar een Geometrie wordt verwezen wordt deze UUID gebruikt.
 - Sommige GIO's bevatten informatie over normen bevatten.
 - Een 'Gio vaststelling' bevat 'Geografische context' die informatie bevat over
   de context ten opzichte waarvan het GIO is vastgesteld.
-- FRBRWork en FGRBExpression bevatten de identificatie van het GIO.
-- Een GIO bevat één of meer Locatie objecten. Deze Locaties komen niet overeen met OW:Locatie
-  ook de naam van de locatie is niet rechtstreeks gekoppeld.
-- De UUID van de Geometrie wordt ontdubbeld door het DSO, kortom: de OW-Locatie
-  met de noemer ‘Centrumgebied’ met geometrieReferentie 
-  ‘d0993715-c485-4e63-b35d-8f68c3cbee3b’ mag in meerdere GIO’s als Locatie
-  staan. Altijd moet de geometrie behorende bij
-  ‘d0993715-c485-4e63-b35d-8f68c3cbee3b’ inhoudelijk dezelfde zijn.
+- FRBRWork en FRBRExpression bevatten de identificatie van het GIO.
+- Een GIO bevat één of meer Locatie objecten. Deze Locaties komen niet overeen
+  met OW:Locatie ook de naam van de locatie is niet rechtstreeks gekoppeld.
+- Wanneer in aanlevering van GIO's meedere keren exact dezelfde geometrie wordt gebruikt
+  kan je in beide gevallen dezelfde UUID gebruiken. Het DSO zorgt er dan voor de
+  geometrie slechts één keer wordt doorgeleverd.
 - Indien er gebruik gemaakt wordt van groepen, dan dient iedere groep
  een symbolisatie te hebben (dit wordt vastgelegd in het vaststellingsdeel).
 - Bij Norm-GIO’s dienen aanvullende gegevens vastgelegd te worden.
@@ -78,7 +72,7 @@ de Locaties van het GIO bevatten een 'Normwaarde'. Hiervoor geldt:
 - Het is toegestaan om een geometrie die gebruikt wordt voor een Norm ook te 
   gebruiken bij andere OW-objecten.
 - Iedere normwaarde dient een symbolisatie te hebben, dit wordt vastgelegd
-  in het vaststellingsdeel van het GIO. (**TODO**: dit zie ik nog niet terug in CIMOW)
+  in het vaststellingsdeel van het GIO. (**TODO**: dit zie ik nog niet terug in CIM-OP)
 
 <figure>
     <img src='media/cim-op-gio.png'></img>

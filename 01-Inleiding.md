@@ -1,6 +1,6 @@
 # Inleiding {#3FE27A0C}
 
-**TODO:** Paul Jansen vragen om een inleiding te schrijven.
+<!-- TODO: Paul Jansen vragen om een inleiding te schrijven. -->
 
 In de keten van plan tot publicatie van het DSO kan machine-leesbare informatie
 aan Regelingen worden toegevoegd in de vorm van OW-objecten. De objecten die
@@ -55,7 +55,7 @@ is onderdeel van de standaard die regels voor een aanlevering vastlegt. Ondersta
 
 ## Toepassingsgebied
 
-**TODO:** eerst paragraaf herschrijven.
+<!-- TODO: Eerste paragraaf herschrijven. -->
 
 Het IMOW schrijft voor hoe je de tekst van een Regeling (zoals beschreven in STOP) machine leesbaar kunt maken door de tekst te verrijken met
 annotaties in de vorm van een collectie OW-objecten en hoe je die kunt toevoegen aan een aanlevering. Onder annoteren verstaan we het toevoegen van gegevens aan (onderdelen van) een omgevingsdocument die de inhoud van het omgevingsdocument voor de computer vertalen. Door het annoteren kan een viewer locaties en andere gegevens op een kaart en bij een tekst weergeven. Het annoteren zorgt er ook voor dat een omgevingsdocument op bepaalde kenmerken doorzoekbaar is. In het geval van omgevingsdocumenten met artikelstructuur waarin regels over activiteiten worden gesteld, helpt het annoteren ook bij het verbinden van toepasbare regels, oftewel vragenbomen, aan regels met locaties. Activiteiten spelen een centrale rol in het DSO en deze worden verrijkt met duiding op de kaart de naam van de activiteit en de activiteitregelkwalificatie. Ook functies of
@@ -82,6 +82,15 @@ Er zijn verschillende scenario's waarmee met STOP een Regeling via
 een Aanlevering kan wijziging. Deze scenario's staan beschreven in
 Hoofdstuk [7](#210F8E1C).
 
+# uitgangspunten van modellering
+
+De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
+
+- Conformiteit met Metamodel voor informatiemodellering, MIM 1.1 [[MIM]].
+- Model is opgesteld in UML klassediagrammen. Voor algemene uitleg over UML klassediagram zie wikipedia: UML klassediagram..
+- Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
+
+
 ## Leeswijzer {#28F55C8C}
 
 Dit document is als volgt opgebouwd: . Hoofdstuk 2 bevat de gegevensdefinites van 
@@ -91,8 +100,6 @@ bestand dat aangeleverd kan worden. Hoofdstuk
 <a href='#210F8E1C'>7</a> beschrijft het wijzigen van OW-objecten. Hoofdstuk <a href='#2577D13E'>5</a>
 beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. 
 
-
-**TODO:** Hoofdstuk toevoegen met uitgangspunten modellering. zie <https://docs.geostandaarden.nl/dso/dso-cim-op/#uitgangspunten-voor-modellering>
 
 ## Begrippen
 

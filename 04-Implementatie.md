@@ -15,18 +15,14 @@ OW-manifest bevat niet de GML-bestanden; deze staan in het (OP-)manifest.
 
 Voor een OW-aanlevering, bestaande uit het 'manifest-ow.xml' bestand en een aantal bestanden met OW-object objecten gelden de volgende regels:
 
-**TODO** versienummer aanpassen.
-
-**Regel:** Het manifest-ow.xml bestand moet voldoen aan het xsd: <https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/bestanden-ow/generiek/manifest-ow.xsd>(LVBB1032)
+**Regel:** Het manifest-ow.xml bestand moet voldoen aan het in de map bestanden-ow/generiek/manifest-ow.xsd (LVBB1032)
 
 Zie [paragraaf](#global_package_Aanlevering) voor een uitleg van de XML elementen in dit bestand.
 
 ### Het aanleveren van OW-objecten in OW-bestanden {#4BFC4412}
 
-TODO: Verwijzing aanpassen.
-
 In het OW-manifest is beschreven welke OW-bestanden er zijn. Deze OW-bestanden die de OW-objecten bevatten moeten voldoen aan het XML schema in:
-<https://register.geostandaarden.nl/xmlschema/tpod/v2.0.0/>.
+<https://github.com/Geonovum/ow-IMOW/tree/main/xmlschema/v4.0.0-rc1>.
 
 Relaties in het IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten op te nemen.
 
