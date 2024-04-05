@@ -16,7 +16,6 @@ Hiermee wordt de werkafspraak die het gebruik van het attribuut hoogte verbiedt 
 
 De bestaande werkafspraak om de klasse SymbolisatieItem niet te gebruik wordt hiermee opgenomen in het IMOW. In een volgende versie van het IMOW komt een klasse met vergelijkbare functionaliteit. Onderdeel van de migratie naar deze nieuwe situatie is om allen SymbolisiatieItem objecten in het DSO te verwijderen. Omdat er in Productie geen SymbolisatieItem objecten zijn zal de impact hiervan gering zijn.
 
-## Doorvoeren wijzigingen Omgevingsnorm en Omgevingswaarde
 
 ## OW-aanlevering heeft extra kenmerk expressionIdentifier
 
@@ -28,13 +27,22 @@ Het voordeel van deze wijziging is dat het intrekken van een regeling eenvoudige
 
 Deze wijziging heeft vooral impact op de volgende [paragraaf](#5952605C).
 
+## Het attribuut idealisatie moet dezelfde waarde hebben voor alle Juridische regels
+
+Het attribuut idealisatie moet dezelfde waarde hebben voor alle Juridische regels bij een
+Regeltekst / alle Tekstdelen bij een Divisie of een Divisietekst
 
 ## Waarschuwing toevoegen voor geometrie buiten het ambtsgebied
-
-
 
 ## Is procedureStatus nog wel nodig?
 
 Het veld OW-object.prodecureStatus moet verplicht de waarde 'ontwerp' hebben voor ontwerbesluiten. Dit kan ook automatisch afgeleid worden. Voorstel is het veld te schrappen.
+
+## Werkafspraken voor Normwaarde in Norm
+
+- Van de drie kenmerken kwalitatieveWaarde, kwantitatieveWaarde en waardeInRegeltekst is er precies één ingevuld.
+- Alleen normwaarden waarvan per individueel punt van de locatie te bepalen zijn of ze geldig zijn zijn toegestaan. 
+- De locaties van een Norm mogen elkaar niet overlappen.
+
 
 

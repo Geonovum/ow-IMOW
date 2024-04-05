@@ -1,4 +1,4 @@
-# Inleiding {#3FE27A0C}
+# Inleiding {#H1-Inleiding}
 
 <!-- TODO: Paul Jansen vragen om een inleiding te schrijven. -->
 
@@ -13,10 +13,10 @@ IMOW is als logisch model de uitwerking van het conceptuele model CIM-OW [[CIMOW
 <figcaption>Overzicht van alle Conceptuele Informatiemodellen in het DSO</figcaption>
 </figure>
 
-In paragraaf <a href='#7148BD3C'>1.1</a> wordt een context geboden van de
+In paragraaf <a href='#P1-1-context'>1.1</a> wordt een context geboden van de
 standaard. Paragraaf <a href='#28F55C8C'>1.2</a> bevat de leeswijzer.
 
-## Context standaard {#7148BD3C}
+## Context standaard {#P1-1-context}
 
 Wanneer het bevoegd gezag een Regeling (bijvoorbeeld een omgevingsplan) vaststelt
 gebeurt dit via een besluit dat het bevoegd gezag digitaal aan de Landelijke
@@ -82,7 +82,7 @@ de toepassingsprofielen) worden verschillende objecten meegeleverd. Voor beide t
 tekststructuren is een diagram toegevoegd met hierin de toegelaten objecttypen,
 attributen en relaties.
 
-Er zijn verschillende scenario's waarmee met STOP een Regeling via
+Er zijn verschillende scenario's waarmee met STOP een <a>Regeling</a> via
 een Aanlevering kan wijziging. Deze scenario's staan beschreven in
 Hoofdstuk [7](#210F8E1C).
 
@@ -98,14 +98,15 @@ De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 ## Leeswijzer {#28F55C8C}
 
 Dit document is als volgt opgebouwd: . Hoofdstuk 2 bevat de gegevensdefinites van 
-OW-objecten. Hoofdstuk <a href='#3F5FA62D'>3</a> gaat gedetailleerd in op hoe de
+OW-objecten. Hoofdstuk <a href='#H4-Implementatie'>3</a> gaat gedetailleerd in op hoe de
 OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
 bestand dat aangeleverd kan worden. Hoofdstuk
 <a href='#210F8E1C'>7</a> beschrijft het wijzigen van OW-objecten. Hoofdstuk <a href='#2577D13E'>5</a>
 beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. 
 
-
 ## Begrippen
+
+De volgende begrippen worden gebruikt in dit document
 
 <dfn>Besluit</dfn>: Een tekst die de vaststelling of wijziging van (de geldigheid van) een regeling of informatieobject beschrijft. Met andere woorden: Een besluit beschrijft precies hoe een BG een nieuwe regeling vaststelt, wijzigingen op een regeling doorvoert of de inwerkingtreding van een regeling of regelingversie bepaalt. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_besluit.html))
 
