@@ -61,6 +61,8 @@ is onderdeel van de standaard die regels voor een aanlevering vastlegt. Ondersta
 
 <!-- TODO: Eerste paragraaf herschrijven. -->
 
+Het toepassingsgebied van IMOW is het machineleesbaar maken van teksten en locatie van regelingen binnen de omgevingswet.
+
 Het IMOW schrijft voor hoe je de tekst van een Regeling (zoals beschreven in STOP) machine leesbaar kunt maken door de tekst te verrijken met
 annotaties in de vorm van een collectie OW-objecten en hoe je die kunt toevoegen aan een aanlevering. Onder annoteren verstaan we het toevoegen van gegevens aan (onderdelen van) een omgevingsdocument die de inhoud van het omgevingsdocument voor de computer vertalen. Door het annoteren kan een viewer locaties en andere gegevens op een kaart en bij een tekst weergeven. Het annoteren zorgt er ook voor dat een omgevingsdocument op bepaalde kenmerken doorzoekbaar is. In het geval van omgevingsdocumenten met artikelstructuur waarin regels over activiteiten worden gesteld, helpt het annoteren ook bij het verbinden van toepasbare regels, oftewel vragenbomen, aan regels met locaties. Activiteiten spelen een centrale rol in het DSO en deze worden verrijkt met duiding op de kaart de naam van de activiteit en de activiteitregelkwalificatie. Ook functies of
 beperkingengebieden worden geduid. De gegevens die aangeleverd worden vanuit het IMOW helpen
@@ -86,15 +88,6 @@ Er zijn verschillende scenario's waarmee met STOP een <a>Regeling</a> via
 een Aanlevering kan wijziging. Deze scenario's staan beschreven in
 Hoofdstuk [7](#210F8E1C).
 
-# uitgangspunten van modellering
-
-De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
-
-- Conformiteit met Metamodel voor informatiemodellering, MIM 1.1 [[MIM]].
-- Model is opgesteld in UML klassediagrammen. Voor algemene uitleg over UML klassediagram zie wikipedia: UML klassediagram..
-- Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
-
-
 ## Leeswijzer {#28F55C8C}
 
 Dit document is als volgt opgebouwd: . Hoofdstuk 2 bevat de gegevensdefinites van 
@@ -114,3 +107,25 @@ De volgende begrippen worden gebruikt in dit document
 <dfn>Bronhouderkoppelvlak</dfn>:  Het bronhouderkoppelvlak is een technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en Beschikbaar stellen) en (software van) een bevoegd gezag. In dat koppelvlak worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke, proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html))
 
 <dfn>Regeling</dfn>: Een regeling beschrijft algemeen geldende voorschriften die vastgesteld worden via een besluit van algemene strekking. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_regeling.html))
+
+# uitgangspunten van modellering
+
+De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
+
+- Conformiteit met Metamodel voor informatiemodellering, MIM 1.1 [[MIM]].
+- Model is opgesteld in UML klassediagrammen. Voor algemene uitleg over UML klassediagram zie wikipedia: UML klassediagram..
+- Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
+
+# UML-Diagrammen
+
+In de UML diagrammen van het logische model zijn de termen hoofdletter-gevoelig en bevatten geen spaties. Deze schrijfwijze wordt ook in de beschrijving van het model gebruikt als er aan termen wordt gerefereerd. In de diagrammen zijn de objecttypen aan te klikken en wordt er gelinkt naar de beschrijving opgenomen in de objectcatalogus. De in de catalogus benoemde metagegevens zoals bijvoorbeeld Naam, Definitie, Indicatie abstract object zijn termen uit het Metamodel Informatiemodellering [[MIM]].
+
+Voor het inzoomen in de UML diagrammen kan het best het diagram in een apart tabblad van de browser worden geopenend. Afhankelijk van het type browser is dit meestal via een rechtermuisklik en 'open in nieuw tabblad'.
+
+In het volgende hoofdstuk zijn de UML diagrammen van het IMOW opgenomen. Er is een onderverdeling naar verschillende subdomeinen gemaakt:
+- Aanlevering
+- OW-object
+- Artikelstructuur
+- Vrijetekststructuur
+- Locatie
+- Kaart
