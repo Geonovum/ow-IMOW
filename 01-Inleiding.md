@@ -2,12 +2,16 @@
 
 <!-- TODO: Paul Jansen vragen om een inleiding te schrijven. -->
 
-In de keten van plan tot publicatie van het DSO kan machine-leesbare informatie
-aan Regelingen worden toegevoegd in de vorm van OW-objecten. De objecten die
-kunnen worden toegevoegd zijn vastgelegd in het Informatiemodel Omgevingswet
-(IMOW) en staan in dit document beschreven. Het IMOW is gebaseerd opet
-conceptuele model CIM-OW [[CIMOW]]. CIM-OW beschrijft het DSO op een conceptueel
-niveau.
+Het Informatiemodel Omgevingswet (IMOW) is de toepassing van het CIM-OW op het niveau van gegevensuitwisseling. Het is daarmee ook gekoppeld aan de Standaard voor Officiële Publicaties (STOP) die beschrijft hoe officiële publicaties moeten worden opgesteld en aangeleverd om te kunnen worden bekendgemaakt en gepubliceerd binnen de Landelijke voorziening bekendmaken en beschikbaarstellen (LVBB). 
+
+Voor het domein van de Omgevingswet en daaraan gekoppeld Digitaal Stelsel Omgevingswet (DSO) is een nadere specificatie van STOP opgesteld en beschreven in: ToepassingsProfiel voor OmgevingsDocumenten (TPOD). IMOW is daarin het informatiemodel dat is toegespitst op de keten ‘Van plan tot publicatie’ van het DSO. IMOW bepaalt hoe machineleesbare-informatie aan Regelingen wordt toegevoegd in de vorm van OW-objecten. IMOW is bedoeld voor bouwers van plansoftware en voor technisch ingestelde medewerkers van bevoegde gezagen en adviesbureaus.
+
+IMOW is als logisch model de uitwerking van het conceptuele model CIM-OW [[CIMOW]]. In onderstaand figuur zijn de conceptuele informatiemodellen weergegeven binnen het DSO. Het IMOW is de toepassing van het CIM-OW op het niveau van gegevens.
+
+<figure id="Figure-CIM-Overzicht">
+<img src="media/Stelsel van CIMs.png" alt="">
+<figcaption>Overzicht van alle Conceptuele Informatiemodellen in het DSO</figcaption>
+</figure>
 
 In paragraaf <a href='#7148BD3C'>1.1</a> wordt een context geboden van de
 standaard. Paragraaf <a href='#28F55C8C'>1.2</a> bevat de leeswijzer.
