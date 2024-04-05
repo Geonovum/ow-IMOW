@@ -116,18 +116,12 @@ geldt:
 **Regel:** De waardes van 'workIDRegeling' en 'doelID' van de OW-aanlevering
 moeten overeenkomen met de workIdentificatie en doel van het besluit.
 
-### Aanlevering bij Besluit dat Regeling intrekt {#5952605C}
+### Beëindigen van OW-objecten behorend bij een ingetrokken regeling {#5952605C}
 
-Bij het ontwikkelen van STOP-IC is het de intentie om bij het intrekken van een
-Regeling automatisch alle OW-objecten behorend bij die Regeling te beëindigen.
-In dat geval hoeven de OW-objecten behorend bij die Regeling niet meer expliciet
-beëindigd te worden.
+Wanneer een Regeling wordt ingetrokken worden alle OW-objecten bij die regeling beëindigd.  De beïndiging hoeft niet apart te worden aangeleverd.
 
-**Regel:** De intrekking van een Regeling is niet gekoppeld aan een
-OW-aanlevering.
+**Regel:** Aan de intrekking van een Regeling is geen OW-aanlevering gekoppeld.
 
-Immers, alle OW-objecten behorend bij de regeling worden automatisch
-ingetrokken.
 
 ### Het aanleveren van een Ontwerpbesluit
 

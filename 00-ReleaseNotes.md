@@ -20,7 +20,14 @@ De bestaande werkafspraak om de klasse SymbolisatieItem niet te gebruik wordt hi
 
 ## OW-aanlevering heeft extra kenmerk expressionIdentifier
 
-## Automatisch beëindigen van OW-objecten bij het intrekken van Regelingen
+## OW-objecten worden automatisch beëindigd bij het intrekken van een regeling
+
+In eerdere versies van het IMOW werd beschreven dat bij het intrekken van een regeling het bevoegd gezag zelf verantwoordelijk is voor het beëindigen van de aan de regeling gekoppelde OW-objecten. Deze wijziging zorg ervoor dat die OW-objecten automatisch worden ingetrokken.
+
+Het voordeel van deze wijziging is dat het intrekken van een regeling eenvoudiger wordt.
+
+Deze wijziging heeft vooral impact op de volgende [paragraaf](#5952605C).
+
 
 ## Waarschuwing toevoegen voor geometrie buiten het ambtsgebied
 
