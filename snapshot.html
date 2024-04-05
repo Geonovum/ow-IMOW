@@ -629,7 +629,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         
                         <ul>
                            
-                           <li>bij object­Type zijn de volgende waardes toegestaan: Activiteit, Divisie, Gebiedsaanwijzing,
+                           <li>bij object­Type zijn de volgende waardes toegestaan: Activiteit, Gebiedsaanwijzing,
                               Gebied, Gebiedengroep, Hoofdlijn, Punt, Puntengroep, Lijn, Lijnengroep, Regeltekst,
                               Regel­Voor­Iedereen, Instructieregel, Omgevingswaarderegel, Omgevingsnorm, Omgevingswaarde,
                               Pons, Tekstdeel, Kaart, Kaartlaag, Ambtsgebied of Divisietekst. (LVBB1025)</li>
@@ -1033,7 +1033,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         </td>
                      <td></td>
                      <td>
-                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                        CHARACTERSTRING
                         </td>
                      <td>0 .. 1</td>
                   </tr>
@@ -1704,9 +1704,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                              </td>
+                           <td>CHARACTERSTRING</td>
                         </tr>
                         <tr>
                            <th>Indicatie materiële historie</th>
@@ -2502,7 +2500,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
          <div class="header-wrapper"><h4 id="x2-3-1-artikelstructuur-overzicht"><bdi class="secno">2.3.1 </bdi>   Artikelstructuur - overzicht</h4><a class="self-link" href="#EAID_F30DA025_05E0_4f4b_AAF8_D029BA870995" aria-label="Permalink for Section 2.3.1"></a></div>
          <div class="imageinfo overview">
             <figure id="fig-artikelstructuur"><img src="data/Images/EAID_F30DA025_05E0_4f4b_AAF8_D029BA870995.png" usemap="#imagemap-EAID_F30DA025_05E0_4f4b_AAF8_D029BA870995" alt="Diagram: Een Regeling die volgens de STOP artikelstructuur is gemaakt bevat een geneste structuur die bijvoorbeeld Hoofdstukken, Artikelen, Paragrafen of Subparagrafen kan bevatten. Op het diepste niveau zit de inhoudelijk informatie van de regeling. Die inhoud zit in Artikelen. Een Artikel kan worden opgesplitst in Leden. Als een Artikel Leden heeft zit de Regeltekst in de Leden. In een Artikel zonder Leden zit de Regeltekst in het Artikel zelf. In de artikelstructuur zitten de annotaties op de artikelen of leden. De annotatie is dus op het niveau van een artikel of een lid en niet binnen tekstdelen van een artikel of lid. Het Regeltekst object bevat de verwijzing naar het wId van de STOP tekst die wordt geannoteerd. Vervolgens kunnen er één of meerdere Juridische regels zijn die verbonden zijn aan de regeltekst. Een juridische regel is de in een annotatie opgenomen informatie over een regel met juridische werkingskracht. Een juridische regel heeft drie subtypen (RegelVoorIedereen, Instructieregel, Omgevingswaarderegel) die allen specifieke eigenschappen bevatten o.a. omvat in de objecten Activiteit voor het annoteren van een activiteit, Gebiedsaanwijzing om een benoemd gebied te duiden, Omgevingswaarde om een toegestane of gewenste waarde aan een Locatie toe te kennen en een Omgevingsnorm om een waarde als norm aan een Locatie te koppelen. Vervolgens hebben Normwaarde, Activiteit en Gebiedsaanwijzing een relatie met een Locatie. Het Pons object wordt gebruikt om aan te geven dat een gebied door een Regeling is ingevuld en niet meer door een WRO bestemmingsplan. Dit kan alleen gebruikt worden bij een omgevingsplan."><figcaption><a class="self-link" href="#fig-artikelstructuur">Figuur <bdi class="figno">5</bdi></a> <span class="fig-title">Artikelstructuur</span></figcaption>
-            </figure><map name="imagemap-EAID_F30DA025_05E0_4f4b_AAF8_D029BA870995"><area shape="rect" alt="OP-objectAnnotatie" coords="301,14,508,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="Pons" coords="285,1305,454,1406" href="#global_class_Locatie_Pons"><area shape="rect" alt="Regelingsgebied" coords="285,1420,454,1521" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="260,768,696,923" href="#global_class_Artikelstructuur_ActiviteitLocatieaanduiding"><area shape="rect" alt="Gebiedsaanwijzing" coords="584,958,895,1159" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Normwaarde" coords="1305,1168,1772,1424" href="#global_class_Artikelstructuur_Normwaarde"><area shape="rect" alt="Norm" coords="1271,622,1644,904" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Omgevingswaarde" coords="1428,1007,1702,1144" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="1101,1007,1363,1144" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Activiteit" coords="156,477,413,644" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="Locatie" coords="859,1309,1119,1457" href="#global_class_Locatie_Locatie"><area shape="rect" alt="RegelVoorIedereen" coords="536,493,740,587" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Instructieregel" coords="825,477,1255,711" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarderegel" coords="1360,477,1690,553" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="JuridischeRegel" coords="907,153,1205,335" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="Regeltekst" coords="211,227,598,428" href="#global_class_Artikelstructuur_Regeltekst"></map><p>
+            </figure><map name="imagemap-EAID_F30DA025_05E0_4f4b_AAF8_D029BA870995"><area shape="rect" alt="OP-objectAnnotatie" coords="301,14,508,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="Pons" coords="285,1305,454,1406" href="#global_class_Locatie_Pons"><area shape="rect" alt="Regelingsgebied" coords="285,1420,454,1521" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="242,768,679,923" href="#global_class_Artikelstructuur_ActiviteitLocatieaanduiding"><area shape="rect" alt="Gebiedsaanwijzing" coords="584,958,895,1159" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Normwaarde" coords="1305,1168,1772,1424" href="#global_class_Artikelstructuur_Normwaarde"><area shape="rect" alt="Norm" coords="1271,622,1644,904" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Omgevingswaarde" coords="1428,1007,1702,1144" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="1101,1007,1363,1144" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Activiteit" coords="160,477,376,644" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="Locatie" coords="859,1309,1119,1457" href="#global_class_Locatie_Locatie"><area shape="rect" alt="RegelVoorIedereen" coords="536,493,740,587" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Instructieregel" coords="825,477,1255,711" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarderegel" coords="1360,477,1690,553" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="JuridischeRegel" coords="907,153,1205,335" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="Regeltekst" coords="211,227,598,428" href="#global_class_Artikelstructuur_Regeltekst"></map><p>
                
                </p><p></p>
                
@@ -4060,8 +4058,16 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                      <th>Regels</th>
                      <td>
                         
-                        <p>Van de drie kenmerken kwalitatieve­Waarde, kwantitatieve­Waarde en waarde­In­Regeltekst
-                           is er precies één ingevuld.</p>
+                        <ul>
+                           
+                           <li>Van de drie kenmerken kwalitatieve­Waarde, kwantitatieve­Waarde en waarde­In­Regeltekst
+                              is er precies één ingevuld.</li>
+                           
+                           <li>Alleen normwaarden waarvan per individueel punt van de locatie te bepalen zijn of
+                              ze geldig zijn zijn toegestaan. </li>
+                           
+                           <li>De locaties van een Norm mogen elkaar niet overlappen.</li>
+                           </ul>
                         </td>
                   </tr>
                   <tr>
@@ -4072,6 +4078,11 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         <p>De normwaarde geeft aan wat de specifieke kwantitatieve of kwalitatieve eisen zijn,
                            inclusief de toewijzing ervan aan de specifieke locatie(s) waar de normwaarde voor
                            geldt. </p>
+                        
+                        <p>Toelichting voor de tweede regel: Een voorbeeld van een norm die niet mag is: 'het
+                           bebouwingspercentage op deze locatie is maximaal 80.'. Het probleem met deze norm
+                           is dat ingeval een multigeometrie het niet duidelijk is of de norm per geometrie geldt
+                           of voor het geheel van de geometrieën.</p>
                         
                         </td>
                   </tr>
@@ -5947,7 +5958,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
       <section id="EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313">
          <div class="header-wrapper"><h4 id="x2-4-1-vrije-tekst-overzicht"><bdi class="secno">2.4.1 </bdi>   Vrije­Tekst - overzicht</h4><a class="self-link" href="#EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313" aria-label="Permalink for Section 2.4.1"></a></div>
          <div class="imageinfo overview">
-            <figure id="fig-vrije-tekst"><img src="data/Images/EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313.png" usemap="#imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313" alt="Diagram: Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar uiteindelijk ook een Divisietekst met Inhoud in moet zitten. De Inhoud bevat alleen inhoudelijke tekst. De Divisie wordt gebruikt om de tekst te structureren in bijvoorbeeld verschillende hoofdstukken of paragrafen. Binnen IMOW is Divisietekst een subklasse van OP-objectAnnotatie. Dit betekent dat er vanuit Divisie een verwijzing is naar de wId (identificatie) van de Divisietekst in STOP. In de vrijetekststructuur zijn documenten gestructureerd in Divisie en Divisietekst element waarbij de annotaties alleen aan de Divisietekst hangen . Dit betekent dat de inhoudelijke tekstgegevens worden aangeleverd in het STOP-gedeelte en dat je vanuit OW verwijst naar deze Divisie. Vanuit OW kun je een of meerdere tekstdelen aangeven bij de Divisie. Een tekstdeel kan nog hoofdlijnen, gebiedsaanwijzingen, en/of locaties bevatten. Tevens kan er een Locatie direct gekoppeld zijn aan het tekstdeel of kan de locatie via de gebiedsaanwijzing gekoppeld zijn aan het tekstdeel."><figcaption><a class="self-link" href="#fig-vrije-tekst">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title">Vrije­Tekst</span></figcaption>
+            <figure id="fig-vrije-tekst"><img src="data/Images/EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313.png" usemap="#imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313" alt="Diagram: Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar uiteindelijk ook een Divisietekst met Inhoud in moet zitten. De Inhoud bevat alleen inhoudelijke tekst. De Divisie wordt gebruikt om de tekst te structureren in bijvoorbeeld verschillende hoofdstukken of paragrafen. In de vrijetekststructuur kan alleen geannoteerd worden op de Divisietekst. Dit doe je door een Tekstdeel te maken die verwijst naar die Divisietekst. Het Tekstdeel bevat dan volgende annotaties: hoofdlijnaanduiding, gebiedsaanwijzing en locatieaanduiding."><figcaption><a class="self-link" href="#fig-vrije-tekst">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title">Vrije­Tekst</span></figcaption>
             </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="OW-object" coords="706,14,1040,170" href="#global_class_OWobject_OWobject"><area shape="rect" alt="OP-objectAnnotatie" coords="353,22,549,161" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="DivisieOfDivisietekst" coords="368,394,534,456" href="#global_class_Vrijetekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="356,239,547,324" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="312,538,570,692" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="867,603,1048,705" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="Hoofdlijn" coords="14,839,271,993" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="305,839,616,1031" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="765,839,1036,962" href="#global_class_Locatie_Locatie"></map><p>
                
                </p><p>Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het
@@ -5956,20 +5967,9 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                   inhoudelijke tekst. De Divisie wordt gebruikt om de tekst te structureren in bijvoorbeeld
                   verschillende hoofdstukken of paragrafen.</p>
                
-               <p></p>
-               
-               <p>Binnen IMOW is Divisietekst  een subklasse van OP-object­Annotatie. Dit betekent dat
-                  er vanuit Divisie een verwijzing is naar de w­Id (identificatie) van de Divisietekst
-                  in STOP.</p>
-               
-               <p>In de vrijetekststructuur zijn documenten gestructureerd in Divisie en Divisietekst
-                  element waarbij de annotaties alleen aan de Divisietekst hangen</p>
-               
-               <p>. Dit betekent dat de inhoudelijke tekstgegevens worden aangeleverd in het STOP-gedeelte
-                  en dat je vanuit OW verwijst naar deze Divisie. Vanuit OW kun je een of meerdere tekstdelen
-                  aangeven bij de Divisie. Een tekstdeel kan nog hoofdlijnen, gebiedsaanwijzingen, en/of
-                  locaties bevatten. Tevens kan er een Locatie direct gekoppeld zijn aan het tekstdeel
-                  of kan de locatie via de gebiedsaanwijzing gekoppeld zijn aan het tekstdeel. </p>
+               <p>In de vrijetekststructuur kan alleen geannoteerd worden op de Divisietekst. Dit doe
+                  je door een Tekstdeel te maken die verwijst naar die Divisietekst. Het Tekstdeel bevat
+                  dan volgende annotaties: hoofdlijnaanduiding, gebiedsaanwijzing en locatieaanduiding.</p>
                <p></p>
          </div>
       </section>
@@ -6195,6 +6195,14 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         </td>
                   </tr>
                   <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Alle Tekstdeel objecten die verwijzen naar dezelfde Divisietekst moeten dezelfde waarde
+                           hebben voor Idealisatie.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Indicatie abstract object</th>
                      <td>Nee</td>
                   </tr>
@@ -6361,7 +6369,24 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                      <td>
                         
                         
-                        <p>Divisieobject binnen IMOW. Heeft geen functie meer.</p>
+                        <p>Annotatie op een STOP Divisie.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Instanties van de klasse Divisie komen niet voor in een OW-bestand.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        
+                        <p>Dit object is slechts voor backwards compatibiliteit opgenomen in het IMOW en heeft
+                           geen functie meer.</p>
                         
                         </td>
                   </tr>
