@@ -55,8 +55,9 @@ GeometrieRef naar een Geometrie wordt verwezen wordt deze UUID gebruikt.
 Hieronder informatie over de opbouw (van het geografisch deel) van
 een GIO:
 
-Indien er normen vastgelegd worden aan de OW-kant, dan bevat het GIO 'Norm informatie' en
-de Locaties van het GIO bevatten een 'Normwaarde'. Hiervoor geldt:
+Indien er normen vastgelegd worden aan de OW-kant, dan bevat het
+GIO 'Norm informatie' en de Locaties van het GIO bevatten
+een 'Normwaarde'. Hiervoor geldt:
 
 - Bij een kwantitatieve normwaarde bevat 'Eenheid ID' de eenheid van de normwaarde. 
   Hier moet een URI ingevuld worden uit de waardelijst ‘Eenheid’.
@@ -81,12 +82,14 @@ de Locaties van het GIO bevatten een 'Normwaarde'. Hiervoor geldt:
 
 ## Regels voor het aanleveren van GML
 
-OW Geometrie objecten worden aangeleverd via het GIO in GML. Voor de aangeleverde GML gelden de volgende regels:
+OW Geometrie objecten worden aangeleverd via het GIO in GML. Voor de
+aangeleverde GML gelden de volgende regels:
 
 - De GML-specificaties volgen de regels van de standaard Basisgeometrie [[BASISGEO]].
 - Het bijbehorende GML applicatieschema Basisgeometrie.xsd is gepubliceerd op:
 <https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/1.0.0/>
-- Voor aanlevering van het GML wordt gebruik gemaakt van GML 3.2.2 met Simple features profile 0.
+- Voor aanlevering van het GML wordt gebruik gemaakt van GML 3.2.2 met
+Simple features profile 0.
 - Coördinaatreferentiestelsel: Het is verplicht om de srsName in te vullen
 op het hoogste niveau van een geometrie. Dat betekent dat van een samengestelde
 geometrie, een multi-geometrie, alleen op het niveau van de samenstelling de

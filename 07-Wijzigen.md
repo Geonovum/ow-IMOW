@@ -1,4 +1,4 @@
-# Gebruik van OW-aanlevering bij LVBB {#210F8E1C}
+# Gebruik van OW-aanlevering bij LVBB {#H7-GebruikIMOW}
 
 Een Besluit dat aangeleverd wordt aan de LVBB initieert of wijzigt een aantal
 regelingen. Om de OW-objecten behorend bij de regeling te maken of te wijzigen
@@ -127,64 +127,21 @@ Wanneer een Regeling wordt ingetrokken worden alle OW-objecten bij die regeling 
 
 In STOP kunnen ontwerpregelingen gemaakt worden met een
 ontwerpbesluit. Zo'n besluit wijzigt de tekst en de OW-objecten behorend bij een
-bestaande regelingversie. Alle OW-objecten die gewijzigd worden in het in
-ontwerpbesluit krijgen als procedurestatus de waarde 'ontwerp'. Als het veld
-procedurestatus geen waarde heeft dan wordt het OW-object beschouwd als behorend
-bij vastgestelde regelgeving.
+bestaande regelingversie.
 
 Voor een STOP ontwerpbesluit gelden de volgende regels:
 
 - Het soortprocedure (c.q. proceduretype) is ontwerp (i.p.v. definitief).
-- Er mogen minder procedurestappen gebruikt worden in vergelijking met
-  definitieve regelgeving.
+- Er zij mindere procedurestappen in vergelijking met definitieve regelgeving.
 - De ConsolidatieInformatie mag geen tijdstempels bevatten.
 
-Ontwerp-OW-objecten worden gezien als een nieuwe versie van een OW-object die
-niet hoort bij vastgestelde regelgeving. Dit is ook omdat ontwerpbesluiten niet
-gemuteerd kunnen worden, maar een losstaande status hebben t.o.v. vastgestelde
-regelgeving. Ontwerp-OW-objecten komen voor bij een initieel ontwerpbesluit en
-bij een wijzigingsontwerpbesluit.
-
-Bij een initieel ontwerpbesluit zijn alle OW-objecten on ontwerp. Een
-ontwerpwijzigingsbesluit beschrijft een ontwerp ten opzicht van een actuele
+OW-objecten bij een ontwerbesluit worden gezien als een nieuwe versie van 
+een OW-object die niet horen bij vastgestelde regelgeving. Dit is ook omdat ontwerpbesluiten niet
+gemuteerd kunnen worden maar losstaan van vastgestelde
+regelgeving. Ontwerpbesluiten kunnen voorkomen bij een initieel besluit en
+bij een wijzigingsbesluit. Een ontwerpbesluit beschrijft een ontwerp ten opzicht van een actuele
 regeling. Alleen de OW-objecten die wijzigen ten opzicht van de actuele levering
 worden aangeleverd.
 
 Ontwerp-activiteiten zullen niet verschijnen in de registratie van toepasbare
 regels, dus er kunnen geen vragenbomen op ontwerp-activiteiten gemaakt worden.
-
-Net zoals bij een 'regulier' wijzigingsbesluit worden bij een
-ontwerpwijzigingsbesluit alleen annotaties die wijzigen ten opzichte van de
-vastgestelde regelgeving aangeleverd. Het is bij een ontwerpwijzigingsbesluit
-wel mogelijk om te verwijzen naar annotaties uit de vastgestelde regelgeving.
-
-**Voorbeeld**: `Artikel 1: Het is verboden om te zwemmen in het centrumgebied.`
-wordt gewijzigd in
-`Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het stiltegebied.`
-
-In dit geval hoeft het Regeltekst-object niet te worden aangeleverd, deze
-bestaat immers al. Er is wel noodzaak voor een ontwerpversie van de juridische
-regel, aangezien de locatie waar deze regel over gaat wordt uitgebreid. Er is
-ook noodzaak voor een nieuwe OW-locatie in ontwerp, aangezien er een
-stiltegebied-GIO wordt toegevoegd in dit ontwerpwijzigingsbesluit.
-
-**Voorbeeld**:
-`Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het stiltegebied.`
-wordt gewijzigd in:
-`Artikel 1: Het is verboden om te zwemmen in het centrumgebied en in het stiltegebied.`
-en
-`Artikel 2: Er geldt een meldingsplicht omtrent het zwemmen in het stiltegebied.`
-
-Voor Artikel 1 wordt de juridische regel die verwijst naar het stiltegebied in
-ontwerp gewijzigd t.o.v. de vastgestelde versie van de juridische regel. Voor
-Artikel 2 wordt wel een ontwerp-Regeltekst-object aangeleverd inclusief
-bijbehorende ontwerp-OW-objecten. De OW-Locatie stiltegebied en de
-OW-activiteit zwemmen hoeven niet te worden aangeleverd aangezien deze al
-bestonden in vastgestelde regelgeving.
-
-Om wijzigingen van OW-objecten in
-het stelsel te kunnen volgend is het aan te bevelen
-bij het aanleveren van Ontwerp-OW-objecten de identificaties gelijk
-te houden aan de OW-objecten die horen bij vastgestelde regelingen en bij
-de uiteindelijke vaststelling van ontwerp objecten weer dezelfde
-identificatie te gebruiken.

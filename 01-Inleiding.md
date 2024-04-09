@@ -9,10 +9,59 @@ kunnen worden toegevoegd zijn vastgelegd in het Informatiemodel Omgevingswet
 conceptuele model CIM-OW [[CIMOW]]. CIM-OW beschrijft het DSO op een conceptueel
 niveau.
 
-In paragraaf <a href='#P1-1-context'>1.1</a> wordt een context geboden van de
-standaard. Paragraaf <a href='#28F55C8C'>1.2</a> bevat de leeswijzer.
+De eerste [ paragraaf](H1-P0-ReleaseNotes) beschrijft de belangrijkste wijzigingen van het IMOW ten opzichte van versie 3.0.1. De volgende paragrafa beschrijft de [context](#H1-context') van het model en daarna volgt de [leeswijzer](#H1-Leeswijzer).
 
-## Context standaard {#P1-1-context}
+## Wijzigingen sinds versie 3.0.1 {#H1-P0-ReleaseNotes}
+
+Hieronder volgt een overzicht van de belangrijkste wijzigvoorstellen die in deze consultatie worden voorgelegd. Veel van de voorgestelde wijzigingen zijn al met  diverse ketenpartners besproken. Door deze consultatieversie te publiceren verwachten we ze in samenhang met een breed publiek te kunnen delen. De resultaten van deze consultatie zullen verwerkt worden in het verdere besluitvormingsproces.
+
+### IMOW versienummer in aanlevering gaat gebruikt worden
+
+Tot deze versie van het IMOW kon aan het aanleverkoppelvlak van de LVBB slechts één versie van het IMOW gebruikt worden. Met ingang van deze versie bevat het IMOW een versienummer waaraan het stelsel kan zien aan welke versie van het IMOW de aanlevering voldoet. 
+
+Deze wijziging zit in de paragraaf: TODO
+
+### Geen annotaties meer op divisie niveau
+
+In eerdere versies van het IMOW was het mogelijk om vrije tekst te annoteren op divisie-niveau waarbij de semantiek was dat de annotaties op een divisie geldig waren voor alle onderliggende tekstelement. Implementatie hiervan bleek lastig en foutgevoelig. In deze versie kun je alleen nog annoteren op een Divisietekst.
+
+### Het attribuut hoogte uit Locatie verwijderen
+
+Hiermee wordt de werkafspraak die het gebruik van het attribuut hoogte verbiedt opgenomen in het IMOW.
+
+### Verwijderen van de klasse SymbolisatieItem
+
+De bestaande werkafspraak om de klasse SymbolisatieItem niet te gebruik wordt hiermee opgenomen in het IMOW. In een volgende versie van het IMOW komt een klasse met vergelijkbare functionaliteit. Onderdeel van de migratie naar deze nieuwe situatie is om allen SymbolisiatieItem objecten in het DSO te verwijderen. Omdat er in Productie geen SymbolisatieItem objecten zijn zal de impact hiervan gering zijn.
+
+
+### OW-aanlevering heeft extra kenmerk expressionIdentifier
+
+### OW-objecten worden automatisch beëindigd bij het intrekken van een regeling
+
+In eerdere versies van het IMOW werd beschreven dat bij het intrekken van een regeling het bevoegd gezag zelf verantwoordelijk is voor het beëindigen van de aan de regeling gekoppelde OW-objecten. Deze wijziging zorg ervoor dat die OW-objecten automatisch worden ingetrokken.
+
+Het voordeel van deze wijziging is dat het intrekken van een regeling eenvoudiger wordt.
+
+Deze wijziging heeft vooral impact op de volgende [paragraaf](#5952605C).
+
+### Het attribuut idealisatie moet dezelfde waarde hebben voor alle Juridische regels
+
+Het attribuut idealisatie moet dezelfde waarde hebben voor alle Juridische regels bij een
+Regeltekst / alle Tekstdelen bij een Divisie of een Divisietekst
+
+### Waarschuwing toevoegen voor geometrie buiten het ambtsgebied
+
+### Schrappen van het veld procedureStatus in een OW-object
+
+De waarde van het veld procedureStatus in een IMOW object is af te leiden uit het STOP deel van een aanlevering en is redundant. Dit kenmerk wordt geschrapt uit het IMOW.
+
+### Werkafspraken voor Normwaarde in Norm
+
+- Van de drie kenmerken kwalitatieveWaarde, kwantitatieveWaarde en waardeInRegeltekst is er precies één ingevuld.
+- Alleen normwaarden waarvan per individueel punt van de locatie te bepalen zijn of ze geldig zijn zijn toegestaan. 
+- De locaties van een Norm mogen elkaar niet overlappen.
+
+## Context standaard {#H1-context}
 
 Wanneer het bevoegd gezag een Regeling (bijvoorbeeld een omgevingsplan) vaststelt
 gebeurt dit via een besluit dat het bevoegd gezag digitaal aan de Landelijke
@@ -79,8 +128,7 @@ tekststructuren is een diagram toegevoegd met hierin de toegelaten objecttypen,
 attributen en relaties.
 
 Er zijn verschillende scenario's waarmee met STOP een <a>Regeling</a> via
-een Aanlevering kan wijziging. Deze scenario's staan beschreven in
-Hoofdstuk [7](#210F8E1C).
+een Aanlevering kan wijziging. Deze scenario's staan beschreven in [Hoofdstuk 7](#H7-GebruikIMOW).
 
 # uitgangspunten van modellering
 
@@ -91,7 +139,7 @@ De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 - Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
 
 
-## Leeswijzer {#28F55C8C}
+## Leeswijzer {#H1-Leeswijzer}
 
 Dit document is als volgt opgebouwd: . Hoofdstuk 2 bevat de gegevensdefinites van 
 OW-objecten. Hoofdstuk <a href='#H4-Implementatie'>3</a> gaat gedetailleerd in op hoe de

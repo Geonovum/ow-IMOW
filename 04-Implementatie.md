@@ -1,12 +1,11 @@
 # Technische implementatie IMOW {#H4-Implementatie}
 
 Dit hoofdstuk beschrijft de technische aspecten van toevoegen van OW-bestanden
-aan een aanlevering aan de LVBB. Paragraaf
-<a href='#55D70865'>4.1</a> schrijft voor welke OW-bestanden moeten worden
-aangeleverd. Paragraaf <a href='#53A6EBF9'>4.2</a> stelt eisen aan de
+aan een aanlevering aan de LVBB. De eerste [paragraaf](#H4-OW-aanlevering) schrijft voor welke OW-bestanden moeten worden
+aangeleverd. De tweede [paragraaf](#H4-aanlevereisen) stelt eisen aan de
 aanlevering.
 
-## OW-aanlevering en OW-manifest {#55D70865}
+## OW-aanlevering en OW-manifest {#H4-OW-aanlevering}
 
 Een aanlevering aan de LVBB waarin een bestand met de naam ‘manifest-ow.xml’
 voorkomt is een OW-aanlevering. Naast het OW-manifest bevat de OW-aanlevering
@@ -17,11 +16,13 @@ Voor een OW-aanlevering, bestaande uit het 'manifest-ow.xml' bestand en een aant
 
 **Regel:** Het manifest-ow.xml bestand moet voldoen aan het in de map bestanden-ow/generiek/manifest-ow.xsd (LVBB1032)
 
-Zie [paragraaf](#global_package_Aanlevering) voor een uitleg van de XML elementen in dit bestand.
+Zie [paragraaf](#global_package_Aanlevering) voor een uitleg van de XML elementen
+in dit bestand.
 
-### Het aanleveren van OW-objecten in OW-bestanden {#4BFC4412}
+### Het aanleveren van OW-objecten in OW-bestanden {#H4-aanlevereisen}
 
-In het OW-manifest is beschreven welke OW-bestanden er zijn. Deze OW-bestanden die de OW-objecten bevatten moeten voldoen aan het XML schema in:
+In het OW-manifest is beschreven welke OW-bestanden er zijn. Deze OW-bestanden
+die de OW-objecten bevatten moeten voldoen aan het XML schema in:
 <https://github.com/Geonovum/ow-IMOW/tree/main/xmlschema/v4.0.0-rc1>.
 
 Relaties in het IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten op te nemen.
@@ -46,14 +47,14 @@ attribuut in de GIO.
 Bij het aanleveren dient er rekening gehouden te worden met de volgende
 aspecten:
 
-- <a href='#5E94A976'>Identificatie van objecten</a>
-- <a href='#10D4544F'>Waardelijsten</a>
-- <a href='#6F5FDC8F'>toekennen van OW-objecten aan regeling</a>.
-- <a href='#60ED5DE4'>verwijzen tussen verschillende OW-objecten.</a>
-- <a href='#08BD28A2'>behoud functionele structuur</a>
-- <a href='#7F3046AE'>tijdelijk regelingdelen.</a>
+- [Identificatie van objecten](#H4-Identificatie)
+- [Waardelijsten](#H4-Waardelijsten)
+- [toekennen van OW-objecten aan regeling](#H4-Toekennen)
+- [verwijzen tussen verschillende OW-objecten.](#H4-Verwijzen)
+- [behoud functionele structuur](#H4-FunctioneleStructuur)
+- [tijdelijk regelingdelen.](#H4-TijdelijkRegelingdelen)
 
-### Identificatie van OW-objecten {#5E94A976}
+### Identificatie van OW-objecten {#H4-Identificatie}
 
 OW-objecten hebben het in DSO een unieke identificatie. Deze uniciteit wordt
 gewaarborgd door een unieke code die de bronhouder identificeert te combineren
@@ -77,16 +78,15 @@ nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\.(regeltekst|gebied|gebiedengroep|lijn|lij
 
 De lokale identificatie als geheel wordt dan bijvoorbeeld: ```nl.imow-gm0200.gebied.2019000001```
 
-
-
-### Waardelijsten {#10D4544F}
+### Waardelijsten {#H4-Waardelijsten}
 
 Voor attributen waarvan de waarde uit een waardelijst komt zijn de toegestane
 waardes te vinden in de [stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten).
 
-**Regel:** Een kenmerk dat als type een waarde in een waardelijst heeft moet een uri uit de betreffende waardelijst bevatten.
+**Regel:** Een kenmerk dat als type een waarde in een waardelijst heeft moet een
+ uri uit de betreffende waardelijst bevatten.
 
-### Toekennen van OW-objecten aan regelingen {#6F5FDC8F}
+### Toekennen van OW-objecten aan regelingen {#H4-Toekennen}
 
 Een OW-object hoort bij een regeling. Als een besluit een regeling wijzigt horen
 de OW-objecten die in dat besluit ontstaan bij die regeling. Je kunt OW-objecten
@@ -100,7 +100,7 @@ ontstaat bepaalt bij welke regeling een OW-object hoort.
 OW-aanlevering die hoort bij een besluit dat de regeling wijzigt waar het
 OW-object bij hoort.
 
-### Verwijzingen tussen OW-objecten {#60ED5DE4}
+### Verwijzingen tussen OW-objecten {#H4-Verwijzen}
 
 In OZON mag een actief OW-object niet verwijzen naar een beëindigd OW-object.
 Daarom moet een besluit dat een OW-object beëindigt ook alle verwijzingen naar
@@ -123,7 +123,7 @@ OW-objecten van andere bevoegd gezagen inperkt:
   van het tijdelijk regelingdeel, waarvoor de specifieke regels van paragraaf <a
   href='#7F3046AE'>4.2.6</a> gelden.
 
-### De functionele structuur {#08BD28A2}
+### De functionele structuur {#H4-FunctioneleStructuur}
 
 De activiteiten in het stelsel vormen samen de ‘functionele structuur’. Deze
 boomstructuur bevat alle Activiteit objecten in de regelingen en de hiërarchie
@@ -187,7 +187,7 @@ het volgende:
   of naar een andere Activiteit die hoort bij de Placeholder-Regeling, bij een
   AMvB of bij een ministeriële regeling.
 
-### Tijdelijk regelingdelen {#7F3046AE}
+### Tijdelijk regelingdelen {#H4-TijdelijkRegelingdelen}
 
 Tijdelijk regelingdelen, zoals beschreven in STOP kunnen door een
 ander bevoegd gezag worden ingetrokken dan het bevoegd gezag waardoor het is
