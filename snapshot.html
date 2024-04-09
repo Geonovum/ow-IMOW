@@ -400,7 +400,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
     <h2>
       Geonovum Informatiemodel<br>
       Consultatieversie
-      <time class="dt-published" datetime="2024-04-05">05 april 2024</time>
+      <time class="dt-published" datetime="2024-04-09">09 april 2024</time>
     </h2>
     <dl>
       
@@ -1145,10 +1145,6 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                            <td>255</td>
                         </tr>
                         <tr>
-                           <th>Formeel patroon</th>
-                           <td>[0-9A-Za-z\._-]+</td>
-                        </tr>
-                        <tr>
                            <th>Regels</th>
                            <td>
                               
@@ -1402,7 +1398,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>.. 255</td>
+                           <td>255</td>
                         </tr>
                         <tr>
                            <th>Indicatie materiële historie</th>
@@ -1848,19 +1844,6 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         
                         <ul>
                            
-                           <li>Alleen OW-objecten die de procedurestatus 'ontwerp' hebben mogen verwijzen naar OW-objecten
-                              met de procedurestatus 'ontwerp'.</li>
-                           
-                           <li>Een ontwerpregeling is altijd gebaseerd op een bestaande versie van een regeling.
-                              Verwijzingen vanuit OW-objecten met de procedurestatus 'ontwerp' verwijzen altijd
-                              naar de versie van het OW-object zoals bekend in de regelingversie waarop de ontwerpregeling
-                              gebaseerd is.</li>
-                           
-                           <li>OW-objecten met de procedurestatus 'ontwerp' kunnen niet gewijzigd worden.</li>
-                           
-                           <li>Een OW-object behorend OW-aanlevering bij een ontwerpbesluit moet de procedurestatus
-                              ontwerp hebben.</li>
-                           
                            <li>De identificatie van een OW-object moet overeenkomen met het type OW-object (TPOD1890)</li>
                            </ul>
                         </td>
@@ -1927,19 +1910,12 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_OWobject_OWobject_procedurestatus">procedurestatus</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>
                         <a class="link" href="#detail_attribute_OWobject_OWobject_identificatie">identificatie</a>
                         </td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Identificatie van dit object.</p>
+                        </td>
                      <td>
                         <a class="link" href="#global_class_OWobject_NEN3610ID">NEN3610ID</a>
                         </td>
@@ -2234,45 +2210,6 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_OWobject_OWobject_procedurestatus">
-                  <h7>Attribuutsoort details  <a href="#global_class_OWobject_OWobject">OW-object</a> procedurestatus</h7>
-                  
-                  <table style="width: 100%;" class="simple">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>procedurestatus</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>80</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
                <div class="deepheader" id="detail_attribute_OWobject_OWobject_identificatie">
                   <h7>Attribuutsoort details  <a href="#global_class_OWobject_OWobject">OW-object</a> identificatie</h7>
                   
@@ -2283,6 +2220,15 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         <tr>
                            <th>Naam</th>
                            <td>identificatie</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Identificatie van dit object.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Formaat</th>
@@ -2297,6 +2243,15 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>Deze identificatie volgt de de regels voor NEN3610ID elders in dit document.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie classificerend</th>
@@ -2713,7 +2668,10 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                      <td>
                         <a class="link" href="#detail_attribute_Artikelstructuur_ActiviteitLocatieaanduiding_identificatie">identificatie</a>
                         </td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Identificatie van dit object.</p>
+                        </td>
                      <td>
                         <a class="link" href="#global_class_OWobject_NEN3610ID">NEN3610ID</a>
                         </td>
@@ -3347,7 +3305,10 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                      <td>- 
                         <a class="link" href="#detail_attribute_Artikelstructuur_Normwaarde_identificatie">identificatie</a>
                         </td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Identificatie van deze normwaarde</p>
+                        </td>
                      <td>
                         <a class="link" href="#global_class_OWobject_NEN3610ID">NEN3610ID</a>
                         </td>
@@ -4129,7 +4090,10 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                      <td>- 
                         <a class="link" href="#detail_attribute_Artikelstructuur_Normwaarde_identificatie">identificatie</a>
                         </td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Identificatie van deze normwaarde</p>
+                        </td>
                      <td>
                         <a class="link" href="#global_class_OWobject_NEN3610ID">NEN3610ID</a>
                         </td>
@@ -4294,6 +4258,15 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                            <td>identificatie</td>
                         </tr>
                         <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Identificatie van dit object.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
                            <th>Formaat</th>
                            <td>
                               <a class="link" href="#detail_class_OWobject_NEN3610ID">NEN3610ID</a>
@@ -4302,6 +4275,15 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>Deze identificatie volgt de de regels voor NEN3610ID elders in dit document.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie classificerend</th>
@@ -5713,6 +5695,15 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                            <td>identificatie</td>
                         </tr>
                         <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Identificatie van deze normwaarde</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
                            <th>Formaat</th>
                            <td>
                               <a class="link" href="#detail_class_OWobject_NEN3610ID">NEN3610ID</a>
@@ -5721,6 +5712,15 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>Deze identificatie volgt de de regels voor NEN3610ID elders in dit document.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie classificerend</th>
@@ -5764,7 +5764,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>..255</td>
+                           <td>255</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -5866,7 +5866,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>..80</td>
+                           <td>80</td>
                         </tr>
                         <tr>
                            <th>Regels</th>
