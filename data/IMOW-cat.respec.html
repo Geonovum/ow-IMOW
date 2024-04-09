@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--20200601_Oplevering imvertor Nightly-build.13-->
+   <!--20200601_Oplevering imvertor Nightly-build.14-->
    <section id="global_package_Aanlevering">
       <h3>Domein   Aanlevering</h3>
       <section id="EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79">
@@ -552,10 +552,6 @@
                            <td>255</td>
                         </tr>
                         <tr>
-                           <th>Formeel patroon</th>
-                           <td>[0-9A-Za-z\._-]+</td>
-                        </tr>
-                        <tr>
                            <th>Regels</th>
                            <td>
                               
@@ -809,7 +805,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>.. 255</td>
+                           <td>255</td>
                         </tr>
                         <tr>
                            <th>Indicatie materiële historie</th>
@@ -1255,19 +1251,6 @@
                         
                         <ul>
                            
-                           <li>Alleen OW-objecten die de procedurestatus 'ontwerp' hebben mogen verwijzen naar OW-objecten
-                              met de procedurestatus 'ontwerp'.</li>
-                           
-                           <li>Een ontwerpregeling is altijd gebaseerd op een bestaande versie van een regeling.
-                              Verwijzingen vanuit OW-objecten met de procedurestatus 'ontwerp' verwijzen altijd
-                              naar de versie van het OW-object zoals bekend in de regelingversie waarop de ontwerpregeling
-                              gebaseerd is.</li>
-                           
-                           <li>OW-objecten met de procedurestatus 'ontwerp' kunnen niet gewijzigd worden.</li>
-                           
-                           <li>Een OW-object behorend OW-aanlevering bij een ontwerpbesluit moet de procedurestatus
-                              ontwerp hebben.</li>
-                           
                            <li>De identificatie van een OW-object moet overeenkomen met het type OW-object (TPOD1890)</li>
                            </ul>
                         </td>
@@ -1334,19 +1317,12 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_OWobject_OWobject_procedurestatus">procedurestatus</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>0 .. 1</td>
-                  </tr>
-                  <tr>
-                     <td>
                         <a class="link" href="#detail_attribute_OWobject_OWobject_identificatie">identificatie</a>
                         </td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Identificatie van dit object.</p>
+                        </td>
                      <td>
                         <a class="link" href="#global_class_OWobject_NEN3610ID">NEN3610ID</a>
                         </td>
@@ -1641,45 +1617,6 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_OWobject_OWobject_procedurestatus">
-                  <h7>Attribuutsoort details  <a href="#global_class_OWobject_OWobject">OW-object</a> procedurestatus</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>procedurestatus</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>80</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
                <div class="deepheader" id="detail_attribute_OWobject_OWobject_identificatie">
                   <h7>Attribuutsoort details  <a href="#global_class_OWobject_OWobject">OW-object</a> identificatie</h7>
                   
@@ -1690,6 +1627,15 @@
                         <tr>
                            <th>Naam</th>
                            <td>identificatie</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Identificatie van dit object.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Formaat</th>
@@ -1704,6 +1650,15 @@
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>Deze identificatie volgt de de regels voor NEN3610ID elders in dit document.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie classificerend</th>
@@ -2120,7 +2075,10 @@
                      <td>
                         <a class="link" href="#detail_attribute_Artikelstructuur_ActiviteitLocatieaanduiding_identificatie">identificatie</a>
                         </td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Identificatie van dit object.</p>
+                        </td>
                      <td>
                         <a class="link" href="#global_class_OWobject_NEN3610ID">NEN3610ID</a>
                         </td>
@@ -2754,7 +2712,10 @@
                      <td>- 
                         <a class="link" href="#detail_attribute_Artikelstructuur_Normwaarde_identificatie">identificatie</a>
                         </td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Identificatie van deze normwaarde</p>
+                        </td>
                      <td>
                         <a class="link" href="#global_class_OWobject_NEN3610ID">NEN3610ID</a>
                         </td>
@@ -3536,7 +3497,10 @@
                      <td>- 
                         <a class="link" href="#detail_attribute_Artikelstructuur_Normwaarde_identificatie">identificatie</a>
                         </td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Identificatie van deze normwaarde</p>
+                        </td>
                      <td>
                         <a class="link" href="#global_class_OWobject_NEN3610ID">NEN3610ID</a>
                         </td>
@@ -3701,6 +3665,15 @@
                            <td>identificatie</td>
                         </tr>
                         <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Identificatie van dit object.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
                            <th>Formaat</th>
                            <td>
                               <a class="link" href="#detail_class_OWobject_NEN3610ID">NEN3610ID</a>
@@ -3709,6 +3682,15 @@
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>Deze identificatie volgt de de regels voor NEN3610ID elders in dit document.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie classificerend</th>
@@ -5120,6 +5102,15 @@
                            <td>identificatie</td>
                         </tr>
                         <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Identificatie van deze normwaarde</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
                            <th>Formaat</th>
                            <td>
                               <a class="link" href="#detail_class_OWobject_NEN3610ID">NEN3610ID</a>
@@ -5128,6 +5119,15 @@
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>Deze identificatie volgt de de regels voor NEN3610ID elders in dit document.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie classificerend</th>
@@ -5171,7 +5171,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>..255</td>
+                           <td>255</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -5273,7 +5273,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>..80</td>
+                           <td>80</td>
                         </tr>
                         <tr>
                            <th>Regels</th>
@@ -9411,7 +9411,7 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--20200601_Oplevering imvertor Nightly-build.13-->
+   <!--20200601_Oplevering imvertor Nightly-build.14-->
    <section>
       <h3>Codelijst inhoud   </h3>
       <section id="detail_class_Waardelijsten_Activiteitengroep">
