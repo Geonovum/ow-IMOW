@@ -21,7 +21,7 @@ Hieronder volgt een overzicht van de belangrijkste wijzigvoorstellen die in deze
 
 ### IMOW versienummer in aanlevering gaat gebruikt worden
 
-Tot deze versie van het IMOW kon aan het aanleverkoppelvlak van de LVBB slechts één versie van het IMOW gebruikt worden. Met ingang van deze versie bevat het IMOW een versienummer waaraan het stelsel kan zien aan welke versie van het IMOW de aanlevering voldoet. 
+Tot deze versie van het IMOW kon aan het van de LVBB slechts één versie van het IMOW gebruikt worden. Met ingang van deze versie bevat het IMOW een versienummer waaraan het stelsel kan zien aan welke versie van het IMOW de aanlevering voldoet. 
 
 Deze wijziging zit in de paragraaf: TODO
 
@@ -36,7 +36,6 @@ Hiermee wordt de werkafspraak die het gebruik van het attribuut hoogte verbiedt 
 ### Verwijderen van de klasse SymbolisatieItem
 
 De bestaande werkafspraak om de klasse SymbolisatieItem niet te gebruik wordt hiermee opgenomen in het IMOW. In een volgende versie van het IMOW komt een klasse met vergelijkbare functionaliteit. Onderdeel van de migratie naar deze nieuwe situatie is om allen SymbolisiatieItem objecten in het DSO te verwijderen. Omdat er in Productie geen SymbolisatieItem objecten zijn zal de impact hiervan gering zijn.
-
 
 ### OW-aanlevering heeft extra kenmerk expressionIdentifier
 
@@ -54,6 +53,8 @@ Het attribuut idealisatie moet dezelfde waarde hebben voor alle Juridische regel
 Regeltekst / alle Tekstdelen bij een Divisie of een Divisietekst
 
 ### Waarschuwing toevoegen voor geometrie buiten het ambtsgebied
+
+Er wordt een waarschuwing gegeven wanneer een aangeleverde geometrie niet binnen het ambtsgebied van het bevoegd gezag valt. 
 
 ### Schrappen van het veld procedureStatus in een OW-object
 
@@ -133,9 +134,6 @@ de toepassingsprofielen) worden verschillende objecten meegeleverd. Voor beide t
 tekststructuren is een diagram toegevoegd met hierin de toegelaten objecttypen,
 attributen en relaties.
 
-Er zijn verschillende scenario's waarmee met STOP een <a>Regeling</a> via
-een Aanlevering kan wijziging. Deze scenario's staan beschreven in
-Hoofdstuk [7](#210F8E1C).
 
 # uitgangspunten van modellering
 
@@ -157,12 +155,12 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.
 
 ## Begrippen
 
-De volgende begrippen worden gebruikt in dit document
+De volgende begrippen worden gebruikt in dit document:
 
 <dfn>Besluit</dfn>: Een tekst die de vaststelling of wijziging van (de geldigheid van) een regeling of informatieobject beschrijft. Met andere woorden: Een besluit beschrijft precies hoe een BG een nieuwe regeling vaststelt, wijzigingen op een regeling doorvoert of de inwerkingtreding van een regeling of regelingversie bepaalt. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_besluit.html))
 
 
-<dfn>Bronhouderkoppelvlak</dfn>:  Het bronhouderkoppelvlak is een technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en Beschikbaar stellen) en (software van) een bevoegd gezag. In dat koppelvlak worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke, proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html))
+<dfn>Bronhouderkoppelvlak </dfn>: Het bronhouderkoppelvlak (BHKV) is een technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en Beschikbaar stellen) en (software van) een bevoegd gezag. In dat koppelvlak worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke, proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html))
 
 <dfn>Regeling</dfn>: Een regeling beschrijft algemeen geldende voorschriften die vastgesteld worden via een besluit van algemene strekking. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_regeling.html))
 
@@ -181,6 +179,7 @@ In de UML diagrammen van het logische model zijn de termen hoofdletter-gevoelig 
 Voor het inzoomen in de UML diagrammen kan het best het diagram in een apart tabblad van de browser worden geopenend. Afhankelijk van het type browser is dit meestal via een rechtermuisklik en 'open in nieuw tabblad'.
 
 In het volgende hoofdstuk zijn de UML diagrammen van het IMOW opgenomen. Er is een onderverdeling naar verschillende subdomeinen gemaakt:
+
 - Aanlevering
 - OW-object
 - Artikelstructuur

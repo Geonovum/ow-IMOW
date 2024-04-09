@@ -97,9 +97,9 @@ gereserveerd of vervallen zijn moet er een Regeltekst object zijn.
 
 ## Wanneer gebruik je een OW-aanlevering aan de LVBB {#616A8350}
 
-**TODO**: Deze paragraaf moet afgestemd worden met STOP-IC.
+**TODO**: Op het moment dat het BHKV gespecificeerd wordt moet deze paragraaf daarop afgestemd worden.
 
-Er is een aantal aanlevering aan de LVBB waarbij een OW-aanlevering gebruikt kan worden
+Er is een aantal aanlevering aan het BKHV waarbij een OW-aanlevering gebruikt kan worden
 om de OW-objecten bij een regeling te wijzigen. Deze worden in de volgende
 paragrafen behandeld:
 
@@ -122,7 +122,6 @@ Wanneer een Regeling wordt ingetrokken worden alle OW-objecten bij die regeling 
 
 **Regel:** Aan de intrekking van een Regeling is geen OW-aanlevering gekoppeld.
 
-
 ### Het aanleveren van een Ontwerpbesluit
 
 In STOP kunnen ontwerpregelingen gemaakt worden met een
@@ -135,13 +134,13 @@ Voor een STOP ontwerpbesluit gelden de volgende regels:
 - Er zij mindere procedurestappen in vergelijking met definitieve regelgeving.
 - De ConsolidatieInformatie mag geen tijdstempels bevatten.
 
-OW-objecten bij een ontwerbesluit worden gezien als een nieuwe versie van 
-een OW-object die niet horen bij vastgestelde regelgeving. Dit is ook omdat ontwerpbesluiten niet
-gemuteerd kunnen worden maar losstaan van vastgestelde
+OW-objecten bij een ontwerbesluit worden gezien als een nieuwe versie van
+een OW-object die niet horen bij vastgestelde regelgeving. Dit is ook omdat
+ontwerpbesluiten niet gemuteerd kunnen worden maar losstaan van vastgestelde
 regelgeving. Ontwerpbesluiten kunnen voorkomen bij een initieel besluit en
 bij een wijzigingsbesluit. Een ontwerpbesluit beschrijft een ontwerp ten opzicht van een actuele
 regeling. Alleen de OW-objecten die wijzigen ten opzicht van de actuele levering
 worden aangeleverd.
 
-Ontwerp-activiteiten zullen niet verschijnen in de registratie van toepasbare
+Activiteiten in ontwerpregelingen worden niet doorgegeven aan de registratie van toepasbare
 regels, dus er kunnen geen vragenbomen op ontwerp-activiteiten gemaakt worden.

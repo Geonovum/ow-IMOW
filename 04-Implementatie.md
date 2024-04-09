@@ -42,6 +42,11 @@ Vanuit de OW-objecten Gebied, Lijn en Punt wordt middels de relatie 'geometrie'
 verwezen naar de geometrie in de GIO. Deze verwijzing gebeurt via het 'id'
 attribuut in de GIO.
 
+In vrijwel alle gevallen moet de geometrie van een Locatie binnen het ambtsgebied
+van het bevoegd gezag vallen. Vanwege enkele uitzonderingen op deze regel worden
+aanleveringen die hier niet aan voldoen niet geweigerd, wel kan een waarschuwing
+gegeven worden.
+
 ## Regels voor OW-Aanlevering
 
 Bij het aanleveren dient er rekening gehouden te worden met de volgende

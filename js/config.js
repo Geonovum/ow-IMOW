@@ -18,7 +18,7 @@ let respecConfig = {
   //licence: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
   //licence: "cc0",                 // Public Domain Dedication
   licence: "cc-by",                 // Attribution, met bronvermelding
-  //-- TODO shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
+  // (komt in de URL: kies logische afkorting)--------------
   shortName: "imow",
   
   //edDraftURI = De URI van de draft version. Deze wordt automatisch afgeleid van de github URI; maar kan hier overschreven worden. 
@@ -55,7 +55,6 @@ let respecConfig = {
   //neem hier de URL van de github repository op waar het respec document in staat
   github: "https://github.com/Geonovum/ow-IMOW",
   // Create PDF and link to file in header (optional):
-  // TODO: Change the filename as preferred.
   alternateFormats: [
       {
           label: "pdf",
