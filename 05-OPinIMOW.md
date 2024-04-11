@@ -111,6 +111,12 @@ volgende nauwkeurigheden:
     - ETRS89-lengte in graden 8 decimalen (0,7 mm)
     - ETRS89-hoogte in meters 3 decimalen (1 mm)
 
+
+De volgende regels zijn om het naar behoren functioneren van de landelijke voorziening te beschermen. De bounding box is rondom de geometrie van Nederland + exclusieve economische zone en naar buiten afgerond. 
+**Regel:**
+- Geometrie die buiten de boundingBox {"minx": -41000, "maxx": 279000, "miny": 306000, "maxy": 867000} in RD ligt wordt afgekeurd.
+- Geometrie die buiten de boundingBox {"minx": 2.268, "maxx": 7.361, "miny": 50.711, "maxy": 55.786} in ETRS89 wordt afgekeurd.
+
 ## Richtlijn voor het maken van GIO’s o.b.v. OW-objecten 
 
 In deze paragraaf wordt toegelicht welke richtlijnen er zijn voor het maken van

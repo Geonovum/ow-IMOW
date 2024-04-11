@@ -5,6 +5,8 @@ aan een aanlevering aan de LVBB. De eerste [paragraaf](#H04-OW-aanlevering) schr
 aangeleverd. De tweede [paragraaf](#H04-aanlevereisen) stelt eisen aan de
 aanlevering.
 
+**Regel:** De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <https://register.geostandaarden.nl/xmlschema/tpod/v4.0.0-ic1>.
+
 ## OW-aanlevering en OW-manifest {#H04-OW-aanlevering}
 
 Een aanlevering aan de LVBB waarin een bestand met de naam ‘manifest-ow.xml’
@@ -21,13 +23,9 @@ in dit bestand.
 
 ### Het aanleveren van OW-objecten in OW-bestanden {#H04-aanlevereisen}
 
-In het OW-manifest is beschreven welke OW-bestanden er zijn. Deze OW-bestanden
-die de OW-objecten bevatten moeten voldoen aan het XML schema in:
-<https://github.com/Geonovum/ow-IMOW/tree/main/xmlschema/v4.0.0-rc1>.
+In het OW-manifest is beschreven welke OW-bestanden er zijn. Relaties in het IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten op te nemen.
 
-Relaties in het IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten op te nemen.
-
-Regels:
+**Regels:**
 
 - Bij een OW-aanlevering met artikelstructuur mogen de volgende OW-objecten worden aangeleverd: Regeltekst, Juridische regel, Activiteit,
 Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart en Regelingsgebied.
