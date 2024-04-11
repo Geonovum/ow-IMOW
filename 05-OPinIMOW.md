@@ -1,14 +1,13 @@
-# Onderdelen van STOP relevant voor IMOW {#2577D13E}
+# Onderdelen van STOP relevant voor IMOW {#H05-OPinIMOW}
 
 Dit hoofdstuk beschrijft STOP onderdelen die relevant zijn voor het IMOW. Enkele
 dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de
-OP-standaard relevant is. Paragraaf
-<a href='#0B404AC6'>6.2</a> beschrijft de consolidatieinformatie uit een
-Regeling. Paragraaf <a href='#4541BABA'>6.3</a> worden GIO’s beschreven.
+OP-standaard relevant is. De eerste [paragraaf](#H05-ConsolidatieInformatie) beschrijft de consolidatieinformatie uit een
+Regeling. De volgende [paragraaf](#H05-GIO) worden GIO’s beschreven.
 
 Zie de STOP [[STOPIC]] en het CIM-OP [[CIMOP]] voor meer details.
 
-## ConsolidatieInformatie {#0B404AC6}
+## ConsolidatieInformatie {#H05-ConsolidatieInformatie}
 
 In het STOP deel van de aanlevering wordt ConsolidatieInformatie meegeleverd.
 De ConsolidatieInformatie bepaalt de tijdlijn versies van de regelingen en
@@ -25,11 +24,11 @@ een Regeling. Voor IMOW zijn de volgende aspecten van belang:
 - Uit de  klasse 'Tijdstempel' worden de geldigheidsgegevens van de OW-objecten afgeleid.
 
 <figure>
-    <img src='media/cim-op-consolidatie.png'></img>
+    <img src='media/cim-op-consolidatie.png' />
     <figcaption>Consolidatieinformatie in STOP</figcaption>
 </figure>
 
-## GIO’s en Norm GIO’s {#4541BABA}
+## GIO’s en Norm GIO’s {#H05-GIO}
 
 Bij het aanleveren van een besluit volgens STOP worden
 geografische objecten aangeleverd als GIO’s (geografische informatieobjecten).
@@ -52,8 +51,6 @@ GeometrieRef naar een Geometrie wordt verwezen wordt deze UUID gebruikt.
 - Indien er gebruik gemaakt wordt van groepen, dan dient iedere groep
  een symbolisatie te hebben (dit wordt vastgelegd in het vaststellingsdeel).
 - Bij Norm-GIO’s dienen aanvullende gegevens vastgelegd te worden.
-Hieronder informatie over de opbouw (van het geografisch deel) van
-een GIO:
 
 Indien er normen vastgelegd worden aan de OW-kant, dan bevat het
 GIO 'Norm informatie' en de Locaties van het GIO bevatten
@@ -114,7 +111,7 @@ volgende nauwkeurigheden:
     - ETRS89-lengte in graden 8 decimalen (0,7 mm)
     - ETRS89-hoogte in meters 3 decimalen (1 mm)
 
-## Richtlijn voor het maken van GIO’s o.b.v. OW-objecten {#639AF62F}
+## Richtlijn voor het maken van GIO’s o.b.v. OW-objecten 
 
 In deze paragraaf wordt toegelicht welke richtlijnen er zijn voor het maken van
 GIO’s vanuit OW-objecten. Dit zijn richtlijnen en deze worden niet gevalideerd
@@ -135,8 +132,8 @@ De richtlijn is als volgt:
 
 <figure>
     <img src='media/RichtlijnVoorOW-objecten.png' alt='' style='width: 100%;'></img>
-    <figcaption>Richtlijn voor OW-objecten i.r.t. GIO’s</figcaption><
-/figure>
+    <figcaption>Richtlijn voor OW-objecten i.r.t. GIO’s</figcaption>
+</figure>
 
 <figure>
     <img src='media/RichtlijnVoorNormen.png' alt='' style='width: 100%;'></img>

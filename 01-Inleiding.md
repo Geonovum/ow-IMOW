@@ -2,50 +2,83 @@
 
 <!-- TODO: Paul Jansen vragen om een inleiding te schrijven. -->
 
-Het Informatiemodel Omgevingswet (IMOW) is de toepassing van het CIM-OW op het niveau van gegevensuitwisseling. Het is daarmee ook gekoppeld aan de Standaard voor Officiële Publicaties (STOP) die beschrijft hoe officiële publicaties moeten worden opgesteld en aangeleverd om te kunnen worden bekendgemaakt en gepubliceerd binnen de Landelijke voorziening bekendmaken en beschikbaarstellen (LVBB). 
+Het Informatiemodel Omgevingswet (IMOW) is de toepassing van het CIM-OW op het
+niveau van gegevensuitwisseling. Het is daarmee ook gekoppeld aan de Standaard
+voor Officiële Publicaties (STOP) die beschrijft hoe officiële publicaties
+moeten worden opgesteld en aangeleverd om te kunnen worden bekendgemaakt en
+gepubliceerd binnen de Landelijke voorziening bekendmaken en beschikbaarstellen
+(LVBB). 
 
-Voor het domein van de Omgevingswet en daaraan gekoppeld Digitaal Stelsel Omgevingswet (DSO) is een nadere specificatie van STOP opgesteld en beschreven in: ToepassingsProfiel voor OmgevingsDocumenten (TPOD). IMOW is daarin het informatiemodel dat is toegespitst op de keten ‘Van plan tot publicatie’ van het DSO. IMOW bepaalt hoe machineleesbare-informatie aan Regelingen wordt toegevoegd in de vorm van OW-objecten. IMOW is bedoeld voor bouwers van plansoftware en voor technisch ingestelde medewerkers van bevoegde gezagen en adviesbureaus.
+Voor het domein van de Omgevingswet en daaraan gekoppeld Digitaal Stelsel
+Omgevingswet (DSO) is een nadere specificatie van STOP opgesteld en beschreven
+in: ToepassingsProfiel voor OmgevingsDocumenten (TPOD). IMOW is daarin het
+informatiemodel dat is toegespitst op de keten ‘Van plan tot publicatie’ van het
+DSO. IMOW bepaalt hoe machineleesbare-informatie aan Regelingen wordt toegevoegd
+in de vorm van OW-objecten. IMOW is bedoeld voor bouwers van plansoftware en
+voor technisch ingestelde medewerkers van bevoegde gezagen en adviesbureaus.
 
-IMOW is als logisch model de uitwerking van het conceptuele model CIM-OW [[CIMOW]]. In onderstaand figuur zijn de conceptuele informatiemodellen weergegeven binnen het DSO. Het IMOW is de toepassing van het CIM-OW op het niveau van gegevens.
+IMOW is als logisch model de uitwerking van het conceptuele model CIM-OW
+[[CIMOW]]. In onderstaand figuur zijn de conceptuele informatiemodellen
+weergegeven binnen het DSO. Het IMOW is de toepassing van het CIM-OW op het
+niveau van gegevens.
 
 <figure id="Figure-CIM-Overzicht">
-<img src="media/Stelsel van CIMs.png" alt="">
-<figcaption>Overzicht van alle Conceptuele Informatiemodellen in het DSO</figcaption>
+    <img src="media/Stelsel van CIMs.png" alt="">
+    <figcaption>Overzicht van alle Conceptuele Informatiemodellen in het DSO</figcaption>
 </figure>
 
-De eerste [ paragraaf](H1-P0-ReleaseNotes) beschrijft de belangrijkste wijzigingen van het IMOW ten opzichte van versie 3.0.1. De volgende paragrafa beschrijft de [context](#H1-context') van het model en daarna volgt de [leeswijzer](#H1-Leeswijzer).
+De eerste [paragraaf](H1-P0-ReleaseNotes) beschrijft de belangrijkste wijzigingen van het IMOW ten opzichte van versie 3.0.1. De volgende paragrafa beschrijft de [context](#H1-context') van het model en daarna volgt de [leeswijzer](#H1-Leeswijzer).
 
 ## Wijzigingen sinds versie 3.0.1 {#H1-P0-ReleaseNotes}
 
-Hieronder volgt een overzicht van de belangrijkste wijzigvoorstellen die in deze consultatie worden voorgelegd. Veel van de voorgestelde wijzigingen zijn al met  diverse ketenpartners besproken. Door deze consultatieversie te publiceren verwachten we ze in samenhang met een breed publiek te kunnen delen. De resultaten van deze consultatie zullen verwerkt worden in het verdere besluitvormingsproces.
+Hieronder volgt een overzicht van de belangrijkste wijzigvoorstellen die in deze
+consultatie worden voorgelegd. Veel van de voorgestelde wijzigingen zijn al met
+diverse ketenpartners besproken. Door deze consultatieversie te publiceren
+verwachten we ze in samenhang met een breed publiek te kunnen delen. De
+resultaten van deze consultatie zijn input voor verdere besluitvorming.
 
 ### IMOW versienummer in aanlevering gaat gebruikt worden
 
-Tot deze versie van het IMOW kon aan het van de LVBB slechts één versie van het IMOW gebruikt worden. Met ingang van deze versie bevat het IMOW een versienummer waaraan het stelsel kan zien aan welke versie van het IMOW de aanlevering voldoet. 
+Tot en met versie 3.0.1 van het IMOW kon aan het BHKV slechts één versie van het
+IMOW gebruikt worden. Met ingang van deze versie bevat het IMOW een versienummer
+waaraan het stelsel kan zien aan welke versie van het IMOW de aanlevering
+voldoet. 
 
 Deze wijziging zit in de paragraaf: TODO
 
 ### Geen annotaties meer op divisie niveau
 
-In eerdere versies van het IMOW was het mogelijk om vrije tekst te annoteren op divisie-niveau waarbij de semantiek was dat de annotaties op een divisie geldig waren voor alle onderliggende tekstelement. Implementatie hiervan bleek lastig en foutgevoelig. In deze versie kun je alleen nog annoteren op een Divisietekst.
+In eerdere versies van het IMOW was het mogelijk om vrije tekst te annoteren op
+divisie-niveau waarbij de semantiek was dat de annotaties op een divisie geldig
+waren voor alle onderliggende tekstelement. Implementatie hiervan bleek lastig
+en foutgevoelig. In deze versie kun je alleen nog annoteren op een Divisietekst.
 
 ### Het attribuut hoogte uit Locatie verwijderen
 
-Hiermee wordt de werkafspraak die het gebruik van het attribuut hoogte verbiedt opgenomen in het IMOW.
+Hiermee wordt de werkafspraak die het gebruik van het attribuut hoogte verbiedt
+opgenomen in het IMOW.
 
 ### Verwijderen van de klasse SymbolisatieItem
 
-De bestaande werkafspraak om de klasse SymbolisatieItem niet te gebruik wordt hiermee opgenomen in het IMOW. In een volgende versie van het IMOW komt een klasse met vergelijkbare functionaliteit. Onderdeel van de migratie naar deze nieuwe situatie is om allen SymbolisiatieItem objecten in het DSO te verwijderen. Omdat er in Productie geen SymbolisatieItem objecten zijn zal de impact hiervan gering zijn.
+De bestaande werkafspraak om de klasse SymbolisatieItem niet te gebruik wordt
+hiermee opgenomen in het IMOW. In een volgende versie van het IMOW komt een
+klasse met vergelijkbare functionaliteit. Onderdeel van de migratie naar deze
+nieuwe situatie is om alle SymbolisiatieItem objecten in het DSO te
+verwijderen. Omdat er in Productie geen SymbolisatieItem objecten zijn zal de
+impact hiervan gering zijn.
 
 ### OW-aanlevering heeft extra kenmerk expressionIdentifier
 
 ### OW-objecten worden automatisch beëindigd bij het intrekken van een regeling
 
-In eerdere versies van het IMOW werd beschreven dat bij het intrekken van een regeling het bevoegd gezag zelf verantwoordelijk is voor het beëindigen van de aan de regeling gekoppelde OW-objecten. Deze wijziging zorg ervoor dat die OW-objecten automatisch worden ingetrokken.
+In eerdere versies van het IMOW werd beschreven dat bij het intrekken van een
+regeling het bevoegd gezag zelf verantwoordelijk is voor het beëindigen van de
+aan de regeling gekoppelde OW-objecten. Deze wijziging zorg ervoor dat die
+OW-objecten automatisch worden ingetrokken.
 
 Het voordeel van deze wijziging is dat het intrekken van een regeling eenvoudiger wordt.
 
-Deze wijziging heeft vooral impact op de volgende [paragraaf](#5952605C).
+Deze wijziging heeft vooral impact op de volgende [paragraaf](#H6-IntrekkenRegeling).
 
 ### Het attribuut idealisatie moet dezelfde waarde hebben voor alle Juridische regels
 
@@ -56,9 +89,13 @@ Regeltekst / alle Tekstdelen bij een Divisie of een Divisietekst
 
 Er wordt een waarschuwing gegeven wanneer een aangeleverde geometrie niet binnen het ambtsgebied van het bevoegd gezag valt. 
 
+TODO: Foutmeldeng buiten BBOX.
+
 ### Schrappen van het veld procedureStatus in een OW-object
 
-De waarde van het veld procedureStatus in een IMOW object is af te leiden uit het STOP deel van een aanlevering en is redundant. Dit kenmerk wordt geschrapt uit het IMOW.
+De waarde van het veld procedureStatus in een IMOW object is af te leiden uit
+het STOP deel van een aanlevering en is redundant. Dit kenmerk wordt geschrapt
+uit het IMOW.
 
 ### Werkafspraken voor Normwaarde in Norm
 
@@ -71,7 +108,9 @@ De waarde van het veld procedureStatus in een IMOW object is af te leiden uit he
 Wanneer het bevoegd gezag een Regeling (bijvoorbeeld een omgevingsplan) vaststelt
 gebeurt dit via een besluit dat het bevoegd gezag digitaal aan de Landelijke
 Voorziening Bekendmaken en Beschikbaar stellen (LVBB) aan moet leveren. Het IMOW
-is onderdeel van de standaard die regels voor een aanlevering vastlegt. Onderstaand is een lijst met documenten die relevant zijn vanuit het perspectief van IMOW:
+is onderdeel van de standaard die regels voor een aanlevering vastlegt.
+Onderstaand is een lijst met documenten die relevant zijn vanuit het perspectief
+van IMOW:
 
 - Een aanlevering heeft het formaat van een ZIP bestand die je aanbiedt aan de
   LVBB. Het LVBB bronhouderkoppelvlak [[LVBBBHKV]] schrijft de structuur van
@@ -114,9 +153,20 @@ is onderdeel van de standaard die regels voor een aanlevering vastlegt. Ondersta
 Het toepassingsgebied van IMOW is het machineleesbaar maken van teksten en locatie van regelingen binnen de omgevingswet.
 
 Het IMOW schrijft voor hoe je de tekst van een Regeling (zoals beschreven in STOP) machine leesbaar kunt maken door de tekst te verrijken met
-annotaties in de vorm van een collectie OW-objecten en hoe je die kunt toevoegen aan een aanlevering. Onder annoteren verstaan we het toevoegen van gegevens aan (onderdelen van) een omgevingsdocument die de inhoud van het omgevingsdocument voor de computer vertalen. Door het annoteren kan een viewer locaties en andere gegevens op een kaart en bij een tekst weergeven. Het annoteren zorgt er ook voor dat een omgevingsdocument op bepaalde kenmerken doorzoekbaar is. In het geval van omgevingsdocumenten met artikelstructuur waarin regels over activiteiten worden gesteld, helpt het annoteren ook bij het verbinden van toepasbare regels, oftewel vragenbomen, aan regels met locaties. Activiteiten spelen een centrale rol in het DSO en deze worden verrijkt met duiding op de kaart de naam van de activiteit en de activiteitregelkwalificatie. Ook functies of
-beperkingengebieden worden geduid. De gegevens die aangeleverd worden vanuit het IMOW helpen
-  de buitenwereld met het op een kaart terugvinden van Omgevingswet-informatie.
+annotaties in de vorm van een collectie OW-objecten en hoe je die kunt toevoegen
+aan een aanlevering. Onder annoteren verstaan we het toevoegen van gegevens aan
+(onderdelen van) een omgevingsdocument die de inhoud van het omgevingsdocument
+voor de computer vertalen. Door het annoteren kan een viewer locaties en andere
+gegevens op een kaart en bij een tekst weergeven. Het annoteren zorgt er ook
+voor dat een omgevingsdocument op bepaalde kenmerken doorzoekbaar is. In het
+geval van omgevingsdocumenten met artikelstructuur waarin regels over
+activiteiten worden gesteld, helpt het annoteren ook bij het verbinden van
+toepasbare regels, oftewel vragenbomen, aan regels met locaties. Activiteiten
+spelen een centrale rol in het DSO en deze worden verrijkt met duiding op de
+kaart de naam van de activiteit en de activiteitregelkwalificatie. Ook functies
+of beperkingengebieden worden geduid. De gegevens die aangeleverd worden vanuit
+het IMOW helpen de buitenwereld met het op een kaart terugvinden van
+Omgevingswet-informatie.
 
 Deze OW-objecten worden
 tegelijk met de tekst van een Besluit aan de LVBB aangeleverd. De koppeling
@@ -140,17 +190,18 @@ attributen en relaties.
 De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 
 - Conformiteit met Metamodel voor informatiemodellering, MIM 1.1 [[MIM]].
-- Model is opgesteld in UML klassediagrammen. Voor algemene uitleg over UML klassediagram zie wikipedia: UML klassediagram..
-- Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
+- Model is opgesteld in UML klassediagrammen. Voor algemene uitleg over UML klassediagram zie wikipedia: UML klassediagram.
+- Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie
+  niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
 
 
 ## Leeswijzer {#H1-Leeswijzer}
 
 Dit document is als volgt opgebouwd: . Hoofdstuk 2 bevat de gegevensdefinites van 
-OW-objecten. Hoofdstuk <a href='#H4-Implementatie'>3</a> gaat gedetailleerd in op hoe de
+OW-objecten. Hoofdstuk [4](#H04-Implementatie) gaat gedetailleerd in op hoe de
 OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
-bestand dat aangeleverd kan worden. Hoofdstuk
-<a href='#210F8E1C'>7</a> beschrijft het wijzigen van OW-objecten. Hoofdstuk <a href='#2577D13E'>5</a>
+bestand dat aangeleverd kan worden. Hoofdstuk [6](#H05-Wijzigen)
+beschrijft het wijzigen van OW-objecten. Hoofdstuk [5](#H05-OPinIMOW)
 beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. 
 
 ## Begrippen
@@ -159,10 +210,18 @@ De volgende begrippen worden gebruikt in dit document:
 
 <dfn>Besluit</dfn>: Een tekst die de vaststelling of wijziging van (de geldigheid van) een regeling of informatieobject beschrijft. Met andere woorden: Een besluit beschrijft precies hoe een BG een nieuwe regeling vaststelt, wijzigingen op een regeling doorvoert of de inwerkingtreding van een regeling of regelingversie bepaalt. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_besluit.html))
 
+<dfn>BHKV</dfn>: Zie Bronhouderkoppelvlak.
 
-<dfn>Bronhouderkoppelvlak </dfn>: Het bronhouderkoppelvlak (BHKV) is een technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en Beschikbaar stellen) en (software van) een bevoegd gezag. In dat koppelvlak worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke, proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html))
+<dfn>Bronhouderkoppelvlak</dfn>: Het bronhouderkoppelvlak (BHKV) is een
+technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en
+Beschikbaar stellen) en (software van) een bevoegd gezag. In dat koppelvlak
+worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke,
+proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron:
+[STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html))
 
-<dfn>Regeling</dfn>: Een regeling beschrijft algemeen geldende voorschriften die vastgesteld worden via een besluit van algemene strekking. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_regeling.html))
+<dfn>Regeling</dfn>: Een regeling beschrijft algemeen geldende voorschriften die
+vastgesteld worden via een besluit van algemene strekking. (bron: [STOP
+2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_regeling.html))
 
 # uitgangspunten van modellering
 
@@ -174,11 +233,20 @@ De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 
 # UML-Diagrammen
 
-In de UML diagrammen van het logische model zijn de termen hoofdletter-gevoelig en bevatten geen spaties. Deze schrijfwijze wordt ook in de beschrijving van het model gebruikt als er aan termen wordt gerefereerd. In de diagrammen zijn de objecttypen aan te klikken en wordt er gelinkt naar de beschrijving opgenomen in de objectcatalogus. De in de catalogus benoemde metagegevens zoals bijvoorbeeld Naam, Definitie, Indicatie abstract object zijn termen uit het Metamodel Informatiemodellering [[MIM]].
+In de UML diagrammen van het logische model zijn de termen hoofdletter-gevoelig
+en bevatten geen spaties. Deze schrijfwijze wordt ook in de beschrijving van het
+model gebruikt als er aan termen wordt gerefereerd. In de diagrammen zijn de
+objecttypen aan te klikken en wordt er gelinkt naar de beschrijving opgenomen in
+de objectcatalogus. De in de catalogus benoemde metagegevens zoals bijvoorbeeld
+Naam, Definitie, Indicatie abstract object zijn termen uit het Metamodel
+Informatiemodellering [[MIM]].
 
-Voor het inzoomen in de UML diagrammen kan het best het diagram in een apart tabblad van de browser worden geopenend. Afhankelijk van het type browser is dit meestal via een rechtermuisklik en 'open in nieuw tabblad'.
+Voor het inzoomen in de UML diagrammen kan het best het diagram in een apart
+tabblad van de browser worden geopenend. Afhankelijk van het type browser is dit
+meestal via een rechtermuisklik en 'open in nieuw tabblad'.
 
-In het volgende hoofdstuk zijn de UML diagrammen van het IMOW opgenomen. Er is een onderverdeling naar verschillende subdomeinen gemaakt:
+In het volgende hoofdstuk zijn de UML diagrammen van het IMOW opgenomen. Er is
+een onderverdeling naar verschillende subdomeinen gemaakt:
 
 - Aanlevering
 - OW-object

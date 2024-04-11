@@ -11,7 +11,7 @@ Merk op dat bij één aanlevering aan de LVBB, een LVBB-aanlevering, één
 OW-manifest hoort dat weer verschillende OW-aanleveringen kan bevatten. Dit komt
 bijvoorbeeld voor bij een Besluit dat meerdere Regelingen wijzigt.
 
-## Een OW-aanlevering aan de LVBB {#6BC0303B}
+## Een OW-aanlevering aan de LVBB 
 
 Het aanmaken of wijzigen van de collectie OW-objecten behorend bij een Regeling
 gebeurt met een OW-aanlevering. De OW-aanlevering bevat wijziginstructies die beschrijven
@@ -26,7 +26,7 @@ gewijzigd OW-object of (3) het beëindigen van een OW-object hierbij worden in
 een initieel besluit alleen nieuwe OW-objecten aangemaakt. Deze drie situaties
 zijn in de volgende paragrafen beschreven:
 
-### Een nieuw OW-object {#2F9C69B2}
+### Een nieuw OW-object 
 
 Wanneer een OW-object wordt aangeleverd met een identificatie die nog niet
 bestond in de tijdlijn van de Regeling ontstaat een nieuw OW-object. Voor een
@@ -34,7 +34,7 @@ nieuw object geldt de volgende regel:
 
 **Regel:** Een nieuw OW-object mag niet de status beëindigd hebben. (OZON0104).
 
-### Een OW-object wijzigen {#3993B196}
+### Een OW-object wijzigen 
 
 Wanneer een OW-object wordt aangeleverd met een identificatie die al bestond in
 de tijdlijn van de Regeling vervangt het aangeleverde OW-object het bestaande
@@ -62,7 +62,7 @@ worden:
   Omgevingswaarde.
 - Kaartlaag – deze moet altijd gewijzigd worden vanuit een Kaart.
 
-### Een OW-object beëindigen {#2C21DC35}
+### Een OW-object beëindigen {#H06-OW-eindigen}
 
 Wanneer een OW-object wordt aangeleverd waarbij het veld status de waarde 'B'
 heeft dan krijgt het oorspronkelijke OW-object de status beëindigd.
@@ -71,7 +71,7 @@ heeft dan krijgt het oorspronkelijke OW-object de status beëindigd.
 het object, afgezien van het status veld, exact overeenkomt met de laatst
 aangeleverde OW-informatie (OZON0107).
 
-### Resultaat OW-aanlevering {#189CCC1E}
+### Resultaat OW-aanlevering 
 
 Een OW-aanlevering bestaat uit een set instructies, die de
 OW-objecten behorend bij een Regeling toevoegt, wijzigt of verwijdert. 
@@ -95,7 +95,7 @@ maximaal één Pons object.
 **Regel:** Voor ieder Lid en Artikel zonder leden in de Regeling die niet
 gereserveerd of vervallen zijn moet er een Regeltekst object zijn.
 
-## Wanneer gebruik je een OW-aanlevering aan de LVBB {#616A8350}
+## Wanneer gebruik je een OW-aanlevering aan de LVBB 
 
 **TODO**: Op het moment dat het BHKV gespecificeerd wordt moet deze paragraaf daarop afgestemd worden.
 
@@ -103,7 +103,7 @@ Er is een aantal aanlevering aan het BKHV waarbij een OW-aanlevering gebruikt ka
 om de OW-objecten bij een regeling te wijzigen. Deze worden in de volgende
 paragrafen behandeld:
 
-### OW-aanlevering bij Besluit dat Regeling wijzigt {#2AE56890}
+### OW-aanlevering bij Besluit dat Regeling wijzigt 
 
 Wanneer het bevoegd gezag besluit om een omgevingsdocument te wijzigen moet het
 voor de bekendmaking van dat besluit een Aanlevering naar de LVBB sturen. Wanneer
@@ -116,9 +116,10 @@ geldt:
 **Regel:** De waardes van 'workIDRegeling' en 'doelID' van de OW-aanlevering
 moeten overeenkomen met de workIdentificatie en doel van het besluit.
 
-### Beëindigen van OW-objecten behorend bij een ingetrokken regeling {#5952605C}
+### Beëindigen van OW-objecten behorend bij een ingetrokken regeling {#H6-IntrekkenRegeling}
 
-Wanneer een Regeling wordt ingetrokken worden alle OW-objecten bij die regeling beëindigd.  De beïndiging hoeft niet apart te worden aangeleverd.
+Wanneer een Regeling wordt ingetrokken worden alle OW-objecten bij die regeling
+beëindigd.  De beïndiging hoeft niet apart te worden aangeleverd.
 
 **Regel:** Aan de intrekking van een Regeling is geen OW-aanlevering gekoppeld.
 

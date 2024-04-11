@@ -1,11 +1,11 @@
-# Technische implementatie IMOW {#H4-Implementatie}
+# Technische implementatie IMOW {#H04-Implementatie}
 
 Dit hoofdstuk beschrijft de technische aspecten van toevoegen van OW-bestanden
-aan een aanlevering aan de LVBB. De eerste [paragraaf](#H4-OW-aanlevering) schrijft voor welke OW-bestanden moeten worden
-aangeleverd. De tweede [paragraaf](#H4-aanlevereisen) stelt eisen aan de
+aan een aanlevering aan de LVBB. De eerste [paragraaf](#H04-OW-aanlevering) schrijft voor welke OW-bestanden moeten worden
+aangeleverd. De tweede [paragraaf](#H04-aanlevereisen) stelt eisen aan de
 aanlevering.
 
-## OW-aanlevering en OW-manifest {#H4-OW-aanlevering}
+## OW-aanlevering en OW-manifest {#H04-OW-aanlevering}
 
 Een aanlevering aan de LVBB waarin een bestand met de naam ‘manifest-ow.xml’
 voorkomt is een OW-aanlevering. Naast het OW-manifest bevat de OW-aanlevering
@@ -19,7 +19,7 @@ Voor een OW-aanlevering, bestaande uit het 'manifest-ow.xml' bestand en een aant
 Zie [paragraaf](#global_package_Aanlevering) voor een uitleg van de XML elementen
 in dit bestand.
 
-### Het aanleveren van OW-objecten in OW-bestanden {#H4-aanlevereisen}
+### Het aanleveren van OW-objecten in OW-bestanden {#H04-aanlevereisen}
 
 In het OW-manifest is beschreven welke OW-bestanden er zijn. Deze OW-bestanden
 die de OW-objecten bevatten moeten voldoen aan het XML schema in:
@@ -52,14 +52,14 @@ gegeven worden.
 Bij het aanleveren dient er rekening gehouden te worden met de volgende
 aspecten:
 
-- [Identificatie van objecten](#H4-Identificatie)
-- [Waardelijsten](#H4-Waardelijsten)
-- [toekennen van OW-objecten aan regeling](#H4-Toekennen)
-- [verwijzen tussen verschillende OW-objecten.](#H4-Verwijzen)
-- [behoud functionele structuur](#H4-FunctioneleStructuur)
-- [tijdelijk regelingdelen.](#H4-TijdelijkRegelingdelen)
+- [Identificatie van objecten](#H04-Identificatie)
+- [Waardelijsten](#H04-Waardelijsten)
+- [toekennen van OW-objecten aan regeling](#H04-Toekennen)
+- [verwijzen tussen verschillende OW-objecten.](#H04-Verwijzen)
+- [behoud functionele structuur](#H04-FunctioneleStructuur)
+- [tijdelijk regelingdelen.](#H04-TijdelijkRegelingdelen)
 
-### Identificatie van OW-objecten {#H4-Identificatie}
+### Identificatie van OW-objecten {#H04-Identificatie}
 
 OW-objecten hebben het in DSO een unieke identificatie. Deze uniciteit wordt
 gewaarborgd door een unieke code die de bronhouder identificeert te combineren
@@ -83,7 +83,7 @@ nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\.(regeltekst|gebied|gebiedengroep|lijn|lij
 
 De lokale identificatie als geheel wordt dan bijvoorbeeld: ```nl.imow-gm0200.gebied.2019000001```
 
-### Waardelijsten {#H4-Waardelijsten}
+### Waardelijsten {#H04-Waardelijsten}
 
 Voor attributen waarvan de waarde uit een waardelijst komt zijn de toegestane
 waardes te vinden in de [stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten).
@@ -91,7 +91,7 @@ waardes te vinden in de [stelselcatalogus](https://stelselcatalogus.omgevingswet
 **Regel:** Een kenmerk dat als type een waarde in een waardelijst heeft moet een
  uri uit de betreffende waardelijst bevatten.
 
-### Toekennen van OW-objecten aan regelingen {#H4-Toekennen}
+### Toekennen van OW-objecten aan regelingen {#H04-Toekennen}
 
 Een OW-object hoort bij een regeling. Als een besluit een regeling wijzigt horen
 de OW-objecten die in dat besluit ontstaan bij die regeling. Je kunt OW-objecten
@@ -105,7 +105,7 @@ ontstaat bepaalt bij welke regeling een OW-object hoort.
 OW-aanlevering die hoort bij een besluit dat de regeling wijzigt waar het
 OW-object bij hoort.
 
-### Verwijzingen tussen OW-objecten {#H4-Verwijzen}
+### Verwijzingen tussen OW-objecten {#H04-Verwijzen}
 
 In OZON mag een actief OW-object niet verwijzen naar een beëindigd OW-object.
 Daarom moet een besluit dat een OW-object beëindigt ook alle verwijzingen naar
@@ -119,16 +119,15 @@ OW-objecten van andere bevoegd gezagen inperkt:
   mag alleen verwijzen naar een OW-object behorend bij een regeling van
   hetzelfde bevoegd gezag, met uitzondering van de relatie
   bovenliggendeActiviteit van het OW-object Activiteit, waarvoor de specifieke
-  regels van paragraaf <a href='#08BD28A2'>4.2.5</a> gelden;
+  regels van [paragraaf](#08BD28A2) gelden;
 - een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel
   mag niet verwijzen naar een OW-object behorend bij een tijdelijk regelingdeel;
 - een OW-object behorend bij een tijdelijk regelingdeel mag alleen verwijzen
   naar een OW-object behorend bij hetzelfde tijdelijk regelingdeel, met
   uitzondering van de relatie bovenliggendeActiviteit van de tophaak-Activiteit
-  van het tijdelijk regelingdeel, waarvoor de specifieke regels van paragraaf <a
-  href='#7F3046AE'>4.2.6</a> gelden.
+  van het tijdelijk regelingdeel, waarvoor de specifieke regels van TPOD1954 gelden.
 
-### De functionele structuur {#H4-FunctioneleStructuur}
+### De functionele structuur {#H04-FunctioneleStructuur}
 
 De activiteiten in het stelsel vormen samen de ‘functionele structuur’. Deze
 boomstructuur bevat alle Activiteit objecten in de regelingen en de hiërarchie
@@ -192,7 +191,7 @@ het volgende:
   of naar een andere Activiteit die hoort bij de Placeholder-Regeling, bij een
   AMvB of bij een ministeriële regeling.
 
-### Tijdelijk regelingdelen {#H4-TijdelijkRegelingdelen}
+### Tijdelijk regelingdelen {#H04-TijdelijkRegelingdelen}
 
 Tijdelijk regelingdelen, zoals beschreven in STOP kunnen door een
 ander bevoegd gezag worden ingetrokken dan het bevoegd gezag waardoor het is

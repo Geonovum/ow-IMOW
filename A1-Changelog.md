@@ -1,4 +1,4 @@
-# A Bijlage: versiehistorie {#11A0CF11}
+# A Bijlage: versiehistorie {#HA-Changelog}
 
 In de versiehistorie wordt met WELT-xx verwezen naar de Wensen en Eisen Lijst
 voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die
