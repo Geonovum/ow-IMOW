@@ -471,7 +471,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.</p>
 <p>De eerste <a href="H1-P0-ReleaseNotes"> paragraaf</a> beschrijft de belangrijkste wijzigingen van het IMOW ten opzichte van versie 3.0.1. De volgende paragrafa beschrijft de <a href="#H1-context'">context</a> van het model en daarna volgt de <a href="#H1-Leeswijzer">leeswijzer</a>.</p>
 <section id="wijzigingen-sinds-versie-3-0-1"><div class="header-wrapper"><h3 id="H1-P0-ReleaseNotes"><bdi class="secno">1.1 </bdi>Wijzigingen sinds versie 3.0.1</h3><a class="self-link" href="#H1-P0-ReleaseNotes" aria-label="Permalink for Section 1.1"></a></div><p>Hieronder volgt een overzicht van de belangrijkste wijzigvoorstellen die in deze consultatie worden voorgelegd. Veel van de voorgestelde wijzigingen zijn al met  diverse ketenpartners besproken. Door deze consultatieversie te publiceren verwachten we ze in samenhang met een breed publiek te kunnen delen. De resultaten van deze consultatie zullen verwerkt worden in het verdere besluitvormingsproces.</p>
 <section id="imow-versienummer-in-aanlevering-gaat-gebruikt-worden"><div class="header-wrapper"><h4 id="x1-1-1-imow-versienummer-in-aanlevering-gaat-gebruikt-worden"><bdi class="secno">1.1.1 </bdi>IMOW versienummer in aanlevering gaat gebruikt worden</h4><a class="self-link" href="#imow-versienummer-in-aanlevering-gaat-gebruikt-worden" aria-label="Permalink for Section 1.1.1"></a></div>
-<p>Tot deze versie van het IMOW kon aan het aanleverkoppelvlak van de LVBB slechts één versie van het IMOW gebruikt worden. Met ingang van deze versie bevat het IMOW een versienummer waaraan het stelsel kan zien aan welke versie van het IMOW de aanlevering voldoet. </p>
+<p>Tot deze versie van het IMOW kon aan het van de LVBB slechts één versie van het IMOW gebruikt worden. Met ingang van deze versie bevat het IMOW een versienummer waaraan het stelsel kan zien aan welke versie van het IMOW de aanlevering voldoet. </p>
 <p>Deze wijziging zit in de paragraaf: TODO</p>
 </section><section id="geen-annotaties-meer-op-divisie-niveau"><div class="header-wrapper"><h4 id="x1-1-2-geen-annotaties-meer-op-divisie-niveau"><bdi class="secno">1.1.2 </bdi>Geen annotaties meer op divisie niveau</h4><a class="self-link" href="#geen-annotaties-meer-op-divisie-niveau" aria-label="Permalink for Section 1.1.2"></a></div>
 <p>In eerdere versies van het IMOW was het mogelijk om vrije tekst te annoteren op divisie-niveau waarbij de semantiek was dat de annotaties op een divisie geldig waren voor alle onderliggende tekstelement. Implementatie hiervan bleek lastig en foutgevoelig. In deze versie kun je alleen nog annoteren op een Divisietekst.</p>
@@ -488,6 +488,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.</p>
 <p>Het attribuut idealisatie moet dezelfde waarde hebben voor alle Juridische regels bij een
 Regeltekst / alle Tekstdelen bij een Divisie of een Divisietekst</p>
 </section><section id="waarschuwing-toevoegen-voor-geometrie-buiten-het-ambtsgebied"><div class="header-wrapper"><h4 id="x1-1-8-waarschuwing-toevoegen-voor-geometrie-buiten-het-ambtsgebied"><bdi class="secno">1.1.8 </bdi>Waarschuwing toevoegen voor geometrie buiten het ambtsgebied</h4><a class="self-link" href="#waarschuwing-toevoegen-voor-geometrie-buiten-het-ambtsgebied" aria-label="Permalink for Section 1.1.8"></a></div>
+<p>Er wordt een waarschuwing gegeven wanneer een aangeleverde geometrie niet binnen het ambtsgebied van het bevoegd gezag valt. </p>
 </section><section id="schrappen-van-het-veld-procedurestatus-in-een-ow-object"><div class="header-wrapper"><h4 id="x1-1-9-schrappen-van-het-veld-procedurestatus-in-een-ow-object"><bdi class="secno">1.1.9 </bdi>Schrappen van het veld procedureStatus in een OW-object</h4><a class="self-link" href="#schrappen-van-het-veld-procedurestatus-in-een-ow-object" aria-label="Permalink for Section 1.1.9"></a></div>
 <p>De waarde van het veld procedureStatus in een IMOW object is af te leiden uit het STOP deel van een aanlevering en is redundant. Dit kenmerk wordt geschrapt uit het IMOW.</p>
 </section><section id="werkafspraken-voor-normwaarde-in-norm"><div class="header-wrapper"><h4 id="x1-1-10-werkafspraken-voor-normwaarde-in-norm"><bdi class="secno">1.1.10 </bdi>Werkafspraken voor Normwaarde in Norm</h4><a class="self-link" href="#werkafspraken-voor-normwaarde-in-norm" aria-label="Permalink for Section 1.1.10"></a></div>
@@ -557,9 +558,6 @@ Afhankelijk van de documentstructuur (welke je kunt gebruiken is vastgelegd in
 de toepassingsprofielen) worden verschillende objecten meegeleverd. Voor beide typen
 tekststructuren is een diagram toegevoegd met hierin de toegelaten objecttypen,
 attributen en relaties.</p>
-<p>Er zijn verschillende scenario's waarmee met STOP een <a href="#dfn-regeling" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-regeling-2">Regeling</a> via
-een Aanlevering kan wijziging. Deze scenario's staan beschreven in
-Hoofdstuk <a href="#210F8E1C">7</a>.</p>
 </section><section id="uitgangspunten-van-modellering"><div class="header-wrapper"><h3 id="x1-4-uitgangspunten-van-modellering"><bdi class="secno">1.4 </bdi>uitgangspunten van modellering</h3><a class="self-link" href="#uitgangspunten-van-modellering" aria-label="Permalink for Section 1.4"></a></div>
 <p>De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:</p>
 <ul>
@@ -574,9 +572,9 @@ bestand dat aangeleverd kan worden. Hoofdstuk
 <a href="#210F8E1C">7</a> beschrijft het wijzigen van OW-objecten. Hoofdstuk <a href="#2577D13E">5</a>
 beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. </p>
 </section><section id="begrippen"><div class="header-wrapper"><h4 id="x1-4-2-begrippen"><bdi class="secno">1.4.2 </bdi>Begrippen</h4><a class="self-link" href="#begrippen" aria-label="Permalink for Section 1.4.2"></a></div>
-<p>De volgende begrippen worden gebruikt in dit document</p>
+<p>De volgende begrippen worden gebruikt in dit document:</p>
 <p><dfn id="dfn-besluit" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Besluit</dfn>: Een tekst die de vaststelling of wijziging van (de geldigheid van) een regeling of informatieobject beschrijft. Met andere woorden: Een besluit beschrijft precies hoe een BG een nieuwe regeling vaststelt, wijzigingen op een regeling doorvoert of de inwerkingtreding van een regeling of regelingversie bepaalt. (bron: <a href="https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_besluit.html">STOP 2.0</a>)</p>
-<p><dfn id="dfn-bronhouderkoppelvlak" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Bronhouderkoppelvlak</dfn>:  Het bronhouderkoppelvlak is een technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en Beschikbaar stellen) en (software van) een bevoegd gezag. In dat koppelvlak worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke, proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron: <a href="https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html">STOP 2.0</a>)</p>
+<p><dfn id="dfn-bronhouderkoppelvlak" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Bronhouderkoppelvlak </dfn>: Het bronhouderkoppelvlak (BHKV) is een technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en Beschikbaar stellen) en (software van) een bevoegd gezag. In dat koppelvlak worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke, proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron: <a href="https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html">STOP 2.0</a>)</p>
 <p><dfn id="dfn-regeling" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Regeling</dfn>: Een regeling beschrijft algemeen geldende voorschriften die vastgesteld worden via een besluit van algemene strekking. (bron: <a href="https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_regeling.html">STOP 2.0</a>)</p>
 </section></section><section id="uitgangspunten-van-modellering-0"><div class="header-wrapper"><h3 id="x1-5-uitgangspunten-van-modellering"><bdi class="secno">1.5 </bdi>uitgangspunten van modellering</h3><a class="self-link" href="#uitgangspunten-van-modellering-0" aria-label="Permalink for Section 1.5"></a></div>
 <p>De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:</p>
@@ -10296,6 +10294,10 @@ STOP als onderdeel van de GIO aangeleverd. Ze zitten niet in een OW-aanleverling
 Vanuit de OW-objecten Gebied, Lijn en Punt wordt middels de relatie 'geometrie'
 verwezen naar de geometrie in de GIO. Deze verwijzing gebeurt via het 'id'
 attribuut in de GIO.</p>
+<p>In vrijwel alle gevallen moet de geometrie van een Locatie binnen het ambtsgebied
+van het bevoegd gezag vallen. Vanwege enkele uitzonderingen op deze regel worden
+aanleveringen die hier niet aan voldoen niet geweigerd, wel kan een waarschuwing
+gegeven worden.</p>
 </section></section><section id="regels-voor-ow-aanlevering"><div class="header-wrapper"><h3 id="x4-2-regels-voor-ow-aanlevering"><bdi class="secno">4.2 </bdi>Regels voor OW-Aanlevering</h3><a class="self-link" href="#regels-voor-ow-aanlevering" aria-label="Permalink for Section 4.2"></a></div>
 <p>Bij het aanleveren dient er rekening gehouden te worden met de volgende
 aspecten:</p>
@@ -10666,8 +10668,8 @@ OW-objecten die beëindigd zijn (OZON0109)</p>
 maximaal één Pons object.</p>
 <p><strong>Regel:</strong> Voor ieder Lid en Artikel zonder leden in de Regeling die niet
 gereserveerd of vervallen zijn moet er een Regeltekst object zijn.</p>
-</section></section><section id="wanneer-gebruik-je-een-ow-aanlevering-aan-de-lvbb"><div class="header-wrapper"><h3 id="616A8350"><bdi class="secno">6.2 </bdi>Wanneer gebruik je een OW-aanlevering aan de LVBB</h3><a class="self-link" href="#616A8350" aria-label="Permalink for Section 6.2"></a></div><p><strong>TODO</strong>: Deze paragraaf moet afgestemd worden met STOP-IC.</p>
-<p>Er is een aantal aanlevering aan de LVBB waarbij een OW-aanlevering gebruikt kan worden
+</section></section><section id="wanneer-gebruik-je-een-ow-aanlevering-aan-de-lvbb"><div class="header-wrapper"><h3 id="616A8350"><bdi class="secno">6.2 </bdi>Wanneer gebruik je een OW-aanlevering aan de LVBB</h3><a class="self-link" href="#616A8350" aria-label="Permalink for Section 6.2"></a></div><p><strong>TODO</strong>: Op het moment dat het BHKV gespecificeerd wordt moet deze paragraaf daarop afgestemd worden.</p>
+<p>Er is een aantal aanlevering aan het BKHV waarbij een OW-aanlevering gebruikt kan worden
 om de OW-objecten bij een regeling te wijzigen. Deze worden in de volgende
 paragrafen behandeld:</p>
 <section id="ow-aanlevering-bij-besluit-dat-regeling-wijzigt"><div class="header-wrapper"><h4 id="2AE56890"><bdi class="secno">6.2.1 </bdi>OW-aanlevering bij Besluit dat Regeling wijzigt</h4><a class="self-link" href="#2AE56890" aria-label="Permalink for Section 6.2.1"></a></div><p>Wanneer het bevoegd gezag besluit om een omgevingsdocument te wijzigen moet het
@@ -10690,14 +10692,14 @@ bestaande regelingversie.</p>
 <li>Er zij mindere procedurestappen in vergelijking met definitieve regelgeving.</li>
 <li>De ConsolidatieInformatie mag geen tijdstempels bevatten.</li>
 </ul>
-<p>OW-objecten bij een ontwerbesluit worden gezien als een nieuwe versie van 
-een OW-object die niet horen bij vastgestelde regelgeving. Dit is ook omdat ontwerpbesluiten niet
-gemuteerd kunnen worden maar losstaan van vastgestelde
+<p>OW-objecten bij een ontwerbesluit worden gezien als een nieuwe versie van
+een OW-object die niet horen bij vastgestelde regelgeving. Dit is ook omdat
+ontwerpbesluiten niet gemuteerd kunnen worden maar losstaan van vastgestelde
 regelgeving. Ontwerpbesluiten kunnen voorkomen bij een initieel besluit en
 bij een wijzigingsbesluit. Een ontwerpbesluit beschrijft een ontwerp ten opzicht van een actuele
 regeling. Alleen de OW-objecten die wijzigen ten opzicht van de actuele levering
 worden aangeleverd.</p>
-<p>Ontwerp-activiteiten zullen niet verschijnen in de registratie van toepasbare
+<p>Activiteiten in ontwerpregelingen worden niet doorgegeven aan de registratie van toepasbare
 regels, dus er kunnen geen vragenbomen op ontwerp-activiteiten gemaakt worden.</p>
 </section></section></section>
   <section class="appendix" id="a-bijlage-versiehistorie"><div class="header-wrapper"><h2 id="11A0CF11"><bdi class="secno">A. </bdi>A Bijlage: versiehistorie</h2><a class="self-link" href="#11A0CF11" aria-label="Permalink for Appendix A."></a></div><p>In de versiehistorie wordt met WELT-xx verwezen naar de Wensen en Eisen Lijst
@@ -11147,8 +11149,6 @@ verwezen met STOP-issue #xx. De STOP-issuetracker is te vinden via
       <ul>
     <li>
     <a href="#ref-for-dfn-regeling-1" title="§ 1.2 Context standaard">§ 1.2 Context standaard</a> 
-  </li><li>
-    <a href="#ref-for-dfn-regeling-2" title="§ 1.3 Toepassingsgebied">§ 1.3 Toepassingsgebied</a> 
   </li>
   </ul>
     </div><script id="respec-dfn-panel">(() => {
