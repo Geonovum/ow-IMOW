@@ -1,4 +1,4 @@
-# Gebruik van OW-aanlevering bij LVBB {#H6-GebruikIMOW}
+# Gebruik van OW-aanlevering bij LVBB {#H05-GebruikIMOW}
 
 Een Besluit dat aangeleverd wordt aan de LVBB initieert of wijzigt een aantal
 regelingen. Om de OW-objecten behorend bij de regeling te maken of te wijzigen
@@ -11,7 +11,7 @@ Merk op dat bij één aanlevering aan de LVBB, een LVBB-aanlevering, één
 OW-manifest hoort dat weer verschillende OW-aanleveringen kan bevatten. Dit komt
 bijvoorbeeld voor bij een Besluit dat meerdere Regelingen wijzigt.
 
-## Een OW-aanlevering aan de LVBB 
+## Een OW-aanlevering aan de LVBB
 
 Het aanmaken of wijzigen van de collectie OW-objecten behorend bij een Regeling
 gebeurt met een OW-aanlevering. De OW-aanlevering bevat wijziginstructies die beschrijven
@@ -62,7 +62,7 @@ worden:
   Omgevingswaarde.
 - Kaartlaag – deze moet altijd gewijzigd worden vanuit een Kaart.
 
-### Een OW-object beëindigen {#H06-OW-eindigen}
+### Een OW-object beëindigen {#H05-OW-eindigen}
 
 Wanneer een OW-object wordt aangeleverd waarbij het veld status de waarde 'B'
 heeft dan krijgt het oorspronkelijke OW-object de status beëindigd.
@@ -116,7 +116,7 @@ geldt:
 **Regel:** De waardes van 'workIDRegeling' en 'doelID' van de OW-aanlevering
 moeten overeenkomen met de workIdentificatie en doel van het besluit.
 
-### Beëindigen van OW-objecten behorend bij een ingetrokken regeling {#H6-IntrekkenRegeling}
+### Beëindigen van OW-objecten behorend bij een ingetrokken regeling {#H05-IntrekkenRegeling}
 
 Wanneer een Regeling wordt ingetrokken worden alle OW-objecten bij die regeling
 beëindigd.  De beïndiging hoeft niet apart te worden aangeleverd.

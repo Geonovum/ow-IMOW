@@ -130,7 +130,7 @@ OW-objecten van andere bevoegd gezagen inperkt:
 De activiteiten in het stelsel vormen samen de ‘functionele structuur’. Deze
 boomstructuur bevat alle Activiteit objecten in de regelingen en de hiërarchie
 wordt bepaald door de bovenliggendeActiviteit relatie van de OW-Objecten van het
-type Activiteit. In <a href='fig10'>Figuur 10</a> is de het bovenste deel van
+type Activiteit. In <a href='#fig-FunctioneleStructuur'>Figuur 10</a> is de het bovenste deel van
 functionele structuur getekend. Met Placeholder-Regeling wordt bedoeld de
 regeling die, met het opschrift Omgevingswet, in het stelsel is ingebracht met
 uitsluitend het doel om beschikbaar te stellen de bovenste Activiteiten van de
@@ -140,7 +140,7 @@ die zijn genoemd in artikel 5.1 Ow en enkele Activiteiten van de AMvB’s en de
 Omgevingsregeling. De regels in deze paragaaf zorgen ervoor dat de hiërarchie
 van de functionele structuur behouden blijft bij wijzigingen.
 
-<figure id="fig10">
+<figure id="fig-FunctioneleStructuur">
   <img src='media/FunctioneleStructuur.png' style='width: 70%;'></img>
   <figcaption>: de top van de hiërarchie van de functionele structuur</figcaption>
 </figure>

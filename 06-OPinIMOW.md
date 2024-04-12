@@ -1,13 +1,13 @@
-# Onderdelen van STOP relevant voor IMOW {#H05-OPinIMOW}
+# Onderdelen van STOP relevant voor IMOW {#H06-OPinIMOW}
 
 Dit hoofdstuk beschrijft STOP onderdelen die relevant zijn voor het IMOW. Enkele
 dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de
-OP-standaard relevant is. De eerste [paragraaf](#H05-ConsolidatieInformatie) beschrijft de consolidatieinformatie uit een
-Regeling. De volgende [paragraaf](#H05-GIO) worden GIO’s beschreven.
+OP-standaard relevant is. De eerste [paragraaf](#H06-ConsolidatieInformatie) beschrijft de consolidatieinformatie uit een
+Regeling. De volgende [paragraaf](#H06-GIO) worden GIO’s beschreven.
 
 Zie de STOP [[STOPIC]] en het CIM-OP [[CIMOP]] voor meer details.
 
-## ConsolidatieInformatie {#H05-ConsolidatieInformatie}
+## ConsolidatieInformatie {#H06-ConsolidatieInformatie}
 
 In het STOP deel van de aanlevering wordt ConsolidatieInformatie meegeleverd.
 De ConsolidatieInformatie bepaalt de tijdlijn versies van de regelingen en
@@ -28,7 +28,7 @@ een Regeling. Voor IMOW zijn de volgende aspecten van belang:
     <figcaption>Consolidatieinformatie in STOP</figcaption>
 </figure>
 
-## GIO’s en Norm GIO’s {#H05-GIO}
+## GIO’s en Norm GIO’s {#H06-GIO}
 
 Bij het aanleveren van een besluit volgens STOP worden
 geografische objecten aangeleverd als GIO’s (geografische informatieobjecten).

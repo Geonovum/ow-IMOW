@@ -1,5 +1,4 @@
-# Inleiding {#H1-Inleiding}
-
+# Inleiding {#H01-Inleiding}
 
 Het Informatiemodel Omgevingswet (IMOW) is de toepassing van het CIM-OW op het
 niveau van gegevensuitwisseling. Het is daarmee ook gekoppeld aan de Standaard
@@ -21,12 +20,12 @@ IMOW is als logisch model de uitwerking van het conceptuele model CIM-OW
 weergegeven binnen het DSO. Het IMOW is de toepassing van het CIM-OW op het
 niveau van gegevens.
 
-<figure id="Figure-CIM-Overzicht">
-    <img src="media/Stelsel van CIMs.png" alt="">
+<figure id="fig-StelselVanCIMs">
+    <img src="media/StelselVanCIMs.png" alt="">
     <figcaption>Overzicht van alle Conceptuele Informatiemodellen in het DSO</figcaption>
 </figure>
 
-De volgende paragraaf beschrijft de [context](#H01-context') van het model en daarna volgt de [leeswijzer](#H1-Leeswijzer).
+De volgende paragraaf beschrijft de [context](#H01-context) van het model en daarna volgt de [leeswijzer](#H01-Leeswijzer).
 
 ## Context standaard {#H01-context}
 
@@ -73,8 +72,6 @@ van IMOW:
 
 ## Toepassingsgebied
 
-<!-- TODO: Eerste paragraaf herschrijven. -->
-
 Het toepassingsgebied van IMOW is het machineleesbaar maken van teksten en locatie van regelingen binnen de omgevingswet.
 
 Het IMOW schrijft voor hoe je de tekst van een Regeling (zoals beschreven in STOP) machine leesbaar kunt maken door de tekst te verrijken met
@@ -119,13 +116,13 @@ De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 - Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie
   niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
 
-## Leeswijzer {#H1-Leeswijzer}
+## Leeswijzer {#H01-Leeswijzer}
 
 Dit document is als volgt opgebouwd: hoofdstuk 2 bevat de gegevensdefinites van
 OW-objecten. Hoofdstuk [4](#H04-Implementatie) gaat gedetailleerd in op hoe de
 OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
-bestand dat aangeleverd kan worden. Hoofdstuk [6](#H6-GebruikIMOW)
-beschrijft het wijzigen van OW-objecten. Hoofdstuk [5](#H05-OPinIMOW)
+bestand dat aangeleverd kan worden. Hoofdstuk [5](#H05-GebruikIMOW)
+beschrijft het wijzigen van OW-objecten. Hoofdstuk [6](#H06-OPinIMOW)
 beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. 
 
 ## Begrippen

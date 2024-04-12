@@ -3,11 +3,7 @@
 In de versiehistorie wordt met WELT-xx verwezen naar de Wensen en Eisen Lijst
 voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die
 door gebruikers van de standaard zijn ingediend. De ingediende meldingen zijn te
-vinden via <https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen>.
-
-Voor de STOP-standaard bestaat een vergelijkbaar meldingssysteem, waarnaar wordt
-verwezen met STOP-issue #xx. De STOP-issuetracker is te vinden via
-<https://gitlab.com/koop/STOP/standaard/issues>.
+vinden via <https://www.geonovum.nl/geo-standaarden/meldingen>.
 
 Omdat het document grondig is geherstructureerd zijn de paragraafverwijzingen tot versie 3.0.1 niet meer geldig en die zijn verwijderd.
 
@@ -47,7 +43,7 @@ Omdat het document grondig is geherstructureerd zijn de paragraafverwijzingen to
 |           |            | Tekstdeel-foutjes hersteld (toelichting van element).                                                                                                                                                                |
 |           |            | SymbolisatieItem-foutjes hersteld (toelichting van element, en gebruik status en procedurestatus-elementen).                                                                                                         |
 |           |            | Aangepast dat het verboden is geworden om de oude RegelingVersieInformatie mee te sturen en tekstuele verbeteringen (WELT-171).                                                                             |
-|           |            | Aanvulling van integrale tekstvervanging (STOP#191).                                                                                                                                                                 |
+|           |            | Aanvulling van integrale tekstvervanging.                                                                                                                                                                |
 | V2.0.2    | 2023-01-09 | In de alle hoofdstukken tekstuele aanpassingen gedaan om de leesbaarheid van de standaard te vergroten.                                                                                                              |
 |           |            | Paragraaf over bestandsgrootte geschrapt omdat dit nu elders geregeld is (WELT-196).                                                                                                                           |
 |           |            | Toevoegen van UML diagrammen Kaart en Kaartlaag en SymbolisatieItem (WELT-201).                                                                                                                                      |
