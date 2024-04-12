@@ -130,10 +130,10 @@ let respecConfig = {
     STOPIC: {
       id: "STOPIC",
       title: "Standaard Officiële Publicaties 1.4.0-ic",
-      href: "https://koop.gitlab.io/STOP/standaard/2.0.0-rc/index.html",
+      href: "https://koop.gitlab.io/STOP/standaard/1.4.0-ic/index.html",
       status: "Implementatie Kandidaat",
       publisher: "KOOP",
-      date: "2023-02-17"
+      date: "2024-04-12"
     },
   },
 };

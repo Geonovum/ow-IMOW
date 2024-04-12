@@ -69,7 +69,7 @@ Het voordeel van deze wijziging is dat het intrekken van een regeling
 eenvoudiger wordt wat het intrekken van tijdelijk regelingdelen gaat
 vereenvoudigen.
 
-Deze wijziging heeft vooral impact op de volgende [paragraaf](#H05-IntrekkenRegeling).
+Deze wijziging heeft vooral impact op [paragraaf 5.2.2](#H05-IntrekkenRegeling).
 
 **Waarschuwing voor geometrie**
 

@@ -16,7 +16,7 @@ in de vorm van OW-objecten. IMOW is bedoeld voor bouwers van plansoftware en
 voor technisch ingestelde medewerkers van bevoegde gezagen en adviesbureaus.
 
 IMOW is als logisch model de uitwerking van het conceptuele model CIM-OW
-[[CIMOW]]. In onderstaand figuur zijn de conceptuele informatiemodellen
+[[CIMOW]]. In [Figuur 1](#fig-StelselVanCIMs) zijn de conceptuele informatiemodellen
 weergegeven binnen het DSO. Het IMOW is de toepassing van het CIM-OW op het
 niveau van gegevens.
 
@@ -118,12 +118,12 @@ De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 
 ## Leeswijzer {#H01-Leeswijzer}
 
-Dit document is als volgt opgebouwd: hoofdstuk 2 bevat de gegevensdefinites van
-OW-objecten. Hoofdstuk [4](#H04-Implementatie) gaat gedetailleerd in op hoe de
+Dit document is als volgt opgebouwd: [hoofdstuk 2](#cat) bevat de gegevensdefinites van
+OW-objecten. [Hoofdstuk 3](#lis) bevat een overzicht van de gebruikte waardelijsten. [Hoofdstuk 4](#H04-Implementatie) gaat gedetailleerd in op hoe de
 OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
-bestand dat aangeleverd kan worden. Hoofdstuk [5](#H05-GebruikIMOW)
+bestand dat aangeleverd kan worden. [Hoofdstuk 5](#H05-GebruikIMOW)
 beschrijft het wijzigen van OW-objecten. Hoofdstuk [6](#H06-OPinIMOW)
-beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. 
+beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.
 
 ## Begrippen
 

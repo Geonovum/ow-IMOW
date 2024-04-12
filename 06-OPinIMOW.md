@@ -14,7 +14,7 @@ De ConsolidatieInformatie bepaalt de tijdlijn versies van de regelingen en
 informatieobjecten die ontstaan uit een Besluit. Diezelfde tijdlijn geldt voor
 de OW-objecten.
 
-Figuur 10 bevat toon de klasse 'Consolidatie Informatie' van het CIM-OP. Deze
+[Figuur 11](#fig-cim-op-consolidatie) bevat toon de klasse 'Consolidatie Informatie' van het CIM-OP. Deze
 bevat de informatie die noodzakelijk is om de aanlevering te consolideren tot
 een Regeling. Voor IMOW zijn de volgende aspecten van belang:
 
@@ -23,7 +23,7 @@ een Regeling. Voor IMOW zijn de volgende aspecten van belang:
 - De relatie 'doel' verwijst naar het doelId in de OW-aanlevering.
 - Uit de  klasse 'Tijdstempel' worden de geldigheidsgegevens van de OW-objecten afgeleid.
 
-<figure>
+<figure id="fig-cim-op-consolidatie">
     <img src='media/cim-op-consolidatie.png' />
     <figcaption>Consolidatieinformatie in STOP</figcaption>
 </figure>
@@ -33,7 +33,7 @@ een Regeling. Voor IMOW zijn de volgende aspecten van belang:
 Bij het aanleveren van een besluit volgens STOP worden
 geografische objecten aangeleverd als GIO’s (geografische informatieobjecten).
 Dit is één van de twee soorten informatieobjecten die in STOP kunnen worden
-meegeleverd (de andere zijn PDF-documenten). Figuur 11 bevat het UML diagram 
+meegeleverd (de andere zijn PDF-documenten). [Figuur 12](#cim-op-gio) bevat het UML diagram 
 van de 'GIO versie' uit het CIM-OP. Voor IMOW zijn de volgende aspecten van belang:
 
 - Een 'Gio vaststelling' stelt een versie van een GIO vast. Hierin heeft iedere
@@ -72,7 +72,7 @@ een 'Normwaarde'. Hiervoor geldt:
 - Iedere normwaarde dient een symbolisatie te hebben, dit wordt vastgelegd
   in het vaststellingsdeel van het GIO. (**TODO**: dit zie ik nog niet terug in CIM-OP)
 
-<figure>
+<figure id="fig-cim-op-gio">
     <img src='media/cim-op-gio.png'></img>
     <figcaption>GIO in STOP</figcaption>
 </figure>
@@ -117,7 +117,7 @@ De volgende regels zijn om het naar behoren functioneren van de landelijke voorz
 - Geometrie die buiten de boundingBox {"minx": -41000, "maxx": 279000, "miny": 306000, "maxy": 867000} in RD ligt wordt afgekeurd.
 - Geometrie die buiten de boundingBox {"minx": 2.268, "maxx": 7.361, "miny": 50.711, "maxy": 55.786} in ETRS89 wordt afgekeurd.
 
-## Richtlijn voor het maken van GIO’s o.b.v. OW-objecten 
+## Richtlijn voor het maken van GIO’s o.b.v. OW-objecten
 
 In deze paragraaf wordt toegelicht welke richtlijnen er zijn voor het maken van
 GIO’s vanuit OW-objecten. Dit zijn richtlijnen en deze worden niet gevalideerd
@@ -127,30 +127,30 @@ je vanuit OW naar GIO’s toe kunt werken.
 De richtlijn is als volgt:
 
 - Gebruik Locatiegroepen (c.q. de groep-subtypen van Locatie in IMOW (Gebiedengroep,
-  Lijnengroep, Puntengroep) als OW-pendant van het GIO (zie Figuur 5)
+  Lijnengroep, Puntengroep) als OW-pendant van het GIO (zie [Figuur 13](#fig-RichtlijnVoorOW-objecten))
 - Bij gebruik van het OW-object Omgevingsnorm/Omgevingswaarde zou er een Norm-GIO 
   moeten zijn die dezelfde Locaties en kwalitatieve/kwantitatieve Normwaarden 
-  bevat als de OW-Norm (zie Figuur 6).
+  bevat als de OW-Norm (zie [Figuur 14](#fig-RichtlijnVoorNormen)).
 - De overige subtypen van Locatie in IMOW (Gebied, Lijn, Punt) zouden moeten
   corresponderen met de Locatie uit het GIO.
 - Verwijs vanuit annotaties altijd naar een Locatiegroep, zodat het gelijk 
   loopt met de verwijzing vanuit de tekst (naar het GIO).
 
-<figure>
-    <img src='media/RichtlijnVoorOW-objecten.png' alt='' style='width: 100%;'></img>
+<figure id='fig-RichtlijnVoorOW-objecten'>
+    <img src='media/RichtlijnVoorOW-objecten.png'></img>
     <figcaption>Richtlijn voor OW-objecten i.r.t. GIO’s</figcaption>
 </figure>
 
-<figure>
-    <img src='media/RichtlijnVoorNormen.png' alt='' style='width: 100%;'></img>
+<figure id='fig-RichtlijnVoorNormen'>
+    <img src='media/RichtlijnVoorNormen.png'></img>
     <figcaption>Richtlijn voor Normen i.r.t. Norm-GIO’s</figcaption>
 </figure>
 
 Dit heeft de volgende consequenties:
 
-- In het GIO kun je geen verschillende IMOW-Locatiesubtypen vermengen (bijv.
+- In het GIO kun je geen verschillende subtypen van OW-locatie vermengen (bijv.
   gebieden en punten in dezelfde GIO).
 - In het geval dat één IMOW-Gebied in meerdere Gebiedengroepen zit, zou de
   Locatie ook in meerdere GIO’s voor moeten komen.
-- Er was met de huidige versie van het IMOW geen eenduidige richtlijn 
+- Er was met de huidige versie van het IMOW geen eenduidige richtlijn
   te bedenken voor het indelen van groepen in het GIO.
