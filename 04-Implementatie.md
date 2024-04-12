@@ -1,8 +1,8 @@
 # Technische implementatie IMOW {#H04-Implementatie}
 
 Dit hoofdstuk beschrijft de technische aspecten van toevoegen van OW-bestanden
-aan een aanlevering aan de LVBB. De eerste [paragraaf](#H04-OW-aanlevering) schrijft voor welke OW-bestanden moeten worden
-aangeleverd. De tweede [paragraaf](#H04-aanlevereisen) stelt eisen aan de
+aan een aanlevering aan de LVBB. [Paragraaf 4.1](#H04-OW-aanlevering) schrijft voor welke OW-bestanden moeten worden
+aangeleverd.  [Paragraaf 4.2](#H04-aanlevereisen) stelt eisen aan de
 aanlevering.
 
 **Regel:** De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <https://register.geostandaarden.nl/xmlschema/tpod/v4.0.0-ic1>.
@@ -18,7 +18,7 @@ Voor een OW-aanlevering, bestaande uit het 'manifest-ow.xml' bestand en een aant
 
 **Regel:** Het manifest-ow.xml bestand moet voldoen aan het in de map bestanden-ow/generiek/manifest-ow.xsd (LVBB1032)
 
-Zie [paragraaf](#global_package_Aanlevering) voor een uitleg van de XML elementen
+Zie [paragraaf 2.1](#global_package_Aanlevering) voor een uitleg van de XML elementen
 in dit bestand.
 
 ### Het aanleveren van OW-objecten in OW-bestanden {#H04-aanlevereisen}

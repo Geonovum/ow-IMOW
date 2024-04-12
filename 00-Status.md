@@ -69,8 +69,6 @@ Het voordeel van deze wijziging is dat het intrekken van een regeling
 eenvoudiger wordt wat het intrekken van tijdelijk regelingdelen gaat
 vereenvoudigen.
 
-Deze wijziging heeft vooral impact op [paragraaf 5.2.2](#H05-IntrekkenRegeling).
-
 **Waarschuwing voor geometrie**
 
 Ten behoeve van de het functioneren van de landelijke voorziening is een validatie
@@ -85,10 +83,3 @@ binnen het ambtsgebied van het bevoegd gezag valt.
 De waarde van het veld procedureStatus in een IMOW object is af te leiden uit
 het STOP deel van een aanlevering en is redundant. Dit kenmerk wordt geschrapt
 uit het IMOW.
-
-
-
-
-
-
-

@@ -79,25 +79,24 @@ Na het uitvoeren van de instructies is een nieuwe set OW-objecten ontstaan
 behorend bij de regeling. Voor de totale set van OW-objecten behorend bij
 de regeling gelden de volgende regels:
 
-**Regel:** Een OW-aanlevering mag niet resulteren in wees-objecten, dat zijn
+**Regels:**
+
+- Een OW-aanlevering mag niet resulteren in wees-objecten, dat zijn
 objecten die niet direct of indirect gekoppeld zijn aan een OW-object dat een
 bestaand documentfragment annoteert (OZON0350 t/m OZON0367).
-
-**Regel:** Een OW-aanlevering mag niet resulteren in verwijzingen naar
+- Een OW-aanlevering mag niet resulteren in verwijzingen naar
 OW-objecten die beëindigd zijn (OZON0109)
-
-**Regel:** Een OW-aanlevering moet resulteren in een Regeling met daarin precies
+- Een OW-aanlevering moet resulteren in een Regeling met daarin precies
 één Regelingsgebied.
-
-**Regel:** Een OW-aanlevering moet resulteren in een Regeling met daarin
+- Een OW-aanlevering moet resulteren in een Regeling met daarin
 maximaal één Pons object.
-
-**Regel:** Voor ieder Lid en Artikel zonder leden in de Regeling die niet
+- Voor ieder Lid en Artikel zonder leden in de Regeling die niet
 gereserveerd of vervallen zijn moet er een Regeltekst object zijn.
 
 ## Wanneer gebruik je een OW-aanlevering aan de LVBB 
 
-**TODO**: Op het moment dat het BHKV gespecificeerd wordt moet deze paragraaf daarop afgestemd worden.
+**noot**: Op het moment dat het BHKV gespecificeerd wordt, wordt deze paragraaf
+daarop afgestemd.
 
 Er is een aantal aanlevering aan het BKHV waarbij een OW-aanlevering gebruikt kan worden
 om de OW-objecten bij een regeling te wijzigen. Deze worden in de volgende

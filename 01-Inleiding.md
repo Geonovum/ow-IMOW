@@ -107,23 +107,6 @@ tekststructuren is een diagram toegevoegd met hierin de toegelaten objecttypen,
 attributen en relaties.
 
 
-# uitgangspunten van modellering
-
-De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
-
-- Conformiteit met Metamodel voor informatiemodellering, MIM 1.1 [[MIM]].
-- Model is opgesteld in UML klassediagrammen. Voor algemene uitleg over UML klassediagram zie wikipedia: UML klassediagram.
-- Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie
-  niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
-
-## Leeswijzer {#H01-Leeswijzer}
-
-Dit document is als volgt opgebouwd: [hoofdstuk 2](#cat) bevat de gegevensdefinites van
-OW-objecten. [Hoofdstuk 3](#lis) bevat een overzicht van de gebruikte waardelijsten. [Hoofdstuk 4](#H04-Implementatie) gaat gedetailleerd in op hoe de
-OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
-bestand dat aangeleverd kan worden. [Hoofdstuk 5](#H05-GebruikIMOW)
-beschrijft het wijzigen van OW-objecten. Hoofdstuk [6](#H06-OPinIMOW)
-beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.
 
 ## Begrippen
 
@@ -148,7 +131,7 @@ proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron:
 vastgesteld worden via een besluit van algemene strekking. (bron: [STOP
 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_regeling.html))
 
-# uitgangspunten van modellering
+## uitgangspunten van modellering
 
 De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 
@@ -156,7 +139,7 @@ De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 - Model is opgesteld in UML klassediagrammen. Voor algemene uitleg over UML klassediagram zie wikipedia: UML klassediagram..
 - Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
 
-# UML-Diagrammen
+## UML-Diagrammen
 
 In de UML diagrammen van het logische model zijn de termen hoofdletter-gevoelig
 en bevatten geen spaties. Deze schrijfwijze wordt ook in de beschrijving van het
@@ -179,3 +162,13 @@ een onderverdeling naar verschillende subdomeinen gemaakt:
 - Vrijetekststructuur
 - Locatie
 - Kaart
+
+## Leeswijzer {#H01-Leeswijzer}
+
+Dit document is als volgt opgebouwd: [hoofdstuk 2](#cat) bevat de gegevensdefinites
+van OW-objecten. [Hoofdstuk 3](#lis) bevat een overzicht van de gebruikte waardelijsten.
+[Hoofdstuk 4](#H04-Implementatie) gaat gedetailleerd in op hoe de
+OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
+bestand dat aangeleverd kan worden. [Hoofdstuk 5](#H05-GebruikIMOW)
+beschrijft het wijzigen van OW-objecten.[Hoofdstuk 6](#H06-OPinIMOW)
+beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.
