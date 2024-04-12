@@ -117,7 +117,7 @@ OW-objecten van andere bevoegd gezagen inperkt:
   mag alleen verwijzen naar een OW-object behorend bij een regeling van
   hetzelfde bevoegd gezag, met uitzondering van de relatie
   bovenliggendeActiviteit van het OW-object Activiteit, waarvoor de specifieke
-  regels van [paragraaf](#08BD28A2) gelden;
+  regels van TPOD1951, TPOD1952 en TPOD1953 gelden;
 - een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel
   mag niet verwijzen naar een OW-object behorend bij een tijdelijk regelingdeel;
 - een OW-object behorend bij een tijdelijk regelingdeel mag alleen verwijzen
@@ -130,7 +130,7 @@ OW-objecten van andere bevoegd gezagen inperkt:
 De activiteiten in het stelsel vormen samen de ‘functionele structuur’. Deze
 boomstructuur bevat alle Activiteit objecten in de regelingen en de hiërarchie
 wordt bepaald door de bovenliggendeActiviteit relatie van de OW-Objecten van het
-type Activiteit. In <a href='#d3e3754'>Figuur 10</a> is de het bovenste deel van
+type Activiteit. In <a href='fig10'>Figuur 10</a> is de het bovenste deel van
 functionele structuur getekend. Met Placeholder-Regeling wordt bedoeld de
 regeling die, met het opschrift Omgevingswet, in het stelsel is ingebracht met
 uitsluitend het doel om beschikbaar te stellen de bovenste Activiteiten van de
@@ -140,7 +140,7 @@ die zijn genoemd in artikel 5.1 Ow en enkele Activiteiten van de AMvB’s en de
 Omgevingsregeling. De regels in deze paragaaf zorgen ervoor dat de hiërarchie
 van de functionele structuur behouden blijft bij wijzigingen.
 
-<figure>
+<figure id="fig10">
   <img src='media/FunctioneleStructuur.png' style='width: 70%;'></img>
   <figcaption>: de top van de hiërarchie van de functionele structuur</figcaption>
 </figure>
@@ -167,12 +167,12 @@ worden ingevuld:
 
 **Regel:** (TPOD1952):  Voor omgevingsverordening,
 waterschapsverordening en omgevingsplan geldt, in afwijking van het bepaalde in
-paragraaf <a href='#60ED5DE4'>4.2.4</a>, dat de relatie bovenliggendeActiviteit
+regel TPOD1950, dat de relatie bovenliggendeActiviteit
 van een Activiteit niet zijnde de tophaak uitsluitend mag verwijzen naar een
 andere Activiteit die hoort bij dezelfde Regeling.
 
 **Regel:** (TPOD1953) Voor de relatie bovenliggendeActiviteit van de tophaken
-geldt, in afwijking van het bepaalde in paragraaf <a href='#60ED5DE4'>4.2.4</a>,
+geldt, in afwijking van het bepaalde in paragraaf TPOD1950,
 het volgende:
 
 - in de omgevingsverordening moet de relatie bovenliggendeActiviteit van de

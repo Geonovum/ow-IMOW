@@ -1,6 +1,5 @@
 # Inleiding {#H1-Inleiding}
 
-<!-- TODO: Paul Jansen vragen om een inleiding te schrijven. -->
 
 Het Informatiemodel Omgevingswet (IMOW) is de toepassing van het CIM-OW op het
 niveau van gegevensuitwisseling. Het is daarmee ook gekoppeld aan de Standaard
@@ -27,11 +26,9 @@ niveau van gegevens.
     <figcaption>Overzicht van alle Conceptuele Informatiemodellen in het DSO</figcaption>
 </figure>
 
-De eerste [paragraaf](H1-P0-ReleaseNotes) beschrijft de belangrijkste wijzigingen van het IMOW ten opzichte van versie 3.0.1. De volgende paragrafa beschrijft de [context](#H1-context') van het model en daarna volgt de [leeswijzer](#H1-Leeswijzer).
+De volgende paragraaf beschrijft de [context](#H01-context') van het model en daarna volgt de [leeswijzer](#H1-Leeswijzer).
 
-
-
-## Context standaard {#H1-context}
+## Context standaard {#H01-context}
 
 Wanneer het bevoegd gezag een Regeling (bijvoorbeeld een omgevingsplan) vaststelt
 gebeurt dit via een besluit dat het bevoegd gezag digitaal aan de Landelijke
@@ -122,13 +119,12 @@ De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 - Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie
   niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
 
-
 ## Leeswijzer {#H1-Leeswijzer}
 
-Dit document is als volgt opgebouwd: . Hoofdstuk 2 bevat de gegevensdefinites van 
+Dit document is als volgt opgebouwd: hoofdstuk 2 bevat de gegevensdefinites van
 OW-objecten. Hoofdstuk [4](#H04-Implementatie) gaat gedetailleerd in op hoe de
 OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
-bestand dat aangeleverd kan worden. Hoofdstuk [6](#H05-Wijzigen)
+bestand dat aangeleverd kan worden. Hoofdstuk [6](#H6-GebruikIMOW)
 beschrijft het wijzigen van OW-objecten. Hoofdstuk [5](#H05-OPinIMOW)
 beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. 
 
@@ -136,9 +132,13 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.
 
 De volgende begrippen worden gebruikt in dit document:
 
-<dfn>Besluit</dfn>: Een tekst die de vaststelling of wijziging van (de geldigheid van) een regeling of informatieobject beschrijft. Met andere woorden: Een besluit beschrijft precies hoe een BG een nieuwe regeling vaststelt, wijzigingen op een regeling doorvoert of de inwerkingtreding van een regeling of regelingversie bepaalt. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_besluit.html))
+<dfn>Besluit</dfn>: Een tekst die de vaststelling of wijziging van (de
+geldigheid van) een regeling of informatieobject beschrijft. Met andere
+woorden: Een besluit beschrijft precies hoe een BG een nieuwe regeling 
+vaststelt, wijzigingen op een regeling doorvoert of de inwerkingtreding 
+van een regeling of regelingversie bepaalt. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_besluit.html))
 
-<dfn>BHKV</dfn>: Zie Bronhouderkoppelvlak.
+<dfn>BHKV</dfn>: Zie <a>Bronhouderkoppelvlak</a>.
 
 <dfn>Bronhouderkoppelvlak</dfn>: Het bronhouderkoppelvlak (BHKV) is een
 technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en
@@ -170,7 +170,7 @@ Naam, Definitie, Indicatie abstract object zijn termen uit het Metamodel
 Informatiemodellering [[MIM]].
 
 Voor het inzoomen in de UML diagrammen kan het best het diagram in een apart
-tabblad van de browser worden geopenend. Afhankelijk van het type browser is dit
+tabblad van de browser worden geopend. Afhankelijk van het type browser is dit
 meestal via een rechtermuisklik en 'open in nieuw tabblad'.
 
 In het volgende hoofdstuk zijn de UML diagrammen van het IMOW opgenomen. Er is

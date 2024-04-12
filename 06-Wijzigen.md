@@ -1,4 +1,4 @@
-# Gebruik van OW-aanlevering bij LVBB {#H7-GebruikIMOW}
+# Gebruik van OW-aanlevering bij LVBB {#H6-GebruikIMOW}
 
 Een Besluit dat aangeleverd wordt aan de LVBB initieert of wijzigt een aantal
 regelingen. Om de OW-objecten behorend bij de regeling te maken of te wijzigen
