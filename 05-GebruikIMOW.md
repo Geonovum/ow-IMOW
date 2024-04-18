@@ -85,13 +85,15 @@ de regeling gelden de volgende regels:
 objecten die niet direct of indirect gekoppeld zijn aan een OW-object dat een
 bestaand documentfragment annoteert (OZON0350 t/m OZON0367).
 - Een OW-aanlevering mag niet resulteren in verwijzingen naar
-OW-objecten die beëindigd zijn (OZON0109)
+OW-objecten die beëindigd zijn (OZON0109).
 - Een OW-aanlevering moet resulteren in een Regeling met daarin precies
 één Regelingsgebied.
 - Een OW-aanlevering moet resulteren in een Regeling met daarin
 maximaal één Pons object.
 - Voor ieder Lid en Artikel zonder leden in de Regeling die niet
 gereserveerd of vervallen zijn moet er een Regeltekst object zijn.
+- Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen.(TPOD2050).
+- Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst verwijzen (TPOD2052).
 
 ## Wanneer gebruik je een OW-aanlevering aan de LVBB 
 

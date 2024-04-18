@@ -1,44 +1,43 @@
 # Technische implementatie IMOW {#H04-Implementatie}
 
-Dit hoofdstuk beschrijft de technische aspecten van toevoegen van OW-bestanden
+Dit hoofdstuk beschrijft de technische aspecten van het toevoegen van OW-bestanden
 aan een aanlevering aan de LVBB. [Paragraaf 4.1](#H04-OW-aanlevering) schrijft voor welke OW-bestanden moeten worden
 aangeleverd.  [Paragraaf 4.2](#H04-aanlevereisen) stelt eisen aan de
 aanlevering.
 
-**Regel:** De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <https://register.geostandaarden.nl/xmlschema/tpod/v4.0.0-ic1>.
+De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <https://register.geostandaarden.nl/xmlschema/tpod/v4.0.0-ic1>.
 
 ## OW-aanlevering en OW-manifest {#H04-OW-aanlevering}
 
-Een aanlevering aan de LVBB waarin een bestand met de naam ‘manifest-ow.xml’
-voorkomt is een OW-aanlevering. Naast het OW-manifest bevat de OW-aanlevering
-een aantal bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het
+Een aanlevering aan de LVBB bevat altijd een bestand met de naam naam `manifest-ow.xml`. Dit
+is het OW-manifest. Daarnaast bevat de OW-aanlevering
+een 0 of meer bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het
 OW-manifest bevat niet de GML-bestanden; deze staan in het (OP-)manifest.
 
-Voor een OW-aanlevering, bestaande uit het 'manifest-ow.xml' bestand en een aantal bestanden met OW-object objecten gelden de volgende regels:
+**Regels:**
+- Het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het xml-schema in `bestanden-ow/generiek/manifest-ow.xsd`. (LVBB1032)
+- De bestanden waarnaar het OW-manifest verwijst moeten bestaan.
 
-**Regel:** Het manifest-ow.xml bestand moet voldoen aan het in de map bestanden-ow/generiek/manifest-ow.xsd (LVBB1032)
-
-Zie [paragraaf 2.1](#global_package_Aanlevering) voor een uitleg van de XML elementen
-in dit bestand.
+Zie [paragraaf 2.1](#global_package_Aanlevering) voor een uitleg van de XML elementen in deze bestanden.
 
 ### Het aanleveren van OW-objecten in OW-bestanden {#H04-aanlevereisen}
 
 In het OW-manifest is beschreven welke OW-bestanden er zijn. Relaties in het IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten op te nemen.
 
 **Regels:**
-
-- Bij een OW-aanlevering met artikelstructuur mogen de volgende OW-objecten worden aangeleverd: Regeltekst, Juridische regel, Activiteit,
+- OW-bestanden moeten voldoen aan het xml-schema in `bestanden-ow/generiek/standlevering-generiek.xsd`
+- Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met artikelstructuur  mogen geen andere dan de volgende OW-objecten worden aangeleverd: Regeltekst, Juridische regel, Activiteit,
 Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart en Regelingsgebied.
-- Bij een OW-aanlevering met vrijetekststructuur mogen de volgende OW-objecten worden aangeleverd: Divisietekst, Tekstdeel,
+- Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met vrijetekststructuur mogen geen andere dan de volgende OW-objecten worden aangeleverd: Divisietekst, Tekstdeel,
 Hoofdlijn, Gebiedsaanwijzing, Kaart, Regelingsgebied, Locatie.
 
-### Het aanleveren van Geometrie objecten
+### Het aanleveren van Geometrie-objecten
 
-Geometrie objecten in het IMOW zijn gedeeld door STOP en IMOW en worden conform
-STOP als onderdeel van de GIO aangeleverd. Ze zitten niet in een OW-aanleverling.
+Geometrie-objecten in het IMOW zijn gedeeld door STOP en IMOW en worden conform
+STOP als onderdeel van het GIO aangeleverd. Ze zitten niet in een OW-aanlevering.
 Vanuit de OW-objecten Gebied, Lijn en Punt wordt middels de relatie 'geometrie'
-verwezen naar de geometrie in de GIO. Deze verwijzing gebeurt via het 'id'
-attribuut in de GIO.
+verwezen naar de geometrie in het GIO. Deze verwijzing gebeurt via het 'id'
+attribuut in het GIO.
 
 In vrijwel alle gevallen moet de geometrie van een Locatie binnen het ambtsgebied
 van het bevoegd gezag vallen. Vanwege enkele uitzonderingen op deze regel worden
@@ -59,9 +58,10 @@ aspecten:
 
 ### Identificatie van OW-objecten {#H04-Identificatie}
 
-OW-objecten hebben het in DSO een unieke identificatie. Deze uniciteit wordt
+OW-objecten hebben in het DSO een unieke identificatie. Deze uniciteit wordt
 gewaarborgd door een unieke code die de bronhouder identificeert te combineren
-met een identificatie van het object binnen het domein van de bronhouder.
+met een identificatie van het object binnen het domein van de bronhouder. De bronhouder
+is degene die het besluit neemt waarmee de regeling wordt ingesteld of gewijzigd.
 
 De wijze van het identificeren van objecten in het IMOW volgt de
 NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:
@@ -79,7 +79,7 @@ nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\.(regeltekst|gebied|gebiedengroep|lijn|lij
 | ```(regeltekst\|gebied\|gebiedengroep\|lijn\|lijnengroep\|punt\|puntengroep\|activiteit\|gebiedsaanwijzing\|omgevingswaarde\|omgevingsnorm\|pons\|kaart\|tekstdeel\|hoofdlijn\|divisie\|kaartlaag\|juridischeregel\|activiteitlocatieaanduiding\|normwaarde\|regelingsgebied\|ambtsgebied\|divisietekst)``` | keuze voor de naam van het IMOW objecttype van het object waar de identificatie betrekking op heeft                                                                                                                                                     |
 | ```[A-Za-z0-9]{1,32}```                                                                                                                                                                                                                                                               | Een codereeks van minimaal 1 en maximaal 32 alfanumerieke tekens, te bepalen door de bronhouder                                                                                                                                                         |
 
-De lokale identificatie als geheel wordt dan bijvoorbeeld: ```nl.imow-gm0200.gebied.2019000001```
+De  identificatie als geheel wordt dan bijvoorbeeld: `nl.imow-gm0200.gebied.2019000001`
 
 ### Waardelijsten {#H04-Waardelijsten}
 
@@ -93,7 +93,7 @@ waardes te vinden in de [stelselcatalogus](https://stelselcatalogus.omgevingswet
 
 Een OW-object hoort bij een regeling. Als een besluit een regeling wijzigt horen
 de OW-objecten die in dat besluit ontstaan bij die regeling. Je kunt OW-objecten
-alleen wijzigen in wijzigbesluiten die die betreffende regeling wijzigen. Dit is
+alleen wijzigen in wijzigingsbesluiten die die betreffende regeling wijzigen. Dit is
 vastgelegd in de volgende regels:
 
 **Regel:** Het WorkIDRegeling van de OW-Aanlevering waarin een OW-object
@@ -105,11 +105,9 @@ OW-object bij hoort.
 
 ### Verwijzingen tussen OW-objecten {#H04-Verwijzen}
 
-In OZON mag een actief OW-object niet verwijzen naar een beëindigd OW-object.
+Een actief OW-object mag niet verwijzen naar een beëindigd OW-object.
 Daarom moet een besluit dat een OW-object beëindigt ook alle verwijzingen naar
-dat OW-object beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen
-**KAN** wijzigen, hiertoe introduceren we een regel die verwijzingen naar
-OW-objecten van andere bevoegd gezagen inperkt:
+dat OW-object beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen KAN wijzigen. Daarom geldt de volgende regel die verwijzingen naar OW-objecten van andere bevoegd gezagen inperkt:
 
 **Regel:** (TPOD1950):
 
@@ -125,12 +123,12 @@ OW-objecten van andere bevoegd gezagen inperkt:
   uitzondering van de relatie bovenliggendeActiviteit van de tophaak-Activiteit
   van het tijdelijk regelingdeel, waarvoor de specifieke regels van TPOD1954 gelden.
 
-### De functionele structuur {#H04-FunctioneleStructuur}
+### Tophaken en de bovenliggendeActiviteit {#H04-FunctioneleStructuur}
 
 De activiteiten in het stelsel vormen samen de ‘functionele structuur’. Deze
 boomstructuur bevat alle Activiteit objecten in de regelingen en de hiërarchie
 wordt bepaald door de bovenliggendeActiviteit relatie van de OW-Objecten van het
-type Activiteit. In <a href='#fig-FunctioneleStructuur'>Figuur 10</a> is de het bovenste deel van
+type Activiteit. In <a href='#fig-FunctioneleStructuur'>Figuur 10</a> is het bovenste deel van
 functionele structuur getekend. Met Placeholder-Regeling wordt bedoeld de
 regeling die, met het opschrift Omgevingswet, in het stelsel is ingebracht met
 uitsluitend het doel om beschikbaar te stellen de bovenste Activiteiten van de

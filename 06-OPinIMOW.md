@@ -2,19 +2,20 @@
 
 Dit hoofdstuk beschrijft STOP onderdelen die relevant zijn voor het IMOW. Enkele
 dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de
-OP-standaard relevant is. De eerste [paragraaf](#H06-ConsolidatieInformatie) beschrijft de consolidatieinformatie uit een
-Regeling. De volgende [paragraaf](#H06-GIO) worden GIO’s beschreven.
+OP-standaard relevant is. [Paragraaf 6.1](#H06-ConsolidatieInformatie)
+beschrijft de consolidatieinformatie uit een
+Regeling. In [paragraaf 6.2](#H06-GIO) worden GIO’s beschreven. In [paragraaf 6.3](#H06-GML) staan regels voor het aanleveren van GML.
 
 Zie de STOP [[STOPIC]] en het CIM-OP [[CIMOP]] voor meer details.
 
 ## ConsolidatieInformatie {#H06-ConsolidatieInformatie}
 
 In het STOP deel van de aanlevering wordt ConsolidatieInformatie meegeleverd.
-De ConsolidatieInformatie bepaalt de tijdlijn versies van de regelingen en
+De ConsolidatieInformatie bepaalt de tijdlijn van de regelingen en
 informatieobjecten die ontstaan uit een Besluit. Diezelfde tijdlijn geldt voor
 de OW-objecten.
 
-[Figuur 11](#fig-cim-op-consolidatie) bevat toon de klasse 'Consolidatie Informatie' van het CIM-OP. Deze
+[Figuur 11](#fig-cim-op-consolidatie) toont de klasse 'Consolidatie Informatie' van het CIM-OP. Deze
 bevat de informatie die noodzakelijk is om de aanlevering te consolideren tot
 een Regeling. Voor IMOW zijn de volgende aspecten van belang:
 
@@ -39,7 +40,7 @@ van de 'GIO versie' uit het CIM-OP. Voor IMOW zijn de volgende aspecten van bela
 - Een 'Gio vaststelling' stelt een versie van een GIO vast. Hierin heeft iedere
 Geometrie een id attribuut in de vorm van een UUID. Wanneer in IMOW middels
 GeometrieRef naar een Geometrie wordt verwezen wordt deze UUID gebruikt.
-- Sommige GIO's bevatten informatie over normen bevatten.
+- Sommige GIO's bevatten informatie over normen.
 - Een 'Gio vaststelling' bevat 'Geografische context' die informatie bevat over
   de context ten opzichte waarvan het GIO is vastgesteld.
 - FRBRWork en FRBRExpression bevatten de identificatie van het GIO.
@@ -59,25 +60,24 @@ een 'Normwaarde'. Hiervoor geldt:
 - Bij een kwantitatieve normwaarde bevat 'Eenheid ID' de eenheid van de normwaarde. 
   Hier moet een URI ingevuld worden uit de waardelijst ‘Eenheid’.
 - 'Eenheid label' bevat dan het label die getoond dient te worden bij de eenheid.
-- 'Norm ID': De URI uit waardelijst ‘TypeNorm’ 
-- De naam van de Norm aan de OW-kant. [OW-gegeven: naam van omgevingsnorm (3.6 ) 
-  omgevingswaarde.
+- 'Norm ID': De URI uit waardelijst ‘TypeNorm.
+- De naam van de Norm aan de OW-kant.
 - De attributen 'Kwalitatief' en 'Kwantitatief' moeten overeenkomen met de
  gelijknamige kenmerken in OW.
-- Hoewel de Geometrie gedeeld wordt tussen STOP en IMOW objecten geldt dit
+- Hoewel de Geometrie gedeeld wordt tussen STOP en OW-objecten geldt dit
   niet voor de norm-gegeven. Deze worden dus twee keer uitgewisseld maar
  moeten wel met elkaar overeenkomen.
 - Het is toegestaan om een geometrie die gebruikt wordt voor een Norm ook te 
   gebruiken bij andere OW-objecten.
 - Iedere normwaarde dient een symbolisatie te hebben, dit wordt vastgelegd
-  in het vaststellingsdeel van het GIO. (**TODO**: dit zie ik nog niet terug in CIM-OP)
+  in het vaststellingsdeel van het GIO. <!-- TODO: dit zie ik nog niet terug in CIM-OP -->
 
 <figure id="fig-cim-op-gio">
     <img src='media/cim-op-gio.png'></img>
     <figcaption>GIO in STOP</figcaption>
 </figure>
 
-## Regels voor het aanleveren van GML
+## Regels voor het aanleveren van GML {#H06-GML}
 
 OW Geometrie objecten worden aangeleverd via het GIO in GML. Voor de
 aangeleverde GML gelden de volgende regels:
@@ -111,46 +111,8 @@ volgende nauwkeurigheden:
     - ETRS89-lengte in graden 8 decimalen (0,7 mm)
     - ETRS89-hoogte in meters 3 decimalen (1 mm)
 
+Het functioneren van de landelijke voorziening wordt gewaarborgd door geometrie die ver buiten Nederland en exclusieve economische zone ligt te weigeren.
 
-De volgende regels zijn om het naar behoren functioneren van de landelijke voorziening te beschermen. De bounding box is rondom de geometrie van Nederland + exclusieve economische zone en naar buiten afgerond. 
-**Regel:**
-- Geometrie die buiten de boundingBox {"minx": -41000, "maxx": 279000, "miny": 306000, "maxy": 867000} in RD ligt wordt afgekeurd.
-- Geometrie die buiten de boundingBox {"minx": 2.268, "maxx": 7.361, "miny": 50.711, "maxy": 55.786} in ETRS89 wordt afgekeurd.
+**Regel:** Alle geometrieën in een omgevingsdocument moeten liggen binnen de geometrie van Nederland met inbegrip van de exclusieve economische zone (EEZ).
 
-## Richtlijn voor het maken van GIO’s o.b.v. OW-objecten
-
-In deze paragraaf wordt toegelicht welke richtlijnen er zijn voor het maken van
-GIO’s vanuit OW-objecten. Dit zijn richtlijnen en deze worden niet gevalideerd
-door het DSO. Deze richtlijnen zijn gemaakt n.a.v. de expliciete vraag naar hoe
-je vanuit OW naar GIO’s toe kunt werken.
-
-De richtlijn is als volgt:
-
-- Gebruik Locatiegroepen (c.q. de groep-subtypen van Locatie in IMOW (Gebiedengroep,
-  Lijnengroep, Puntengroep) als OW-pendant van het GIO (zie [Figuur 13](#fig-RichtlijnVoorOW-objecten))
-- Bij gebruik van het OW-object Omgevingsnorm/Omgevingswaarde zou er een Norm-GIO 
-  moeten zijn die dezelfde Locaties en kwalitatieve/kwantitatieve Normwaarden 
-  bevat als de OW-Norm (zie [Figuur 14](#fig-RichtlijnVoorNormen)).
-- De overige subtypen van Locatie in IMOW (Gebied, Lijn, Punt) zouden moeten
-  corresponderen met de Locatie uit het GIO.
-- Verwijs vanuit annotaties altijd naar een Locatiegroep, zodat het gelijk 
-  loopt met de verwijzing vanuit de tekst (naar het GIO).
-
-<figure id='fig-RichtlijnVoorOW-objecten'>
-    <img src='media/RichtlijnVoorOW-objecten.png'></img>
-    <figcaption>Richtlijn voor OW-objecten i.r.t. GIO’s</figcaption>
-</figure>
-
-<figure id='fig-RichtlijnVoorNormen'>
-    <img src='media/RichtlijnVoorNormen.png'></img>
-    <figcaption>Richtlijn voor Normen i.r.t. Norm-GIO’s</figcaption>
-</figure>
-
-Dit heeft de volgende consequenties:
-
-- In het GIO kun je geen verschillende subtypen van OW-locatie vermengen (bijv.
-  gebieden en punten in dezelfde GIO).
-- In het geval dat één IMOW-Gebied in meerdere Gebiedengroepen zit, zou de
-  Locatie ook in meerdere GIO’s voor moeten komen.
-- Er was met de huidige versie van het IMOW geen eenduidige richtlijn
-  te bedenken voor het indelen van groepen in het GIO.
+OZON valideert hierop door een geometrie die buiten en naar buiten afgeronde bounding box rondom het genoemde gebied ligt te weigeren.

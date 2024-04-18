@@ -5,7 +5,8 @@ voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die
 door gebruikers van de standaard zijn ingediend. De ingediende meldingen zijn te
 vinden via <https://www.geonovum.nl/geo-standaarden/meldingen>.
 
-Omdat het document grondig is geherstructureerd zijn de paragraafverwijzingen tot versie 3.0.1 niet meer geldig en die zijn verwijderd.
+Omdat het document grondig is geherstructureerd zijn de paragraafverwijzingen
+tot versie 3.0.1 niet meer geldig en die zijn verwijderd.
 
 | Versie    | Datum      | Wijziging                                                                                                                                                                                                            |
 | --------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,14 +66,4 @@ Omdat het document grondig is geherstructureerd zijn de paragraafverwijzingen to
 |           |            | Dit is de eerste versie die in html is gepubliceerd. Eerdere versies zijn te vinden op: <https://github.com/Geonovum/TPOD/tree/master/CIMOW>.                                                                        |
 | 3.0.1     | 2023-12-27 | Foutieve diagrammen in Figuur 3 en 4 gerepareerd.                                                                                                                                                                    |
 | 4.0.0-ic  | 2024-04-19 | De mogelijkheid om geen geldigOp datum mee te geven uit de tekst gehaald. Modelmatig was dit al niet mogelijk.                                                                                                       |
-|           |            | De tekst volledig geherstructureerd en herschreven.                                                                                                                                                                  |
-|           |            | In afwachting van nieuwe modellering van SymbolisatieItem de oude verwijderd. (**Dit is nog een voorgestelde wijziging**)                                                                                            |
-|           |            | Verschillende Locatie objecten mogen naar dezelfde Geometrie verwijzen.                                                                                                                                              |
-|           |            | OW-aanlevering kan nu ook naar expressionIdentifier verwijzen. (**Dit is nog een voorgestelde wijziging**)                                                                                                           |
-|           |            | Directe mutaties uit de standaard gehaald (**Dit is nog een voorgestelde wijziging**)                                                                                                                                |
-|           |            | Hoogte verwijderd uit Locatie (**Dit is nog een voorgestelde wijziging**)                                                                                                                                            |
-|           |            | Regel toegevoegd die zegt dat alle regels bij een regeltekst dezelfde waarde moeten hebben voor Idealisatie (**Dit is nog een voorgestelde wijziging**)                                                              |
-|           |            | Bij intrekken van Regeling hoeven OW-objecten niet meer ingetrokken te worden (**Dit is nog een voorgestelde wijziging**)                                                                                            |
-|           |            | Regel expliciet gemaakt dat er aan ieder Artikel zonder leden of Lid precies één annotatie gekoppeld moet zijn (**Dit was al impliciet zo maar er werd niet op gevalideerd**)                                        |
-|           |            | een validatie toegevoegd die geometrie die ruim buiten Nederland met inbegrip van de exclusieve economische zone valt te weigeren (WELT-275). |
-
+|           |            | Verdere wijzigingen staan vermeld aan het begin van dit document                                                                                                                                                    |
