@@ -1,6 +1,6 @@
-# Gebruik van OW-aanlevering bij LVBB {#H05-GebruikIMOW}
+# Regels voor de OW-aanlevering als onderdeel van een aanlevering aan de LVBB {#H05-GebruikIMOW}
 
-Een Besluit dat aangeleverd wordt aan de LVBB initieert of wijzigt een aantal
+Een aanlevering aan de LVBB initieert of wijzigt één of meer
 regelingen. Om de OW-objecten behorend bij de regeling te maken of te wijzigen
 koppel je aan de wijziging een OW-aanlevering. Dit hoofdstuk beschrijft
 eerst op welke manier een OW-aanlevering de collectie OW-objecten bij een
@@ -11,22 +11,39 @@ Merk op dat bij één aanlevering aan de LVBB, een LVBB-aanlevering, één
 OW-manifest hoort dat weer verschillende OW-aanleveringen kan bevatten. Dit komt
 bijvoorbeeld voor bij een Besluit dat meerdere Regelingen wijzigt.
 
+## Basisprincipe van de OW-aanlevering
+
+In STOP-ic zijn vier soorten van aanleveringen die kunnen resulteren in een nieuwe
+regelingversie. Dit zijn: besluit, revisie, rectificatie en mededeling. In
+alle gevallen waarin deze aanlevering resulteert in een nieuwe regelingversie is
+aan die aanlevering een OW-aanlevering gekoppeld die zorgt voor de OW-objecten
+behorend bij de nieuwe regelingversie.
+
+Bij het specificeren van het bronhouderkoppelvlak van de LVBB zal aan iedere regelingmutatie
+een OW-aanlevering gekoppeld worden. 
+ 
+
+Voorbeeld: Wanneer in STOP samenloop van twee besluiten wordt opgelost door het aanleveren
+van een consolidatie die de mutaties van beide besluiten verwerkt is er aan die aanlevering
+een OW-aanlevering gekoppeld die zorgt voor de mutaties van  OW-objecten van beide besluiten.
+
 ## Een OW-aanlevering aan de LVBB
 
 Het aanmaken of wijzigen van de collectie OW-objecten behorend bij een Regeling
 gebeurt met een OW-aanlevering. De OW-aanlevering bevat wijziginstructies die beschrijven
 hoe de oorspronkelijke collectie OW-objecten getransformeerd moet worden tot de
-resultaat collectie. Een OW-aanlevering gekoppeld aan een STOP wijziging waarbij
+resultaat collectie. Een OW-aanlevering is gekoppeld aan een STOP wijziging waarbij
 het STOP deel de tekst van de regeling wijzigt en de OW-aanlevering de bij de
-regeling behorende OW-objecten wijzigt.
+regeling behorende OW-objecten wijzigt. Een initieel besluit is een speciaal geval
+omdat deze een Regeling aanmaakt en niet wijzigt, de bijbehorende OW-aanlevering 
+zal dus ook alleen OW-objecten aanmaken.
 
 Een OW-aanlevering heeft zelf de vorm van een collectie OW-objecten. De
 aanlevering van een OW-object resulteert in een (1) nieuw OW-object, (2) een
-gewijzigd OW-object of (3) het beëindigen van een OW-object hierbij worden in
-een initieel besluit alleen nieuwe OW-objecten aangemaakt. Deze drie situaties
+gewijzigd OW-object of (3) het beëindigen van een OW-object. Deze drie situaties
 zijn in de volgende paragrafen beschreven:
 
-### Een nieuw OW-object 
+### Een nieuw OW-object
 
 Wanneer een OW-object wordt aangeleverd met een identificatie die nog niet
 bestond in de tijdlijn van de Regeling ontstaat een nieuw OW-object. Voor een
@@ -34,7 +51,7 @@ nieuw object geldt de volgende regel:
 
 **Regel:** Een nieuw OW-object mag niet de status beëindigd hebben. (OZON0104).
 
-### Een OW-object wijzigen 
+### Een OW-object wijzigen
 
 Wanneer een OW-object wordt aangeleverd met een identificatie die al bestond in
 de tijdlijn van de Regeling vervangt het aangeleverde OW-object het bestaande
@@ -48,12 +65,12 @@ Hierbij wordt een relatie bij een OW-object ook gezien als een kenmerk.
 **Regel:** Bij het wijzigen van een OW-object moet het een instantie blijven
 van hetzelfde UML Objecttype.
 
-Toelichting: De klasses JuridischeRegel en Locatie zijn abstracte Klasses (in
+Toelichting: De objecttypen JuridischeRegel en Locatie zijn abstract (in
 het UML zijn de klassenamen cursief) en hebben geen instanties. Hierdoor kun je
 bijvoorbeeld een RegelVoorIedereen niet wijzigen in een Instructieregel, maar
 moet je een nieuw object aanmaken.
 
-De volgende IMOW-elementen zijn geen objecten en kunnen niet direct gewijzigd
+De volgende OW-elementen zijn geen OW-objecten en kunnen niet rechtstreeks gewijzigd
 worden:
 
 - ActiviteitLocatieaanduiding – deze moet altijd gewijzigd worden vanuit een
@@ -68,22 +85,21 @@ Wanneer een OW-object wordt aangeleverd waarbij het veld status de waarde 'B'
 heeft dan krijgt het oorspronkelijke OW-object de status beëindigd.
 
 **Regel:** Het beëindigen van een OW-object is alleen toegestaan als de inhoud van
-het object, afgezien van het status veld, exact overeenkomt met de laatst
+het object, afgezien van het attribuut 'status', exact overeenkomt met de laatst
 aangeleverde OW-informatie (OZON0107).
 
 ### Resultaat OW-aanlevering 
 
 Een OW-aanlevering bestaat uit een set instructies, die de
-OW-objecten behorend bij een Regeling toevoegt, wijzigt of verwijdert. 
+OW-objecten behorend bij een Regeling toevoegt, wijzigt en/of verwijdert.
 Na het uitvoeren van de instructies is een nieuwe set OW-objecten ontstaan
 behorend bij de regeling. Voor de totale set van OW-objecten behorend bij
 de regeling gelden de volgende regels:
 
 **Regels:**
 
-- Een OW-aanlevering mag niet resulteren in wees-objecten, dat zijn
-objecten die niet direct of indirect gekoppeld zijn aan een OW-object dat een
-bestaand documentfragment annoteert (OZON0350 t/m OZON0367).
+- Een OW-aanlevering mag niet resulteren in wees-objecten dat zijn
+objecten die niet direct of indirect gekoppeld zijn aan een OP-objectAnnotatie.
 - Een OW-aanlevering mag niet resulteren in verwijzingen naar
 OW-objecten die beëindigd zijn (OZON0109).
 - Een OW-aanlevering moet resulteren in een Regeling met daarin precies
@@ -95,34 +111,43 @@ gereserveerd of vervallen zijn moet er een Regeltekst object zijn.
 - Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen.(TPOD2050).
 - Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst verwijzen (TPOD2052).
 
-## Wanneer gebruik je een OW-aanlevering aan de LVBB 
+## Wanneer gebruik je een OW-aanlevering aan de LVBB
 
-**noot**: Op het moment dat het BHKV gespecificeerd wordt, wordt deze paragraaf
-daarop afgestemd.
+**noot**: De inhoud van deze paragraaf wordt afgestemd met de nog op te leveren
+nieuw versie van het BHKV.
 
-Er is een aantal aanlevering aan het BKHV waarbij een OW-aanlevering gebruikt kan worden
+Er is een aantal aanlevering aan het BHKV waarbij een OW-aanlevering gebruikt kan worden
 om de OW-objecten bij een regeling te wijzigen. Deze worden in de volgende
 paragrafen behandeld:
 
-### OW-aanlevering bij Besluit dat Regeling wijzigt 
+### OW-aanlevering bij Besluit dat Regeling initieert of wijzigt
 
-Wanneer het bevoegd gezag besluit om een omgevingsdocument te wijzigen moet het
-voor de bekendmaking van dat besluit een Aanlevering naar de LVBB sturen. Wanneer
-er bij de wijziging ook OW-objecten gewijzigd moeten worden gebeurt dat via een
-OW-aanlevering.
+Wanneer het bevoegd gezag besluit om een omgevingsdocument te initiëren of te wijzigen
+moet het voor de bekendmaking van dat besluit een Aanlevering naar de LVBB sturen. Aan deze
+aanlevering moet altijd een OW-aanlevering gekoppeld zijn die de OW-objecten behorend
+bij.
 
 Voor een OW-aanlevering die hoort bij een Besluit dat een Regeling wijzigt
 geldt:
 
-**Regel:** De waardes van 'workIDRegeling' en 'doelID' van de OW-aanlevering
-moeten overeenkomen met de workIdentificatie en doel van het besluit.
+**Regel:** De attributen 'workIDRegeling', 'doelID' en 'expresionIDRegeling' van een
+OW-aanlevering corresponderen met precies één nieuwe regelingversie die in een aanlevering
+wordt aangemaakt.
+
+### OW-aanlevering bij rectificatie, revisie of mededeling
+
+Ook de aanlevering van een STOP rectificatie, revisie of mededeling kan resulteren
+in een nieuwe regelingversie. Hoe deze precies aangeleverd gaan worden is nog niet
+gespecificeerd maar naar verwachting zal het veel lijken op het aanleveren van een
+besluit.
 
 ### Beëindigen van OW-objecten behorend bij een ingetrokken regeling {#H05-IntrekkenRegeling}
 
 Wanneer een Regeling wordt ingetrokken worden alle OW-objecten bij die regeling
-beëindigd.  De beïndiging hoeft niet apart te worden aangeleverd.
+beëindigd.
 
 **Regel:** Aan de intrekking van een Regeling is geen OW-aanlevering gekoppeld.
+
 
 ### Het aanleveren van een Ontwerpbesluit
 
@@ -133,16 +158,6 @@ bestaande regelingversie.
 Voor een STOP ontwerpbesluit gelden de volgende regels:
 
 - Het soortprocedure (c.q. proceduretype) is ontwerp (i.p.v. definitief).
-- Er zij mindere procedurestappen in vergelijking met definitieve regelgeving.
 - De ConsolidatieInformatie mag geen tijdstempels bevatten.
 
-OW-objecten bij een ontwerbesluit worden gezien als een nieuwe versie van
-een OW-object die niet horen bij vastgestelde regelgeving. Dit is ook omdat
-ontwerpbesluiten niet gemuteerd kunnen worden maar losstaan van vastgestelde
-regelgeving. Ontwerpbesluiten kunnen voorkomen bij een initieel besluit en
-bij een wijzigingsbesluit. Een ontwerpbesluit beschrijft een ontwerp ten opzicht van een actuele
-regeling. Alleen de OW-objecten die wijzigen ten opzicht van de actuele levering
-worden aangeleverd.
-
-Activiteiten in ontwerpregelingen worden niet doorgegeven aan de registratie van toepasbare
-regels, dus er kunnen geen vragenbomen op ontwerp-activiteiten gemaakt worden.
+Voor een IMOW ontwerpbesluit zijn de regels niet anders dan een regulier besluit.
