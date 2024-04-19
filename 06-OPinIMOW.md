@@ -46,7 +46,7 @@ GeometrieRef naar een Geometrie wordt verwezen wordt deze UUID gebruikt.
 - FRBRWork en FRBRExpression bevatten de identificatie van het GIO.
 - Een GIO bevat één of meer Locatie objecten. Deze Locaties komen niet overeen
   met OW:Locatie ook de naam van de locatie is niet rechtstreeks gekoppeld.
-- Wanneer in aanlevering van GIO's meedere keren exact dezelfde geometrie wordt gebruikt
+- Wanneer in aanlevering van GIO's meerdere keren exact dezelfde geometrie wordt gebruikt
   kan je in beide gevallen dezelfde UUID gebruiken. Het DSO zorgt er dan voor de
   geometrie slechts één keer wordt doorgeleverd.
 - Indien er gebruik gemaakt wordt van groepen, dan dient iedere groep
@@ -70,7 +70,7 @@ een 'Normwaarde'. Hiervoor geldt:
 - Het is toegestaan om een geometrie die gebruikt wordt voor een Norm ook te 
   gebruiken bij andere OW-objecten.
 - Iedere normwaarde dient een symbolisatie te hebben, dit wordt vastgelegd
-  in het vaststellingsdeel van het GIO. <!-- TODO: dit zie ik nog niet terug in CIM-OP -->
+  in het vaststellingsdeel van het GIO.
 
 <figure id="fig-cim-op-gio">
     <img src='media/cim-op-gio.png'></img>
@@ -111,8 +111,11 @@ volgende nauwkeurigheden:
     - ETRS89-lengte in graden 8 decimalen (0,7 mm)
     - ETRS89-hoogte in meters 3 decimalen (1 mm)
 
-Het functioneren van de landelijke voorziening wordt gewaarborgd door geometrie die ver buiten Nederland en exclusieve economische zone ligt te weigeren.
+Het functioneren van de landelijke voorziening wordt gewaarborgd door geometrie
+die ver buiten Nederland en exclusieve economische zone ligt te weigeren.
 
-**Regel:** Alle geometrieën in een omgevingsdocument moeten liggen binnen de geometrie van Nederland met inbegrip van de exclusieve economische zone (EEZ).
+**Regel:** Alle geometrieën in een omgevingsdocument moeten liggen binnen
+de geometrie van Nederland met inbegrip van de exclusieve economische zone (EEZ).
 
-OZON valideert hierop door een geometrie die buiten en naar buiten afgeronde bounding box rondom het genoemde gebied ligt te weigeren.
+OZON valideert hierop door een geometrie die buiten en naar buiten afgeronde
+bounding box rondom het genoemde gebied ligt te weigeren.

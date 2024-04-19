@@ -135,8 +135,10 @@ proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron:
 De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 
 - Conformiteit met Metamodel voor informatiemodellering, MIM 1.1 [[MIM]].
-- Model is opgesteld in UML klassediagrammen. Voor algemene uitleg over UML klassediagram zie wikipedia: UML klassediagram.
-- Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
+- Het IMOW is opgesteld als een UML klassediagrammen. Voor algemene uitleg
+  over UML klassediagram zie wikipedia: UML klassediagram.
+- Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie 
+  niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
 
 ## UML-Diagrammen
 
@@ -164,10 +166,11 @@ een onderverdeling naar verschillende subdomeinen gemaakt:
 
 ## Leeswijzer {#H01-Leeswijzer}
 
-Dit document is als volgt opgebouwd: [hoofdstuk 2](#cat) bevat de gegevensdefinites
+Dit document is als volgt opgebouwd: [hoofdstuk 2](#cat) bevat de gegevensdefinities
 van OW-objecten. [Hoofdstuk 3](#lis) bevat een overzicht van de gebruikte waardelijsten.
 [Hoofdstuk 4](#H04-Implementatie) gaat gedetailleerd in op hoe de
 OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
 bestand dat aangeleverd kan worden. [Hoofdstuk 5](#H05-GebruikIMOW)
-beschrijft toepassen van een OW-aanlevering bij het aanleverkoppelvlak van de LVBB. [Hoofdstuk 6](#H06-OPinIMOW)
+schrijft voor hoe een OW-aanlevering bij het bronhouderkoppelvlak van de LVBB moet worden
+aangeleverd. [Hoofdstuk 6](#H06-OPinIMOW)
 beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.

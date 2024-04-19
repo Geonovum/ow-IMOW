@@ -19,13 +19,13 @@ alle gevallen waarin deze aanlevering resulteert in een nieuwe regelingversie is
 aan die aanlevering een OW-aanlevering gekoppeld die zorgt voor de OW-objecten
 behorend bij de nieuwe regelingversie.
 
-Bij het specificeren van het bronhouderkoppelvlak van de LVBB zal aan iedere regelingmutatie
-een OW-aanlevering gekoppeld worden. 
- 
+Bij het specificeren van het bronhouderkoppelvlak van de LVBB zal aan iedere
+wijziging van een regeling een OW-aanlevering gekoppeld worden.
 
 Voorbeeld: Wanneer in STOP samenloop van twee besluiten wordt opgelost door het aanleveren
 van een consolidatie die de mutaties van beide besluiten verwerkt is er aan die aanlevering
-een OW-aanlevering gekoppeld die zorgt voor de mutaties van  OW-objecten van beide besluiten.
+een OW-aanlevering gekoppeld die zorgt voor de mutaties van  OW-objecten van beide
+besluiten.
 
 ## Een OW-aanlevering aan de LVBB
 
@@ -66,7 +66,7 @@ Hierbij wordt een relatie bij een OW-object ook gezien als een kenmerk.
 van hetzelfde UML Objecttype.
 
 Toelichting: De objecttypen JuridischeRegel en Locatie zijn abstract (in
-het UML zijn de klassenamen cursief) en hebben geen instanties. Hierdoor kun je
+het UML is de naam cursief) en hebben geen instanties. Hierdoor kun je
 bijvoorbeeld een RegelVoorIedereen niet wijzigen in een Instructieregel, maar
 moet je een nieuw object aanmaken.
 
@@ -147,7 +147,6 @@ Wanneer een Regeling wordt ingetrokken worden alle OW-objecten bij die regeling
 beëindigd.
 
 **Regel:** Aan de intrekking van een Regeling is geen OW-aanlevering gekoppeld.
-
 
 ### Het aanleveren van een Ontwerpbesluit
 
