@@ -22,9 +22,9 @@ behorend bij de nieuwe regelingversie.
 Bij het specificeren van het bronhouderkoppelvlak van de LVBB zal aan iedere
 wijziging van een regeling een OW-aanlevering gekoppeld worden.
 
-Voorbeeld: Wanneer in STOP samenloop van twee besluiten wordt opgelost door het aanleveren
-van een consolidatie die de mutaties van beide besluiten verwerkt is er aan die aanlevering
-een OW-aanlevering gekoppeld die zorgt voor de mutaties van  OW-objecten van beide
+Wanneer bijvoorbeeld in STOP samenloop van twee besluiten wordt opgelost door het aanleveren
+van een revisie die de mutaties van beide besluiten verwerkt is er aan die aanlevering
+een OW-aanlevering gekoppeld die zorgt voor de mutaties van de OW-objecten van beide
 besluiten.
 
 ## Een OW-aanlevering aan de LVBB
