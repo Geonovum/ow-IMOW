@@ -55,12 +55,12 @@ let respecConfig = {
   //neem hier de URL van de github repository op waar het respec document in staat
   //github: "https://github.com/Geonovum/ow-IMOW",
   // Create PDF and link to file in header (optional):
-  alternateFormats: [
-      {
-          label: "pdf",
-          uri: "ow-imow.pdf",
-      },
-  ],
+  //alternateFormats: [
+  //    {
+  //        label: "pdf",
+  //        uri: "ow-imow.pdf",
+  //    },
+  //],
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
   localBiblio: 
   {
