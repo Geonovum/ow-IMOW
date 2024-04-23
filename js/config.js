@@ -5,8 +5,8 @@ let respecConfig = {
   title: "Informatiemodel Omgevingswet (IMOW) 4.0-ic",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   //specStatus: "wv",                   // Werkversie
-  specStatus: "cv",               // Consultatieversie
-  //specStatus: "vv",               // Versie ter vaststelling
+  //specStatus: "cv",               // Consultatieversie
+  specStatus: "vv",               // Versie ter vaststelling
   //specStatus: "def",              // Vastgestelde versie
 
   specType: "IM",                 // Informatie Model
@@ -26,7 +26,7 @@ let respecConfig = {
 
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2024-04-19",
+  //publishDate: "2024-04-19",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   publishVersion: "4.0.0-ic",
   previousVersion: "3.0.1",
