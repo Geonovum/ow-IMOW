@@ -1,19 +1,14 @@
 # Release notes
 
-Versie: IMOW v2.0.0 van 29 juni 2021.
+Versie: IMOW v4.0.0-ic1 van 26 april 2024.
+Behorend bij: https://docs.geostandaarden.nl/ow/cv-im-imow-20240419/
 
-Gebaseerd op: CIMOW v2.0.0 van 29 juni 2021.
+### Wijziginen sinds v2.0.0
 
-Functionele wijzigingen staan in het CIMOW en het IMOW document opgesomd. Deze
-zorgen voor bijwerkingen van de 'OW' XSD's in de map /IMOW - Generieke schema's
-voor het leveren van bestanden.
-
-## Namespace:
-
-https://www.geostandaarden.nl/imow/
-
-## Versies
-Alle schema's volgen de x.y.z.-systematiek. 
+- Functionele wijzigingen staan in het IMOW document opgesomd.
+- in bestanden-ow/generiek/manifest-ow.xsd:
+    - Aanlevering/DoelID : is optioneel geworden.
+    - Aanlevering/ExpressionIDRegeling : nieuw optioneel element.
 
 ### Verbeteringen tussen v2.0.0 en v1.0.4
 * status en procedurestatus aangepast naar enumerations (met daarin de waarden die ze mogen bevatten)
