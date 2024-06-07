@@ -68,10 +68,10 @@ let respecConfig = {
     Basisgeometrie: {
       id: "Basisgeometrie",
       title: "Basisgeometrie",
-      href: "https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20200930/",
+      href: "https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20240607",
       status: "Definitief",
       publisher: "Geonovum",
-      date: "30 september 2020"
+      date: "7 juni 2024"
     },
     MIM: {
       id: "MIM",
