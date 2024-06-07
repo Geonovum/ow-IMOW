@@ -140,15 +140,16 @@ De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 - Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie 
   niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
 
-## UML-Diagrammen
+## Gegevensdefinitie en UML-Diagrammen
 
-In de UML diagrammen van het logische model zijn de termen hoofdletter-gevoelig
-en bevatten geen spaties. Deze schrijfwijze wordt ook in de beschrijving van het
-model gebruikt als er aan termen wordt gerefereerd. In de diagrammen zijn de
-objecttypen aan te klikken en wordt er gelinkt naar de beschrijving opgenomen in
+In [hoofdstuk 2](#cat) van het IMOW bevat de gegevensdefinies. Dit hoofdstuk bevat
+UML diagrammen waarin de objecttypes beschreven zijn. In de diagrammen zijn de
+objecttypen aan te klikken en wordt er gelinkt naar de definitie en attributen van dat objecttyp in
 de objectcatalogus. De in de catalogus benoemde metagegevens zoals bijvoorbeeld
-Naam, Definitie, Indicatie abstract object zijn termen uit het Metamodel
-Informatiemodellering [[MIM]].
+Naam, Definitie, Indicatie abstract object zijn termen uit het Metamodel.
+Informatiemodellering [[MIM]]. Door te klikken op de attribuutnaam kom je bij de definitie van dat attribuut met enkele eigenschappen van dat attribuut volgens MIM:
+
+- De kenmerken 'Indicatie materiële historie' en 'Mogelijk geen waarde' hebben geen betekenis in het IMOW.
 
 Voor het inzoomen in de UML diagrammen kan het best het diagram in een apart
 tabblad van de browser worden geopend. Afhankelijk van het type browser is dit

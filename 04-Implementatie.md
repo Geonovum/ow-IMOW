@@ -31,6 +31,12 @@ Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart en Regel
 - Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met vrijetekststructuur mogen geen andere dan de volgende OW-objecten worden aangeleverd: Divisietekst, Tekstdeel,
 Hoofdlijn, Gebiedsaanwijzing, Kaart, Regelingsgebied, Locatie.
 
+Sommige XML-elementen in de XML schema's mogen niet gebruikt worden. In een toekomstige
+versie van de schema's kunnen deze elementen verwijderd worden:
+
+**Regels:**
+- Het xml element 'hoogte' in 'Punt', 'Lijn'en 'Gebied' mag niet gebruikt worden. (TPOD1311)
+
 ### Het aanleveren van Geometrie-objecten
 
 Geometrie-objecten in het IMOW zijn gedeeld door STOP en IMOW en worden conform
