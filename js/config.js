@@ -112,14 +112,6 @@ let respecConfig = {
       publisher: "Geonovum",
       date: "2023-01-09"
     },
-    BASISGEO: {
-      id: "BASISGEO",
-      title: "Basisgeometrie",
-      href: "https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20200930/",
-      status: "Vastgesteld",
-      publisher: "Geonovum",
-      date: "20200930"
-    },
     NEN3610_2022: {
       id: "NEN3610-2022",
       title: "Basismodel geo-informatie",
