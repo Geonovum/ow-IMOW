@@ -8,7 +8,7 @@
          <h4>   Aanlevering - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79.png" usemap="#imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79" alt="Diagram: Als bij het bronhouderkoppelvlak van de LVBB een Aanlevering wordt gedaan met daarin een OW-manifest moet de inhoud hiervan voldoen aan het IMOW. Het OW-manifest is een bestand met de naam ‘manifest-ow.xml’. In een OW-manifest zitten één of meer OW-aanleveringen. Ieder van die OW-aanleveringen is aan de wijziging van een Regeling in het STOP deel van de LVBB-Aanlevering. Om welke Regeling het gaat en in bijzondere gevallen om welke wijziging is te achterhalen via de kenmerken workIDRegeling, doelID en expressionIDResultaat. De te wijzigen OW-objecten zijn te verdelen over een aantal OW-bestanden. In een OW-bestand moet je aangeven welke objectTypen dat bestand bevat."><figcaption>Aanlevering</figcaption>
-            </figure><map name="imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79"><area shape="rect" alt="OW-object" coords="467,250,685,375" href="#global_class_OWobject_OWobject"><area shape="rect" alt="OW-Bestand" coords="19,234,268,391" href="#global_class_Aanlevering_OWBestand"><area shape="rect" alt="OW-manifest" coords="14,26,253,152" href="#global_class_Aanlevering_OWmanifest"><area shape="rect" alt="OW-bestandverwijzing" coords="791,36,1034,157" href="#global_class_Aanlevering_OWbestandverwijzing"><area shape="rect" alt="OW-aanlevering" coords="391,14,668,157" href="#global_class_Aanlevering_OWaanlevering"></map><p>
+            </figure><map name="imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79"><area shape="rect" alt="OW-object" coords="467,250,685,375" href="#global_class_OWobject_OWobject"><area shape="rect" alt="OW-Bestand" coords="19,234,268,391" href="#global_class_Aanlevering_OWBestand"><area shape="rect" alt="OW-manifest" coords="14,26,253,152" href="#global_class_Aanlevering_OWmanifest"><area shape="rect" alt="OW-bestandverwijzing" coords="791,36,1034,157" href="#global_class_Aanlevering_OWbestandverwijzing"><area shape="rect" alt="OW-aanlevering" coords="391,14,688,157" href="#global_class_Aanlevering_OWaanlevering"></map><p>
                
                <p>Als bij het bronhouderkoppelvlak van de  LVBB een Aanlevering wordt gedaan met daarin
                   een OW-manifest  moet de inhoud hiervan voldoen aan het IMOW. Het OW-manifest is een
@@ -61,9 +61,13 @@
                            <li>bij object­Type zijn de volgende waardes toegestaan: Activiteit, Gebiedsaanwijzing,
                               Gebied, Gebiedengroep, Hoofdlijn, Punt, Puntengroep, Lijn, Lijnengroep, Regeltekst,
                               Regel­Voor­Iedereen, Instructieregel, Omgevingswaarderegel, Omgevingsnorm, Omgevingswaarde,
-                              Pons, Tekstdeel, Kaart, Kaartlaag, Ambtsgebied of Divisietekst. (LVBB1025)</li>
+                              Pons, Tekstdeel, Kaart, Kaartlaag, Ambtsgebied, Divisie of Divisietekst. (LVBB1025)</li>
                            </ul>
                         </td>
+                  </tr>
+                  <tr>
+                     <th>Unieke aanduiding</th>
+                     <td>naam</td>
                   </tr>
                   <tr>
                      <th>Indicatie abstract object</th>
@@ -422,6 +426,10 @@
                         </td>
                   </tr>
                   <tr>
+                     <th>Unieke aanduiding</th>
+                     <td>work­IDRegeling + doel­ID + expression­IDRegeling</td>
+                  </tr>
+                  <tr>
                      <th>Toelichting</th>
                      <td>
                         
@@ -573,7 +581,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>255</td>
+                           <td>0..255</td>
                         </tr>
                         <tr>
                            <th>Regels</th>
@@ -595,7 +603,7 @@
                         </tr>
                         <tr>
                            <th>Indicatie identificerend</th>
-                           <td>Nee</td>
+                           <td>Ja</td>
                         </tr>
                      </tbody>
                   </table>
@@ -627,7 +635,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>80</td>
+                           <td>0..80</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -712,6 +720,15 @@
                            <td>1</td>
                         </tr>
                         <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>De waarde van dit attribuut wordt verder niet verwerkt in het stelsel.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
                            <th>Indicatie classificerend</th>
                            <td>Nee</td>
                         </tr>
@@ -753,7 +770,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>80</td>
+                           <td>0..80</td>
                         </tr>
                         <tr>
                            <th>Indicatie materiële historie</th>
@@ -762,6 +779,15 @@
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>De waarde van dit attribuut wordt verder niet verwerkt in het stelsel.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie classificerend</th>
@@ -805,7 +831,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>255</td>
+                           <td>0..255</td>
                         </tr>
                         <tr>
                            <th>Indicatie materiële historie</th>
@@ -814,6 +840,15 @@
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>De waarde van dit attribuut wordt verder niet verwerkt in het stelsel.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie classificerend</th>
@@ -857,7 +892,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>80</td>
+                           <td>0..80</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -901,7 +936,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>80</td>
+                           <td>0..80</td>
                         </tr>
                         <tr>
                            <th>Indicatie materiële historie</th>
@@ -1038,7 +1073,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>255</td>
+                           <td>0..255</td>
                         </tr>
                         <tr>
                            <th>Indicatie materiële historie</th>
@@ -1058,7 +1093,7 @@
                         </tr>
                         <tr>
                            <th>Indicatie identificerend</th>
-                           <td>Nee</td>
+                           <td>Ja</td>
                         </tr>
                      </tbody>
                   </table>
@@ -1090,7 +1125,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>255</td>
+                           <td>0..255</td>
                         </tr>
                         <tr>
                            <th>Indicatie materiële historie</th>
@@ -1110,7 +1145,7 @@
                         </tr>
                         <tr>
                            <th>Indicatie identificerend</th>
-                           <td>Nee</td>
+                           <td>Ja</td>
                         </tr>
                      </tbody>
                   </table>
@@ -1160,7 +1195,7 @@
                         </tr>
                         <tr>
                            <th>Indicatie identificerend</th>
-                           <td>Nee</td>
+                           <td>Ja</td>
                         </tr>
                      </tbody>
                   </table>
@@ -1214,7 +1249,7 @@
          <h4>   OW-object - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_97D11E5C_222E_4885_AD87_2F92616ED77A.png" usemap="#imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A" alt="Diagram: Alle OW-object die in een OW-aanlevering kunnen zitten."><figcaption>OW-object</figcaption>
-            </figure><map name="imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A"><area shape="rect" alt="NEN3610ID" coords="700,14,954,170" href="#global_class_OWobject_NEN3610ID"><area shape="rect" alt="Ambtsgebied" coords="783,598,933,664" href="#global_class_Locatie_Ambtsgebied"><area shape="rect" alt="Gebiedengroep" coords="617,757,762,818" href="#global_class_Locatie_Gebiedengroep"><area shape="rect" alt="Gebied" coords="436,755,584,818" href="#global_class_Locatie_Gebied"><area shape="rect" alt="Puntengroep" coords="643,602,758,665" href="#global_class_Locatie_Puntengroep"><area shape="rect" alt="Punt" coords="494,603,617,664" href="#global_class_Locatie_Punt"><area shape="rect" alt="Lijnengroep" coords="635,680,758,737" href="#global_class_Locatie_Lijnengroep"><area shape="rect" alt="Lijn" coords="464,680,601,737" href="#global_class_Locatie_Lijn"><area shape="rect" alt="Instructieregel" coords="78,566,201,639" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarde" coords="235,668,384,732" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="276,570,413,635" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Omgevingswaarderegel" coords="14,754,201,813" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="RegelVoorIedereen" coords="44,665,201,733" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Regelingsgebied" coords="700,335,856,398" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="Kaartlaag" coords="275,252,416,315" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Pons" coords="508,252,643,315" href="#global_class_Locatie_Pons"><area shape="rect" alt="Gebiedsaanwijzing" coords="436,421,617,484" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Norm" coords="235,421,399,484" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Locatie" coords="666,421,826,484" href="#global_class_Locatie_Locatie"><area shape="rect" alt="Tekstdeel" coords="257,335,399,398" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Hoofdlijn" coords="53,335,194,398" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Kaart" coords="88,242,223,305" href="#global_class_Kaart_Kaart"><area shape="rect" alt="Activiteit" coords="487,335,617,398" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="JuridischeRegel" coords="37,421,194,484" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="OW-object" coords="337,25,609,160" href="#global_class_OWobject_OWobject"></map><p>
+            </figure><map name="imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A"><area shape="rect" alt="NEN3610ID" coords="700,14,954,170" href="#global_class_OWobject_NEN3610ID"><area shape="rect" alt="Ambtsgebied" coords="783,598,933,664" href="#global_class_Locatie_Ambtsgebied"><area shape="rect" alt="Gebiedengroep" coords="617,757,762,818" href="#global_class_Locatie_Gebiedengroep"><area shape="rect" alt="Gebied" coords="436,755,584,818" href="#global_class_Locatie_Gebied"><area shape="rect" alt="Puntengroep" coords="643,602,758,665" href="#global_class_Locatie_Puntengroep"><area shape="rect" alt="Punt" coords="494,603,617,664" href="#global_class_Locatie_Punt"><area shape="rect" alt="Lijnengroep" coords="635,680,758,737" href="#global_class_Locatie_Lijnengroep"><area shape="rect" alt="Lijn" coords="464,680,601,737" href="#global_class_Locatie_Lijn"><area shape="rect" alt="Instructieregel" coords="78,566,201,639" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarde" coords="235,668,384,732" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="276,570,413,635" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Omgevingswaarderegel" coords="14,754,201,813" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="RegelVoorIedereen" coords="44,665,201,733" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Regelingsgebied" coords="700,335,856,398" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="Kaartlaag" coords="275,252,416,315" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Pons" coords="508,252,643,315" href="#global_class_Locatie_Pons"><area shape="rect" alt="Gebiedsaanwijzing" coords="436,421,617,484" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Norm" coords="235,421,399,484" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Locatie" coords="666,421,826,484" href="#global_class_Locatie_Locatie"><area shape="rect" alt="Tekstdeel" coords="257,335,399,398" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Hoofdlijn" coords="53,335,194,398" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Kaart" coords="88,242,223,305" href="#global_class_Kaart_Kaart"><area shape="rect" alt="Activiteit" coords="487,335,617,398" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="JuridischeRegel" coords="37,421,194,484" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="OW-object" coords="339,25,612,160" href="#global_class_OWobject_OWobject"></map><p>
                
                <p>Alle OW-object die in een OW-aanlevering kunnen zitten.</p>
                </p>
@@ -1224,7 +1259,7 @@
          <h4>   OP-object­Annotatie - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5.png" usemap="#imagemap-EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5" alt="Diagram: Een OP-objectannotatie object koppelt een IMOW object aan een tekstelement in STOP. Voor documenten met de artikelstructuur gebeurt dit via het object Regeltekst. Voor vrijetekst via Divisietekst. De OP-objectAnnotaties bevatten het attribuut wId dat verwijst naar het wId van het artikel of lid uit STOP."><figcaption>OP-object­Annotatie</figcaption>
-            </figure><map name="imagemap-EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5"><area shape="rect" alt="OW-object" coords="90,40,367,168" href="#global_class_OWobject_OWobject"><area shape="rect" alt="Divisietekst" coords="254,460,408,524" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Regeltekst" coords="53,460,223,524" href="#global_class_Artikelstructuur_Regeltekst"><area shape="rect" alt="OP-objectAnnotatie" coords="119,239,337,354" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="Divisie" coords="14,14,137,109" href="#global_class_Vrijetekst_Divisie"></map><p>
+            </figure><map name="imagemap-EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5"><area shape="rect" alt="Divisie" coords="393,434,562,498" href="#global_class_Vrijetekst_Divisie"><area shape="rect" alt="OW-object" coords="168,14,445,142" href="#global_class_OWobject_OWobject"><area shape="rect" alt="Divisietekst" coords="205,434,375,498" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Regeltekst" coords="14,434,183,498" href="#global_class_Artikelstructuur_Regeltekst"><area shape="rect" alt="OP-objectAnnotatie" coords="189,213,406,328" href="#global_class_OWobject_OPobjectAnnotatie"></map><p>
                
                <p>Een OP-objectannotatie object koppelt een IMOW object aan een tekstelement in STOP.
                   Voor documenten met de artikelstructuur gebeurt dit via het object Regeltekst. Voor
@@ -1279,7 +1314,7 @@
                            OW-aanlevering kunnen worden aangeleverd.</p>
                         
                         <p>In STOP  kunnen ontwerpregelingen gemaakt worden met een ontwerpbesluit. Zie hoofdstuk
-                           7 voor verdere regels over ontwerpbesluiten.</p>
+                           5 voor verdere regels over ontwerpbesluiten.</p>
                         
                         </td>
                   </tr>
@@ -1310,15 +1345,14 @@
                         </td>
                      <td>
                         
-                        <p>De status van een OW-object kan actief of beëindigd zijn. In de uitwisseling wordt
-                           deze status als volgt meegegeven:</p>
+                        <p>De status van een OW-object kan actief of beëindigd zijn. In de uitwisseling heeft
+                           dit attribuut de waarde 'B' of geeen waarde:</p>
                         
                         <ul>
                            
-                           <li>Als het veld 'status'  geen waarde heeft is het OW-object actief.</li>
+                           <li>Als status  geen waarde heeft is het OW-object actief.</li>
                            
-                           <li>Als het veld status de waarde 'B' heeft is het OW-object beëindigd. Een viewer zal
-                              het OW-object alleen nog tonen bij het maken van een tijdreis naar het verleden.</li>
+                           <li>Als status de waarde 'B' heeft is het OW-object beëindigd.</li>
                            </ul>
                         </td>
                      <td>
@@ -1580,15 +1614,14 @@
                            <td>
                               
                               
-                              <p>De status van een OW-object kan actief of beëindigd zijn. In de uitwisseling wordt
-                                 deze status als volgt meegegeven:</p>
+                              <p>De status van een OW-object kan actief of beëindigd zijn. In de uitwisseling heeft
+                                 dit attribuut de waarde 'B' of geeen waarde:</p>
                               
                               <ul>
                                  
-                                 <li>Als het veld 'status'  geen waarde heeft is het OW-object actief.</li>
+                                 <li>Als status  geen waarde heeft is het OW-object actief.</li>
                                  
-                                 <li>Als het veld status de waarde 'B' heeft is het OW-object beëindigd. Een viewer zal
-                                    het OW-object alleen nog tonen bij het maken van een tijdreis naar het verleden.</li>
+                                 <li>Als status de waarde 'B' heeft is het OW-object beëindigd.</li>
                                  </ul>
                               
                               </td>
@@ -1596,10 +1629,6 @@
                         <tr>
                            <th>Formaat</th>
                            <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>80</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -1868,7 +1897,7 @@
          <h4>   Artikelstructuur - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2.png" usemap="#imagemap-EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2" alt="Diagram: Een Regeling die volgens de STOP artikelstructuur is gemaakt bevat een geneste structuur die bijvoorbeeld Hoofdstukken, Artikelen, Paragrafen of Subparagrafen kan bevatten. Op het diepste niveau zit de inhoudelijk informatie van de regeling. Die inhoud zit in artikelen. Een artikel kan worden opgesplitst in leden. Als een artikel Leden heeft zit de inhoud in de leden. In een artikel zonder leden zit de inhoud in het artikel zelf. In de artikelstructuur zitten de annotaties op de artikelen of leden. Het Regeltekst object bevat de verwijzing naar het wId van de STOP tekst die wordt geannoteerd. Vervolgens kunnen er één of meerdere Juridische regels zijn die verbonden zijn aan de regeltekst. Een juridische regel is de in een annotatie opgenomen informatie over een regel met juridische werkingskracht. Een juridische regel heeft drie subtypen (RegelVoorIedereen, Instructieregel, Omgevingswaarderegel) die allen specifieke eigenschappen bevatten o.a. omvat in de objecten Activiteit voor het annoteren van een activiteit, Gebiedsaanwijzing om een benoemd gebied te duiden, Omgevingswaarde om een toegestane of gewenste waarde aan een Locatie toe te kennen en een Omgevingsnorm om een waarde als norm aan een Locatie te koppelen. Vervolgens hebben Normwaarde, Activiteit en Gebiedsaanwijzing een relatie met een Locatie. Het Pons object wordt gebruikt om aan te geven dat een gebied door een Regeling is ingevuld en niet meer door de ruimtelijke plannen o.b.v. Wro en/of Chw die onderdeel zijn van het tijdelijke deel van het omgevingsplan. Dit kan alleen gebruikt worden bij een omgevingsplan."><figcaption>Artikelstructuur</figcaption>
-            </figure><map name="imagemap-EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2"><area shape="rect" alt="OP-objectAnnotatie" coords="301,14,508,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="Pons" coords="285,1305,454,1406" href="#global_class_Locatie_Pons"><area shape="rect" alt="Regelingsgebied" coords="285,1420,454,1521" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="242,748,679,885" href="#global_class_Artikelstructuur_ActiviteitLocatieaanduiding"><area shape="rect" alt="Gebiedsaanwijzing" coords="584,958,895,1159" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Normwaarde" coords="1312,1175,1778,1406" href="#global_class_Artikelstructuur_Normwaarde"><area shape="rect" alt="Norm" coords="1271,622,1644,904" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Omgevingswaarde" coords="1428,1007,1702,1144" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="1101,1007,1363,1144" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Activiteit" coords="161,493,378,659" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="Locatie" coords="865,1309,1125,1457" href="#global_class_Locatie_Locatie"><area shape="rect" alt="RegelVoorIedereen" coords="536,506,740,601" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Instructieregel" coords="825,477,1255,711" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarderegel" coords="1363,476,1692,551" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="JuridischeRegel" coords="907,153,1205,335" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="Regeltekst" coords="211,227,598,428" href="#global_class_Artikelstructuur_Regeltekst"></map><p>
+            </figure><map name="imagemap-EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2"><area shape="rect" alt="OP-objectAnnotatie" coords="301,14,508,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="Pons" coords="285,1305,454,1406" href="#global_class_Locatie_Pons"><area shape="rect" alt="Regelingsgebied" coords="285,1420,454,1521" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="242,748,679,885" href="#global_class_Artikelstructuur_ActiviteitLocatieaanduiding"><area shape="rect" alt="Gebiedsaanwijzing" coords="584,958,895,1159" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Normwaarde" coords="1313,1175,1780,1406" href="#global_class_Artikelstructuur_Normwaarde"><area shape="rect" alt="Norm" coords="1271,622,1644,904" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Omgevingswaarde" coords="1428,1007,1702,1144" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="1101,1007,1363,1144" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Activiteit" coords="161,493,378,659" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="Locatie" coords="865,1309,1125,1457" href="#global_class_Locatie_Locatie"><area shape="rect" alt="RegelVoorIedereen" coords="536,506,740,601" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Instructieregel" coords="825,477,1255,711" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarderegel" coords="1363,476,1692,551" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="JuridischeRegel" coords="907,153,1205,335" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="Regeltekst" coords="211,227,598,428" href="#global_class_Artikelstructuur_Regeltekst"></map><p>
                
                <p></p>
                
@@ -4956,7 +4985,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>255</td>
+                           <td>0..255</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -4970,14 +4999,6 @@
                               <p>De beschrijving geeft tekstueel de betekenis weer van de normwaarde.</p>
                               
                               </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
                         </tr>
                         <tr>
                            <th>Indicatie identificerend</th>
@@ -5058,7 +5079,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>80</td>
+                           <td>0..80</td>
                         </tr>
                         <tr>
                            <th>Regels</th>
@@ -5072,14 +5093,6 @@
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
                         </tr>
                         <tr>
                            <th>Indicatie identificerend</th>
@@ -5125,7 +5138,7 @@
          <h4>   Vrije­Tekst - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313.png" usemap="#imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313" alt="Diagram: Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar uiteindelijk ook een Divisietekst met Inhoud in moet zitten. De Inhoud bevat alleen inhoudelijke tekst. De Divisie wordt gebruikt om de tekst te structureren in bijvoorbeeld verschillende hoofdstukken of paragrafen. In de vrijetekststructuur kan alleen geannoteerd worden op de Divisietekst. Dit doe je door een Tekstdeel te maken dat verwijst naar die Divisietekst. Het Tekstdeel bevat dan volgende annotaties: hoofdlijnaanduiding, gebiedsaanwijzing en locatieaanduiding."><figcaption>Vrije­Tekst</figcaption>
-            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="OP-objectAnnotatie" coords="357,63,564,216" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="DivisieOfDivisietekst" coords="372,435,538,497" href="#global_class_Vrijetekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="360,280,551,365" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="316,579,575,733" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="871,644,1052,746" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="Hoofdlijn" coords="18,880,275,1034" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="308,876,618,1056" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="769,880,1040,1019" href="#global_class_Locatie_Locatie"><area shape="rect" alt="Divisie" coords="14,14,137,109" href="#global_class_Vrijetekst_Divisie"></map><p>
+            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="Divisie" coords="238,265,408,330" href="#global_class_Vrijetekst_Divisie"><area shape="rect" alt="OP-objectAnnotatie" coords="343,14,550,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="DivisieOfDivisietekst" coords="350,395,516,457" href="#global_class_Vrijetekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="460,265,651,330" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="312,539,570,694" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="867,605,1048,706" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="Hoofdlijn" coords="14,840,271,995" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="304,836,614,1016" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="765,840,1036,980" href="#global_class_Locatie_Locatie"></map><p>
                
                <p>Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het
                   hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar
@@ -5650,7 +5663,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>80</td>
+                           <td>0..80</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -5689,7 +5702,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>255</td>
+                           <td>0..255</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -7165,8 +7178,25 @@
                         </td>
                   </tr>
                   <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Zie voor regels over Geometrie de STOP standaard.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Unieke aanduiding</th>
                      <td>id</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        
+                        <p>De geometrie wordt niet uitgewisseld via een IMOW object maar via GIO's in de STOP
+                           standaard.</p>
+                        
+                        </td>
                   </tr>
                   <tr>
                      <th>Indicatie abstract object</th>
@@ -7395,7 +7425,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>255</td>
+                           <td>0..255</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -8436,7 +8466,7 @@
                      <td>
                         
                         
-                        <p>Minimum- en maximum van coördinaten die samen een rechthoekig gebied definiëren.</p>
+                        <p>Minimum- en maximum van coördinaten (in RD) die samen een rechthoekig gebied definiëren.</p>
                         
                         </td>
                   </tr>
@@ -8546,7 +8576,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>255</td>
+                           <td>0..255</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -8594,7 +8624,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>80</td>
+                           <td>0..80</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -8680,7 +8710,7 @@
                         </tr>
                         <tr>
                            <th>Lengte</th>
-                           <td>255</td>
+                           <td>0..255</td>
                         </tr>
                         <tr>
                            <th>Indicatie kardinaliteit</th>
@@ -8728,20 +8758,8 @@
                            <td>INTEGER</td>
                         </tr>
                         <tr>
-                           <th>Lengte</th>
-                           <td>80</td>
-                        </tr>
-                        <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
                         </tr>
                         <tr>
                            <th>Indicatie identificerend</th>
@@ -9087,7 +9105,7 @@
                      <p>Waardelijst voor attribuut groep bij Activiteit, dat zorgt voor filteren en weergave
                         van de symbolisatie van Activiteit op de kaart.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitengroep.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitengroep" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitengroep</a>.</p>
                      </td>
                </tr>
                <tr>
@@ -9098,7 +9116,7 @@
                         type Juridische regel = Regel voor iedereen én annotatie Activiteit en Activiteit­Locatieaanduiding
                         is toegepast.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitregelkwalificatie.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitregelkwalificatie" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitregelkwalificatie</a>.</p>
                      </td>
                </tr>
                <tr>
@@ -9108,7 +9126,7 @@
                      <p>Waardelijst voor attribuut instructieregel­Taakuitoefening, te gebruiken indien type
                         Juridische regel = Instructieregel en de instructieregel gaat over taakuitoefening.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Adressaat.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="$inet://" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Adressaat</a>.</p>
                      </td>
                </tr>
                <tr>
@@ -9117,7 +9135,7 @@
                      
                      <p>Waardelijst voor attribuut eenheid, dat aangeeft in welke grootheid een kwantitatieve
                         waarde wordt uitgedrukt.
-                        Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Eenheid.</p>
+                        Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Eenheid" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Eenheid</a>.</p>
                      </td>
                </tr>
                <tr>
@@ -9134,7 +9152,7 @@
                      <p>Vastlegging op welke manier de begrenzing van Locatie geïnterpreteerd moet worden
                         en door het bevoegd gezag bedoeld is.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Idealisatie</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="$inet://" shape="rect">http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Idealisatie</a>.</p>
                      </td>
                </tr>
                <tr>
@@ -9146,7 +9164,7 @@
                         waarover instructieregels gesteld kunnen worden zijn opgesomd in de artikelen 2.23
                         en 2.25 Ow.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Instrument.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Instrument" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Instrument</a>.</p>
                      </td>
                </tr>
                <tr>
@@ -9156,7 +9174,7 @@
                      <p>Waardelijst voor attribuut groep bij Omgevingsnorm, dat zorgt voor filteren en weergave
                         van de symbolisatie van Omgevingsnorm op de kaart.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingsnormgroep.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingsnormgroep" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingsnormgroep</a>.</p>
                      </td>
                </tr>
                <tr>
@@ -9166,7 +9184,7 @@
                      <p>Waardelijst voor attribuut groep bij Omgevingswaarde, dat zorgt voor filteren en weergave
                         van de symbolisatie van Omgevingswaarde op de kaart.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingswaardegroep.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingswaardegroep" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingswaardegroep</a>.</p>
                      </td>
                </tr>
                <tr>
@@ -9175,7 +9193,7 @@
                      
                      <p>Waardelijst voor attribuut thema bij Juridische regel en Tekstdeel.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema</a>.</p>
                      </td>
                </tr>
                <tr>
@@ -9184,7 +9202,7 @@
                      
                      <p>Waardelijst voor attribuut type, dat aangeeft welk type Gebiedsaanwijzing wordt geannoteerd.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typegebiedsaanwijzing.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="http://standaarden.omgevingswet.overheid.nl/id/waardelijst/TypeGebiedsaanwijzing" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typegebiedsaanwijzing</a>.</p>
                      </td>
                </tr>
                <tr>
@@ -9193,7 +9211,7 @@
                      
                      <p>Waardelijst voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typenorm.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typenorm" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typenorm</a>.</p>
                      </td>
                </tr>
             </tbody>
@@ -9218,7 +9236,7 @@
                      <p>Waardelijst voor attribuut groep bij Activiteit, dat zorgt voor filteren en weergave
                         van de symbolisatie van Activiteit op de kaart.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitengroep.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitengroep" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitengroep</a>.</p>
                      </td>
                </tr>
             </tbody>
@@ -9246,7 +9264,7 @@
                         type Juridische regel = Regel voor iedereen én annotatie Activiteit en Activiteit­Locatieaanduiding
                         is toegepast.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitregelkwalificatie.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitregelkwalificatie" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Activiteitregelkwalificatie</a>.</p>
                      </td>
                </tr>
             </tbody>
@@ -9273,7 +9291,7 @@
                      <p>Waardelijst voor attribuut instructieregel­Taakuitoefening, te gebruiken indien type
                         Juridische regel = Instructieregel en de instructieregel gaat over taakuitoefening.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Adressaat.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="$inet://" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Adressaat</a>.</p>
                      </td>
                </tr>
             </tbody>
@@ -9299,7 +9317,7 @@
                      
                      <p>Waardelijst voor attribuut eenheid, dat aangeeft in welke grootheid een kwantitatieve
                         waarde wordt uitgedrukt.
-                        Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Eenheid.</p>
+                        Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Eenheid" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Eenheid</a>.</p>
                      </td>
                </tr>
             </tbody>
@@ -9350,7 +9368,7 @@
                      <p>Vastlegging op welke manier de begrenzing van Locatie geïnterpreteerd moet worden
                         en door het bevoegd gezag bedoeld is.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Idealisatie</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="$inet://" shape="rect">http://standaarden.omgevingswet.overheid.nl/id/waardelijst/Idealisatie</a>.</p>
                      </td>
                </tr>
             </tbody>
@@ -9379,7 +9397,7 @@
                         waarover instructieregels gesteld kunnen worden zijn opgesomd in de artikelen 2.23
                         en 2.25 Ow.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Instrument.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Instrument" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Instrument</a>.</p>
                      </td>
                </tr>
             </tbody>
@@ -9406,7 +9424,7 @@
                      <p>Waardelijst voor attribuut groep bij Omgevingsnorm, dat zorgt voor filteren en weergave
                         van de symbolisatie van Omgevingsnorm op de kaart.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingsnormgroep.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingsnormgroep" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingsnormgroep</a>.</p>
                      </td>
                </tr>
             </tbody>
@@ -9433,7 +9451,7 @@
                      <p>Waardelijst voor attribuut groep bij Omgevingswaarde, dat zorgt voor filteren en weergave
                         van de symbolisatie van Omgevingswaarde op de kaart.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingswaardegroep.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingswaardegroep" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Omgevingswaardegroep</a>.</p>
                      </td>
                </tr>
             </tbody>
@@ -9459,7 +9477,7 @@
                      
                      <p>Waardelijst voor attribuut thema bij Juridische regel en Tekstdeel.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Thema</a>.</p>
                      </td>
                </tr>
             </tbody>
@@ -9485,7 +9503,7 @@
                      
                      <p>Waardelijst voor attribuut type, dat aangeeft welk type Gebiedsaanwijzing wordt geannoteerd.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typegebiedsaanwijzing.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="http://standaarden.omgevingswet.overheid.nl/id/waardelijst/TypeGebiedsaanwijzing" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typegebiedsaanwijzing</a>.</p>
                      </td>
                </tr>
             </tbody>
@@ -9511,7 +9529,7 @@
                      
                      <p>Waardelijst voor attribuut type bij de objecten Omgevingsnorm en Omgevingswaarde.</p>
                      
-                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typenorm.</p>
+                     <p>Toegestane waarden voor deze waardelijst zijn te vinden op: <a href="https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typenorm" shape="rect">https://standaarden.omgevingswet.overheid.nl/id/waardelijst/Typenorm</a>.</p>
                      </td>
                </tr>
             </tbody>
