@@ -2,7 +2,7 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   // title is verplicht! Neem hier de titel van het document op ----------------------
-  title: "Informatiemodel Omgevingswet (IMOW) 4.0-ic",
+  title: "Informatiemodel Omgevingswet (IMOW) 3.1",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
@@ -75,11 +75,11 @@ let respecConfig = {
     },
     MIM: {
       id: "MIM",
-      title: "MIM - Metamodel Informatie Modellering",
-      href: "https://docs.geostandaarden.nl/mim/def-st-mim-20220217/",
+      title: "MIM - Metamodel Informatie Modellering (Versie 1.2)",
+      href: "https://docs.geostandaarden.nl/mim/def-st-mim-20240613/",
       status: "Definitief",
       publisher: "Geonovum",
-      date: "2022-02-17"
+      date: "2024-06-13"
     },
     CIMOP: {
       id: "CIMOP",

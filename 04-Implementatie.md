@@ -129,6 +129,9 @@ dat OW-object beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen
   uitzondering van de relatie bovenliggendeActiviteit van de tophaak-Activiteit
   van het tijdelijk regelingdeel, waarvoor de specifieke regels van TPOD1954 gelden.
 
+**Regel:** een vastgestelde regeling mag geen verwijzingen bevatten naar OW-objecten
+in een ontwerpregeling. (TPOD1940)
+
 ### Tophaken en de bovenliggendeActiviteit {#H04-FunctioneleStructuur}
 
 De activiteiten in het stelsel vormen samen de ‘functionele structuur’. Deze

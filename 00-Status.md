@@ -1,6 +1,6 @@
 # Status van dit document
 
-Dit is een consultatieversie. Reageren op dit document kan via het reactieformulier op: <https://fd10.formdesk.com/geonovum/consultatie_IMOW-IC>
+Dit is een werkversie waarin we de consultatieresultaten in verwerken.
 
 Hieronder volgt een overzicht van de belangrijkste wijzigvoorstellen die in deze
 consultatie worden voorgelegd. Veel van de voorgestelde wijzigingen zijn al met
@@ -52,12 +52,6 @@ De bestaande werkafspraak om de klasse SymbolisatieItem niet te gebruiken is
 verwerkt in het IMOW door de klasse SymbolisatieItem te verwijderen. In een
 volgende versie van het IMOW komt een klasse met vergelijkbare functionaliteit.
 
-**Klasse Divisie verwijderd**
-
-In deze versie van het IMOW is de mogelijkheid verwijderd om vrije tekst te annoteren op
-divisie-niveau waarbij de semantiek was dat de annotaties op een Divisie ook van toepassing 
-waren op alle onderliggende elementen. Implementatie hiervan bleek lastig
-en foutgevoelig. In deze versie kun je alleen nog annoteren op een Divisietekst.
 
 **Gebruik van versienummer in IMOW-aanlevering verplicht**
 

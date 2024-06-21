@@ -13,7 +13,7 @@ Zie de STOP [[STOPIC]] en het CIM-OP [[CIMOP]] voor meer details.
 In het STOP deel van de aanlevering wordt ConsolidatieInformatie meegeleverd.
 De ConsolidatieInformatie bepaalt de tijdlijn van de regelingen en
 informatieobjecten die ontstaan uit een Besluit. Diezelfde tijdlijn geldt voor
-de OW-objecten.
+alle OW-objecten in de aanlevering
 
 [Figuur 11](#fig-cim-op-consolidatie) toont de klasse 'Consolidatie Informatie' van het CIM-OP. Deze
 bevat de informatie die noodzakelijk is om de aanlevering te consolideren tot

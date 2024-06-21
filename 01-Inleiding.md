@@ -52,9 +52,12 @@ van IMOW:
   uitgewisseld.
 - Toepassingsprofielen omgevingsdocumenten (TPOD’s). Een TPOD legt voor een type omgevingsdocument vast welke van de mogelijkheden van STOP en IMOW moeten c.q. mogen worden gebruikt en op welke wijze. Er zijn toepassingsprofielen voor onder meer het omgevingsplan, de omgevingsverordening, de omgevingsvisie en het projectbesluit.
 - De validatiematrix beschrijft regels waaraan aanleveringen dienen te
-    voldoen. Dit document is zelf geen standaard maar is een opsomming van
-    regels die in de standaarden beschreven staan en waar tegen gevalideerd kan
-    worden
+  voldoen. Dit document is zelf geen standaard maar is een opsomming van
+  regels die in de standaarden beschreven staan. Op veel van de regels in de
+  validatiematrix gebeurt een automatische controle, zodat een aanlevering die
+  niet aan de regels voldoet wordt afgekeurd. Echter, automatische controle is
+  niet altijd mogelijk of geïmplementeerd. In die gevallen is het de verantwoordelijkheid
+  van het bevoegd gezag om aan de regel te voldoen.
 - Het Conceptuele Model Omgevingswet [[CIMOW]] en het Conceptuele Model Officiële
   Publicaties [[CIMOP]] leggen de conceptuele basis voor het IMOW.
 - Waardelijsten geven aan wat de toegestane waardes zijn bij attributen van IMOW
