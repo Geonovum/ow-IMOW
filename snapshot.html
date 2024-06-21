@@ -30,9 +30,9 @@ dfn{cursor:pointer}
   
   
 <script>document.title = respecConfig.title</script>
-<title>Informatiemodel Omgevingswet (IMOW) 4.0-ic</title>
+<title>Informatiemodel Omgevingswet (IMOW) 3.1</title>
   
-<title>Informatiemodel Omgevingswet (IMOW) 4.0-ic</title>
+<title>Informatiemodel Omgevingswet (IMOW) 3.1</title>
   
 <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico">
   
@@ -303,11 +303,11 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
     },
     "MIM": {
       "id": "MIM",
-      "title": "MIM - Metamodel Informatie Modellering",
-      "href": "https://docs.geostandaarden.nl/mim/def-st-mim-20220217/",
+      "title": "MIM - Metamodel Informatie Modellering (Versie 1.2)",
+      "href": "https://docs.geostandaarden.nl/mim/def-st-mim-20240613/",
       "status": "Definitief",
       "publisher": "Geonovum",
-      "date": "2022-02-17"
+      "date": "2024-06-13"
     },
     "CIMOP": {
       "id": "CIMOP",
@@ -357,7 +357,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
       "date": "2024-04-12"
     }
   },
-  "title": "Informatiemodel Omgevingswet (IMOW) 4.0-ic",
+  "title": "Informatiemodel Omgevingswet (IMOW) 3.1",
   "specStatus": "wv",
   "specType": "IM",
   "pubDomain": "ow",
@@ -387,12 +387,12 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
 
 <body class="h-entry informative toc-inline"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
-  </a> <h1 id="title" class="title">Informatiemodel Omgevingswet (IMOW) 4.0-ic</h1>
+  </a> <h1 id="title" class="title">Informatiemodel Omgevingswet (IMOW) 3.1</h1>
     
     <h2>
       Geonovum Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2024-06-13">13 juni 2024</time>
+      <time class="dt-published" datetime="2024-06-21">21 juni 2024</time>
     </h2>
     <dl>
       
@@ -442,7 +442,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.</p>
   
   
   <section class="notoc"><div class="header-wrapper"><h2 id="status-van-dit-document">Status van dit document</h2><a class="self-link" href="#status-van-dit-document" aria-label="Permalink for this Section"></a></div>
-<p>Dit is een consultatieversie. Reageren op dit document kan via het reactieformulier op: <a href="https://fd10.formdesk.com/geonovum/consultatie_IMOW-IC">https://fd10.formdesk.com/geonovum/consultatie_IMOW-IC</a></p>
+<p>Dit is een werkversie waarin we de consultatieresultaten in verwerken.</p>
 <p>Hieronder volgt een overzicht van de belangrijkste wijzigvoorstellen die in deze
 consultatie worden voorgelegd. Veel van de voorgestelde wijzigingen zijn al met
 diverse ketenpartners besproken. Door deze consultatieversie te publiceren
@@ -481,11 +481,6 @@ worden als er locatieaanduidingen gekoppeld zijn aan de divisietekst.</p>
 <p>De bestaande werkafspraak om de klasse SymbolisatieItem niet te gebruiken is
 verwerkt in het IMOW door de klasse SymbolisatieItem te verwijderen. In een
 volgende versie van het IMOW komt een klasse met vergelijkbare functionaliteit.</p>
-<p><strong>Klasse Divisie verwijderd</strong></p>
-<p>In deze versie van het IMOW is de mogelijkheid verwijderd om vrije tekst te annoteren op
-divisie-niveau waarbij de semantiek was dat de annotaties op een Divisie ook van toepassing 
-waren op alle onderliggende elementen. Implementatie hiervan bleek lastig
-en foutgevoelig. In deze versie kun je alleen nog annoteren op een Divisietekst.</p>
 <p><strong>Gebruik van versienummer in IMOW-aanlevering verplicht</strong></p>
 <p>Tot en met IMOW 3.0.1 kon aan het bronhouderkoppelvlak van de LVBB slechts één
 versie van het IMOW aangeleverd. Met ingang
@@ -575,9 +570,12 @@ uitgewisseld.</p>
 <li><p>Toepassingsprofielen omgevingsdocumenten (TPOD’s). Een TPOD legt voor een type omgevingsdocument vast welke van de mogelijkheden van STOP en IMOW moeten c.q. mogen worden gebruikt en op welke wijze. Er zijn toepassingsprofielen voor onder meer het omgevingsplan, de omgevingsverordening, de omgevingsvisie en het projectbesluit.</p>
 </li>
 <li><p>De validatiematrix beschrijft regels waaraan aanleveringen dienen te
-  voldoen. Dit document is zelf geen standaard maar is een opsomming van
-  regels die in de standaarden beschreven staan en waar tegen gevalideerd kan
-  worden</p>
+voldoen. Dit document is zelf geen standaard maar is een opsomming van
+regels die in de standaarden beschreven staan. Op veel van de regels in de
+validatiematrix gebeurt een automatische controle, zodat een aanlevering die
+niet aan de regels voldoet wordt afgekeurd. Echter, automatische controle is
+niet altijd mogelijk of geïmplementeerd. In die gevallen is het de verantwoordelijkheid
+van het bevoegd gezag om aan de regel te voldoen.</p>
 </li>
 <li><p>Het Conceptuele Model Omgevingswet [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimow" title="Conceptueel Informatiemodel Omgevingswet (CIMOW)">CIMOW</a></cite>] en het Conceptuele Model Officiële
 Publicaties [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimop" title="Conceptueel Informatiemodel Omgevingswet (CIMOW)">CIMOP</a></cite>] leggen de conceptuele basis voor het IMOW.</p>
@@ -648,7 +646,7 @@ proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron:
 </section><section id="uitgangspunten-van-modellering"><div class="header-wrapper"><h3 id="x1-4-uitgangspunten-van-modellering"><bdi class="secno">1.4 </bdi>uitgangspunten van modellering</h3><a class="self-link" href="#uitgangspunten-van-modellering" aria-label="Permalink for Section 1.4"></a></div>
 <p>De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:</p>
 <ul>
-<li>Conformiteit met Metamodel voor informatiemodellering, MIM 1.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>].</li>
+<li>Conformiteit met Metamodel voor informatiemodellering, MIM 1.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering (Versie 1.2)">MIM</a></cite>].</li>
 <li>Het IMOW is opgesteld als een UML klassediagrammen. Voor algemene uitleg
 over UML klassediagram zie wikipedia: UML klassediagram.</li>
 <li>Het model is een implementatie van het [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimow" title="Conceptueel Informatiemodel Omgevingswet (CIMOW)">CIMOW</a></cite>] waarbij bij implementatie 
@@ -660,7 +658,7 @@ UML diagrammen waarin de objecttypes beschreven zijn. In de diagrammen zijn de
 objecttypen aan te klikken en wordt er gelinkt naar de definitie en attributen van dat objecttyp in
 de objectcatalogus. De in de catalogus benoemde metagegevens zoals bijvoorbeeld
 Naam, Definitie, Indicatie abstract object zijn termen uit het Metamodel.
-Informatiemodellering [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>]. Door te klikken op de attribuutnaam kom je bij de definitie van dat attribuut met enkele eigenschappen van dat attribuut volgens MIM:</p>
+Informatiemodellering [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering (Versie 1.2)">MIM</a></cite>]. Door te klikken op de attribuutnaam kom je bij de definitie van dat attribuut met enkele eigenschappen van dat attribuut volgens MIM:</p>
 <ul>
 <li>De kenmerken 'Indicatie materiële historie' en 'Mogelijk geen waarde' hebben geen betekenis in het IMOW.</li>
 </ul>
@@ -10357,6 +10355,8 @@ naar een OW-object behorend bij hetzelfde tijdelijk regelingdeel, met
 uitzondering van de relatie bovenliggendeActiviteit van de tophaak-Activiteit
 van het tijdelijk regelingdeel, waarvoor de specifieke regels van TPOD1954 gelden.</li>
 </ul>
+<p><strong>Regel:</strong> een vastgestelde regeling mag geen verwijzingen bevatten naar OW-objecten
+in een ontwerpregeling. (TPOD1940)</p>
 </section><section id="tophaken-en-de-bovenliggendeactiviteit"><div class="header-wrapper"><h4 id="H04-FunctioneleStructuur"><bdi class="secno">4.2.5 </bdi>Tophaken en de bovenliggendeActiviteit</h4><a class="self-link" href="#H04-FunctioneleStructuur" aria-label="Permalink for Section 4.2.5"></a></div><p>De activiteiten in het stelsel vormen samen de ‘functionele structuur’. Deze
 boomstructuur bevat alle Activiteit objecten in de regelingen en de hiërarchie
 wordt bepaald door de bovenliggendeActiviteit relatie van de OW-Objecten van het
@@ -10563,7 +10563,7 @@ Regeling. In <a href="#H06-GIO">paragraaf 6.2</a> worden GIO’s beschreven. In 
 <section id="consolidatieinformatie"><div class="header-wrapper"><h3 id="H06-ConsolidatieInformatie"><bdi class="secno">6.1 </bdi>ConsolidatieInformatie</h3><a class="self-link" href="#H06-ConsolidatieInformatie" aria-label="Permalink for Section 6.1"></a></div><p>In het STOP deel van de aanlevering wordt ConsolidatieInformatie meegeleverd.
 De ConsolidatieInformatie bepaalt de tijdlijn van de regelingen en
 informatieobjecten die ontstaan uit een Besluit. Diezelfde tijdlijn geldt voor
-de OW-objecten.</p>
+alle OW-objecten in de aanlevering</p>
 <p><a href="#fig-cim-op-consolidatie">Figuur 11</a> toont de klasse 'Consolidatie Informatie' van het CIM-OP. Deze
 bevat de informatie die noodzakelijk is om de aanlevering te consolideren tot
 een Regeling. Voor IMOW zijn de volgende aspecten van belang:</p>
@@ -10957,14 +10957,9 @@ tot versie 3.0.1 niet meer geldig en die zijn verwijderd.</p>
 <td>Foutieve diagrammen in Figuur 3 en 4 gerepareerd.</td>
 </tr>
 <tr>
-<td>4.0.0-ic</td>
-<td>2024-04-19</td>
+<td>3.1</td>
+<td>TODO</td>
 <td>De mogelijkheid om geen geldigOp datum mee te geven uit de tekst gehaald. Modelmatig was dit al niet mogelijk.</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>Verdere wijzigingen staan vermeld aan het begin van dit document</td>
 </tr>
 <tr>
 <td></td>
@@ -10974,7 +10969,7 @@ tot versie 3.0.1 niet meer geldig en die zijn verwijderd.</p>
 <tr>
 <td></td>
 <td></td>
-<td>Verwijzing opgenomen naar nieuwe versie van 'Basisgeometrie' document. Hierin staat een verwijzing naar het lange lijnen advies waardoor het nu mogelijk is te waarschuwen voor lange lijnen</td>
+<td>Verwijzing opgenomen naar nieuwe versie van 'Basisgeometrie' document. Hierin staat een verwijzing naar het lange lijnen advies waardoor het nu mogelijk is te waarschuwen voor lange lijnen.</td>
 </tr>
 </tbody></table>
 </section>
@@ -11016,7 +11011,7 @@ tot versie 3.0.1 niet meer geldig en die zijn verwijderd.</p>
     </dd><dt id="bib-lvbbbhkv">[LVBBBHKV]</dt><dd>
       <a href="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html"><cite>Documentatie LVBB Bronhouderkoppelvlak</cite></a>.  KOOP. Definitief. URL: <a href="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html">https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html</a>
     </dd><dt id="bib-mim">[MIM]</dt><dd>
-      <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/"><cite>MIM - Metamodel Informatie Modellering</cite></a>.  Geonovum. 2022-02-17. Definitief. URL: <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/">https://docs.geostandaarden.nl/mim/def-st-mim-20220217/</a>
+      <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/"><cite>MIM - Metamodel Informatie Modellering (Versie 1.2)</cite></a>.  Geonovum. 2024-06-13. Definitief. URL: <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/">https://docs.geostandaarden.nl/mim/def-st-mim-20240613/</a>
     </dd><dt id="bib-nen3610_2022">[NEN3610_2022]</dt><dd>
       <a href="https://www.nen.nl/nen-3610-2022-nl-296137"><cite>Basismodel geo-informatie</cite></a>.  NEN. 2020-06-20. Definitief. URL: <a href="https://www.nen.nl/nen-3610-2022-nl-296137">https://www.nen.nl/nen-3610-2022-nl-296137</a>
     </dd><dt id="bib-stopic">[STOPIC]</dt><dd>
