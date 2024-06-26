@@ -8,7 +8,7 @@
          <h4>   Aanlevering - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79.png" usemap="#imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79" alt="Diagram: Als bij het bronhouderkoppelvlak van de LVBB een Aanlevering wordt gedaan met daarin een OW-manifest moet de inhoud hiervan voldoen aan het IMOW. Het OW-manifest is een bestand met de naam ‘manifest-ow.xml’. In een OW-manifest zitten één of meer OW-aanleveringen. Ieder van die OW-aanleveringen is aan de wijziging van een Regeling in het STOP deel van de LVBB-Aanlevering. Om welke Regeling het gaat en in bijzondere gevallen om welke wijziging is te achterhalen via de kenmerken workIDRegeling, doelID en expressionIDResultaat. De te wijzigen OW-objecten zijn te verdelen over een aantal OW-bestanden. In een OW-bestand moet je aangeven welke objectTypen dat bestand bevat."><figcaption>Aanlevering</figcaption>
-            </figure><map name="imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79"><area shape="rect" alt="OW-object" coords="467,250,685,375" href="#global_class_OWobject_OWobject"><area shape="rect" alt="OW-Bestand" coords="19,234,268,391" href="#global_class_Aanlevering_OWBestand"><area shape="rect" alt="OW-manifest" coords="14,26,253,152" href="#global_class_Aanlevering_OWmanifest"><area shape="rect" alt="OW-bestandverwijzing" coords="791,36,1034,157" href="#global_class_Aanlevering_OWbestandverwijzing"><area shape="rect" alt="OW-aanlevering" coords="391,14,688,157" href="#global_class_Aanlevering_OWaanlevering"></map><p>
+            </figure><map name="imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79"><area shape="rect" alt="OW-object" coords="467,248,685,372" href="#global_class_OWobject_OWobject"><area shape="rect" alt="OW-Bestand" coords="19,231,268,389" href="#global_class_Aanlevering_OWBestand"><area shape="rect" alt="OW-manifest" coords="14,23,253,149" href="#global_class_Aanlevering_OWmanifest"><area shape="rect" alt="OW-bestandverwijzing" coords="778,25,1022,146" href="#global_class_Aanlevering_OWbestandverwijzing"><area shape="rect" alt="OW-aanlevering" coords="371,14,668,157" href="#global_class_Aanlevering_OWaanlevering"></map><p>
                
                <p>Als bij het bronhouderkoppelvlak van de  LVBB een Aanlevering wordt gedaan met daarin
                   een OW-manifest  moet de inhoud hiervan voldoen aan het IMOW. Het OW-manifest is een
@@ -421,8 +421,23 @@
                      <td>
                         
                         
-                        <p>Aanlevering van nieuwe en gewijzigde OW-objecten behorend bij één consolidatie.</p>
+                        <p>Aanlevering van nieuwe en gewijzigde OW-objecten behorend bij één regelingversie.</p>
                         
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <ul>
+                           
+                           <li>Als doel­ID is ingevuld dan moet expression­IDRegeling leeg zijn en gelden de de regels
+                              van IMOW 3.0. Een aanlevering met doel­ID wordt niet geaccepteerd als er gebruik is
+                              gemaakt van STOP 1.4+ mutatiescenario's.</li>
+                           
+                           <li>Als doel­ID leeg is dan moet expression­IDRegling gevuld zijn en wordt die gebruikt
+                              om te koppelen.</li>
+                           </ul>
                         </td>
                   </tr>
                   <tr>
@@ -998,12 +1013,13 @@
                               
                               <ul>
                                  
-                                 <li>Wanneer dit veld geen waarde heeft of lager is dan 4.0 zal de LVBB deze aanlevering
-                                    valideren tegen versie 3.0 van het IMOW.</li>
+                                 <li>Als dit veld geen waarde heeft of lager is dan 3.1 dan moeten  de gerelateerde OW-aaanleveringen
+                                    conform zijn aan versie 3.0 van het IMOW.</li>
                                  
-                                 <li>Wanneer dit veld een versienummer bevat van 4.0 of hoger zal de LVBB deze aanlevering
-                                    valideren tegen het genoemde versienummer van de standaard. Indien het genoemde versienummer
-                                    niet bekend is levert dat een foutmelding op.</li>
+                                 <li>Als dit veld een versienummer bevat van 3.1 of hoger dan moeten de gerelateerde OW-aanleveringen
+                                    conform zijn aan het genoemde versienummer van het IMOW.</li>
+                                 
+                                 <li>Als het genoemde versienummer niet bekend is levert dat een foutmelding op.</li>
                                  </ul>
                               
                               </td>
@@ -1249,7 +1265,7 @@
          <h4>   OW-object - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_97D11E5C_222E_4885_AD87_2F92616ED77A.png" usemap="#imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A" alt="Diagram: Alle OW-object die in een OW-aanlevering kunnen zitten."><figcaption>OW-object</figcaption>
-            </figure><map name="imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A"><area shape="rect" alt="NEN3610ID" coords="700,14,954,170" href="#global_class_OWobject_NEN3610ID"><area shape="rect" alt="Ambtsgebied" coords="783,598,933,664" href="#global_class_Locatie_Ambtsgebied"><area shape="rect" alt="Gebiedengroep" coords="617,757,762,818" href="#global_class_Locatie_Gebiedengroep"><area shape="rect" alt="Gebied" coords="436,755,584,818" href="#global_class_Locatie_Gebied"><area shape="rect" alt="Puntengroep" coords="643,602,758,665" href="#global_class_Locatie_Puntengroep"><area shape="rect" alt="Punt" coords="494,603,617,664" href="#global_class_Locatie_Punt"><area shape="rect" alt="Lijnengroep" coords="635,680,758,737" href="#global_class_Locatie_Lijnengroep"><area shape="rect" alt="Lijn" coords="464,680,601,737" href="#global_class_Locatie_Lijn"><area shape="rect" alt="Instructieregel" coords="78,566,201,639" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarde" coords="235,668,384,732" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="276,570,413,635" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Omgevingswaarderegel" coords="14,754,201,813" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="RegelVoorIedereen" coords="44,665,201,733" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Regelingsgebied" coords="700,335,856,398" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="Kaartlaag" coords="275,252,416,315" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Pons" coords="508,252,643,315" href="#global_class_Locatie_Pons"><area shape="rect" alt="Gebiedsaanwijzing" coords="436,421,617,484" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Norm" coords="235,421,399,484" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Locatie" coords="666,421,826,484" href="#global_class_Locatie_Locatie"><area shape="rect" alt="Tekstdeel" coords="257,335,399,398" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Hoofdlijn" coords="53,335,194,398" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Kaart" coords="88,242,223,305" href="#global_class_Kaart_Kaart"><area shape="rect" alt="Activiteit" coords="487,335,617,398" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="JuridischeRegel" coords="37,421,194,484" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="OW-object" coords="339,25,612,160" href="#global_class_OWobject_OWobject"></map><p>
+            </figure><map name="imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A"><area shape="rect" alt="NEN3610ID" coords="700,14,954,170" href="#global_class_OWobject_NEN3610ID"><area shape="rect" alt="Ambtsgebied" coords="783,598,933,664" href="#global_class_Locatie_Ambtsgebied"><area shape="rect" alt="Gebiedengroep" coords="617,757,762,818" href="#global_class_Locatie_Gebiedengroep"><area shape="rect" alt="Gebied" coords="436,755,584,818" href="#global_class_Locatie_Gebied"><area shape="rect" alt="Puntengroep" coords="643,602,758,665" href="#global_class_Locatie_Puntengroep"><area shape="rect" alt="Punt" coords="494,603,617,664" href="#global_class_Locatie_Punt"><area shape="rect" alt="Lijnengroep" coords="635,680,758,737" href="#global_class_Locatie_Lijnengroep"><area shape="rect" alt="Lijn" coords="464,680,601,737" href="#global_class_Locatie_Lijn"><area shape="rect" alt="Instructieregel" coords="78,566,201,639" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarde" coords="235,668,384,732" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="276,570,413,635" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Omgevingswaarderegel" coords="14,754,201,813" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="RegelVoorIedereen" coords="44,665,201,733" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Regelingsgebied" coords="700,335,856,398" href="#global_class_Artikelstructuur_Regelingsgebied"><area shape="rect" alt="Kaartlaag" coords="275,252,416,315" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Pons" coords="508,252,643,315" href="#global_class_Artikelstructuur_Pons"><area shape="rect" alt="Gebiedsaanwijzing" coords="436,421,617,484" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Norm" coords="235,421,399,484" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Locatie" coords="666,421,826,484" href="#global_class_Locatie_Locatie"><area shape="rect" alt="Tekstdeel" coords="257,335,399,398" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Hoofdlijn" coords="53,335,194,398" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Kaart" coords="88,242,223,305" href="#global_class_Kaart_Kaart"><area shape="rect" alt="Activiteit" coords="487,335,617,398" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="JuridischeRegel" coords="37,421,194,484" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="OW-object" coords="339,25,612,160" href="#global_class_OWobject_OWobject"></map><p>
                
                <p>Alle OW-object die in een OW-aanlevering kunnen zitten.</p>
                </p>
@@ -1896,17 +1912,16 @@
       <section id="EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2">
          <h4>   Artikelstructuur - overzicht</h4>
          <div class="imageinfo overview">
-            <figure><img src="data/Images/EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2.png" usemap="#imagemap-EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2" alt="Diagram: Een Regeling die volgens de STOP artikelstructuur is gemaakt bevat een geneste structuur die bijvoorbeeld Hoofdstukken, Artikelen, Paragrafen of Subparagrafen kan bevatten. Op het diepste niveau zit de inhoudelijk informatie van de regeling. Die inhoud zit in artikelen. Een artikel kan worden opgesplitst in leden. Als een artikel Leden heeft zit de inhoud in de leden. In een artikel zonder leden zit de inhoud in het artikel zelf. In de artikelstructuur zitten de annotaties op de artikelen of leden. Het Regeltekst object bevat de verwijzing naar het wId van de STOP tekst die wordt geannoteerd. Vervolgens kunnen er één of meerdere Juridische regels zijn die verbonden zijn aan de regeltekst. Een juridische regel is de in een annotatie opgenomen informatie over een regel met juridische werkingskracht. Een juridische regel heeft drie subtypen (RegelVoorIedereen, Instructieregel, Omgevingswaarderegel) die allen specifieke eigenschappen bevatten o.a. omvat in de objecten Activiteit voor het annoteren van een activiteit, Gebiedsaanwijzing om een benoemd gebied te duiden, Omgevingswaarde om een toegestane of gewenste waarde aan een Locatie toe te kennen en een Omgevingsnorm om een waarde als norm aan een Locatie te koppelen. Vervolgens hebben Normwaarde, Activiteit en Gebiedsaanwijzing een relatie met een Locatie. Het Pons object wordt gebruikt om aan te geven dat een gebied door een Regeling is ingevuld en niet meer door de ruimtelijke plannen o.b.v. Wro en/of Chw die onderdeel zijn van het tijdelijke deel van het omgevingsplan. Dit kan alleen gebruikt worden bij een omgevingsplan."><figcaption>Artikelstructuur</figcaption>
-            </figure><map name="imagemap-EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2"><area shape="rect" alt="OP-objectAnnotatie" coords="301,14,508,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="Pons" coords="285,1305,454,1406" href="#global_class_Locatie_Pons"><area shape="rect" alt="Regelingsgebied" coords="285,1420,454,1521" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="242,748,679,885" href="#global_class_Artikelstructuur_ActiviteitLocatieaanduiding"><area shape="rect" alt="Gebiedsaanwijzing" coords="584,958,895,1159" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Normwaarde" coords="1313,1175,1780,1406" href="#global_class_Artikelstructuur_Normwaarde"><area shape="rect" alt="Norm" coords="1271,622,1644,904" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Omgevingswaarde" coords="1428,1007,1702,1144" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="1101,1007,1363,1144" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Activiteit" coords="161,493,378,659" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="Locatie" coords="865,1309,1125,1457" href="#global_class_Locatie_Locatie"><area shape="rect" alt="RegelVoorIedereen" coords="536,506,740,601" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Instructieregel" coords="825,477,1255,711" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarderegel" coords="1363,476,1692,551" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="JuridischeRegel" coords="907,153,1205,335" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="Regeltekst" coords="211,227,598,428" href="#global_class_Artikelstructuur_Regeltekst"></map><p>
+            <figure><img src="data/Images/EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2.png" usemap="#imagemap-EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2" alt="Diagram: De tekst van een regeling die volgens de artikelstructuur bevat een geneste structuur die bijvoorbeeld Hoofdstukken, Artikelen, Paragrafen of Subparagrafen kan bevatten. Op het diepste niveau zit de inhoudelijk informatie van de regeling, die inhoud zit in artikelen. Soms is een artikel opgesplitst in leden. In dat geval zit de inhoud in de leden. In een artikel zonder leden zit de inhoud in het artikel zelf. In de artikelstructuur zitten de annotaties op de artikelen of leden. Het Regeltekst object bevat de verwijzing naar het wId van de STOP tekst die wordt geannoteerd. Vervolgens kunnen er één of meerdere Juridische regels zijn die verbonden zijn aan de regeltekst. Een juridische regel is de in een annotatie opgenomen informatie over een regel met juridische werkingskracht. Een juridische regel heeft drie subtypen (RegelVoorIedereen, Instructieregel, Omgevingswaarderegel) die allen specifieke eigenschappen bevatten o.a. omvat in de objecten Activiteit voor het annoteren van een activiteit, Gebiedsaanwijzing om een benoemd gebied te duiden, Omgevingswaarde om een toegestane of gewenste waarde aan een Locatie toe te kennen en een Omgevingsnorm om een waarde als norm aan een Locatie te koppelen. Vervolgens hebben Normwaarde, Activiteit en Gebiedsaanwijzing een relatie met een Locatie. Het Pons object wordt gebruikt om aan te geven dat een gebied door een Regeling is ingevuld en niet meer door de ruimtelijke plannen o.b.v. Wro en/of Chw die onderdeel zijn van het tijdelijke deel van het omgevingsplan. Dit kan alleen gebruikt worden bij een omgevingsplan."><figcaption>Artikelstructuur</figcaption>
+            </figure><map name="imagemap-EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2"><area shape="rect" alt="OP-objectAnnotatie" coords="301,14,508,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="Pons" coords="285,1305,454,1406" href="#global_class_Artikelstructuur_Pons"><area shape="rect" alt="Regelingsgebied" coords="285,1420,454,1521" href="#global_class_Artikelstructuur_Regelingsgebied"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="242,748,679,885" href="#global_class_Artikelstructuur_ActiviteitLocatieaanduiding"><area shape="rect" alt="Gebiedsaanwijzing" coords="584,958,895,1159" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Normwaarde" coords="1313,1175,1780,1406" href="#global_class_Artikelstructuur_Normwaarde"><area shape="rect" alt="Norm" coords="1271,622,1644,904" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Omgevingswaarde" coords="1428,1007,1702,1144" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="1101,1007,1363,1144" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Activiteit" coords="161,493,378,659" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="Locatie" coords="865,1309,1125,1457" href="#global_class_Locatie_Locatie"><area shape="rect" alt="RegelVoorIedereen" coords="536,506,740,601" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Instructieregel" coords="825,477,1255,711" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarderegel" coords="1363,476,1692,551" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="JuridischeRegel" coords="907,153,1205,394" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="Regeltekst" coords="211,227,566,406" href="#global_class_Artikelstructuur_Regeltekst"></map><p>
                
                <p></p>
                
-               <p>Een Regeling die volgens de STOP artikelstructuur is gemaakt bevat een geneste structuur
+               <p>De tekst van een regeling die volgens de artikelstructuur bevat een geneste structuur
                   die bijvoorbeeld Hoofdstukken, Artikelen, Paragrafen of Subparagrafen kan bevatten.
-                  Op het diepste niveau zit de inhoudelijk informatie van de regeling. Die inhoud zit
-                  in artikelen. Een artikel kan worden opgesplitst in leden. Als een artikel Leden heeft
-                  zit de inhoud in de leden. In een artikel zonder leden zit de inhoud in het artikel
-                  zelf. </p>
+                  Op het diepste niveau zit de inhoudelijk informatie van de regeling, die inhoud zit
+                  in artikelen. Soms is een artikel opgesplitst in leden. In dat geval zit de inhoud
+                  in de leden. In een artikel zonder leden zit de inhoud in het artikel zelf.  </p>
                
                <p>In de artikelstructuur zitten de annotaties op de artikelen of leden. Het Regeltekst
                   object bevat de verwijzing naar het w­Id van de STOP tekst die wordt geannoteerd.
@@ -1946,6 +1961,18 @@
                         
                         <p>Annotatie op een STOP Artikel of Lid</p>
                         
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <ul>
+                           
+                           <li>Per Regeltekst is er één type Juridische regel.</li>
+                           
+                           <li>Als een Artikel onderverdeeld is in Leden dan zijn alleen de leden geannoteerd.</li>
+                           </ul>
                         </td>
                   </tr>
                   <tr>
@@ -2457,8 +2484,11 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Alle Juridische regels die verwijzen naar dezelfde Regeltekst moeten dezelfde waarde
-                           hebben voor Idealisatie.</p>
+                        <ul>
+                           
+                           <li>Alle Juridische regels die verwijzen naar dezelfde Regeltekst moeten dezelfde waarde
+                              hebben voor idealisatie.</li>
+                           </ul>
                         </td>
                   </tr>
                   <tr>
@@ -2614,6 +2644,79 @@
             
             </section>
          
+         <section id="global_class_Artikelstructuur_Regelingsgebied">
+            <h5>   Regelingsgebied</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Regelingsgebied</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Machineleesbare vastlegging waar de volledige Regeling van toepassing is.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Regelingsgebied
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Artikelstructuur_Regelingsgebied_locatieaanduiding">locatieaanduiding: locatieaanduiding</a>
+                        
+                        
+                        <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Duiding van de geografische locatie van het Regelingsgebied</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Regelingsgebied
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
          <section id="global_class_Artikelstructuur_Norm">
             <h5>   Norm</h5>
             
@@ -2630,7 +2733,10 @@
                      <td>
                         
                         
-                        <p>Een omgevingswaarde of een omgevingsnorm.</p>
+                        <p>Een omgevingswaarde of een omgevingsnorm. Een Normwaarde geldt voor iedere individuele
+                           geometrie van Gebied, Lijn, Punt, Gebiedengroep, Lijnengroep of Puntengroep respectievelijk
+                           van de Multi­Surface, Multi­Curve of Multi­Point van de Locatie waarnaar die Normwaarde
+                           verwijst. </p>
                         
                         </td>
                   </tr>
@@ -2640,10 +2746,15 @@
                         
                         <ul>
                            
-                           <li>De locaties van de verschillende normwaarden in een Norm mogen elkaar niet overlappen.</li>
+                           <li>Per Locatie mag een Norm maar één waarde hebben.</li>
                            
-                           <li>Een Normwaarde geldt per individuele geometrie. Een Normwaarde die bedoeld is als
-                              gezamenlijke waarde voor meerdere geometrieën is niet toegestaan.</li>
+                           <li>Locaties van de Omgevingsnorm mogen niet geheel of gedeeltelijk overlappend zijn.</li>
+                           
+                           <li>Een Normwaarde die bedoeld is als gezamenlijke waarde voor meerdere geometrieën is
+                              niet toegestaan.</li>
+                           
+                           <li>Eenheid heeft dan en slechts dan een waarde als de normwaardes bij deze norm kwantitatieve­Waardes
+                              zijn. (TPOD2100)</li>
                            </ul>
                         </td>
                   </tr>
@@ -2940,7 +3051,10 @@
                         </td>
                      <td>
                         
-                        <p>Een omgevingswaarde of een omgevingsnorm.</p>
+                        <p>Een omgevingswaarde of een omgevingsnorm. Een Normwaarde geldt voor iedere individuele
+                           geometrie van Gebied, Lijn, Punt, Gebiedengroep, Lijnengroep of Puntengroep respectievelijk
+                           van de Multi­Surface, Multi­Curve of Multi­Point van de Locatie waarnaar die Normwaarde
+                           verwijst. </p>
                         </td>
                   </tr>
                </tbody>
@@ -3046,7 +3160,10 @@
                         </td>
                      <td>
                         
-                        <p>Een omgevingswaarde of een omgevingsnorm.</p>
+                        <p>Een omgevingswaarde of een omgevingsnorm. Een Normwaarde geldt voor iedere individuele
+                           geometrie van Gebied, Lijn, Punt, Gebiedengroep, Lijnengroep of Puntengroep respectievelijk
+                           van de Multi­Surface, Multi­Curve of Multi­Point van de Locatie waarnaar die Normwaarde
+                           verwijst. </p>
                         </td>
                   </tr>
                </tbody>
@@ -3202,6 +3319,94 @@
                   <tr>
                      <td>
                         Activiteit
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_Artikelstructuur_Pons">
+            <h5>   Pons</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Pons</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Pons is het OW-object voor het omgevingsplan waarmee het bevoegd gezag aangeeft dat
+                           een of meer ruimtelijke plannen, of delen daarvan, die in de overbruggingsfunctie
+                           van DSO-LV aanwezig zijn, niet langer geldig zijn en dat er voor zorgt dat de overbruggingsfunctie
+                           van DSO-LV die ruimtelijke plannen niet meer toont.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <ul>
+                           
+                           <li>Bij een regeling hoort maximaal één Pons.</li>
+                           
+                           <li>Bij een tijdelijk regelingdeel hoort geen Pons.</li>
+                           </ul>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Pons
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Artikelstructuur_Pons_locatieaanduiding">locatieaanduiding: locatieaanduiding</a>
+                        
+                        
+                        <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Locatie van de pons</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Pons
                         is specialisatie van
                         
                         <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
@@ -4280,6 +4485,53 @@
                   </div>
                </section>
             
+            <section id="detail_class_Artikelstructuur_Regelingsgebied">
+               <h6>   Regelingsgebied</h6>
+               
+               <div class="deepheader" id="detail_association_Artikelstructuur_Regelingsgebied_locatieaanduiding">
+                  <h7>Relatiesoort details  <a href="#global_class_Artikelstructuur_Regelingsgebied">Regelingsgebied</a> locatieaanduiding</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>locatieaanduiding</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Duiding van de geografische locatie van het Regelingsgebied</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
             <section id="detail_class_Artikelstructuur_Norm">
                <h6>   Norm</h6>
                
@@ -4681,6 +4933,53 @@
                            <th>Gerelateerd objecttype</th>
                            <td>
                               <a class="link" href="#global_class_Artikelstructuur_Activiteit">Activiteit</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_Artikelstructuur_Pons">
+               <h6>   Pons</h6>
+               
+               <div class="deepheader" id="detail_association_Artikelstructuur_Pons_locatieaanduiding">
+                  <h7>Relatiesoort details  <a href="#global_class_Artikelstructuur_Pons">Pons</a> locatieaanduiding</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>locatieaanduiding</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Locatie van de pons</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
                               </td>
                         </tr>
                         <tr>
@@ -5138,7 +5437,7 @@
          <h4>   Vrije­Tekst - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313.png" usemap="#imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313" alt="Diagram: Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar uiteindelijk ook een Divisietekst met Inhoud in moet zitten. De Inhoud bevat alleen inhoudelijke tekst. De Divisie wordt gebruikt om de tekst te structureren in bijvoorbeeld verschillende hoofdstukken of paragrafen. In de vrijetekststructuur kan alleen geannoteerd worden op de Divisietekst. Dit doe je door een Tekstdeel te maken dat verwijst naar die Divisietekst. Het Tekstdeel bevat dan volgende annotaties: hoofdlijnaanduiding, gebiedsaanwijzing en locatieaanduiding."><figcaption>Vrije­Tekst</figcaption>
-            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="Divisie" coords="238,265,408,330" href="#global_class_Vrijetekst_Divisie"><area shape="rect" alt="OP-objectAnnotatie" coords="343,14,550,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="DivisieOfDivisietekst" coords="350,395,516,457" href="#global_class_Vrijetekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="460,265,651,330" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="312,539,570,694" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="867,605,1048,706" href="#global_class_Locatie_Regelingsgebied"><area shape="rect" alt="Hoofdlijn" coords="14,840,271,995" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="304,836,614,1016" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="765,840,1036,980" href="#global_class_Locatie_Locatie"></map><p>
+            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="Divisie" coords="245,265,415,330" href="#global_class_Vrijetekst_Divisie"><area shape="rect" alt="OP-objectAnnotatie" coords="350,14,557,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="DivisieOfDivisietekst" coords="372,409,538,471" href="#global_class_Vrijetekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="467,265,658,330" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="207,560,702,860" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="990,806,1171,907" href="#global_class_Artikelstructuur_Regelingsgebied"><area shape="rect" alt="Hoofdlijn" coords="14,970,271,1125" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="304,966,614,1146" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="731,986,1001,1126" href="#global_class_Locatie_Locatie"></map><p>
                
                <p>Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het
                   hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar
@@ -5377,8 +5676,16 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Alle Tekstdeel objecten die verwijzen naar dezelfde Divisietekst moeten dezelfde waarde
-                           hebben voor Idealisatie.</p>
+                        <ul>
+                           
+                           <li>Tekstedelen regels die verwijzen naar dezelfde Divisie moeten dezelfde waarde hebben
+                              voor idealisatie.</li>
+                           
+                           <li>Tekstedelen regels die verwijzen naar dezelfde Divisietekst moeten dezelfde waarde
+                              hebben voor idealisatie.</li>
+                           
+                           <li>Als een Tekstdeel een locatieaanduiding heeft dan is idealisatie verplicht.</li>
+                           </ul>
                         </td>
                   </tr>
                   <tr>
@@ -6132,20 +6439,16 @@
       <section id="EAID_31E6C7D5_E55E_4916_92E7_D35A8E1C6E03">
          <h4>   Locatie - overzicht</h4>
          <div class="imageinfo overview">
-            <figure><img src="data/Images/EAID_31E6C7D5_E55E_4916_92E7_D35A8E1C6E03.png" usemap="#imagemap-EAID_31E6C7D5_E55E_4916_92E7_D35A8E1C6E03" alt="Diagram: Locatie modelleert de locatie die aan OW-objecten wordt toegekend. Een locatie kan de vorm hebben van een punt, lijn, gebied of groepen daarvan. Met een verwijzing naar Geometrie worden de coördinaten opgenomen. De Geometrie objecten worden uitgewisseld in een apart geometrie-bestand. Punt, Lijn en Gebied verwijzen naar de ID van de geometrie in het meegeleverde GIO. Ambtsgebied bevat een verwijzing naar de bestuurlijkeGrenzen-voorziening."><figcaption>Locatie</figcaption>
+            <figure><img src="data/Images/EAID_31E6C7D5_E55E_4916_92E7_D35A8E1C6E03.png" usemap="#imagemap-EAID_31E6C7D5_E55E_4916_92E7_D35A8E1C6E03" alt="Diagram: In dit diagram staan de verschillende verschijningsvormen van de klasse Locatie beschreven. Een locatie kan de vorm hebben van een punt, lijn, gebied, groepen met punten lijnen of vlakken of een verwijzing naar een Ambtsgebied. De uitendelijk geometrie zit niet in let Locatie object maar bij het Ambtsgebeid te vinden in de bestuurlijkeGrenzen-voorziening en in het geval van Punt, Lijn en Gebied door een het openmen van een id in de meegeleverde GIO."><figcaption>Locatie</figcaption>
             </figure><map name="imagemap-EAID_31E6C7D5_E55E_4916_92E7_D35A8E1C6E03"><area shape="rect" alt="BestuurlijkeGrenzenVerwijzing" coords="929,572,1264,728" href="#global_class_Locatie_BestuurlijkeGrenzenVerwijzing"><area shape="rect" alt="Ambtsgebied" coords="393,592,900,728" href="#global_class_Locatie_Ambtsgebied"><area shape="rect" alt="Geometrie" coords="1131,211,1357,358" href="#global_class_Locatie_Geometrie"><area shape="rect" alt="Lijnengroep" coords="378,279,555,347" href="#global_class_Locatie_Lijnengroep"><area shape="rect" alt="Puntengroep" coords="379,443,557,513" href="#global_class_Locatie_Puntengroep"><area shape="rect" alt="Lijn" coords="699,201,1030,324" href="#global_class_Locatie_Lijn"><area shape="rect" alt="Punt" coords="688,398,1019,513" href="#global_class_Locatie_Punt"><area shape="rect" alt="Gebiedengroep" coords="379,70,558,144" href="#global_class_Locatie_Gebiedengroep"><area shape="rect" alt="Gebied" coords="683,14,1047,127" href="#global_class_Locatie_Gebied"><area shape="rect" alt="Locatie" coords="14,130,274,279" href="#global_class_Locatie_Locatie"></map><p>
                
-               <p>Locatie modelleert de locatie die aan OW-objecten wordt toegekend. Een locatie kan
-                  de vorm hebben van een punt, lijn, gebied of groepen daarvan. Met een verwijzing naar
-                  Geometrie worden de coördinaten opgenomen. De Geometrie objecten worden uitgewisseld
-                  in een apart geometrie-bestand.</p>
+               <p>In dit diagram staan de verschillende verschijningsvormen van de klasse Locatie beschreven.
+                  Een locatie kan de vorm hebben van een punt, lijn, gebied, groepen met punten lijnen
+                  of vlakken of een verwijzing naar een Ambtsgebied. </p>
                
-               <p></p>
-               
-               <p>Punt, Lijn en Gebied  verwijzen naar de ID van de geometrie in het meegeleverde GIO.
-                  Ambtsgebied bevat een verwijzing naar de bestuurlijke­Grenzen-voorziening.</p>
-               
-               <p></p>
+               <p>De uitendelijk geometrie zit niet in let Locatie object maar bij het Ambtsgebeid te
+                  vinden in de bestuurlijke­Grenzen-voorziening en in het geval van Punt, Lijn en Gebied
+                  door een het openmen van een id in de meegeleverde GIO.</p>
                </p>
          </div>
       </section>
@@ -6274,6 +6577,23 @@
                   <tr>
                      <td>
                         
+                        <a class="link" href="#global_class_Artikelstructuur_Regelingsgebied">Regelingsgebied</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Artikelstructuur_Regelingsgebied_locatieaanduiding">locatieaanduiding: locatieaanduiding</a>
+                        
+                        Locatie
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Duiding van de geografische locatie van het Regelingsgebied</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
                         <a class="link" href="#global_class_Artikelstructuur_Normwaarde">Normwaarde</a>
                         
                         [ 0 .. * ]
@@ -6286,6 +6606,23 @@
                      <td>
                         
                         <p>verwijzing naar de Locaties waar de norm geldt.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Artikelstructuur_Pons">Pons</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Artikelstructuur_Pons_locatieaanduiding">locatieaanduiding: locatieaanduiding</a>
+                        
+                        Locatie
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Locatie van de pons</p>
                         </td>
                   </tr>
                   <tr>
@@ -6318,40 +6655,6 @@
                         [ 0 .. * ]
                         </td>
                      <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Locatie_Regelingsgebied">Regelingsgebied</a>
-                        
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_Locatie_Regelingsgebied_locatieaanduiding">locatieaanduiding: locatieaanduiding</a>
-                        
-                        Locatie
-                        [ 1 ]
-                        </td>
-                     <td>
-                        
-                        <p>Duiding van de geografische locatie van het Regelingsgebied</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Locatie_Pons">Pons</a>
-                        
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_Locatie_Pons_locatieaanduiding">locatieaanduiding: locatieaanduiding</a>
-                        
-                        Locatie
-                        [ 1 ]
-                        </td>
-                     <td>
-                        
-                        <p>Locatie van de pons</p>
-                        </td>
                   </tr>
                   <tr>
                      <td>
@@ -6776,79 +7079,6 @@
             
             </section>
          
-         <section id="global_class_Locatie_Regelingsgebied">
-            <h5>   Regelingsgebied</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Regelingsgebied</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Machineleesbare vastlegging waar de volledige Regeling van toepassing is.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Regelingsgebied
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_Locatie_Regelingsgebied_locatieaanduiding">locatieaanduiding: locatieaanduiding</a>
-                        
-                        
-                        <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
-                        
-                        [ 1 ]
-                        </td>
-                     <td>
-                        
-                        <p>Duiding van de geografische locatie van het Regelingsgebied</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Regelingsgebied
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Identificeerbaar object in een OW-aanlevering</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
          <section id="global_class_Locatie_Puntengroep">
             <h5>   Puntengroep</h5>
             
@@ -7068,94 +7298,6 @@
             
             </section>
          
-         <section id="global_class_Locatie_Pons">
-            <h5>   Pons</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Pons</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Pons is het OW-object voor het omgevingsplan waarmee het bevoegd gezag aangeeft dat
-                           een of meer ruimtelijke plannen, of delen daarvan, die in de overbruggingsfunctie
-                           van DSO-LV aanwezig zijn, niet langer geldig zijn en dat er voor zorgt dat de overbruggingsfunctie
-                           van DSO-LV die ruimtelijke plannen niet meer toont.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <ul>
-                           
-                           <li>Bij een regeling hoort maximaal één Pons.</li>
-                           
-                           <li>Bij een tijdelijk regelingdeel hoort geen Pons.</li>
-                           </ul>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Pons
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_Locatie_Pons_locatieaanduiding">locatieaanduiding: locatieaanduiding</a>
-                        
-                        
-                        <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
-                        
-                        [ 1 ]
-                        </td>
-                     <td>
-                        
-                        <p>Locatie van de pons</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Pons
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Identificeerbaar object in een OW-aanlevering</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
          <section id="global_class_Locatie_Geometrie">
             <h5>   Geometrie</h5>
             
@@ -7181,7 +7323,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Zie voor regels over Geometrie de STOP standaard.</p>
+                        <p>Regels voor het Geometrie object staan in de STOP standaard. Een samenvatting van
+                           de regels is ook te vinden in de paragrafen 6.2 en 6.3 van dit document.</p>
                         </td>
                   </tr>
                   <tr>
@@ -7193,8 +7336,10 @@
                      <td>
                         
                         
-                        <p>De geometrie wordt niet uitgewisseld via een IMOW object maar via GIO's in de STOP
-                           standaard.</p>
+                        <p>Een OW-aanlevering bevat geen serialisatie van Geometrie. De geometrie waar een Punt,
+                           Lijn of Gebied naar verwijst is te vinden door de geometrie met de id waarnaar verwezen
+                           wordt op te zoeken in de GIO's behorend bij deze regeling. De GIO's bij de regeling
+                           worden aanlgeleverd conform de STOP standaard.</p>
                         
                         </td>
                   </tr>
@@ -7563,53 +7708,6 @@
                </section>
             
             
-            <section id="detail_class_Locatie_Regelingsgebied">
-               <h6>   Regelingsgebied</h6>
-               
-               <div class="deepheader" id="detail_association_Locatie_Regelingsgebied_locatieaanduiding">
-                  <h7>Relatiesoort details  <a href="#global_class_Locatie_Regelingsgebied">Regelingsgebied</a> locatieaanduiding</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>locatieaanduiding</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Duiding van de geografische locatie van het Regelingsgebied</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
             <section id="detail_class_Locatie_Puntengroep">
                <h6>   Puntengroep</h6>
                
@@ -7737,53 +7835,6 @@
                         <tr>
                            <th>Indicatie kardinaliteit</th>
                            <td>1 .. *</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_Locatie_Pons">
-               <h6>   Pons</h6>
-               
-               <div class="deepheader" id="detail_association_Locatie_Pons_locatieaanduiding">
-                  <h7>Relatiesoort details  <a href="#global_class_Locatie_Pons">Pons</a> locatieaanduiding</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>locatieaanduiding</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Locatie van de pons</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie kardinaliteit</th>
-                           <td>1</td>
                         </tr>
                         <tr>
                            <th>Mogelijk geen waarde</th>
@@ -9220,7 +9271,7 @@
    </section>
 </section>
 <section id="lis" class="normative">
-   <h2>Inhoud van waardenlijsten</h2>
+   <h2>Inhoud van waardelijsten</h2>
    <!--20200601_Oplevering imvertor Nightly-build.14-->
    <section>
       <h3>Codelijst inhoud   </h3>
