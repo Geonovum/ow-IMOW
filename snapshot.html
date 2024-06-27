@@ -392,7 +392,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
     <h2>
       Geonovum Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2024-06-26">26 juni 2024</time>
+      <time class="dt-published" datetime="2024-06-27">27 juni 2024</time>
     </h2>
     <dl>
       
@@ -1195,7 +1195,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                         <p>expression­ID van de regeling waar deze aanlevering bij hoort.</p>
                         </td>
                      <td>
-                        CHARACTERSTRING
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
                         </td>
                      <td>0 .. 1</td>
                   </tr>
@@ -1875,7 +1875,9 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie materiële historie</th>
@@ -2665,7 +2667,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                            
                            <li>Per Regeltekst is er één type Juridische regel.</li>
                            
-                           <li>Als een Artikel onderverdeeld is in Leden dan zijn alleen de leden geannoteerd.</li>
+                           <li>Een Regeltekst kan alleen verwijzen naar een Artikel of Lid met een inhoud element.</li>
                            </ul>
                         </td>
                   </tr>
@@ -2677,6 +2679,10 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                         <p>Een Regeltekst is de kleinste zelfstandige eenheid van (een of meer) bij elkaar behorende
                            juridische regels: artikel of lid. Deze regels horen onlosmakelijk bij elkaar en hebben
                            gezamenlijk één werkingsgebied.</p>
+                        
+                        <p>De tweede regel zorgt ervoor dat een artikel met leden niet geannoteerd kan worden,
+                           de annotaties moeten dan op de leden. Ook zorgt deze regel ervoor dat artikelen die
+                           bijvoorbeeld vervallen of gereserveerd zijn net geannoteerd kunnen worden.</p>
                         
                         </td>
                   </tr>
