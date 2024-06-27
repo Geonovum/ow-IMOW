@@ -509,7 +509,7 @@
                         <p>expression­ID van de regeling waar deze aanlevering bij hoort.</p>
                         </td>
                      <td>
-                        CHARACTERSTRING
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
                         </td>
                      <td>0 .. 1</td>
                   </tr>
@@ -1189,7 +1189,9 @@
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie materiële historie</th>
@@ -1979,7 +1981,7 @@
                            
                            <li>Per Regeltekst is er één type Juridische regel.</li>
                            
-                           <li>Als een Artikel onderverdeeld is in Leden dan zijn alleen de leden geannoteerd.</li>
+                           <li>Een Regeltekst kan alleen verwijzen naar een Artikel of Lid met een inhoud element.</li>
                            </ul>
                         </td>
                   </tr>
@@ -1991,6 +1993,10 @@
                         <p>Een Regeltekst is de kleinste zelfstandige eenheid van (een of meer) bij elkaar behorende
                            juridische regels: artikel of lid. Deze regels horen onlosmakelijk bij elkaar en hebben
                            gezamenlijk één werkingsgebied.</p>
+                        
+                        <p>De tweede regel zorgt ervoor dat een artikel met leden niet geannoteerd kan worden,
+                           de annotaties moeten dan op de leden. Ook zorgt deze regel ervoor dat artikelen die
+                           bijvoorbeeld vervallen of gereserveerd zijn net geannoteerd kunnen worden.</p>
                         
                         </td>
                   </tr>
