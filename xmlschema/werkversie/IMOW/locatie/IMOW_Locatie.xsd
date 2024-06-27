@@ -23,11 +23,6 @@
       <xs:complexContent>
          <xs:extension base="l:Locatie">
             <xs:sequence>
-               <xs:element name="hoogte" type="da:WaardeEenheid" minOccurs="0" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/schema-info/technical-documentation">De hoogte waarop de geometrie ligt, in meters.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
                <xs:element name="geometrie" minOccurs="1" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/schema-info/technical-documentation">Verwijzing naar een extern beschikbare geometrie, conform simplefeaturetype specification niveau 2: surface, polygon, multisurface. </xs:documentation>
@@ -109,11 +104,6 @@
                      </xs:choice>
                   </xs:complexType>
                </xs:element>
-               <xs:element name="hoogte" type="da:WaardeEenheid" minOccurs="0" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/schema-info/technical-documentation">De hoogte waarop de geometrie ligt, in meters.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
@@ -173,11 +163,6 @@
       <xs:complexContent>
          <xs:extension base="l:Locatie">
             <xs:sequence>
-               <xs:element name="hoogte" type="da:WaardeEenheid" minOccurs="0" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/schema-info/technical-documentation">De hoogte waarop de geometrie ligt, in meters.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
                <xs:element name="geometrie" minOccurs="1" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/schema-info/technical-documentation">Verwijzing naar een extern beschikbare geometrie, conform simplefeaturetype specification niveau 2: Curve</xs:documentation>
