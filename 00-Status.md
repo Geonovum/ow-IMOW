@@ -57,9 +57,7 @@ volgende versie van het IMOW komt een klasse met vergelijkbare functionaliteit.
 
 Tot en met IMOW 3.0.1 kon aan het bronhouderkoppelvlak van de LVBB slechts één
 versie van het IMOW aangeleverd. Met ingang
-van IMOW 4.0 is het veld IMOWversie verplicht zodat
-het BHKV kan zien aan welke versie van het IMOW de aanlevering
-voldoet.
+van IMOW 3.2 is het veld IMOWversie verplicht en gebruikt de LVBB het versienummer om te bepalen welke versie van de standaard gebruikt wordt.
 
 **OW-objecten worden automatisch beëindigd bij het intrekken van een regeling**
 

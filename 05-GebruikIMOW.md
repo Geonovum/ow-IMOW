@@ -99,16 +99,16 @@ de regeling gelden de volgende regels:
 **Regels:**
 
 - Een OW-aanlevering mag niet resulteren in wees-objecten dat zijn
-objecten die niet direct of indirect gekoppeld zijn aan een OP-objectAnnotatie.
+  objecten die niet direct of indirect gekoppeld zijn aan een OP-objectAnnotatie.
 - Een OW-aanlevering mag niet resulteren in verwijzingen naar
-OW-objecten die beëindigd zijn (OZON0109).
+  OW-objecten die beëindigd zijn (OZON0109).
 - Een OW-aanlevering moet resulteren in een Regeling met daarin precies
-één Regelingsgebied.
+  één Regelingsgebied.
 - Een OW-aanlevering moet resulteren in een Regeling met daarin
-maximaal één Pons object.
-- Voor ieder Lid en Artikel zonder leden in de Regeling die niet
-gereserveerd of vervallen zijn moet er een Regeltekst object zijn.
-- Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen.(TPOD2050).
+  maximaal één Pons object.
+- Bij een Lid of Artikel met een STOP-element Inhoud moet er precies één Regeltekst-object zijn (TPOD2050)
+- Een Lid of Artikel zonder een Inhoud-element mag geen Regeltekst-object hebben.
+- Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen.
 - Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst verwijzen (TPOD2052).
 
 ## Wanneer gebruik je een OW-aanlevering aan de LVBB

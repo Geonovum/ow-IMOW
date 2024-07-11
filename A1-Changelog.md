@@ -67,4 +67,35 @@ tot versie 3.0.1 niet meer geldig en die zijn verwijderd.
 | 3.0.1     | 2023-12-27 | Foutieve diagrammen in Figuur 3 en 4 gerepareerd.                                                                                                                                                                    |
 | 3.1       | TODO       | De mogelijkheid om geen geldigOp datum mee te geven uit de tekst gehaald. Modelmatig was dit al niet mogelijk.                                                                                                       |
 |           |            | Extra duidelijk gemaakt xxx                                                                                                                                                                                          |
-|           |            | Verwijzing opgenomen naar nieuwe versie van 'Basisgeometrie' document. Hierin staat een verwijzing naar het lange lijnen advies waardoor het nu mogelijk is te waarschuwen voor lange lijnen.                         |
+|           |            | Verwijzing opgenomen naar nieuwe versie van 'Basisgeometrie' document. Hierin staat een verwijzing naar het lange lijnen advies waardoor het nu mogelijk is te waarschuwen voor lange lijnen.                        |
+|           |            | Overgestapt naar MIM versie 1.2. Dit heeft geen inhoudelijke invloed op de standaard. |
+
+
+
+## Overgang tussen 3.0 en 3.1
+
+Sinds versie 3.1 van het IMOW is het veld IMOWversie in OW-manifest verplicht. Het versienummer bepaalt aan welke versie van het IMOW model de aanlevering voldoet en dus aan welke (validatie-)regels de aanlevering moet voldoen. 
+
+Verplicht maken van IMOWversie:
+
+- Als het veld IMOWversie niet volgens het aangegeven patroon is ingevuld wordt de aanlevering geweigerd.
+- Als er geen waarde is ingevuld, of de waarde verwijst naar een IMOW versie van 3.0 of lager dan moet de aanlevering voldoen aan de regels van IMOW versie 3.0.
+- Als het veld IMOWversie een versienummer van 3.1 of hoger bevat dat moet de aanlevering voldoen aan de regels van de genoemde versie van IMOW.
+- **Noot:** Het aanleveren van een niet ondersteunde IMOWversie kan resulteren in een melding van de voorziening.
+
+Nieuw attribuut: expressionIDRegeling
+- **IMOW 3.0:** expressionIDRegeling is leeg. Er mag geen gebruik gemaakt worden van STOP 1.4+ mutatiescenario's.
+- **IMOW 3.1:** doelID is leeg. Er mag gebruik gemaakt worden van de STOP 1.4+ mutatiescenario's
+
+OW-objecten worden automatisch beëindigd bij het intrekken van een regeling:
+- **IMOW 3.0:** Bij het intrekken van een regeling moeten alle OW-objecten automatisch worden beëindigd.
+- **IMOW 3.1:** TODO: hier valt wat te kiezen. Bijvoorbeeld we verbieden alles.
+
+Attribuut procedureStatus uit OW-object verwijderd:
+- **IMOW 3.0:** we kijken naar procedureStatus en geven melding als die niet klopt.
+- **IMOW 3.1:** ProcedureStatus in de aanlevering wordt gegenegeerd.
+- 
+
+
+
+

@@ -73,17 +73,21 @@ De wijze van het identificeren van objecten in het IMOW volgt de
 NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:
 
 ```re
-nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\.(regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|divisie|kaartlaag|juridischeregel|activiteitlocatieaanduiding|normwaarde|regelingsgebied|ambtsgebied|divisietekst)\.[A-Za-z0-9]{1,32}
+'nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\.'
+'(regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|'
+'gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|'
+'divisie|kaartlaag|juridischeregel|activiteitlocatieaanduiding|normwaarde|regelingsgebied|'
+'ambtsgebied|divisietekst)\.[A-Za-z0-9]{1,32}'
 ```
 
-| Onderdeel van de reguliere expressie                                                                                                                                                                                                                                                  | Betekenis                                                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ```nl.imow-```                                                                                                                                                                                                                                                                        | Alle gegevens die worden aangeleverd vanuit het IMOW dienen te starten met nl.imow-                                                                                                                                                                     |
-| ```(gm\|pv\|ws\|mn\|mnre)```                                                                                                                                                                                                                                                          | keuze voor een code voor de bestuurslaag van de bronhouder: gm voor gemeente, pv voor provincie, ws voor waterschap of mnre voor ministerie. De bronhouder is het bevoegd gezag dat het besluit neemt waarmee de Regeling wordt ingesteld of gewijzigd. |
-| ```[0-9]{1,6}```                                                                                                                                                                                                                                                                    | de overheidscode van de bronhouder, maximaal 6 cijfers                                                                                                                                                                                                  |
-| ```\.```                                                                                                                                                                                                                                                                              | een punt                                                                                                                                                                                                                                                |
-| ```(regeltekst\|gebied\|gebiedengroep\|lijn\|lijnengroep\|punt\|puntengroep\|activiteit\|gebiedsaanwijzing\|omgevingswaarde\|omgevingsnorm\|pons\|kaart\|tekstdeel\|hoofdlijn\|divisie\|kaartlaag\|juridischeregel\|activiteitlocatieaanduiding\|normwaarde\|regelingsgebied\|ambtsgebied\|divisietekst)``` | keuze voor de naam van het IMOW objecttype van het object waar de identificatie betrekking op heeft                                                                                                                                                     |
-| ```[A-Za-z0-9]{1,32}```                                                                                                                                                                                                                                                               | Een codereeks van minimaal 1 en maximaal 32 alfanumerieke tekens, te bepalen door de bronhouder                                                                                                                                                         |
+| Onderdeel van de reguliere expressie    | Betekenis                                                                                                                                                                                                                                               |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ```nl.imow-```                          | Alle gegevens die worden aangeleverd vanuit het IMOW dienen te starten met nl.imow-                                                                                                                                                                     |
+| ```(gm\|pv\|ws\|mn\|mnre)```            | keuze voor een code voor de bestuurslaag van de bronhouder: gm voor gemeente, pv voor provincie, ws voor waterschap of mnre voor ministerie. De bronhouder is het bevoegd gezag dat het besluit neemt waarmee de Regeling wordt ingesteld of gewijzigd. |
+| ```[0-9]{1,6}```                        | de overheidscode van de bronhouder, maximaal 6 cijfers                                                                                                                                                                                                  |
+| ```.```                                | een punt                                                                                                                                                                                                                                                |
+| ```(regeltekst\| ... \|divisietekst)``` | keuze voor de naam van het IMOW objecttype van het object waar de identificatie betrekking op heeft                                                                                                                                                     |
+| ```[A-Za-z0-9]{1,32}```                 | Een codereeks van minimaal 1 en maximaal 32 alfanumerieke tekens, te bepalen door de bronhouder                                                                                                                                                         |
 
 De  identificatie als geheel wordt dan bijvoorbeeld: `nl.imow-gm0200.gebied.2019000001`
 
@@ -105,9 +109,9 @@ vastgelegd in de volgende regels:
 **Regel:** Het WorkIDRegeling van de OW-Aanlevering waarin een OW-object
 ontstaat bepaalt bij welke regeling een OW-object hoort.
 
-**Regel:** (TPOD1200): Een OW-object mag alleen gewijzigd worden in een
+**Regel:** Een OW-object mag alleen gewijzigd worden in een
 OW-aanlevering die hoort bij een besluit dat de regeling wijzigt waar het
-OW-object bij hoort.
+OW-object bij hoort. (TPOD1200)
 
 ### Verwijzingen tussen OW-objecten {#H04-Verwijzen}
 
