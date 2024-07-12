@@ -31,6 +31,7 @@
 			<xs:sequence>
 				<xs:element ref="sl:standBestand"/>
 			</xs:sequence>
+			<xs:attribute name="schemaversie" type="xs:token" use="optional"/>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="owObject" type="ow-dc:owObject" substitutionGroup="sl:modelObject"/>
