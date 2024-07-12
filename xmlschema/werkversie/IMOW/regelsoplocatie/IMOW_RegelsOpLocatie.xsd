@@ -110,6 +110,16 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:element>
+	 <xs:element name="eigenSymbolisatie" minOccurs="0" maxOccurs="1">
+	    <xs:annotation>
+	      <xs:documentation source="http://www.imvertor.org/schema-info/technical-documentation">Symboolcode uit de symbolenbibliotheek die in een viewer gebruikt kan worden om dit object een symbolosatie te geven die afwijkt van de standaard symbolisatie.</xs:documentation>
+	    </xs:annotation>
+	    <xs:simpleType>
+	      <xs:restriction base="xs:string">
+		<xs:pattern value="\S.*"/>
+	      </xs:restriction>
+	    </xs:simpleType>
+	 </xs:element>
          <xs:element name="locatieaanduiding" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/schema-info/technical-documentation">De specifieke locatie(s) waarvoor een specifieke normwaarde geldt.</xs:documentation>
