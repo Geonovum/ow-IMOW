@@ -1964,7 +1964,14 @@
                         
                         <ul>
                            
-                           <li>Per Regeltekst is er één type Juridische regel. (TPOD1850)</li>
+                           <li>Alle Juridische regels die naar dezelfde Regeltekst verwijzen moeten van hetzelfde
+                              type zijn. (TPOD1850)</li>
+                           
+                           <li>Indien een Artikel is onderverdeeld in Leden zijn annotaties alleen toegestaan op
+                              Leden.</li>
+                           
+                           <li>Alleen bij een Lid of Artikel dat een STOP-element Inhoud bevat is een Regeltekst
+                              toegestaan; in dat geval moet er precies één Regeltekst zijn.</li>
                            </ul>
                         </td>
                   </tr>
@@ -2205,8 +2212,11 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Van de velden instructieregel­Instrument en instructieregel­Taakuitoefening is er
-                           precies één leeg. (TPOD2080)</p>
+                        <ul>
+                           
+                           <li>Van de attributen instructieregel­Instrument en instructieregel­Taakuitoefening moet
+                              er precies één voorkomen. (TPOD2080)</li>
+                           </ul>
                         </td>
                   </tr>
                   <tr>
@@ -2750,15 +2760,15 @@
                         
                         <ul>
                            
-                           <li>Per Locatie mag een Norm maar één waarde hebben.</li>
+                           <li>Voor ieder punt op de kaart mag een Omgevingswaarde maar één waarde hebben.</li>
                            
-                           <li>Locaties van de Omgevingsnorm mogen niet geheel of gedeeltelijk overlappend zijn.</li>
+                           <li>Locaties van een Omgevingswaarde mogen elkaar niet geheel of gedeeltelijk overlappen.</li>
                            
                            <li>Een Normwaarde die bedoeld is als gezamenlijke waarde voor meerdere geometrieën is
                               niet toegestaan.</li>
                            
-                           <li>Eenheid heeft dan en slechts dan een waarde als de normwaardes bij deze norm kwantitatieve­Waardes
-                              zijn. (TPOD2100)</li>
+                           <li>Eenheid mag alleen voorkomen als de Normwaarde het attribuut kwantitatieve­Waarde
+                              heeft en is dan verplicht.</li>
                            </ul>
                         </td>
                   </tr>
@@ -3381,9 +3391,7 @@
                         
                         <ul>
                            
-                           <li>Bij een regeling hoort maximaal één Pons.</li>
-                           
-                           <li>Bij een tijdelijk regelingdeel hoort geen Pons.</li>
+                           <li>Bij een Regeling hoort ten hoogste één Pons.</li>
                            </ul>
                         </td>
                   </tr>
@@ -3674,8 +3682,8 @@
                         
                         <ul>
                            
-                           <li>Van de drie kenmerken kwalitatieve­Waarde, kwantitatieve­Waarde en waarde­In­Regeltekst
-                              is er precies één ingevuld (TPOD1650)</li>
+                           <li>Van de attributen kwalitatieve­Waarde, kwantitatieve­Waarde en waarde­In­Regeltekst
+                              moet er precies één voorkomen. (TPOD1650)</li>
                            </ul>
                         </td>
                   </tr>
@@ -5932,8 +5940,11 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het w­Id van een Divisietekst  moet verwijzen naar een tekstelement van het type Divisietekst
-                           in de regelingtekst. (TPOD2042)</p>
+                        <ul>
+                           
+                           <li>Het w­Id van een OW-object Divisietekst moet verwijzen naar een STOP-tekstelement
+                              van het type Divisietekst in de Regelingtekst. (TPOD2042)</li>
+                           </ul>
                         </td>
                   </tr>
                   <tr>
@@ -6140,13 +6151,14 @@
                         
                         <ul>
                            
-                           <li>Als een Tekstdeel een locatieaanduiding heeft dan is idealisatie verplicht. (TPOD2110)</li>
+                           <li>Als er bij een Tekstdeel direct of indirect een Locatie hoort dan is idealisatie verplicht.
+                              (TPOD2110)</li>
                            
-                           <li>Tekstedelen regels die verwijzen naar dezelfde Divisie moeten dezelfde waarde hebben
+                           <li>Alle Tekstdelen die verwijzen naar dezelfde Divisie moeten dezelfde waarde hebben
                               voor idealisatie. (TPOD2111)</li>
                            
-                           <li>Tekstedelen regels die verwijzen naar dezelfde Divisietekst moeten dezelfde waarde
-                              hebben voor idealisatie. (TPOD2112)</li>
+                           <li>Alle Tekstdelen die verwijzen naar dezelfde Divisietekst moeten dezelfde waarde hebben
+                              voor idealisatie. (TPOD2112)</li>
                            </ul>
                         </td>
                   </tr>
@@ -6329,8 +6341,11 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het w­Id van een Divisie moet verwijzen naar een tekstelement van het type Divisie
-                           in de regelingtekst. (TPOD2041)</p>
+                        <ul>
+                           
+                           <li>Het w­Id van een OW-object Divisie moet verwijzen naar een STOP-tekstelement van het
+                              type Divisie in de Regelingtekst. (TPOD2041)</li>
+                           </ul>
                         </td>
                   </tr>
                   <tr>
@@ -7159,8 +7174,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Iedere verwijzing naar een gml­Object vanuit een Punt moet verwijzen naar een object
-                           van type GM<em>Point of GM</em>Multi­Point. (TPOD1970)</p>
+                        <p>Iedere verwijzing naar een Geometrie vanuit een Locatie van het type Punt moet een
+                           verwijzing zijn naar een geometrie van het type GM<em>Point of GM</em>Multi­Point. (TPOD1970)</p>
                         </td>
                   </tr>
                   <tr>
@@ -7254,8 +7269,11 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Iedere verwijzing naar een gml­Object vanuit een Lijn moet verwijzen naar een object
-                           van type GM_Line­String of GM_Multi­Linestring. (TPOD1960).</p>
+                        <ul>
+                           
+                           <li>Iedere verwijzing naar een Geometrie vanuit een Locatie van het type Lijn moet een
+                              verwijzing zijn naar een geometrie van het type GM<em>Curve of GM</em>Multi­Curve. (TPOD1960)</li>
+                           </ul>
                         </td>
                   </tr>
                   <tr>
@@ -7350,8 +7368,11 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Iedere verwijzing naar een gml­Object vanuit een Gebied moet verwijzen naar een object
-                           van type GM_Surface of GM_Multi­Surface</p>
+                        <ul>
+                           
+                           <li>Iedere verwijzing naar een Geometrie vanuit een Locatie van het type Gebied moet een
+                              verwijzing zijn naar een geometrie van het type GM<em>Surface of GM</em>Multi­Surface. (TPOD1980)</li>
+                           </ul>
                         </td>
                   </tr>
                   <tr>
