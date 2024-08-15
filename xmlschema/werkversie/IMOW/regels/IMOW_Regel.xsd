@@ -182,13 +182,6 @@
                      <xs:documentation source="http://www.imvertor.org/schema-info/technical-documentation">De unieke identificatie waaronder elk object van dit type bekend is.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="gerelateerdeRegeltekst" minOccurs="0" maxOccurs="1">
-                  <xs:complexType>
-                     <xs:choice minOccurs="1" maxOccurs="unbounded">
-                        <xs:element ref="r:RegeltekstRef"/>
-                     </xs:choice>
-                  </xs:complexType>
-               </xs:element>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
