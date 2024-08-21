@@ -16,6 +16,7 @@ OW-manifest bevat niet de GML-bestanden; deze staan in het (OP-)manifest.
 
 **Regels:**
 - Het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het xml-schema in `bestanden-ow/generiek/manifest-ow.xsd`. (LVBB1032)
+- Het xml-attribuut schemaversie in het root element Aanleveringen bevat het versienummer van het gebruikte xsd.
 - De bestanden waarnaar het OW-manifest verwijst moeten bestaan.
 
 Zie [paragraaf 2.1](#global_package_Aanlevering) voor een uitleg van de XML elementen in deze bestanden.
@@ -25,7 +26,8 @@ Zie [paragraaf 2.1](#global_package_Aanlevering) voor een uitleg van de XML elem
 In het OW-manifest is beschreven welke OW-bestanden er zijn. Relaties in het IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten op te nemen.
 
 **Regels:**
-- OW-bestanden moeten voldoen aan het xml-schema in `bestanden-ow/generiek/standlevering-generiek.xsd`
+- OW-bestanden moeten voldoen aan het xml-schema in `bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd"`
+- Het xml-attribuut schemaversie in het root element owBestand bevat het versienummer van het gebruikte xsd.
 - Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met artikelstructuur  mogen geen andere dan de volgende OW-objecten worden aangeleverd: Regeltekst, Juridische regel, Activiteit,
 Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart en Regelingsgebied.
 - Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met vrijetekststructuur mogen geen andere dan de volgende OW-objecten worden aangeleverd: Divisietekst, Tekstdeel,

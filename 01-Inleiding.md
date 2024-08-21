@@ -39,7 +39,7 @@ van IMOW:
 - Een aanlevering heeft het formaat van een ZIP bestand die je aanbiedt aan de
   LVBB. Het LVBB bronhouderkoppelvlak [[LVBBBHKV]] schrijft de structuur van
   het ZIP bestand voor.
-- De Standaard Officiële Publicaties (STOP) [[STOPIC]] legt de documentstructuur
+- De Standaard Officiële Publicaties (STOP) [[!STOP14]] legt de documentstructuur
  van de tekst van het
   besluit en <a>regeling</a> van de aanlevering vast. Ook legt STOP
   metadata voor de verwerking van het besluit en beschrijft STOP
@@ -64,7 +64,7 @@ van IMOW:
   die aan een waardelijst gekoppeld zijn. Waardelijsten worden in de
   [Stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten)
   gepubliceerd.
-- Het IMOW maakt gebruik van andere standaarden waaronder de [[NEN3610_2022]] standaard.
+- Het IMOW maakt gebruik van de [[!NEN3610_2022]] standaard.
 - Voorbeeldbestanden van correcte aanleveringen geven inzicht hoe IMOP en
   IMOW technisch toegepast kunnen worden om een nieuw omgevingsdocument aan te
   leveren.
@@ -106,11 +106,12 @@ regeling via een kaart te ontsluiten.
 
 STOP beschrijft twee soorten tekststructuren voor
 omgevingsdocument: de artikelstructuur en de vrijetekststructuur.
-De artikelstructuur moet worden gebruikt voor regelingen die zijn opgebouwd uit één of meer artikelen die regels bevatten. De vrijetekststructuur wordt gebruikt voor regelingen met een vrijere opzet waarin geen artikelen en regels voorkomen. Per tekststructuur is een set OW-objecten beschikbaar.. Voor beide typen
+De artikelstructuur moet worden gebruikt voor regelingen die zijn opgebouwd uit
+één of meer artikelen die regels bevatten. De vrijetekststructuur wordt gebruikt
+voor regelingen met een vrijere opzet waarin geen artikelen en regels voorkomen.
+Per tekststructuur is een set OW-objecten beschikbaar. Voor beide typen
 tekststructuren is een diagram toegevoegd met hierin de toegelaten objecttypen,
 attributen en relaties.
-
-
 
 ## Begrippen
 
@@ -137,20 +138,21 @@ proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron:
 
 De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 
-- Conformiteit met Metamodel voor informatiemodellering, MIM 1.1 [[MIM]].
+- Conformiteit met Metamodel voor informatiemodellering, MIM 1.2 [[!MIM12]].
 - Het IMOW is opgesteld als een UML klassediagrammen. Voor algemene uitleg
   over UML klassediagram zie wikipedia: UML klassediagram.
-- Het model is een implementatie van het [[CIMOW]] waarbij bij implementatie 
-  niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW.
+- Het model is een implementatie van het CIM-OW  waarbij bij implementatie
+  niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW [[CIMOW]].
 
 ## Gegevensdefinitie en UML-Diagrammen
 
 In [hoofdstuk 2](#cat) van het IMOW bevat de gegevensdefinies. Dit hoofdstuk bevat
 UML diagrammen waarin de objecttypes beschreven zijn. In de diagrammen zijn de
-objecttypen aan te klikken en wordt er gelinkt naar de definitie en attributen van dat objecttyp in
+objecttypen aan te klikken en wordt er gelinkt naar de definitie en attributen van dat objecttype in
 de objectcatalogus. De in de catalogus benoemde metagegevens zoals bijvoorbeeld
 Naam, Definitie, Indicatie abstract object zijn termen uit het Metamodel.
-Informatiemodellering [[MIM]]. Door te klikken op de attribuutnaam kom je bij de definitie van dat attribuut met enkele eigenschappen van dat attribuut volgens MIM:
+Informatiemodellering [[MIM12]]. Door te klikken op de attribuutnaam kom je bij de
+definitie van dat attribuut met enkele eigenschappen van dat attribuut volgens MIM:
 
 - De kenmerken 'Indicatie materiële historie' en 'Mogelijk geen waarde' hebben geen betekenis in het IMOW.
 

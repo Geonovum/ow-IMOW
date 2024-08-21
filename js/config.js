@@ -73,8 +73,8 @@ let respecConfig = {
       publisher: "Geonovum",
       date: "7 juni 2024"
     },
-    MIM: {
-      id: "MIM",
+    MIM12: {
+      id: "MIM12",
       title: "MIM - Metamodel Informatie Modellering (Versie 1.2)",
       href: "https://docs.geostandaarden.nl/mim/def-st-mim-20240613/",
       status: "Definitief",
@@ -120,13 +120,12 @@ let respecConfig = {
       publisher: "NEN",
       date: "2020-06-20"
     },
-    STOPIC: {
-      id: "STOPIC",
-      title: "Standaard Officiële Publicaties 1.4.0-ic",
-      href: "https://koop.gitlab.io/STOP/standaard/1.4.0-ic/index.html",
+    STOP14: {
+      id: "STOP14",
+      title: "Standaard Officiële Publicaties 1.4.0",
+      href: "https://koop.gitlab.io/STOP/standaard/1.4.0/index.html",
       status: "Implementatie Kandidaat",
-      publisher: "KOOP",
-      date: "2024-04-12"
+      publisher: "KOOP"
     },
   },
 };

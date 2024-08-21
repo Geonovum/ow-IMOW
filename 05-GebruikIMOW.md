@@ -60,7 +60,7 @@ OW-object.
 **Regel:** Een wijziging van een OW-object moet daadwerkelijk een kenmerk van
 het OW-object wijzigen. (OZON0108).
 
-Hierbij wordt een relatie bij een OW-object ook gezien als een kenmerk.
+Een kenmerk is een attribuut of uitgaande associatie van het OW-object.
 
 **Regel:** Bij het wijzigen van een OW-object moet het een instantie blijven
 van hetzelfde UML Objecttype.
@@ -78,6 +78,8 @@ worden:
 - Normwaarde – deze moet altijd gewijzigd worden vanuit een Omgevingsnorm of
   Omgevingswaarde.
 - Kaartlaag – deze moet altijd gewijzigd worden vanuit een Kaart.
+
+**Noot:** Het is mogelijk een beëindigd OW-object weer actief te maken.
 
 ### Een OW-object beëindigen {#H05-OW-eindigen}
 
@@ -143,10 +145,13 @@ besluit.
 
 ### Beëindigen van OW-objecten behorend bij een ingetrokken regeling {#H05-IntrekkenRegeling}
 
-Wanneer een Regeling wordt ingetrokken worden alle OW-objecten bij die regeling
-beëindigd.
+Wanneer een Regeling wordt ingetrokken moeten alle OW-objecten bij die regeling
+beëindigd. Er zijn twee manieren waarop dit gedaan kan worden:
 
-**Regel:** Aan de intrekking van een Regeling is geen OW-aanlevering gekoppeld.
+**Regel:** (1) Als er geen OW-objecten gekoppeld zijn aan de intrekking van een regeling dan zal 
+het stelsel de OW-objecten behorend bij die regeling beëindigen. (2) Als er wel OW-objecten gekoppeld zijn aan de intrekking dan zal het stelsel zelf geen OW-objecten beëindigen.
+
+**Toelichting:** In het tweede geval moet het bevoegd gezag er zelf voor zorgen dat de OW-objecten behorend bij de regeling beëindigd worden. Als je dit niet goed doet zal de intrekking geweigerd worden. Ook als er vanuit andere regelingen nog verwijzingen zijn naar de OW-objecten in de ingetrokken regeling zal het stelsen de intrekking weigeren.
 
 ### Het aanleveren van een Ontwerpbesluit
 
@@ -159,4 +164,4 @@ Voor een STOP ontwerpbesluit gelden de volgende regels:
 - Het soortprocedure (c.q. proceduretype) is ontwerp (i.p.v. definitief).
 - De ConsolidatieInformatie mag geen tijdstempels bevatten.
 
-Voor een IMOW ontwerpbesluit zijn de regels niet anders dan een regulier besluit.
+Vanuit het IMOW bezien gedraagt een ontwerpbesluit zich niet niet anders dan een regulier besluit.
