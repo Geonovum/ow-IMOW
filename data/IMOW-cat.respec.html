@@ -8,7 +8,7 @@
          <h4>   Aanlevering - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79.png" usemap="#imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79" alt="Diagram &#xA;                        Als bij het bronhouderkoppelvlak van de  LVBB een Aanlevering wordt gedaan met daarin een OW-manifest  moet de inhoud hiervan voldoen aan het IMOW. Het OW-manifest is een bestand met de naam ‘manifest-ow.xml’.&#xA;                        In een OW-manifest zitten één of meer OW-aanleveringen. Ieder van die OW-aanleveringen is via het attribuut expressionIDRegeling gekoppeld aan de wijziging van een Regeling in het STOP deel van de LVBB-Aanlevering.&#xA;                        De te wijzigen OW-objecten zijn te verdelen over een aantal OW-bestanden.&#xA;                     "><figcaption>Aanlevering</figcaption>
-            </figure><map name="imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79"><area shape="rect" alt="OW-object" coords="467,248,685,372" href="#global_class_OWobject_OWobject"><area shape="rect" alt="OW-Bestand" coords="19,231,268,389" href="#global_class_Aanlevering_OWBestand"><area shape="rect" alt="OW-manifest" coords="14,23,253,149" href="#global_class_Aanlevering_OWmanifest"><area shape="rect" alt="OW-bestandverwijzing" coords="778,25,1022,146" href="#global_class_Aanlevering_OWbestandverwijzing"><area shape="rect" alt="OW-aanlevering" coords="371,14,668,157" href="#global_class_Aanlevering_OWaanlevering"></map><p>
+            </figure><map name="imagemap-EAID_D6C15DB1_4E38_4908_B130_11EA3C77AC79"><area shape="rect" alt="OW-object" coords="423,248,642,372" href="#global_class_OWobject_OWobject"><area shape="rect" alt="OW-Bestand" coords="19,231,268,389" href="#global_class_Aanlevering_OWBestand"><area shape="rect" alt="OW-manifest" coords="14,23,253,149" href="#global_class_Aanlevering_OWmanifest"><area shape="rect" alt="OW-bestandverwijzing" coords="778,25,1022,146" href="#global_class_Aanlevering_OWbestandverwijzing"><area shape="rect" alt="OW-aanlevering" coords="371,14,668,157" href="#global_class_Aanlevering_OWaanlevering"></map><p>
                
                <p>Als bij het bronhouderkoppelvlak van de  LVBB een Aanlevering wordt gedaan met daarin
                   een OW-manifest  moet de inhoud hiervan voldoen aan het IMOW. Het OW-manifest is een
@@ -307,8 +307,8 @@
                      <td>
                         
                         
-                        <p>Bij een Aanlevering aan de LVBB meegeleverd bestand waarin staat welke OW-aanleveringen
-                           er zijn.</p>
+                        <p>Bij een aanlevering aan de LVBB meegeleverd bestand dat de OW-aanleveringen behorend
+                           bij de aanlevering vastlegt.</p>
                         
                         </td>
                   </tr>
@@ -419,7 +419,7 @@
                      <td>
                         
                         
-                        <p>Aanlevering van nieuwe en gewijzigde OW-objecten behorend bij één regelingversie.</p>
+                        <p>Aanlevering van nieuwe en gewijzigde OW-objecten behorend bij één STOP Regeling­Mutatie.</p>
                         
                         </td>
                   </tr>
@@ -433,8 +433,8 @@
                               van IMOW 3.0. Een aanlevering met doel­ID wordt niet geaccepteerd als er gebruik is
                               gemaakt van STOP 1.4+ mutatiescenario's.</li>
                            
-                           <li>Als doel­ID leeg is dan moet expression­IDRegling gevuld zijn en wordt die gebruikt
-                              om te koppelen.</li>
+                           <li>Als doel­ID leeg is dan worden de STOP 1.4+ mutatiescenario's gebruik. Voor verdere
+                              invulling zie paragraaf 5.3</li>
                            </ul>
                         </td>
                   </tr>
@@ -447,7 +447,9 @@
                      <td>
                         
                         
-                        <p>De drie attributen wijzen een unieke consolidatie aan in de STOP kant van de aanlevering.</p>
+                        <p>De drie attributen wijzen een unieke STOP Regeling­Mutatie aan in de STOP kant van
+                           de aanlevering. Als er bij een Regeling­Mutatie geen OW-objecten wijzigen is een OW-aanlevering
+                           niet verplicht.</p>
                         
                         </td>
                   </tr>
@@ -491,7 +493,7 @@
                         </td>
                      <td>
                         
-                        <p>Het ID van het Doel (aan de OP-kant).</p>
+                        <p>Het ID van het Doel STOP kan van de aanlevering.</p>
                         </td>
                      <td>
                         CHARACTERSTRING
@@ -504,10 +506,10 @@
                         </td>
                      <td>
                         
-                        <p>expression­ID van de regeling waar deze aanlevering bij hoort.</p>
+                        <p>w­Id van de wordt versie van de Regeling­Mutatie waar deze OW-aanlevering bij hoort,</p>
                         </td>
                      <td>
-                        CHARACTERSTRING
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
                         </td>
                      <td>0 .. 1</td>
                   </tr>
@@ -1129,7 +1131,7 @@
                            <td>
                               
                               
-                              <p>Het ID van het Doel (aan de OP-kant).</p>
+                              <p>Het ID van het Doel STOP kan van de aanlevering.</p>
                               
                               </td>
                         </tr>
@@ -1181,13 +1183,15 @@
                            <td>
                               
                               
-                              <p>expression­ID van de regeling waar deze aanlevering bij hoort.</p>
+                              <p>w­Id van de wordt versie van de Regeling­Mutatie waar deze OW-aanlevering bij hoort,</p>
                               
                               </td>
                         </tr>
                         <tr>
                            <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie materiële historie</th>
@@ -1909,7 +1913,7 @@
          <h4>   Artikelstructuur - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2.png" usemap="#imagemap-EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2" alt="Diagram &#xA;                        &#xA;                        De tekst van een regeling die volgens de artikelstructuur bevat een geneste structuur die bijvoorbeeld Hoofdstukken, Artikelen, Paragrafen of Subparagrafen kan bevatten. Op het diepste niveau zit de inhoudelijk informatie van de regeling, die inhoud zit in artikelen. Soms is een artikel opgesplitst in leden. In dat geval zit de inhoud in de leden. In een artikel zonder leden zit de inhoud in het artikel zelf.  &#xA;                        In de artikelstructuur zitten de annotaties op de artikelen of leden. Het Regeltekst object bevat de verwijzing naar het wId van de STOP tekst die wordt geannoteerd. Vervolgens kunnen er één of meerdere Juridische regels zijn die verbonden zijn aan de regeltekst. Een juridische regel is de in een annotatie opgenomen informatie over een regel met juridische werkingskracht. Een juridische regel heeft drie subtypen (RegelVoorIedereen, Instructieregel, Omgevingswaarderegel) die allen specifieke eigenschappen bevatten o.a. omvat in de objecten Activiteit voor het annoteren van een activiteit, Gebiedsaanwijzing om een benoemd gebied te duiden, Omgevingswaarde om een toegestane of gewenste waarde aan een Locatie toe te kennen en een Omgevingsnorm om een waarde als norm aan een Locatie te koppelen. Het Pons object wordt gebruikt om aan te geven dat een gebied door een Regeling is ingevuld en niet meer door de ruimtelijke plannen o.b.v. Wro en/of Chw die onderdeel zijn van het tijdelijke deel van het omgevingsplan. Dit kan alleen gebruikt worden bij een omgevingsplan.&#xA;                     "><figcaption>Artikelstructuur</figcaption>
-            </figure><map name="imagemap-EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2"><area shape="rect" alt="OP-objectAnnotatie" coords="243,14,450,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="Pons" coords="227,1286,397,1367" href="#global_class_Artikelstructuur_Pons"><area shape="rect" alt="Regelingsgebied" coords="40,1341,209,1420" href="#global_class_Artikelstructuur_Regelingsgebied"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="185,747,621,903" href="#global_class_Artikelstructuur_ActiviteitLocatieaanduiding"><area shape="rect" alt="Gebiedsaanwijzing" coords="528,958,876,1159" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Normwaarde" coords="1257,1177,1644,1427" href="#global_class_Artikelstructuur_Normwaarde"><area shape="rect" alt="Norm" coords="1215,621,1588,903" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Omgevingswaarde" coords="1371,1007,1644,1144" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="1044,1007,1305,1144" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Activiteit" coords="109,436,326,603" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="Locatie" coords="807,1307,1067,1454" href="#global_class_Locatie_Locatie"><area shape="rect" alt="RegelVoorIedereen" coords="479,484,683,579" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Instructieregel" coords="767,477,1197,691" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarderegel" coords="1401,476,1635,551" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="JuridischeRegel" coords="850,153,1148,394" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="Regeltekst" coords="242,233,451,353" href="#global_class_Artikelstructuur_Regeltekst"></map><p>
+            </figure><map name="imagemap-EAID_C66AEA1E_A7E2_4ab7_BEAA_00DD0F75A4B2"><area shape="rect" alt="OP-objectAnnotatie" coords="243,14,450,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="Pons" coords="227,1286,397,1367" href="#global_class_Artikelstructuur_Pons"><area shape="rect" alt="Regelingsgebied" coords="40,1341,209,1420" href="#global_class_Artikelstructuur_Regelingsgebied"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="185,747,621,903" href="#global_class_Artikelstructuur_ActiviteitLocatieaanduiding"><area shape="rect" alt="Gebiedsaanwijzing" coords="528,958,876,1159" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Normwaarde" coords="1257,1177,1644,1427" href="#global_class_Artikelstructuur_Normwaarde"><area shape="rect" alt="Norm" coords="1215,621,1588,903" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Omgevingswaarde" coords="1371,1007,1644,1144" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="1044,1007,1305,1144" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Activiteit" coords="109,436,326,603" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="Locatie" coords="807,1307,1067,1454" href="#global_class_Locatie_Locatie"><area shape="rect" alt="RegelVoorIedereen" coords="479,499,683,566" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Instructieregel" coords="767,477,1197,691" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarderegel" coords="1401,476,1635,551" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="JuridischeRegel" coords="850,153,1148,394" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="Regeltekst" coords="242,233,451,353" href="#global_class_Artikelstructuur_Regeltekst"></map><p>
                
                <p></p>
                
@@ -5899,7 +5903,7 @@
          <h4>   Vrije­Tekst - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313.png" usemap="#imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313" alt="Diagram &#xA;                        Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar uiteindelijk ook een Divisietekst met Inhoud in moet zitten. De Inhoud bevat alleen inhoudelijke tekst. De Divisie wordt gebruikt om de tekst te structureren in bijvoorbeeld verschillende hoofdstukken of paragrafen.&#xA;                        In de vrijetekststructuur kan je met een Tekstdeel object een Divisie of Divisietekst annoteren. Meerdere tekstdelen mogen daar dezerlfde Divisie of Divisietekst verwijzen. &#xA;                     "><figcaption>Vrije­Tekst</figcaption>
-            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="Divisie" coords="246,270,416,386" href="#global_class_Vrijetekst_Divisie"><area shape="rect" alt="OP-objectAnnotatie" coords="352,14,558,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="DivisieOfDivisietekst" coords="372,427,538,488" href="#global_class_Vrijetekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="467,270,658,386" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="315,570,594,830" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="906,683,1086,784" href="#global_class_Artikelstructuur_Regelingsgebied"><area shape="rect" alt="Hoofdlijn" coords="14,988,271,1142" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="304,984,651,1185" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="809,984,1079,1123" href="#global_class_Locatie_Locatie"></map><p>
+            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="Divisie" coords="256,260,425,376" href="#global_class_Vrijetekst_Divisie"><area shape="rect" alt="OP-objectAnnotatie" coords="356,14,562,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="DivisieOfDivisietekst" coords="376,431,542,492" href="#global_class_Vrijetekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="476,260,668,376" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="320,588,572,848" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="906,718,1086,819" href="#global_class_Artikelstructuur_Regelingsgebied"><area shape="rect" alt="Hoofdlijn" coords="14,956,271,1111" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="304,952,651,1153" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="809,952,1079,1092" href="#global_class_Locatie_Locatie"></map><p>
                
                <p>Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het
                   hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar
@@ -7175,7 +7179,7 @@
                      <td>
                         
                         <p>Iedere verwijzing naar een Geometrie vanuit een Locatie van het type Punt moet een
-                           verwijzing zijn naar een geometrie van het type GM<em>Point of GM</em>Multi­Point. (TPOD1970)</p>
+                           verwijzing zijn naar een geometrie van het type GM_Point of GM_Multi­Point. (TPOD1970)</p>
                         </td>
                   </tr>
                   <tr>
@@ -7272,7 +7276,7 @@
                         <ul>
                            
                            <li>Iedere verwijzing naar een Geometrie vanuit een Locatie van het type Lijn moet een
-                              verwijzing zijn naar een geometrie van het type GM<em>Curve of GM</em>Multi­Curve. (TPOD1960)</li>
+                              verwijzing zijn naar een geometrie van het type GM_Curve of GM_Multi­Curve. (TPOD1960)</li>
                            </ul>
                         </td>
                   </tr>
@@ -7371,7 +7375,7 @@
                         <ul>
                            
                            <li>Iedere verwijzing naar een Geometrie vanuit een Locatie van het type Gebied moet een
-                              verwijzing zijn naar een geometrie van het type GM<em>Surface of GM</em>Multi­Surface. (TPOD1980)</li>
+                              verwijzing zijn naar een geometrie van het type GM_Surface of GM_Multi­Surface. (TPOD1980)</li>
                            </ul>
                         </td>
                   </tr>
