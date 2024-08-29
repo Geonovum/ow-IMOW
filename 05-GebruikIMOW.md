@@ -35,8 +35,9 @@ hoe de oorspronkelijke collectie OW-objecten getransformeerd moet worden tot de
 resultaat collectie. Een OW-aanlevering is gekoppeld aan een STOP wijziging waarbij
 het STOP deel de tekst van de regeling wijzigt en de OW-aanlevering de bij de
 regeling behorende OW-objecten wijzigt. Een initieel besluit is een speciaal geval
-omdat deze een Regeling aanmaakt en niet wijzigt, de bijbehorende OW-aanlevering 
-zal dus ook alleen OW-objecten aanmaken.
+omdat deze een Regeling aanmaakt en niet wijzigt, de bijbehorende OW-aanlevering
+zal dus ook alleen OW-objecten aanmaken. Wanneer bij een STOP wijziging geen
+OW-objecten worden gewijzigd hoeft geen OW-aanlevering gedaan te worden.
 
 Een OW-aanlevering heeft zelf de vorm van een collectie OW-objecten. De
 aanlevering van een OW-object resulteert in een (1) nieuw OW-object, (2) een
@@ -90,7 +91,7 @@ heeft dan krijgt het oorspronkelijke OW-object de status beëindigd.
 het object, afgezien van het attribuut 'status', exact overeenkomt met de laatst
 aangeleverde OW-informatie (OZON0107).
 
-### Resultaat OW-aanlevering 
+### Resultaat OW-aanlevering
 
 Een OW-aanlevering bestaat uit een set instructies, die de
 OW-objecten behorend bij een Regeling toevoegt, wijzigt en/of verwijdert.
@@ -100,8 +101,7 @@ de regeling gelden de volgende regels:
 
 **Regels:**
 
-- Een OW-aanlevering mag niet resulteren in wees-objecten dat zijn
-  objecten die niet direct of indirect gekoppeld zijn aan een OP-objectAnnotatie.
+- Een OW-aanlevering mag niet resulteren in wees-objecten (OZON0351)
 - Een OW-aanlevering mag niet resulteren in verwijzingen naar
   OW-objecten die beëindigd zijn (OZON0109).
 - Een OW-aanlevering moet resulteren in een Regeling met daarin precies
@@ -113,21 +113,23 @@ de regeling gelden de volgende regels:
 - Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen.
 - Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst verwijzen (TPOD2052).
 
-## Wanneer gebruik je een OW-aanlevering aan de LVBB
+## Het gebruik van een OW-aanlevering
 
-**noot**: De inhoud van deze paragraaf wordt afgestemd met de nog op te leveren
-nieuw versie van het BHKV.
+Als een STOP aanlevering een regeling maakt, wijzigt of intrekt
+kan daaraan OW-aanlevering koppelen om de OW-objecten behorend bij die
+regeling te maken, wijzigen of beëindigen. Het IMOW volg de mutatiescenario's
+uit STOP en legt alleen vast hoe je aan de STOP mutatie een OW-aanlevering
+kunt koppelen die de mutaties van OW-objecten regelt.
 
-Er is een aantal aanlevering aan het BHKV waarbij een OW-aanlevering gebruikt kan worden
-om de OW-objecten bij een regeling te wijzigen. Deze worden in de volgende
-paragrafen behandeld:
+In de volgende paragrafen is voor de verschillende mutatiescenario's van STOP
+beschreven hoe dat gaat.
 
-### OW-aanlevering bij Besluit dat Regeling initieert of wijzigt
+### OW-aanlevering bij een besluit dat een regeling initieert of wijzigt
 
-Wanneer het bevoegd gezag besluit om een omgevingsdocument te initiëren of te wijzigen
-moet het voor de bekendmaking van dat besluit een Aanlevering naar de LVBB sturen. Aan deze
-aanlevering moet altijd een OW-aanlevering gekoppeld zijn die de OW-objecten behorend
-bij.
+Bij een besluit om een omgevingsdocument te initiëren of te wijzigen
+bevat de STOP aanlevering een regeling mutatie element. In dat element
+is aangegeven om welke regeling het gaat en wat de wId van de was - en wordt-versie
+van de regeling zijn.
 
 Voor een OW-aanlevering die hoort bij een Besluit dat een Regeling wijzigt
 geldt:
@@ -136,22 +138,24 @@ geldt:
 OW-aanlevering corresponderen met precies één nieuwe regelingversie die in een aanlevering
 wordt aangemaakt.
 
-### OW-aanlevering bij rectificatie, revisie of mededeling
+### OW-aanlevering bij rectificatie, revisie of mededeling uitspraak van de rechter
 
-Ook de aanlevering van een STOP rectificatie, revisie of mededeling kan resulteren
-in een nieuwe regelingversie. Hoe deze precies aangeleverd gaan worden is nog niet
-gespecificeerd maar naar verwachting zal het veel lijken op het aanleveren van een
-besluit.
+STOP kent ook aanleveringen die een rectificatie, revisie of mededeling uitspraak van de rechter bevatten
+die resulteren in een nieuwe regelingversie.  Net zoals bij besluiten die een regeling
+wijzigen bevat zon'n aanlevering een regeling mutatie element en verwijst de meegeleverde
+OW-aanlevering naar het regeling mutatie element.
 
-### Beëindigen van OW-objecten behorend bij een ingetrokken regeling {#H05-IntrekkenRegeling}
+### Het intrekken van een regeling {#H05-IntrekkenRegeling}
 
-Wanneer een Regeling wordt ingetrokken moeten alle OW-objecten bij die regeling
-beëindigd. Er zijn twee manieren waarop dit gedaan kan worden:
+Wanneer een regeling wordt ingetrokken moeten alle OW-objecten bij die regeling
+beëindigd. Als er geen OW-aanlevering aan de intrekking gekoppeld is zal het stelsel
+zelf alle OW-objecten behorend bij de regeling beëindigen. Als er wel een OW-aanlevering gekoppeld
+is aan aan de intrekking zal het stelsel controleren
+of alle OW-objecten behorend bij de regeling beëindigd zijn.
+In beide gevallen zal gecontroleerd worden dat er geen externe verwijzingen naar de OW-objecten
+meer bestaan vanuit andere regelingen. In dat geval zal de intrekking worden afgekeurd.
 
-**Regel:** (1) Als er geen OW-objecten gekoppeld zijn aan de intrekking van een regeling dan zal 
-het stelsel de OW-objecten behorend bij die regeling beëindigen. (2) Als er wel OW-objecten gekoppeld zijn aan de intrekking dan zal het stelsel zelf geen OW-objecten beëindigen.
-
-**Toelichting:** In het tweede geval moet het bevoegd gezag er zelf voor zorgen dat de OW-objecten behorend bij de regeling beëindigd worden. Als je dit niet goed doet zal de intrekking geweigerd worden. Ook als er vanuit andere regelingen nog verwijzingen zijn naar de OW-objecten in de ingetrokken regeling zal het stelsen de intrekking weigeren.
+**Regel:** Om aan een STOP intrekking een OW-aanlevering te koppelen moet het veld expressionIDRegeling leeg zijn.
 
 ### Het aanleveren van een Ontwerpbesluit
 

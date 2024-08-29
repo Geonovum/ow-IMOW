@@ -117,5 +117,3 @@ die ver buiten Nederland en exclusieve economische zone ligt te weigeren.
 **Regel:** Alle geometrieën in een omgevingsdocument moeten liggen binnen
 de geometrie van Nederland met inbegrip van de exclusieve economische zone (EEZ).
 
-OZON valideert hierop door een geometrie die buiten en naar buiten afgeronde
-bounding box rondom het genoemde gebied ligt te weigeren.

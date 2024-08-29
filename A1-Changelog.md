@@ -13,10 +13,10 @@ niet altijd meer voldoen om eenduidig de OW-aanlevering te koppelen aan de juist
 STOP consolidatie. [Hoofdstuk 5](#H05-GebruikIMOW)
 gaat hier dieper op in.
 
-Nieuw attribuut: expressionIDRegeling
-- **IMOW 3.0:** expressionIDRegeling is leeg. Er mag geen gebruik gemaakt worden van STOP 1.4+ mutatiescenario's.
-- **IMOW 3.1:** doelID is leeg. Er mag gebruik gemaakt worden van de STOP 1.4+ mutatiescenario's
+Nieuw attribuut: expressionIDRegeling:
 
+- **IMOW 3.0:** doelID is gevuld. Er mag geen gebruik gemaakt worden van STOP 1.4+ mutatiescenario's.
+- **IMOW 3.1:** doelID is leeg. Er mag gebruik gemaakt worden van de STOP 1.4+ mutatiescenario's
 
 **Het attribuut hoogte is uit Locatie verwijderd**
 
@@ -96,8 +96,9 @@ te weigeren.
 De waarde van het veld procedureStatus in een IMOW object is af te leiden uit
 het STOP deel van een aanlevering en is redundant. Dit kenmerk is geschrapt.
 
-In het XML schema komt het veld ProcedureStatus nog wel voor. In versie 3.0 wordt
-er op het kenmerk gevalideerd. Vanaf versie 3.1 wordt het kenmerk genegeerd.
+
+**IMOW 3.0:** Er wordt gevalideerd of de waarde van procedureStatus overeenkomt met de procedurestatus van de aanlevering.
+**IMOW 3.1:** De waarde van het veld procedureStatus wordt genegeerd.
 
 ## Eerdere wijzigingen
 
