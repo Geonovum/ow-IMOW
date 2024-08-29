@@ -81,7 +81,7 @@ het intrekken van tijdelijk regelingdelen, die soms door een ander bevoegd
 gezag worden ingetrokken dan degene die ze gemaakt heeft is dit wenselijk.
 
 - **IMOW 3.0:** Bij het intrekken van een regeling moeten alle OW-objecten door het bevoegd gezag worden beëindigd.
-- **IMOW 3.1:** Als je bij de intrekking van een regeling OW-objecten aanlevert ben je er als bevoegd gezag zelf verantwoordelijk voor om alle OW-objecten te beëindigen. Als je geen OW-objecten aanlevert zal het stelsel allen OW-objecten behorend bij de regeling voor je beëindigen.  
+- **IMOW 3.1:** Als er wel een OW-aanlevering is gekoppeld aan de intrekking moet het bevoegd gezag zelf de alle OW-objecten behorend bij de regeling beëindigen. Als er geen OW-aanlevering is gekoppeld aan de intrekking zal het stelsel alle OW-objecten behorend bij de regeling beëindigen.  
 
 **Expliciet gemaakt dat een geometrie binnen Nederland inclusief EEZ moet liggen**
 
@@ -96,9 +96,8 @@ te weigeren.
 De waarde van het veld procedureStatus in een IMOW object is af te leiden uit
 het STOP deel van een aanlevering en is redundant. Dit kenmerk is geschrapt.
 
-
-**IMOW 3.0:** Er wordt gevalideerd of de waarde van procedureStatus overeenkomt met de procedurestatus van de aanlevering.
-**IMOW 3.1:** De waarde van het veld procedureStatus wordt genegeerd.
+ - **IMOW 3.0:** Er wordt gevalideerd of de waarde van procedureStatus overeenkomt met de procedurestatus van de aanlevering.
+ - **IMOW 3.1:** De waarde van het veld procedureStatus wordt genegeerd.
 
 ## Eerdere wijzigingen
 
