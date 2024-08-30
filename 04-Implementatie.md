@@ -5,7 +5,7 @@ aan een aanlevering aan de LVBB. [Paragraaf 4.1](#H04-OW-aanlevering) schrijft v
 aangeleverd.  [Paragraaf 4.2](#H04-aanlevereisen) stelt eisen aan de
 aanlevering.
 
-De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <https://register.geostandaarden.nl/xmlschema/tpod/v4.0.0-ic1>.
+De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <https://register.geostandaarden.nl/xmlschema/tpod/v3.1.0/>.
 
 ## OW-aanlevering en OW-manifest {#H04-OW-aanlevering}
 
