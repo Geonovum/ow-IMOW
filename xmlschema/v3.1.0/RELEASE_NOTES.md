@@ -1,16 +1,21 @@
 # Release notes
 
-Versie: IMOW v4.0.0-ic1 van 26 april 2024.
-Behorend bij: https://docs.geostandaarden.nl/ow/cv-im-imow-20240419/
+Versie: IMOW v3.1.0
+Behorend bij: https://docs.geostandaarden.nl/ow/def-im-imow-2024TODO/
 
-### Wijziginen sinds v2.0.0
+## Wijzigingen sinds v2.0.0
 
-- Functionele wijzigingen staan in het IMOW document opgesomd.
 - in bestanden-ow/generiek/manifest-ow.xsd:
     - Aanlevering/DoelID : is optioneel geworden.
     - Aanlevering/ExpressionIDRegeling : nieuw optioneel element.
+- Het xml-element SymbolisatieItem verwijderd.
+- attribuut gerelateerdeRegeltekst verwijderd.
+- optioneel element eigenSymbolisatie toegevoegd aan Activiteit­Locatieaanduiding, Norm en Gebiedsaanwijzing.
+- element hoogte uit Locatie verwijderd.
+- attribuut schemaversie toegevoegd.
 
-### Verbeteringen tussen v2.0.0 en v1.0.4
+## Verbeteringen tussen v2.0.0 en v1.0.4
+
 * status en procedurestatus aangepast naar enumerations (met daarin de waarden die ze mogen bevatten)
 * ambtsgebied-object aangepast (bestuurlijkeGrenzenID toegevoegd)
 * divisietekst-object toegevoegd
@@ -28,10 +33,12 @@ Behorend bij: https://docs.geostandaarden.nl/ow/cv-im-imow-20240419/
 * * LijnengroepRef
 * * Attribuut id (niet te verwarren met element: identificatie) vervalt
 
-### Verbeteringen tussen v1.0.4 en v1.0.3
+## Verbeteringen tussen v1.0.4 en v1.0.3
+
 * Ambtsgebieden mogelijk gemaakt voor het Rijk (de reguliere expressie keurde Rijk-identificaties af (LND6030.A en LND6030.B worden nu goedgekeurd)).
 
-### Verbeteringen tussen v1.0.3 en v1.0.2
+## Verbeteringen tussen v1.0.3 en v1.0.2
+
 * SymbolisatieItem toegevoegd (als voorbereiding op het vervallen van het optionele specifiekeSymbolisatie-element)
 * * NormwaardeRef toegevoegd
 * Ambtsgebied toegevoegd
@@ -49,14 +56,19 @@ Behorend bij: https://docs.geostandaarden.nl/ow/cv-im-imow-20240419/
 * * LijnengroepRef
 * * Attribuut id (niet te verwarren met element: identificatie) vervalt
 
-### Verbeteringen tussen v1.0.2 en v1.0.1
+## Verbeteringen tussen v1.0.2 en v1.0.1
+
 * manifest-OW aangepast om bestandsnamen te ondersteunen die beginnen met een cijfer.	
-### Verbeteringen tussen v1.0.1 en v1.0
+
+## Verbeteringen tussen v1.0.1 en v1.0
+
 * Foutmeldingen van Pons-schema hersteld (verkeerde verwijzing naar OWobject)
 * Kardinaliteitsaanpassingen bij activiteit 
 * * Activiteitaanduiding kan nu meerdere keren voorkomen (t.o.v. één keer in 1.0), 
 * * de onderliggende activiteitlocatieaanduiding en activiteitref maar één keer (t.o.v. meerdere keren in 1.0)
-### Verbeteringen tussen v1.0 en v0.98.3.1-kern
+
+## Verbeteringen tussen v1.0 en v0.98.3.1-kern
+
 	FormeleDivisie hernoemd naar Divisie (en FormeleInhoud vervangen door Divisietekst)
 	Reguliere expressies
 		Voor waarden uit waardelijsten nieuwe regex gemaakt
@@ -71,16 +83,20 @@ Behorend bij: https://docs.geostandaarden.nl/ow/cv-im-imow-20240419/
 		Waarde van normwaarde naar norm
 		Nieuwe normwaarde ‘waardeInRegeltekst’
 	Attributen bij Pons verwijderd (leidendVanaf en leidendTot)
+
 ## Verbeteringen tussen v0.98.3.1-kern en v0.98.3-kern
 -	De GML- en xlink-schema's verwijzen nu statisch (naar de lokale bestanden) in plaats van naar de online website.
 	Hier is voor gekozen zodat we zelf in controle zijn van de functionaliteit in GML en xlink die gebruikt dient te worden.
+
 ## Verbeteringen tussen v0.98.3-kern en v0.98.2-kern
 -	Reguliere expressie die identificatie-attributen valideert is aangepast om 
 	ook de waarde 'mnre' als bevoegdgezag-code te accepteren. (N.a.v. aanpassing van 
 	de bevoegdgezag-codes van ministeries.)
+
 ## Verbeteringen tussen v0.98.2-kern en v0.98.1-kern
 -	FormeleInhoud heet nu FormeleDivisie
 -	Tekstdeel heeft het attribuut idealisatie
+
 ## Verbeteringen tussen v0.98.1-kern en v0.98-kern
 -   GebiedsAanwijzingsreferenties hersteld (i.v.m. hoofdlettergevoeligheid)
 -   FormeleInhoud heeft een identificerend attribuut gekregen (conform
@@ -99,6 +115,7 @@ Behorend bij: https://docs.geostandaarden.nl/ow/cv-im-imow-20240419/
 -   De voorbeeldbestanden omgevingsplan, omgevingsverordening,
     waterschapsverordening en AMvB/ MR werken met 0.98.1-kern EN zijn backwards
     compatible
+
 ## Verbeteringen tussen v0.98-kern en v0.98.1-beta
 -   Juridische regel is onderverdeeld in 3 subtypen
 -   OPobject is als abstracte klasse toegevoegd voor FormeleInhoud en Regeltekst
@@ -108,6 +125,7 @@ Behorend bij: https://docs.geostandaarden.nl/ow/cv-im-imow-20240419/
 -   kaartrecept is toegevoegd
 -   pons heeft veranderde attributen (een nieuw id en gewijzigde kardinaliteit
     van attributen)
+
 ## Verbeteringen tussen v0.98-beta en v0.98.1-beta
 -   Release versie: 20190801
 -   Enkele XSD's zijn veranderd tussen IMOW v0.98.-beta en IMOW v0.98.1-beta.
@@ -119,12 +137,15 @@ Behorend bij: https://docs.geostandaarden.nl/ow/cv-im-imow-20240419/
 -   NEN3610-ID-constructie als één veld opgenomen.
 -   RegeltekstId-anontatie is verplicht (was al eerder zo gespecificeerd, nu ook
     in .xsd).
+
 ## Verbeteringen tussen v0.97.1 en v0.98-beta
 -   Alle XSD's zijn gebaseerd op IMOW v0.98-beta. Dit leidt tot functioneel
     nieuwere IMOW specifieke XSD's.
 -   eId is verwijderd als attribute van juridische bron.
+
 ## Verbeteringen tussen v0.97.1 en v0.9.7.1.1
 -   Eind april: Surface is toegevoegd als gml type conform SF-2 (naast Polygon
     en MultiSurface).
+
 ## Verbeteringen tussen v0.97 en v0.97.1
 -   Alle XSD's zijn gebaseerd op CIMOW. Dit leidt tot IMOW specifieke XSD's.
