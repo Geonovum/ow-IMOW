@@ -13,6 +13,8 @@ Behorend bij: https://docs.geostandaarden.nl/ow/def-im-imow-2024TODO/
 - optioneel element eigenSymbolisatie toegevoegd aan ActiviteitLocatieaanduiding, Norm en Gebiedsaanwijzing.
 - element hoogte uit Locatie verwijderd.
 - attribuut schemaversie toegevoegd.
+- Element WaardeEenheid verwijderd omdat dat alleen in hoogte gebruikt werd.
+- Alle GML gerelateerde schema's verwijderd omdat er geen GEO in IMOW zit.
 
 ## Verbeteringen tussen v2.0.0 en v1.0.4
 
