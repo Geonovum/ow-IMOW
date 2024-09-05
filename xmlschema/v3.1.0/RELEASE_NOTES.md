@@ -10,7 +10,7 @@ Behorend bij: https://docs.geostandaarden.nl/ow/def-im-imow-2024TODO/
     - Aanlevering/ExpressionIDRegeling : nieuw optioneel element.
 - Het xml-element SymbolisatieItem verwijderd.
 - attribuut gerelateerdeRegeltekst verwijderd.
-- optioneel element eigenSymbolisatie toegevoegd aan Activiteit­Locatieaanduiding, Norm en Gebiedsaanwijzing.
+- optioneel element eigenSymbolisatie toegevoegd aan ActiviteitLocatieaanduiding, Norm en Gebiedsaanwijzing.
 - element hoogte uit Locatie verwijderd.
 - attribuut schemaversie toegevoegd.
 
