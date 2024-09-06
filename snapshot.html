@@ -413,7 +413,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
     <h2>
       Geonovum Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2024-09-05">05 september 2024</time>
+      <time class="dt-published" datetime="2024-09-06">06 september 2024</time>
     </h2>
     <dl>
       
@@ -775,7 +775,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                         OW-bestandverwijzing
                         [ 0 .. * ]
                         
-                        <a class="link" href="#detail_association_Aanlevering_OWbestandverwijzing_bestandinaanlevering">bestandinaanlevering</a>
+                        <a class="link" href="#detail_association_Aanlevering_OWbestandverwijzing_bestand">bestand</a>
                         
                         
                         <a class="link" href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a>
@@ -920,7 +920,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                         
                         [ 1 .. * ]
                         
-                        <a class="link" href="#detail_association_OWobject_OWobject_owbestandsinhoud">owbestandsinhoud</a>
+                        <a class="link" href="#detail_association_OWobject_OWobject_objecten">objecten</a>
                         
                         OW-Bestand
                         [ 1 ]
@@ -1032,7 +1032,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                         
                         [ 1 .. * ]
                         
-                        <a class="link" href="#detail_association_Aanlevering_OWaanlevering_aanleveringeninaanlevering">aanleveringeninaanlevering</a>
+                        <a class="link" href="#detail_association_Aanlevering_OWaanlevering_aanlevering">aanlevering</a>
                         
                         OW-manifest
                         [ 1 ]
@@ -1174,7 +1174,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                         OW-aanlevering
                         [ 1 .. * ]
                         
-                        <a class="link" href="#detail_association_Aanlevering_OWaanlevering_aanleveringeninaanlevering">aanleveringeninaanlevering</a>
+                        <a class="link" href="#detail_association_Aanlevering_OWaanlevering_aanlevering">aanlevering</a>
                         
                         
                         <a class="link" href="#global_class_Aanlevering_OWmanifest">OW-manifest</a>
@@ -1190,7 +1190,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                         
                         [ 0 .. * ]
                         
-                        <a class="link" href="#detail_association_Aanlevering_OWbestandverwijzing_bestandinaanlevering">bestandinaanlevering</a>
+                        <a class="link" href="#detail_association_Aanlevering_OWbestandverwijzing_bestand">bestand</a>
                         
                         OW-aanlevering
                         [ 1 ]
@@ -1305,8 +1305,8 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_association_Aanlevering_OWbestandverwijzing_bestandinaanlevering">
-                  <h7>Relatiesoort details  <a href="#global_class_Aanlevering_OWbestandverwijzing">OW-bestandverwijzing</a> bestandinaanlevering</h7>
+               <div class="deepheader" id="detail_association_Aanlevering_OWbestandverwijzing_bestand">
+                  <h7>Relatiesoort details  <a href="#global_class_Aanlevering_OWbestandverwijzing">OW-bestandverwijzing</a> bestand</h7>
                   
                   
                   <table style="width: 100%;">
@@ -1315,7 +1315,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>bestandinaanlevering</td>
+                           <td>bestand</td>
                         </tr>
                         <tr>
                            <th>Gerelateerd objecttype</th>
@@ -1858,8 +1858,8 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_association_Aanlevering_OWaanlevering_aanleveringeninaanlevering">
-                  <h7>Relatiesoort details  <a href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a> aanleveringeninaanlevering</h7>
+               <div class="deepheader" id="detail_association_Aanlevering_OWaanlevering_aanlevering">
+                  <h7>Relatiesoort details  <a href="#global_class_Aanlevering_OWaanlevering">OW-aanlevering</a> aanlevering</h7>
                   
                   
                   <table style="width: 100%;">
@@ -1868,7 +1868,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>aanleveringeninaanlevering</td>
+                           <td>aanlevering</td>
                         </tr>
                         <tr>
                            <th>Gerelateerd objecttype</th>
@@ -2054,7 +2054,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                         OW-object
                         [ 1 .. * ]
                         
-                        <a class="link" href="#detail_association_OWobject_OWobject_owbestandsinhoud">owbestandsinhoud</a>
+                        <a class="link" href="#detail_association_OWobject_OWobject_objecten">objecten</a>
                         
                         
                         <a class="link" href="#global_class_Aanlevering_OWBestand">OW-Bestand</a>
@@ -2350,8 +2350,8 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_association_OWobject_OWobject_owbestandsinhoud">
-                  <h7>Relatiesoort details  <a href="#global_class_OWobject_OWobject">OW-object</a> owbestandsinhoud</h7>
+               <div class="deepheader" id="detail_association_OWobject_OWobject_objecten">
+                  <h7>Relatiesoort details  <a href="#global_class_OWobject_OWobject">OW-object</a> objecten</h7>
                   
                   
                   <table style="width: 100%;">
@@ -2360,7 +2360,7 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>owbestandsinhoud</td>
+                           <td>objecten</td>
                         </tr>
                         <tr>
                            <th>Gerelateerd objecttype</th>
@@ -9491,10 +9491,17 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
                      <td>
                         
                         
-                        <p>Het objecttype waarmee een bevoegd gezag aan kan geven dat bij een specifieke Juridische
-                           regel respectievelijk een specifiek Tekstdeel de Gebiedsaanwijzingen en/of Normen
-                           en/of Activiteit­Locatieaanduidingen moeten worden weergegeven op een afzonderlijke
-                           kaart.</p>
+                        <p>De in samenhang getoonde door het bevoegd gezag geselecteerde  collectie van domeinspecifieke
+                           OW-objecten.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        
+                        <p>TODO</p>
                         
                         </td>
                   </tr>
