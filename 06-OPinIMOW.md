@@ -1,32 +1,33 @@
 # Onderdelen van STOP relevant voor IMOW {#H06-OPinIMOW}
 
-Dit hoofdstuk beschrijft STOP onderdelen die relevant zijn voor het IMOW. Enkele
+Dit hoofdstuk beschrijft onderdelen van STOP die relevant zijn voor het IMOW. Enkele
 dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de
-OP-standaard relevant is. [Paragraaf 6.1](#H06-ConsolidatieInformatie)
+STOP relevant is. [Paragraaf 6.1](#H06-ConsolidatieInformatie)
 beschrijft de consolidatieinformatie uit een
-Regeling. In [paragraaf 6.2](#H06-GIO) worden GIO’s beschreven. In [paragraaf 6.3](#H06-GML) staan regels voor het aanleveren van GML.
+Regeling. In [paragraaf 6.2](#H06-GIO) worden GIO’s beschreven. 
+In [paragraaf 6.3](#H06-GML) staan regels voor het aanleveren van GML.
 
-Zie d[[!STOP14]] en het [[CIMOP]] voor meer details.
+Zie [[!STOP14]] en het [[CIMOP]] voor meer details.
 
 ## ConsolidatieInformatie {#H06-ConsolidatieInformatie}
 
-In het STOP deel van de aanlevering wordt ConsolidatieInformatie meegeleverd.
+In het STOP-deel van de aanlevering wordt ConsolidatieInformatie meegeleverd.
 De ConsolidatieInformatie bepaalt de tijdlijn van de regelingen en
 informatieobjecten die ontstaan uit een Besluit. Diezelfde tijdlijn geldt voor
 alle OW-objecten in de aanlevering
 
-[Figuur 11](#fig-cim-op-consolidatie) toont de klasse 'Consolidatie Informatie' van het CIM-OP. Deze
+[Figuur 11](#fig-cim-op-consolidatie) toont de klasse 'Consolidatie-informatie' van het CIM-OP. Deze
 bevat de informatie die noodzakelijk is om de aanlevering te consolideren tot
 een Regeling. Voor IMOW zijn de volgende aspecten van belang:
 
 - De klasse 'Beoogde regeling' bevat de identificatie van de te wijzigen Regeling.
-  Deze identificatie moet overeenkomen met workIDRegeling in de OW-aanlevering.
+  Deze identificatie en workIDRegeling in de OW-aanlevering moeten overeenkomen.
 - De relatie 'doel' verwijst naar het doelId in de OW-aanlevering.
 - Uit de  klasse 'Tijdstempel' worden de geldigheidsgegevens van de OW-objecten afgeleid.
 
 <figure id="fig-cim-op-consolidatie">
     <img src='media/cim-op-consolidatie.png' />
-    <figcaption>Consolidatieinformatie in STOP</figcaption>
+    <figcaption>Consolidatieinformatie in CIM-OP</figcaption>
 </figure>
 
 ## GIO’s en Norm GIO’s {#H06-GIO}
@@ -57,10 +58,10 @@ Indien er normen vastgelegd worden aan de OW-kant, dan bevat het
 GIO 'Norm informatie' en de Locaties van het GIO bevatten
 een 'Normwaarde'. Hiervoor geldt:
 
-- Bij een kwantitatieve normwaarde bevat 'Eenheid ID' de eenheid van de normwaarde. 
+- Bij een kwantitatieve normwaarde bevat 'Eenheid ID' de eenheid van de normwaarde.
   Hier moet een URI ingevuld worden uit de waardelijst ‘Eenheid’.
-- 'Eenheid label' bevat dan het label die getoond dient te worden bij de eenheid.
-- 'Norm ID': De URI uit waardelijst ‘TypeNorm.
+- 'Eenheid label' bevat dan het label dat getoond dient te worden bij de eenheid.
+- 'Norm ID': De URI uit de IMOW-waardelijst 'TypeNorm'.
 - De naam van de Norm aan de OW-kant.
 - De attributen 'Kwalitatief' en 'Kwantitatief' moeten overeenkomen met de
  gelijknamige kenmerken in OW.
@@ -74,7 +75,7 @@ een 'Normwaarde'. Hiervoor geldt:
 
 <figure id="fig-cim-op-gio">
     <img src='media/cim-op-gio.png'></img>
-    <figcaption>GIO in STOP</figcaption>
+    <figcaption>GIO in CIM-OP</figcaption>
 </figure>
 
 ## Regels voor het aanleveren van GML {#H06-GML}

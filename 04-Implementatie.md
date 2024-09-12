@@ -11,8 +11,8 @@ De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <https://r
 
 Een aanlevering aan de LVBB bevat altijd een bestand met de naam naam `manifest-ow.xml`. Dit
 is het OW-manifest. Daarnaast bevat de OW-aanlevering
-een 0 of meer bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het
-OW-manifest bevat niet de GML-bestanden; deze staan in het (OP-)manifest.
+0 of meer bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het
+OW-manifest bevat niet de opsomming van de GML-bestanden; deze staan in het (OP-)manifest.
 
 **Regels:**
 - Het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het xml-schema in `bestanden-ow/generiek/manifest-ow.xsd`. (LVBB1032)
@@ -29,15 +29,10 @@ In het OW-manifest is beschreven welke OW-bestanden er zijn. Relaties in het IMO
 - OW-bestanden moeten voldoen aan het xml-schema in `bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd"`
 - Het xml-attribuut schemaversie in het root element owBestand bevat het versienummer van het gebruikte xsd.
 - Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met artikelstructuur  mogen geen andere dan de volgende OW-objecten worden aangeleverd: Regeltekst, Juridische regel, Activiteit,
-Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart en Regelingsgebied.
+Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart, Kaartlaag  en Regelingsgebied.
 - Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met vrijetekststructuur mogen geen andere dan de volgende OW-objecten worden aangeleverd: Divisietekst, Tekstdeel,
-Hoofdlijn, Gebiedsaanwijzing, Kaart, Regelingsgebied, Locatie.
+Hoofdlijn, Gebiedsaanwijzing, Kaart, Kaartlaag, Regelingsgebied en Locatie.
 
-Sommige XML-elementen in de XML schema's mogen niet gebruikt worden. In een toekomstige
-versie van de schema's kunnen deze elementen verwijderd worden:
-
-**Regels:**
-- Het xml element 'hoogte' in 'Punt', 'Lijn'en 'Gebied' mag niet gebruikt worden. (TPOD1311)
 
 ### Het aanleveren van Geometrie-objecten
 
@@ -59,17 +54,17 @@ aspecten:
 
 - [Identificatie van objecten](#H04-Identificatie)
 - [Waardelijsten](#H04-Waardelijsten)
-- [toekennen van OW-objecten aan regeling](#H04-Toekennen)
-- [verwijzen tussen verschillende OW-objecten.](#H04-Verwijzen)
-- [behoud functionele structuur](#H04-FunctioneleStructuur)
-- [tijdelijk regelingdelen.](#H04-TijdelijkRegelingdelen)
+- [Toekennen van OW-objecten aan regeling](#H04-Toekennen)
+- [Verwijzen tussen verschillende OW-objecten.](#H04-Verwijzen)
+- [Behoud functionele structuur](#H04-FunctioneleStructuur)
+- [Tijdelijk regelingdelen.](#H04-TijdelijkRegelingdelen)
 
 ### Identificatie van OW-objecten {#H04-Identificatie}
 
 OW-objecten hebben in het DSO een unieke identificatie. Deze uniciteit wordt
-gewaarborgd door een unieke code die de bronhouder identificeert te combineren
-met een identificatie van het object binnen het domein van de bronhouder. De bronhouder
-is degene die het besluit neemt waarmee de regeling wordt ingesteld of gewijzigd.
+gewaarborgd door een unieke code die de bevoegd gezag identificeert te combineren
+met een identificatie van het object binnen het domein van het bevoegd gezag
+dat het besluit neemt waarmee de regeling wordt ingesteld of gewijzigd.
 
 De wijze van het identificeren van objecten in het IMOW volgt de
 NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:
@@ -85,25 +80,26 @@ NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:
 | Onderdeel van de reguliere expressie    | Betekenis                                                                                                                                                                                                                                               |
 | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ```nl.imow-```                          | Alle gegevens die worden aangeleverd vanuit het IMOW dienen te starten met nl.imow-                                                                                                                                                                     |
-| ```(gm\|pv\|ws\|mn\|mnre)```            | keuze voor een code voor de bestuurslaag van de bronhouder: gm voor gemeente, pv voor provincie, ws voor waterschap of mnre voor ministerie. De bronhouder is het bevoegd gezag dat het besluit neemt waarmee de Regeling wordt ingesteld of gewijzigd. |
-| ```[0-9]{1,6}```                        | de overheidscode van de bronhouder, maximaal 6 cijfers                                                                                                                                                                                                  |
+| ```(gm\|pv\|ws\|mn\|mnre)```            | keuze voor een code voor de bestuurslaag van het bevoege gezag
+: gm voor gemeente, pv voor provincie, ws voor waterschap of mnre voor ministerie. Het bevoegd gezag neemt het besluit neemt waarmee de Regeling wordt ingesteld of gewijzigd. |
+| ```[0-9]{1,6}```                        | de overheidscode van het bevoegd gezag, maximaal 6 cijfers                                                                                                                                                                                                  |
 | ```.```                                | een punt                                                                                                                                                                                                                                                |
-| ```(regeltekst\| ... \|divisietekst)``` | keuze voor de naam van het IMOW objecttype van het object waar de identificatie betrekking op heeft                                                                                                                                                     |
-| ```[A-Za-z0-9]{1,32}```                 | Een codereeks van minimaal 1 en maximaal 32 alfanumerieke tekens, te bepalen door de bronhouder                                                                                                                                                         |
+| ```(regeltekst\| ... \|divisietekst)``` | De naam van het OW-objecttype van het object waar de identificatie betrekking op heeft heeft                                                                                                                                                     |
+| ```[A-Za-z0-9]{1,32}```                 | Een codereeks van minimaal 1 en maximaal 32 alfanumerieke tekens, te bepalen door het bevoegd gezag                                                                                                                                                         |
 
 De  identificatie als geheel wordt dan bijvoorbeeld: `nl.imow-gm0200.gebied.2019000001`
 
 ### Waardelijsten {#H04-Waardelijsten}
 
 Voor attributen waarvan de waarde uit een waardelijst komt zijn de toegestane
-waardes te vinden in de [stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten).
+waarden te vinden in de [Stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten).
 
-**Regel:** Een kenmerk dat als type een waarde in een waardelijst heeft moet een
- uri uit de betreffende waardelijst bevatten.
+**Regel:** Een attribuut waarvoor een waarde uit een waardelijst moet worden
+gekozen, moet de uri van die waarde uit de betreffende waardelijst bevatten.
 
 ### Toekennen van OW-objecten aan regelingen {#H04-Toekennen}
 
-Een OW-object hoort bij een regeling. Als een besluit een regeling wijzigt horen
+Een OW-object hoort bij een regeling. Als een besluit een regeling instelt of wijzigt horen
 de OW-objecten die in dat besluit ontstaan bij die regeling. Je kunt OW-objecten
 alleen wijzigen in wijzigingsbesluiten die die betreffende regeling wijzigen. Dit is
 vastgelegd in de volgende regels:
@@ -119,7 +115,8 @@ OW-object bij hoort. (TPOD1200)
 
 Een actief OW-object mag niet verwijzen naar een beëindigd OW-object.
 Daarom moet een besluit dat een OW-object beëindigt ook alle verwijzingen naar
-dat OW-object beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen KAN wijzigen. Daarom geldt de volgende regel die verwijzingen naar OW-objecten van andere bevoegd gezagen inperkt:
+dat OW-object beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen KAN wijzigen.
+Daarom gelden de volgende regels die verwijzingen naar OW-objecten van andere bevoegd gezagen inperken:
 
 **Regel:** (TPOD1950):
 
@@ -161,7 +158,7 @@ van de functionele structuur behouden blijft bij wijzigingen.
 De volgende regel schrijft de naam en aanwezigheid van een tophaak Activiteit in
 regelingen voor:
 
-**Regel:** (TPOD1951):Met uitzondering van AMvB en ministeriële
+**Regel:** (TPOD1951): Met uitzondering van AMvB en ministeriële
 regeling moet in iedere Regeling waarin één of meer Activiteiten zijn
 geannoteerd één zogenaamde tophaak voorkomen:
 
@@ -175,7 +172,7 @@ geannoteerd één zogenaamde tophaak voorkomen:
   Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in het
   omgevingsplan gemeente &lt;naam gemeente&gt;’.
 
-De volgende regels schrjven voor hoe de relatie bovenliggendeActiviteit moet
+De volgende regels schrijven voor hoe de relatie bovenliggendeActiviteit moet
 worden ingevuld:
 
 **Regel:** (TPOD1952):  Voor omgevingsverordening,
@@ -204,9 +201,7 @@ het volgende:
 
 ### Tijdelijk regelingdelen {#H04-TijdelijkRegelingdelen}
 
-Tijdelijk regelingdelen, zoals beschreven in STOP kunnen door een
-ander bevoegd gezag worden ingetrokken dan het bevoegd gezag waardoor het is
-aangemaakt. Voor een tijdelijk regelingdeel geldt de volgende regel:
+Voor de tophaken van tijdelijk regelingdelen geldt de volgende regel:
 
 **Regel:** (TPOD1954):
 

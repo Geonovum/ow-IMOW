@@ -10,13 +10,13 @@ Om aan te sluiten op de extra consolidatiemechanismes van STOP 1.4 is
 OW-aanlevering is een attribuut 'expressionIDRegeling' toegevoegd. Door
 de nieuwe consolidatiescenario's waren attributen 'workIDRegeling' en 'doelID'
 niet altijd meer voldoen om eenduidig de OW-aanlevering te koppelen aan de juiste
-STOP consolidatie. [Hoofdstuk 5](#H05-GebruikIMOW)
+STOP-consolidatie. [Hoofdstuk 5](#H05-GebruikIMOW)
 gaat hier dieper op in.
 
 Nieuw attribuut: expressionIDRegeling:
 
-- **IMOW 3.0:** doelID is gevuld. Er mag geen gebruik gemaakt worden van STOP 1.4+ mutatiescenario's.
-- **IMOW 3.1:** doelID is leeg. Er mag gebruik gemaakt worden van de STOP 1.4+ mutatiescenario's
+- **IMOW 3.0:** doelID is gevuld. Er mag geen gebruik gemaakt worden van STOP 1.4 consolidatiescenario's.
+- **IMOW 3.1:** doelID is leeg. Er mag gebruik gemaakt worden van de STOP 1.4 consolidatiescenario's.
 
 **Het attribuut hoogte is uit Locatie verwijderd**
 
@@ -29,8 +29,8 @@ Besluiten met een hoogte worden in IMOW 3.1 geweigerd.
  
 **Omgevingsnorm en Omgevingswaarde (Norm)**
 
-Diverse werkafspraken over het gebruik van Omgevingsnorm en Omgevingswaarde in
-IMOW zijn opgenomen in de standaard. In het bijzonder:
+De volgende werkafspraken over het gebruik van Omgevingsnorm en Omgevingswaarde in
+IMOW zijn opgenomen in de standaard:
 
 - Een Normwaarde geldt per individuele geometrie. Een Normwaarde die bedoeld
   is als gezamenlijke waarde voor meerdere geometrieën is niet toegestaan.
@@ -43,30 +43,30 @@ De werkafspraak dat het attribuut idealisatie dezelfde waarde moet hebben voor
 alle Juridische regels bij een Regeltekst / alle Tekstdelen bij een Divisietekst
 is nu verwerkt in het IMOW door constraints toe te voegen.
 
-Ook is expliciet beschreven dat idealisatie bij divisietekst allen  ingevuld mag 
-worden als er locatieaanduidingen gekoppeld zijn aan de divisietekst en anders niet.
+Ook is expliciet beschreven dat idealisatie bij Divisie en Divisietekst alleen ingevuld mag 
+worden als er locatieaanduidingen gekoppeld zijn aan de Divisie en Divisietekst en anders niet.
 
 **Klasse SymbolisatieItem vervangen door attriuut eigenSymbolisatie**
 
 De bestaande werkafspraak om de klasse SymbolisatieItem niet te gebruiken is
 verwerkt in het IMOW door de klasse SymbolisatieItem te verwijderen. Hiervoor in de
-plaats hebben de klassen Activiteit­Locatieaanduiding, Norm en  Gebiedsaanwijzing een
+plaats hebben de klassen ActiviteitLocatieaanduiding, Norm en  Gebiedsaanwijzing een
 optioneel attribuut eigenSymbolisatie gekregen.
 
 **Gebruik van versienummer in IMOW-aanlevering verplicht** 
 
-Tot en met IMOW 3.0.1 kon aan het bronhouderkoppelvlak van de LVBB slechts één
-versie van het IMOW aangeleverd. Met ingang
+Tot en met IMOW 3.0.1 kon aan het bronhouderkoppelvlak van de LVBB slechts overeenkomstig één
+versie van het IMOW worden aangeleverd. Met ingang
 van IMOW 3.1 is het veld IMOWversie verplicht en gebruikt de LVBB dit nummer
 om te bepalen welke versie van de standaard gebruikt wordt.
 
-Sinds versie 3.1 van het IMOW is het veld IMOWversie in OW-manifest verplicht. Het versienummer bepaalt aan welke versie van het IMOW model de aanlevering voldoet en dus aan welke (validatie-)regels de aanlevering moet voldoen. 
+Vanaf versie 3.1 van het IMOW is het veld IMOWversie in OW-manifest verplicht. Het versienummer bepaalt aan welke versie van het IMOW model de aanlevering voldoet en dus aan welke (validatie-)regels de aanlevering moet voldoen. 
 
 Verplicht maken van IMOWversie:
 - Als het veld IMOWversie niet volgens het aangegeven patroon is ingevuld wordt de aanlevering geweigerd.
 - Als er geen waarde is ingevuld, of de waarde verwijst naar een IMOW versie van 3.0 of lager dan moet de aanlevering voldoen aan de regels van IMOW versie 3.0.
 - Als het veld IMOWversie een versienummer van 3.1 of hoger bevat dat moet de aanlevering voldoen aan de regels van de genoemde versie van IMOW.
-- **Noot:** Het aanleveren van een niet ondersteunde IMOWversie kan resulteren in een melding van de voorziening.
+- Een niet herkende of niet ondersteunde versienummer levert een foutmelding op.
 
 
 **OW-objecten worden automatisch beëindigd bij het intrekken van een regeling**
@@ -74,7 +74,7 @@ Verplicht maken van IMOWversie:
 In eerdere versies van het IMOW werd beschreven dat bij het intrekken van een
 regeling het bevoegd gezag zelf verantwoordelijk is voor het beëindigen van de
 aan de regeling gekoppelde OW-objecten. Deze wijziging zorgt ervoor dat die
-OW-objecten automatisch worden ingetrokken.
+OW-objecten automatisch kunnen worden ingetrokken.
 
 Hierdoor wordt het intrekken van regelingen eenvoudiger. Vooral bij het
 het intrekken van tijdelijk regelingdelen, die soms door een ander bevoegd
@@ -87,14 +87,18 @@ gezag worden ingetrokken dan degene die ze gemaakt heeft is dit wenselijk.
 
 Om het functioneren van de landelijke voorziening te waarborgen is een regel
 toegevoegd die Geometrie die ruim buiten Nederland met inbegrip van de exclusieve
-economische zone valt weigert. Het stelsel gaat hierop valideren door alle geometrie
-die buiten de naar buiten afgeronde bounding box rondom het genoemde gebied ligt
-te weigeren.
+economische zone valt verbiedt.
+
+Voor de werking van het stelsel is het vooral van belang dat er geen geometrie
+wordt aangeleverd die ver buiten dit gebied ligt. Hiertoe is een rechthoek gedefinieerd
+die ruim om dit gebied heen getrokken is. Momenteel wordt er alleen gevalideerd
+dat aangeleverde coördinaten binnen deze rechthoek moeten vallen.
+
 
 **Attribuut procedureStatus uit OW-object verwijderd**
 
-De waarde van het veld procedureStatus in een IMOW object is af te leiden uit
-het STOP deel van een aanlevering en is redundant. Dit kenmerk is geschrapt.
+De waarde van het veld procedureStatus in een OW-object is af te leiden uit
+het STOP-deel van een aanlevering en is redundant. Dit kenmerk is geschrapt.
 
  - **IMOW 3.0:** Er wordt gevalideerd of de waarde van procedureStatus overeenkomt met de procedurestatus van de aanlevering.
  - **IMOW 3.1:** De waarde van het veld procedureStatus wordt genegeerd.

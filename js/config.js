@@ -123,7 +123,7 @@ let respecConfig = {
     STOP14: {
       id: "STOP14",
       title: "Standaard Officiële Publicaties 1.4.0",
-      href: "https://koop.gitlab.io/STOP/standaard/1.4.0/index.html",
+      href: "https://standaarden.overheid.nl/stop/doc/1.4.0/",
       status: "Definitief",
       publisher: "KOOP"
     },

@@ -4,8 +4,8 @@ Het Informatiemodel Omgevingswet (IMOW) is de toepassing van het CIM-OW op het
 niveau van gegevensuitwisseling. Het is daarmee ook gekoppeld aan de Standaard
 voor Officiële Publicaties (STOP) die beschrijft hoe officiële publicaties
 moeten worden opgesteld en aangeleverd om te kunnen worden bekendgemaakt en
-gepubliceerd binnen de Landelijke voorziening bekendmaken en beschikbaarstellen
-(LVBB). 
+gepubliceerd binnen de Landelijke Voorziening Bekendmaken en Beschikbaarstellen
+(LVBB).
 
 Voor het domein van de Omgevingswet en daaraan gekoppeld Digitaal Stelsel
 Omgevingswet (DSO) is een nadere specificatie van STOP opgesteld en beschreven
@@ -33,21 +33,18 @@ Wanneer het bevoegd gezag een Regeling vaststelt of wijzigt
 gebeurt dit via een besluit dat het bevoegd gezag digitaal aan de Landelijke
 Voorziening Bekendmaken en Beschikbaar stellen (LVBB) aan moet leveren. Het IMOW
 is onderdeel van de standaard die regels voor een aanlevering vastlegt.
-Onderstaand is een lijst met documenten die relevant zijn vanuit het perspectief
-van IMOW:
+Hieronder staat een lijst met documenten en opmerkingen die relevant zijn vanuit
+het perspectief van IMOW:
 
 - Een aanlevering heeft het formaat van een ZIP bestand die je aanbiedt aan de
   LVBB. Het LVBB bronhouderkoppelvlak [[LVBBBHKV]] schrijft de structuur van
   het ZIP bestand voor.
-- De Standaard Officiële Publicaties (STOP) [[!STOP14]] legt de documentstructuur
+- De Standaard Officiële Publicaties ([STOP](https://standaarden.overheid.nl/stop)) legt de documentstructuur
  van de tekst van het
   besluit en <a>regeling</a> van de aanlevering vast. Ook legt STOP
   metadata voor de verwerking van het besluit en beschrijft STOP
   hoe geografische informatieobjecten (GIO’s) moeten worden
   aangeleverd.
-
-- Het IMOW (dit document) beschrijft het verrijken van een regeling
-  in DSO-verband middels annotaties met OW-objecten.
 - De IMOW.xsd's leggen het XML formaat vast waarmee de OW-objecten moeten worden
   uitgewisseld.
 - Toepassingsprofielen omgevingsdocumenten (TPOD’s). Een TPOD legt voor een type omgevingsdocument vast welke van de mogelijkheden van STOP en IMOW moeten c.q. mogen worden gebruikt en op welke wijze. Er zijn toepassingsprofielen voor onder meer het omgevingsplan, de omgevingsverordening, de omgevingsvisie en het projectbesluit.
@@ -76,7 +73,8 @@ van IMOW:
 
 ## Toepassingsgebied
 
-Het toepassingsgebied van IMOW is het machineleesbaar maken van teksten en locaties van regelingen binnen de omgevingswet.
+Het toepassingsgebied van IMOW is het machineleesbaar maken van teksten en
+locaties van regelingen binnen de Omgevingswet.
 
 Het IMOW schrijft voor hoe je de tekst van een Regeling (zoals beschreven in STOP)
 machineleesbaar kunt maken door de tekst te verrijken met
@@ -96,7 +94,7 @@ het IMOW helpen de buitenwereld met het op een kaart terugvinden van
 Omgevingswet-informatie.
 
 Deze OW-objecten worden
-tegelijk met de tekst van een Besluit aan de LVBB aangeleverd. De koppeling
+tegelijk met een Besluit aan de LVBB aangeleverd. De koppeling
 gebeurt door OW-objecten te laten verwijzen naar onderdelen van de STOP tekst via
 de identificatie van die onderdelen, het wId.
 OW-objecten zelf kunnen weer gekoppeld zijn aan andere OW-objecten waardoor er
@@ -105,7 +103,7 @@ ontstaat. Deze structuur kan bijvoorbeeld gebruikt worden om de inhoud van de
 regeling via een kaart te ontsluiten.
 
 STOP beschrijft twee soorten tekststructuren voor
-omgevingsdocument: de artikelstructuur en de vrijetekststructuur.
+omgevingsdocumenten: de artikelstructuur en de vrijetekststructuur.
 De artikelstructuur moet worden gebruikt voor regelingen die zijn opgebouwd uit
 één of meer artikelen die regels bevatten. De vrijetekststructuur wordt gebruikt
 voor regelingen met een vrijere opzet waarin geen artikelen en regels voorkomen.
@@ -134,7 +132,7 @@ proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron:
 
 <dfn>Regeling</dfn>: De regeling van een omgevingsdocument bevat de volledige set regels of beleidsteksten die gelden in de fysieke leefomgeving, dan wel de beschrijving van wat er wordt gerealiseerd in de fysieke leefomgeving.
 
-## uitgangspunten van modellering
+## Uitgangspunten van modellering
 
 De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 
@@ -146,22 +144,20 @@ De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 
 ## Gegevensdefinitie en UML-Diagrammen
 
-In [hoofdstuk 2](#cat) van het IMOW bevat de gegevensdefinies. Dit hoofdstuk bevat
-UML diagrammen waarin de objecttypes beschreven zijn. In de diagrammen zijn de
+In [hoofdstuk 2](#cat) van het IMOW staan de gegevensdefinities. Dit hoofdstuk bevat
+UML diagrammen waarin de objecttypen beschreven zijn. In de diagrammen zijn de
 objecttypen aan te klikken en wordt er gelinkt naar de definitie en attributen van dat objecttype in
 de objectcatalogus. De in de catalogus benoemde metagegevens zoals bijvoorbeeld
-Naam, Definitie, Indicatie abstract object zijn termen uit het Metamodel.
+Naam, Definitie, Indicatie abstract object zijn termen uit het Metamodel
 Informatiemodellering [[MIM12]]. Door te klikken op de attribuutnaam kom je bij de
-definitie van dat attribuut met enkele eigenschappen van dat attribuut volgens MIM:
+definitie van dat attribuut met enkele metagegevens van dat attribuut volgens MIM.
 
-- De kenmerken 'Indicatie materiële historie' en 'Mogelijk geen waarde' hebben geen betekenis in het IMOW.
+**Noot:** De kenmerken 'Indicatie materiële historie' en 'Mogelijk geen waarde' die in
+de catalogus vermeld staan zijn defaultwaarden uit het MIM. Ze worden  automatisch
+toegevoegd aan de catalogus, ze hebben echter geen betekenis in het IMOW.
 
-Voor het inzoomen in de UML diagrammen kan het best het diagram in een apart
-tabblad van de browser worden geopend. Afhankelijk van het type browser is dit
-meestal via een rechtermuisklik en 'open in nieuw tabblad'.
-
-In het volgende hoofdstuk zijn de UML diagrammen van het IMOW opgenomen. Er is
-een onderverdeling naar verschillende subdomeinen gemaakt:
+In [hoofdstuk 2](#cat) zijn de UML diagrammen van het IMOW opgenomen. Er is
+een onderverdeling naar verschillende domeinen gemaakt:
 
 - Aanlevering
 - OW-object
@@ -174,9 +170,8 @@ een onderverdeling naar verschillende subdomeinen gemaakt:
 
 Dit document is als volgt opgebouwd: [hoofdstuk 2](#cat) bevat de gegevensdefinities
 van OW-objecten. [Hoofdstuk 3](#lis) bevat een overzicht van de gebruikte waardelijsten.
-[Hoofdstuk 4](#H04-Implementatie) gaat gedetailleerd in op hoe de
-OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van ieder
-bestand dat aangeleverd kan worden. [Hoofdstuk 5](#H05-GebruikIMOW)
+[Hoofdstuk 4](#H04-Implementatie) bescrijft hoe het IMOW technisch geïmplementeerd moet worden en gaat gedetailleerd in op hoe de
+OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van de aan te leveren bestanden. [Hoofdstuk 5](#H05-GebruikIMOW)
 schrijft voor hoe een OW-aanlevering bij het bronhouderkoppelvlak van de LVBB moet worden
 aangeleverd. [Hoofdstuk 6](#H06-OPinIMOW)
 beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.
