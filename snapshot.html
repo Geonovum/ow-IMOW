@@ -10743,7 +10743,8 @@ beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.</p>
 aan een aanlevering aan de LVBB. <a href="#H04-OW-aanlevering">Paragraaf 4.1</a> schrijft voor welke OW-bestanden moeten worden
 aangeleverd.  <a href="#H04-aanlevereisen">Paragraaf 4.2</a> stelt eisen aan de
 aanlevering.</p>
-<p>De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <a href="https://register.geostandaarden.nl/xmlschema/tpod/v3.1.0/">https://register.geostandaarden.nl/xmlschema/tpod/v3.1.0/</a>.</p>
+<p>De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <a href="https://register.geostandaarden.nl/xmlschema/tpod/v3.1.0/">https://register.geostandaarden.nl/xmlschema/tpod/v3.1.0/</a>. Het
+versienummer van deze xsd's is: 'v3.1.0'.</p>
 <section id="ow-aanlevering-en-ow-manifest"><div class="header-wrapper"><h3 id="H04-OW-aanlevering"><bdi class="secno">4.1 </bdi>OW-aanlevering en OW-manifest</h3><a class="self-link" href="#H04-OW-aanlevering" aria-label="Permalink for Section 4.1"></a></div><p>Een aanlevering aan de LVBB bevat altijd een bestand met de naam naam <code>manifest-ow.xml</code>. Dit
 is het OW-manifest. Daarnaast bevat de OW-aanlevering
 0 of meer bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het
@@ -11021,7 +11022,7 @@ bij de regelingversie. Deze regels zijn hieronder opgenomen:</p>
 <p><strong>Regels:</strong></p>
 <ul>
 <li>Een OW-aanlevering mag niet resulteren in wees-objecten (OZON0351). Wees-objecten zijn 
-OW-objecten die op geen enkele wijze verbonden zijn met de tekst van de regeling.</li>
+OW-objecten waar niet meer naar verwezen wordt.</li>
 <li>Een OW-aanlevering mag niet resulteren in verwijzingen naar
 OW-objecten die beëindigd zijn (OZON0109).</li>
 <li>Een OW-aanlevering moet resulteren in een Regeling met daarin precies
@@ -11224,12 +11225,13 @@ worden als er locatieaanduidingen gekoppeld zijn aan de Divisie en Divisietekst 
 verwerkt in het IMOW door de klasse SymbolisatieItem te verwijderen. Hiervoor in de
 plaats hebben de klassen ActiviteitLocatieaanduiding, Norm en  Gebiedsaanwijzing een
 optioneel attribuut eigenSymbolisatie gekregen.</p>
-<p><strong>Gebruik van versienummer in IMOW-aanlevering verplicht</strong> </p>
+<p><strong>Gebruik van versienummer in IMOW-aanlevering verplicht</strong></p>
 <p>Tot en met IMOW 3.0.1 kon aan het bronhouderkoppelvlak van de LVBB slechts overeenkomstig één
 versie van het IMOW worden aangeleverd. Met ingang
 van IMOW 3.1 is het veld IMOWversie verplicht en gebruikt de LVBB dit nummer
 om te bepalen welke versie van de standaard gebruikt wordt.</p>
-<p>Vanaf versie 3.1 van het IMOW is het veld IMOWversie in OW-manifest verplicht. Het versienummer bepaalt aan welke versie van het IMOW model de aanlevering voldoet en dus aan welke (validatie-)regels de aanlevering moet voldoen. </p>
+<p>Vanaf versie 3.1 van het IMOW is het veld IMOWversie in OW-manifest verplicht. Het versienummer bepaalt aan welke versie van het IMOW model de aanlevering voldoet en dus aan welke (validatie-)regels de aanlevering moet voldoen. Het versienummer van het gebruikte
+xsd moet ook in het root element 'schemaversie' in aangeleverde IMOW documenten worden neergezet.</p>
 <p>Verplicht maken van IMOWversie:</p>
 <ul>
 <li>Als het veld IMOWversie niet volgens het aangegeven patroon is ingevuld wordt de aanlevering geweigerd.</li>
