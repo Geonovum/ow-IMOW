@@ -105,7 +105,7 @@ bij de regelingversie. Deze regels zijn hieronder opgenomen:
 **Regels:**
 
 - Een OW-aanlevering mag niet resulteren in wees-objecten (OZON0351). Wees-objecten zijn 
-  OW-objecten die op geen enkele wijze verbonden zijn met de tekst van de regeling.
+  OW-objecten waar niet meer naar verwezen wordt.
 - Een OW-aanlevering mag niet resulteren in verwijzingen naar
   OW-objecten die beëindigd zijn (OZON0109).
 - Een OW-aanlevering moet resulteren in een Regeling met daarin precies

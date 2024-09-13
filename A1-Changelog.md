@@ -53,14 +53,15 @@ verwerkt in het IMOW door de klasse SymbolisatieItem te verwijderen. Hiervoor in
 plaats hebben de klassen ActiviteitLocatieaanduiding, Norm en  Gebiedsaanwijzing een
 optioneel attribuut eigenSymbolisatie gekregen.
 
-**Gebruik van versienummer in IMOW-aanlevering verplicht** 
+**Gebruik van versienummer in IMOW-aanlevering verplicht**
 
 Tot en met IMOW 3.0.1 kon aan het bronhouderkoppelvlak van de LVBB slechts overeenkomstig één
 versie van het IMOW worden aangeleverd. Met ingang
 van IMOW 3.1 is het veld IMOWversie verplicht en gebruikt de LVBB dit nummer
 om te bepalen welke versie van de standaard gebruikt wordt.
 
-Vanaf versie 3.1 van het IMOW is het veld IMOWversie in OW-manifest verplicht. Het versienummer bepaalt aan welke versie van het IMOW model de aanlevering voldoet en dus aan welke (validatie-)regels de aanlevering moet voldoen. 
+Vanaf versie 3.1 van het IMOW is het veld IMOWversie in OW-manifest verplicht. Het versienummer bepaalt aan welke versie van het IMOW model de aanlevering voldoet en dus aan welke (validatie-)regels de aanlevering moet voldoen. Het versienummer van het gebruikte
+xsd moet ook in het root element 'schemaversie' in aangeleverde IMOW documenten worden neergezet.
 
 Verplicht maken van IMOWversie:
 - Als het veld IMOWversie niet volgens het aangegeven patroon is ingevuld wordt de aanlevering geweigerd.
