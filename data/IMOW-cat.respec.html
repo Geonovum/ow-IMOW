@@ -313,12 +313,25 @@
                         </td>
                   </tr>
                   <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <ul>
+                           
+                           <li>Als een LVBB-aanlevering een regeling initieert, wijzigt, of intrekt moet voor elke
+                              regelingversie die daardoor ontstaat of eindigt een OW-aanlevering gekoppeld zijn.
+                              </li>
+                           </ul>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Toelichting</th>
                      <td>
                         
                         
-                        <p>Als een Besluit meerdere Regelingen instelt wijzigt vermeldt het OW-manifest meerdere
-                           OW-aanleveringen.</p>
+                        <p>Als een Besluit meerdere regelingen instelt of wijzigt vermeldt het OW-manifest meerdere
+                           OW-aanleveringen. Ook kan het bij gefaseerde inwerkingtreding voorkomen dat één besluit
+                           resulteert in meerdere regelingversies van dezelfde regeling.</p>
                         
                         </td>
                   </tr>
@@ -419,7 +432,8 @@
                      <td>
                         
                         
-                        <p>Aanlevering van nieuwe en gewijzigde OW-objecten behorend bij één STOP Regeling­Mutatie.</p>
+                        <p>Aanlevering van nieuwe, gewijzigde en beëindidge  OW-objecten behorend bij een van
+                           de initiaties, mutaties of intrekkingen die in de LVBB-aanlevering gebeuren.</p>
                         
                         </td>
                   </tr>
@@ -431,10 +445,10 @@
                            
                            <li>Als doel­ID is ingevuld dan moet expression­IDRegeling leeg zijn en gelden de de regels
                               van IMOW 3.0. Een aanlevering met doel­ID wordt niet geaccepteerd als er gebruik is
-                              gemaakt van STOP 1.4+ mutatiescenario's.</li>
+                              gemaakt van de in STOP 1.4 geïntroduceerde  mutatiescenario's.</li>
                            
-                           <li>Als doel­ID leeg is dan worden de STOP 1.4+ mutatiescenario's gebruik. Voor verdere
-                              invulling zie paragraaf<br clear="none">
+                           <li>Als doel­ID leeg is dan worden de in STOP 1.4 geïntroduceerde consolidatiescenario's
+                              gebruikt. Voor verdere invulling zie paragraaf<br clear="none">
                               <a href="#05-ow-aanlevering" shape="rect">5.3</a>.</li>
                            </ul>
                         </td>
@@ -448,9 +462,7 @@
                      <td>
                         
                         
-                        <p>De drie attributen wijzen een unieke STOP Regeling­Mutatie aan in de STOP kant van
-                           de aanlevering. Als er bij een Regeling­Mutatie geen OW-objecten wijzigen is een OW-aanlevering
-                           niet verplicht.</p>
+                        <p>De drie attributen wijzen een unieke initiatie, mutatie of intrekking  aan in de LVBB-aanlevering.</p>
                         
                         </td>
                   </tr>
@@ -481,7 +493,7 @@
                         </td>
                      <td>
                         
-                        <p>Work­ID van de regeling waar deze aanlevering bij hoort.</p>
+                        <p>Work­ID van de regeling waar deze OW-aanlevering bij hoort.</p>
                         </td>
                      <td>
                         CHARACTERSTRING
@@ -494,7 +506,7 @@
                         </td>
                      <td>
                         
-                        <p>Het ID van het Doel STOP kan van de aanlevering.</p>
+                        <p>Het ID van het Doel in STOP van van de aanlevering.</p>
                         </td>
                      <td>
                         CHARACTERSTRING
@@ -507,7 +519,8 @@
                         </td>
                      <td>
                         
-                        <p>w­Id van de wordt versie van de Regeling­Mutatie waar deze OW-aanlevering bij hoort,</p>
+                        <p>waarde van de van de FRBRExpression in de Expression­Identificatie van de  Regeling­Versie­Informatie
+                           die aangeeft waar de OW-aanlevering bij hoort.</p>
                         </td>
                      <td>
                         <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
@@ -1084,7 +1097,7 @@
                            <td>
                               
                               
-                              <p>Work­ID van de regeling waar deze aanlevering bij hoort.</p>
+                              <p>Work­ID van de regeling waar deze OW-aanlevering bij hoort.</p>
                               
                               </td>
                         </tr>
@@ -1136,7 +1149,7 @@
                            <td>
                               
                               
-                              <p>Het ID van het Doel STOP kan van de aanlevering.</p>
+                              <p>Het ID van het Doel in STOP van van de aanlevering.</p>
                               
                               </td>
                         </tr>
@@ -1188,7 +1201,8 @@
                            <td>
                               
                               
-                              <p>w­Id van de wordt versie van de Regeling­Mutatie waar deze OW-aanlevering bij hoort,</p>
+                              <p>waarde van de van de FRBRExpression in de Expression­Identificatie van de  Regeling­Versie­Informatie
+                                 die aangeeft waar de OW-aanlevering bij hoort.</p>
                               
                               </td>
                         </tr>
@@ -1270,7 +1284,7 @@
          <h4>   OW-object - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_97D11E5C_222E_4885_AD87_2F92616ED77A.png" usemap="#imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A" alt="Diagram: Dit diagram toont alle OW-objecten inhet IMOW."><figcaption>OW-object</figcaption>
-            </figure><map name="imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A"><area shape="rect" alt="NEN3610ID" coords="700,14,954,170" href="#global_class_OWobject_NEN3610ID"><area shape="rect" alt="Ambtsgebied" coords="783,598,933,664" href="#global_class_Locatie_Ambtsgebied"><area shape="rect" alt="Gebiedengroep" coords="617,757,762,818" href="#global_class_Locatie_Gebiedengroep"><area shape="rect" alt="Gebied" coords="436,755,584,818" href="#global_class_Locatie_Gebied"><area shape="rect" alt="Puntengroep" coords="643,602,758,665" href="#global_class_Locatie_Puntengroep"><area shape="rect" alt="Punt" coords="494,603,617,664" href="#global_class_Locatie_Punt"><area shape="rect" alt="Lijnengroep" coords="635,680,758,737" href="#global_class_Locatie_Lijnengroep"><area shape="rect" alt="Lijn" coords="464,680,601,737" href="#global_class_Locatie_Lijn"><area shape="rect" alt="Instructieregel" coords="78,566,201,639" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarde" coords="235,668,384,732" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="276,570,413,635" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Omgevingswaarderegel" coords="14,754,201,813" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="RegelVoorIedereen" coords="44,665,201,733" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Regelingsgebied" coords="700,335,856,398" href="#global_class_Artikelstructuur_Regelingsgebied"><area shape="rect" alt="Kaartlaag" coords="275,252,416,315" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Pons" coords="508,252,643,315" href="#global_class_Artikelstructuur_Pons"><area shape="rect" alt="Gebiedsaanwijzing" coords="436,421,617,484" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Norm" coords="235,421,399,484" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Locatie" coords="666,421,826,484" href="#global_class_Locatie_Locatie"><area shape="rect" alt="Tekstdeel" coords="257,335,399,398" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Hoofdlijn" coords="53,335,194,398" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Kaart" coords="88,242,223,305" href="#global_class_Kaart_Kaart"><area shape="rect" alt="Activiteit" coords="487,335,617,398" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="JuridischeRegel" coords="37,421,194,484" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="OW-object" coords="339,25,612,160" href="#global_class_OWobject_OWobject"></map><p>
+            </figure><map name="imagemap-EAID_97D11E5C_222E_4885_AD87_2F92616ED77A"><area shape="rect" alt="NEN3610ID" coords="700,14,954,170" href="#global_class_OWobject_NEN3610ID"><area shape="rect" alt="Ambtsgebied" coords="783,598,933,664" href="#global_class_Locatie_Ambtsgebied"><area shape="rect" alt="Gebiedengroep" coords="617,757,762,818" href="#global_class_Locatie_Gebiedengroep"><area shape="rect" alt="Gebied" coords="436,755,584,818" href="#global_class_Locatie_Gebied"><area shape="rect" alt="Puntengroep" coords="643,602,758,665" href="#global_class_Locatie_Puntengroep"><area shape="rect" alt="Punt" coords="494,603,617,664" href="#global_class_Locatie_Punt"><area shape="rect" alt="Lijnengroep" coords="635,680,758,737" href="#global_class_Locatie_Lijnengroep"><area shape="rect" alt="Lijn" coords="464,680,601,737" href="#global_class_Locatie_Lijn"><area shape="rect" alt="Instructieregel" coords="78,566,201,639" href="#global_class_Artikelstructuur_Instructieregel"><area shape="rect" alt="Omgevingswaarde" coords="235,668,384,732" href="#global_class_Artikelstructuur_Omgevingswaarde"><area shape="rect" alt="Omgevingsnorm" coords="276,570,413,635" href="#global_class_Artikelstructuur_Omgevingsnorm"><area shape="rect" alt="Omgevingswaarderegel" coords="14,754,201,813" href="#global_class_Artikelstructuur_Omgevingswaarderegel"><area shape="rect" alt="RegelVoorIedereen" coords="44,665,201,733" href="#global_class_Artikelstructuur_RegelVoorIedereen"><area shape="rect" alt="Regelingsgebied" coords="700,335,856,398" href="#global_class_Artikelstructuur_Regelingsgebied"><area shape="rect" alt="Kaartlaag" coords="275,252,416,315" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Pons" coords="508,252,643,315" href="#global_class_Artikelstructuur_Pons"><area shape="rect" alt="Gebiedsaanwijzing" coords="436,421,617,484" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Norm" coords="235,421,399,484" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Locatie" coords="666,421,826,484" href="#global_class_Locatie_Locatie"><area shape="rect" alt="Tekstdeel" coords="257,335,399,398" href="#global_class_Vrijetekststructuur_Tekstdeel"><area shape="rect" alt="Hoofdlijn" coords="53,335,194,398" href="#global_class_Vrijetekststructuur_Hoofdlijn"><area shape="rect" alt="Kaart" coords="88,242,223,305" href="#global_class_Kaart_Kaart"><area shape="rect" alt="Activiteit" coords="487,335,617,398" href="#global_class_Artikelstructuur_Activiteit"><area shape="rect" alt="JuridischeRegel" coords="37,421,194,484" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="OW-object" coords="339,25,612,160" href="#global_class_OWobject_OWobject"></map><p>
                
                <p>Dit diagram toont alle OW-objecten inhet IMOW.</p>
                </p>
@@ -1280,7 +1294,7 @@
          <h4>   OP-object­Annotatie - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5.png" usemap="#imagemap-EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5" alt="Diagram: OP-objectAnnotatie is de koppelklasse tussen de OW-objecten behorend bij een regeling en de STOP tekstelementen in die regeling. Hiertoe heeft een OW-objectAnnotatie een 'identificatie' die volgens de NEN3610 systematiek wordt uitgedeeld en een 'wId' die verwijst naar het betreffende tekstelement in STOP. Momenteel zijn er drie types tekstelement in een STOP document die geannoteerd kunnen worden: Regeltekst, Divisietekst en Divisie."><figcaption>OP-object­Annotatie</figcaption>
-            </figure><map name="imagemap-EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5"><area shape="rect" alt="Divisie" coords="393,434,562,498" href="#global_class_Vrijetekst_Divisie"><area shape="rect" alt="OW-object" coords="168,14,445,142" href="#global_class_OWobject_OWobject"><area shape="rect" alt="Divisietekst" coords="205,434,375,498" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Regeltekst" coords="14,434,183,498" href="#global_class_Artikelstructuur_Regeltekst"><area shape="rect" alt="OP-objectAnnotatie" coords="189,213,406,328" href="#global_class_OWobject_OPobjectAnnotatie"></map><p>
+            </figure><map name="imagemap-EAID_FE9C9DCE_C253_4f81_8D60_DB454C471FF5"><area shape="rect" alt="Divisie" coords="393,434,562,498" href="#global_class_Vrijetekststructuur_Divisie"><area shape="rect" alt="OW-object" coords="168,14,445,142" href="#global_class_OWobject_OWobject"><area shape="rect" alt="Divisietekst" coords="205,434,375,498" href="#global_class_Vrijetekststructuur_Divisietekst"><area shape="rect" alt="Regeltekst" coords="14,434,183,498" href="#global_class_Artikelstructuur_Regeltekst"><area shape="rect" alt="OP-objectAnnotatie" coords="189,213,406,328" href="#global_class_OWobject_OPobjectAnnotatie"></map><p>
                
                <p>OP-object­Annotatie is de koppelklasse tussen de OW-objecten behorend bij een regeling
                   en de STOP  tekstelementen in die regeling. Hiertoe heeft een OW-object­Annotatie
@@ -2678,7 +2692,7 @@
                         </td>
                      <td>
                         
-                        <p>de verwijzing van een specifieke Juridische regel naar (de identificatie van) de Kaart
+                        <p>De verwijzing van een specifieke Juridische regel naar (de identificatie van) de Kaart
                            waarop de Locaties en OW-objecten worden weergegeven die horen bij de betreffende
                            Juridische regel.</p>
                         </td>
@@ -2909,7 +2923,7 @@
                         </td>
                      <td>
                         
-                        <p>Aanduiding van de eenheid die bij de normwaarde in deze norm hoort.</p>
+                        <p>Aanduiding van de eenheid waarin de kwantitatieve waarde van de Norm wordt uitgedrukt.</p>
                         </td>
                      <td>
                         <a class="link" href="#detail_class_Waardelijsten_Eenheid">Eenheid</a>
@@ -2974,8 +2988,8 @@
                         </td>
                      <td>
                         
-                        <p>attribuut dat wordt gebruikt om aan te geven dat de normwaarde in de regeltekst is
-                           opgenomen.</p>
+                        <p>Attribuut dat wordt gebruikt om aan te geven dat de normwaarde in de tekst van het
+                           artikel of lid is opgenomen.</p>
                         </td>
                      <td>
                         CHARACTERSTRING
@@ -3534,7 +3548,7 @@
                         </td>
                      <td>
                         
-                        <p>Locatie van de pons</p>
+                        <p>Locatie van de Pons</p>
                         </td>
                   </tr>
                   <tr>
@@ -3691,7 +3705,7 @@
                         </td>
                      <td>
                         
-                        <p>De locaties waarnaar de gebiedsaanwijzing verwijst</p>
+                        <p>De locaties waarnaar de Gebiedsaanwijzing verwijst</p>
                         </td>
                   </tr>
                   <tr>
@@ -3714,11 +3728,11 @@
                   <tr>
                      <td>
                         
-                        <a class="link" href="#global_class_Vrijetekst_Tekstdeel">Tekstdeel</a>
+                        <a class="link" href="#global_class_Vrijetekststructuur_Tekstdeel">Tekstdeel</a>
                         
                         [ 0 .. * ]
                         
-                        <a class="link" href="#detail_association_Vrijetekst_Tekstdeel_gebiedsaanwijzing">beschrijft een gebiedsaanwijzing: gebiedsaanwijzing</a>
+                        <a class="link" href="#detail_association_Vrijetekststructuur_Tekstdeel_gebiedsaanwijzing">beschrijft een Gebiedsaanwijzing: gebiedsaanwijzing</a>
                         
                         Gebiedsaanwijzing
                         [ 0 .. * ]
@@ -3867,8 +3881,8 @@
                         </td>
                      <td>
                         
-                        <p>attribuut dat wordt gebruikt om aan te geven dat de normwaarde in de regeltekst is
-                           opgenomen.</p>
+                        <p>Attribuut dat wordt gebruikt om aan te geven dat de normwaarde in de tekst van het
+                           artikel of lid is opgenomen.</p>
                         </td>
                      <td>
                         CHARACTERSTRING
@@ -4602,15 +4616,6 @@
                            <td>1 .. *</td>
                         </tr>
                         <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              
-                              
-                              <p>Alle regels kennen een werkingsgebied.</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
                            <th>Mogelijk geen waarde</th>
                            <td>Nee</td>
                         </tr>
@@ -4635,7 +4640,7 @@
                            <td>
                               
                               
-                              <p>de verwijzing van een specifieke Juridische regel naar (de identificatie van) de Kaart
+                              <p>De verwijzing van een specifieke Juridische regel naar (de identificatie van) de Kaart
                                  waarop de Locaties en OW-objecten worden weergegeven die horen bij de betreffende
                                  Juridische regel.</p>
                               
@@ -4865,7 +4870,7 @@
                            <td>
                               
                               
-                              <p>Aanduiding van de eenheid die bij de normwaarde in deze norm hoort.</p>
+                              <p>Aanduiding van de eenheid waarin de kwantitatieve waarde van de Norm wordt uitgedrukt.</p>
                               
                               </td>
                         </tr>
@@ -4880,7 +4885,7 @@
                            <td>
                               
                               
-                              <p>Wanneer het een kwantitatieve normwaarde betreft is dit de eenheid van alle normwaardes
+                              <p>Wanneer het een kwantitatieve normwaarde betreft is dit de eenheid van alle normwaarden
                                  in deze norm.</p>
                               
                               </td>
@@ -5197,7 +5202,7 @@
                            <td>
                               
                               
-                              <p>Locatie van de pons</p>
+                              <p>Locatie van de Pons</p>
                               
                               </td>
                         </tr>
@@ -5435,7 +5440,7 @@
                            <td>
                               
                               
-                              <p>De locaties waarnaar de gebiedsaanwijzing verwijst</p>
+                              <p>De locaties waarnaar de Gebiedsaanwijzing verwijst</p>
                               
                               </td>
                         </tr>
@@ -5629,8 +5634,8 @@
                            <td>
                               
                               
-                              <p>attribuut dat wordt gebruikt om aan te geven dat de normwaarde in de regeltekst is
-                                 opgenomen.</p>
+                              <p>Attribuut dat wordt gebruikt om aan te geven dat de normwaarde in de tekst van het
+                                 artikel of lid is opgenomen.</p>
                               
                               </td>
                         </tr>
@@ -5731,13 +5736,13 @@
          
          </section>
    </section>
-   <section id="global_package_Vrijetekst">
-      <h3>Domein   Vrijetekst</h3>
+   <section id="global_package_Vrijetekststructuur">
+      <h3>Domein   Vrijetekststructuur</h3>
       <section id="EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313">
          <h4>   Vrije­Tekst - overzicht</h4>
          <div class="imageinfo overview">
-            <figure><img src="data/Images/EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313.png" usemap="#imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313" alt="Diagram: Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar uiteindelijk ook een Divisietekst met Inhoud in moet zitten. De Inhoud bevat alleen inhoudelijke tekst. De Divisie wordt gebruikt om de tekst te structureren in bijvoorbeeld verschillende hoofdstukken of paragrafen. In de vrijetekststructuur kan je met een Tekstdeel object een Divisie of Divisietekst annoteren. Meerdere tekstdelen mogen daar dezerlfde Divisie of Divisietekst verwijzen."><figcaption>Vrije­Tekst</figcaption>
-            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="Divisie" coords="256,260,425,376" href="#global_class_Vrijetekst_Divisie"><area shape="rect" alt="OP-objectAnnotatie" coords="356,14,562,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="DivisieOfDivisietekst" coords="376,431,542,492" href="#global_class_Vrijetekst_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="476,260,668,376" href="#global_class_Vrijetekst_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="320,588,572,848" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="906,718,1086,819" href="#global_class_Artikelstructuur_Regelingsgebied"><area shape="rect" alt="Hoofdlijn" coords="14,956,271,1111" href="#global_class_Vrijetekst_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="304,952,651,1153" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="809,952,1079,1092" href="#global_class_Locatie_Locatie"></map><p>
+            <figure><img src="data/Images/EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313.png" usemap="#imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313" alt="Diagram: Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar uiteindelijk ook een Divisietekst met Inhoud in moet zitten. De Inhoud bevat alleen inhoudelijke tekst. De Divisie wordt gebruikt om de tekst te structureren in bijvoorbeeld verschillende hoofdstukken of paragrafen. In de vrijetekststructuur kan je met een Tekstdeel een Divisie of Divisietekst annoteren. Meerdere tekstdelen mogen naar dezelfde Divisie of Divisietekst verwijzen."><figcaption>Vrije­Tekst</figcaption>
+            </figure><map name="imagemap-EAID_02D5F2C5_DF92_4981_80BC_F6FECA27C313"><area shape="rect" alt="Divisie" coords="256,260,425,376" href="#global_class_Vrijetekststructuur_Divisie"><area shape="rect" alt="OP-objectAnnotatie" coords="356,14,562,167" href="#global_class_OWobject_OPobjectAnnotatie"><area shape="rect" alt="DivisieOfDivisietekst" coords="376,431,542,492" href="#global_class_Vrijetekststructuur_DivisieOfDivisietekst"><area shape="rect" alt="Divisietekst" coords="476,260,668,376" href="#global_class_Vrijetekststructuur_Divisietekst"><area shape="rect" alt="Tekstdeel" coords="320,588,572,848" href="#global_class_Vrijetekststructuur_Tekstdeel"><area shape="rect" alt="Regelingsgebied" coords="906,718,1086,819" href="#global_class_Artikelstructuur_Regelingsgebied"><area shape="rect" alt="Hoofdlijn" coords="14,956,271,1111" href="#global_class_Vrijetekststructuur_Hoofdlijn"><area shape="rect" alt="Gebiedsaanwijzing" coords="304,952,651,1153" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Locatie" coords="809,952,1079,1092" href="#global_class_Locatie_Locatie"></map><p>
                
                <p>Vrijetekststructuur in STOP gebruikt twee elementtypen: Divisie en Divisietekst. Het
                   hoogste niveau is altijd een Divisie, deze mag onderliggende Divisies bevatten waar
@@ -5745,16 +5750,119 @@
                   inhoudelijke tekst. De Divisie wordt gebruikt om de tekst te structureren in bijvoorbeeld
                   verschillende hoofdstukken of paragrafen.</p>
                
-               <p>In de vrijetekststructuur kan je met een Tekstdeel object een Divisie of Divisietekst
-                  annoteren. Meerdere tekstdelen mogen daar dezerlfde Divisie of Divisietekst verwijzen.
-                  </p>
+               <p>In de vrijetekststructuur kan je met een Tekstdeel een Divisie of Divisietekst annoteren.
+                  Meerdere tekstdelen mogen naar dezelfde Divisie of Divisietekst verwijzen. </p>
                </p>
          </div>
       </section>
       <section>
          <h4>Objecttypen   </h4>
          
-         <section id="global_class_Vrijetekst_Divisietekst">
+         <section id="global_class_Vrijetekststructuur_Divisie">
+            <h5>   Divisie</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Divisie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        
+                        <p>Annotatie op een STOP Divisie.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <ul>
+                           
+                           <li>Het w­Id van een OW-object Divisie moet verwijzen naar een STOP-tekstelement van het
+                              type Divisie in de Regelingtekst. (TPOD2041)</li>
+                           </ul>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie abstract object</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Vrijetekststructuur_DivisieOfDivisietekst">Divisie­Of­Divisietekst</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Vrijetekststructuur_DivisieOfDivisietekst_divisie">divisie: divisie</a>
+                        
+                        Divisie
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Divisie
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_OWobject_OPobjectAnnotatie">OP-object­Annotatie</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Object  in IMOW dat verwijst naar een Tekstonderdeel in STOP.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht constraints  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <th>Uitleg</th>
+                  </tr>
+                  <tr>
+                     <th>
+                        
+                        
+                        <name>TPOD2041</name>
+                        
+                        </th>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         
+         <section id="global_class_Vrijetekststructuur_Divisietekst">
             <h5>   Divisietekst</h5>
             
             <table style="width: 100%;">
@@ -5806,11 +5914,11 @@
                   <tr>
                      <td>
                         
-                        <a class="link" href="#global_class_Vrijetekst_DivisieOfDivisietekst">Divisie­Of­Divisietekst</a>
+                        <a class="link" href="#global_class_Vrijetekststructuur_DivisieOfDivisietekst">Divisie­Of­Divisietekst</a>
                         
                         [ 1 .. * ]
                         
-                        <a class="link" href="#detail_association_Vrijetekst_DivisieOfDivisietekst"></a>
+                        <a class="link" href="#detail_association_Vrijetekststructuur_DivisieOfDivisietekst_divisietekst">divisietekst: divisietekst</a>
                         
                         Divisietekst
                         [ 1 ]
@@ -5858,134 +5966,7 @@
             
             </section>
          
-         <section id="global_class_Vrijetekst_Hoofdlijn">
-            <h5>   Hoofdlijn</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Hoofdlijn</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        
-                        <p>Element dat de hoofdlijn weergeeft van het beleid voor of de kwaliteit, ontwikkeling
-                           of staat van de fysieke leefomgeving dat of die in het Tekstdeel wordt beschreven.</p>
-                        
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Indicatie abstract object</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Vrijetekst_Hoofdlijn_soort">soort</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Vrijetekst_Hoofdlijn_naam">naam</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Hoofdlijn
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_Vrijetekst_Hoofdlijn_gerelateerdeHoofdlijn">gerelateerde­Hoofdlijn: gerelateerde­Hoofdlijn</a>
-                        
-                        
-                        <a class="link" href="#global_class_Vrijetekst_Hoofdlijn">Hoofdlijn</a>
-                        
-                        [ 0 .. * ]
-                        </td>
-                     <td>
-                        
-                        <p>Verwijzing van een specifieke Hoofdlijn naar een andere Hoofdlijn die aangeeft dat
-                           er een bijzondere relatie bestaat tussen die twee Hoofdlijnen</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Vrijetekst_Tekstdeel">Tekstdeel</a>
-                        
-                        [ 1 .. * ]
-                        
-                        <a class="link" href="#detail_association_Vrijetekst_Tekstdeel_hoofdlijnaanduiding">bevat: hoofdlijnaanduiding</a>
-                        
-                        Hoofdlijn
-                        [ 0 .. * ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Hoofdlijn
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Identificeerbaar object in een OW-aanlevering</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         
-         <section id="global_class_Vrijetekst_Tekstdeel">
+         <section id="global_class_Vrijetekststructuur_Tekstdeel">
             <h5>   Tekstdeel</h5>
             
             <table style="width: 100%;">
@@ -6001,8 +5982,8 @@
                      <td>
                         
                         
-                        <p>Tekstdeel is de kleinste zelfstandige eenheid van (een of meer) bij elkaar horende
-                           Juridische teksten in een tekst met Vrijetekststructuur.</p>
+                        <p>Tekstdeel is het objecttype dat de relatie vormt tussen een beleids- of realisatietekst
+                           en de daarmee samenhangende annotaties.</p>
                         
                         </td>
                   </tr>
@@ -6046,7 +6027,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Vrijetekst_Tekstdeel_idealisatie">idealisatie</a>
+                        <a class="link" href="#detail_attribute_Vrijetekststructuur_Tekstdeel_idealisatie">idealisatie</a>
                         </td>
                      <td>
                         
@@ -6060,7 +6041,7 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Vrijetekst_Tekstdeel_thema">thema</a>
+                        <a class="link" href="#detail_attribute_Vrijetekststructuur_Tekstdeel_thema">thema</a>
                         </td>
                      <td>
                         
@@ -6091,10 +6072,10 @@
                         Tekstdeel
                         [ 1 .. * ]
                         
-                        <a class="link" href="#detail_association_Vrijetekst_Tekstdeel_hoofdlijnaanduiding">bevat: hoofdlijnaanduiding</a>
+                        <a class="link" href="#detail_association_Vrijetekststructuur_Tekstdeel_hoofdlijnaanduiding">bevat: hoofdlijnaanduiding</a>
                         
                         
-                        <a class="link" href="#global_class_Vrijetekst_Hoofdlijn">Hoofdlijn</a>
+                        <a class="link" href="#global_class_Vrijetekststructuur_Hoofdlijn">Hoofdlijn</a>
                         
                         [ 0 .. * ]
                         </td>
@@ -6105,10 +6086,10 @@
                         Tekstdeel
                         [ 1 .. * ]
                         
-                        <a class="link" href="#detail_association_Vrijetekst_Tekstdeel_divisieaanduiding">divisieaanduiding: divisieaanduiding</a>
+                        <a class="link" href="#detail_association_Vrijetekststructuur_Tekstdeel_divisieaanduiding">divisieaanduiding: divisieaanduiding</a>
                         
                         
-                        <a class="link" href="#global_class_Vrijetekst_DivisieOfDivisietekst">Divisie­Of­Divisietekst</a>
+                        <a class="link" href="#global_class_Vrijetekststructuur_DivisieOfDivisietekst">Divisie­Of­Divisietekst</a>
                         
                         [ 1 ]
                         </td>
@@ -6119,7 +6100,7 @@
                         Tekstdeel
                         [ 1 ]
                         
-                        <a class="link" href="#detail_association_Vrijetekst_Tekstdeel_kaartaanduiding">benoemt: kaartaanduiding</a>
+                        <a class="link" href="#detail_association_Vrijetekststructuur_Tekstdeel_kaartaanduiding">benoemt: kaartaanduiding</a>
                         
                         
                         <a class="link" href="#global_class_Kaart_Kaart">Kaart</a>
@@ -6137,7 +6118,7 @@
                         Tekstdeel
                         [ 0 .. * ]
                         
-                        <a class="link" href="#detail_association_Vrijetekst_Tekstdeel_locatieaanduiding">definieert: locatieaanduiding</a>
+                        <a class="link" href="#detail_association_Vrijetekststructuur_Tekstdeel_locatieaanduiding">definieert: locatieaanduiding</a>
                         
                         
                         <a class="link" href="#global_class_Locatie_Locatie">Locatie</a>
@@ -6151,7 +6132,7 @@
                         Tekstdeel
                         [ 0 .. * ]
                         
-                        <a class="link" href="#detail_association_Vrijetekst_Tekstdeel_gebiedsaanwijzing">beschrijft een gebiedsaanwijzing: gebiedsaanwijzing</a>
+                        <a class="link" href="#detail_association_Vrijetekststructuur_Tekstdeel_gebiedsaanwijzing">beschrijft een Gebiedsaanwijzing: gebiedsaanwijzing</a>
                         
                         
                         <a class="link" href="#global_class_Artikelstructuur_Gebiedsaanwijzing">Gebiedsaanwijzing</a>
@@ -6220,8 +6201,8 @@
             
             </section>
          
-         <section id="global_class_Vrijetekst_Divisie">
-            <h5>   Divisie</h5>
+         <section id="global_class_Vrijetekststructuur_Hoofdlijn">
+            <h5>   Hoofdlijn</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -6229,26 +6210,16 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Divisie</td>
+                     <td>Hoofdlijn</td>
                   </tr>
                   <tr>
                      <th>Definitie</th>
                      <td>
                         
                         
-                        <p>Annotatie op een STOP Divisie.</p>
+                        <p>Element dat de hoofdlijn weergeeft van het beleid voor of de kwaliteit, ontwikkeling
+                           of staat van de fysieke leefomgeving dat of die in het Tekstdeel wordt beschreven.</p>
                         
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <ul>
-                           
-                           <li>Het w­Id van een OW-object Divisie moet verwijzen naar een STOP-tekstelement van het
-                              type Divisie in de Regelingtekst. (TPOD2041)</li>
-                           </ul>
                         </td>
                   </tr>
                   <tr>
@@ -6257,6 +6228,44 @@
                   </tr>
                </tbody>
             </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Vrijetekststructuur_Hoofdlijn_soort">soort</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Vrijetekststructuur_Hoofdlijn_naam">naam</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
             
             <h6>Overzicht relaties  </h6>
             
@@ -6271,53 +6280,48 @@
                   </tr>
                   <tr>
                      <td>
-                        
-                        <a class="link" href="#global_class_Vrijetekst_DivisieOfDivisietekst">Divisie­Of­Divisietekst</a>
-                        
+                        Hoofdlijn
                         [ 1 ]
                         
-                        <a class="link" href="#detail_association_Vrijetekst_DivisieOfDivisietekst_divisie">divisie: divisie</a>
+                        <a class="link" href="#detail_association_Vrijetekststructuur_Hoofdlijn_gerelateerdeHoofdlijn">gerelateerde­Hoofdlijn: gerelateerde­Hoofdlijn</a>
                         
-                        Divisie
-                        [ 1 ]
+                        
+                        <a class="link" href="#global_class_Vrijetekststructuur_Hoofdlijn">Hoofdlijn</a>
+                        
+                        [ 0 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>Verwijzing van een specifieke Hoofdlijn naar een andere Hoofdlijn die aangeeft dat
+                           er een bijzondere relatie bestaat tussen die twee Hoofdlijnen</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Vrijetekststructuur_Tekstdeel">Tekstdeel</a>
+                        
+                        [ 1 .. * ]
+                        
+                        <a class="link" href="#detail_association_Vrijetekststructuur_Tekstdeel_hoofdlijnaanduiding">bevat: hoofdlijnaanduiding</a>
+                        
+                        Hoofdlijn
+                        [ 0 .. * ]
                         </td>
                      <td></td>
                   </tr>
                   <tr>
                      <td>
-                        Divisie
+                        Hoofdlijn
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_OWobject_OPobjectAnnotatie">OP-object­Annotatie</a>
+                        <a class="link" href="#global_class_OWobject_OWobject">OW-object</a>
                         
                         </td>
                      <td>
                         
-                        <p>Object  in IMOW dat verwijst naar een Tekstonderdeel in STOP.</p>
+                        <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        
-                        
-                        <name>TPOD2041</name>
-                        
-                        </th>
-                     <td></td>
                   </tr>
                </tbody>
             </table>
@@ -6327,7 +6331,7 @@
       <section>
          <h4>Keuzen   </h4>
          
-         <section id="global_class_Vrijetekst_DivisieOfDivisietekst">
+         <section id="global_class_Vrijetekststructuur_DivisieOfDivisietekst">
             <h5>   Divisie­Of­Divisietekst</h5>
             
             <table style="width: 100%;">
@@ -6358,137 +6362,11 @@
          <section>
             <h5>Objecttype details  </h5>
             
-            <section id="detail_class_Vrijetekst_Hoofdlijn">
-               <h6>   Hoofdlijn</h6>
-               
-               <div class="deepheader" id="detail_attribute_Vrijetekst_Hoofdlijn_soort">
-                  <h7>Attribuutsoort details  <a href="#global_class_Vrijetekst_Hoofdlijn">Hoofdlijn</a> soort</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>soort</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>0..80</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_attribute_Vrijetekst_Hoofdlijn_naam">
-                  <h7>Attribuutsoort details  <a href="#global_class_Vrijetekst_Hoofdlijn">Hoofdlijn</a> naam</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>naam</td>
-                        </tr>
-                        <tr>
-                           <th>Formaat</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                        <tr>
-                           <th>Lengte</th>
-                           <td>0..255</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie classificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie identificerend</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_association_Vrijetekst_Hoofdlijn_gerelateerdeHoofdlijn">
-                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekst_Hoofdlijn">Hoofdlijn</a> gerelateerde­Hoofdlijn</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>gerelateerde­Hoofdlijn</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              
-                              <p>Verwijzing van een specifieke Hoofdlijn naar een andere Hoofdlijn die aangeeft dat
-                                 er een bijzondere relatie bestaat tussen die twee Hoofdlijnen</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_Vrijetekst_Hoofdlijn">Hoofdlijn</a>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>0 .. *</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <section id="detail_class_Vrijetekst_Tekstdeel">
+            <section id="detail_class_Vrijetekststructuur_Tekstdeel">
                <h6>   Tekstdeel</h6>
                
-               <div class="deepheader" id="detail_attribute_Vrijetekst_Tekstdeel_idealisatie">
-                  <h7>Attribuutsoort details  <a href="#global_class_Vrijetekst_Tekstdeel">Tekstdeel</a> idealisatie</h7>
+               <div class="deepheader" id="detail_attribute_Vrijetekststructuur_Tekstdeel_idealisatie">
+                  <h7>Attribuutsoort details  <a href="#global_class_Vrijetekststructuur_Tekstdeel">Tekstdeel</a> idealisatie</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -6534,8 +6412,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_attribute_Vrijetekst_Tekstdeel_thema">
-                  <h7>Attribuutsoort details  <a href="#global_class_Vrijetekst_Tekstdeel">Tekstdeel</a> thema</h7>
+               <div class="deepheader" id="detail_attribute_Vrijetekststructuur_Tekstdeel_thema">
+                  <h7>Attribuutsoort details  <a href="#global_class_Vrijetekststructuur_Tekstdeel">Tekstdeel</a> thema</h7>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -6572,8 +6450,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_association_Vrijetekst_Tekstdeel_hoofdlijnaanduiding">
-                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekst_Tekstdeel">Tekstdeel</a> bevat</h7>
+               <div class="deepheader" id="detail_association_Vrijetekststructuur_Tekstdeel_hoofdlijnaanduiding">
+                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekststructuur_Tekstdeel">Tekstdeel</a> bevat</h7>
                   
                   
                   <table style="width: 100%;">
@@ -6587,7 +6465,7 @@
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_Vrijetekst_Hoofdlijn">Hoofdlijn</a>
+                              <a class="link" href="#global_class_Vrijetekststructuur_Hoofdlijn">Hoofdlijn</a>
                               </td>
                         </tr>
                         <tr>
@@ -6606,8 +6484,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_association_Vrijetekst_Tekstdeel_divisieaanduiding">
-                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekst_Tekstdeel">Tekstdeel</a> divisieaanduiding</h7>
+               <div class="deepheader" id="detail_association_Vrijetekststructuur_Tekstdeel_divisieaanduiding">
+                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekststructuur_Tekstdeel">Tekstdeel</a> divisieaanduiding</h7>
                   
                   
                   <table style="width: 100%;">
@@ -6623,7 +6501,7 @@
                            <td>
                               
                               Keuze uit
-                              <a class="link" href="#global_class_Vrijetekst_Divisietekst">Divisietekst</a>, <a class="link" href="#global_class_Vrijetekst_Divisie">Divisie</a>
+                              <a class="link" href="#global_class_Vrijetekststructuur_Divisietekst">Divisietekst</a>, <a class="link" href="#global_class_Vrijetekststructuur_Divisie">Divisie</a>
                               
                               </td>
                         </tr>
@@ -6643,8 +6521,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_association_Vrijetekst_Tekstdeel_kaartaanduiding">
-                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekst_Tekstdeel">Tekstdeel</a> benoemt</h7>
+               <div class="deepheader" id="detail_association_Vrijetekststructuur_Tekstdeel_kaartaanduiding">
+                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekststructuur_Tekstdeel">Tekstdeel</a> benoemt</h7>
                   
                   
                   <table style="width: 100%;">
@@ -6687,8 +6565,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_association_Vrijetekst_Tekstdeel_locatieaanduiding">
-                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekst_Tekstdeel">Tekstdeel</a> definieert</h7>
+               <div class="deepheader" id="detail_association_Vrijetekststructuur_Tekstdeel_locatieaanduiding">
+                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekststructuur_Tekstdeel">Tekstdeel</a> definieert</h7>
                   
                   
                   <table style="width: 100%;">
@@ -6721,8 +6599,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_association_Vrijetekst_Tekstdeel_gebiedsaanwijzing">
-                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekst_Tekstdeel">Tekstdeel</a> beschrijft een gebiedsaanwijzing</h7>
+               <div class="deepheader" id="detail_association_Vrijetekststructuur_Tekstdeel_gebiedsaanwijzing">
+                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekststructuur_Tekstdeel">Tekstdeel</a> beschrijft een Gebiedsaanwijzing</h7>
                   
                   
                   <table style="width: 100%;">
@@ -6731,7 +6609,7 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>beschrijft een gebiedsaanwijzing</td>
+                           <td>beschrijft een Gebiedsaanwijzing</td>
                         </tr>
                         <tr>
                            <th>Gerelateerd objecttype</th>
@@ -6759,18 +6637,89 @@
                
                </section>
             
-            </section>
-         
-         
-         
-         <section>
-            <h5>Keuze  </h5>
-            
-            <section id="detail_class_Vrijetekst_DivisieOfDivisietekst">
-               <h6>Keuze   Divisie­Of­Divisietekst</h6>
+            <section id="detail_class_Vrijetekststructuur_Hoofdlijn">
+               <h6>   Hoofdlijn</h6>
                
-               <div class="deepheader" id="detail_association_Vrijetekst_DivisieOfDivisietekst">
-                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekst_DivisieOfDivisietekst">Divisie­Of­Divisietekst</a> -noname-</h7>
+               <div class="deepheader" id="detail_attribute_Vrijetekststructuur_Hoofdlijn_soort">
+                  <h7>Attribuutsoort details  <a href="#global_class_Vrijetekststructuur_Hoofdlijn">Hoofdlijn</a> soort</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>soort</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>0..80</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Vrijetekststructuur_Hoofdlijn_naam">
+                  <h7>Attribuutsoort details  <a href="#global_class_Vrijetekststructuur_Hoofdlijn">Hoofdlijn</a> naam</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>naam</td>
+                        </tr>
+                        <tr>
+                           <th>Formaat</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                        <tr>
+                           <th>Lengte</th>
+                           <td>0..255</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie classificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie identificerend</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Vrijetekststructuur_Hoofdlijn_gerelateerdeHoofdlijn">
+                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekststructuur_Hoofdlijn">Hoofdlijn</a> gerelateerde­Hoofdlijn</h7>
                   
                   
                   <table style="width: 100%;">
@@ -6779,12 +6728,66 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>-noname-</td>
+                           <td>gerelateerde­Hoofdlijn</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              
+                              <p>Verwijzing van een specifieke Hoofdlijn naar een andere Hoofdlijn die aangeeft dat
+                                 er een bijzondere relatie bestaat tussen die twee Hoofdlijnen</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_Vrijetekst_Divisietekst">Divisietekst</a>
+                              <a class="link" href="#global_class_Vrijetekststructuur_Hoofdlijn">Hoofdlijn</a>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            </section>
+         
+         
+         
+         <section>
+            <h5>Keuze  </h5>
+            
+            <section id="detail_class_Vrijetekststructuur_DivisieOfDivisietekst">
+               <h6>Keuze   Divisie­Of­Divisietekst</h6>
+               
+               <div class="deepheader" id="detail_association_Vrijetekststructuur_DivisieOfDivisietekst_divisietekst">
+                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekststructuur_DivisieOfDivisietekst">Divisie­Of­Divisietekst</a> divisietekst</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>divisietekst</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Vrijetekststructuur_Divisietekst">Divisietekst</a>
                               </td>
                         </tr>
                         <tr>
@@ -6795,8 +6798,8 @@
                   </table>
                   </div>
                
-               <div class="deepheader" id="detail_association_Vrijetekst_DivisieOfDivisietekst_divisie">
-                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekst_DivisieOfDivisietekst">Divisie­Of­Divisietekst</a> divisie</h7>
+               <div class="deepheader" id="detail_association_Vrijetekststructuur_DivisieOfDivisietekst_divisie">
+                  <h7>Relatiesoort details  <a href="#global_class_Vrijetekststructuur_DivisieOfDivisietekst">Divisie­Of­Divisietekst</a> divisie</h7>
                   
                   
                   <table style="width: 100%;">
@@ -6810,7 +6813,7 @@
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_Vrijetekst_Divisie">Divisie</a>
+                              <a class="link" href="#global_class_Vrijetekststructuur_Divisie">Divisie</a>
                               </td>
                         </tr>
                         <tr>
@@ -7016,7 +7019,7 @@
                         </td>
                      <td>
                         
-                        <p>Locatie van de pons</p>
+                        <p>Locatie van de Pons</p>
                         </td>
                   </tr>
                   <tr>
@@ -7033,17 +7036,17 @@
                         </td>
                      <td>
                         
-                        <p>De locaties waarnaar de gebiedsaanwijzing verwijst</p>
+                        <p>De locaties waarnaar de Gebiedsaanwijzing verwijst</p>
                         </td>
                   </tr>
                   <tr>
                      <td>
                         
-                        <a class="link" href="#global_class_Vrijetekst_Tekstdeel">Tekstdeel</a>
+                        <a class="link" href="#global_class_Vrijetekststructuur_Tekstdeel">Tekstdeel</a>
                         
                         [ 0 .. * ]
                         
-                        <a class="link" href="#detail_association_Vrijetekst_Tekstdeel_locatieaanduiding">definieert: locatieaanduiding</a>
+                        <a class="link" href="#detail_association_Vrijetekststructuur_Tekstdeel_locatieaanduiding">definieert: locatieaanduiding</a>
                         
                         Locatie
                         [ 0 .. * ]
@@ -8602,7 +8605,7 @@
          <h4>   Kaart - overzicht</h4>
          <div class="imageinfo overview">
             <figure><img src="data/Images/EAID_619D1C05_75E9_4a29_BBFB_F6454B1E4EC7.png" usemap="#imagemap-EAID_619D1C05_75E9_4a29_BBFB_F6454B1E4EC7" alt="Diagram: Tekstdeel en JuridischeRegel kunnen naar een Kaart verwijzen. Een Kaart toont een door de uitsnede geduid gebied en bevat Kaartlagen. In een Kaartlaag worden één of meer Gebiedsaanwijzingen en/of Normen en/of ActiviteitLocatieaanduidingen getoond."><figcaption>Kaart</figcaption>
-            </figure><map name="imagemap-EAID_619D1C05_75E9_4a29_BBFB_F6454B1E4EC7"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="732,674,1048,814" href="#global_class_Artikelstructuur_ActiviteitLocatieaanduiding"><area shape="rect" alt="JuridischeRegel" coords="14,201,204,363" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="Kaartextent" coords="688,67,844,243" href="#global_class_Kaart_Kaartextent"><area shape="rect" alt="Tekstdeel" coords="14,14,204,175" href="#global_class_Vrijetekst_Tekstdeel"><area shape="rect" alt="Norm" coords="402,674,620,895" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="Gebiedsaanwijzing" coords="53,685,338,882" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Kaartlaag" coords="413,363,688,538" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Kaart" coords="382,33,662,249" href="#global_class_Kaart_Kaart"></map><p>
+            </figure><map name="imagemap-EAID_619D1C05_75E9_4a29_BBFB_F6454B1E4EC7"><area shape="rect" alt="ActiviteitLocatieaanduiding" coords="732,674,1048,814" href="#global_class_Artikelstructuur_ActiviteitLocatieaanduiding"><area shape="rect" alt="Kaartextent" coords="688,67,844,243" href="#global_class_Kaart_Kaartextent"><area shape="rect" alt="Tekstdeel" coords="14,14,204,175" href="#global_class_Vrijetekststructuur_Tekstdeel"><area shape="rect" alt="Norm" coords="402,674,620,895" href="#global_class_Artikelstructuur_Norm"><area shape="rect" alt="JuridischeRegel" coords="14,201,204,363" href="#global_class_Artikelstructuur_JuridischeRegel"><area shape="rect" alt="Gebiedsaanwijzing" coords="53,685,338,882" href="#global_class_Artikelstructuur_Gebiedsaanwijzing"><area shape="rect" alt="Kaartlaag" coords="413,363,688,538" href="#global_class_Kaart_Kaartlaag"><area shape="rect" alt="Kaart" coords="382,33,662,249" href="#global_class_Kaart_Kaart"></map><p>
                
                <p>Tekstdeel en Juridische­Regel kunnen naar een Kaart verwijzen.  Een Kaart toont een
                   door de uitsnede geduid gebied en bevat Kaartlagen. In een Kaartlaag worden één of
@@ -8792,7 +8795,7 @@
                         </td>
                      <td>
                         
-                        <p>de verwijzing van een specifieke Juridische regel naar (de identificatie van) de Kaart
+                        <p>De verwijzing van een specifieke Juridische regel naar (de identificatie van) de Kaart
                            waarop de Locaties en OW-objecten worden weergegeven die horen bij de betreffende
                            Juridische regel.</p>
                         </td>
@@ -8800,11 +8803,11 @@
                   <tr>
                      <td>
                         
-                        <a class="link" href="#global_class_Vrijetekst_Tekstdeel">Tekstdeel</a>
+                        <a class="link" href="#global_class_Vrijetekststructuur_Tekstdeel">Tekstdeel</a>
                         
                         [ 1 ]
                         
-                        <a class="link" href="#detail_association_Vrijetekst_Tekstdeel_kaartaanduiding">benoemt: kaartaanduiding</a>
+                        <a class="link" href="#detail_association_Vrijetekststructuur_Tekstdeel_kaartaanduiding">benoemt: kaartaanduiding</a>
                         
                         Kaart
                         [ 0 .. * ]
