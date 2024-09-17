@@ -64,7 +64,7 @@ het OW-object wijzigen. (OZON0108).
 Een kenmerk is een attribuut of uitgaande associatie van het OW-object.
 
 **Regel:** Bij het wijzigen van een OW-object moet het een instantie blijven
-van hetzelfde UML Objecttype.
+van hetzelfde UML Objecttype. (OZON4005)
 
 Toelichting: De objecttypen JuridischeRegel en Locatie zijn abstract (in
 het UML is de naam cursief) en hebben geen instanties. Hierdoor kun je
@@ -109,12 +109,12 @@ bij de regelingversie. Deze regels zijn hieronder opgenomen:
 - Een OW-aanlevering mag niet resulteren in verwijzingen naar
   OW-objecten die beëindigd zijn (OZON0109).
 - Een OW-aanlevering moet resulteren in een Regeling met daarin precies
-  één Regelingsgebied.
+  één Regelingsgebied. (TPOD2180)
 - Een OW-aanlevering moet resulteren in een Regeling met daarin
-  maximaal één Pons-object.
+  maximaal één Pons-object. (OZON0104)
 - Bij een Lid of Artikel met een STOP-element Inhoud moet er precies één Regeltekst-object zijn (TPOD2050)
-- Een Lid of Artikel zonder een Inhoud-element mag geen Regeltekst-object hebben.
-- Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen.
+- Een Lid of Artikel zonder een Inhoud-element mag geen Regeltekst-object hebben. (TPOD2061)
+- Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen. (TPOD2050)
 - Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst verwijzen (TPOD2052).
 
 ## Het gebruik van een OW-aanlevering {#05-ow-aanlevering}
@@ -159,8 +159,8 @@ behorend bij de regeling op de juiste wijze beëindigt.
 In beide gevallen zal gecontroleerd worden of er nog externe verwijzingen naar de
 OW-objecten bestaan vanuit andere regelingen en zal de intrekking worden afgekeurd.
 
-**Regel:** Omdat een intrekking van een regeling niet resulteert in een nieuwe versie
-van die regeling moet het veld expressionIDRegeling in de OW-aanlevering leeg zijn.
+**Regel:** Bij een OW-aanlevering behorend bij
+ de intrekking een regeling is het veld expressionIDRegeling leeg.
 
 ### Het aanleveren van een Ontwerpbesluit
 

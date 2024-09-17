@@ -17,8 +17,10 @@ OW-manifest bevat niet de opsomming van de GML-bestanden; deze staan in het (OP-
 
 **Regels:**
 - Het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het xml-schema in `bestanden-ow/generiek/manifest-ow.xsd`. (LVBB1032)
-- Het xml-attribuut schemaversie in het root element Aanleveringen bevat het versienummer van het gebruikte xsd.
-- De bestanden waarnaar het OW-manifest verwijst moeten bestaan.
+- Het xml-attribuut schemaversie in het root element van jet manifest-ow.xsl bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)
+- De bestanden waar het manifest-ow.xml naar verwijst moeten bestaan. (LVBB1016)
+
+
 
 Zie [paragraaf 2.1](#global_package_Aanlevering) voor een uitleg van de XML elementen in deze bestanden.
 
@@ -27,13 +29,12 @@ Zie [paragraaf 2.1](#global_package_Aanlevering) voor een uitleg van de XML elem
 In het OW-manifest is beschreven welke OW-bestanden er zijn. Relaties in het IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten op te nemen.
 
 **Regels:**
-- OW-bestanden moeten voldoen aan het xml-schema in `bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd"`
-- Het xml-attribuut schemaversie in het root element owBestand bevat het versienummer van het gebruikte xsd.
+- OW-bestanden moeten voldoen aan het xml-schema in `bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd"` (TPOD1161)
+- Het xml-attribuut schemaversie in het root element owBestand bevat het versienummer van het gebruikte xsd. (TPOD1162)
 - Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met artikelstructuur  mogen geen andere dan de volgende OW-objecten worden aangeleverd: Regeltekst, Juridische regel, Activiteit,
 Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart, Kaartlaag  en Regelingsgebied.
 - Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met vrijetekststructuur mogen geen andere dan de volgende OW-objecten worden aangeleverd: Divisietekst, Tekstdeel,
 Hoofdlijn, Gebiedsaanwijzing, Kaart, Kaartlaag, Regelingsgebied en Locatie.
-
 
 ### Het aanleveren van Geometrie-objecten
 
@@ -96,7 +97,7 @@ Voor attributen waarvan de waarde uit een waardelijst komt zijn de toegestane
 waarden te vinden in de [Stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten).
 
 **Regel:** Een attribuut waarvoor een waarde uit een waardelijst moet worden
-gekozen, moet de uri van die waarde uit de betreffende waardelijst bevatten.
+gekozen, moet de uri van die waarde uit de betreffende waardelijst in de [Stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten) bevatten. (TPOD1300)
 
 ### Toekennen van OW-objecten aan regelingen {#H04-Toekennen}
 
