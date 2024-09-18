@@ -414,7 +414,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
     <h2>
       Geonovum Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2024-09-13">13 september 2024</time>
+      <time class="dt-published" datetime="2024-09-17">17 september 2024</time>
     </h2>
     <dl>
       
@@ -10754,15 +10754,15 @@ OW-manifest bevat niet de opsomming van de GML-bestanden; deze staan in het (OP-
 <p><strong>Regels:</strong></p>
 <ul>
 <li>Het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het xml-schema in <code>bestanden-ow/generiek/manifest-ow.xsd</code>. (LVBB1032)</li>
-<li>Het xml-attribuut schemaversie in het root element Aanleveringen bevat het versienummer van het gebruikte xsd.</li>
-<li>De bestanden waarnaar het OW-manifest verwijst moeten bestaan.</li>
+<li>Het xml-attribuut schemaversie in het root element van jet manifest-ow.xsl bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)</li>
+<li>De bestanden waar het manifest-ow.xml naar verwijst moeten bestaan. (LVBB1016)</li>
 </ul>
 <p>Zie <a href="#global_package_Aanlevering">paragraaf 2.1</a> voor een uitleg van de XML elementen in deze bestanden.</p>
 <section id="het-aanleveren-van-ow-objecten-in-ow-bestanden"><div class="header-wrapper"><h4 id="H04-aanlevereisen"><bdi class="secno">4.1.1 </bdi>Het aanleveren van OW-objecten in OW-bestanden</h4><a class="self-link" href="#H04-aanlevereisen" aria-label="Permalink for Section 4.1.1"></a></div><p>In het OW-manifest is beschreven welke OW-bestanden er zijn. Relaties in het IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten op te nemen.</p>
 <p><strong>Regels:</strong></p>
 <ul>
-<li>OW-bestanden moeten voldoen aan het xml-schema in <code>bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd"</code></li>
-<li>Het xml-attribuut schemaversie in het root element owBestand bevat het versienummer van het gebruikte xsd.</li>
+<li>OW-bestanden moeten voldoen aan het xml-schema in <code>bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd"</code> (TPOD1161)</li>
+<li>Het xml-attribuut schemaversie in het root element owBestand bevat het versienummer van het gebruikte xsd. (TPOD1162)</li>
 <li>Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met artikelstructuur  mogen geen andere dan de volgende OW-objecten worden aangeleverd: Regeltekst, Juridische regel, Activiteit,
 Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart, Kaartlaag  en Regelingsgebied.</li>
 <li>Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met vrijetekststructuur mogen geen andere dan de volgende OW-objecten worden aangeleverd: Divisietekst, Tekstdeel,
@@ -10841,7 +10841,7 @@ NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:</p>
 </section><section id="waardelijsten"><div class="header-wrapper"><h4 id="H04-Waardelijsten"><bdi class="secno">4.2.2 </bdi>Waardelijsten</h4><a class="self-link" href="#H04-Waardelijsten" aria-label="Permalink for Section 4.2.2"></a></div><p>Voor attributen waarvan de waarde uit een waardelijst komt zijn de toegestane
 waarden te vinden in de <a href="https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten">Stelselcatalogus</a>.</p>
 <p><strong>Regel:</strong> Een attribuut waarvoor een waarde uit een waardelijst moet worden
-gekozen, moet de uri van die waarde uit de betreffende waardelijst bevatten.</p>
+gekozen, moet de uri van die waarde uit de betreffende waardelijst in de <a href="https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten">Stelselcatalogus</a> bevatten. (TPOD1300)</p>
 </section><section id="toekennen-van-ow-objecten-aan-regelingen"><div class="header-wrapper"><h4 id="H04-Toekennen"><bdi class="secno">4.2.3 </bdi>Toekennen van OW-objecten aan regelingen</h4><a class="self-link" href="#H04-Toekennen" aria-label="Permalink for Section 4.2.3"></a></div><p>Een OW-object hoort bij een regeling. Als een besluit een regeling instelt of wijzigt horen
 de OW-objecten die in dat besluit ontstaan bij die regeling. Je kunt OW-objecten
 alleen wijzigen in wijzigingsbesluiten die die betreffende regeling wijzigen. Dit is
@@ -10992,7 +10992,7 @@ OW-object.</p>
 het OW-object wijzigen. (OZON0108).</p>
 <p>Een kenmerk is een attribuut of uitgaande associatie van het OW-object.</p>
 <p><strong>Regel:</strong> Bij het wijzigen van een OW-object moet het een instantie blijven
-van hetzelfde UML Objecttype.</p>
+van hetzelfde UML Objecttype. (OZON4005)</p>
 <p>Toelichting: De objecttypen JuridischeRegel en Locatie zijn abstract (in
 het UML is de naam cursief) en hebben geen instanties. Hierdoor kun je
 bijvoorbeeld een RegelVoorIedereen niet wijzigen in een Instructieregel, maar
@@ -11028,12 +11028,12 @@ OW-objecten waar niet meer naar verwezen wordt.</li>
 <li>Een OW-aanlevering mag niet resulteren in verwijzingen naar
 OW-objecten die beëindigd zijn (OZON0109).</li>
 <li>Een OW-aanlevering moet resulteren in een Regeling met daarin precies
-één Regelingsgebied.</li>
+één Regelingsgebied. (TPOD2180)</li>
 <li>Een OW-aanlevering moet resulteren in een Regeling met daarin
-maximaal één Pons-object.</li>
+maximaal één Pons-object. (OZON0104)</li>
 <li>Bij een Lid of Artikel met een STOP-element Inhoud moet er precies één Regeltekst-object zijn (TPOD2050)</li>
-<li>Een Lid of Artikel zonder een Inhoud-element mag geen Regeltekst-object hebben.</li>
-<li>Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen.</li>
+<li>Een Lid of Artikel zonder een Inhoud-element mag geen Regeltekst-object hebben. (TPOD2061)</li>
+<li>Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen. (TPOD2050)</li>
 <li>Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst verwijzen (TPOD2052).</li>
 </ul>
 </section></section><section id="het-gebruik-van-een-ow-aanlevering"><div class="header-wrapper"><h3 id="05-ow-aanlevering"><bdi class="secno">5.3 </bdi>Het gebruik van een OW-aanlevering</h3><a class="self-link" href="#05-ow-aanlevering" aria-label="Permalink for Section 5.3"></a></div><p>Als een OP-aanlevering een regeling instelt, wijzigt of intrekt
@@ -11065,8 +11065,8 @@ is aan aan de intrekking zal het stelsel controleren of deze OW-aanlevering de O
 behorend bij de regeling op de juiste wijze beëindigt.
 In beide gevallen zal gecontroleerd worden of er nog externe verwijzingen naar de
 OW-objecten bestaan vanuit andere regelingen en zal de intrekking worden afgekeurd.</p>
-<p><strong>Regel:</strong> Omdat een intrekking van een regeling niet resulteert in een nieuwe versie
-van die regeling moet het veld expressionIDRegeling in de OW-aanlevering leeg zijn.</p>
+<p><strong>Regel:</strong> Bij een OW-aanlevering behorend bij
+ de intrekking een regeling is het veld expressionIDRegeling leeg.</p>
 </section><section id="het-aanleveren-van-een-ontwerpbesluit"><div class="header-wrapper"><h4 id="x5-3-4-het-aanleveren-van-een-ontwerpbesluit"><bdi class="secno">5.3.4 </bdi>Het aanleveren van een Ontwerpbesluit</h4><a class="self-link" href="#het-aanleveren-van-een-ontwerpbesluit" aria-label="Permalink for Section 5.3.4"></a></div>
 <p>In STOP kunnen ontwerpregelingen gemaakt worden met een
 ontwerpbesluit. Zo'n ontwerpbesluit wijzigt een bestaande regelingversie.
