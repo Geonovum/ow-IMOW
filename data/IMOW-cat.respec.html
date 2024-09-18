@@ -172,7 +172,11 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Dit bestand moet voldoen aan het meegeleverde xmlschema genaamd: bestanden-ow/generiek/standlevering-generiek.xsd</p>
+                        <ul>
+                           
+                           <li>Een OW-Bestand moet voldoen aan het xmlschema: bestanden-ow/generiek/standlevering-generiek.xsd
+                              (TPOD1250)</li>
+                           </ul>
                         </td>
                   </tr>
                   <tr>
@@ -320,7 +324,7 @@
                            
                            <li>Als een LVBB-aanlevering een regeling initieert, wijzigt, of intrekt moet voor elke
                               regelingversie die daardoor ontstaat of eindigt een OW-aanlevering gekoppeld zijn.
-                              </li>
+                              (TPOD1225)</li>
                            </ul>
                         </td>
                   </tr>
@@ -445,7 +449,7 @@
                            
                            <li>Als doel­ID is ingevuld dan moet expression­IDRegeling leeg zijn en gelden de de regels
                               van IMOW 3.0. Een aanlevering met doel­ID wordt niet geaccepteerd als er gebruik is
-                              gemaakt van de in STOP 1.4 geïntroduceerde  consolidatiescenario's.</li>
+                              gemaakt van de in STOP 1.4 geïntroduceerde  consolidatiescenario's. (TPOD2150)</li>
                            
                            <li>Als doel­ID leeg is dan worden de in STOP 1.4 geïntroduceerde consolidatiescenario's
                               gebruikt. Voor verdere invulling zie paragraaf<br clear="none">
@@ -1950,10 +1954,10 @@
                               type zijn. (TPOD1850)</li>
                            
                            <li>Indien een Artikel is onderverdeeld in Leden zijn annotaties alleen toegestaan op
-                              Leden.</li>
+                              Leden. (TPOD2060)</li>
                            
                            <li>Alleen bij een Lid of Artikel dat een STOP-element Inhoud bevat is een Regeltekst
-                              toegestaan; in dat geval moet er precies één Regeltekst zijn.</li>
+                              toegestaan; in dat geval moet er precies één Regeltekst zijn. (TPOD2061)</li>
                            </ul>
                         </td>
                   </tr>
@@ -2023,28 +2027,6 @@
                         
                         <p>Object dat verwijst naar een tekstelement in STOP.</p>
                         </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        <a class="link" href="#detail_d45017e3846">
-                           TPOD1850
-                           </a>
-                        </th>
-                     <td></td>
                   </tr>
                </tbody>
             </table>
@@ -2321,29 +2303,6 @@
                </tbody>
             </table>
             
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        
-                        
-                        <name>TPOD2080</name>
-                        
-                        </th>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
             </section>
          
          <section id="global_class_Artikelstructuur_Omgevingswaarderegel">
@@ -2533,7 +2492,7 @@
                         <ul>
                            
                            <li>Alle Juridische regels die verwijzen naar dezelfde Regeltekst moeten dezelfde waarde
-                              hebben voor idealisatie.</li>
+                              hebben voor idealisatie. (TPOD2027)</li>
                            </ul>
                         </td>
                   </tr>
@@ -2688,28 +2647,6 @@
                </tbody>
             </table>
             
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        <a class="link" href="#detail_d45017e6291">
-                           TPOD2070
-                           </a>
-                        </th>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
             </section>
          
          <section id="global_class_Artikelstructuur_Regelingsgebied">
@@ -2812,16 +2749,16 @@
                         
                         <ul>
                            
-                           <li>Voor ieder punt op de kaart mag een Norm maar één waarde hebben.</li>
+                           <li>Voor ieder punt op de kaart mag een Norm maar één waarde hebben. (TPOD2101)</li>
                            
-                           <li>Locaties van een Norm mogen elkaar niet geheel of gedeeltelijk overlappen.</li>
+                           <li>Locaties van een Norm mogen elkaar niet geheel of gedeeltelijk overlappen. (TPOD2102)</li>
                            
                            <li>Eenheid mag alleen voorkomen als de Normwaarde het attribuut kwantitatieve­Waarde
-                              heeft en is dan verplicht (TPOD2100). </li>
+                              heeft en is dan verplicht (TPOD2100).</li>
                            
                            <li>Een Normwaarde geldt voor iedere individuele geometrie van Gebied, Lijn, Punt, Gebiedengroep,
                               Lijnengroep of Puntengroep respectievelijk van de Multi­Surface, Multi­Curve of Multi­Point
-                              van de Locatie waarnaar die Normwaarde verwijst.</li>
+                              van de Locatie waarnaar die Normwaarde verwijst. (TPOD2103)</li>
                            </ul>
                         </td>
                   </tr>
@@ -3019,28 +2956,6 @@
                         
                         <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        <a class="link" href="#detail_d45017e7019">
-                           TPOD2100
-                           </a>
-                        </th>
-                     <td></td>
                   </tr>
                </tbody>
             </table>
@@ -3466,7 +3381,7 @@
                         
                         <ul>
                            
-                           <li>Bij een Regeling hoort ten hoogste één Pons.</li>
+                           <li>Bij een Regeling hoort ten hoogste één Pons. (OZON0104)</li>
                            </ul>
                         </td>
                   </tr>
@@ -3762,7 +3677,7 @@
                               moet er precies één voorkomen. (TPOD1650)</li>
                            
                            <li>Een Normwaarde die bedoeld is als gezamenlijke waarde voor meerdere geometrieën is
-                              niet toegestaan.</li>
+                              niet toegestaan. (TPOD2104)</li>
                            </ul>
                         </td>
                   </tr>
@@ -3896,28 +3811,6 @@
                </tbody>
             </table>
             
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        <a class="link" href="#detail_d45017e7730">
-                           TPOD1650
-                           </a>
-                        </th>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
             </section>
          </section>
       <section>
@@ -3968,21 +3861,6 @@
                         <tr>
                            <th>Mogelijk geen waarde</th>
                            <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_d45017e3846">
-                  <h7>Constraint details  <a href="#global_class_Artikelstructuur_Regeltekst">Regeltekst</a> TPOD1850</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>OCL</th>
-                           <td>Per Regeltekst is er &amp;#233;&amp;#233;n type Juridische regel.</td>
                         </tr>
                      </tbody>
                   </table>
@@ -4097,6 +3975,17 @@
                         <tr>
                            <th>Kardinaliteit</th>
                            <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>Het stelsel valideert of de gebruikte symboolcode daadwerkelijk voorkomt in de Symbolenbibliotheek.
+                                 Alle symboolcodes voldoen aan de reguliere expressie '[vpl][acdksrvx][0-9][0-9][0-9]'.
+                                 Het xml-schema controleert hierop.</p>
+                              
+                              </td>
                         </tr>
                         <tr>
                            <th>Indicatie identificerend</th>
@@ -4275,7 +4164,6 @@
                      </tbody>
                   </table>
                   </div>
-               
                </section>
             
             <section id="detail_class_Artikelstructuur_Omgevingswaarderegel">
@@ -4668,22 +4556,6 @@
                      </tbody>
                   </table>
                   </div>
-               
-               <div class="deepheader" id="detail_d45017e6291">
-                  <h7>Constraint details  <a href="#global_class_Artikelstructuur_JuridischeRegel">Juridische­Regel</a> TPOD2070</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>OCL</th>
-                           <td>Alle Juridische regels die verwijzen naar dezelfde Regeltekst moeten dezelfde waarde
-                              hebben voor Idealisatie.</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
                </section>
             
             <section id="detail_class_Artikelstructuur_Regelingsgebied">
@@ -4867,21 +4739,6 @@
                         <tr>
                            <th>Indicatie identificerend</th>
                            <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_d45017e7019">
-                  <h7>Constraint details  <a href="#global_class_Artikelstructuur_Norm">Norm</a> TPOD2100</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>OCL</th>
-                           <td>&lt;ul&gt; &lt;li&gt;(TPOD2100)&lt;/li&gt; &lt;/ul&gt;</td>
                         </tr>
                      </tbody>
                   </table>
@@ -5393,6 +5250,17 @@
                            <td>0 .. 1</td>
                         </tr>
                         <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>Het stelsel valideert of de gebruikte symboolcode daadwerkelijk voorkomt in de Symbolenbibliotheek.
+                                 Alle symboolcodes voldoen aan de reguliere expressie '[vpl][acdksrvx][0-9][0-9][0-9]'.
+                                 Het xml-schema controleert hierop.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
                            <th>Indicatie identificerend</th>
                            <td>Nee</td>
                         </tr>
@@ -5666,6 +5534,17 @@
                            <td>0 .. 1</td>
                         </tr>
                         <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              
+                              <p>Het stelsel valideert of de gebruikte symboolcode daadwerkelijk voorkomt in de Symbolenbibliotheek.
+                                 Alle symboolcodes voldoen aan de reguliere expressie '[vpl][acdksrvx][0-9][0-9][0-9]'.
+                                 Het xml-schema controleert hierop.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
                            <th>Indicatie identificerend</th>
                            <td>Nee</td>
                         </tr>
@@ -5691,22 +5570,6 @@
                         <tr>
                            <th>Mogelijk geen waarde</th>
                            <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_d45017e7730">
-                  <h7>Constraint details  <a href="#global_class_Artikelstructuur_Normwaarde">Normwaarde</a> TPOD1650</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>OCL</th>
-                           <td>Van de drie kenmerken kwalitatieve­Waarde, kwantitatieve­Waarde en waarde­In­Regeltekst
-                              is er precies &amp;#233;&amp;#233;n ingevuld.</td>
                         </tr>
                      </tbody>
                   </table>
@@ -5820,29 +5683,6 @@
                </tbody>
             </table>
             
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        
-                        
-                        <name>TPOD2041</name>
-                        
-                        </th>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
             </section>
          
          <section id="global_class_Vrijetekststructuur_Divisietekst">
@@ -5920,29 +5760,6 @@
                         
                         <p>Object dat verwijst naar een tekstelement in STOP.</p>
                         </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        
-                        
-                        <name>TPOD2042</name>
-                        
-                        </th>
-                     <td></td>
                   </tr>
                </tbody>
             </table>
@@ -6136,48 +5953,6 @@
                         
                         <p>Identificeerbaar object in een OW-aanlevering</p>
                         </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        
-                        
-                        <name>TPOD2110</name>
-                        
-                        </th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>
-                        
-                        
-                        <name>TPOD2111
-                           </name>
-                        
-                        </th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>
-                        
-                        
-                        <name>TPOD2112</name>
-                        
-                        </th>
-                     <td></td>
                   </tr>
                </tbody>
             </table>
@@ -6611,9 +6386,6 @@
                      </tbody>
                   </table>
                   </div>
-               
-               
-               
                </section>
             
             <section id="detail_class_Vrijetekststructuur_Hoofdlijn">
@@ -7145,28 +6917,6 @@
                </tbody>
             </table>
             
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        <a class="link" href="#detail_d45017e12089">
-                           TPOD1970
-                           </a>
-                        </th>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
             </section>
          
          <section id="global_class_Locatie_Lijn">
@@ -7262,29 +7012,6 @@
                         <p>Het objecttype dat machineleesbaar vastlegt waar een Juridische regel, Tekstdeel en/of
                            de domeinspecifieke objecttypen van toepassing zijn.</p>
                         </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        
-                        
-                        <name>TPOD1960</name>
-                        
-                        </th>
-                     <td></td>
                   </tr>
                </tbody>
             </table>
@@ -7385,28 +7112,6 @@
                         <p>Het objecttype dat machineleesbaar vastlegt waar een Juridische regel, Tekstdeel en/of
                            de domeinspecifieke objecttypen van toepassing zijn.</p>
                         </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht constraints  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <th>Uitleg</th>
-                  </tr>
-                  <tr>
-                     <th>
-                        <a class="link" href="#detail_d45017e12703">
-                           TPOD1980
-                           </a>
-                        </th>
-                     <td></td>
                   </tr>
                </tbody>
             </table>
@@ -8106,22 +7811,6 @@
                      </tbody>
                   </table>
                   </div>
-               
-               <div class="deepheader" id="detail_d45017e12089">
-                  <h7>Constraint details  <a href="#global_class_Locatie_Punt">Punt</a> TPOD1970</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>OCL</th>
-                           <td>Iedere verwijzing naar een gml­Object vanuit een Punt moet verwijzen naar een object
-                              van type GM\_Point of GM\_Multi­Point.</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
                </section>
             
             <section id="detail_class_Locatie_Lijn">
@@ -8160,7 +7849,6 @@
                      </tbody>
                   </table>
                   </div>
-               
                </section>
             
             <section id="detail_class_Locatie_Gebied">
@@ -8195,22 +7883,6 @@
                         <tr>
                            <th>Mogelijk geen waarde</th>
                            <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="deepheader" id="detail_d45017e12703">
-                  <h7>Constraint details  <a href="#global_class_Locatie_Gebied">Gebied</a> TPOD1980</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>OCL</th>
-                           <td>Iedere verwijzing naar een gml­Object vanuit een Gebied moet verwijzen naar een object
-                              van type GM_Surface of GM_Multi­Surface</td>
                         </tr>
                      </tbody>
                   </table>
