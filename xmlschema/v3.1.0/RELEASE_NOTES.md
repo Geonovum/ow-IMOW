@@ -1,9 +1,9 @@
 # Release notes
 
 Versie: IMOW v3.1.0
-Behorend bij: https://docs.geostandaarden.nl/ow/def-im-imow-2024TODO/
+Behorend bij: https://docs.geostandaarden.nl/ow/imow/
 
-## Wijzigingen sinds v2.0.0
+## Wijzigingen in v3.1.0
 
 - in bestanden-ow/generiek/manifest-ow.xsd:
     - Aanlevering/DoelID : is optioneel geworden.
@@ -11,29 +11,34 @@ Behorend bij: https://docs.geostandaarden.nl/ow/def-im-imow-2024TODO/
 - Het xml-element SymbolisatieItem verwijderd.
 - attribuut gerelateerdeRegeltekst verwijderd.
 - optioneel element eigenSymbolisatie toegevoegd aan ActiviteitLocatieaanduiding, Norm en Gebiedsaanwijzing.
+- reguliere expressie gezet op eigenSymbolisatie.
 - element hoogte uit Locatie verwijderd.
 - attribuut schemaversie toegevoegd.
 - Element WaardeEenheid verwijderd omdat dat alleen in hoogte gebruikt werd.
 - Alle GML gerelateerde schema's verwijderd omdat er geen GEO in IMOW zit.
+- Reguliere expressie die voorkomen dat je een lege string kunt gebruiken
+  toegevoegd bij: Kaart.naam, Kaart.nummer, Activiteit.naam, Hoofdlijn.soort en
+  Hoofdlijn.naam
+ 
 
 ## Verbeteringen tussen v2.0.0 en v1.0.4
 
-* status en procedurestatus aangepast naar enumerations (met daarin de waarden die ze mogen bevatten)
-* ambtsgebied-object aangepast (bestuurlijkeGrenzenID toegevoegd)
-* divisietekst-object toegevoegd
-* versienummer toegevoegd als optioneel element in manifest-ow
-* Deprecated elementen weggehaald
-* * buitenBesluit (manifest-ow)
-* * specifiekeSymbolisatie (bij: activiteitlocatieaanduiding, gebiedsaanwijzing, normwaarde)
-* * NormRef (norm)
-* * Locatieaanduidingen mogen alleen het type LocatieRef hebben, de volgende Ref-soorten gaan vervallen (bij locatieaanduidingen):
-* * GebiedRef
-* * GebiedengroepRef
-* * PuntRef
-* * PuntengroepRef
-* * LijnRef
-* * LijnengroepRef
-* * Attribuut id (niet te verwarren met element: identificatie) vervalt
+- status en procedurestatus aangepast naar enumerations (met daarin de waarden die ze mogen bevatten)
+- ambtsgebied-object aangepast (bestuurlijkeGrenzenID toegevoegd)
+- divisietekst-object toegevoegd
+- versienummer toegevoegd als optioneel element in manifest-ow
+- Deprecated elementen weggehaald
+    - buitenBesluit (manifest-ow)
+    - specifiekeSymbolisatie (bij: activiteitlocatieaanduiding, gebiedsaanwijzing, normwaarde)
+    - NormRef (norm)
+    - Locatieaanduidingen mogen alleen het type LocatieRef hebben, de volgende Ref-soorten gaan vervallen (bij locatieaanduidingen):
+    - GebiedRef
+    - GebiedengroepRef
+    - PuntRef
+    - PuntengroepRef
+    - LijnRef
+    - LijnengroepRef
+    - Attribuut id (niet te verwarren met element: identificatie) vervalt
 
 ## Verbeteringen tussen v1.0.4 en v1.0.3
 
@@ -42,49 +47,49 @@ Behorend bij: https://docs.geostandaarden.nl/ow/def-im-imow-2024TODO/
 ## Verbeteringen tussen v1.0.3 en v1.0.2
 
 * SymbolisatieItem toegevoegd (als voorbereiding op het vervallen van het optionele specifiekeSymbolisatie-element)
-* * NormwaardeRef toegevoegd
+    * NormwaardeRef toegevoegd
 * Ambtsgebied toegevoegd
 * kardinaliteit van stand in standbestand aangepast (van 0 naar 1)
 * in annotation toegevoegd welke elementen gaan vervallen per 1.1
-* * buitenBesluit (manifest-ow)
-* * specifiekeSymbolisatie (bij: activiteitlocatieaanduiding, gebiedsaanwijzing, normwaarde)
-* * NormRef (norm)
-* * Locatieaanduidingen mogen alleen het type LocatieRef hebben, de volgende Ref-soorten gaan vervallen (bij locatieaanduidingen):
-* * GebiedRef
-* * GebiedengroepRef
-* * PuntRef
-* * PuntengroepRef
-* * LijnRef
-* * LijnengroepRef
-* * Attribuut id (niet te verwarren met element: identificatie) vervalt
+    * buitenBesluit (manifest-ow)
+    * specifiekeSymbolisatie (bij: activiteitlocatieaanduiding, gebiedsaanwijzing, normwaarde)
+    * NormRef (norm)
+    * Locatieaanduidingen mogen alleen het type LocatieRef hebben, de volgende Ref-soorten gaan vervallen (bij     catieaanduidingen):
+    * GebiedRef
+    * GebiedengroepRef
+    * PuntRef
+    * PuntengroepRef
+    * LijnRef
+    * LijnengroepRef
+    * Attribuut id (niet te verwarren met element: identificatie) vervalt
 
 ## Verbeteringen tussen v1.0.2 en v1.0.1
 
-* manifest-OW aangepast om bestandsnamen te ondersteunen die beginnen met een cijfer.	
+- manifest-OW aangepast om bestandsnamen te ondersteunen die beginnen met een cijfer.	
 
 ## Verbeteringen tussen v1.0.1 en v1.0
 
 * Foutmeldingen van Pons-schema hersteld (verkeerde verwijzing naar OWobject)
 * Kardinaliteitsaanpassingen bij activiteit 
-* * Activiteitaanduiding kan nu meerdere keren voorkomen (t.o.v. één keer in 1.0), 
-* * de onderliggende activiteitlocatieaanduiding en activiteitref maar één keer (t.o.v. meerdere keren in 1.0)
+    * Activiteitaanduiding kan nu meerdere keren voorkomen (t.o.v. één keer in 1.0), 
+    * de onderliggende activiteitlocatieaanduiding en activiteitref maar één keer (t.o.v. meerdere keren in 1.0)
 
 ## Verbeteringen tussen v1.0 en v0.98.3.1-kern
 
-	FormeleDivisie hernoemd naar Divisie (en FormeleInhoud vervangen door Divisietekst)
-	Reguliere expressies
-		Voor waarden uit waardelijsten nieuwe regex gemaakt
-		Voor identificatie de waarde mn vervangen door mnre
-	Regelingsgebied toegevoegd
-	Identificaties toegevoegd bij Normwaarden en Juridische regels
-	ActiviteitLocatieaanduiding toegevoegd
-	Kaartmodel aangepast
-	Specifieke symbolisatie toegevoegd
-	Wijzigingen bij Normen
-		Type toegevoegd
-		Waarde van normwaarde naar norm
-		Nieuwe normwaarde ‘waardeInRegeltekst’
-	Attributen bij Pons verwijderd (leidendVanaf en leidendTot)
+- FormeleDivisie hernoemd naar Divisie (en FormeleInhoud vervangen door Divisietekst)
+- Reguliere expressies
+    - Voor waarden uit waardelijsten nieuwe regex gemaakt
+	-Voor identificatie de waarde mn vervangen door mnre
+- Regelingsgebied toegevoegd
+- Identificaties toegevoegd bij Normwaarden en Juridische regels
+- ActiviteitLocatieaanduiding toegevoegd
+- Kaartmodel aangepast
+- Specifieke symbolisatie toegevoegd
+- Wijzigingen bij Normen
+	- Type toegevoegd
+	- Waarde van normwaarde naar norm
+	- Nieuwe normwaarde ‘waardeInRegeltekst’
+- Attributen bij Pons verwijderd (leidendVanaf en leidendTot)
 
 ## Verbeteringen tussen v0.98.3.1-kern en v0.98.3-kern
 -	De GML- en xlink-schema's verwijzen nu statisch (naar de lokale bestanden) in plaats van naar de online website.
