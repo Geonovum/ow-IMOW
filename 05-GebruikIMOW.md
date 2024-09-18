@@ -117,6 +117,12 @@ bij de regelingversie. Deze regels zijn hieronder opgenomen:
 - Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen. (TPOD2050)
 - Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst verwijzen (TPOD2052).
 
+**Noot:** Wanneer in OW-aanlevering een OW-object wordt beëindigd en er
+verschijnt een nieuw OW-object met dezelfde semantische inhoud is er vermoedelijk
+sprake van een ongewijzigd OW-object.  In zo'n geval is het wenselijk om het oorspronkelijke
+OW-object ongewijzigd te laten bestaan zodat er niet onnodige veel gewijzigde objecten
+het stelsel in komen en het stelsel beter tijdreisbaar blijft.
+
 ## Het gebruik van een OW-aanlevering {#05-ow-aanlevering}
 
 Als een OP-aanlevering een regeling instelt, wijzigt of intrekt
