@@ -56,8 +56,20 @@
                   type="da:NEN3610ID"
                   minOccurs="1"
                   maxOccurs="1"/>
-               <xs:element name="soort" type="xs:string" minOccurs="1" maxOccurs="1"/>
-               <xs:element name="naam" type="xs:string" minOccurs="1" maxOccurs="1"/>
+	       <xs:element name="soort" minOccurs="1" maxOccurs="1">
+		  <xs:simpleType>
+		     <xs:restriction base="xs:string">
+		        <xs:pattern value="\S.*"/>
+		     </xs:restriction>
+		  </xs:simpleType>
+	       </xs:element>
+	       <xs:element name="naam" minOccurs="1" maxOccurs="1">
+		  <xs:simpleType>
+		     <xs:restriction base="xs:string">
+		        <xs:pattern value="\S.*"/>
+		     </xs:restriction>
+		  </xs:simpleType>
+	       </xs:element>
                <xs:element name="gerelateerdeHoofdlijn" minOccurs="0" maxOccurs="1">
                   <xs:complexType>
                      <xs:choice minOccurs="1" maxOccurs="unbounded">

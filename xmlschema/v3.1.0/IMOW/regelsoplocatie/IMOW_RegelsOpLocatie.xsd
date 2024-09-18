@@ -191,11 +191,16 @@
                      <xs:documentation source="http://www.imvertor.org/schema-info/technical-documentation">De unieke identificatie waaronder elk object van dit type bekend is. </xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="naam" type="xs:string" minOccurs="1" maxOccurs="1">
+	       <xs:element name="naam" minOccurs="1" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/schema-info/technical-documentation">Een (korte) omschrijving van de activiteit.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
+		  <xs:simpleType>
+		     <xs:restriction base="xs:string">
+		        <xs:pattern value="\S.*"/>
+		     </xs:restriction>
+		  </xs:simpleType>
+	       </xs:element>
                <xs:element name="groep"
                            type="rol:Activiteitengroep"
                            minOccurs="1"
