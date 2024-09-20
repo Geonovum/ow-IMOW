@@ -37,7 +37,7 @@ Hieronder staat een lijst met documenten en opmerkingen die relevant zijn vanuit
 het perspectief van IMOW:
 
 - Een aanlevering heeft het formaat van een ZIP bestand die je aanbiedt aan de
-  LVBB. Het LVBB bronhouderkoppelvlak [[LVBBBHKV]] schrijft de structuur van
+  LVBB. Het LVBB bronhouderkoppelvlak [[LVBBBHKV13]] schrijft de structuur van
   het ZIP bestand voor.
 - De Standaard Officiële Publicaties ([STOP](https://standaarden.overheid.nl/stop)) legt de documentstructuur
  van de tekst van het

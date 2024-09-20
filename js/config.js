@@ -29,7 +29,7 @@ let respecConfig = {
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2024-04-19",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
-  publishVersion: "4.0.0-ic",
+  publishVersion: "3.1.0",
   previousVersion: "3.0.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
   previousPublishDate: "2023-12-27",
@@ -83,11 +83,11 @@ let respecConfig = {
     },
     CIMOP: {
       id: "CIMOP",
-      title: "Conceptueel Informatiemodel Omgevingswet (CIMOW)",
-      href: "https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf",
+      title: "Conceptueel Informatiemodel Officiële Publicaties binnen de context van de DSO-LV: versie 1.0",
+      href: "https://docs.geostandaarden.nl/dso/def-im-dso-cim-op-20240123",
       status: "Definitief",
       publisher: "Geonovum",
-      date: "2022-01-07"
+      date: "2024-01-23"
     },
     CIMOW: {
       id: "CIMOW",
@@ -97,11 +97,11 @@ let respecConfig = {
       publisher: "Geonovum",
       date: "2022-01-07"
     },
-    LVBBBHKV: {
-      id: "LVBBBHKV",
-      title: "Documentatie LVBB Bronhouderkoppelvlak",
-      href: "https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html",
-      status: "Definitief",
+    LVBBBHKV13: {
+      id: "LVBBBHKV13",
+      title: "LVBB Bronhouderkoppelvlak 1.3",
+      href: "https://standaarden.overheid.nl/stop/lvbb",
+      status: "In ontwikkeling",
       publisher: "KOOP"
     },
     IMOW: {
@@ -124,7 +124,7 @@ let respecConfig = {
       id: "STOP14",
       title: "Standaard Officiële Publicaties 1.4.0",
       href: "https://standaarden.overheid.nl/stop/doc/1.4.0/",
-      status: "Definitief",
+      status: "Ter vastsstelling",
       publisher: "KOOP"
     },
   },

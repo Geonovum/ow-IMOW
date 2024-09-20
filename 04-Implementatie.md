@@ -17,7 +17,7 @@ OW-manifest bevat niet de opsomming van de GML-bestanden; deze staan in het (OP-
 
 **Regels:**
 - Het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het xml-schema in `bestanden-ow/generiek/manifest-ow.xsd`. (LVBB1032)
-- Het xml-attribuut schemaversie in het root element van jet manifest-ow.xsl bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)
+- Het xml-attribuut schemaversie in het root element van het manifest-ow.xml bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)
 - De bestanden waar het manifest-ow.xml naar verwijst moeten bestaan. (LVBB1016)
 
 
