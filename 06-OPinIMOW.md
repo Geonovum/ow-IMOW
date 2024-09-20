@@ -7,7 +7,7 @@ beschrijft de consolidatieinformatie uit een
 Regeling. In [paragraaf 6.2](#H06-GIO) worden GIO’s beschreven. 
 In [paragraaf 6.3](#H06-GML) staan regels voor het aanleveren van GML.
 
-Zie [[!STOP14]] en het [[CIMOP]] voor meer details.
+Zie [[STOP14]] en het [[CIMOP]] voor meer details.
 
 ## ConsolidatieInformatie {#H06-ConsolidatieInformatie}
 
