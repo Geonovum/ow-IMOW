@@ -334,11 +334,11 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
     },
     "CIMOP": {
       "id": "CIMOP",
-      "title": "Conceptueel Informatiemodel Omgevingswet (CIMOW)",
-      "href": "https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf",
+      "title": "Conceptueel Informatiemodel Officiële Publicaties binnen de context van de DSO-LV: versie 1.0",
+      "href": "https://docs.geostandaarden.nl/dso/def-im-dso-cim-op-20240123",
       "status": "Definitief",
       "publisher": "Geonovum",
-      "date": "2022-01-07"
+      "date": "2024-01-23"
     },
     "CIMOW": {
       "id": "CIMOW",
@@ -348,11 +348,11 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
       "publisher": "Geonovum",
       "date": "2022-01-07"
     },
-    "LVBBBHKV": {
-      "id": "LVBBBHKV",
-      "title": "Documentatie LVBB Bronhouderkoppelvlak",
-      "href": "https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html",
-      "status": "Definitief",
+    "LVBBBHKV13": {
+      "id": "LVBBBHKV13",
+      "title": "LVBB Bronhouderkoppelvlak 1.3",
+      "href": "https://standaarden.overheid.nl/stop/lvbb",
+      "status": "In ontwikkeling",
       "publisher": "KOOP"
     },
     "IMOW": {
@@ -375,7 +375,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
       "id": "STOP14",
       "title": "Standaard Officiële Publicaties 1.4.0",
       "href": "https://standaarden.overheid.nl/stop/doc/1.4.0/",
-      "status": "Definitief",
+      "status": "Ter vastsstelling",
       "publisher": "KOOP"
     }
   },
@@ -385,7 +385,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
   "pubDomain": "ow",
   "licence": "cc-by",
   "shortName": "imow",
-  "publishVersion": "4.0.0-ic",
+  "publishVersion": "3.1.0",
   "previousVersion": "3.0.1",
   "previousPublishDate": "2023-12-27",
   "previousMaturity": "def",
@@ -466,7 +466,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.</p>
   
   <section class="notoc">
       <div class="header-wrapper"><h2 id="status-van-dit-document"> Status van dit document</h2><a class="self-link" href="#status-van-dit-document" aria-label="Permalink for this Section"></a></div>
-      <p>Dit is een werkversie waarin we de consultatieresultaten in verwerken. In appendix-A is een overzicht van de wijzigingen te vinden.</p>
+      <p>Deze versie wordt ter vaststelling naar het Opdrachtgevend Beraad van het DSO gestuurd.</p>
   </section>
   
   <section class="normative" id="inleiding"><div class="header-wrapper"><h2 id="H01-Inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#H01-Inleiding" aria-label="Permalink for Section 1."></a></div><p>Het Informatiemodel Omgevingswet (IMOW) is de toepassing van het CIM-OW op het
@@ -500,7 +500,7 @@ Hieronder staat een lijst met documenten en opmerkingen die relevant zijn vanuit
 het perspectief van IMOW:</p>
 <ul>
 <li>Een aanlevering heeft het formaat van een ZIP bestand die je aanbiedt aan de
-LVBB. Het LVBB bronhouderkoppelvlak [<cite><a class="bibref" data-link-type="biblio" href="#bib-lvbbbhkv" title="Documentatie LVBB Bronhouderkoppelvlak">LVBBBHKV</a></cite>] schrijft de structuur van
+LVBB. Het LVBB bronhouderkoppelvlak [<cite><a class="bibref" data-link-type="biblio" href="#bib-lvbbbhkv13" title="LVBB Bronhouderkoppelvlak 1.3">LVBBBHKV13</a></cite>] schrijft de structuur van
 het ZIP bestand voor.</li>
 <li>De Standaard Officiële Publicaties (<a href="https://standaarden.overheid.nl/stop">STOP</a>) legt de documentstructuur
  van de tekst van het
@@ -519,7 +519,7 @@ niet aan de regels voldoet wordt afgekeurd. Echter, automatische controle is
 niet altijd mogelijk of geïmplementeerd. In die gevallen is het de verantwoordelijkheid
 van het bevoegd gezag om aan de regel te voldoen.</li>
 <li>Het Conceptuele Model Omgevingswet [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimow" title="Conceptueel Informatiemodel Omgevingswet (CIMOW)">CIMOW</a></cite>] en het Conceptuele Model Officiële
-Publicaties [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimop" title="Conceptueel Informatiemodel Omgevingswet (CIMOW)">CIMOP</a></cite>] leggen de conceptuele basis voor het IMOW.</li>
+Publicaties [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimop" title="Conceptueel Informatiemodel Officiële Publicaties binnen de context van de DSO-LV: versie 1.0">CIMOP</a></cite>] leggen de conceptuele basis voor het IMOW.</li>
 <li>Waardelijsten geven aan wat de toegestane waardes zijn bij attributen van IMOW
 die aan een waardelijst gekoppeld zijn. Waardelijsten worden in de
 <a href="https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten">Stelselcatalogus</a>
@@ -10405,7 +10405,7 @@ OW-manifest bevat niet de opsomming van de GML-bestanden; deze staan in het (OP-
 <p><strong>Regels:</strong></p>
 <ul>
 <li>Het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het xml-schema in <code>bestanden-ow/generiek/manifest-ow.xsd</code>. (LVBB1032)</li>
-<li>Het xml-attribuut schemaversie in het root element van jet manifest-ow.xsl bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)</li>
+<li>Het xml-attribuut schemaversie in het root element van het manifest-ow.xml bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)</li>
 <li>De bestanden waar het manifest-ow.xml naar verwijst moeten bestaan. (LVBB1016)</li>
 </ul>
 <p>Zie <a href="#global_package_Aanlevering">paragraaf 2.1</a> voor een uitleg van de XML elementen in deze bestanden.</p>
@@ -10737,7 +10737,7 @@ STOP relevant is. <a href="#H06-ConsolidatieInformatie">Paragraaf 6.1</a>
 beschrijft de consolidatieinformatie uit een
 Regeling. In <a href="#H06-GIO">paragraaf 6.2</a> worden GIO’s beschreven. 
 In <a href="#H06-GML">paragraaf 6.3</a> staan regels voor het aanleveren van GML.</p>
-<p>Zie [<cite><a class="bibref" data-link-type="biblio" href="#bib-stop14" title="Standaard Officiële Publicaties 1.4.0">STOP14</a></cite>] en het [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimop" title="Conceptueel Informatiemodel Omgevingswet (CIMOW)">CIMOP</a></cite>] voor meer details.</p>
+<p>Zie [<cite><a class="bibref" data-link-type="biblio" href="#bib-stop14" title="Standaard Officiële Publicaties 1.4.0">STOP14</a></cite>] en het [<cite><a class="bibref" data-link-type="biblio" href="#bib-cimop" title="Conceptueel Informatiemodel Officiële Publicaties binnen de context van de DSO-LV: versie 1.0">CIMOP</a></cite>] voor meer details.</p>
 <section id="consolidatieinformatie"><div class="header-wrapper"><h3 id="H06-ConsolidatieInformatie"><bdi class="secno">6.1 </bdi>ConsolidatieInformatie</h3><a class="self-link" href="#H06-ConsolidatieInformatie" aria-label="Permalink for Section 6.1"></a></div><p>In het STOP-deel van de aanlevering wordt ConsolidatieInformatie meegeleverd.
 De ConsolidatieInformatie bepaalt de tijdlijn van de regelingen en
 informatieobjecten die ontstaan uit een Besluit. Diezelfde tijdlijn geldt voor
@@ -11228,17 +11228,17 @@ tot versie 3.0.1 niet meer geldig en verwijderd.</p>
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
     <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
     <dl class="bibliography"><dt id="bib-cimop">[CIMOP]</dt><dd>
-      <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf"><cite>Conceptueel Informatiemodel Omgevingswet (CIMOW)</cite></a>.  Geonovum. 2022-01-07. Definitief. URL: <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf">https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf</a>
+      <a href="https://docs.geostandaarden.nl/dso/def-im-dso-cim-op-20240123"><cite>Conceptueel Informatiemodel Officiële Publicaties binnen de context van de DSO-LV: versie 1.0</cite></a>.  Geonovum. 2024-01-23. Definitief. URL: <a href="https://docs.geostandaarden.nl/dso/def-im-dso-cim-op-20240123">https://docs.geostandaarden.nl/dso/def-im-dso-cim-op-20240123</a>
     </dd><dt id="bib-cimow">[CIMOW]</dt><dd>
       <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf"><cite>Conceptueel Informatiemodel Omgevingswet (CIMOW)</cite></a>.  Geonovum. 2022-01-07. Definitief. URL: <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf">https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf</a>
-    </dd><dt id="bib-lvbbbhkv">[LVBBBHKV]</dt><dd>
-      <a href="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html"><cite>Documentatie LVBB Bronhouderkoppelvlak</cite></a>.  KOOP. Definitief. URL: <a href="https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html">https://koop.gitlab.io/lvbb/bronhouderkoppelvlak/index.html</a>
+    </dd><dt id="bib-lvbbbhkv13">[LVBBBHKV13]</dt><dd>
+      <a href="https://standaarden.overheid.nl/stop/lvbb"><cite>LVBB Bronhouderkoppelvlak 1.3</cite></a>.  KOOP. In ontwikkeling. URL: <a href="https://standaarden.overheid.nl/stop/lvbb">https://standaarden.overheid.nl/stop/lvbb</a>
     </dd><dt id="bib-mim12">[MIM12]</dt><dd>
       <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/"><cite>MIM - Metamodel Informatie Modellering (Versie 1.2)</cite></a>.  Geonovum. 2024-06-13. Definitief. URL: <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/">https://docs.geostandaarden.nl/mim/def-st-mim-20240613/</a>
     </dd><dt id="bib-nen3610_2022">[NEN3610_2022]</dt><dd>
       <a href="https://www.nen.nl/nen-3610-2022-nl-296137"><cite>Basismodel geo-informatie</cite></a>.  NEN. 2020-06-20. Definitief. URL: <a href="https://www.nen.nl/nen-3610-2022-nl-296137">https://www.nen.nl/nen-3610-2022-nl-296137</a>
     </dd><dt id="bib-stop14">[STOP14]</dt><dd>
-      <a href="https://standaarden.overheid.nl/stop/doc/1.4.0/"><cite>Standaard Officiële Publicaties 1.4.0</cite></a>.  KOOP. Definitief. URL: <a href="https://standaarden.overheid.nl/stop/doc/1.4.0/">https://standaarden.overheid.nl/stop/doc/1.4.0/</a>
+      <a href="https://standaarden.overheid.nl/stop/doc/1.4.0/"><cite>Standaard Officiële Publicaties 1.4.0</cite></a>.  KOOP. Ter vastsstelling. URL: <a href="https://standaarden.overheid.nl/stop/doc/1.4.0/">https://standaarden.overheid.nl/stop/doc/1.4.0/</a>
     </dd></dl>
   </section><section id="informatieve-referenties">
     <div class="header-wrapper"><h3 id="b-2-informatieve-referenties"><bdi class="secno">B.2 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix B.2"></a></div>
