@@ -16,9 +16,7 @@ let respecConfig = {
   //-- zie: https://geonovum.github.io/handleiding-tooling/ReSpec/#pubdomain
   pubDomain: "ow",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
-  //licence: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
-  //licence: "cc0",                 // Public Domain Dedication
-  licence: "cc-by",                 // Attribution, met bronvermelding
+  license: "cc-by",                 // Attribution, met bronvermelding
   // (komt in de URL: kies logische afkorting)--------------
   shortName: "imow",
   
