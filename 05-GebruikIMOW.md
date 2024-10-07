@@ -120,8 +120,8 @@ bij de regelingversie. Deze regels zijn hieronder opgenomen:
 **Noot:** Wanneer in OW-aanlevering een OW-object wordt beëindigd en er
 verschijnt een nieuw OW-object met dezelfde semantische inhoud is er vermoedelijk
 sprake van een ongewijzigd OW-object.  In zo'n geval is het wenselijk om het oorspronkelijke
-OW-object ongewijzigd te laten bestaan zodat er niet onnodige veel gewijzigde objecten
-het stelsel in komen en het stelsel beter tijdreisbaar blijft.
+OW-object ongewijzigd te laten bestaan zodat er niet onnodig veel gewijzigde objecten
+het stelsel in komen.
 
 ## Het gebruik van een OW-aanlevering {#05-ow-aanlevering}
 
