@@ -114,7 +114,6 @@ bij de regelingversie. Deze regels zijn hieronder opgenomen:
   maximaal één Pons-object. (OZON0104)
 - Bij een Lid of Artikel met een STOP-element Inhoud moet er precies één Regeltekst-object zijn (TPOD2050)
 - Een Lid of Artikel zonder een Inhoud-element mag geen Regeltekst-object hebben. (TPOD2061)
-- Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen. (TPOD2050)
 - Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst verwijzen (TPOD2052).
 
 **Noot:** Wanneer in OW-aanlevering een OW-object wordt beëindigd en er
