@@ -2,14 +2,19 @@
 
 Dit hoofdstuk beschrijft onderdelen van STOP die relevant zijn voor het IMOW. Enkele
 dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de
-STOP relevant is. [Paragraaf 6.1](#H06-ConsolidatieInformatie)
+STOP relevant is. [paragraaf 6.1](#H06-01-ConsolidatieInformatie)
 beschrijft de consolidatieinformatie uit een
-Regeling. In [paragraaf 6.2](#H06-GIO) worden GIO’s beschreven. 
-In [paragraaf 6.3](#H06-GML) staan regels voor het aanleveren van GML.
+Regeling. In [paragraaf 6.2](#H06-02-GIO) worden GIO’s beschreven. 
+In [paragraaf 6.3](#H06-04-GML) staan regels voor het aanleveren van GML.
+
+In [paragraaf 6.3](#06-03-JuridischeBorging) worden regels vastgelegd over
+de relatie tussen OW-objecten en GIO's. Dit is de enige normatieve paragraaf
+van dit hoofdstuk. De andere paragrafen verwijzen naar regel en informatie
+vastgelegd in de STOP standaard [[STOP14]].
 
 Zie [[STOP14]] en het [[CIMOP]] voor meer details.
 
-## ConsolidatieInformatie {#H06-ConsolidatieInformatie}
+## ConsolidatieInformatie {#H06-01-ConsolidatieInformatie}
 
 In het STOP-deel van de aanlevering wordt ConsolidatieInformatie meegeleverd.
 De ConsolidatieInformatie bepaalt de tijdlijn van de regelingen en
@@ -38,11 +43,11 @@ Dit is één van de twee soorten informatieobjecten die in STOP kunnen worden
 meegeleverd (de andere zijn PDF-documenten). [Figuur 12](#cim-op-gio) bevat het UML diagram 
 van de 'GIO versie' uit het CIM-OP. Voor IMOW zijn de volgende aspecten van belang:
 
-- Een 'Gio vaststelling' stelt een versie van een GIO vast. Hierin heeft iedere
+- Een 'GIO vaststelling' stelt een versie van een GIO vast. Hierin heeft iedere
 Geometrie een id attribuut in de vorm van een UUID. Wanneer in IMOW middels
 GeometrieRef naar een Geometrie wordt verwezen wordt deze UUID gebruikt.
 - Sommige GIO's bevatten informatie over normen.
-- Een 'Gio vaststelling' bevat 'Geografische context' die informatie bevat over
+- Een 'GIO vaststelling' bevat 'Geografische context' die informatie bevat over
   de context ten opzichte waarvan het GIO is vastgesteld.
 - FRBRWork en FRBRExpression bevatten de identificatie van het GIO.
 - Een GIO bevat één of meer Locatie objecten. Deze Locaties komen niet overeen
@@ -64,10 +69,10 @@ een 'Normwaarde'. Hiervoor geldt:
 - 'Norm ID': De URI uit de IMOW-waardelijst 'TypeNorm'.
 - De naam van de Norm aan de OW-kant.
 - De attributen 'Kwalitatief' en 'Kwantitatief' moeten overeenkomen met de
- gelijknamige kenmerken in OW.
+  gelijknamige kenmerken in OW.
 - Hoewel de Geometrie gedeeld wordt tussen STOP en OW-objecten geldt dit
   niet voor de norm-gegeven. Deze worden dus twee keer uitgewisseld maar
- moeten wel met elkaar overeenkomen.
+  moeten wel met elkaar overeenkomen.
 - Het is toegestaan om een geometrie die gebruikt wordt voor een Norm ook te 
   gebruiken bij andere OW-objecten.
 - Iedere normwaarde dient een symbolisatie te hebben, dit wordt vastgelegd
@@ -78,6 +83,48 @@ een 'Normwaarde'. Hiervoor geldt:
     <figcaption>GIO in CIM-OP</figcaption>
 </figure>
 
+## Juridische Borging Van in GIO {#06-03-JuridischeBorging}
+
+Deze paragraaf is normatief.
+
+GIO's en OW-objecten worden in verschillende (bijna afzonderdelijke) modellen
+aangeleverd. Om in het stelsel te kunnen achterhalen welke OW-objecten en
+GIO's bij elkaar horen kun je in de STOP standaard bij een GIO met een [JuridischeBorgingVan](https://koop.gitlab.io/stop/standaard/1.4.0-ic/gio-juridische-borging.html)
+element aangeven welk OW-object geometrisch ' eén op één overeenkomt met de GIO.
+
+Een vereiste in het stelsel is dat alle in OW aangeleverde geometrie ten minste
+eenmaal in een GIO is geborgd. Meestal zal verwijzing naar een 
+gebiedsaanwijzing, een locatiegroep, of een norm(waarde) zijn.
+
+**Constraint:** Het veld JuridischBorgingVan behorend bij een GIO heeft maximaal één
+kenmerk JuridischeBorgVan met domein = 'http://www.geostandaarden.nl/imow/'.
+De waarde van domeinObjectID is dan de idenficatie van een OW-object behorend
+bij de Regeling die de betreffende GIO als geboorteregeling heeft. en die geometrisch
+exact overeenkomt.
+
+**Constraint:** **TODO** willen we ook dat er maximaal 1 GIO naar een OW-object mag
+verwijzen? Deze regel is wel bij GISKIT ingebouwd:
+> De verwijzing is bij ons uniek, dat wil zeggen iedere GIO verwijst naar 1
+> OW-object en ieder OW-object heeft maximaal 1 GIO die daarnaar verwijst. (De
+> verzameling van OW-locaties behorende bij een GIO hoeft niet uniek te zijn)
+
+**Constraint:** JuridischeBorgingVan moet naar een bestaand OW-object verwijzen.
+
+Een OW-object waar de verwijzing naar is, mag niet worden ‘omgehangen’
+naar een andere GIO. Anders gezegd:
+
+**Constraint:**  juridischeBorgingVan mag niet muteren.
+
+> **TODO** Dit is in tegenspraak met wat er bij de waterschappen gebeurt. Zij gooien bij een edit alle OW-objecten weg.
+
+Een verwijzing met een GIO gebeurt op he niveau waarom de juridische context
+vraagt. Dit is vaak op het 'hoogste' niveau.
+
+**Constraint:** Als er verschillende OW-objecten zijn die geometrisch equivalent
+zijn met de GIO dan verwijst JuridischeBorgingVan in volgorde van vookeur
+naar: Norm, Gebiedsaanwijzing, ActiviteitLocatieAanduiding, Locatiegroep, Locatie.
+
+\
 ## Regels voor het aanleveren van GML {#H06-GML}
 
 OW Geometrie objecten worden aangeleverd via het GIO in GML. Voor de
@@ -106,8 +153,8 @@ underscore beginnen.
 worden standaard uitgewisseld met een nauwkeurigheid van 1 mm of het
 equivalent daarvan in graden. Voor RD, NAP en ETRS89 komt dat overeen met de
 volgende nauwkeurigheden:
-    - RD in meters 3 decimalen (1 mm);</li>
-    - NAP-hoogte in meters 3 decimalen (1 mm);</li>
+    - RD in meters 3 decimalen (1 mm);
+    - NAP-hoogte in meters 3 decimalen (1 mm);
     - ETRS89-breedte in graden 8 decimalen (1,1 mm)
     - ETRS89-lengte in graden 8 decimalen (0,7 mm)
     - ETRS89-hoogte in meters 3 decimalen (1 mm)
@@ -115,6 +162,6 @@ volgende nauwkeurigheden:
 Het functioneren van de landelijke voorziening wordt gewaarborgd door geometrie
 die ver buiten Nederland en exclusieve economische zone ligt te weigeren.
 
-**Regel:** Alle geometrieën in een omgevingsdocument moeten liggen binnen
+**Constraint:** Alle geometrieën in een omgevingsdocument moeten liggen binnen
 de geometrie van Nederland met inbegrip van de exclusieve economische zone (EEZ).
 

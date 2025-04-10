@@ -124,11 +124,16 @@ van een regeling of regelingversie bepaalt. (bron: [STOP 2.0](https://koop.gitla
 <dfn>BHKV</dfn>: Zie <a>Bronhouderkoppelvlak</a>.
 
 <dfn>Bronhouderkoppelvlak</dfn>: Het bronhouderkoppelvlak (BHKV) is een
-technische voorziening tussen de LVBB (Landelijke Voorziening Bekendmaken en
-Beschikbaar stellen) en (software van) een bevoegd gezag. In dat koppelvlak
+technische voorziening tussen de <a>LVBB</a> en (software van) een bevoegd
+gezag. In dat koppelvlak
 worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke,
 proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron:
 [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html))
+
+<dfn>GIO</dfn>: Geografisch Informatie Object (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html))
+
+<def>LVBB</dfn>: Landelijke Voorziening Bekendmaken en
+Beschikbaar stellen
 
 <dfn>Regeling</dfn>: De regeling van een omgevingsdocument bevat de volledige set regels of beleidsteksten die gelden in de fysieke leefomgeving, dan wel de beschrijving van wat er wordt gerealiseerd in de fysieke leefomgeving.
 

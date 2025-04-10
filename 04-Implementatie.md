@@ -10,49 +10,60 @@ versienummer van deze xsd's is: 'v3.1.0'.
 
 ## OW-aanlevering en OW-manifest {#H04-OW-aanlevering}
 
-Een aanlevering aan de LVBB bevat altijd een bestand met de naam naam `manifest-ow.xml`. Dit
-is het OW-manifest. Daarnaast bevat de OW-aanlevering
+Een aanlevering aan de LVBB bevat altijd een OW-manifest. Dit is het
+bestand met de naam naam `manifest-ow.xml`. Daarnaast bevat de OW-aanlevering
 0 of meer bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het
 OW-manifest bevat niet de opsomming van de GML-bestanden; deze staan in het (OP-)manifest.
 
-**Regels:**
-- Het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het xml-schema in `bestanden-ow/generiek/manifest-ow.xsd`. (LVBB1032)
-- Het xml-attribuut schemaversie in het root element van het manifest-ow.xml bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)
-- De bestanden waar het manifest-ow.xml naar verwijst moeten bestaan. (LVBB1016)
+**Constraint:** het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het
+xml-schema in `bestanden-ow/generiek/manifest-ow.xsd`. (LVBB1032)
 
+**Constraint:** het xml-attribuut schemaversie in het root element van het
+manifest-ow.xml bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)
 
+**Constraint:** de bestanden waar het manifest-ow.xml naar verwijst moeten bestaan. (LVBB1016)
 
 Zie [paragraaf 2.1](#global_package_Aanlevering) voor een uitleg van de XML elementen in deze bestanden.
 
 ### Het aanleveren van OW-objecten in OW-bestanden {#H04-aanlevereisen}
 
-In het OW-manifest is beschreven welke OW-bestanden er zijn. Relaties in het IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten op te nemen.
+In het OW-manifest is beschreven welke OW-bestanden er zijn. Relaties in het
+IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten
+op te nemen.
 
-**Regels:**
-- OW-bestanden moeten voldoen aan het xml-schema in `bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd"` (TPOD1161)
-- Het xml-attribuut schemaversie in het root element owBestand bevat het versienummer van het gebruikte xsd. (TPOD1162)
-- Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met artikelstructuur  mogen geen andere dan de volgende OW-objecten worden aangeleverd: Regeltekst, Juridische regel, Activiteit,
-Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart, Kaartlaag  en Regelingsgebied.
-- Bij een OW-aanlevering behorend bij een besluit over een omgevingsdocument met vrijetekststructuur mogen geen andere dan de volgende OW-objecten worden aangeleverd: Divisietekst, Tekstdeel,
-Hoofdlijn, Gebiedsaanwijzing, Kaart, Kaartlaag, Regelingsgebied en Locatie.
+**Constraint:** OW-bestanden moeten voldoen aan het xml-schema in
+`bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd` (TPOD1161)
+
+**Constraint:** Het xml-attribuut schemaversie in het root element owBestand bevat
+het versienummer van het gebruikte xsd. (TPOD1162)
+
+**Constraint:** Bij een OW-aanlevering behorend bij een besluit over een
+omgevingsdocument met artikelstructuur  mogen geen andere dan de volgende
+OW-objecten worden aangeleverd: Regeltekst, Juridische regel, Activiteit,
+Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart,
+Kaartlaag  en Regelingsgebied. (TPOD2420)
+
+**Constraint:** Bij een OW-aanlevering behorend bij een besluit over een
+omgevingsdocument met vrijetekststructuur mogen geen andere dan de volgende
+OW-objecten worden aangeleverd: Divisietekst, Tekstdeel, Hoofdlijn,
+Gebiedsaanwijzing, Kaart, Kaartlaag, Regelingsgebied en Locatie. (TPOD2421)
 
 ### Het aanleveren van Geometrie-objecten
 
 Geometrie-objecten in het IMOW zijn gedeeld door STOP en IMOW en worden conform
-STOP als onderdeel van het GIO aangeleverd. Ze zitten niet in een OW-aanlevering.
+STOP als onderdeel van het GIO aangeleverd.
 Vanuit de OW-objecten Gebied, Lijn en Punt wordt middels de relatie 'geometrie'
 verwezen naar de geometrie in het GIO. Deze verwijzing gebeurt via het 'id'
 attribuut in het GIO.
 
-In vrijwel alle gevallen moet de geometrie van een Locatie binnen het ambtsgebied
-van het bevoegd gezag vallen. Vanwege enkele uitzonderingen op deze regel worden
+Enkele uitzonderingen daargelaten valt de geometrie van een Locatie binnen het ambtsgebied
+van het bevoegd gezag. Vanwege enkele uitzonderingen op deze regel worden
 aanleveringen die hier niet aan voldoen niet geweigerd, wel kan een waarschuwing
 gegeven worden.
 
 ## Regels voor OW-Aanlevering
 
-Bij het aanleveren dient er rekening gehouden te worden met de volgende
-aspecten:
+Bij het aanleveren gelden regels over de volgende aspecten:
 
 - [Identificatie van objecten](#H04-Identificatie)
 - [Waardelijsten](#H04-Waardelijsten)
@@ -69,8 +80,9 @@ met een identificatie van het object binnen het domein van het bevoegd gezag
 dat het besluit neemt waarmee de regeling wordt ingesteld of gewijzigd.
 
 De wijze van het identificeren van objecten in het IMOW volgt de
-NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:
+NEN3610-standaard.
 
+**Constraint:** De identificatie van een OW-object voldoet aan de volgende reguliere expressie:
 ```re
 'nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\.'
 '(regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|'
@@ -78,25 +90,28 @@ NEN3610-standaard. De identificatie volgt de volgende reguliere expressie:
 'divisie|kaartlaag|juridischeregel|activiteitlocatieaanduiding|normwaarde|regelingsgebied|'
 'ambtsgebied|divisietekst)\.[A-Za-z0-9]{1,32}'
 ```
+(TPOD1891)
 
 | Onderdeel van de reguliere expressie | Betekenis                                                                                                                                                                                                                                     |
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `nl.imow-`                           | Alle gegevens die worden aangeleverd vanuit het IMOW dienen te starten met nl.imow-                                                                                                                                                           |
-| `(gm\|pv\|ws\|mn\|mnre)`             | keuze voor een code voor de bestuurslaag van het bevoege gezag : gm voor gemeente, pv voor provincie, ws voor waterschap of mnre voor ministerie. Het bevoegd gezag neemt het besluit neemt waarmee de Regeling wordt ingesteld of gewijzigd. |
+| `(gm\|pv\|ws\|mn\|mnre)`             | Code voor de bestuurslaag van het bevoegd gezag dat het besluit neemt waarmee de Regeling wordt ingesteld of gewijzigd. gm voor gemeente, pv voor provincie, ws voor waterschap of mnre voor ministerie.  |
 | `[0-9]{1,6}`                         | De identificatie moet de code (uit de STOP-waardelijst voor gemeente, waterschap, provincie of ministerie) bevatten van het bevoegd gezag dat het besluit neemt waarmee de Regeling wordt ingesteld of gewijzigd.                             |
 | `.`                                  | een punt                                                                                                                                                                                                                                      |
 | `(regeltekst\| ... \|divisietekst)`  | De naam van het OW-objecttype van het object waar de identificatie betrekking op heeft heeft                                                                                                                                                  |
-| `[A-Za-z0-9]{1,32}`                  | Een codereeks van minimaal 1 en maximaal 32 alfanumerieke tekens, te bepalen door het bevoegd gezag                                                                                                                                           |
+| `[A-Za-z0-9]{1,32}`                  | Een reeks van minimaal 1 en maximaal 32 alfanumerieke tekens, te bepalen door het bevoegd gezag                                                                                                                                           |
 
-De  identificatie als geheel wordt dan bijvoorbeeld: `nl.imow-gm0200.gebied.2019000001`
+De identificatie als geheel wordt dan bijvoorbeeld: `nl.imow-gm0200.gebied.2019000001`
 
 ### Waardelijsten {#H04-Waardelijsten}
 
 Voor attributen waarvan de waarde uit een waardelijst komt zijn de toegestane
 waarden te vinden in de [Stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten).
 
-**Regel:** Een attribuut waarvoor een waarde uit een waardelijst moet worden
-gekozen, moet de uri van die waarde uit de betreffende waardelijst in de [Stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten) bevatten. (TPOD1300)
+**Constraint:** Een attribuut waarvoor een waarde uit een waardelijst moet worden
+gekozen, moet de uri van die waarde uit de betreffende waardelijst in
+de [Stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten)
+bevatten. (TPOD1300)
 
 ### Toekennen van OW-objecten aan regelingen {#H04-Toekennen}
 
@@ -105,22 +120,26 @@ de OW-objecten die in dat besluit ontstaan bij die regeling. Je kunt OW-objecten
 alleen wijzigen in wijzigingsbesluiten die die betreffende regeling wijzigen. Dit is
 vastgelegd in de volgende regels:
 
-**Regel:** Het WorkIDRegeling van de OW-Aanlevering waarin een OW-object
-ontstaat bepaalt bij welke regeling een OW-object hoort.
+**Constraint:** Een OW-object hoort bij de regeling met het WorkIDRegeling
+van de OW-Aanlevering waarin het OW-object ontstaat. (TPOD2142)
 
-**Regel:** Een OW-object mag alleen gewijzigd worden in een
+**Constraint:** Een OW-object mag alleen gewijzigd worden in een
 OW-aanlevering die hoort bij een besluit dat de regeling wijzigt waar het
 OW-object bij hoort. (TPOD1200)
 
 ### Verwijzingen tussen OW-objecten {#H04-Verwijzen}
 
-Een actief OW-object mag niet verwijzen naar een beëindigd OW-object.
-Daarom moet een besluit dat een OW-object beëindigt ook alle verwijzingen naar
-dat OW-object beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen KAN wijzigen.
-Daarom gelden de volgende regels die verwijzingen naar OW-objecten van andere bevoegd gezagen inperken:
+**Constraint:** een OW-object met status = 'actief' mag niet verwijzen naar een
+OW-object met status = 'beëindigd'. (TPOD1900)
 
-**Regel:** (TPOD1950):
+Deze regel geldt ook voor verwijzingen naar OW-objecten in andere regelingen. Daarnaast 
+is er een juridsche eis dat een bevoegd gezag altijd een regeling moet kunnen intrekken.
+Daarom moet een besluit dat en regeling intrekt ook alle verwijzingen die naar OW-objecten
+in die regeling wijzen beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen
+KAN wijzigen. Daarom gelden de volgende regels die verwijzingen naar OW-objecten van
+andere bevoegd gezagen inperken:
 
+**Constraint:** (TPOD1950):
 - Een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel
   mag alleen verwijzen naar een OW-object behorend bij een regeling van
   hetzelfde bevoegd gezag, met uitzondering van de relatie
@@ -133,8 +152,8 @@ Daarom gelden de volgende regels die verwijzingen naar OW-objecten van andere be
   uitzondering van de relatie bovenliggendeActiviteit van de tophaak-Activiteit
   van het tijdelijk regelingdeel, waarvoor de specifieke regels van TPOD1954 gelden.
 
-**Regel:** een vastgestelde regeling mag geen verwijzingen bevatten naar OW-objecten
-in een ontwerpregeling. (TPOD1940)
+**Constraint:** een OW-object behorend bij een vastgestelde regeling mag niet
+verwijzing naar een OW-object in een ontwerpregeling. (TPOD1940)
 
 ### Tophaken en de bovenliggendeActiviteit {#H04-FunctioneleStructuur}
 
@@ -152,17 +171,16 @@ Omgevingsregeling. De regels in deze paragaaf zorgen ervoor dat de hiërarchie
 van de functionele structuur behouden blijft bij wijzigingen.
 
 <figure id="fig-FunctioneleStructuur">
-  <img src='media/FunctioneleStructuur.png' style='width: 70%;'></img>
+  <img src='media/FunctioneleStructuur.png' style='width: 70%;' />
   <figcaption>: de top van de hiërarchie van de functionele structuur</figcaption>
 </figure>
 
 De volgende regel schrijft de naam en aanwezigheid van een tophaak Activiteit in
 regelingen voor:
 
-**Regel:** (TPOD1951): Met uitzondering van AMvB en ministeriële
+**Constraint:** (TPOD1951): Met uitzondering van AMvB en ministeriële
 regeling moet in iedere Regeling waarin één of meer Activiteiten zijn
 geannoteerd één zogenaamde tophaak voorkomen:
-
 - voor de omgevingsverordening is dat de meest bovenliggende Activiteit van die
   Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in de
   omgevingsverordening &lt;naam provincie&gt;’;
@@ -173,19 +191,17 @@ geannoteerd één zogenaamde tophaak voorkomen:
   Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in het
   omgevingsplan gemeente &lt;naam gemeente&gt;’.
 
-De volgende regels schrijven voor hoe de relatie bovenliggendeActiviteit moet
-worden ingevuld:
+Voor de relatie bovenliggendeActiviteit moet gelden de volgende regels:
 
-**Regel:** (TPOD1952):  Voor omgevingsverordening,
+**Constraint:** voor omgevingsverordening,
 waterschapsverordening en omgevingsplan geldt, in afwijking van het bepaalde in
 regel TPOD1950, dat de relatie bovenliggendeActiviteit
 van een Activiteit niet zijnde de tophaak uitsluitend mag verwijzen naar een
-andere Activiteit die hoort bij dezelfde Regeling.
+andere Activiteit die hoort bij dezelfde Regeling. (TPOD1952)
 
-**Regel:** (TPOD1953) Voor de relatie bovenliggendeActiviteit van de tophaken
+**Constraint:** (TPOD1953) Voor de relatie bovenliggendeActiviteit van de tophaken
 geldt, in afwijking van het bepaalde in paragraaf TPOD1950,
 het volgende:
-
 - in de omgevingsverordening moet de relatie bovenliggendeActiviteit van de
   tophaak verwijzen naar de 'Activiteit gereguleerd in de omgevingsverordening'
   in de Placeholder-Regeling;
@@ -204,15 +220,15 @@ het volgende:
 
 Voor de tophaken van tijdelijk regelingdelen geldt de volgende regel:
 
-**Regel:** (TPOD1954):
-
+**Constraint:** (TPOD1954):
 - in een tijdelijk regelingdeel waarin één of meer Activiteiten zijn geannoteerd
   moet één zogenaamde tophaak voorkomen;
 - de tophaak is de meest bovenliggende Activiteit van het tijdelijk
   regelingdeel;
 - de naam van de tophaak annex de meest bovenliggende Activiteit moet zijn
   ‘Activiteit gereguleerd in &lt;citeertitel tijdelijk regelingdeel&gt;’;
-- voor een tijdelijk regelingdeel geldt dat de relatie bovenliggendeActiviteit
-  van de tophaak moet verwijzen naar de tophaak van de regeling waaraan het
+- voor een tijdelijk regelingdeel moet de relatie bovenliggendeActiviteit
+  van de tophaak verwijzen naar de tophaak van de regeling waaraan het
   tijdelijk regelingdeel door middel van het element isTijdelijkdeelVan
   gekoppeld is.
+

@@ -50,7 +50,7 @@ Wanneer een OW-object wordt aangeleverd met een identificatie die nog niet
 bestond in de tijdlijn van de Regeling ontstaat een nieuw OW-object. Voor een
 nieuw object geldt de volgende regel:
 
-**Regel:** Een nieuw OW-object mag niet de status beëindigd hebben. (OZON0104).
+**Constraint:** Een nieuw OW-object mag niet de status beëindigd hebben. (TPOD0104)
 
 ### Een OW-object wijzigen
 
@@ -58,13 +58,13 @@ Wanneer een OW-object wordt aangeleverd met een identificatie die al bestond in
 de tijdlijn van de Regeling vervangt het aangeleverde OW-object het bestaande
 OW-object.
 
-**Regel:** Een wijziging van een OW-object moet daadwerkelijk een kenmerk van
-het OW-object wijzigen. (OZON0108).
+**Constraint:** Een wijziging van een OW-object moet daadwerkelijk een kenmerk van
+het OW-object wijzigen. (TPOD0108)
 
 Een kenmerk is een attribuut of uitgaande associatie van het OW-object.
 
-**Regel:** Bij het wijzigen van een OW-object moet het een instantie blijven
-van hetzelfde UML Objecttype. (OZON4005)
+**Constraint:** Bij het wijzigen van een OW-object moet het een instantie blijven
+van hetzelfde UML Objecttype. (TPOD1891)
 
 Toelichting: De objecttypen JuridischeRegel en Locatie zijn abstract (in
 het UML is de naam cursief) en hebben geen instanties. Hierdoor kun je
@@ -88,9 +88,9 @@ gedaan door beëindigd OW-object te wijzigen en weer de status actief te geven.
 Wanneer een OW-object wordt aangeleverd waarbij het veld status de waarde 'B'
 heeft dan krijgt het oorspronkelijke OW-object de status beëindigd.
 
-**Regel:** Het beëindigen van een OW-object is alleen toegestaan als de inhoud van
+**Constraint:** Het beëindigen van een OW-object is alleen toegestaan als de inhoud van
 het object, afgezien van het attribuut 'status', exact overeenkomt met de laatst
-aangeleverde OW-informatie (OZON0107).
+aangeleverde OW-informatie. (TPOD0107)
 
 ### Resultaat OW-aanlevering
 
@@ -102,19 +102,24 @@ die in de catalogus zijn opgenomen. Sommige regels gelden niet voor
 een individueel object, maar voor het totaal aan OW-objecten behorend
 bij de regelingversie. Deze regels zijn hieronder opgenomen:
 
-**Regels:**
+**Constraint:** een OW-aanlevering mag niet resulteren in wees-objecten (TPOD1900).
 
-- Een OW-aanlevering mag niet resulteren in wees-objecten (OZON0351). Wees-objecten zijn 
-  OW-objecten waar niet meer naar verwezen wordt.
-- Een OW-aanlevering mag niet resulteren in verwijzingen naar
-  OW-objecten die beëindigd zijn (OZON0109).
-- Een OW-aanlevering moet resulteren in een Regeling met daarin precies
-  één Regelingsgebied. (TPOD2180)
-- Een OW-aanlevering moet resulteren in een Regeling met daarin
-  maximaal één Pons-object. (OZON0104)
-- Bij een Lid of Artikel met een STOP-element Inhoud moet er precies één Regeltekst-object zijn (TPOD2050)
-- Een Lid of Artikel zonder een Inhoud-element mag geen Regeltekst-object hebben. (TPOD2061)
-- Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst verwijzen (TPOD2052).
+Wees-objecten zijn OW-objecten waar niet meer naar verwezen wordt.
+
+**Constraint:** een OW-aanlevering moet resulteren in een Regeling met daarin precies
+één Regelingsgebied. (TPOD2180)
+
+**Constraint:** een OW-aanlevering moet resulteren in een Regeling met daarin maximaal
+één Pons-object. (TPOD0110)
+
+**Constraint:** bij een Lid of Artikel met een STOP-element Inhoud moet er precies
+één Regeltekst-object zijn (TPOD2050)
+
+**Constraint:** een Lid of Artikel zonder een Inhoud-element mag geen Regeltekst-object
+hebben. (TPOD2061)
+
+**Constraint:** er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst
+verwijzen. (TPOD2052)
 
 **Noot:** Wanneer in OW-aanlevering een OW-object wordt beëindigd en er
 verschijnt een nieuw OW-object met dezelfde semantische inhoud is er vermoedelijk
@@ -143,9 +148,9 @@ van de regeling zijn.
 Voor een OW-aanlevering die hoort bij een Besluit dat een Regeling wijzigt
 geldt:
 
-**Regel:** De attributen 'workIDRegeling', 'doelID' en 'expresionIDRegeling' van een
+**Constraint:** De attributen 'workIDRegeling', 'doelID' en 'expresionIDRegeling' van een
 OW-aanlevering corresponderen met precies één nieuwe regelingversie die in een aanlevering
-wordt aangemaakt.
+wordt aangemaakt. (TPOD2152)
 
 ### OW-aanlevering bij rectificatie, revisie of mededeling uitspraak van de rechter
 
@@ -164,8 +169,8 @@ behorend bij de regeling op de juiste wijze beëindigt.
 In beide gevallen zal gecontroleerd worden of er nog externe verwijzingen naar de
 OW-objecten bestaan vanuit andere regelingen en zal de intrekking worden afgekeurd.
 
-**Regel:** Bij een OW-aanlevering behorend bij
- de intrekking een regeling is het veld expressionIDRegeling leeg.
+**Constraint:** Bij een OW-aanlevering behorend bij de intrekking een regeling
+is het veld expressionIDRegeling leeg. (TPOD2151)
 
 ### Het aanleveren van een Ontwerpbesluit
 

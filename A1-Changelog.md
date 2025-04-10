@@ -1,6 +1,18 @@
 # Bijlage: versiehistorie {#HA-Changelog}
 
-## omschrijving wijzigingen in versie 3.1.0 
+## wijzigingen in versie 3.2.0
+
+- Regels hernoemd naar constraints.
+- Nummers gegeven aan ongenummerde constraints.
+- Toevoeging JuridischeBorgingVan
+- OZON0104 --> TPOD0104
+- OZON0108 --> TPOD0108
+- OZON0107 --> TPOD0107
+- OZON4005 --> TPOD1891
+- OZON0351 --> TPOD1900
+- OZON0104 --> TPOD0110
+
+##  wijzigingen in versie 3.1.0 
 
 Voor de belangrijkste wijzigingen in deze versie geven we hier extra toelichting.
 
