@@ -130,7 +130,7 @@ OW-object bij hoort. (TPOD1200)
 ### Verwijzingen tussen OW-objecten {#H04-Verwijzen}
 
 **Constraint:** een OW-object met status = 'actief' mag niet verwijzen naar een
-OW-object met status = 'beëindigd'. (TPOD1900)
+OW-object met status = 'beëindigd'. (TPOD1901)
 
 Deze regel geldt ook voor verwijzingen naar OW-objecten in andere regelingen. Daarnaast 
 is er een juridsche eis dat een bevoegd gezag altijd een regeling moet kunnen intrekken.
