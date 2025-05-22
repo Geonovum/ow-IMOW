@@ -16,12 +16,10 @@ bestand met de naam naam `manifest-ow.xml`. Daarnaast bevat de OW-aanlevering
 OW-manifest bevat niet de opsomming van de GML-bestanden; deze staan in het (OP-)manifest.
 
 **Constraint:** het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het
-xml-schema in `bestanden-ow/generiek/manifest-ow.xsd`. (LVBB1032)
+xml-schema in `bestanden-ow/generiek/manifest-ow.xsd`. (TPOD1162)
 
 **Constraint:** het xml-attribuut schemaversie in het root element van het
 manifest-ow.xml bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)
-
-**Constraint:** de bestanden waar het manifest-ow.xml naar verwijst moeten bestaan. (LVBB1016)
 
 Zie [paragraaf 2.1](#global_package_Aanlevering) voor een uitleg van de XML elementen in deze bestanden.
 

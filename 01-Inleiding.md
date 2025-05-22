@@ -132,8 +132,8 @@ proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron:
 
 <dfn>GIO</dfn>: Geografisch Informatie Object (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html))
 
-<def>LVBB</dfn>: Landelijke Voorziening Bekendmaken en
-Beschikbaar stellen
+<dfn>LVBB</dfn>: Landelijke Voorziening Bekendmaken en
+Beschikbaar stellen.
 
 <dfn>Regeling</dfn>: De regeling van een omgevingsdocument bevat de volledige set regels of beleidsteksten die gelden in de fysieke leefomgeving, dan wel de beschrijving van wat er wordt gerealiseerd in de fysieke leefomgeving.
 
