@@ -102,23 +102,23 @@ die in de catalogus zijn opgenomen. Sommige regels gelden niet voor
 een individueel object, maar voor het totaal aan OW-objecten behorend
 bij de regelingversie. Deze regels zijn hieronder opgenomen:
 
-**Constraint:** een OW-aanlevering mag niet resulteren in wees-objecten (TPOD1900).
+**Constraint:** Een OW-aanlevering mag niet resulteren in wees-objecten (TPOD1900).
 
 Wees-objecten zijn OW-objecten waar niet meer naar verwezen wordt.
 
-**Constraint:** een OW-aanlevering moet resulteren in een Regeling met daarin precies
+**Constraint:** Een OW-aanlevering moet resulteren in een Regeling met daarin precies
 één Regelingsgebied. (TPOD2180)
 
-**Constraint:** een OW-aanlevering moet resulteren in een Regeling met daarin maximaal
+**Constraint:** Een OW-aanlevering moet resulteren in een Regeling met daarin maximaal
 één Pons-object. (TPOD0110)
 
-**Constraint:** bij een Lid of Artikel met een STOP-element Inhoud moet er precies
+**Constraint:** Bij een Lid of Artikel met een STOP-element Inhoud moet er precies
 één Regeltekst-object zijn (TPOD2050)
 
 **Constraint:** een Lid of Artikel zonder een Inhoud-element mag geen Regeltekst-object
 hebben. (TPOD2061)
 
-**Constraint:** er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst
+**Constraint:** Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst
 verwijzen. (TPOD2052)
 
 **Noot:** Wanneer in OW-aanlevering een OW-object wordt beëindigd en er

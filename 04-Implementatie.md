@@ -15,10 +15,10 @@ bestand met de naam naam `manifest-ow.xml`. Daarnaast bevat de OW-aanlevering
 0 of meer bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het
 OW-manifest bevat niet de opsomming van de GML-bestanden; deze staan in het (OP-)manifest.
 
-**Constraint:** het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het
+**Constraint:** Het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het
 xml-schema in `bestanden-ow/generiek/manifest-ow.xsd`. (TPOD1162)
 
-**Constraint:** het xml-attribuut schemaversie in het root element van het
+**Constraint:** Het xml-attribuut schemaversie in het root element van het
 manifest-ow.xml bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)
 
 Zie [paragraaf 2.1](#global_package_Aanlevering) voor een uitleg van de XML elementen in deze bestanden.
@@ -33,7 +33,7 @@ op te nemen.
 `bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd` (TPOD1161)
 
 **Constraint:** Het xml-attribuut schemaversie in het root element owBestand bevat
-het versienummer van het gebruikte xsd. (TPOD1162)
+het versienummer van het gebruikte xsd. (TPOD1163)
 
 **Constraint:** Bij een OW-aanlevering behorend bij een besluit over een
 omgevingsdocument met artikelstructuur  mogen geen andere dan de volgende
@@ -81,14 +81,14 @@ De wijze van het identificeren van objecten in het IMOW volgt de
 NEN3610-standaard.
 
 **Constraint:** De identificatie van een OW-object voldoet aan de volgende reguliere expressie:
-```re
-'nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\.'
-'(regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|'
-'gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|'
-'divisie|kaartlaag|juridischeregel|activiteitlocatieaanduiding|normwaarde|regelingsgebied|'
-'ambtsgebied|divisietekst)\.[A-Za-z0-9]{1,32}'
-```
-(TPOD1891)
+<code>
+'nl\.imow-(gm&#124;pv&#124;ws&#124;mn&#124;mnre)[0-9]{1,6}\.'
+'(regeltekst&#124;gebied&#124;gebiedengroep&#124;lijn&#124;lijnengroep&#124;punt&#124;puntengroep&#124;activiteit&#124;'
+'gebiedsaanwijzing&#124;omgevingswaarde&#124;omgevingsnorm&#124;pons&#124;kaart&#124;tekstdeel&#124;hoofdlijn&#124;'
+'divisie&#124;kaartlaag&#124;juridischeregel&#124;activiteitlocatieaanduiding&#124;normwaarde&#124;regelingsgebied&#124;'
+'ambtsgebied&#124;divisietekst)\.[A-Za-z0-9]{1,32}'
+</code>
+(TPOD1892)
 
 | Onderdeel van de reguliere expressie | Betekenis                                                                                                                                                                                                                                     |
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -127,8 +127,8 @@ OW-object bij hoort. (TPOD1200)
 
 ### Verwijzingen tussen OW-objecten {#H04-Verwijzen}
 
-**Constraint:** een OW-object met status = 'actief' mag niet verwijzen naar een
-OW-object met status = 'beëindigd'. (TPOD1901)
+**Constraint:** Een OW-object met status = 'actief' mag niet verwijzen naar een
+OW-object met status = 'beëindigd'. (TPOD1900)
 
 Deze regel geldt ook voor verwijzingen naar OW-objecten in andere regelingen. Daarnaast 
 is er een juridsche eis dat een bevoegd gezag altijd een regeling moet kunnen intrekken.
@@ -137,7 +137,7 @@ in die regeling wijzen beëindigen. Dit kan alleen als het bevoegd gezag die ver
 KAN wijzigen. Daarom gelden de volgende regels die verwijzingen naar OW-objecten van
 andere bevoegd gezagen inperken:
 
-**Constraint:** (TPOD1950):
+**Constraint:** (TPOD1950)
 - Een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel
   mag alleen verwijzen naar een OW-object behorend bij een regeling van
   hetzelfde bevoegd gezag, met uitzondering van de relatie
@@ -150,7 +150,7 @@ andere bevoegd gezagen inperken:
   uitzondering van de relatie bovenliggendeActiviteit van de tophaak-Activiteit
   van het tijdelijk regelingdeel, waarvoor de specifieke regels van TPOD1954 gelden.
 
-**Constraint:** een OW-object behorend bij een vastgestelde regeling mag niet
+**Constraint:** Een OW-object behorend bij een vastgestelde regeling mag niet
 verwijzing naar een OW-object in een ontwerpregeling. (TPOD1940)
 
 ### Tophaken en de bovenliggendeActiviteit {#H04-FunctioneleStructuur}
@@ -176,7 +176,7 @@ van de functionele structuur behouden blijft bij wijzigingen.
 De volgende regel schrijft de naam en aanwezigheid van een tophaak Activiteit in
 regelingen voor:
 
-**Constraint:** (TPOD1951): Met uitzondering van AMvB en ministeriële
+**Constraint:** (TPOD1951) Met uitzondering van AMvB en ministeriële
 regeling moet in iedere Regeling waarin één of meer Activiteiten zijn
 geannoteerd één zogenaamde tophaak voorkomen:
 - voor de omgevingsverordening is dat de meest bovenliggende Activiteit van die
@@ -191,7 +191,7 @@ geannoteerd één zogenaamde tophaak voorkomen:
 
 Voor de relatie bovenliggendeActiviteit moet gelden de volgende regels:
 
-**Constraint:** voor omgevingsverordening,
+**Constraint:** Voor omgevingsverordening,
 waterschapsverordening en omgevingsplan geldt, in afwijking van het bepaalde in
 regel TPOD1950, dat de relatie bovenliggendeActiviteit
 van een Activiteit niet zijnde de tophaak uitsluitend mag verwijzen naar een
@@ -218,7 +218,7 @@ het volgende:
 
 Voor de tophaken van tijdelijk regelingdelen geldt de volgende regel:
 
-**Constraint:** (TPOD1954):
+**Constraint:** (TPOD1954)
 - in een tijdelijk regelingdeel waarin één of meer Activiteiten zijn geannoteerd
   moet één zogenaamde tophaak voorkomen;
 - de tophaak is de meest bovenliggende Activiteit van het tijdelijk
