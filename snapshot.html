@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 35.1.1">
+<meta name="generator" content="ReSpec 35.3.0">
 <style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
@@ -101,7 +101,7 @@ a.bibref{text-decoration:none}
 .respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
 }
 #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
-cite .bibref{font-style:normal}
+cite .bibref{font-style:italic}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
 ol.tof,ul.tof{list-style:none outside none}
@@ -129,7 +129,14 @@ dd{margin-left:0}
 }
 </style>
 <style id="respec-nlgov">
-img.license{float:left;padding-right:5px}
+img.license{float:left;padding-right:5px;background:0 0}
+</style>
+<meta name="color-scheme" content="light">
+<style>
+
+</style>
+<style>
+
 </style>
 <meta name="description" content="Dit document beschrijft het Informatiemodel Omgevingswet (IMOW) dat gebruikt
 wordt in de keten 'Van plan tot publicatie' voor het toekennen van
@@ -182,6 +189,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
 </style>
 <script id="initialUserConfig" type="application/json">{
   "nl_organisationName": "Geonovum",
+  "nl_organisationStylesURL": "https://tools.geostandaarden.nl/respec/style/",
   "nl_organisationPublishURL": "https://docs.geostandaarden.nl/",
   "logos": [
     {
@@ -272,7 +280,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
       "sotd": "Status van dit document",
       "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
-      "cv": "Dit is een consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
+      "cv": "Dit is een consultatieversie.",
       "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "basis": "Dit is een document zonder officiële status.",
       "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
@@ -281,7 +289,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
       "sotd": "Status of this document",
       "def": "This is the definitive version of this document. Edits resulting from consultations have been applied.",
       "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
-      "cv": "This is a stable draft, published for public comment. Comments regarding this document may be sent to ",
+      "cv": "This is a stable draft, published for public comment.",
       "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
       "basis": "This document has no official standing.",
       "ld": "This is a living document, which is updated regularly."
@@ -379,17 +387,17 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
       "publisher": "KOOP"
     }
   },
-  "title": "Informatiemodel Omgevingswet (IMOW) 3.1",
-  "specStatus": "vv",
+  "title": "Informatiemodel Omgevingswet (IMOW)",
+  "specStatus": "def",
   "specType": "IM",
   "pubDomain": "ow",
   "licence": "cc-by",
   "shortName": "imow",
-  "publishDate": "2024-09-20",
-  "publishVersion": "3.1.0",
+  "publishDate": "2025-06-25",
+  "publishVersion": "3.1",
   "previousVersion": "3.0.1",
-  "previousPublishDate": "2023-12-27",
-  "previousMaturity": "def",
+  "previousPublishDate": "2024-09-20",
+  "previousMaturity": "vv",
   "editors": [
     {
       "name": "TPOD team",
@@ -406,7 +414,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
   ],
   "github": "https://github.com/Geonovum/ow-IMOW"
 }</script>
-<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
+<link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
 <body class="h-entry informative"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
@@ -414,12 +422,12 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
     
     <h2>
       Geonovum Informatiemodel<br>
-      Versie ter vaststelling
-      <time class="dt-published" datetime="2024-09-20">20 september 2024</time>
+      Vastgestelde versie
+      <time class="dt-published" datetime="2025-06-25">25 juni 2025</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://docs.geostandaarden.nl/ow/vv-im-imow-20240920">https://docs.geostandaarden.nl/ow/vv-im-imow-20240920</a>
+              <a class="u-url status" href="https://docs.geostandaarden.nl/ow/def-im-imow-20250625">https://docs.geostandaarden.nl/ow/def-im-imow-20250625</a>
             </dd>
       <dt>Laatst gepubliceerde versie:</dt><dd>
               <a href="https://docs.geostandaarden.nl/ow/imow/">https://docs.geostandaarden.nl/ow/imow/</a>
@@ -428,7 +436,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
       
       
       
-      <dt>Vorige versie:</dt><dd><a href="https://docs.geostandaarden.nl/ow/def-im-imow-20231227">https://docs.geostandaarden.nl/ow/def-im-imow-20231227</a></dd>
+      <dt>Vorige versie:</dt><dd><a href="https://docs.geostandaarden.nl/ow/vv-im-imow-20240920">https://docs.geostandaarden.nl/ow/vv-im-imow-20240920</a></dd>
       
       <dt>Redacteur:</dt>
       <dd class="editor p-author h-card vcard">
@@ -452,9 +460,9 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
     
     
     <p class="copyright">
-          Dit document valt onder de volgende licentie: 
-          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
-        </p>
+            Dit document valt onder de volgende licentie: 
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
+          </p>
     <hr title="Separator for header">
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft het Informatiemodel Omgevingswet (IMOW) dat gebruikt
@@ -471,7 +479,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.</p>
   
   <section class="notoc">
       <div class="header-wrapper"><h2 id="status-van-dit-document"> Status van dit document</h2><a class="self-link" href="#status-van-dit-document" aria-label="Permalink for this Section"></a></div>
-      <p>Deze versie wordt ter vaststelling naar het Opdrachtgevend Beraad van het DSO gestuurd.</p>
+      <p>Deze versie is vastgesteld door het Opdrachtgevend Beraad van het DSO.</p>
   </section>
   
   <section class="normative" id="inleiding"><div class="header-wrapper"><h2 id="H01-Inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#H01-Inleiding" aria-label="Permalink for Section 1."></a></div><p>Het Informatiemodel Omgevingswet (IMOW) is de toepassing van het CIM-OW op het
@@ -11228,31 +11236,7 @@ tot versie 3.0.1 niet meer geldig en verwijderd.</p>
   
   
 
-
-
-<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
-    <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
-    <dl class="bibliography"><dt id="bib-cimop">[CIMOP]</dt><dd>
-      <a href="https://docs.geostandaarden.nl/dso/def-im-dso-cim-op-20240123"><cite>Conceptueel Informatiemodel Officiële Publicaties binnen de context van de DSO-LV: versie 1.0</cite></a>.  Geonovum. 2024-01-23. Definitief. URL: <a href="https://docs.geostandaarden.nl/dso/def-im-dso-cim-op-20240123">https://docs.geostandaarden.nl/dso/def-im-dso-cim-op-20240123</a>
-    </dd><dt id="bib-cimow">[CIMOW]</dt><dd>
-      <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf"><cite>Conceptueel Informatiemodel Omgevingswet (CIMOW)</cite></a>.  Geonovum. 2022-01-07. Definitief. URL: <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf">https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf</a>
-    </dd><dt id="bib-lvbbbhkv13">[LVBBBHKV13]</dt><dd>
-      <a href="https://standaarden.overheid.nl/stop/lvbb"><cite>LVBB Bronhouderkoppelvlak 1.3</cite></a>.  KOOP. In ontwikkeling. URL: <a href="https://standaarden.overheid.nl/stop/lvbb">https://standaarden.overheid.nl/stop/lvbb</a>
-    </dd><dt id="bib-mim12">[MIM12]</dt><dd>
-      <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/"><cite>MIM - Metamodel Informatie Modellering (Versie 1.2)</cite></a>.  Geonovum. 2024-06-13. Definitief. URL: <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/">https://docs.geostandaarden.nl/mim/def-st-mim-20240613/</a>
-    </dd><dt id="bib-nen3610_2022">[NEN3610_2022]</dt><dd>
-      <a href="https://www.nen.nl/nen-3610-2022-nl-296137"><cite>Basismodel geo-informatie</cite></a>.  NEN. 2020-06-20. Definitief. URL: <a href="https://www.nen.nl/nen-3610-2022-nl-296137">https://www.nen.nl/nen-3610-2022-nl-296137</a>
-    </dd><dt id="bib-stop14">[STOP14]</dt><dd>
-      <a href="https://standaarden.overheid.nl/stop/doc/1.4.0/"><cite>Standaard Officiële Publicaties 1.4.0</cite></a>.  KOOP. Ter vastsstelling. URL: <a href="https://standaarden.overheid.nl/stop/doc/1.4.0/">https://standaarden.overheid.nl/stop/doc/1.4.0/</a>
-    </dd></dl>
-  </section><section id="informatieve-referenties">
-    <div class="header-wrapper"><h3 id="b-2-informatieve-referenties"><bdi class="secno">B.2 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix B.2"></a></div>
-    <dl class="bibliography"><dt id="bib-basisgeometrie">[Basisgeometrie]</dt><dd>
-      <a href="https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20240607/"><cite>Basisgeometrie</cite></a>.  Geonovum. 7 juni 2024. Definitief. URL: <a href="https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20240607/">https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20240607/</a>
-    </dd></dl>
-  </section></section><p role="navigation" id="back-to-top">
-    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-besluit" aria-label="Links in this document to definition: Besluit">
+<div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-besluit" aria-label="Links in this document to definition: Besluit">
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-besluit" aria-label="Permalink for definition: Besluit. Activate to close this dialog.">Permalink</a>
@@ -11296,7 +11280,69 @@ tot versie 3.0.1 niet meer geldig en verwijderd.</p>
       <a href="#ref-for-dfn-regeling-1" title="§ 1.1 Context standaard">§ 1.1 Context standaard</a> 
     </li>
   </ul>
-    </div><script id="respec-dfn-panel">(() => {
+    </div><script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
+    <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
+    <dl class="bibliography"><dt id="bib-cimop">[CIMOP]</dt><dd>
+      <a href="https://docs.geostandaarden.nl/dso/def-im-dso-cim-op-20240123"><cite>Conceptueel Informatiemodel Officiële Publicaties binnen de context van de DSO-LV: versie 1.0</cite></a>.  Geonovum. 2024-01-23. Definitief. URL: <a href="https://docs.geostandaarden.nl/dso/def-im-dso-cim-op-20240123">https://docs.geostandaarden.nl/dso/def-im-dso-cim-op-20240123</a>
+    </dd><dt id="bib-cimow">[CIMOW]</dt><dd>
+      <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf"><cite>Conceptueel Informatiemodel Omgevingswet (CIMOW)</cite></a>.  Geonovum. 2022-01-07. Definitief. URL: <a href="https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf">https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf</a>
+    </dd><dt id="bib-lvbbbhkv13">[LVBBBHKV13]</dt><dd>
+      <a href="https://standaarden.overheid.nl/stop/lvbb"><cite>LVBB Bronhouderkoppelvlak 1.3</cite></a>.  KOOP. In ontwikkeling. URL: <a href="https://standaarden.overheid.nl/stop/lvbb">https://standaarden.overheid.nl/stop/lvbb</a>
+    </dd><dt id="bib-mim12">[MIM12]</dt><dd>
+      <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/"><cite>MIM - Metamodel Informatie Modellering (Versie 1.2)</cite></a>.  Geonovum. 2024-06-13. Definitief. URL: <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/">https://docs.geostandaarden.nl/mim/def-st-mim-20240613/</a>
+    </dd><dt id="bib-nen3610_2022">[NEN3610_2022]</dt><dd>
+      <a href="https://www.nen.nl/nen-3610-2022-nl-296137"><cite>Basismodel geo-informatie</cite></a>.  NEN. 2020-06-20. Definitief. URL: <a href="https://www.nen.nl/nen-3610-2022-nl-296137">https://www.nen.nl/nen-3610-2022-nl-296137</a>
+    </dd><dt id="bib-stop14">[STOP14]</dt><dd>
+      <a href="https://standaarden.overheid.nl/stop/doc/1.4.0/"><cite>Standaard Officiële Publicaties 1.4.0</cite></a>.  KOOP. Ter vastsstelling. URL: <a href="https://standaarden.overheid.nl/stop/doc/1.4.0/">https://standaarden.overheid.nl/stop/doc/1.4.0/</a>
+    </dd></dl>
+  </section><section id="informatieve-referenties">
+    <div class="header-wrapper"><h3 id="b-2-informatieve-referenties"><bdi class="secno">B.2 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix B.2"></a></div>
+    <dl class="bibliography"><dt id="bib-basisgeometrie">[Basisgeometrie]</dt><dd>
+      <a href="https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20240607/"><cite>Basisgeometrie</cite></a>.  Geonovum. 7 juni 2024. Definitief. URL: <a href="https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20240607/">https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20240607/</a>
+    </dd></dl>
+  </section></section><p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
   document.respec.ready.then(setupPanel);
@@ -11518,4 +11564,4 @@ function hidePanel(panel) {
   panel.hidden = true;
   panel.classList.remove("docked");
 }
-})()</script><div class="sidelabel">Geonovum Informatiemodel - Versie ter vaststelling</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
+})()</script><div class="sidelabel">Geonovum Informatiemodel - Vastgestelde versie</div><script src="https://gitdocumentatie.logius.nl/publicatie/respec/fixup.js"></script></body></html>
