@@ -97,9 +97,11 @@ element aangeven welk OW-object geometrisch eén op één overeenkomt met de GIO
 één kenmerk JuridischeBorgVan met domein = 'http://www.geostandaarden.nl/imow/'.
 De waarde van domeinObjectID is de idenficatie van een actief OW-object behorend
 bij de Regeling die de betreffende GIO als geboorteregeling heeft en die geometrisch
-exact overeenkomt. 
+exact overeenkomt.
 
 **Constraint:** Bij een GIO met de verschijningsvorm GIO-mutatie is het veld verplicht.
+
+**Constraint:**  JuridischeBorgingVan is niet muteerbaar.
 
 **Constraint:** Een OW-object heeft maximaal 1 GIO die daarnaar verwijst.
 
