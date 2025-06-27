@@ -110,7 +110,7 @@ vraagt. Dit is vaak op het 'hoogste' niveau.
 zijn met de GIO dan verwijst JuridischeBorgingVan in volgorde van vookeur
 naar: Norm, Gebiedsaanwijzing, ActiviteitLocatieAanduiding, Locatiegroep, Locatie.
 
-Door deze constraints is van een aantal OW-objecten bekend dat ze 1-1 pendant zijn van een GIO. Middels logisch redeneren is de lijst met OW-objecten die 1-1 overeenkomen met een GIO uit te breiden. Een voorbeeld van zo'n regel is:
+Door deze constraints is van een aantal OW-objecten bekend dat ze 1-1 pendant zijn van een GIO. Door de volgende logische regels toe te passen is dit aantal uit te breiden:
 
 - ALS een Gebiedsaanwijzing de juridische borging van een GIO is en die gebiedsaanwijzing verwijst naar één Locatie DAN komt die Locatie ook geometrisch 1-1 overeen met de GIO.
 - ALS een Locatiegroep de de juridische borging van een GIO is en die gebiedsLocatiegroep verwijst naar één Locatie DAN komt die Locatie ook geometrisch 1-1 overeen met de GIO.
@@ -118,8 +118,7 @@ Door deze constraints is van een aantal OW-objecten bekend dat ze 1-1 pendant zi
 
 Op deze manier kan van veel Locaties (maar niet alle) vastgesteld worden dat ze 1-1 overeenkomen met een GIO. 
 
-Dit betekent ook dat als de betreffende GIO wordt gemuteerd middels GIO-muteren de wijzigmarkeringen behorend bij de GIO mutatie ook als wijzmarkering gebruikt kunnen worden voor het corresponderende OW-object.
-
+Dit betekent ook dat als de betreffende GIO wordt gemuteerd middels GIO-muteren de wijzigmarkeringen behorend bij de GIO mutatie ook als wijzmarkering gelden voor het corresponderende OW-object.
 
 ## Regels voor het aanleveren van GML {#H06-GML}
 
