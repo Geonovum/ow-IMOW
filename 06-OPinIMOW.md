@@ -88,34 +88,20 @@ een 'Normwaarde'. Hiervoor geldt:
 Deze paragraaf is normatief.
 
 GIO's en OW-objecten worden in verschillende (bijna afzonderdelijke) modellen
-aangeleverd. Om in het stelsel te kunnen achterhalen welke OW-objecten en
-GIO's bij elkaar horen kun je in de STOP standaard bij een GIO met een [JuridischeBorgingVan](https://koop.gitlab.io/stop/standaard/1.4.0-ic/gio-juridische-borging.html)
-element aangeven welk OW-object geometrisch ' eén op één overeenkomt met de GIO.
+aangeleverd. Om  te kunnen achterhalen welke OW-objecten en
+GIO's bij elkaar horen is het mogelijk bij een GIO met een [JuridischeBorgingVan](https://koop.gitlab.io/stop/standaard/1.4.0-ic/gio-juridische-borging.html)
+element aangeven welk OW-object geometrisch eén op één overeenkomt met de GIO en daarmee de OW pendant is van de GIO.
 
-Een vereiste in het stelsel is dat alle in OW aangeleverde geometrie ten minste
-eenmaal in een GIO is geborgd. Meestal zal verwijzing naar een 
-gebiedsaanwijzing, een locatiegroep, of een norm(waarde) zijn.
 
-**Constraint:** Het veld JuridischBorgingVan behorend bij een GIO heeft maximaal één
-kenmerk JuridischeBorgVan met domein = 'http://www.geostandaarden.nl/imow/'.
-De waarde van domeinObjectID is dan de idenficatie van een OW-object behorend
-bij de Regeling die de betreffende GIO als geboorteregeling heeft. en die geometrisch
-exact overeenkomt.
+**Constraint:** Het veld JuridischBorgingVan behorend bij een GIO heeft maximaal
+één kenmerk JuridischeBorgVan met domein = 'http://www.geostandaarden.nl/imow/'.
+De waarde van domeinObjectID is de idenficatie van een actief OW-object behorend
+bij de Regeling die de betreffende GIO als geboorteregeling heeft en die geometrisch
+exact overeenkomt. 
 
-**Constraint:** **TODO** willen we ook dat er maximaal 1 GIO naar een OW-object mag
-verwijzen? Deze regel is wel bij GISKIT ingebouwd:
-> De verwijzing is bij ons uniek, dat wil zeggen iedere GIO verwijst naar 1
-> OW-object en ieder OW-object heeft maximaal 1 GIO die daarnaar verwijst. (De
-> verzameling van OW-locaties behorende bij een GIO hoeft niet uniek te zijn)
+**Constraint:** Bij een GIO met de verschijningsvorm GIO-mutatie is het veld verplicht.
 
-**Constraint:** JuridischeBorgingVan moet naar een bestaand OW-object verwijzen.
-
-Een OW-object waar de verwijzing naar is, mag niet worden ‘omgehangen’
-naar een andere GIO. Anders gezegd:
-
-**Constraint:**  juridischeBorgingVan mag niet muteren.
-
-> **TODO** Dit is in tegenspraak met wat er bij de waterschappen gebeurt. Zij gooien bij een edit alle OW-objecten weg.
+**Constraint:** Een OW-object heeft maximaal 1 GIO die daarnaar verwijst.
 
 Een verwijzing met een GIO gebeurt op he niveau waarom de juridische context
 vraagt. Dit is vaak op het 'hoogste' niveau.
@@ -124,7 +110,17 @@ vraagt. Dit is vaak op het 'hoogste' niveau.
 zijn met de GIO dan verwijst JuridischeBorgingVan in volgorde van vookeur
 naar: Norm, Gebiedsaanwijzing, ActiviteitLocatieAanduiding, Locatiegroep, Locatie.
 
-\
+Door deze constraints is van een aantal OW-objecten bekend dat ze 1-1 pendant zijn van een GIO. Middels logisch redeneren is de lijst met OW-objecten die 1-1 overeenkomen met een GIO uit te breiden. Een voorbeeld van zo'n regel is:
+
+- ALS een Gebiedsaanwijzing de juridische borging van een GIO is en die gebiedsaanwijzing verwijst naar één Locatie DAN komt die Locatie ook geometrisch 1-1 overeen met de GIO.
+- ALS een Locatiegroep de de juridische borging van een GIO is en die gebiedsLocatiegroep verwijst naar één Locatie DAN komt die Locatie ook geometrisch 1-1 overeen met de GIO.
+- ALS een ActiviteitLocatieAanduiding de de juridische borging van een GIO is en die ActiviteitLocatieAanduiding verwijst naar één Locatie DAN komt die Locatie ook geometrisch 1-1 overeen met de GIO.
+
+Op deze manier kan van veel Locaties (maar niet alle) vastgesteld worden dat ze 1-1 overeenkomen met een GIO. 
+
+Dit betekent ook dat als de betreffende GIO wordt gemuteerd middels GIO-muteren de wijzigmarkeringen behorend bij de GIO mutatie ook als wijzmarkering gebruikt kunnen worden voor het corresponderende OW-object.
+
+
 ## Regels voor het aanleveren van GML {#H06-GML}
 
 OW Geometrie objecten worden aangeleverd via het GIO in GML. Voor de
