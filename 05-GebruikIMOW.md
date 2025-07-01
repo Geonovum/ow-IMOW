@@ -13,7 +13,7 @@ bijvoorbeeld voor bij een Besluit dat meerdere Regelingen wijzigt.
 
 ## Basisprincipe van de OW-aanlevering
 
-In [[STOP14]] zijn vier soorten van aanleveringen die kunnen resulteren in een nieuwe
+In [[STOP15_voorinzage]] zijn vier soorten van aanleveringen die kunnen resulteren in een nieuwe
 regelingversie. Dit zijn: besluit, revisie, rectificatie en mededeling. In
 alle gevallen waarin deze aanlevering resulteert in een nieuwe regelingversie is
 aan die aanlevering een OW-aanlevering gekoppeld die zorgt voor de OW-objecten

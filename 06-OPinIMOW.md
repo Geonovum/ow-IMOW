@@ -1,8 +1,7 @@
 # Onderdelen van STOP relevant voor IMOW {#H06-OPinIMOW}
 
-Dit hoofdstuk beschrijft onderdelen van STOP die relevant zijn voor het IMOW. Enkele
-dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de
-STOP relevant is. [paragraaf 6.1](#H06-01-ConsolidatieInformatie)
+Dit hoofdstuk legt vast hoe de STOP standaard en het IMOW zich tot elkaar verhouden. Enkele
+dingen worden toegelicht vanuit OW-perspectief. [paragraaf 6.1](#H06-01-ConsolidatieInformatie)
 beschrijft de consolidatieinformatie uit een
 Regeling. In [paragraaf 6.2](#H06-02-GIO) worden GIO’s beschreven. 
 In [paragraaf 6.3](#H06-04-GML) staan regels voor het aanleveren van GML.
@@ -10,9 +9,9 @@ In [paragraaf 6.3](#H06-04-GML) staan regels voor het aanleveren van GML.
 In [paragraaf 6.3](#06-03-JuridischeBorging) worden regels vastgelegd over
 de relatie tussen OW-objecten en GIO's. Dit is de enige normatieve paragraaf
 van dit hoofdstuk. De andere paragrafen verwijzen naar regel en informatie
-vastgelegd in de STOP standaard [[STOP14]].
+vastgelegd in de STOP standaard [[STOP15_voorinzage]].
 
-Zie [[STOP14]] en het [[CIMOP]] voor meer details.
+Zie [[STOP15_voorinzage]] en het [[CIMOP]] voor meer details.
 
 ## ConsolidatieInformatie {#H06-01-ConsolidatieInformatie}
 
@@ -85,21 +84,18 @@ een 'Normwaarde'. Hiervoor geldt:
 
 ## Juridische Borging Van in GIO {#06-03-JuridischeBorging}
 
-Deze paragraaf is normatief.
-
 GIO's en OW-objecten worden in verschillende (bijna afzonderdelijke) modellen
-aangeleverd. Om  te kunnen achterhalen welke OW-objecten en
-GIO's bij elkaar horen is het mogelijk bij een GIO met een [JuridischeBorgingVan](https://koop.gitlab.io/stop/standaard/1.4.0-ic/gio-juridische-borging.html)
-element aangeven welk OW-object geometrisch eén op één overeenkomt met de GIO en daarmee de OW pendant is van de GIO.
+aangeleverd. In veel gevallen is het wenselijk te weten hoe de GIO's en de OW-objecten aan elkaar gerelateerd zijn. Hiervoor kan [JuridischeBorgingVan](https://koop.gitlab.io/stop/standaard/1.4.0-ic/gio-juridische-borging.html) element bij een GIO gebrukt worden.
 
+De volgende regels leggen vast hoe het STOP element JuridischeBorgingVan in de context an IMOW gebruikt moet worden:
 
 **Constraint:** Het veld JuridischBorgingVan behorend bij een GIO heeft maximaal
 één kenmerk JuridischeBorgVan met domein = 'http://www.geostandaarden.nl/imow/'.
-De waarde van domeinObjectID is de idenficatie van een actief OW-object behorend
+De waarde van domeinObjectID in dit kenmerk is de idenficatie van een actief OW-object behorend
 bij de Regeling die de betreffende GIO als geboorteregeling heeft en die geometrisch
 exact overeenkomt.
 
-**Constraint:** Bij een GIO met de verschijningsvorm GIO-mutatie is het veld verplicht.
+**Constraint:** De geometrische afbakening van de GIO en van het juridisch geborgde OW-object komen overeen.
 
 **Constraint:**  JuridischeBorgingVan is niet muteerbaar.
 
@@ -112,15 +108,18 @@ vraagt. Dit is vaak op het 'hoogste' niveau.
 zijn met de GIO dan verwijst JuridischeBorgingVan in volgorde van vookeur
 naar: Norm, Gebiedsaanwijzing, ActiviteitLocatieAanduiding, Locatiegroep, Locatie.
 
-Door deze constraints is van een aantal OW-objecten bekend dat ze 1-1 pendant zijn van een GIO. Door de volgende logische regels toe te passen is dit aantal uit te breiden:
+Het gebruik van JuridischeBorgingVan is essentieel om wijzigmarkeringen van GIO-mutaties te kunnen relateren aan OW-objecten. Hiervoor is de volgende constraint:
 
-- ALS een Gebiedsaanwijzing de juridische borging van een GIO is en die gebiedsaanwijzing verwijst naar één Locatie DAN komt die Locatie ook geometrisch 1-1 overeen met de GIO.
-- ALS een Locatiegroep de de juridische borging van een GIO is en die gebiedsLocatiegroep verwijst naar één Locatie DAN komt die Locatie ook geometrisch 1-1 overeen met de GIO.
-- ALS een ActiviteitLocatieAanduiding de de juridische borging van een GIO is en die ActiviteitLocatieAanduiding verwijst naar één Locatie DAN komt die Locatie ook geometrisch 1-1 overeen met de GIO.
+**Constraint:** Bij een GIO met de verschijningsvorm GIO-mutatie is het invulling van JuridischeBorgingVan verplicht.
 
-Op deze manier kan van veel Locaties (maar niet alle) vastgesteld worden dat ze 1-1 overeenkomen met een GIO. 
+Door het gebruik van JuridischeBorgingVan leg je van een aantal OW-objecten vast dat ze 1-1 overeenkomen met  een GIO, zodat wijzigmarkeringen van de GIO ook gelden zijn voor die OW-objecten. Met logische regels is het aantal OW-objecten waarvan je weet wat de relatie tot de GIO is uit te breiden:
 
-Dit betekent ook dat als de betreffende GIO wordt gemuteerd middels GIO-muteren de wijzigmarkeringen behorend bij de GIO mutatie ook als wijzmarkering gelden voor het corresponderende OW-object.
+- ALS je van Gebiedsaanwijzing weet hoe deze zich tot een GIO is verhoudt en die Gebiedsaanwijzing verwijst naar één Locatie DAN geldt diezelfde verhouding ook voor die Locatie.
+- ALS je van een Locatiegroep weet hoe deze zich verhoudt tot een GIO is en die Locatiegroep verwijst naar één Locatie DAN geldt diezelfde verhouding ook voor die Locatie.
+- ALS je van een ActiviteitLocatieAanduiding weet hoe deze zich verhoudt tot een GIO is en die ActiviteitLocatieAanduiding verwijst naar één Locatie DAN geldt diezelfde verhouding ook voor die Locatie.
+- ALS alle locatieaanduidingen van een JuridischeRegel, Normwaarde, Gebiedsaanwijzing of ActiviteitenLocatieaanduiding verwijzen naar Locaties waarvan je weet hoe deze zich tot een GIO verhoudt dan weet je hoe dat betreffende object zich tot een GIO verhoudt.
+
+Op deze manier kan van veel OW-objecten (maar mogelijk niet alle) vastgesteld worden hoe ze zich verhouden tot een GIO waardoor de wijzigmarkeringen van GIO-mutaties behorend bij de GIO mutatie ook als wijzmarkering gelden voor het corresponderende OW-object.
 
 ## Regels voor het aanleveren van GML {#H06-GML}
 

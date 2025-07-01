@@ -118,11 +118,11 @@ let respecConfig = {
       publisher: "NEN",
       date: "2020-06-20"
     },
-    STOP14: {
-      id: "STOP14",
-      title: "Standaard Officiële Publicaties 1.4.0",
-      href: "https://standaarden.overheid.nl/stop/doc/1.4.0/",
-      status: "Ter vastsstelling",
+    STOP15_voorinzage: {
+      id: "STOP15_voorinzageOP14",
+      title: "Standaard Officiële Publicaties 1.5",
+      href: "https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/",
+      status: "consultatieversie",
       publisher: "KOOP"
     },
   },
