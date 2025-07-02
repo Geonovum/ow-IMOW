@@ -93,24 +93,22 @@ De volgende regels leggen vast hoe het STOP element JuridischeBorgingVan in de c
 één kenmerk JuridischeBorgVan met domein = 'http://www.geostandaarden.nl/imow/'.
 De waarde van domeinObjectID in dit kenmerk is de idenficatie van een actief OW-object behorend
 bij de Regeling die de betreffende GIO als geboorteregeling heeft en die geometrisch
-exact overeenkomt.
+exact overeenkomt. (TPOD2600)
 
-**Constraint:** De geometrische afbakening van de GIO en van het juridisch geborgde OW-object komen overeen.
+**Constraint:** De geometrische afbakening van de GIO en van het juridisch geborgde OW-object komen overeen. (TPOD2601)
 
-**Constraint:**  JuridischeBorgingVan is niet muteerbaar.
+**Constraint:** Een OW-object heeft maximaal 1 GIO die daarnaar verwijst. (TPOD2602)
 
-**Constraint:** Een OW-object heeft maximaal 1 GIO die daarnaar verwijst.
-
-Een verwijzing met een GIO gebeurt op he niveau waarom de juridische context
-vraagt. Dit is vaak op het 'hoogste' niveau.
+Een verwijzing met een GIO gebeurt op het niveau waar de juridische context
+om vraagt. Dit is vaak op het 'hoogste' niveau:
 
 **Constraint:** Als er verschillende OW-objecten zijn die geometrisch equivalent
 zijn met de GIO dan verwijst JuridischeBorgingVan in volgorde van vookeur
-naar: Norm, Gebiedsaanwijzing, ActiviteitLocatieAanduiding, Locatiegroep, Locatie.
+naar: Norm, Gebiedsaanwijzing, ActiviteitLocatieAanduiding, Locatiegroep, Locatie. (TPOD2603)
 
 Het gebruik van JuridischeBorgingVan is essentieel om wijzigmarkeringen van GIO-mutaties te kunnen relateren aan OW-objecten. Hiervoor is de volgende constraint:
 
-**Constraint:** Bij een GIO met de verschijningsvorm GIO-mutatie is het invulling van JuridischeBorgingVan verplicht.
+**Constraint:** Bij een GIO met de verschijningsvorm GIO-mutatie moet JuridischeBorgingVan onderdeel zijn van het GIO. (TPOD2604)
 
 Door het gebruik van JuridischeBorgingVan leg je van een aantal OW-objecten vast dat ze 1-1 overeenkomen met  een GIO, zodat wijzigmarkeringen van de GIO ook gelden zijn voor die OW-objecten. Met logische regels is het aantal OW-objecten waarvan je weet wat de relatie tot de GIO is uit te breiden:
 
@@ -119,7 +117,7 @@ Door het gebruik van JuridischeBorgingVan leg je van een aantal OW-objecten vast
 - ALS je van een ActiviteitLocatieAanduiding weet hoe deze zich verhoudt tot een GIO is en die ActiviteitLocatieAanduiding verwijst naar één Locatie DAN geldt diezelfde verhouding ook voor die Locatie.
 - ALS alle locatieaanduidingen van een JuridischeRegel, Normwaarde, Gebiedsaanwijzing of ActiviteitenLocatieaanduiding verwijzen naar Locaties waarvan je weet hoe deze zich tot een GIO verhoudt dan weet je hoe dat betreffende object zich tot een GIO verhoudt.
 
-Op deze manier kan van veel OW-objecten (maar mogelijk niet alle) vastgesteld worden hoe ze zich verhouden tot een GIO waardoor de wijzigmarkeringen van GIO-mutaties behorend bij de GIO mutatie ook als wijzmarkering gelden voor het corresponderende OW-object.
+Met deze regels kan van veel OW-objecten (maar mogelijk niet alle) vastgesteld worden hoe ze zich verhouden tot een GIO waardoor de wijzigmarkeringen van GIO-mutaties behorend bij de GIO mutatie ook als wijzmarkering gelden voor het corresponderende OW-object.
 
 ## Regels voor het aanleveren van GML {#H06-GML}
 
