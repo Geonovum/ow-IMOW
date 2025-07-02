@@ -1,20 +1,68 @@
-name: Build and Check
+name: Build
 on:
-  workflow_dispatch:
-  pull_request:
-  push:
-    branches:
-      - main
+  workflow_call:
 jobs:
-  build:
-    name: Build
-    uses: Logius-standaarden/Automatisering/.github/workflows/build.yml@snapshot-in-repo
-  check:
-    needs: build
-    name: Check
-    uses: Logius-standaarden/Automatisering/.github/workflows/check.yml@main    
-  publish:
-    needs: build
-    name: Publish (Logius)
-    uses: Logius-standaarden/Automatisering/.github/workflows/publish.yml@main
-    secrets: inherit
+  main:
+    name: Snapshot
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Maak 'static' map in de repo‐root
+        run: |
+          mkdir -p static
+
+      - name: Static HTML
+        run: |
+          npx respec --localhost --src index.html --out snapshot.html
+      
+      - name: Validate HTML with W3C
+        run: |
+          npm install -g nu-html-checker
+          nu-html-checker snapshot.html
+
+      - name: Check config
+        id: config
+        run: |
+          echo "grep=false" >> $GITHUB_OUTPUT
+          if grep -q alternateFormats ./js/config.js; then
+            echo "grep=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Copy pdf.js
+        if: ${{ steps.config.outputs.grep == 'true' }}
+        run: |
+          cp .github/workflows/pdf.js .
+
+      - name: PDF
+        if: ${{ steps.config.outputs.grep == 'true' }}
+        run: |
+          cp ./js/config.js config.js
+          echo "module.exports = { respecConfig };" >> config.js
+          echo "var window = {respecMermaid : {createFigures : null}};" | cat - config.js > temp && mv temp config.js
+          npm i puppeteer
+          python3 -m http.server 8080 &
+          rm -f *.pdf
+          node pdf.js      
+          find *.pdf
+          mv *.pdf static/
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit snapshot
+        if: ${{ github.event_name == 'push' && steps.config.outputs.grep == 'true' }}
+        run: |
+          git add snapshot.html static/*
+          git commit -m "Snapshot gegenereerd" || echo "No changes to commit"
+          git push
+
+      - name: Upload snapshot.html as artefact
+        if: ${{ steps.config.outputs.grep == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapshot-files
+          path: |
+            snapshot.html
+            static/*.pdf

@@ -1,0 +1,54 @@
+name: Check
+on:
+  workflow_call:
+jobs:
+  wcag:
+    name: WCAG
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download snapshot artefact
+        uses: actions/download-artifact@v4
+        with:
+          name: snapshot-files
+          path: .
+      - run: npm install -g pa11y
+      - run: pa11y snapshot.html --ignore WCAG2AA.Principle4.Guideline4_1.4_1_1.F77
+
+  links:
+    name: Links
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download snapshot artefact
+        uses: actions/download-artifact@v4
+        with:
+          name: snapshot-files
+          path: .
+      - name: Serve Files
+        uses: Eun/http-server-action@v1
+        with:
+          content-types: |
+            {
+              "css": "text/css",
+              "html": "text/html",
+              "ico": "image/x-icon",
+              "jpeg": "image/jpeg",
+              "jpg": "image/jpeg",
+              "js": "text/javascript",
+              "json": "application/json",
+              "png": "image/png",
+              "svg": "image/svg+xml",
+              "txt": "text/plain",
+              "xml": "text/xml"
+            }
+      - run: echo '/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin' >> $GITHUB_PATH
+      - name: Install muffet
+        run: brew install muffet
+      - name: Check links
+        run: >
+          muffet
+          --exclude '8080\/\S*\.pdf'
+          --exclude '^https:\/\/gitdocumentatie.*(?P<major>0|[1-9]\d*)\.(?P<minor>0|[1-9]\d*)\.(?P<patch>0|[1-9]\d*)(?:-(?P<prerelease>(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+(?P<buildmetadata>[0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?'
+          --header 'user-agent:Curl' --ignore-fragments --one-page-only http://localhost:8080/snapshot.html
+          --buffer-size 8192
