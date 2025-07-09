@@ -72,7 +72,7 @@ Bij het aanleveren gelden regels over de volgende aspecten:
 
 ### Identificatie van OW-objecten {#H04-Identificatie}
 
-OW-objecten hebben in het DSO een unieke identificatie. Deze uniciteit wordt
+OW-objecten hebben een unieke identificatie. Deze uniciteit wordt
 gewaarborgd door een unieke code die de bevoegd gezag identificeert te combineren
 met een identificatie van het object binnen het domein van het bevoegd gezag
 dat het besluit neemt waarmee de regeling wordt ingesteld of gewijzigd.
@@ -156,7 +156,7 @@ verwijzing naar een OW-object in een ontwerpregeling. (TPOD1940)
 ### Tophaken en de bovenliggendeActiviteit {#H04-FunctioneleStructuur}
 
 De activiteiten in het stelsel vormen samen de ‘functionele structuur’. Deze
-boomstructuur bevat alle Activiteit objecten in de regelingen en de hiërarchie
+boomstructuur bevat alle Activiteit-objecten in de regelingen en de hiërarchie
 wordt bepaald door de bovenliggendeActiviteit relatie van de OW-Objecten van het
 type Activiteit. In <a href='#fig-FunctioneleStructuur'>Figuur 10</a> is het bovenste deel van
 functionele structuur getekend. Met Placeholder-Regeling wordt bedoeld de

@@ -75,29 +75,15 @@ versie van het IMOW worden aangeleverd. Met ingang
 van IMOW 3.1 is het veld IMOWversie verplicht en gebruikt de LVBB dit nummer
 om te bepalen welke versie van de standaard gebruikt wordt.
 
-Vanaf versie 3.1 van het IMOW is het veld IMOWversie in OW-manifest verplicht. Het versienummer bepaalt aan welke versie van het IMOW model de aanlevering voldoet en dus aan welke (validatie-)regels de aanlevering moet voldoen. Het versienummer van het gebruikte
+Vanaf versie 3.1 van het IMOW is het veld IMOWversie in het OW-manifest verplicht. Het versienummer bepaalt aan welke versie van het IMOW model de aanlevering voldoet en dus aan welke (validatie-)regels de aanlevering moet voldoen. Het versienummer van het gebruikte
 xsd moet ook in het root element 'schemaversie' in aangeleverde IMOW documenten worden neergezet.
 
 Verplicht maken van IMOWversie:
 - Als het veld IMOWversie niet volgens het aangegeven patroon is ingevuld wordt de aanlevering geweigerd.
 - Als er geen waarde is ingevuld, of de waarde verwijst naar een IMOW versie van 3.0 of lager dan moet de aanlevering voldoen aan de regels van IMOW versie 3.0.
 - Als het veld IMOWversie een versienummer van 3.1 of hoger bevat dat moet de aanlevering voldoen aan de regels van de genoemde versie van IMOW.
-- Een niet herkende of niet ondersteunde versienummer levert een foutmelding op.
+- Een niet herkend of niet ondersteund versienummer levert een foutmelding op.
 
-
-**OW-objecten worden automatisch beëindigd bij het intrekken van een regeling**
-
-In eerdere versies van het IMOW werd beschreven dat bij het intrekken van een
-regeling het bevoegd gezag zelf verantwoordelijk is voor het beëindigen van de
-aan de regeling gekoppelde OW-objecten. Deze wijziging zorgt ervoor dat die
-OW-objecten automatisch kunnen worden ingetrokken.
-
-Hierdoor wordt het intrekken van regelingen eenvoudiger. Vooral bij het
-het intrekken van tijdelijk regelingdelen, die soms door een ander bevoegd
-gezag worden ingetrokken dan degene die ze gemaakt heeft is dit wenselijk.
-
-- **IMOW 3.0:** Bij het intrekken van een regeling moeten alle OW-objecten door het bevoegd gezag worden beëindigd.
-- **IMOW 3.1:** Als er wel een OW-aanlevering is gekoppeld aan de intrekking moet het bevoegd gezag zelf de alle OW-objecten behorend bij de regeling beëindigen. Als er geen OW-aanlevering is gekoppeld aan de intrekking zal het stelsel alle OW-objecten behorend bij de regeling beëindigen.  
 
 **Expliciet gemaakt dat een geometrie binnen Nederland inclusief EEZ moet liggen**
 

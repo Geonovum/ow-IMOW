@@ -52,7 +52,7 @@ let respecConfig = {
       }
     ],
   //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/Geonovum/ow-IMOW",
+  //github: "https://github.com/Geonovum/ow-IMOW",
   // Create PDF and link to file in header (optional):
   alternateFormats: [
       {
@@ -118,10 +118,10 @@ let respecConfig = {
       publisher: "NEN",
       date: "2020-06-20"
     },
-    STOP15_voorinzage: {
-      id: "STOP15_voorinzageOP14",
+    STOP15: {
+      id: "STOP15",
       title: "Standaard Officiële Publicaties 1.5",
-      href: "https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/",
+      href: "https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/index.html",
       status: "consultatieversie",
       publisher: "KOOP"
     },

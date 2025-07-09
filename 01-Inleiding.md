@@ -36,16 +36,16 @@ is onderdeel van de standaard die regels voor een aanlevering vastlegt.
 Hieronder staat een lijst met documenten en opmerkingen die relevant zijn vanuit
 het perspectief van IMOW:
 
-- Een aanlevering heeft het formaat van een ZIP bestand die je aanbiedt aan de
+- Een aanlevering heeft het formaat van een ZIP-bestand dat je aanbiedt aan de
   LVBB. Het LVBB bronhouderkoppelvlak [[LVBBBHKV13]] schrijft de structuur van
-  het ZIP bestand voor.
+  het ZIP-bestand voor.
 - De Standaard Officiële Publicaties ([STOP](https://standaarden.overheid.nl/stop)) legt de documentstructuur
  van de tekst van het
   besluit en <a>regeling</a> van de aanlevering vast. Ook legt STOP
-  metadata voor de verwerking van het besluit en beschrijft STOP
-  hoe geografische informatieobjecten (GIO’s) moeten worden
+  metadata voor de verwerking van het besluit vast en beschrijft STOP
+  hoe geografische informatieobjecten (GIO's) moeten worden
   aangeleverd.
-- De IMOW.xsd's leggen het XML formaat vast waarmee de OW-objecten moeten worden
+- De IMOW.xsd's leggen het XML-formaat vast waarmee de OW-objecten moeten worden
   uitgewisseld.
 - Toepassingsprofielen omgevingsdocumenten (TPOD’s). Een TPOD legt voor een type omgevingsdocument vast welke van de mogelijkheden van STOP en IMOW moeten c.q. mogen worden gebruikt en op welke wijze. Er zijn toepassingsprofielen voor onder meer het omgevingsplan, de omgevingsverordening, de omgevingsvisie en het projectbesluit.
 - De validatiematrix beschrijft regels waaraan aanleveringen dienen te
@@ -62,13 +62,13 @@ het perspectief van IMOW:
   [Stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten)
   gepubliceerd.
 - Het IMOW maakt gebruik van de [[!NEN3610_2022]] standaard.
-- Voorbeeldbestanden van correcte aanleveringen geven inzicht hoe IMOP en
+- Voorbeeldbestanden van correcte aanleveringen geven inzicht hoe STOP en
   IMOW technisch toegepast kunnen worden om een nieuw omgevingsdocument aan te
   leveren.
 
 <figure>
-    <img src='media/OverzichtAanlevering.png'></img>
-    <figcaption>Schematisch overzicht van aanlevering conform de standaard. Relatie tussen IMOP en IMOW-bestanden.</figcaption>
+    <img src='media/OverzichtAanlevering.drawio.svg'></img>
+    <figcaption>Schematisch overzicht van aanlevering conform de standaard. Relatie tussen STOP- en IMOW-bestanden.</figcaption>
 </figure>
 
 ## Toepassingsgebied
@@ -79,16 +79,15 @@ locaties van regelingen binnen de Omgevingswet.
 Het IMOW schrijft voor hoe je de tekst van een Regeling (zoals beschreven in STOP)
 machineleesbaar kunt maken door de tekst te verrijken met
 annotaties in de vorm van een collectie OW-objecten en hoe je die kunt toevoegen
-aan een aanlevering. Onder annoteren verstaan we het toevoegen van gegevens aan
-(onderdelen van) een omgevingsdocument die de inhoud van het omgevingsdocument
-voor de computer vertalen. Door het annoteren kan een viewer locaties en andere
+aan een aanlevering. De annotaties representeren de kern van de juridische inhoud
+van de regel of beleidstekst. Door het annoteren kan een viewer locaties en andere
 gegevens op een kaart en bij een tekst weergeven. Het annoteren zorgt er ook
 voor dat een omgevingsdocument op bepaalde kenmerken doorzoekbaar is. In het
 geval van omgevingsdocumenten met artikelstructuur waarin regels over
 activiteiten worden gesteld, helpt het annoteren ook bij het verbinden van
 toepasbare regels, oftewel vragenbomen, aan regels met locaties. Activiteiten
 spelen een belangrijke rol in het DSO en deze worden verrijkt met duiding op de
-kaart de naam van de activiteit en de activiteitregelkwalificatie. Ook gebieden 
+kaart, de naam van de activiteit en de activiteitregelkwalificatie. Ook gebieden
 worden geduid. De gegevens die aangeleverd worden vanuit
 het IMOW helpen de buitenwereld met het op een kaart terugvinden van
 Omgevingswet-informatie.
@@ -119,18 +118,16 @@ De volgende begrippen worden gebruikt in dit document:
 geldigheid van) een regeling of informatieobject beschrijft. Met andere
 woorden: Een besluit beschrijft precies hoe een BG een nieuwe regeling 
 vaststelt, wijzigingen op een regeling doorvoert of de inwerkingtreding 
-van een regeling of regelingversie bepaalt. (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_besluit.html))
-
-<dfn>BHKV</dfn>: Zie <a>Bronhouderkoppelvlak</a>.
+van een regeling of regelingversie bepaalt. (bron: [[STOP15]])
 
 <dfn>Bronhouderkoppelvlak</dfn>: Het bronhouderkoppelvlak (BHKV) is een
 technische voorziening tussen de <a>LVBB</a> en (software van) een bevoegd
 gezag. In dat koppelvlak
 worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke,
 proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron:
-[STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html))
+[[STOP15]])
 
-<dfn>GIO</dfn>: Geografisch Informatie Object (bron: [STOP 2.0](https://koop.gitlab.io/STOP/standaard/2.0.0-rc/begrippenlijst_bronhouderkoppelvlak.html))
+<dfn>GIO</dfn>: Geografisch Informatie Object (bron: [[STOP15]])
 
 <dfn>LVBB</dfn>: Landelijke Voorziening Bekendmaken en
 Beschikbaar stellen.
@@ -142,7 +139,7 @@ Beschikbaar stellen.
 De volgende uitgangspunten zijn gehanteerd bij het opstellen van het IMOW:
 
 - Conformiteit met Metamodel voor informatiemodellering, MIM 1.2 [[!MIM12]].
-- Het IMOW is opgesteld als een UML klassediagrammen. Voor algemene uitleg
+- Het IMOW is opgesteld als een UML model uitgedrukt in klassediagrammen. Voor algemene uitleg
   over UML klassediagram zie wikipedia: UML klassediagram.
 - Het model is een implementatie van het CIM-OW  waarbij bij implementatie
   niet altijd gekozen is voor de structurering zoals beschreven in het CIM-OW [[CIMOW]].
@@ -179,4 +176,6 @@ van OW-objecten. [Hoofdstuk 3](#lis) bevat een overzicht van de gebruikte waarde
 OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van de aan te leveren bestanden. [Hoofdstuk 5](#H05-GebruikIMOW)
 schrijft voor hoe een OW-aanlevering bij het bronhouderkoppelvlak van de LVBB moet worden
 aangeleverd. [Hoofdstuk 6](#H06-OPinIMOW)
-beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW.
+beschrijft enkele aspecten uit STOP die relevant zijn voor het IMOW. [Bijlage
+A](#HA-Changelog) bevat de versiegeschiedenis van dit document. [Bijlage
+B](#references) bevat de referenties.

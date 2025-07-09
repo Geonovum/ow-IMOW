@@ -9,9 +9,9 @@ In [paragraaf 6.3](#H06-04-GML) staan regels voor het aanleveren van GML.
 In [paragraaf 6.3](#06-03-JuridischeBorging) worden regels vastgelegd over
 de relatie tussen OW-objecten en GIO's. Dit is de enige normatieve paragraaf
 van dit hoofdstuk. De andere paragrafen verwijzen naar regel en informatie
-vastgelegd in de STOP standaard [[STOP15_voorinzage]].
+vastgelegd in de STOP standaard [[STOP15]].
 
-Zie [[STOP15_voorinzage]] en het [[CIMOP]] voor meer details.
+Zie [[STOP15]] en het [[CIMOP]] voor meer details.
 
 ## ConsolidatieInformatie {#H06-01-ConsolidatieInformatie}
 
@@ -34,7 +34,7 @@ een Regeling. Voor IMOW zijn de volgende aspecten van belang:
     <figcaption>Consolidatieinformatie in CIM-OP</figcaption>
 </figure>
 
-## GIO’s en Norm GIO’s {#H06-GIO}
+## GIO's en Norm-GIO's {#H06-GIO}
 
 Bij het aanleveren van een besluit volgens STOP worden
 geografische objecten aangeleverd als GIO’s (geografische informatieobjecten).
@@ -50,13 +50,13 @@ GeometrieRef naar een Geometrie wordt verwezen wordt deze UUID gebruikt.
   de context ten opzichte waarvan het GIO is vastgesteld.
 - FRBRWork en FRBRExpression bevatten de identificatie van het GIO.
 - Een GIO bevat één of meer Locatie objecten. Deze Locaties komen niet overeen
-  met OW:Locatie ook de naam van de locatie is niet rechtstreeks gekoppeld.
+  met OW-Locatie. Ook de naam van de locatie is niet rechtstreeks gekoppeld.
 - Wanneer in aanlevering van GIO's meerdere keren exact dezelfde geometrie wordt gebruikt
   kan je in beide gevallen dezelfde UUID gebruiken. Het DSO zorgt er dan voor de
   geometrie slechts één keer wordt doorgeleverd.
-- Indien er gebruik gemaakt wordt van groepen, dan dient iedere groep
+- Indien er gebruik gemaakt wordt van GIO-delen, dan dient ieder GIO-deel
  een symbolisatie te hebben (dit wordt vastgelegd in het vaststellingsdeel).
-- Bij Norm-GIO’s dienen aanvullende gegevens vastgelegd te worden.
+- Bij Norm-GIO's dienen aanvullende gegevens vastgelegd te worden.
 
 Indien er normen vastgelegd worden aan de OW-kant, dan bevat het
 GIO 'Norm informatie' en de Locaties van het GIO bevatten
@@ -70,9 +70,9 @@ een 'Normwaarde'. Hiervoor geldt:
 - De attributen 'Kwalitatief' en 'Kwantitatief' moeten overeenkomen met de
   gelijknamige kenmerken in OW.
 - Hoewel de Geometrie gedeeld wordt tussen STOP en OW-objecten geldt dit
-  niet voor de norm-gegeven. Deze worden dus twee keer uitgewisseld maar
+  niet voor de norm-gegevens. Deze worden dus twee keer uitgewisseld maar
   moeten wel met elkaar overeenkomen.
-- Het is toegestaan om een geometrie die gebruikt wordt voor een Norm ook te 
+- Het is toegestaan om een _geometrie_ die gebruikt wordt voor een Norm ook te 
   gebruiken bij andere OW-objecten.
 - Iedere normwaarde dient een symbolisatie te hebben, dit wordt vastgelegd
   in het vaststellingsdeel van het GIO.

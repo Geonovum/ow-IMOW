@@ -13,7 +13,7 @@ bijvoorbeeld voor bij een Besluit dat meerdere Regelingen wijzigt.
 
 ## Basisprincipe van de OW-aanlevering
 
-In [[STOP15_voorinzage]] zijn vier soorten van aanleveringen die kunnen resulteren in een nieuwe
+In [[STOP15]] zijn vier soorten van aanleveringen die kunnen resulteren in een nieuwe
 regelingversie. Dit zijn: besluit, revisie, rectificatie en mededeling. In
 alle gevallen waarin deze aanlevering resulteert in een nieuwe regelingversie is
 aan die aanlevering een OW-aanlevering gekoppeld die zorgt voor de OW-objecten
@@ -33,7 +33,7 @@ Het aanmaken of wijzigen van de collectie OW-objecten behorend bij een Regeling
 gebeurt met een OW-aanlevering. De OW-aanlevering bevat wijziginstructies die beschrijven
 hoe de oorspronkelijke collectie OW-objecten getransformeerd moet worden tot de
 resultaatcollectie. Een OW-aanlevering is gekoppeld aan een OP-aanlevering waarbij
-het STOP-deel de tekst van de regeling wijzigt en de OW-aanlevering de bij de
+het STOP-deel de tekst van de regeling en of de bijbehorende GIO's wijzigt en de OW-aanlevering de bij de
 regeling behorende OW-objecten wijzigt. Een initieel besluit is een speciaal geval
 omdat deze een Regeling aanmaakt en niet wijzigt, de bijbehorende OW-aanlevering
 zal dus ook alleen OW-objecten aanmaken. Ook als bij een STOP wijziging geen
@@ -97,7 +97,7 @@ aangeleverde OW-informatie. (TPOD0107)
 Een OW-aanlevering bestaat uit een set instructies, die de
 OW-objecten behorend bij een Regeling toevoegt, wijzigt en/of beëindigt.
 Na het uitvoeren van de instructies is een nieuwe set OW-objecten ontstaan
-behorend bij de regelingversie. VOor veel van de OW-objecten gelden regels
+behorend bij de regelingversie. Voor veel van de OW-objecten gelden regels
 die in de catalogus zijn opgenomen. Sommige regels gelden niet voor
 een individueel object, maar voor het totaal aan OW-objecten behorend
 bij de regelingversie. Deze regels zijn hieronder opgenomen:
@@ -112,14 +112,18 @@ Wees-objecten zijn OW-objecten waar niet meer naar verwezen wordt.
 **Constraint:** Een OW-aanlevering moet resulteren in een Regeling met daarin maximaal
 één Pons-object. (TPOD0110)
 
-**Constraint:** Bij een Lid of Artikel met een STOP-element Inhoud moet er precies
-één Regeltekst-object zijn (TPOD2050)
+**Constraint:** Alleen bij een Lid of Artikel dat een STOP-element Inhoud bevat is een Regeltekst toegestaan; in dat geval moet er precies één Regeltekst zijn  (TPOD2050)
 
 **Constraint:** een Lid of Artikel zonder een Inhoud-element mag geen Regeltekst-object
 hebben. (TPOD2061)
 
 **Constraint:** Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst
 verwijzen. (TPOD2052)
+
+**Constraint:** Er mag hoogstens één OW Divisie-object naar een OP Divisie
+verwijzen. (TPOD2053)
+
+
 
 **Noot:** Wanneer in OW-aanlevering een OW-object wordt beëindigd en er
 verschijnt een nieuw OW-object met dezelfde semantische inhoud is er vermoedelijk
@@ -130,7 +134,7 @@ het stelsel in komen.
 ## Het gebruik van een OW-aanlevering {#05-ow-aanlevering}
 
 Als een OP-aanlevering een regeling instelt, wijzigt of intrekt
-kan daaraan een OW-aanlevering gekoppeld worden om de OW-objecten behorend bij die
+moet daaraan een OW-aanlevering gekoppeld zijn om de OW-objecten behorend bij die
 regeling te maken, wijzigen of beëindigen. Het IMOW volgt de verschillende
 typen OP-aanlevering en legt alleen vast hoe je aan de OP-aanlevering
 een OW-aanlevering kunt koppelen die de wijzigingen van OW-objecten regelt.
@@ -141,7 +145,7 @@ beschreven hoe dat gaat.
 ### OW-aanlevering bij een besluit dat een regeling initieert of wijzigt
 
 Bij een besluit om een omgevingsdocument te initiëren of te wijzigen
-bevat de OP-aanlevering een regeling mutatie element. In dat element
+bevat de OP-aanlevering een RegelingMutatie. In dat element
 is aangegeven om welke regeling het gaat en wat de wId van de was - en wordt-versie
 van de regeling zijn.
 
@@ -154,20 +158,21 @@ wordt aangemaakt. (TPOD2152)
 
 ### OW-aanlevering bij rectificatie, revisie of mededeling uitspraak van de rechter
 
-STOP kent ook aanleveringen die een rectificatie, revisie of mededeling uitspraak van de rechter bevatten
+STOP kent ook aanleveringen die een rectificatie, revisie of mededeling van de uitspraak van de rechter bevatten
 die resulteren in een nieuwe regelingversie.  Net zoals bij besluiten die een regeling
-wijzigen bevat zon'n aanlevering een regeling mutatie element en verwijst de meegeleverde
-OW-aanlevering naar het regeling mutatie element.
+wijzigen bevat zon'n aanlevering een RegelingMutatie en verwijst de meegeleverde
+OW-aanlevering daarnaar.
 
 ### Het intrekken van een regeling {#H05-IntrekkenRegeling}
 
 Wanneer een regeling wordt ingetrokken moeten alle OW-objecten bij die regeling
-beëindigd worden. Als er geen OW-aanlevering aan de intrekking gekoppeld is zal het stelsel
-zelf alle OW-objecten behorend bij de regeling beëindigen. Als er wel een OW-aanlevering gekoppeld
-is aan aan de intrekking zal het stelsel controleren of deze OW-aanlevering de OW-objecten
-behorend bij de regeling op de juiste wijze beëindigt.
-In beide gevallen zal gecontroleerd worden of er nog externe verwijzingen naar de
-OW-objecten bestaan vanuit andere regelingen en zal de intrekking worden afgekeurd.
+beëindigd worden door een OW-aanlevering te koppelen waarin die OW-objecten worden
+beëindigd.
+
+**Noot:** Let erop dat er geen externe verwijzingen naar de
+OW-objecten mogen bestaan vanuit andere regelingen.
+
+Voor het intrekken van een regeling geldt ook de volgende regel:
 
 **Constraint:** Bij een OW-aanlevering behorend bij de intrekking een regeling
 is het veld expressionIDRegeling leeg. (TPOD2151)
@@ -177,6 +182,6 @@ is het veld expressionIDRegeling leeg. (TPOD2151)
 In STOP kunnen ontwerpregelingen gemaakt worden met een
 ontwerpbesluit. Zo'n ontwerpbesluit wijzigt een bestaande regelingversie.
 Een OW-aanlevering bij een ontwerpbesluit gedraagt zich hetzelfde
-als een aanlevering bij een regulier besluit maar is wel herkenbaar
+als een aanlevering bij een definitef besluit maar is wel herkenbaar
 als behorend bij een ontwerpbesluit en kan dus anders getoond worden
 in een viewer.
