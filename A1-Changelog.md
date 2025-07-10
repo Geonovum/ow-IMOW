@@ -2,108 +2,13 @@
 
 ## wijzigingen in versie 3.2.0
 
+- Toevoeging JuridischeBorgingVan
+
+##  wijzigingen in versie 3.1.1
+
 - Regels hernoemd naar constraints.
 - Nummers gegeven aan ongenummerde constraints.
-- Toevoeging JuridischeBorgingVan
-- OZON0104 --> TPOD0104
-- OZON0108 --> TPOD0108
-- OZON0107 --> TPOD0107
-- OZON4005 --> TPOD1891
-- OZON0351 --> TPOD1900
-- LVBB1016 --> TPOD1161
-- LVBB1025 --> TPOD1150
-- LVBB1032 --> TPOD1162
-
-
-##  wijzigingen in versie 3.1.0 
-
-Voor de belangrijkste wijzigingen in deze versie geven we hier extra toelichting.
-
-**Wijziging om aan te sluiten op de extra consolidatiemechanismes van STOP 1.4**
-
-Om aan te sluiten op de extra consolidatiemechanismes van STOP 1.4 is
-OW-aanlevering is een attribuut 'expressionIDRegeling' toegevoegd. Door
-de nieuwe consolidatiescenario's waren attributen 'workIDRegeling' en 'doelID'
-niet altijd meer voldoen om eenduidig de OW-aanlevering te koppelen aan de juiste
-STOP-consolidatie. [Hoofdstuk 5](#H05-GebruikIMOW)
-gaat hier dieper op in.
-
-Nieuw attribuut: expressionIDRegeling:
-
-- **IMOW 3.0:** doelID is gevuld. Er mag geen gebruik gemaakt worden van STOP 1.4 consolidatiescenario's.
-- **IMOW 3.1:** doelID is leeg. Er mag gebruik gemaakt worden van de STOP 1.4 consolidatiescenario's.
-
-**Het attribuut hoogte is uit Locatie verwijderd**
-
-Hoogte was een optioneel attribuut van Locatie waarmee een beperkte mate van 3D
-mogelijk is. Maar omdat STOP dit kenmerk niet kent kan de hoogte van een
-locatie niet rechtsgeldig bekendgemaakt worden. Hierom is het
-attribuut hoogte uit Locatie verwijderd.
-
-Besluiten met een hoogte worden in IMOW 3.1 geweigerd.
- 
-**Omgevingsnorm en Omgevingswaarde (Norm)**
-
-De volgende werkafspraken over het gebruik van Omgevingsnorm en Omgevingswaarde in
-IMOW zijn opgenomen in de standaard:
-
-- Een Normwaarde geldt per individuele geometrie. Een Normwaarde die bedoeld
-  is als gezamenlijke waarde voor meerdere geometrieën is niet toegestaan.
-- Een Norm mag maar één waarde op een Locatie hebben.
-- Locaties van een Norm mogen elkaar niet geheel of gedeeltelijk overlappen.
-
-**Idealisatie moet dezelfde waarde hebben voor alle Juridische regels en Tekstdelen**
-
-De werkafspraak dat het attribuut idealisatie dezelfde waarde moet hebben voor
-alle Juridische regels bij een Regeltekst / alle Tekstdelen bij een Divisietekst
-is nu verwerkt in het IMOW door constraints toe te voegen.
-
-Ook is expliciet beschreven dat idealisatie bij Divisie en Divisietekst alleen ingevuld mag 
-worden als er locatieaanduidingen gekoppeld zijn aan de Divisie en Divisietekst en anders niet.
-
-**Klasse SymbolisatieItem vervangen door attriuut eigenSymbolisatie**
-
-De bestaande werkafspraak om de klasse SymbolisatieItem niet te gebruiken is
-verwerkt in het IMOW door de klasse SymbolisatieItem te verwijderen. Hiervoor in de
-plaats hebben de klassen ActiviteitLocatieaanduiding, Norm en  Gebiedsaanwijzing een
-optioneel attribuut eigenSymbolisatie gekregen.
-
-**Gebruik van versienummer in IMOW-aanlevering verplicht**
-
-Tot en met IMOW 3.0.1 kon aan het bronhouderkoppelvlak van de LVBB slechts overeenkomstig één
-versie van het IMOW worden aangeleverd. Met ingang
-van IMOW 3.1 is het veld IMOWversie verplicht en gebruikt de LVBB dit nummer
-om te bepalen welke versie van de standaard gebruikt wordt.
-
-Vanaf versie 3.1 van het IMOW is het veld IMOWversie in het OW-manifest verplicht. Het versienummer bepaalt aan welke versie van het IMOW model de aanlevering voldoet en dus aan welke (validatie-)regels de aanlevering moet voldoen. Het versienummer van het gebruikte
-xsd moet ook in het root element 'schemaversie' in aangeleverde IMOW documenten worden neergezet.
-
-Verplicht maken van IMOWversie:
-- Als het veld IMOWversie niet volgens het aangegeven patroon is ingevuld wordt de aanlevering geweigerd.
-- Als er geen waarde is ingevuld, of de waarde verwijst naar een IMOW versie van 3.0 of lager dan moet de aanlevering voldoen aan de regels van IMOW versie 3.0.
-- Als het veld IMOWversie een versienummer van 3.1 of hoger bevat dat moet de aanlevering voldoen aan de regels van de genoemde versie van IMOW.
-- Een niet herkend of niet ondersteund versienummer levert een foutmelding op.
-
-
-**Expliciet gemaakt dat een geometrie binnen Nederland inclusief EEZ moet liggen**
-
-Om het functioneren van de landelijke voorziening te waarborgen is een regel
-toegevoegd die Geometrie die ruim buiten Nederland met inbegrip van de exclusieve
-economische zone valt verbiedt.
-
-Voor de werking van het stelsel is het vooral van belang dat er geen geometrie
-wordt aangeleverd die ver buiten dit gebied ligt. Hiertoe is een rechthoek gedefinieerd
-die ruim om dit gebied heen getrokken is. Momenteel wordt er alleen gevalideerd
-dat aangeleverde coördinaten binnen deze rechthoek moeten vallen.
-
-
-**Attribuut procedureStatus uit OW-object verwijderd**
-
-De waarde van het veld procedureStatus in een OW-object is af te leiden uit
-het STOP-deel van een aanlevering en is redundant. Dit kenmerk is geschrapt.
-
- - **IMOW 3.0:** Er wordt gevalideerd of de waarde van procedureStatus overeenkomt met de procedurestatus van de aanlevering.
- - **IMOW 3.1:** De waarde van het veld procedureStatus wordt genegeerd.
+- OZON en LVBB constraints een TPOD identificatie gegeven. (OZON0104 wordt TPOD0104, OZON0108 wordt TPOD0108, OZON0107 wordt TPOD0107, OZON4005 wordt TPOD1891, OZON0351 wordt TPOD1900, LVBB1016 wordt TPOD1161, LVBB1025 wordt TPOD1150, LVBB1032 wordt TPOD1162)
 
 ## Eerdere wijzigingen
 
@@ -172,3 +77,11 @@ tot versie 3.0.1 niet meer geldig en verwijderd.
 |           |            | Noot toegevoegd dat directe mutaties alleen voor foutherstel via de beheerders van het stelsel toegankelijk zijn (WELT-274).                                                                                         |
 |           |            | Dit is de eerste versie die in html is gepubliceerd. Eerdere versies zijn te vinden op: <https://github.com/Geonovum/TPOD/tree/master/CIMOW>.                                                                        |
 | 3.0.1     | 2023-12-27 | Foutieve diagrammen in Figuur 3 en 4 gerepareerd.                                                                                                                                                                    |
+| 3.1.0     | 2025-06-25 | Wijziging om aan te sluiten op de extra consolidatiemechanismes van STOP 1.4                                                                                                                                         |
+|           |            | Het attribuut hoogte is uit Locatie verwijderd                                                                                                                                                                       |
+|           |            | Nieuwe afpraken over Omgevingsnorm en Omgevingswaarde (Norm)                                                                                                                                                         |
+|           |            | Idealisatie moet dezelfde waarde hebben voor alle Juridische regels en Tekstdelen                                                                                                                                    |
+|           |            | Klasse SymbolisatieItem vervangen door attriuut eigenSymbolisatie                                                                                                                                                    |
+|           |            | Gebruik van versienummer in IMOW-aanlevering verplicht                                                                                                                                                               |
+|           |            | Expliciet gemaakt dat een geometrie binnen Nederland inclusief EEZ moet liggen                                                                                                                                       |
+|           |            | Attribuut procedureStatus uit OW-object verwijderd                                                                                                                                                                   |

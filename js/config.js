@@ -2,12 +2,12 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   // title is verplicht! Neem hier de titel van het document op ----------------------
-  title: "Informatiemodel Omgevingswet (IMOW) 3.1",
+  title: "Informatiemodel Omgevingswet (IMOW)",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "wv",                   // Werkversie
+  //specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
-  //specStatus: "def",              // Vastgestelde versie
+  specStatus: "def",              // Vastgestelde versie
 
   specType: "IM",                 // Informatie Model
 
@@ -25,12 +25,12 @@ let respecConfig = {
 
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  //publishDate: "2024-09-20",
+  publishDate: "2025-07-11",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   publishVersion: "3.2",
   previousVersion: "3.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-  previousPublishDate: "2025-06--25",
+  previousPublishDate: "2025-06-25",
   previousMaturity: "def",
 
   editors:
@@ -54,12 +54,12 @@ let respecConfig = {
   //neem hier de URL van de github repository op waar het respec document in staat
   //github: "https://github.com/Geonovum/ow-IMOW",
   // Create PDF and link to file in header (optional):
-  alternateFormats: [
-      {
-          label: "pdf",
-          uri: "ow-imow.pdf",
-      },
-  ],
+  //alternateFormats: [
+  //    {
+  //        label: "pdf",
+  //        uri: "ow-imow.pdf",
+  //    },
+  //],
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
   localBiblio: 
   {
