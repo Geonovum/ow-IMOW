@@ -118,16 +118,16 @@ De volgende begrippen worden gebruikt in dit document:
 geldigheid van) een regeling of informatieobject beschrijft. Met andere
 woorden: Een besluit beschrijft precies hoe een BG een nieuwe regeling 
 vaststelt, wijzigingen op een regeling doorvoert of de inwerkingtreding 
-van een regeling of regelingversie bepaalt. (bron: [[STOP15]])
+van een regeling of regelingversie bepaalt. (bron: [[STOP141]])
 
 <dfn>Bronhouderkoppelvlak</dfn>: Het bronhouderkoppelvlak (BHKV) is een
 technische voorziening tussen de <a>LVBB</a> en (software van) een bevoegd
 gezag. In dat koppelvlak
 worden technische en inhoudelijke standaarden toegepast, waardoor inhoudelijke,
 proces- of foutinformatie tussen de systemen kan worden uitgewisseld. (bron:
-[[STOP15]])
+[[STOP141]])
 
-<dfn>GIO</dfn>: Geografisch Informatie Object (bron: [[STOP15]])
+<dfn>GIO</dfn>: Geografisch Informatie Object (bron: [[STOP141]])
 
 <dfn>LVBB</dfn>: Landelijke Voorziening Bekendmaken en
 Beschikbaar stellen.

@@ -1,17 +1,15 @@
 # Onderdelen van STOP relevant voor IMOW {#H06-OPinIMOW}
 
 Dit hoofdstuk legt vast hoe de STOP standaard en het IMOW zich tot elkaar verhouden. Enkele
-dingen worden toegelicht vanuit OW-perspectief. [paragraaf 6.1](#H06-01-ConsolidatieInformatie)
-beschrijft de consolidatieinformatie uit een
-Regeling. In [paragraaf 6.2](#H06-02-GIO) worden GIO’s beschreven. 
+dingen worden toegelicht vanuit OW-perspectief. In [paragraaf 6.2](#H06-02-GIO) worden GIO’s beschreven. 
 In [paragraaf 6.3](#H06-04-GML) staan regels voor het aanleveren van GML.
 
 In [paragraaf 6.3](#06-03-JuridischeBorging) worden regels vastgelegd over
 de relatie tussen OW-objecten en GIO's. Dit is de enige normatieve paragraaf
 van dit hoofdstuk. De andere paragrafen verwijzen naar regel en informatie
-vastgelegd in de STOP standaard [[STOP15]].
+vastgelegd in de STOP standaard [[STOP141]].
 
-Zie [[STOP15]] en het [[CIMOP]] voor meer details.
+Zie [[STOP141]] en het [[CIMOP]] voor meer details.
 
 ## ConsolidatieInformatie {#H06-01-ConsolidatieInformatie}
 
@@ -81,43 +79,6 @@ een 'Normwaarde'. Hiervoor geldt:
     <img src='media/cim-op-gio.png'></img>
     <figcaption>GIO in CIM-OP</figcaption>
 </figure>
-
-## Juridische Borging Van in GIO {#06-03-JuridischeBorging}
-
-GIO's en OW-objecten worden in verschillende (bijna afzonderdelijke) modellen
-aangeleverd. In veel gevallen is het wenselijk te weten hoe de GIO's en de OW-objecten aan elkaar gerelateerd zijn. Hiervoor kan [JuridischeBorgingVan](https://koop.gitlab.io/stop/standaard/1.4.0-ic/gio-juridische-borging.html) element bij een GIO gebrukt worden.
-
-De volgende regels leggen vast hoe het STOP element JuridischeBorgingVan in de context an IMOW gebruikt moet worden:
-
-**Constraint:** Het veld JuridischBorgingVan behorend bij een GIO heeft maximaal
-één kenmerk JuridischeBorgVan met domein = 'http://www.geostandaarden.nl/imow/'.
-De waarde van domeinObjectID in dit kenmerk is de idenficatie van een actief OW-object behorend
-bij de Regeling die de betreffende GIO als geboorteregeling heeft en die geometrisch
-exact overeenkomt. (TPOD2600)
-
-**Constraint:** De geometrische afbakening van de GIO en van het juridisch geborgde OW-object komen overeen. (TPOD2601)
-
-**Constraint:** Een OW-object heeft maximaal 1 GIO die daarnaar verwijst. (TPOD2602)
-
-Een verwijzing met een GIO gebeurt op het niveau waar de juridische context
-om vraagt. Dit is vaak op het 'hoogste' niveau:
-
-**Constraint:** Als er verschillende OW-objecten zijn die geometrisch equivalent
-zijn met de GIO dan verwijst JuridischeBorgingVan in volgorde van vookeur
-naar: Norm, Gebiedsaanwijzing, ActiviteitLocatieAanduiding, Locatiegroep, Locatie. (TPOD2603)
-
-Het gebruik van JuridischeBorgingVan is essentieel om wijzigmarkeringen van GIO-mutaties te kunnen relateren aan OW-objecten. Hiervoor is de volgende constraint:
-
-**Constraint:** Bij een GIO met de verschijningsvorm GIO-mutatie moet JuridischeBorgingVan onderdeel zijn van het GIO. (TPOD2604)
-
-Door het gebruik van JuridischeBorgingVan leg je van een aantal OW-objecten vast dat ze 1-1 overeenkomen met  een GIO, zodat wijzigmarkeringen van de GIO ook gelden zijn voor die OW-objecten. Met logische regels is het aantal OW-objecten waarvan je weet wat de relatie tot de GIO is uit te breiden:
-
-- ALS je van Gebiedsaanwijzing weet hoe deze zich tot een GIO is verhoudt en die Gebiedsaanwijzing verwijst naar één Locatie DAN geldt diezelfde verhouding ook voor die Locatie.
-- ALS je van een Locatiegroep weet hoe deze zich verhoudt tot een GIO is en die Locatiegroep verwijst naar één Locatie DAN geldt diezelfde verhouding ook voor die Locatie.
-- ALS je van een ActiviteitLocatieAanduiding weet hoe deze zich verhoudt tot een GIO is en die ActiviteitLocatieAanduiding verwijst naar één Locatie DAN geldt diezelfde verhouding ook voor die Locatie.
-- ALS alle locatieaanduidingen van een JuridischeRegel, Normwaarde, Gebiedsaanwijzing of ActiviteitenLocatieaanduiding verwijzen naar Locaties waarvan je weet hoe deze zich tot een GIO verhoudt dan weet je hoe dat betreffende object zich tot een GIO verhoudt.
-
-Met deze regels kan van veel OW-objecten (maar mogelijk niet alle) vastgesteld worden hoe ze zich verhouden tot een GIO waardoor de wijzigmarkeringen van GIO-mutaties behorend bij de GIO mutatie ook als wijzmarkering gelden voor het corresponderende OW-object.
 
 ## Regels voor het aanleveren van GML {#H06-GML}
 

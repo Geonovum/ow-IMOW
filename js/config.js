@@ -27,7 +27,7 @@ let respecConfig = {
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   publishDate: "2025-07-11",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
-  publishVersion: "3.2",
+  publishVersion: "3.1",
   previousVersion: "3.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
   previousPublishDate: "2025-06-25",
@@ -118,11 +118,11 @@ let respecConfig = {
       publisher: "NEN",
       date: "2020-06-20"
     },
-    STOP15: {
-      id: "STOP15",
-      title: "Standaard Officiële Publicaties 1.5",
-      href: "https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/index.html",
-      status: "consultatieversie",
+    STOP141: {
+      id: "STOP141",
+      title: "Standaard Officiële Publicaties 1.4.1",
+      href: "https://koop.gitlab.io/STOP/standaard/1.4.1/index.html",
+      status: "definitief",
       publisher: "KOOP"
     },
   },
