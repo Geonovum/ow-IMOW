@@ -1,17 +1,17 @@
 # Onderdelen van STOP relevant voor IMOW {#H06-OPinIMOW}
 
+In dit hoofdstuk is [paragraaf 6.3](#06-03-JuridischeBorging) normatief. De andere
+paragrafen zijn informatief omdat die  verwijzen naar regels die in de [[STOP]] standaard zijn vastgelegd.
+
 Dit hoofdstuk legt vast hoe de STOP standaard en het IMOW zich tot elkaar verhouden. Enkele
 dingen worden toegelicht vanuit OW-perspectief. [paragraaf 6.1](#H06-01-ConsolidatieInformatie)
 beschrijft de consolidatieinformatie uit een
 Regeling. In [paragraaf 6.2](#H06-02-GIO) worden GIO’s beschreven. 
-In [paragraaf 6.3](#H06-04-GML) staan regels voor het aanleveren van GML.
+[Paragraaf 6.3](#06-03-JuridischeBorging) legt regels vast over de
+de relatie tussen OW-objecten en GIO's. De andere paragrafen verwijzen naar regel en informatie
+vastgelegd in de STOP standaard [[STOP]]. In [paragraaf 6.4](#H06-04-GML) staan regels voor het aanleveren van GML.
 
-In [paragraaf 6.3](#06-03-JuridischeBorging) worden regels vastgelegd over
-de relatie tussen OW-objecten en GIO's. Dit is de enige normatieve paragraaf
-van dit hoofdstuk. De andere paragrafen verwijzen naar regel en informatie
-vastgelegd in de STOP standaard [[STOP15]].
-
-Zie [[STOP15]] en het [[CIMOP]] voor meer details.
+Zie [[STOP]] en het [[CIMOP]] voor meer details.
 
 ## ConsolidatieInformatie {#H06-01-ConsolidatieInformatie}
 
@@ -82,7 +82,7 @@ een 'Normwaarde'. Hiervoor geldt:
     <figcaption>GIO in CIM-OP</figcaption>
 </figure>
 
-## Juridische Borging Van in GIO {#06-03-JuridischeBorging}
+## JuridischeBorgingVan in GIO {#06-03-JuridischeBorging}
 
 GIO's en OW-objecten worden in verschillende (bijna afzonderdelijke) modellen
 aangeleverd. In veel gevallen is het wenselijk te weten hoe de GIO's en de OW-objecten aan elkaar gerelateerd zijn. Hiervoor kan [JuridischeBorgingVan](https://koop.gitlab.io/stop/standaard/1.4.0-ic/gio-juridische-borging.html) element bij een GIO gebrukt worden.
@@ -90,7 +90,7 @@ aangeleverd. In veel gevallen is het wenselijk te weten hoe de GIO's en de OW-ob
 De volgende regels leggen vast hoe het STOP element JuridischeBorgingVan in de context an IMOW gebruikt moet worden:
 
 **Constraint:** Het veld JuridischBorgingVan behorend bij een GIO heeft maximaal
-één kenmerk JuridischeBorgVan met domein = 'http://www.geostandaarden.nl/imow/'.
+één kenmerk JuridischeBorgVan met domein = `http://www.geostandaarden.nl/imow/`.
 De waarde van domeinObjectID in dit kenmerk is de idenficatie van een actief OW-object behorend
 bij de Regeling die de betreffende GIO als geboorteregeling heeft en die geometrisch
 exact overeenkomt. (TPOD2600)
@@ -110,7 +110,7 @@ Het gebruik van JuridischeBorgingVan is essentieel om wijzigmarkeringen van GIO-
 
 **Constraint:** Bij een GIO met de verschijningsvorm GIO-mutatie moet JuridischeBorgingVan onderdeel zijn van het GIO. (TPOD2604)
 
-Door het gebruik van JuridischeBorgingVan leg je van een aantal OW-objecten vast dat ze 1-1 overeenkomen met  een GIO, zodat wijzigmarkeringen van de GIO ook gelden zijn voor die OW-objecten. Met logische regels is het aantal OW-objecten waarvan je weet wat de relatie tot de GIO is uit te breiden:
+Door het gebruik van JuridischeBorgingVan leg je van een aantal OW-objecten vast dat ze 1-1 tegenhanger zijn van een GIO, zodat wijzigmarkeringen van de GIO ook gelden zijn voor die OW-objecten. Met logische regels is het aantal OW-objecten waarvan je weet wat de relatie tot de GIO is uit te breiden:
 
 - ALS je van Gebiedsaanwijzing weet hoe deze zich tot een GIO is verhoudt en die Gebiedsaanwijzing verwijst naar één Locatie DAN geldt diezelfde verhouding ook voor die Locatie.
 - ALS je van een Locatiegroep weet hoe deze zich verhoudt tot een GIO is en die Locatiegroep verwijst naar één Locatie DAN geldt diezelfde verhouding ook voor die Locatie.
@@ -124,7 +124,7 @@ Met deze regels kan van veel OW-objecten (maar mogelijk niet alle) vastgesteld w
 OW Geometrie objecten worden aangeleverd via het GIO in GML. Voor de
 aangeleverde GML gelden de volgende regels:
 
-- De GML-specificaties volgen de regels van de standaard Basisgeometrie [[Basisgeometrie]].
+- De GML-specificaties volgen de regels van de standaard Basisgeometrie [[?Basisgeometrie]].
 - Het bijbehorende GML applicatieschema Basisgeometrie.xsd is gepubliceerd op:
 <https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/1.0.0/>
 - Voor aanlevering van het GML wordt gebruik gemaakt van GML 3.2.2 met
@@ -157,5 +157,5 @@ Het functioneren van de landelijke voorziening wordt gewaarborgd door geometrie
 die ver buiten Nederland en exclusieve economische zone ligt te weigeren.
 
 **Constraint:** Alle geometrieën in een omgevingsdocument moeten liggen binnen
-de geometrie van Nederland met inbegrip van de exclusieve economische zone (EEZ).
+de geometrie van Nederland met inbegrip van de exclusieve economische zone (EEZ). (TPOD2700)
 

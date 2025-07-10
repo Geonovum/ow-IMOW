@@ -5,9 +5,9 @@ let respecConfig = {
   title: "Informatiemodel Omgevingswet (IMOW)",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   //specStatus: "wv",                   // Werkversie
-  //specStatus: "cv",               // Consultatieversie
+  specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
-  specStatus: "def",              // Vastgestelde versie
+  //specStatus: "def",              // Vastgestelde versie
 
   specType: "IM",                 // Informatie Model
 
@@ -25,12 +25,12 @@ let respecConfig = {
 
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2025-07-11",
+  publishDate: "2025-07-15",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
-  publishVersion: "3.2",
+  publishVersion: "3.2-rc1",
   previousVersion: "3.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-  previousPublishDate: "2025-06-25",
+  previousPublishDate: "2025-07-11",
   previousMaturity: "def",
 
   editors:
@@ -118,8 +118,8 @@ let respecConfig = {
       publisher: "NEN",
       date: "2020-06-20"
     },
-    STOP15: {
-      id: "STOP15",
+    STOP: {
+      id: "STOP",
       title: "Standaard Officiële Publicaties 1.5",
       href: "https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/index.html",
       status: "consultatieversie",

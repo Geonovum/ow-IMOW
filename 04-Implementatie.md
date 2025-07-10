@@ -19,7 +19,7 @@ OW-manifest bevat niet de opsomming van de GML-bestanden; deze staan in het (OP-
 xml-schema in `bestanden-ow/generiek/manifest-ow.xsd`. (TPOD1162)
 
 **Constraint:** Het xml-attribuut schemaversie in het root element van het
-manifest-ow.xml bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)
+`manifest-ow.xml` bestand bevat het versienummer van het gebruikte xsd. (TPOD1160)
 
 Zie [paragraaf 2.1](#global_package_Aanlevering) voor een uitleg van de XML elementen in deze bestanden.
 

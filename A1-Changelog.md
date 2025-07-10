@@ -2,8 +2,8 @@
 
 ## wijzigingen in versie 3.2.0
 
-- Toevoeging JuridischeBorgingVan om
-- OW-Bestand.leveringsID van verplicht naar optioneel (WELT-285)
+- Het (STOP-)element JuridischeBorgingVan wordt verplicht bij het toepassen van GIO-muteren, met constraints voor de invulling van JuridischeBorgingVan (paragraaf 6.3). Door GIO-muteren is bekend wat er wijzigt in een GIO. Om inzicht in die wijzigingen ook op andere plekken te kunnen gebruiken, waaronder door ze in de DSO-viewer Regels op de kaart te laten zien, moet bekend zijn welke OW-objecten bij welk GIO horen. JuridischeBorgingVan legt die relatie.
+- Het attribuut leveringsID van OW-Bestand wordt optioneel (paragraaf 2.1.2.2). In IMOW 3.1 is het attribuut verplicht. Het stelsel negeert het echter terwijl het toevoegen van het leveringsID aan de bestandenset voor plansoftware bewerkelijk is. Daarom wordt het in IMOW 3.2 optioneel (WELT-285)
 ## Eerdere wijzigingen
 
 In de versiehistorie wordt met WELT-xx verwezen naar de Wensen en Eisen Lijst
