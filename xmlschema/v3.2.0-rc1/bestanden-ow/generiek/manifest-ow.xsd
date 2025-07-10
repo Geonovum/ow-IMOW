@@ -4,7 +4,7 @@
   targetNamespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
   elementFormDefault="qualified"
   attributeFormDefault="unqualified"
-  version="3.1.0">
+  version="3.2.0-rc1">
   <xs:element name="Aanleveringen">
     <xs:annotation>
       <xs:documentation>Root element van CIM-OW.xml.</xs:documentation>

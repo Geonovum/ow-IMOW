@@ -10,7 +10,7 @@
             targetNamespace="http://www.geostandaarden.nl/imow/regelsoplocatie"
             elementFormDefault="qualified"
             attributeFormDefault="unqualified"
-            version="v3.1.0">
+            version="v3.2.0-rc1">
    <xs:annotation>
       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/regelsoplocatie</xs:appinfo>
       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>

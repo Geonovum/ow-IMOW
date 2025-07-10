@@ -2,14 +2,8 @@
 
 ## wijzigingen in versie 3.2.0
 
-- Toevoeging JuridischeBorgingVan
-
-##  wijzigingen in versie 3.1.1
-
-- Regels hernoemd naar constraints.
-- Nummers gegeven aan ongenummerde constraints.
-- OZON en LVBB constraints een TPOD identificatie gegeven. (OZON0104 wordt TPOD0104, OZON0108 wordt TPOD0108, OZON0107 wordt TPOD0107, OZON4005 wordt TPOD1891, OZON0351 wordt TPOD1900, LVBB1016 wordt TPOD1161, LVBB1025 wordt TPOD1150, LVBB1032 wordt TPOD1162)
-
+- Toevoeging JuridischeBorgingVan om
+- OW-Bestand.leveringsID van verplicht naar optioneel (WELT-285)
 ## Eerdere wijzigingen
 
 In de versiehistorie wordt met WELT-xx verwezen naar de Wensen en Eisen Lijst

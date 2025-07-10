@@ -1,7 +1,11 @@
 # Release notes
 
-Versie: IMOW v3.1.0
+Versie: IMOW v3.2.0
 Behorend bij: https://docs.geostandaarden.nl/ow/imow/
+
+## Wijzigingen in v3.2.0
+
+- OW-Bestand.leveringsID van verplicht naar optioneel (WELT-285)
 
 ## Wijzigingen in v3.1.0
 

@@ -2,7 +2,7 @@
 <xs:schema xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" 
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
 	targetNamespace="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" 
-	elementFormDefault="qualified">
+	elementFormDefault="qualified" version="3.2.0-rc1">
 	<xs:element name="standBestand">
 		<xs:complexType>
 			<xs:sequence>
@@ -15,7 +15,7 @@
 	<xs:complexType name="inhoud">
 		<xs:sequence>
 			<xs:element name="gebied" type="xs:string"/>
-			<xs:element name="leveringsId" type="xs:string"/>
+			<xs:element name="leveringsId" minOccurs="0" type="xs:string"/>
 			<xs:element name="objectTypen" type="sl:objectTypen"/>
 		</xs:sequence>
 	</xs:complexType>
