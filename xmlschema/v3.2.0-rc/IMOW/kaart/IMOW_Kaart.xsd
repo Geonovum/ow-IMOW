@@ -11,7 +11,7 @@
               targetNamespace="http://www.geostandaarden.nl/imow/kaart"
               elementFormDefault="qualified"
               attributeFormDefault="unqualified"
-              version="v3.2.0-rc1"> 
+              version="v3.2.0-rc"> 
    <xs:annotation>
       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/kaartrecept</xs:appinfo>
       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>

@@ -5,8 +5,8 @@ aan een aanlevering aan de LVBB. [Paragraaf 4.1](#H04-OW-aanlevering) schrijft v
 aangeleverd.  [Paragraaf 4.2](#H04-aanlevereisen) stelt eisen aan de
 aanlevering.
 
-De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <https://github.com/Geonovum/ow-IMOW/tree/main/xmlschema/v3.2.0-rc1>. Het
-versienummer van deze xsd's is: 'v3.2.0-rc1'.
+De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <https://github.com/Geonovum/ow-IMOW/tree/main/xmlschema/v3.2.0-rc>. Het
+versienummer van deze xsd's is: 'v3.2.0-rc'.
 
 ## OW-aanlevering en OW-manifest {#H04-OW-aanlevering}
 

@@ -13,7 +13,7 @@
 	xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie"
 	xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst" 
 	targetNamespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand" 
-	elementFormDefault="qualified" version="v3.2.0-rc1">
+	elementFormDefault="qualified" version="v3.2.0-rc">
 	
 	<xs:import namespace="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" schemaLocation="../generiek/standlevering-generiek.xsd"/>
 	<xs:import namespace="http://www.geostandaarden.nl/imow/locatie" schemaLocation="../../IMOW/locatie/IMOW_Locatie.xsd"/>
