@@ -1,373 +1,0 @@
-[1mdiff --git a/A1-Changelog.md b/A1-Changelog.md[m
-[1mindex 6e88536..524c45f 100644[m
-[1m--- a/A1-Changelog.md[m
-[1m+++ b/A1-Changelog.md[m
-[36m@@ -2,14 +2,8 @@[m
- [m
- ## wijzigingen in versie 3.2.0[m
- [m
-[31m-- Toevoeging JuridischeBorgingVan[m
-[31m-[m
-[31m-##  wijzigingen in versie 3.1.1[m
-[31m-[m
-[31m-- Regels hernoemd naar constraints.[m
-[31m-- Nummers gegeven aan ongenummerde constraints.[m
-[31m-- OZON en LVBB constraints een TPOD identificatie gegeven. (OZON0104 wordt TPOD0104, OZON0108 wordt TPOD0108, OZON0107 wordt TPOD0107, OZON4005 wordt TPOD1891, OZON0351 wordt TPOD1900, LVBB1016 wordt TPOD1161, LVBB1025 wordt TPOD1150, LVBB1032 wordt TPOD1162)[m
-[31m-[m
-[32m+[m[32m- Toevoeging JuridischeBorgingVan om[m
-[32m+[m[32m- OW-Bestand.leveringsID van verplicht naar optioneel (WELT-285)[m
- ## Eerdere wijzigingen[m
- [m
- In de versiehistorie wordt met WELT-xx verwezen naar de Wensen en Eisen Lijst[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/IMOW/datatypenalgemeen/IMOW_DatatypenAlgemeen.xsd b/xmlschema/v3.2.0-rc1/IMOW/datatypenalgemeen/IMOW_DatatypenAlgemeen.xsd[m
-[1mindex a538f41..0be8bcc 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/IMOW/datatypenalgemeen/IMOW_DatatypenAlgemeen.xsd[m
-[1m+++ b/xmlschema/v3.2.0-rc1/IMOW/datatypenalgemeen/IMOW_DatatypenAlgemeen.xsd[m
-[36m@@ -5,7 +5,7 @@[m
-            targetNamespace="http://www.geostandaarden.nl/imow/datatypenalgemeen"[m
-            elementFormDefault="qualified"[m
-            attributeFormDefault="unqualified"[m
-[31m-           version="v3.1.0">[m
-[32m+[m[32m           version="v3.2.0-rc1">[m
-    <xs:annotation>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/datatypenalgemeen</xs:appinfo>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/IMOW/gebiedsaanwijzing/IMOW_Gebiedsaanwijzing.xsd b/xmlschema/v3.2.0-rc1/IMOW/gebiedsaanwijzing/IMOW_Gebiedsaanwijzing.xsd[m
-[1mindex 96d2f2e..c8f8d93 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/IMOW/gebiedsaanwijzing/IMOW_Gebiedsaanwijzing.xsd[m
-[1m+++ b/xmlschema/v3.2.0-rc1/IMOW/gebiedsaanwijzing/IMOW_Gebiedsaanwijzing.xsd[m
-[36m@@ -10,7 +10,7 @@[m
-    targetNamespace="http://www.geostandaarden.nl/imow/gebiedsaanwijzing"[m
-    elementFormDefault="qualified"[m
-    attributeFormDefault="unqualified"[m
-[31m-           version="v3.1.0">[m
-[32m+[m[32m           version="v3.2.0-rc1">[m
-    <xs:annotation>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/gebiedsaanwijzing</xs:appinfo>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/IMOW/kaart/IMOW_Kaart.xsd b/xmlschema/v3.2.0-rc1/IMOW/kaart/IMOW_Kaart.xsd[m
-[1mindex 3121e55..847b5c7 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/IMOW/kaart/IMOW_Kaart.xsd[m
-[1m+++ b/xmlschema/v3.2.0-rc1/IMOW/kaart/IMOW_Kaart.xsd[m
-[36m@@ -11,7 +11,7 @@[m
-               targetNamespace="http://www.geostandaarden.nl/imow/kaart"[m
-               elementFormDefault="qualified"[m
-               attributeFormDefault="unqualified"[m
-[31m-              version="v3.1.0"> [m
-[32m+[m[32m              version="v3.2.0-rc1">[m[41m [m
-    <xs:annotation>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/kaartrecept</xs:appinfo>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/IMOW/locatie/IMOW_Locatie.xsd b/xmlschema/v3.2.0-rc1/IMOW/locatie/IMOW_Locatie.xsd[m
-[1mindex 4423ef1..68f0cf7 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/IMOW/locatie/IMOW_Locatie.xsd[m
-[1m+++ b/xmlschema/v3.2.0-rc1/IMOW/locatie/IMOW_Locatie.xsd[m
-[36m@@ -1,5 +1,5 @@[m
- <?xml version="1.0" encoding="UTF-8"?>[m
-[31m-<xs:schema xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:imvert="http://www.imvertor.org/schema/system" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://www.geostandaarden.nl/imow/locatie" elementFormDefault="qualified" attributeFormDefault="unqualified" version="v3.1.0">[m
-[32m+[m[32m<xs:schema xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:imvert="http://www.imvertor.org/schema/system" xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://www.geostandaarden.nl/imow/locatie" elementFormDefault="qualified" attributeFormDefault="unqualified" version="v3.2.0-rc1">[m
-    <xs:annotation>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/locatie</xs:appinfo>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/IMOW/opobject/IMOW_OPobject.xsd b/xmlschema/v3.2.0-rc1/IMOW/opobject/IMOW_OPobject.xsd[m
-[1mindex e9eac2d..1aabbf4 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/IMOW/opobject/IMOW_OPobject.xsd[m
-[1m+++ b/xmlschema/v3.2.0-rc1/IMOW/opobject/IMOW_OPobject.xsd[m
-[36m@@ -6,7 +6,7 @@[m
-             targetNamespace="http://www.geostandaarden.nl/imow/opobject"[m
-             elementFormDefault="qualified"[m
-             attributeFormDefault="unqualified"[m
-[31m-            version="v3.1.0">[m
-[32m+[m[32m            version="v3.2.0-rc1">[m
-    <xs:annotation>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/opobject</xs:appinfo>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/IMOW/owobject/IMOW_OWobject.xsd b/xmlschema/v3.2.0-rc1/IMOW/owobject/IMOW_OWobject.xsd[m
-[1mindex 9c9be47..a90e562 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/IMOW/owobject/IMOW_OWobject.xsd[m
-[1m+++ b/xmlschema/v3.2.0-rc1/IMOW/owobject/IMOW_OWobject.xsd[m
-[36m@@ -6,7 +6,7 @@[m
-             targetNamespace="http://www.geostandaarden.nl/imow/owobject"[m
-             elementFormDefault="qualified"[m
-             attributeFormDefault="unqualified"[m
-[31m-            version="v3.1.0">[m
-[32m+[m[32m            version="v3.2.0-rc1">[m
-    <xs:annotation>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/owobject</xs:appinfo>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/IMOW/pons/IMOW_Pons.xsd b/xmlschema/v3.2.0-rc1/IMOW/pons/IMOW_Pons.xsd[m
-[1mindex cddacbd..19708ce 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/IMOW/pons/IMOW_Pons.xsd[m
-[1m+++ b/xmlschema/v3.2.0-rc1/IMOW/pons/IMOW_Pons.xsd[m
-[36m@@ -9,7 +9,7 @@[m
-             targetNamespace="http://www.geostandaarden.nl/imow/pons"[m
-             elementFormDefault="qualified"[m
-             attributeFormDefault="unqualified"[m
-[31m-            version="v3.1.0">[m
-[32m+[m[32m            version="v3.2.0-rc1">[m
-    <xs:annotation>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/pons</xs:appinfo>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/IMOW/regelingsgebied/IMOW_RegelingsGebied.xsd b/xmlschema/v3.2.0-rc1/IMOW/regelingsgebied/IMOW_RegelingsGebied.xsd[m
-[1mindex 2a4e90b..7762b7e 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/IMOW/regelingsgebied/IMOW_RegelingsGebied.xsd[m
-[1m+++ b/xmlschema/v3.2.0-rc1/IMOW/regelingsgebied/IMOW_RegelingsGebied.xsd[m
-[36m@@ -8,7 +8,7 @@[m
-             targetNamespace="http://www.geostandaarden.nl/imow/regelingsgebied"[m
-             elementFormDefault="qualified"[m
-             attributeFormDefault="unqualified"[m
-[31m-            version="v3.1.0">[m
-[32m+[m[32m            version="v3.2.0-rc1">[m
-    <xs:annotation>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/phase">1</xs:appinfo>[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/IMOW/regels/IMOW_Regel.xsd b/xmlschema/v3.2.0-rc1/IMOW/regels/IMOW_Regel.xsd[m
-[1mindex 239c2cd..0694c72 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/IMOW/regels/IMOW_Regel.xsd[m
-[1m+++ b/xmlschema/v3.2.0-rc1/IMOW/regels/IMOW_Regel.xsd[m
-[36m@@ -13,7 +13,7 @@[m
-             targetNamespace="http://www.geostandaarden.nl/imow/regels"[m
-             elementFormDefault="qualified"[m
-             attributeFormDefault="unqualified"[m
-[31m-            version="v3.1.0">[m
-[32m+[m[32m            version="v3.2.0-rc1">[m
-    <xs:annotation>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/regels</xs:appinfo>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/IMOW/regelsoplocatie/IMOW_RegelsOpLocatie.xsd b/xmlschema/v3.2.0-rc1/IMOW/regelsoplocatie/IMOW_RegelsOpLocatie.xsd[m
-[1mindex 3b235de..f4a8780 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/IMOW/regelsoplocatie/IMOW_RegelsOpLocatie.xsd[m
-[1m+++ b/xmlschema/v3.2.0-rc1/IMOW/regelsoplocatie/IMOW_RegelsOpLocatie.xsd[m
-[36m@@ -10,7 +10,7 @@[m
-             targetNamespace="http://www.geostandaarden.nl/imow/regelsoplocatie"[m
-             elementFormDefault="qualified"[m
-             attributeFormDefault="unqualified"[m
-[31m-            version="v3.1.0">[m
-[32m+[m[32m            version="v3.2.0-rc1">[m
-    <xs:annotation>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/regelsoplocatie</xs:appinfo>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/IMOW/vrijetekst/IMOW_VrijeTekst.xsd b/xmlschema/v3.2.0-rc1/IMOW/vrijetekst/IMOW_VrijeTekst.xsd[m
-[1mindex 7561594..cbd800d 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/IMOW/vrijetekst/IMOW_VrijeTekst.xsd[m
-[1m+++ b/xmlschema/v3.2.0-rc1/IMOW/vrijetekst/IMOW_VrijeTekst.xsd[m
-[36m@@ -13,7 +13,7 @@[m
-    targetNamespace="http://www.geostandaarden.nl/imow/vrijetekst"[m
-    elementFormDefault="qualified"[m
-    attributeFormDefault="unqualified"[m
-[31m-   version="v3.1.0">[m
-[32m+[m[32m   version="v3.2.0-rc1">[m
-    <xs:annotation>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/vrijetekst</xs:appinfo>[m
-       <xs:appinfo source="http://www.imvertor.org/schema-info/version">1.0</xs:appinfo>[m
-[1mdiff --git a/xmlschema/v3.2.0-rc1/RELEASE_NOTES.md b/xmlschema/v3.2.0-rc1/RELEASE_NOTES.md[m
-[1mindex a941395..ab21ebe 100644[m
-[1m--- a/xmlschema/v3.2.0-rc1/RELEASE_NOTES.md[m
-[1m+++ b/xmlschema/v3.2.0-rc1/RELEASE_NOTES.md[m
-[36m@@ -1,8 +1,12 @@[m
- # Release notes[m
- [m
-[31m-Versie: IMOW v3.1.0[m
-[32m+[m[32mVersie: IMOW v3.2.0[m
- Behorend bij: https://docs.geostandaarden.nl/ow/imow/[m
- [m
-[32m+[m[32m## Wijzigingen in v3.2.0[m
-[32m+[m
-[32m+[m[32m- OW-Bestand.leveringsID van verplicht naar optioneel (WELT-285)[m
-[32m+[m
- ## Wijzigingen in v3.1.0[m
- [m
- - in bestanden-ow/generiek/manifest-ow.xsd:[m
-[1mdiff --git a/xmlschema/v4.0.0-ic1/bestanden-ow/generiek/manifest-ow.xsd b/xmlschema/v4.0.0-ic1/bestanden-ow/generiek/manifest-ow.xsd[m
-[1mindex 0f9dbdf..bf1f76c 100644[m
-[1m--- a/xmlschema/v4.0.0-ic1/bestanden-ow/generiek/manifest-ow.xsd[m
-[1m+++ b/xmlschema/v4.0.0-ic1/bestanden-ow/generiek/manifest-ow.xsd[m
-[36m@@ -1,94 +1,94 @@[m
-[31m-<?xml version="1.0" encoding="utf-8"?>[m
-[31m-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" [m
-[31m-  xmlns:mow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"[m
-[31m-  targetNamespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"[m
-[31m-  elementFormDefault="qualified"[m
-[31m-  attributeFormDefault="unqualified"[m
-[31m-  version="1.0.4">[m
-[31m-  <xs:element name="Aanleveringen">[m
-[31m-    <xs:annotation>[m
-[31m-      <xs:documentation>Root element van CIM-OW.xml.</xs:documentation>[m
-[31m-    </xs:annotation>[m
-[31m-    <xs:complexType>[m
-[31m-      <xs:sequence>[m
-[31m-        <xs:element maxOccurs="1" minOccurs="1" ref="mow:domein"/>[m
-[31m-        <xs:element maxOccurs="1" minOccurs="0" ref="mow:IMOWversie"/>[m
-[31m-        <xs:element maxOccurs="unbounded" minOccurs="1" ref="mow:Aanlevering"/>[m
-[31m-      </xs:sequence>[m
-[31m-    </xs:complexType>[m
-[31m-  </xs:element>[m
-[31m-  <xs:element name="domein">[m
-[31m-    <xs:annotation>[m
-[31m-      <xs:documentation>Het domein geeft het wetgevingsdomein aan en is nodig om de verwerking in de keten beter te laten verlopen. Het element een vaste waarde "omgevingswet".</xs:documentation>[m
-[31m-    </xs:annotation>[m
-[31m-    <xs:simpleType>[m
-[31m-      <xs:restriction base="xs:token">[m
-[31m-        <xs:enumeration value="omgevingswet"/>[m
-[31m-      </xs:restriction>[m
-[31m-    </xs:simpleType>[m
-[31m-  </xs:element>[m
-[31m-  <xs:element name="Aanlevering">[m
-[31m-    <xs:annotation>[m
-[31m-      <xs:documentation>bestanden die horen bij een specifieke versie van een regeling.</xs:documentation>[m
-[31m-    </xs:annotation>[m
-[31m-    <xs:complexType>[m
-[31m-      <xs:sequence>[m
-[31m-        <xs:element maxOccurs="1" minOccurs="1" ref="mow:WorkIDRegeling"/>[m
-[31m-        <xs:element maxOccurs="1" minOccurs="0" ref="mow:DoelID"/>[m
-[31m-        <xs:element maxOccurs="1" minOccurs="0" ref="mow:ExpressionIDRegeling"/>[m
-[31m-        <xs:element maxOccurs="unbounded" minOccurs="0" ref="mow:Bestand">[m
-[31m-          <xs:annotation>[m
-[31m-            <xs:documentation>Bestandsnaam van de module volgens CIM-OW opmaak. Het bestand moet ook in de manifest voorkomen.</xs:documentation>[m
-[31m-          </xs:annotation>[m
-[31m-        </xs:element>[m
-[31m-      </xs:sequence>[m
-[31m-    </xs:complexType>[m
-[31m-  </xs:element>[m
-[31m-  <xs:element name="IMOWversie" type="xs:string">[m
-[31m-    <xs:annotation>[m
-[31m-      <xs:documentation>De IMOW-versie waarmee is aangeleverd. Per 1.0.4 alleen noodzakelijk als aangeleverd is met een oudere versie.</xs:documentation>[m
-[31m-    </xs:annotation>[m
-[31m-  </xs:element>[m
-[31m-  <xs:element name="DoelID" type="xs:anyURI">[m
-[31m-    <xs:annotation>[m
-[31m-      <xs:documentation>Verwijzing naar Doel van het besluit.</xs:documentation>[m
-[31m-    </xs:annotation>[m
-[31m-  </xs:element>[m
-[31m-  <xs:element name="WorkIDRegeling" type="xs:anyURI">[m
-[31m-    <xs:annotation>[m
-[31m-      <xs:documentation>Verwijzing naar WorkID van de Regeling.</xs:documentation>[m
-[31m-    </xs:annotation>[m
-[31m-  </xs:element>[m
-[31m-  <xs:element name="ExpressionIDRegeling" type="xs:anyURI">[m
-[31m-    <xs:annotation>[m
-[31m-      <xs:documentation>expression­ID van de regeling waar deze aanlevering bij hoort.</xs:documentation>[m
-[31m-    </xs:annotation>[m
-[31m-  </xs:element>[m
-[31m-  <xs:element name="Bestand">[m
-[31m-    <xs:annotation>[m
-[31m-      <xs:documentation>Basistype voor alle leveringen via Digikoppeling ebMS.</xs:documentation>[m
-[31m-    </xs:annotation>[m
-[31m-    <xs:complexType>[m
-[31m-      <xs:sequence>[m
-[31m-        <xs:element maxOccurs="1" minOccurs="1" ref="mow:naam"/>[m
-[31m-        <xs:element maxOccurs="unbounded" minOccurs="0" ref="mow:objecttype"/>[m
-[31m-      </xs:sequence>[m
-[31m-    </xs:complexType>[m
-[31m-  </xs:element>[m
-[31m-  <xs:element name="naam" type="mow:naamType">[m
-[31m-    <xs:annotation>[m
-[31m-      <xs:documentation>Naam van het bestand; moet overeenkomen met de naam zoals in manifest.xml is opgenomen.</xs:documentation>[m
-[31m-    </xs:annotation>[m
-[31m-  </xs:element>[m
-[31m-  <xs:element name="objecttype" type="xs:string">[m
-[31m-    <xs:annotation>[m
-[31m-      <xs:documentation>Type van de objecten die in het bestand voorkomen. De toegestane waarde voor het objecttype is beschreven in de CIM-OW documentatie.</xs:documentation>[m
-[31m-    </xs:annotation>[m
-[31m-  </xs:element>[m
-[31m-  <!--Types-->[m
-[31m-  <xs:simpleType name="naamType">[m
-[31m-    <xs:restriction base="xs:string">[m
-[31m-      <xs:pattern value="[0-9A-Za-z\._-]+"/>[m
-[31m-    </xs:restriction>[m
-[31m-  </xs:simpleType>[m
-[31m-</xs:schema>[m
-[32m+[m[32m<?xml version="1.0" encoding="utf-8"?>[m[41m[m
-[32m+[m[32m<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"[m[41m [m
-[32m+[m[32m  xmlns:mow="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"[m[41m[m
-[32m+[m[32m  targetNamespace="http://www.geostandaarden.nl/bestanden-ow/manifest-ow"[m[41m[m
-[32m+[m[32m  elementFormDefault="qualified"[m[41m[m
-[32m+[m[32m  attributeFormDefault="unqualified"[m[41m[m
-[32m+[m[32m  version="1.0.4">[m[41m[m
-[32m+[m[32m  <xs:element name="Aanleveringen">[m[41m[m
-[32m+[m[32m    <xs:annotation>[m[41m[m
-[32m+[m[32m      <xs:documentation>Root element van CIM-OW.xml.</xs:documentation>[m[41m[m
-[32m+[m[32m    </xs:annotation>[m[41m[m
-[32m+[m[32m    <xs:complexType>[m[41m[m
-[32m+[m[32m      <xs:sequence>[m[41m[m
-[32m+[m[32m        <xs:element maxOccurs="1" minOccurs="1" ref="mow:domein"/>[m[41m[m
-[32m+[m[32m        <xs:element maxOccurs="1" minOccurs="0" ref="mow:IMOWversie"/>[m[41m[m
-[32m+[m[32m        <xs:element maxOccurs="unbounded" minOccurs="1" ref="mow:Aanlevering"/>[m[41m[m
-[32m+[m[32m      </xs:sequence>[m[41m[m
-[32m+[m[32m    </xs:complexType>[m[41m[m
-[32m+[m[32m  </xs:element>[m[41m[m
-[32m+[m[32m  <xs:element name="domein">[m[41m[m
-[32m+[m[32m    <xs:annotation>[m[41m[m
-[32m+[m[32m      <xs:documentation>Het domein geeft het wetgevingsdomein aan en is nodig om de verwerking in de keten beter te laten verlopen. Het element een vaste waarde "omgevingswet".</xs:documentation>[m[41m[m
-[32m+[m[32m    </xs:annotation>[m[41m[m
-[32m+[m[32m    <xs:simpleType>[m[41m[m
-[32m+[m[32m      <xs:restriction base="xs:token">[m[41m[m
-[32m+[m[32m        <xs:enumeration value="omgevingswet"/>[m[41m[m
-[32m+[m[32m      </xs:restriction>[m[41m[m
-[32m+[m[32m    </xs:simpleType>[m[41m[m
-[32m+[m[32m  </xs:element>[m[41m[m
-[32m+[m[32m  <xs:element name="Aanlevering">[m[41m[m
-[32m+[m[32m    <xs:annotation>[m[41m[m
-[32m+[m[32m      <xs:documentation>bestanden die horen bij een specifieke versie van een regeling.</xs:documentation>[m[41m[m
-[32m+[m[32m    </xs:annotation>[m[41m[m
-[32m+[m[32m    <xs:complexType>[m[41m[m
-[32m+[m[32m      <xs:sequence>[m[41m[m
-[32m+[m[32m        <xs:element maxOccurs="1" minOccurs="1" ref="mow:WorkIDRegeling"/>[m[41m[m
-[32m+[m[32m        <xs:element maxOccurs="1" minOccurs="0" ref="mow:DoelID"/>[m[41m[m
-[32m+[m[32m        <xs:element maxOccurs="1" minOccurs="0" ref="mow:ExpressionIDRegeling"/>[m[41m[m
-[32m+[m[32m        <xs:element maxOccurs="unbounded" minOccurs="0" ref="mow:Bestand">[m[41m[m
-[32m+[m[32m          <xs:annotation>[m[41m[m
-[32m+[m[32m            <xs:documentation>Bestandsnaam van de module volgens CIM-OW opmaak. Het bestand moet ook in de manifest voorkomen.</xs:documentation>[m[41m[m
-[32m+[m[32m          </xs:annotation>[m[41m[m
-[32m+[m[32m        </xs:element>[m[41m[m
-[32m+[m[32m      </xs:sequence>[m[41m[m
-[32m+[m[32m    </xs:complexType>[m[41m[m
-[32m+[m[32m  </xs:element>[m[41m[m
-[32m+[m[32m  <xs:element name="IMOWversie" type="xs:string">[m[41m[m
-[32m+[m[32m    <xs:annotation>[m[41m[m
-[32m+[m[32m      <xs:documentation>De IMOW-versie waarmee is aangeleverd. Per 1.0.4 alleen noodzakelijk als aangeleverd is met een oudere versie.</xs:documentation>[m[41m[m
-[32m+[m[32m    </xs:annotation>[m[41m[m
-[32m+[m[32m  </xs:element>[m[41m[m
-[32m+[m[32m  <xs:element name="DoelID" type="xs:anyURI">[m[41m[m
-[32m+[m[32m    <xs:annotation>[m[41m[m
-[32m+[m[32m      <xs:documentation>Verwijzing naar Doel van het besluit.</xs:documentation>[m[41m[m
-[32m+[m[32m    </xs:annotation>[m[41m[m
-[32m+[m[32m  </xs:element>[m[41m[m
-[32m+[m[32m  <xs:element name="WorkIDRegeling" type="xs:anyURI">[m[41m[m
-[32m+[m[32m    <xs:annotation>[m[41m[m
-[32m+[m[32m      <xs:documentation>Verwijzing naar WorkID van de Regeling.</xs:documentation>[m[41m[m
-[32m+[m[32m    </xs:annotation>[m[41m[m
-[32m+[m[32m  </xs:element>[m[41m[m
-[32m+[m[32m  <xs:element name="ExpressionIDRegeling" type="xs:anyURI">[m[41m[m
-[32m+[m[32m    <xs:annotation>[m[41m[m
-[32m+[m[32m      <xs:documentation>expression­ID van de regeling waar deze aanlevering bij hoort.</xs:documentation>[m[41m[m
-[32m+[m[32m    </xs:annotation>[m[41m[m
-[32m+[m[32m  </xs:element>[m[41m[m
-[32m+[m[32m  <xs:element name="Bestand">[m[41m[m
-[32m+[m[32m    <xs:annotation>[m[41m[m
-[32m+[m[32m      <xs:documentation>Basistype voor alle leveringen via Digikoppeling ebMS.</xs:documentation>[m[41m[m
-[32m+[m[32m    </xs:annotation>[m[41m[m
-[32m+[m[32m    <xs:complexType>[m[41m[m
-[32m+[m[32m      <xs:sequence>[m[41m[m
-[32m+[m[32m        <xs:element maxOccurs="1" minOccurs="1" ref="mow:naam"/>[m[41m[m
-[32m+[m[32m        <xs:element maxOccurs="unbounded" minOccurs="0" ref="mow:objecttype"/>[m[41m[m
-[32m+[m[32m      </xs:sequence>[m[41m[m
-[32m+[m[32m    </xs:complexType>[m[41m[m
-[32m+[m[32m  </xs:element>[m[41m[m
-[32m+[m[32m  <xs:element name="naam" type="mow:naamType">[m[41m[m
-[32m+[m[32m    <xs:annotation>[m[41m[m
-[32m+[m[32m      <xs:documentation>Naam van het bestand; moet overeenkomen met de naam zoals in manifest.xml is opgenomen.</xs:documentation>[m[41m[m
-[32m+[m[32m    </xs:annotation>[m[41m[m
-[32m+[m[32m  </xs:element>[m[41m[m
-[32m+[m[32m  <xs:element name="objecttype" type="xs:string">[m[41m[m
-[32m+[m[32m    <xs:annotation>[m[41m[m
-[32m+[m[32m      <xs:documentation>Type van de objecten die in het bestand voorkomen. De toegestane waarde voor het objecttype is beschreven in de CIM-OW documentatie.</xs:documentation>[m[41m[m
-[32m+[m[32m    </xs:annotation>[m[41m[m
-[32m+[m[32m  </xs:element>[m[41m[m
-[32m+[m[32m  <!--Types-->[m[41m[m
-[32m+[m[32m  <xs:simpleType name="naamType">[m[41m[m
-[32m+[m[32m    <xs:restriction base="xs:string">[m[41m[m
-[32m+[m[32m      <xs:pattern value="[0-9A-Za-z\._-]+"/>[m[41m[m
-[32m+[m[32m    </xs:restriction>[m[41m[m
-[32m+[m[32m  </xs:simpleType>[m[41m[m
-[32m+[m[32m</xs:schema>[m[41m[m
