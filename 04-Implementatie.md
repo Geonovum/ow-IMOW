@@ -30,7 +30,7 @@ IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten
 op te nemen.
 
 **Constraint:** OW-bestanden moeten voldoen aan het xml-schema in
-`bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd` (TPOD1161)
+`bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd` (TPOD1164)
 
 **Constraint:** Het xml-attribuut schemaversie in het root element owBestand bevat
 het versienummer van het gebruikte xsd. (TPOD1163)
