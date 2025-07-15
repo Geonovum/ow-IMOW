@@ -79,3 +79,6 @@ tot versie 3.0.1 niet meer geldig en verwijderd.
 |           |            | Gebruik van versienummer in IMOW-aanlevering verplicht                                                                                                                                                               |
 |           |            | Expliciet gemaakt dat een geometrie binnen Nederland inclusief EEZ moet liggen                                                                                                                                       |
 |           |            | Attribuut procedureStatus uit OW-object verwijderd                                                                                                                                                                   |
+| 3.1.1     | 2025-07-11 | Regels hernoemd naar constraints.                                                                                                                                                                                    |
+|           |            | Nummers gegeven aan ongenummerde constraints.                                                                                                                                                                        |
+|           |            | Constraint met OZON of LVBB nummer hernummerde naar TPOD nummer. |
