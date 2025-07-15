@@ -172,7 +172,7 @@ een onderverdeling naar verschillende domeinen gemaakt:
 
 Dit document is als volgt opgebouwd: [hoofdstuk 2](#cat) bevat de gegevensdefinities
 van OW-objecten. [Hoofdstuk 3](#lis) bevat een overzicht van de gebruikte waardelijsten.
-[Hoofdstuk 4](#H04-Implementatie) bescrijft hoe het IMOW technisch geïmplementeerd moet worden en gaat gedetailleerd in op hoe de
+[Hoofdstuk 4](#H04-Implementatie) beschrijft hoe het IMOW technisch geïmplementeerd moet worden en gaat gedetailleerd in op hoe de
 OW-bestanden er uit dienen te zien en geeft een XML-beschrijving van de aan te leveren bestanden. [Hoofdstuk 5](#H05-GebruikIMOW)
 schrijft voor hoe een OW-aanlevering bij het bronhouderkoppelvlak van de LVBB moet worden
 aangeleverd. [Hoofdstuk 6](#H06-OPinIMOW)
