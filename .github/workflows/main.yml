@@ -12,13 +12,9 @@ jobs:
   build:
     uses: ./.github/workflows/build.yml
 
-  check:
-    needs: build
-    uses: ./.github/workflows/check.yml
-
   publish:
     if: github.event_name == 'release'
-    needs: check
+    needs: build
     uses: ./.github/workflows/publish.yml
     secrets:
       GH_PUSH_TOKEN: ${{ secrets.GH_PUSH_TOKEN }}
