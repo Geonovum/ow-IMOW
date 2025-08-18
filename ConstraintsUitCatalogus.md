@@ -17,7 +17,8 @@
 | TPOD2060 | Indien een Artikel is onderverdeeld in Leden zijn annotaties alleen toegestaan op Leden. |
 | TPOD2061 | Alleen bij een Lid of Artikel dat een STOP-element Inhoud bevat is een Regeltekst toegestaan; in dat geval moet er precies &#233;&#233;n Regeltekst zijn. |
 | TPOD2080 | Van de attributen instructieregel­Instrument en instructieregel­Taakuitoefening moet er precies &#233;&#233;n voorkomen |
-| TPOD2100 | Eenheid mag alleen voorkomen als de Normwaarde het attribuut kwantitatieve­Waarde heeft en is dan verplicht |
+| TPOD2090 | Binnen een Omgevingsnorm of Omgevingswaarde moeten alle normwaarden van hetzelfde type zijn: kwalitatief, kwantitatief, of waardeInRegeltekst. |
+| TPOD2100 | Eenheid mag alleen voorkomen als de Normwaarde het attribuut kwantitatieve­Waarde heeft en is dan verplicht. |
 | TPOD2101 | Voor ieder punt op de kaart mag een Norm maar &#233;&#233;n waarde hebben. |
 | TPOD2102 | Locaties van een Norm mogen elkaar niet geheel of gedeeltelijk overlappen. |
 | TPOD2103 | Een Normwaarde geldt voor iedere individuele geometrie van Gebied, Lijn, Punt, Gebiedengroep, Lijnengroep of Puntengroep respectievelijk van de Multi­Surface, Multi­Curve of Multi­Point van de Locatie waarnaar die Normwaarde verwijst. |
