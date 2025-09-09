@@ -5,7 +5,7 @@ if (alternateFormats === undefined) {
     console.warn("\'alternateFormats\' not found.");
 }
 else {
-    const found = alternateFormats.find(element => element.label == "pdf");
+    const found = alternateFormats.find(element => element.label === "pdf");
     if (found === undefined) {
         console.warn("PDF not selected as alternate format.");
     }

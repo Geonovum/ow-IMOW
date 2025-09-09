@@ -20,13 +20,13 @@ jobs:
       - name: Download snapshot artefact
         uses: actions/download-artifact@v4
         with:
-          name: snapshot-files
-          path: ./artifact
+          name: snapshot
+          path: .
 
       - name: Prepare content
         run: |
-          rm -f *.md *.html
-          mv artifact/snapshot.html index.html
+          rm -f *.md index.html
+          mv snapshot.html index.html
           mkdir content
           cp index.html content/
 
@@ -146,18 +146,25 @@ jobs:
           token: ${{ secrets.GH_PUSH_TOKEN }}
           path: docs.geostandaarden.nl
 
-      - name: Copy output to pubDomain folder
-        run: |
-          mkdir -p docs.geostandaarden.nl/${{ steps.metadata.outputs.folderPath }}
-          cp -r content/* docs.geostandaarden.nl/${{ steps.metadata.outputs.folderPath }}/
-          rm docs.geostandaarden.nl/${{ steps.metadata.outputs.folderPath }}/js/config.js
-      - name: Push naar develop bij pre-release
+      - name: Switch naar develop branch bij pre-release
         if: ${{ github.event.release.prerelease == true }}
         run: |
           cd docs.geostandaarden.nl
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+          git fetch --all
           git checkout develop || git checkout -b develop origin/develop
+
+      - name: Copy output to pubDomain folder
+        run: |
+          mkdir -p docs.geostandaarden.nl/${{ steps.metadata.outputs.folderPath }}
+          cp -r content/* docs.geostandaarden.nl/${{ steps.metadata.outputs.folderPath }}/
+          rm docs.geostandaarden.nl/${{ steps.metadata.outputs.folderPath }}/js/config.js
+          
+      - name: Push naar develop bij pre-release
+        if: ${{ github.event.release.prerelease == true }}
+        run: |
+          cd docs.geostandaarden.nl
           git add .
           git commit -m "Automatische pre-release update van ${{ github.repository }}"
           git push origin develop
