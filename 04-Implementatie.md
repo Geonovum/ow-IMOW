@@ -54,6 +54,10 @@ Vanuit de OW-objecten Gebied, Lijn en Punt wordt middels de relatie 'geometrie'
 verwezen naar de geometrie in het GIO. Deze verwijzing gebeurt via het 'id'
 attribuut in het GIO.
 
+**Constraint:** Aan iedere Geometrie in een regeling moet een
+OW-Locatie gekoppeld zijn. (TPOD2230)
+
+
 Enkele uitzonderingen daargelaten valt de geometrie van een Locatie binnen het ambtsgebied
 van het bevoegd gezag. Vanwege enkele uitzonderingen op deze regel worden
 aanleveringen die hier niet aan voldoen niet geweigerd, wel kan een waarschuwing
