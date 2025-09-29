@@ -136,15 +136,6 @@ dd{margin-left:0}
 img.license{float:left;padding-right:5px;background:0 0}
 </style>
 <meta name="color-scheme" content="light">
-<style>
-:is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}
-</style>
-<style>
-
-</style>
-<style>
-
-</style>
 <meta name="description" content="Dit document beschrijft het Informatiemodel Omgevingswet (IMOW) dat gebruikt
 wordt in de keten 'Van plan tot publicatie' voor het toekennen van
 machine-leesbare informatie aan regelingen van omgevingsdocumenten. Het IMOW is
@@ -401,12 +392,9 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
     }
   ]
 }</script>
-<style id="LLPlatform">
-
-</style>
 <link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
-<body class="h-entry informative"><div id="shadowLL"><div id="shadowLL"></div></div><div class="head">
+<body class="h-entry informative toc-inline"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
   </a> <h1 id="title" class="title">Informatiemodel Omgevingswet (IMOW) 3.2-rc</h1>
     
@@ -3674,6 +3662,8 @@ STOP als onderdeel van het GIO aangeleverd.
 Vanuit de OW-objecten Gebied, Lijn en Punt wordt middels de relatie 'geometrie'
 verwezen naar de geometrie in het GIO. Deze verwijzing gebeurt via het 'id'
 attribuut in het GIO.</p>
+<p><strong>Constraint:</strong> Aan iedere Geometrie in een regeling moet een
+OW-Locatie gekoppeld zijn. (TPOD2230)</p>
 <p>Enkele uitzonderingen daargelaten valt de geometrie van een Locatie binnen het ambtsgebied
 van het bevoegd gezag. Vanwege enkele uitzonderingen op deze regel worden
 aanleveringen die hier niet aan voldoen niet geweigerd, wel kan een waarschuwing
