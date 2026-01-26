@@ -100,7 +100,7 @@ let respecConfig = {
       title: "LVBB Bronhouderkoppelvlak 1.3",
       href: "https://standaarden.overheid.nl/stop/lvbb",
       status: "In ontwikkeling",
-      publisher: "KOOP"
+      publisher: "Logius"
     },
     IMOW: {
       id: "IMOW",
@@ -123,7 +123,7 @@ let respecConfig = {
       title: "Standaard Officiële Publicaties 1.5",
       href: "https://koop.gitlab.io/STOP/voorinzage/standaard-preview-b/index.html",
       status: "consultatieversie",
-      publisher: "KOOP"
+      publisher: "Logius"
     },
   },
 };
