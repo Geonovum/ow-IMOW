@@ -116,7 +116,7 @@
 	    </xs:annotation>
 	    <xs:simpleType>
 	      <xs:restriction base="xs:string">
-		<xs:pattern value="[lpvn][a-z]{1,3}[0-9]{3,4}"/>
+		<xs:pattern value="[vpl][acdksrvx][0-9][0-9][0-9]"/>
 	      </xs:restriction>
 	    </xs:simpleType>
 	 </xs:element>
