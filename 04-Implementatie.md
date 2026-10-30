@@ -169,7 +169,7 @@ Omgevingsregeling. De regels in deze paragaaf zorgen ervoor dat de hiërarchie
 van de functionele structuur behouden blijft bij wijzigingen.
 
 <figure id="fig-FunctioneleStructuur">
-  <img src='media/FunctioneleStructuur.png' style='width: 70%;' />
+  <img src='media/FunctioneleStructuur.png' style='width: 70%;' alt="De top van de functionele structuur komt uit de Omgevingswet, AMvB's en de Omgevingsregeling." />
   <figcaption>: de top van de hiërarchie van de functionele structuur</figcaption>
 </figure>
 

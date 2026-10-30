@@ -67,7 +67,7 @@ het perspectief van IMOW:
   leveren.
 
 <figure>
-    <img src='media/OverzichtAanlevering.drawio.svg'></img>
+    <img src='media/OverzichtAanlevering.drawio.svg' alt='Relatie tussen STOP- en IMOW-bestanden.'></img>
     <figcaption>Schematisch overzicht van aanlevering conform de standaard. Relatie tussen STOP- en IMOW-bestanden.</figcaption>
 </figure>
 

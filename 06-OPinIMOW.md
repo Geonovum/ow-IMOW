@@ -1,13 +1,11 @@
 # Onderdelen van STOP relevant voor IMOW {#H06-OPinIMOW}
 
-Dit hoofdstuk legt vast hoe de STOP standaard en het IMOW zich tot elkaar verhouden. Enkele
-dingen worden toegelicht vanuit OW-perspectief. In [paragraaf 6.2](#H06-02-GIO) worden GIO’s beschreven. 
-In [paragraaf 6.3](#H06-04-GML) staan regels voor het aanleveren van GML.
-
-In [paragraaf 6.3](#06-03-JuridischeBorging) worden regels vastgelegd over
-de relatie tussen OW-objecten en GIO's. Dit is de enige normatieve paragraaf
-van dit hoofdstuk. De andere paragrafen verwijzen naar regel en informatie
-vastgelegd in de STOP standaard [[STOP141]].
+Dit hoofdstuk beschrijft onderdelen van STOP die relevant zijn voor het IMOW. Enkele
+dingen worden toegelicht vanuit OW-perspectief, omdat de samenhang met de
+STOP relevant is. [Paragraaf 6.1](#H06-01-ConsolidatieInformatie)
+beschrijft de consolidatieinformatie uit een
+Regeling. In [paragraaf 6.2](#H06-GIO) worden GIO’s beschreven. 
+In [paragraaf 6.3](#H06-GML) staan regels voor het aanleveren van GML.
 
 Zie [[STOP141]] en het [[CIMOP]] voor meer details.
 
@@ -28,7 +26,7 @@ een Regeling. Voor IMOW zijn de volgende aspecten van belang:
 - Uit de  klasse 'Tijdstempel' worden de geldigheidsgegevens van de OW-objecten afgeleid.
 
 <figure id="fig-cim-op-consolidatie">
-    <img src='media/cim-op-consolidatie.png' />
+    <img src='media/cim-op-consolidatie.png' alt='Consolidatieinformatie in CIM-OP' />
     <figcaption>Consolidatieinformatie in CIM-OP</figcaption>
 </figure>
 
@@ -37,7 +35,7 @@ een Regeling. Voor IMOW zijn de volgende aspecten van belang:
 Bij het aanleveren van een besluit volgens STOP worden
 geografische objecten aangeleverd als GIO’s (geografische informatieobjecten).
 Dit is één van de twee soorten informatieobjecten die in STOP kunnen worden
-meegeleverd (de andere zijn PDF-documenten). [Figuur 12](#cim-op-gio) bevat het UML diagram 
+meegeleverd (de andere zijn PDF-documenten). [Figuur 12](#fig-cim-op-gio) bevat het UML diagram 
 van de 'GIO versie' uit het CIM-OP. Voor IMOW zijn de volgende aspecten van belang:
 
 - Een 'GIO vaststelling' stelt een versie van een GIO vast. Hierin heeft iedere
@@ -76,7 +74,7 @@ een 'Normwaarde'. Hiervoor geldt:
   in het vaststellingsdeel van het GIO.
 
 <figure id="fig-cim-op-gio">
-    <img src='media/cim-op-gio.png'></img>
+    <img src='media/cim-op-gio.png' alt='GIO in CIM-OP'></img>
     <figcaption>GIO in CIM-OP</figcaption>
 </figure>
 
