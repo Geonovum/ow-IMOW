@@ -1,6 +1,83 @@
+// Maakt de door Imvertor gegenereerde catalogus geldig HTML: <h7> wordt een div met heading-rol,
+// en een plaatje met hetzelfde id als zijn sectie verliest dat id (de imagemap gebruikt usemap/name).
+function herstelCatalogus(_config, document) {
+  document.querySelectorAll("h7").forEach((h7) => {
+    const kop = document.createElement("div");
+    kop.className = "h7";
+    kop.setAttribute("role", "heading");
+    kop.setAttribute("aria-level", "7");
+    kop.append(...h7.childNodes);
+    h7.replaceWith(kop);
+  });
+  document.querySelectorAll("img[id]").forEach((img) => {
+    if (document.querySelectorAll(`[id="${CSS.escape(img.id)}"]`).length > 1) {
+      img.removeAttribute("id");
+    }
+  });
+}
+
+// Geeft elke constraint een vast anker (#TPODnnnn) en linkt de TPOD-nummers in bijlage A daarnaartoe.
+// Catalogus: de kop "Constraint details ... TPODnnnn"; tekst: "(TPODnnnn)". Bij meerdere plekken telt de eerste.
+function linkTPOD(_config, document) {
+  const bijlage = document.getElementById("HA-Changelog")?.closest("section");
+  // Vervangt elk nummer (groep 1 van patroon) in de tekst onder root door het element dat maak teruggeeft.
+  const vervang = (root, patroon, maak) => {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: (n) =>
+        n.parentElement.closest("a, code, pre, script, style") || (root !== bijlage && bijlage?.contains(n))
+          ? NodeFilter.FILTER_REJECT
+          : NodeFilter.FILTER_ACCEPT,
+    });
+    const knopen = [];
+    while (walker.nextNode()) knopen.push(walker.currentNode);
+    knopen.forEach((knoop) => {
+      const tekst = knoop.textContent;
+      const delen = [];
+      let vanaf = 0;
+      for (const m of tekst.matchAll(patroon)) {
+        const el = maak(m[1]);
+        if (!el) continue;
+        const start = m.index + m[0].indexOf(m[1]);
+        el.textContent = m[1];
+        delen.push(tekst.slice(vanaf, start), el);
+        vanaf = start + m[1].length;
+      }
+      if (vanaf) knoop.replaceWith(...delen, tekst.slice(vanaf));
+    });
+  };
+
+  document.querySelectorAll("div.h7").forEach((kop) => {
+    const m = kop.textContent.trim().match(/^Constraint details\b.*\b(TPOD\d{4})$/s);
+    if (m && !document.getElementById(m[1])) kop.id = m[1];
+  });
+  vervang(document.body, /\((TPOD\d{4})\)/g, (nummer) => {
+    if (document.getElementById(nummer)) return null;
+    const span = document.createElement("span");
+    span.id = nummer;
+    return span;
+  });
+  if (bijlage) {
+    vervang(bijlage, /\b(TPOD\d{4})\b/g, (nummer) => {
+      if (!document.getElementById(nummer)) return null;
+      const a = document.createElement("a");
+      a.href = `#${nummer}`;
+      return a;
+    });
+  }
+}
+
+// Vult de publicatiedatum in de tekst in (<span class="publicatiedatum">), zodat die gelijk blijft aan publishDate.
+function vulPublicatiedatum(config, document) {
+  document.querySelectorAll(".publicatiedatum").forEach((el) => {
+    el.textContent = config.publishHumanDate;
+  });
+}
+
 let respecConfig = {
   useLogo: true,
   useLabel: true,
+  // postProcess van geonovum-config.js behouden, anders overschrijft deze config die bij het samenvoegen
+  postProcess: [...(organisationConfig.postProcess || []), herstelCatalogus, linkTPOD, vulPublicatiedatum],
   // title is verplicht! Neem hier de titel van het document op ----------------------
   title: "Informatiemodel Omgevingswet (IMOW)",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
