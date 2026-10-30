@@ -1,5 +1,15 @@
 # Bijlage: versiehistorie {#HA-Changelog}
 
+## wijzigingen in versie 3.1.2
+
+- XML-schema's v3.1.2: de reguliere expressie voor eigenSymbolisatie is verruimd naar `[lpvn][a-z]{1,3}[0-9]{3,4}`. Daarmee zijn alle symboolcodes uit de Symbolenbibliotheek toegestaan, ook vlaksymbolen en normwaarden. Codes die eerder geldig waren, blijven geldig.
+- eigenSymbolisatie: de definitie is gelijk bij ActiviteitLocatieaanduiding, Normwaarde en Gebiedsaanwijzing. De toelichting beschrijft wat het stelsel controleert en wat het xml-schema controleert.
+- Nieuwe constraints voor eigenSymbolisatie: TPOD2800, TPOD2801 en TPOD2802 bij ActiviteitLocatieaanduiding, TPOD2804 en TPOD2805 bij Normwaarde, TPOD2806 bij Gebiedsaanwijzing en TPOD2803 bij alle drie.
+- Constraint TPOD2090 toegevoegd aan Norm.
+- Constraints TPOD1951, TPOD1952, TPOD1953 en TPOD1954 toegevoegd aan Activiteit.
+- TPOD2061 is vervallen. Deze regel staat al als TPOD2050 bij Regeltekst.
+- Nummers van constraints in de tekst gecorrigeerd: TPOD1161 wordt TPOD1164 (xml-schema voor OW-bestanden), TPOD1900 wordt TPOD1901 (verwijzing van een actief naar een beëindigd OW-object) en TPOD2151 wordt TPOD2153 (intrekking van een regeling).
+
 ## wijzigingen in versie 3.1.1
 
 - Regels hernoemd naar constraints.

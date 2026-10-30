@@ -25,12 +25,12 @@ let respecConfig = {
 
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2025-07-11",
+  publishDate: "2026-10-30",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
-  publishVersion: "3.1",
-  previousVersion: "3.1",
+  publishVersion: "3.1.2",
+  previousVersion: "3.1.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-  previousPublishDate: "2025-06-25",
+  previousPublishDate: "2025-07-11",
   previousMaturity: "def",
 
   editors:

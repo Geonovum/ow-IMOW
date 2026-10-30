@@ -114,9 +114,6 @@ Wees-objecten zijn OW-objecten waar niet meer naar verwezen wordt.
 
 **Constraint:** Alleen bij een Lid of Artikel dat een STOP-element Inhoud bevat is een Regeltekst toegestaan; in dat geval moet er precies één Regeltekst zijn  (TPOD2050)
 
-**Constraint:** een Lid of Artikel zonder een Inhoud-element mag geen Regeltekst-object
-hebben. (TPOD2061)
-
 **Constraint:** Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst
 verwijzen. (TPOD2052)
 
@@ -174,8 +171,8 @@ OW-objecten mogen bestaan vanuit andere regelingen.
 
 Voor het intrekken van een regeling geldt ook de volgende regel:
 
-**Constraint:** Bij een OW-aanlevering behorend bij de intrekking een regeling
-is het veld expressionIDRegeling leeg. (TPOD2151)
+**Constraint:** Bij een OW-aanlevering behorend bij de intrekking van een regeling
+is het veld expressionIDRegeling leeg. (TPOD2153)
 
 ### Het aanleveren van een Ontwerpbesluit
 

@@ -5,8 +5,8 @@ aan een aanlevering aan de LVBB. [Paragraaf 4.1](#H04-OW-aanlevering) schrijft v
 aangeleverd.  [Paragraaf 4.2](#H04-aanlevereisen) stelt eisen aan de
 aanlevering.
 
-De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <https://register.geostandaarden.nl/xmlschema/tpod/v3.1.0/>. Het
-versienummer van deze xsd's is: 'v3.1.0'.
+De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <https://register.geostandaarden.nl/xmlschema/tpod/v3.1.2/>. Het
+versienummer van deze xsd's is: 'v3.1.2'.
 
 ## OW-aanlevering en OW-manifest {#H04-OW-aanlevering}
 
@@ -30,7 +30,7 @@ IMOW worden geserialiseerd door de identificaties van de gerelateerde objecten
 op te nemen.
 
 **Constraint:** OW-bestanden moeten voldoen aan het xml-schema in
-`bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd` (TPOD1161)
+`bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd` (TPOD1164)
 
 **Constraint:** Het xml-attribuut schemaversie in het root element owBestand bevat
 het versienummer van het gebruikte xsd. (TPOD1163)
@@ -128,7 +128,7 @@ OW-object bij hoort. (TPOD1200)
 ### Verwijzingen tussen OW-objecten {#H04-Verwijzen}
 
 **Constraint:** Een OW-object met status = 'actief' mag niet verwijzen naar een
-OW-object met status = 'beëindigd'. (TPOD1900)
+OW-object met status = 'beëindigd'. (TPOD1901)
 
 Deze regel geldt ook voor verwijzingen naar OW-objecten in andere regelingen. Daarnaast 
 is er een juridsche eis dat een bevoegd gezag altijd een regeling moet kunnen intrekken.
