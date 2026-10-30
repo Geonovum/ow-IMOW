@@ -85,7 +85,7 @@ aangeleverde GML gelden de volgende regels:
 
 - De GML-specificaties volgen de regels van de standaard Basisgeometrie [[Basisgeometrie]].
 - Het bijbehorende GML applicatieschema Basisgeometrie.xsd is gepubliceerd op:
-<https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/1.0.0/>
+  <https://register.geostandaarden.nl/gmlapplicatieschema/basisgeometrie/1.0.0/>
 - Voor aanlevering van het GML wordt gebruik gemaakt van GML 3.2.2 met
 Simple features profile 0.
 - Coördinaatreferentiestelsel: Het is verplicht om de srsName in te vullen
