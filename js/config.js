@@ -67,9 +67,10 @@ function linkTPOD(_config, document) {
 }
 
 // Vult de publicatiedatum in de tekst in (<span class="publicatiedatum">), zodat die gelijk blijft aan publishDate.
+// Zonder voorloopnul: "5 november 2026" in plaats van "05 november 2026".
 function vulPublicatiedatum(config, document) {
   document.querySelectorAll(".publicatiedatum").forEach((el) => {
-    el.textContent = config.publishHumanDate;
+    el.textContent = config.publishHumanDate.replace(/^0/, "");
   });
 }
 
@@ -102,12 +103,12 @@ let respecConfig = {
 
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2026-10-30",
+  publishDate: "2026-11-05",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   publishVersion: "3.1",
-  previousVersion: "3.1.1",
+  previousVersion: "3.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-  previousPublishDate: "2025-07-11",
+  previousPublishDate: "2026-10-30",
   previousMaturity: "def",
 
   editors:

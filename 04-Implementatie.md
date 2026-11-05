@@ -198,7 +198,7 @@ van een Activiteit niet zijnde de tophaak uitsluitend mag verwijzen naar een
 andere Activiteit die hoort bij dezelfde Regeling. (TPOD1952)
 
 **Constraint:** (TPOD1953) Voor de relatie bovenliggendeActiviteit van de tophaken
-geldt, in afwijking van het bepaalde in paragraaf TPOD1950,
+geldt, in afwijking van het bepaalde in regel TPOD1950,
 het volgende:
 - in de omgevingsverordening moet de relatie bovenliggendeActiviteit van de
   tophaak verwijzen naar de 'Activiteit gereguleerd in de omgevingsverordening'

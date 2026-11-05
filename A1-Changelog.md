@@ -2,13 +2,26 @@
 
 ## wijzigingen in versie 3.1.2
 
+### Herziene publicatie
+
+Deze publicatie van <span class="publicatiedatum"></span> vervangt die van 30 oktober 2026. Het informatiemodel en de XML-schema's zijn inhoudelijk niet gewijzigd.
+
+- Kleurstelling in figuur 3, 6, 7 en 9 gecorrigeerd: objecttypen zijn weer lichtblauw. In de publicatie van 30 oktober waren een aantal objecttypen beige geworden.
+- De overzichtsfiguren tonen nu bij alle klassen de constraints, ook bij Activiteit en Normwaarde.
+- Tekstuele verbeteringen in TPOD1951, TPOD1953 en TPOD1954. De strekking van deze constraints is niet gewijzigd.
+
+### Publicatie van 30 oktober 2026
+
 - XML-schema's v3.1.2: de reguliere expressie voor eigenSymbolisatie is verruimd naar `[lpvn][a-z]{1,3}[0-9]{3,4}`. Daarmee zijn alle symboolcodes uit de Symbolenbibliotheek toegestaan, ook vlaksymbolen en normwaarden. Codes die eerder geldig waren, blijven geldig.
 - eigenSymbolisatie: de definitie is gelijk bij ActiviteitLocatieaanduiding, Normwaarde en Gebiedsaanwijzing. De toelichting beschrijft wat het stelsel controleert en wat het xml-schema controleert.
 - Nieuwe constraints voor eigenSymbolisatie: TPOD2800, TPOD2801 en TPOD2802 bij ActiviteitLocatieaanduiding, TPOD2804 en TPOD2805 bij Normwaarde, TPOD2806 bij Gebiedsaanwijzing en TPOD2803 bij alle drie.
 - Constraint TPOD2090 toegevoegd aan Norm.
 - Constraints TPOD1951, TPOD1952, TPOD1953 en TPOD1954 toegevoegd aan Activiteit.
 - TPOD2061 is vervallen. Deze regel staat al als TPOD2050 bij Regeltekst.
-- Dubbel gebruikte TPOD-nummers in de tekst gecorrigeerd: TPOD1161 wordt TPOD1164 (xml-schema voor OW-bestanden), TPOD1900 wordt TPOD1901 (verwijzing van een actief naar een beëindigd OW-object) en TPOD2151 wordt TPOD2153 (intrekking van een regeling).
+- Drie TPOD-nummers werden elk voor twee verschillende constraints gebruikt. Eén van de twee heeft een nieuw nummer gekregen:
+  - TPOD1164 (was TPOD1161): OW-bestanden voldoen aan het xml-schema `IMOW_Deelbestand.xsd`. TPOD1161 blijft de constraint bij OW-bestandverwijzing.
+  - TPOD1901 (was TPOD1900): een actief OW-object verwijst niet naar een beëindigd OW-object. TPOD1900 blijft de constraint over wees-objecten.
+  - TPOD2153 (was TPOD2151): bij de intrekking van een regeling is expressionIDRegeling leeg. TPOD2151 blijft de constraint bij OW-aanlevering.
 
 ## wijzigingen in versie 3.1.1
 
@@ -42,7 +55,7 @@ locatie niet rechtsgeldig bekendgemaakt worden. Hierom is het
 attribuut hoogte uit Locatie verwijderd.
 
 Besluiten met een hoogte worden in IMOW 3.1 geweigerd.
- 
+
 **Omgevingsnorm en Omgevingswaarde (Norm)**
 
 De volgende werkafspraken over het gebruik van Omgevingsnorm en Omgevingswaarde in
