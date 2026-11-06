@@ -11,7 +11,7 @@ versienummer van deze xsd's is: 'v3.1.2'.
 ## OW-aanlevering en OW-manifest {#H04-OW-aanlevering}
 
 Een aanlevering aan de LVBB bevat altijd een OW-manifest. Dit is het
-bestand met de naam naam `manifest-ow.xml`. Daarnaast bevat de OW-aanlevering
+bestand met de naam `manifest-ow.xml`. Daarnaast bevat de OW-aanlevering
 0 of meer bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het
 OW-manifest bevat niet de opsomming van de GML-bestanden; deze staan in het (OP-)manifest.
 
@@ -96,7 +96,7 @@ NEN3610-standaard.
 | `(gm\|pv\|ws\|mn\|mnre)`             | Code voor de bestuurslaag van het bevoegd gezag dat het besluit neemt waarmee de Regeling wordt ingesteld of gewijzigd. gm voor gemeente, pv voor provincie, ws voor waterschap of mnre voor ministerie.  |
 | `[0-9]{1,6}`                         | De identificatie moet de code (uit de STOP-waardelijst voor gemeente, waterschap, provincie of ministerie) bevatten van het bevoegd gezag dat het besluit neemt waarmee de Regeling wordt ingesteld of gewijzigd.                             |
 | `.`                                  | een punt                                                                                                                                                                                                                                      |
-| `(regeltekst\| ... \|divisietekst)`  | De naam van het OW-objecttype van het object waar de identificatie betrekking op heeft heeft                                                                                                                                                  |
+| `(regeltekst\| ... \|divisietekst)`  | De naam van het OW-objecttype van het object waar de identificatie betrekking op heeft                                                                                                                                                        |
 | `[A-Za-z0-9]{1,32}`                  | Een reeks van minimaal 1 en maximaal 32 alfanumerieke tekens, te bepalen door het bevoegd gezag                                                                                                                                           |
 
 De identificatie als geheel wordt dan bijvoorbeeld: `nl.imow-gm0200.gebied.2019000001`
@@ -131,10 +131,10 @@ OW-object bij hoort. (TPOD1200)
 OW-object met status = 'beëindigd'. (TPOD1901)
 
 Deze regel geldt ook voor verwijzingen naar OW-objecten in andere regelingen. Daarnaast 
-is er een juridsche eis dat een bevoegd gezag altijd een regeling moet kunnen intrekken.
-Daarom moet een besluit dat en regeling intrekt ook alle verwijzingen die naar OW-objecten
+is er een juridische eis dat een bevoegd gezag altijd een regeling moet kunnen intrekken.
+Daarom moet een besluit dat een regeling intrekt ook alle verwijzingen die naar OW-objecten
 in die regeling wijzen beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen
-KAN wijzigen. Daarom gelden de volgende regels die verwijzingen naar OW-objecten van
+kan wijzigen. Daarom gelden de volgende regels die verwijzingen naar OW-objecten van
 andere bevoegd gezagen inperken:
 
 **Constraint:** (TPOD1950)
@@ -151,26 +151,26 @@ andere bevoegd gezagen inperken:
   van het tijdelijk regelingdeel, waarvoor de specifieke regels van TPOD1954 gelden.
 
 **Constraint:** Een OW-object behorend bij een vastgestelde regeling mag niet
-verwijzing naar een OW-object in een ontwerpregeling. (TPOD1940)
+verwijzen naar een OW-object in een ontwerpregeling. (TPOD1940)
 
 ### Tophaken en de bovenliggendeActiviteit {#H04-FunctioneleStructuur}
 
 De activiteiten in het stelsel vormen samen de ‘functionele structuur’. Deze
 boomstructuur bevat alle Activiteit-objecten in de regelingen en de hiërarchie
 wordt bepaald door de bovenliggendeActiviteit relatie van de OW-Objecten van het
-type Activiteit. In <a href='#fig-FunctioneleStructuur'>Figuur 10</a> is het bovenste deel van
+type Activiteit. In <a href='#fig-FunctioneleStructuur'>Figuur 10</a> is het bovenste deel van de
 functionele structuur getekend. Met Placeholder-Regeling wordt bedoeld de
 regeling die, met het opschrift Omgevingswet, in het stelsel is ingebracht met
-uitsluitend het doel om beschikbaar te stellen de bovenste Activiteiten van de
-functionele structuur zoals ‘Activiteit met gevolgen voor de fysieke
+als enig doel de bovenste Activiteiten van de functionele structuur beschikbaar
+te stellen, zoals ‘Activiteit met gevolgen voor de fysieke
 leefomgeving’ en ‘Activiteit gereguleerd in het omgevingsplan’, de Activiteiten
 die zijn genoemd in artikel 5.1 Ow en enkele Activiteiten van de AMvB’s en de
-Omgevingsregeling. De regels in deze paragaaf zorgen ervoor dat de hiërarchie
+Omgevingsregeling. De regels in deze paragraaf zorgen ervoor dat de hiërarchie
 van de functionele structuur behouden blijft bij wijzigingen.
 
 <figure id="fig-FunctioneleStructuur">
   <img src='media/FunctioneleStructuur.png' style='width: 70%;' alt="De top van de functionele structuur komt uit de Omgevingswet, AMvB's en de Omgevingsregeling." />
-  <figcaption>: de top van de hiërarchie van de functionele structuur</figcaption>
+  <figcaption>De top van de hiërarchie van de functionele structuur</figcaption>
 </figure>
 
 De volgende regel schrijft de naam en aanwezigheid van een tophaak Activiteit in
@@ -181,15 +181,15 @@ regeling moet in iedere Regeling waarin één of meer Activiteiten zijn
 geannoteerd één zogenaamde tophaak voorkomen:
 - voor de omgevingsverordening is dat de meest bovenliggende Activiteit van die
   Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in de
-  omgevingsverordening &lt;naam provincie&gt;’;
+  omgevingsverordening [naam provincie]’;
 - voor de waterschapsverordening is dat de meest bovenliggende Activiteit van
   die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in
-  de waterschapsverordening &lt;naam waterschap&gt;’;
+  de waterschapsverordening [naam waterschap]’;
 - voor het omgevingsplan is dat de meest bovenliggende Activiteit van die
   Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in het
-  omgevingsplan gemeente &lt;naam gemeente&gt;’.
+  omgevingsplan gemeente [naam gemeente]’.
 
-Voor de relatie bovenliggendeActiviteit moet gelden de volgende regels:
+Voor de relatie bovenliggendeActiviteit gelden de volgende regels:
 
 **Constraint:** Voor omgevingsverordening,
 waterschapsverordening en omgevingsplan geldt, in afwijking van het bepaalde in
@@ -201,13 +201,13 @@ andere Activiteit die hoort bij dezelfde Regeling. (TPOD1952)
 geldt, in afwijking van het bepaalde in regel TPOD1950,
 het volgende:
 - in de omgevingsverordening moet de relatie bovenliggendeActiviteit van de
-  tophaak verwijzen naar de 'Activiteit gereguleerd in de omgevingsverordening'
+  tophaak verwijzen naar de ‘Activiteit gereguleerd in de omgevingsverordening’
   in de Placeholder-Regeling;
 - in de waterschapsverordening moet de relatie bovenliggendeActiviteit van de
-  tophaak moet verwijzen naar de 'Activiteit gereguleerd in de
-  waterschapsverordening' in de Placeholder-Regeling;
+  tophaak verwijzen naar de ‘Activiteit gereguleerd in de
+  waterschapsverordening’ in de Placeholder-Regeling;
 - in het omgevingsplan moet de relatie bovenliggendeActiviteit van de tophaak
-  moet verwijzen naar de 'Activiteit gereguleerd in het omgevingsplan' in de
+  verwijzen naar de ‘Activiteit gereguleerd in het omgevingsplan’ in de
   Placeholder-Regeling;
 - in AMvB en ministeriële regeling mag de relatie bovenliggendeActiviteit van
   een Activiteit uitsluitend verwijzen naar de ‘Activiteit gereguleerd bij AMvB’

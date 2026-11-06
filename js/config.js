@@ -200,7 +200,7 @@ let respecConfig = {
       id: "STOP141",
       title: "Standaard Officiële Publicaties 1.4.1",
       href: "https://koop.gitlab.io/STOP/standaard/1.4.1/index.html",
-      status: "definitief",
+      status: "Definitief",
       publisher: "KOOP"
     },
   },
