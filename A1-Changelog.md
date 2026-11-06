@@ -6,7 +6,7 @@
 
 Deze publicatie van <span class="publicatiedatum"></span> vervangt die van 30 oktober 2026. Het informatiemodel en de XML-schema's zijn inhoudelijk niet gewijzigd.
 
-- Kleurstelling in figuur 3, 6, 7 en 9 gecorrigeerd: objecttypen zijn weer lichtblauw. In de publicatie van 30 oktober waren een aantal objecttypen beige geworden.
+- Kleurstelling in figuur 3, 6, 7 en 9 gecorrigeerd: objecttypen hebben weer de kleur volgens de legenda. In de publicatie van 30 oktober was een aantal objecttypen beige geworden.
 - De overzichtsfiguren tonen nu bij alle klassen de constraints, ook bij Activiteit en Normwaarde.
 - Tekstuele verbeteringen in TPOD1951, TPOD1953 en TPOD1954. De strekking van deze constraints is niet gewijzigd.
 
@@ -18,7 +18,7 @@ Deze publicatie van <span class="publicatiedatum"></span> vervangt die van 30 ok
 - Constraint TPOD2090 toegevoegd aan Norm.
 - Constraints TPOD1951, TPOD1952, TPOD1953 en TPOD1954 toegevoegd aan Activiteit.
 - TPOD2061 is vervallen. Deze regel staat al als TPOD2050 bij Regeltekst.
-- Drie TPOD-nummers werden elk voor twee verschillende constraints gebruikt. Eén van de twee heeft een nieuw nummer gekregen:
+- Drie TPOD-nummers werden elk voor twee verschillende constraints gebruikt. Een van de twee heeft een nieuw nummer gekregen:
   - TPOD1164 (was TPOD1161): OW-bestanden voldoen aan het xml-schema `IMOW_Deelbestand.xsd`. TPOD1161 blijft de constraint bij OW-bestandverwijzing.
   - TPOD1901 (was TPOD1900): een actief OW-object verwijst niet naar een beëindigd OW-object. TPOD1900 blijft de constraint over wees-objecten.
   - TPOD2153 (was TPOD2151): bij de intrekking van een regeling is expressionIDRegeling leeg. TPOD2151 blijft de constraint bij OW-aanlevering.

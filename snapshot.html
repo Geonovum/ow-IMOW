@@ -374,7 +374,7 @@ legt vast welke objecten aan het DSO moeten worden aangeleverd.">
       "id": "STOP141",
       "title": "Standaard Officiële Publicaties 1.4.1",
       "href": "https://koop.gitlab.io/STOP/standaard/1.4.1/index.html",
-      "status": "definitief",
+      "status": "Definitief",
       "publisher": "KOOP"
     }
   },
@@ -481,7 +481,7 @@ voor technisch ingestelde medewerkers van bevoegde gezagen en adviesbureaus.</p>
 weergegeven binnen het DSO. Het IMOW is de toepassing van het CIM-OW op het
 niveau van gegevens.</p>
 <figure id="fig-StelselVanCIMs">
-    <img src="media/StelselVanCIMs.png" alt="">
+    <img src="media/StelselVanCIMs.png" alt="De conceptuele informatiemodellen van het DSO (onder meer CIM-OW, CIM-OP, CIM-TR, CIM-OI, CIM-AM en CIM-ORG) met hun onderlinge relaties. CIM-OW deelt de concepten Activiteit, Locatie, Omgevingsnorm en Juridische regel met CIM-TR en CIM-AM.">
     <figcaption><a class="self-link" href="#fig-StelselVanCIMs">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Overzicht van alle Conceptuele Informatiemodellen in het DSO</span></figcaption>
 </figure><p>De volgende paragraaf beschrijft de <a href="#H01-context">context</a> van het model en daarna volgt de <a href="#H01-Leeswijzer">leeswijzer</a>.</p>
 <section id="context-standaard"><div class="header-wrapper"><h3 id="H01-context"><bdi class="secno">1.1 </bdi>Context standaard</h3><a class="self-link" href="#H01-context" aria-label="Permalink for Section 1.1"></a></div><p>Wanneer het bevoegd gezag een Regeling vaststelt of wijzigt
@@ -3745,7 +3745,7 @@ aanlevering.</p>
 <p>De XML-applicatieschema's genoemd in dit hoofdstuk zijn te vinden in: <a href="https://register.geostandaarden.nl/xmlschema/tpod/v3.1.2/">https://register.geostandaarden.nl/xmlschema/tpod/v3.1.2/</a>. Het
 versienummer van deze xsd's is: 'v3.1.2'.</p>
 <section id="ow-aanlevering-en-ow-manifest"><div class="header-wrapper"><h3 id="H04-OW-aanlevering"><bdi class="secno">4.1 </bdi>OW-aanlevering en OW-manifest</h3><a class="self-link" href="#H04-OW-aanlevering" aria-label="Permalink for Section 4.1"></a></div><p>Een aanlevering aan de LVBB bevat altijd een OW-manifest. Dit is het
-bestand met de naam naam <code>manifest-ow.xml</code>. Daarnaast bevat de OW-aanlevering
+bestand met de naam <code>manifest-ow.xml</code>. Daarnaast bevat de OW-aanlevering
 0 of meer bestanden met OW-objecten, deze zijn opgesomd in het OW-manifest. Het
 OW-manifest bevat niet de opsomming van de GML-bestanden; deze staan in het (OP-)manifest.</p>
 <p><strong>Constraint:</strong> Het manifest-ow.xml in een OW-aanlevering  moet voldoen aan het
@@ -3829,7 +3829,7 @@ NEN3610-standaard.</p>
 </tr>
 <tr>
 <td><code>(regeltekst| ... |divisietekst)</code></td>
-<td>De naam van het OW-objecttype van het object waar de identificatie betrekking op heeft heeft</td>
+<td>De naam van het OW-objecttype van het object waar de identificatie betrekking op heeft</td>
 </tr>
 <tr>
 <td><code>[A-Za-z0-9]{1,32}</code></td>
@@ -3855,10 +3855,10 @@ OW-object bij hoort. (<span id="TPOD1200">TPOD1200</span>)</p>
 </section><section id="verwijzingen-tussen-ow-objecten"><div class="header-wrapper"><h4 id="H04-Verwijzen"><bdi class="secno">4.2.4 </bdi>Verwijzingen tussen OW-objecten</h4><a class="self-link" href="#H04-Verwijzen" aria-label="Permalink for Section 4.2.4"></a></div><p><strong>Constraint:</strong> Een OW-object met status = 'actief' mag niet verwijzen naar een
 OW-object met status = 'beëindigd'. (<span id="TPOD1901">TPOD1901</span>)</p>
 <p>Deze regel geldt ook voor verwijzingen naar OW-objecten in andere regelingen. Daarnaast 
-is er een juridsche eis dat een bevoegd gezag altijd een regeling moet kunnen intrekken.
-Daarom moet een besluit dat en regeling intrekt ook alle verwijzingen die naar OW-objecten
+is er een juridische eis dat een bevoegd gezag altijd een regeling moet kunnen intrekken.
+Daarom moet een besluit dat een regeling intrekt ook alle verwijzingen die naar OW-objecten
 in die regeling wijzen beëindigen. Dit kan alleen als het bevoegd gezag die verwijzingen
-KAN wijzigen. Daarom gelden de volgende regels die verwijzingen naar OW-objecten van
+kan wijzigen. Daarom gelden de volgende regels die verwijzingen naar OW-objecten van
 andere bevoegd gezagen inperken:</p>
 <p><strong>Constraint:</strong> (<span id="TPOD1950">TPOD1950</span>)</p>
 <ul>
@@ -3875,22 +3875,22 @@ uitzondering van de relatie bovenliggendeActiviteit van de tophaak-Activiteit
 van het tijdelijk regelingdeel, waarvoor de specifieke regels van TPOD1954 gelden.</li>
 </ul>
 <p><strong>Constraint:</strong> Een OW-object behorend bij een vastgestelde regeling mag niet
-verwijzing naar een OW-object in een ontwerpregeling. (<span id="TPOD1940">TPOD1940</span>)</p>
+verwijzen naar een OW-object in een ontwerpregeling. (<span id="TPOD1940">TPOD1940</span>)</p>
 </section><section id="tophaken-en-de-bovenliggendeactiviteit"><div class="header-wrapper"><h4 id="H04-FunctioneleStructuur"><bdi class="secno">4.2.5 </bdi>Tophaken en de bovenliggendeActiviteit</h4><a class="self-link" href="#H04-FunctioneleStructuur" aria-label="Permalink for Section 4.2.5"></a></div><p>De activiteiten in het stelsel vormen samen de ‘functionele structuur’. Deze
 boomstructuur bevat alle Activiteit-objecten in de regelingen en de hiërarchie
 wordt bepaald door de bovenliggendeActiviteit relatie van de OW-Objecten van het
-type Activiteit. In <a href="#fig-FunctioneleStructuur">Figuur 10</a> is het bovenste deel van
+type Activiteit. In <a href="#fig-FunctioneleStructuur">Figuur 10</a> is het bovenste deel van de
 functionele structuur getekend. Met Placeholder-Regeling wordt bedoeld de
 regeling die, met het opschrift Omgevingswet, in het stelsel is ingebracht met
-uitsluitend het doel om beschikbaar te stellen de bovenste Activiteiten van de
-functionele structuur zoals ‘Activiteit met gevolgen voor de fysieke
+als enig doel de bovenste Activiteiten van de functionele structuur beschikbaar
+te stellen, zoals ‘Activiteit met gevolgen voor de fysieke
 leefomgeving’ en ‘Activiteit gereguleerd in het omgevingsplan’, de Activiteiten
 die zijn genoemd in artikel 5.1 Ow en enkele Activiteiten van de AMvB’s en de
-Omgevingsregeling. De regels in deze paragaaf zorgen ervoor dat de hiërarchie
+Omgevingsregeling. De regels in deze paragraaf zorgen ervoor dat de hiërarchie
 van de functionele structuur behouden blijft bij wijzigingen.</p>
 <figure id="fig-FunctioneleStructuur">
   <img src="media/FunctioneleStructuur.png" style="width: 70%;" alt="De top van de functionele structuur komt uit de Omgevingswet, AMvB's en de Omgevingsregeling.">
-  <figcaption><a class="self-link" href="#fig-FunctioneleStructuur">Figuur <bdi class="figno">10</bdi></a> <span class="fig-title">: de top van de hiërarchie van de functionele structuur</span></figcaption>
+  <figcaption><a class="self-link" href="#fig-FunctioneleStructuur">Figuur <bdi class="figno">10</bdi></a> <span class="fig-title">De top van de hiërarchie van de functionele structuur</span></figcaption>
 </figure><p>De volgende regel schrijft de naam en aanwezigheid van een tophaak Activiteit in
 regelingen voor:</p>
 <p><strong>Constraint:</strong> (TPOD1951) Met uitzondering van AMvB en ministeriële
@@ -3899,15 +3899,15 @@ geannoteerd één zogenaamde tophaak voorkomen:</p>
 <ul>
 <li>voor de omgevingsverordening is dat de meest bovenliggende Activiteit van die
 Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in de
-omgevingsverordening &lt;naam provincie&gt;’;</li>
+omgevingsverordening [naam provincie]’;</li>
 <li>voor de waterschapsverordening is dat de meest bovenliggende Activiteit van
 die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in
-de waterschapsverordening &lt;naam waterschap&gt;’;</li>
+de waterschapsverordening [naam waterschap]’;</li>
 <li>voor het omgevingsplan is dat de meest bovenliggende Activiteit van die
 Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in het
-omgevingsplan gemeente &lt;naam gemeente&gt;’.</li>
+omgevingsplan gemeente [naam gemeente]’.</li>
 </ul>
-<p>Voor de relatie bovenliggendeActiviteit moet gelden de volgende regels:</p>
+<p>Voor de relatie bovenliggendeActiviteit gelden de volgende regels:</p>
 <p><strong>Constraint:</strong> Voor omgevingsverordening,
 waterschapsverordening en omgevingsplan geldt, in afwijking van het bepaalde in
 regel TPOD1950, dat de relatie bovenliggendeActiviteit
@@ -3918,13 +3918,13 @@ geldt, in afwijking van het bepaalde in regel TPOD1950,
 het volgende:</p>
 <ul>
 <li>in de omgevingsverordening moet de relatie bovenliggendeActiviteit van de
-tophaak verwijzen naar de 'Activiteit gereguleerd in de omgevingsverordening'
+tophaak verwijzen naar de ‘Activiteit gereguleerd in de omgevingsverordening’
 in de Placeholder-Regeling;</li>
 <li>in de waterschapsverordening moet de relatie bovenliggendeActiviteit van de
-tophaak moet verwijzen naar de 'Activiteit gereguleerd in de
-waterschapsverordening' in de Placeholder-Regeling;</li>
+tophaak verwijzen naar de ‘Activiteit gereguleerd in de
+waterschapsverordening’ in de Placeholder-Regeling;</li>
 <li>in het omgevingsplan moet de relatie bovenliggendeActiviteit van de tophaak
-moet verwijzen naar de 'Activiteit gereguleerd in het omgevingsplan' in de
+verwijzen naar de ‘Activiteit gereguleerd in het omgevingsplan’ in de
 Placeholder-Regeling;</li>
 <li>in AMvB en ministeriële regeling mag de relatie bovenliggendeActiviteit van
 een Activiteit uitsluitend verwijzen naar de ‘Activiteit gereguleerd bij AMvB’
@@ -4189,7 +4189,7 @@ de geometrie van Nederland met inbegrip van de exclusieve economische zone (EEZ)
 <section id="herziene-publicatie"><div class="header-wrapper"><h4 id="a-1-1-herziene-publicatie"><bdi class="secno">A.1.1 </bdi>Herziene publicatie</h4><a class="self-link" href="#herziene-publicatie" aria-label="Permalink for Appendix A.1.1"></a></div>
 <p>Deze publicatie van <span class="publicatiedatum">5 november 2026</span> vervangt die van 30 oktober 2026. Het informatiemodel en de XML-schema's zijn inhoudelijk niet gewijzigd.</p>
 <ul>
-<li>Kleurstelling in figuur 3, 6, 7 en 9 gecorrigeerd: objecttypen zijn weer lichtblauw. In de publicatie van 30 oktober waren een aantal objecttypen beige geworden.</li>
+<li>Kleurstelling in figuur 3, 6, 7 en 9 gecorrigeerd: objecttypen hebben weer de kleur volgens de legenda. In de publicatie van 30 oktober was een aantal objecttypen beige geworden.</li>
 <li>De overzichtsfiguren tonen nu bij alle klassen de constraints, ook bij Activiteit en Normwaarde.</li>
 <li>Tekstuele verbeteringen in <a href="#TPOD1951">TPOD1951</a>, <a href="#TPOD1953">TPOD1953</a> en <a href="#TPOD1954">TPOD1954</a>. De strekking van deze constraints is niet gewijzigd.</li>
 </ul>
@@ -4201,7 +4201,7 @@ de geometrie van Nederland met inbegrip van de exclusieve economische zone (EEZ)
 <li>Constraint <a href="#TPOD2090">TPOD2090</a> toegevoegd aan Norm.</li>
 <li>Constraints <a href="#TPOD1951">TPOD1951</a>, <a href="#TPOD1952">TPOD1952</a>, <a href="#TPOD1953">TPOD1953</a> en <a href="#TPOD1954">TPOD1954</a> toegevoegd aan Activiteit.</li>
 <li>TPOD2061 is vervallen. Deze regel staat al als <a href="#TPOD2050">TPOD2050</a> bij Regeltekst.</li>
-<li>Drie TPOD-nummers werden elk voor twee verschillende constraints gebruikt. Eén van de twee heeft een nieuw nummer gekregen:<ul>
+<li>Drie TPOD-nummers werden elk voor twee verschillende constraints gebruikt. Een van de twee heeft een nieuw nummer gekregen:<ul>
 <li><a href="#TPOD1164">TPOD1164</a> (was <a href="#TPOD1161">TPOD1161</a>): OW-bestanden voldoen aan het xml-schema <code>IMOW_Deelbestand.xsd</code>. <a href="#TPOD1161">TPOD1161</a> blijft de constraint bij OW-bestandverwijzing.</li>
 <li><a href="#TPOD1901">TPOD1901</a> (was <a href="#TPOD1900">TPOD1900</a>): een actief OW-object verwijst niet naar een beëindigd OW-object. <a href="#TPOD1900">TPOD1900</a> blijft de constraint over wees-objecten.</li>
 <li><a href="#TPOD2153">TPOD2153</a> (was <a href="#TPOD2151">TPOD2151</a>): bij de intrekking van een regeling is expressionIDRegeling leeg. <a href="#TPOD2151">TPOD2151</a> blijft de constraint bij OW-aanlevering.</li>
@@ -4597,7 +4597,7 @@ tot versie 3.0.1 niet meer geldig en verwijderd.</p>
     </dd><dt id="bib-nen3610_2022">[NEN3610_2022]</dt><dd>
       <a href="https://www.nen.nl/nen-3610-2022-nl-296137"><cite>Basismodel geo-informatie</cite></a>.  NEN. 2020-06-20. Definitief. URL: <a href="https://www.nen.nl/nen-3610-2022-nl-296137">https://www.nen.nl/nen-3610-2022-nl-296137</a>
     </dd><dt id="bib-stop141">[STOP141]</dt><dd>
-      <a href="https://koop.gitlab.io/STOP/standaard/1.4.1/index.html"><cite>Standaard Officiële Publicaties 1.4.1</cite></a>.  KOOP. definitief. URL: <a href="https://koop.gitlab.io/STOP/standaard/1.4.1/index.html">https://koop.gitlab.io/STOP/standaard/1.4.1/index.html</a>
+      <a href="https://koop.gitlab.io/STOP/standaard/1.4.1/index.html"><cite>Standaard Officiële Publicaties 1.4.1</cite></a>.  KOOP. Definitief. URL: <a href="https://koop.gitlab.io/STOP/standaard/1.4.1/index.html">https://koop.gitlab.io/STOP/standaard/1.4.1/index.html</a>
     </dd></dl>
   </section><section id="informatieve-referenties">
     <div class="header-wrapper"><h3 id="b-2-informatieve-referenties"><bdi class="secno">B.2 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix B.2"></a></div>

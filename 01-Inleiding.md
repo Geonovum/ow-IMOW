@@ -21,7 +21,7 @@ weergegeven binnen het DSO. Het IMOW is de toepassing van het CIM-OW op het
 niveau van gegevens.
 
 <figure id="fig-StelselVanCIMs">
-    <img src="media/StelselVanCIMs.png" alt="">
+    <img src="media/StelselVanCIMs.png" alt="De conceptuele informatiemodellen van het DSO (onder meer CIM-OW, CIM-OP, CIM-TR, CIM-OI, CIM-AM en CIM-ORG) met hun onderlinge relaties. CIM-OW deelt de concepten Activiteit, Locatie, Omgevingsnorm en Juridische regel met CIM-TR en CIM-AM.">
     <figcaption>Overzicht van alle Conceptuele Informatiemodellen in het DSO</figcaption>
 </figure>
 
